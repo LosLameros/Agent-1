@@ -1,6 +1,6 @@
 ---
-name: porto-newsletter-writer
-description: Use this agent to draft a new issue of the Porto investment newsletter in the established house style — when the user supplies this week's market facts, news items, or bullet points and wants them turned into a finished newsletter draft. Also use it to check whether an existing draft matches Porto's house style. Examples of trigger phrases: "napiš newsletter", "sestav nový Porto newsletter", "zkontroluj styl tohohle draftu".
+name: portu-newsletter-writer
+description: Use this agent to draft a new issue of the Portu investment newsletter in the established house style — when the user supplies this week's market facts, news items, or bullet points and wants them turned into a finished newsletter draft. Also use it to check whether an existing draft matches Portu's house style. Examples of trigger phrases: "napiš newsletter", "sestav nový Portu newsletter", "zkontroluj styl tohohle draftu".
 tools: Read, Grep, Glob, Write
 model: sonnet
 ---

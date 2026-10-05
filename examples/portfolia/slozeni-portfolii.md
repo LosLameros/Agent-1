@@ -6,6 +6,7 @@ Zdroj: tabulka „1. Aktuální složení portfolií 1-10“ dodaná uživatelem
 
 - Portfolia 1–3 (krátkodobá) měnově zajišťujeme.
 - Portfolia 4–10 měnově nezajišťujeme.
+- Jde o naše doporučené výchozí nastavení. Klient si zajištění může v nastavení portfolia sám zapnout nebo vypnout.
 - Poznámka „Portfolia 1–3 dále NE od 7. 3. 2025“ ve zdrojové tabulce neplatí, řiď se tímto pravidlem.
 
 ## Zlato

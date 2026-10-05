@@ -124,7 +124,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 - Primární instituce (oficiální čísla a rozhodnutí): Fed (včetně výhledu sazeb a zápisů ze zasedání), ECB, ČNB, BLS a BEA (inflace, trh práce a HDP v USA), Eurostat, ČSÚ, OPEC
 - Tržní a makro data: Trading Economics, FRED, Yahoo Finance, Patria Finance, Morningstar (ETF a fondová data)
 - Finanční média: Bloomberg, Financial Times, Wall Street Journal, CNBC, Reuters
-- Výsledková sezóna: FactSet
+- Výsledková sezóna: FactSet (veřejně bez účtu: blog `insight.factset.com`, zejména týdenní „S&P 500 Earnings Season Update“, a týdenní PDF „Earnings Insight“ na `advantage.factset.com`; hledej přes WebSearch s omezením na doménu factset.com a stránku otevři přes WebFetch)
 - Institucionální research: J.P. Morgan
 - Portu: newslettery a Portu Magazín
 
@@ -190,6 +190,8 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 **Ustálená témata:**
 - **Zlato** vždy rámuj jako diverzifikační nástroj s nízkou až zápornou korelací s akciemi, i v obdobích jeho slabosti. Drží ho jen profily 1–6.
 - **Výsledková sezóna:** čerpej z FactSet a uváděj konkrétní čísla.
+  - Pozor na časový posun: sezóna zveřejněná během čtvrtletí {Q} {RRRR} se týká výsledků za **předchozí** čtvrtletí (např. v dubnu–červnu se hlásí výsledky za 1Q). Napiš to tak, aby čtenář nebyl zmatený („jarní výsledková sezóna", „výsledky za první čtvrtletí").
+  - Ber údaj z konce sezóny, ne průběžný. Čísla se v průběhu sezóny mění (blended růst zisků), a tak uveď stav ke konci {Q} a jasně pojmenuj, kterého období se týká.
 - **Technologie:** nepřebírej klišé typu „technologie vládnou". Ověř, co trh skutečně táhlo (konkrétní segmenty, akcie, srovnání s indexem).
 
 **Jazyk:**

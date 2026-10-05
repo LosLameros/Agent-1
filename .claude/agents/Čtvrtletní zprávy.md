@@ -137,7 +137,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
    - rozpětí čtvrtletních výnosů od X do Y % podle rizikového profilu,
    - pohyb koruny vůči dolaru i euru a jeho dopad na nezajištěné investory.
 7. **Měnové zajištění:**
-   - aktuální nastavení a zda se mění a proč,
+   - aktuální nastavení a zda se mění a proč (platí: krátkodobá portfolia 1–3 měnově zajišťujeme, portfolia 4–10 ne),
    - ukotvi ho v datech z grafu „Portfolia na míru" a ve složení portfolií,
    - neopakuj popis pohybu koruny z předchozí sekce.
 8. **Graf: Portfolia na míru v roce {RRRR}** (příloha).
@@ -165,7 +165,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 - Tón je uklidňující bez bagatelizace a dává kontext bez planého optimismu. Odděluj informaci od investičního doporučení – zpráva je edukativní komentář.
 
 **Ustálená témata:**
-- **Zlato** vždy rámuj jako diverzifikační nástroj s nízkou až zápornou korelací s akciemi, i v obdobích jeho slabosti. Drží ho profily 1–8.
+- **Zlato** vždy rámuj jako diverzifikační nástroj s nízkou až zápornou korelací s akciemi, i v obdobích jeho slabosti. Drží ho jen profily 1–6.
 - **Výsledková sezóna:** čerpej z FactSet a uváděj konkrétní čísla.
 - **Technologie:** nepřebírej klišé typu „technologie vládnou". Ověř, co trh skutečně táhlo (konkrétní segmenty, akcie, srovnání s indexem).
 

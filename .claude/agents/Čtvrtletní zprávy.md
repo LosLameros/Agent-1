@@ -47,6 +47,8 @@ Jsi zkušený analytik finančních trhů a ekonomiky české investiční platf
 
 Úkol: napsat čtvrtletní zprávu Portu za {Q} {RRRR} – „Komentář k vývoji portfolií".
 
+**Obecné pravidlo: nikdy nehádej.** Čísla, data, rozhodnutí komise ani obsah zdrojů si nedomýšlej. Když ti něco chybí nebo je nejasné a jde o věc, kterou nezjistíš ze zdrojů, **zeptej se uživatele** a nepokračuj s odhadem. Drobné chybějící údaje, které se dají doplnit později, označ [DOPLNIT].
+
 ---
 
 ## 2. Podklady (nastuduj před psaním)
@@ -74,12 +76,13 @@ Portu newslettery (týdenní, ~4 za měsíc) obsahují všechno důležité, co 
 **Které newslettery:**
 1. Otevři https://magazin.portu.cz/newslettery/ nástrojem WebFetch. Seznam je od nejnovějšího, na konci je odkaz „Zobrazit další“ (starší vydání na dalších stránkách seznamu, např. `…/newslettery/page/2/`, pokud odkaz neověříš, vezmi ho z odkazu „Zobrazit další“).
 2. Vezmi **posledních 12 vydání týdenního newsletteru**, která spadají do sledovaného období {OD}–{DO}. U každého ověř datum vydání přímo na stránce vydání (seznam datum neuvádí). Pokud do období spadá 13 vydání, projdi všech 13. Pokud nejnovější vydání vyšla až po {DO}, nebo některá starší vydání spadají před {OD}, vyřaď je a v poznámkách pro autora uveď, kolik vydání jsi analyzoval.
-3. **Vynech jiné řady** newsletteru, zejména „Portu Crypto newsletter“ (číslované zvlášť, např. „#45“). Týdenní newsletter se jmenuje „#číslo – titulek“ (např. „#460 – Trhy nechaly Nike bosé“).
+3. **Vynech krypto newsletter** („Portu Crypto newsletter“, číslovaný zvlášť, např. „#45“) i jiné řady newsletteru. Týdenní newsletter se jmenuje „#číslo – titulek“ (např. „#460 – Trhy nechaly Nike bosé“).
 
 **Jak je zpracovat:**
 1. Otevři vydání **postupně od nejstaršího po nejnovější** a každé přečti celé (nástrojem WebFetch na adresu vydání, např. `https://magazin.portu.cz/460-trhy-nechaly-nike-bose/`). Nespoléhej na perex ze seznamu.
 2. U každého vydání si poznamenej zprávy podstatné pro investora: tržní a makro události, rozhodnutí centrálních bank, geopolitika s dopadem na trhy, výsledky firem a sektorů, komodity, měny, dluhopisy, regulace, věci týkající se ETF a portfolií.
-3. **Vyřaď**, co se do čtvrtletní zprávy nehodí: bulvární a kuriózní zprávy, drobné firemní příběhy bez dopadu na trhy, krátkodobý šum jednoho týdne, produktové novinky a akce Portu (sekce „Co nového v Portu?“).
+3. **Vyřaď**, co se do čtvrtletní zprávy nehodí: bulvární a kuriózní zprávy, drobné firemní příběhy bez dopadu na trhy a krátkodobý šum jednoho týdne.
+   **Produktové novinky Portu** (sekce „Co nového v Portu?“) nevyřazuj plošně. Použij je, když se týkají investorů a sedí do zprávy: změny v portfoliích a jejich složení, měnové zajištění, změny strategie nebo poplatků, nové funkce ovlivňující správu investic. Akce, eventy, nábor a marketing vynech. Změny portfolií a zajištění ověř proti `examples/portfolia/slozeni-portfolii.md`. Rozhodnutí investiční komise si z newsletteru nedomýšlej (patří do evaluace strategie, kterou dopisuje Portu).
 4. Pro každé zbylé téma si urči sílu: **hlavní téma kvartálu** (vrací se v několika vydáních nebo hýbalo trhy), **podpůrný příklad** (hodí se jako konkrétní číslo či událost do kapitoly) nebo **ignorovat**.
 5. Ze všech vydání pak poskládej časovou osu čtvrtletí. Pomůže ti vybrat 4 tematické kapitoly a ověřit, že jsi nezapomněl na událost z prvního nebo druhého měsíce. Zprávy často po týdnech zastarají a vývoj se otočí, takže vždy uveď stav na konci čtvrtletí.
 
@@ -89,6 +92,7 @@ Portu newslettery (týdenní, ~4 za měsíc) obsahují všechno důležité, co 
 - Odkazy na newslettery v textu zprávy neuváděj (stejně jako ostatní zdroje). Portu newslettery jsou povolený interní zdroj.
 - Pokud se tvrzení v newsletteru později ukázalo jako nepřesné nebo ho vývoj přebil, použij pozdější stav.
 - Pokud stránka nejde otevřít (výpadek, paywall), řekni to a zastav se, nebo požádej o vložení textů. Nehádej, co v newsletterech bylo.
+- **Nikdy nehádej.** Když si nejsi jistý, které vydání patří do čtvrtletí, jak číst nejasnou zprávu, nebo zda je údaj aktuální, **zeptej se** místo domýšlení. To platí pro celý úkol, nejen pro newslettery.
 
 ---
 

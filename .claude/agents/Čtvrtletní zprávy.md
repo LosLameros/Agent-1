@@ -63,6 +63,32 @@ Jsi zkušený analytik finančních trhů a ekonomiky české investiční platf
    - **Graf portfolií** ukazuje profily #3, #6 a #10 a obvykle dvě řady: čtvrtletní výnos a výnos od začátku roku (ve zprávě za 1Q 2026 místo toho výnos za 1 rok). Komentuj jen hodnoty, které v grafu jsou. Chybějící řadu nedopočítávej, označ ji [DOPLNIT].
 3. **Složení portfolií všech 10 rizikových profilů** (v repozitáři `examples/portfolia/slozeni-portfolii.md`; pokud je tam značka `[DOPLNIT]` nebo je údaj v rozporu s tímto promptem, nehádej a upozorni na to v seznamu [DOPLNIT]). Používej ho u měnového zajištění a všude, kde píšeš o dopadu na konkrétní profily.
 4. **Reálná data za {Q} {RRRR}**, dohledaná ze zdrojů v kapitole 4. Nevymýšlej čísla. Neověřitelný údaj označ jako [DOPLNIT: …].
+5. **Portu newslettery za {Q} {RRRR}** – paměť čtvrtletí. Za tři měsíce se na mnoho událostí zapomene, a proto je povinně projdi (postup v kapitole 2a).
+
+---
+
+## 2a. Rešerše z Portu newsletterů (povinný krok před psaním)
+
+Portu newslettery (týdenní, ~4 za měsíc) obsahují všechno důležité, co se ve čtvrtletí stalo. Zpráva z nich čerpá, ale nepřebírá je celé.
+
+**Které newslettery:**
+1. Otevři https://magazin.portu.cz/newslettery/ nástrojem WebFetch. Seznam je od nejnovějšího, na konci je odkaz „Zobrazit další“ (starší vydání na dalších stránkách seznamu, např. `…/newslettery/page/2/`, pokud odkaz neověříš, vezmi ho z odkazu „Zobrazit další“).
+2. Vezmi **posledních 12 vydání týdenního newsletteru**, která spadají do sledovaného období {OD}–{DO}. U každého ověř datum vydání přímo na stránce vydání (seznam datum neuvádí). Pokud do období spadá 13 vydání, projdi všech 13. Pokud nejnovější vydání vyšla až po {DO}, nebo některá starší vydání spadají před {OD}, vyřaď je a v poznámkách pro autora uveď, kolik vydání jsi analyzoval.
+3. **Vynech jiné řady** newsletteru, zejména „Portu Crypto newsletter“ (číslované zvlášť, např. „#45“). Týdenní newsletter se jmenuje „#číslo – titulek“ (např. „#460 – Trhy nechaly Nike bosé“).
+
+**Jak je zpracovat:**
+1. Otevři vydání **postupně od nejstaršího po nejnovější** a každé přečti celé (nástrojem WebFetch na adresu vydání, např. `https://magazin.portu.cz/460-trhy-nechaly-nike-bose/`). Nespoléhej na perex ze seznamu.
+2. U každého vydání si poznamenej zprávy podstatné pro investora: tržní a makro události, rozhodnutí centrálních bank, geopolitika s dopadem na trhy, výsledky firem a sektorů, komodity, měny, dluhopisy, regulace, věci týkající se ETF a portfolií.
+3. **Vyřaď**, co se do čtvrtletní zprávy nehodí: bulvární a kuriózní zprávy, drobné firemní příběhy bez dopadu na trhy, krátkodobý šum jednoho týdne, produktové novinky a akce Portu (sekce „Co nového v Portu?“).
+4. Pro každé zbylé téma si urči sílu: **hlavní téma kvartálu** (vrací se v několika vydáních nebo hýbalo trhy), **podpůrný příklad** (hodí se jako konkrétní číslo či událost do kapitoly) nebo **ignorovat**.
+5. Ze všech vydání pak poskládej časovou osu čtvrtletí. Pomůže ti vybrat 4 tematické kapitoly a ověřit, že jsi nezapomněl na událost z prvního nebo druhého měsíce. Zprávy často po týdnech zastarají a vývoj se otočí, takže vždy uveď stav na konci čtvrtletí.
+
+**Pravidla použití:**
+- Newslettery jsou **vstup, ne hotový text**. Nic nekopíruj. Přeformuluj to vlastními slovy ve stylu čtvrtletní zprávy (klidný, vysvětlující tón, ne ironický styl newsletteru) a nepřebírej jejich titulky ani „openery“.
+- **Čísla z newsletterů před použitím ověř** v primárním nebo renomovaném zdroji z kapitoly 4 (Trading Economics, instituce, FactSet…). Newsletter je týdenní snímek, hodnota se mohla změnit. Když číslo neověříš, použij ho jen opatrně nebo ho označ [DOPLNIT] a zmiň v poznámkách.
+- Odkazy na newslettery v textu zprávy neuváděj (stejně jako ostatní zdroje). Portu newslettery jsou povolený interní zdroj.
+- Pokud se tvrzení v newsletteru později ukázalo jako nepřesné nebo ho vývoj přebil, použij pozdější stav.
+- Pokud stránka nejde otevřít (výpadek, paywall), řekni to a zastav se, nebo požádej o vložení textů. Nehádej, co v newsletterech bylo.
 
 ---
 
@@ -245,7 +271,8 @@ Nikdy nevynucuj závěr, který odporuje datům.
   1. řádek s určením kvartálu (kapitola 0),
   2. samotná zpráva včetně návrhů doplňkových grafů na příslušných místech,
   3. mapa návaznosti (kapitola 3, krok E) – interní,
-  4. seznam všech [DOPLNIT: …] s tím, kde v textu jsou a z jakého zdroje je doplnit
+  4. **přehled využití newsletterů** – interní tabulka: číslo a titulek vydání · datum · téma, které jsi z něj vzal (nebo „nepoužito“) · kde ve zprávě je použité. Musí obsahovat všech analyzovaných 12–13 vydání,
+  5. seznam všech [DOPLNIT: …] s tím, kde v textu jsou a z jakého zdroje je doplnit
 
 ---
 

@@ -58,7 +58,7 @@ Jsi zkušený analytik finančních trhů a ekonomiky české investiční platf
    - Dvě starší zprávy slouží jako vzor struktury, tónu, datových konvencí, pojmenování grafů a jako zdroj dlouhodobých linek.
    - Pokud zpráva za {PŘEDCHŮDCE} v podkladech chybí, dohledej ji ve složce `examples/quarterly-reports/` a v předchozích konverzacích. Když ji nenajdeš, zeptej se. Bez ní zprávu nepiš.
 2. **Dva hotové grafy:** „Zhodnocení vybraných tříd aktiv: {Q} {RRRR}" a „Portfolia na míru v roce {RRRR}" (v některých zprávách se graf jmenuje „Portfolia od Portu v roce {RRRR}" – obě varianty názvu jsou platné).
-   - **Kde je najdeš:** přílohy z hlavní konverzace nevidíš. Grafy musí být uložené jako soubory (PNG, JPG nebo PDF) ve složce `podklady/{RRRR}-Q{číslo}/` (např. `podklady/2026-Q3/`), nebo ti cestu k nim předá zadání. Najdi je přes Glob a otevři nástrojem Read. Pokud tam nejsou, zastav se a požádej o ně – čísla z grafů nikdy neodhaduj ani nedopočítávej z jiných zdrojů.
+   - **Kde je najdeš:** přílohy z hlavní konverzace nevidíš. Grafy musí být uložené jako soubory (PNG, JPG nebo PDF) ve složce `podklady/{RRRR}-Q{číslo}/` (např. `podklady/2026-Q3/`), nebo ti cestu k nim předá zadání. Najdi je přes Glob (soubory `zhodnoceni-trid-aktiv.*` a `portfolia-v-roce.*`) a otevři nástrojem Read. Pokud tam nejsou, zastav se a požádej o ně – čísla z grafů nikdy neodhaduj ani nedopočítávej z jiných zdrojů.
    - Negeneruješ je. Přečti z nich hodnoty, počítej s nimi a okomentuj je.
    - Text musí s čísly z grafů přesně souhlasit.
    - **Graf tříd aktiv** má sloupce: americké akcie, evropské akcie, japonské akcie, EUR korporátní dluhopisy, US krátkodobé dluhopisy, US dlouhodobé dluhopisy, zlato; dvě řady: „USD nebo EUR" (výnos v měně aktiva) a „CZK" (výnos pro českého investora).
@@ -196,7 +196,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 9. **4 tematické kapitoly:** názvy přesně podle odrážek z bodu 3.
    - U každé popiš, co se stalo, proč, jaké třídy aktiv, indexy a akcie to zasáhlo (s čísly) a jaký to mělo dopad na Portu investory.
    - Obsah se mezi kapitolami nesmí duplikovat.
-10. **2–3 doplňkové grafy:** vložené přímo do kapitol, které podporují (viz kapitola 7).
+10. **Doplňkové grafy (alespoň 1, ideálně 2):** vložené přímo do kapitol, které podporují (viz kapitola 7).
 11. **Výhled na zbytek roku** (u 3Q může znít „Výhled na konec roku", u 4Q „Výhled na rok {RRRR+1}"):
     - skutečně dopředu hledící: klíčové proměnné, scénáře (uklidnění vs. přetrvání rizik), rizika,
     - žádná rekapitulace výkonnosti indexů.
@@ -236,7 +236,9 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 
 ---
 
-## 7. Návrh doplňkových grafů (2–3 do textu)
+## 7. Doplňkové grafy (povinné: alespoň 1, ideálně 2 – zpestření zprávy)
+
+Zpráva musí obsahovat **alespoň jeden, ideálně dva** zajímavé a poutavé doplňkové grafy navíc k dvěma hotovým grafům (jako ve vzorových zprávách, kde graf zpestřuje kapitolu). Téma grafů vybíráš ty podle toho, co čtvrtletí opravdu charakterizovalo: vývoj indexů, ceny ropy nebo jiné komodity, zlata, kurzu koruny, úrokových sazeb a výnosů dluhopisů, sektoru nebo skupiny akcií, inflace, nebo cokoliv jiného zajímavého. Vybírej to, co čtenáři pomůže příběh pochopit na první pohled, ne to, co se dobře měří.
 
 Grafy vytvoří a do textu vloží Marek. U každého uveď:
 - **název** – výstižný a tematický, v duchu vzorových zpráv,
@@ -245,9 +247,10 @@ Grafy vytvoří a do textu vloží Marek. U každého uveď:
 - **zdroj** – typicky „Graf: Portu, zdroj: Bloomberg".
 
 Princip výběru:
-- jeden graf k nejsilnějšímu makro nebo geopolitickému tématu (komodity, inflace a sazby, měny),
-- jeden graf k akciovému nebo sektorovému příběhu (indexy, sektor, skupina akcií),
-- případně přehledová tabulka (obchodní dohody, cla, rozhodnutí centrálních bank).
+- ideálně jeden graf k nejsilnějšímu makro nebo geopolitickému tématu (komodity, inflace a sazby, měny),
+- a druhý k akciovému nebo sektorovému příběhu (indexy, sektor, skupina akcií),
+- případně přehledová tabulka (obchodní dohody, cla, rozhodnutí centrálních bank) místo druhého grafu.
+- Data pro graf musí být dostupná ze zdrojů z kapitoly 4 (Trading Economics poskytuje historické řady). Uveď přesně, jakou řadu a které hodnoty má Marek vynést. Když potřebná data nejsou dostupná, zvol jiné téma.
 
 Grafy musí být **nové**. Neopakuj témata ani názvy doplňkových grafů z posledních tří zpráv. Výjimkou je vědomé navázání (stejná řada prodloužená o nový kvartál), které ale v popisku zdůvodni.
 

@@ -194,6 +194,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
    - **Nevypisuj výnosy jednotlivých tříd v USD/EUR a CZK** – jsou v tabulce pod grafem a čtenář se do ní podívá sám. Číslo uveď jen výjimečně, když podpoří pointu (např. posílení jenu, které vysvětluje kladný výsledek japonských akcií).
    - **Kurzový efekt popiš souhrnně jednou větou nebo odstavcem:** o kolik zhruba se liší korunový výnos od výnosu v původní měně a proč, případně rozdíl mezi dolarovými a eurovými aktivy.
    - Piš souvislý text, ne výčet řádek po řádku. Detailní příběhy nech do tematických kapitol.
+   - **Popisuj vývoj, ne polohu v grafu.** Nepiš „nahoře skončily…“ ani „na opačném konci grafu stojí…“ – z toho čtenář nepozná, co se stalo. Piš přímo: „vzrostly“, „skončily v plusu“, „dařilo se jim“, „ztrácely“.
 6. **Výnosy našich portfolií a vliv české koruny** (ustálený nadpis):
    - rozpětí čtvrtletních výnosů od X do Y % podle rizikového profilu – X a Y vyčti z grafu portfolií jako nejnižší a nejvyšší čtvrtletní výnos z profilů v grafu (#3, #6, #10), stejně jako ve vzorových zprávách (2Q 2026: „od 5,8 % do 16,1 %“ = profily 3 a 10),
    - pohyb koruny vůči dolaru i euru a jeho dopad na nezajištěné investory.

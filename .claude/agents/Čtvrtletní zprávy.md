@@ -283,6 +283,10 @@ Nikdy nevynucuj závěr, který odporuje datům.
 
 - **Délka:** **maximálně 2 500 slov** souvislého textu (bez mapy návaznosti a seznamu [DOPLNIT]), což odpovídá nejdelší vzorové zprávě za 2Q 2026. Raději kratší a hutnější než natahovaná. Před odevzdáním slova spočítej.
 - **Uložení:** hotový výstup ulož nástrojem Write do `vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}.md` a v odpovědi uveď cestu.
+- **Word:** z hotového souboru vždy vygeneruj i Word příkazem `node nastroje/zprava-do-wordu.js vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}.md podklady/{RRRR}-Q{číslo} vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}-Ctvrtletni-zprava-Portu.docx`. Skript převede publikovatelnou část (od „# ČTVRTLETNÍ ZPRÁVA“ po „# INTERNÍ ČÁST“) a vloží oba grafy z podkladů. Po každé úpravě textu Word vygeneruj znovu, aby obě verze byly vždy stejné.
+- **Zástupné řádky pro grafy** piš přesně v tomto tvaru, jinak je skript nepozná:
+  - `**[GRAF V PŘÍLOZE: Zhodnocení vybraných tříd aktiv: {Q} {RRRR}]**` a `**[GRAF V PŘÍLOZE: Portfolia od Portu v roce {RRRR}]**`
+  - `**[DOPLŇKOVÝ GRAF: název | popis datových řad a klíčových hodnot | Graf: Portu, zdroj: …]**` (podrobnější návrh pro Marka dej i do interní části)
 - **Formát:** čistý strukturovaný markdown připravený k sazbě (nadpisy sekcí, popisky grafů, datové řady a hodnoty).
 - **Pořadí výstupu:**
   1. řádek s určením kvartálu (kapitola 0),

@@ -7,6 +7,7 @@ Repozitář slouží ke psaní newsletterů pro Portu (česko-slovenská investi
 - `examples/newsletters/` — archiv 10 vydání (`.docx`), reálné podklady pro styl. Čísla v názvech souborů (443–452) **neodpovídají 1:1** číslu vydání psanému uvnitř dokumentu (např. `446.docx` obsahuje vydání „#445“, `452.docx` obsahuje „#451“). Soubory `444.docx`/`445.docx` a `450.docx`/`451.docx` jsou vzájemné duplicity — reálně jde o 8 unikátních vydání.
 - `.claude/agents/portu-newsletter-writer.md` — subagent, který na základě dodaných faktů/zpráv napíše nové vydání v tomto stylu. Použij ho příkazem přes Agent tool (`subagent_type: portu-newsletter-writer`) nebo o něj požádej přímo.
 - `.claude/agents/Čtvrtletní zprávy.md` — subagent `ctvrtletni-zpravy`, píše čtvrtletní zprávu „Komentář k vývoji portfolií“ za poslední uzavřené čtvrtletí. Vzorové zprávy (2Q 2025 – 2Q 2026) jsou v `examples/quarterly-reports/`. Grafy za aktuální čtvrtletí patří do `podklady/RRRR-Qn/`, hotové zprávy agent ukládá do `vystupy/ctvrtletni-zpravy/`.
+- `.claude/agents/fakturace.md` — subagent `fakturace`, připravuje podklady faktur Marka Pokorného (CZ v Kč s DPH 21 %, EU/export anglicky v EUR) k vystavení ve FakturaOnline.cz. Databáze odběratelů, ceník a evidence čísel jsou ve `fakturace/`, archiv vydaných faktur v `examples/faktury/` a hotové podklady jdou do `vystupy/faktury/`.
 - `prompts/clanky-portu.md` — master prompt pro články do Portu Magazínu (vstupní proměnné, rešerše, struktura, styl, produktové napojení, compliance, sebekontrola).
 
 ## Styl newsletteru Portu

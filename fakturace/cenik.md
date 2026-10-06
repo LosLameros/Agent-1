@@ -6,6 +6,13 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 
 | Položka (přesný text na faktuře) | Cena | Odběratel | Poslední faktura |
 |---|---|---|---|
+| -delší hlaveň PzIII L60 | 19,00 | Attack HK s.r.o. | 26007 |
+| -kratší hlaveň PzIII L42 | 14,00 | Attack HK s.r.o. | 26007 |
+| -hlaveň LT-40 | 12,00 | Attack HK s.r.o. | 26007 |
+| Čep 8x30 | 11,00 | MyJa Tech s.r.o. | 26010 |
+| Me 410 | 452,00 | HPH models, s.r.o. | 26009 |
+| FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
+| Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |
 | Hlava knypliku V5 | 42,00 | JETI model s.r.o. | 26049 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |
 | Osa L40 | 80,00 | STRANKA s.r.o. | 26046 |

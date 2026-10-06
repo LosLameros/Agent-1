@@ -78,7 +78,7 @@ Tyto poznámky odliš od zbytku podkladu a připiš, že je má uživatel jednou
 
 1. **Odběratel:** najdi ho v `zakaznici.md`, i podle zkratky nebo kontaktní osoby („Raška“ = JETI model). Pokud tam není, vyžádej si název, adresu, IČO/DIČ, zemi a splatnost. Po vystavení faktury ho do databáze přidej. Pokud u odběratele chybí IČO/DIČ a jde o firmu, upozorni na to dřív, než podklad dopíšeš.
 2. **Číslo faktury:** vezmi poslední číslo z `vydane-faktury.md` a přičti 1. Evidence zatím není kompletní, proto **číslo vždy uveď jako návrh a nech si ho potvrdit** („Poslední evidované je 26049. Mám použít 26050?“). Na přelomu roku začni řadu `RR001`.
-3. **Data:** datum vystavení = dnes, pokud uživatel neřekne jinak. Splatnost podle odběratele (výchozí 10 dní, VenPor 30, H.G. Hannant 14). Datum je ve formátu `DD. MM. RRRR`.
+3. **Data:** datum vystavení = dnes, pokud uživatel neřekne jinak. Splatnost podle odběratele (výchozí 10 dní, VenPor 30, H.G. Hannant a Attack HK 14). Datum je ve formátu `DD. MM. RRRR`.
 4. **Položky:** text položky přesně podle `cenik.md`, protože se musí shodovat s předchozími fakturami. Cenu ber z ceníku. Když ji uživatel zadá jinou, použij jeho a upozorni na rozdíl oproti ceníku. Pořadí MTC položek je podle kódu vzestupně, doprava je vždy poslední řádek.
 5. **Výpočet:** nikdy nepočítej z hlavy. Všechny částky spočítej v Bashi přes Python s `decimal.Decimal` a zaokrouhlením `ROUND_HALF_UP` na 2 desetinná místa. CZ: základ = množství × cena, DPH = základ × 0,21 po řádcích, celkem = základ + DPH. Pak zkontroluj, že součet řádků sedí s rekapitulací.
 6. **Výstup:** ulož podklad do `vystupy/faktury/<číslo>-<odběratel-bez-diakritiky>.md` ve formátu níže a v odpovědi ukaž celé jeho znění.

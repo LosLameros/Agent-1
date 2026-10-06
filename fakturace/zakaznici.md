@@ -27,12 +27,14 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Faktury:** zatím žádná v podkladech
 - **Poznámky:** Předvolba 618 neodpovídá běžnému českému mobilnímu číslu. Telefon ověřit.
 
-## HPH models s.r.o.
+## HPH models, s.r.o.
 - **Kontakt:** Hodan · tel. 777 304 120 · e-mail neúplný (začíná `jirka@h`)
-- **Adresa:** Čáslavská 257, 284 01 Kutná Hora, Česká republika
-- **IČO:** 27221334 · **DIČ:** chybí (u s.r.o. plátce DPH bývá CZ27221334, ale ověřit)
-- **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
+- **Adresa (na faktuře):** Čáslavská 257, Karlov, 284 01 Kutná Hora, Česká republika
+- **IČO:** 27221334 · **DIČ:** CZ27221334
+- **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** na faktuře 26009 nebyla
+- **Fakturované položky:** Me 410 – 452,00 Kč · FW 189 – 183,00 Kč · Ta 154 – 306,00 Kč (vše za ks bez DPH)
+- **Faktury:** 26009 (20. 02. 2026, 16 308,38 Kč s DPH)
+- **Poznámky:** Oficiální název je s čárkou („HPH models, s.r.o.“). V tabulce zákazníků je bez ní.
 
 ## Owl models s.r.o.
 - **Kontakt:** Hobža · tel. 603 728 096 · e-mail neúplný (začíná `owl@ow`)
@@ -74,21 +76,23 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Faktury:** 26048 (09. 09. 2026, 300 ks, 21 780,00 Kč s DPH)
 - **Poznámky:** Na faktuře jsou uvedené i kontaktní údaje (e-mail a web). Zachovat.
 
-## Attack HK
+## Attack HK s.r.o.
 - **Kontakt:** e-mail neúplný (začíná `obchod`)
-- **Adresa:** Kodymova 2539/8, Stodůlky, 158 00 Praha 5, Česká republika
-- **IČO / DIČ / právní forma:** chybí
-- **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
-- **Poznámky:** Bez IČO nejde ověřit, kdo je skutečný odběratel (obchodní název ≠ firma). Před první fakturou doplnit.
+- **Adresa (na faktuře):** Kodymova 2539/8, Stodůlky, 158 00 Praha, Česká republika
+- **IČO:** 03750566 · **DIČ:** CZ03750566
+- **Režim:** CZ · **Splatnost:** 14 dní · **Doprava:** na faktuře 26007 nebyla
+- **Fakturované položky:** -delší hlaveň PzIII L60 – 19,00 Kč · -kratší hlaveň PzIII L42 – 14,00 Kč · -hlaveň LT-40 – 12,00 Kč (vše za ks bez DPH)
+- **Faktury:** 26007 (04. 02. 2026, 2 250 ks, 40 837,50 Kč s DPH)
+- **Poznámky:** Na faktuře je „158 00 Praha“, v tabulce „Praha 5“. Na fakturu patří verze z faktury. Popisy položek začínají pomlčkou, protože jsou tak i na faktuře 26007. Pokud to byl jen podseznam pod chybějícím nadpisem, je potřeba se zeptat uživatele.
 
 ## MyJa Tech s.r.o.
 - **Kontakt:** e-mail neúplný (začíná `info@m`)
-- **Adresa:** Libomyšl 55, 267 23 Libomyšl, Česká republika
-- **IČO:** 02566435 · **DIČ:** CZ02566435
-- **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
-- **Poznámky:** V tabulce je IČO „2566435“, protože tabulka zahodila úvodní nulu. IČO má vždy 8 číslic a odpovídá DIČ CZ02566435.
+- **Adresa:** Libomyšl 55, 267 23 Libomyšl, Česká republika (na faktuře 26010 je „55, Libomyšl / 26723 Libomyšl“)
+- **IČO:** 02566435 · **DIČ:** CZ02566435 (potvrzeno fakturou 26010)
+- **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** na faktuře 26010 nebyla
+- **Fakturované položky:** Čep 8x30 – 11,00 Kč/ks bez DPH
+- **Faktury:** 26010 (20. 02. 2026, 2 000 ks, 26 620,00 Kč s DPH)
+- **Poznámky:** V tabulce je IČO „2566435“, protože tabulka zahodila úvodní nulu. Správně je 02566435.
 
 ## STRANKA s.r.o.
 - **Adresa:** Tylova 1347/14, Předměstí, 412 01 Litoměřice, Česká republika

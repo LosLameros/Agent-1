@@ -10,6 +10,8 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | -kratší hlaveň PzIII L42 | 14,00 | Attack HK s.r.o. | 26007 |
 | -hlaveň LT-40 | 12,00 | Attack HK s.r.o. | 26007 |
 | Čep 8x30 | 11,00 | MyJa Tech s.r.o. | 26010 |
+| Čep L131 | 27,00 | MyJa Tech s.r.o. | 26054 |
+| Rolna | 24,00 | MyJa Tech s.r.o. | 26054 |
 | Me 410 | 452,00 | HPH models, s.r.o. | 26009 |
 | FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
 | Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |

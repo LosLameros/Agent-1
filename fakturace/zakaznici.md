@@ -95,8 +95,8 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Adresa:** Libomyšl 55, 267 23 Libomyšl, Česká republika (na faktuře 26010 je „55, Libomyšl / 26723 Libomyšl“)
 - **IČO:** 02566435 · **DIČ:** CZ02566435 (potvrzeno fakturou 26010)
 - **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** na faktuře 26010 nebyla
-- **Fakturované položky:** Čep 8x30 – 11,00 Kč/ks bez DPH
-- **Faktury:** 26010 (20. 02. 2026, 2 000 ks, 26 620,00 Kč s DPH)
+- **Fakturované položky:** Čep 8x30 – 11,00 Kč · Čep L131 – 27,00 Kč · Rolna – 24,00 Kč (za ks bez DPH)
+- **Faktury:** 26010 (20. 02. 2026, 26 620,00 Kč s DPH) · 26054 (07. 10. 2026, 18 513,00 Kč s DPH)
 - **Poznámky:** V tabulce je IČO „2566435“, protože tabulka zahodila úvodní nulu. Správně je 02566435.
 
 ## STRANKA s.r.o.

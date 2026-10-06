@@ -1,0 +1,17 @@
+{
+  "cislo": "26054",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-10-07",
+  "duzp": "2026-10-07",
+  "splatnost_dni": 10,
+  "odberatel": {
+    "nazev": "MyJa Tech s.r.o.",
+    "adresa": ["55, Libomyšl", "26723 Libomyšl", "Česká republika"],
+    "ico": "02566435",
+    "dic": "CZ02566435"
+  },
+  "polozky": [
+    {"pocet": 300, "jednotka": "ks", "popis": "Čep L131", "cena": "27.00"},
+    {"pocet": 300, "jednotka": "ks", "popis": "Rolna", "cena": "24.00"}
+  ]
+}

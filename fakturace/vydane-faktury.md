@@ -5,7 +5,7 @@
 
 V roce 2025 byl dodavatel **neplátce DPH** (faktury „FAKTURA č.“ bez DPH), od roku 2026 je plátce. V dubnu 2025 měl adresu Malecí 852, 549 01 Nové Město nad Metují.
 
-Evidence zatím není úplná. Z roku 2025 jsou jen 25012 a 25043. V roce 2026 chybí 26001–26006, 26008, 26011–26037, 26039–26041, 26043–26045, 26047 a případné faktury z FakturaOnline vystavené po 26049.
+Evidence zatím není úplná. Z roku 2025 jsou jen 25012 a 25043. V roce 2026 chybí 26001–26006, 26008, 26011–26037, 26039–26041, 26043–26045, 26047 a 26050–26052. Čísla 26050–26052 uživatel vystavil mimo tento repozitář (číslo 26053 určil sám).
 **Před vystavením nové faktury si vždy nech potvrdit poslední použité číslo**, dokud nebude evidence kompletní.
 
 | Číslo | Vystaveno | Splatnost | Odběratel | Režim | Celkem | Stav |
@@ -20,4 +20,4 @@ Evidence zatím není úplná. Z roku 2025 jsou jen 25012 a 25043. V roce 2026 c
 | 26046 | 02. 09. 2026 | 12. 09. 2026 | STRANKA s.r.o. | CZ | 13 597,98 Kč | archiv |
 | 26048 | 09. 09. 2026 | 09. 10. 2026 | VenPor s.r.o. | CZ | 21 780,00 Kč | archiv |
 | 26049 | 21. 09. 2026 | 01. 10. 2026 | JETI model s.r.o. | CZ | 50 820,00 Kč | archiv |
-| 26050 | 06. 10. 2026 | 16. 10. 2026 | JETI model s.r.o. | CZ | 55 539,00 Kč | vytvořeno (nastroje/faktura.py) |
+| 26053 | 07. 10. 2026 | 14. 10. 2026 | JETI model s.r.o. | CZ | 55 539,00 Kč | vytvořeno (nastroje/faktura.py) |

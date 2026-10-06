@@ -13,8 +13,8 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | Me 410 | 452,00 | HPH models, s.r.o. | 26009 |
 | FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
 | Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |
-| Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26050 |
-| Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26050 |
+| Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26053 |
+| Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26053 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |
 | Osa L40 | 80,00 | STRANKA s.r.o. | 26046 |
 | Osa L45 | 74,00 | STRANKA s.r.o. | 26046 |

@@ -170,6 +170,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 - **Časové okno:** Výkonnost (indexy, třídy aktiv, kurzy, komodity) měř k hranicím {OD} a {DO}. Události mimo okno zmiňuj jen jako nezbytný kontext (navázání na {PŘEDCHŮDCE}) nebo ve výhledu. Pokud od konce kvartálu uplynulo jen pár dní a některá data ještě nejsou k dispozici, označ je [DOPLNIT].
 - **Paywall:** Bloomberg, Financial Times a Wall Street Journal bývají za paywallem. Číslo pak ověř z dostupného zdroje ze seznamu – primárně z instituce, která ho vydala, jinak z Trading Economics, Patria Finance nebo Yahoo Finance. Teprve když ho nenajdeš nikde v seznamu, označ [DOPLNIT].
 - Když se zdroje v číslech rozcházejí, upřednostni primární nebo renomovaný zdroj a rozpor zohledni opatrnou formulací.
+- **Ceny k datu ber jako závěrečné (uzavírací) ceny dne**, ne intradenní. Média často citují cenu z rána nebo kontrakt, který právě končí (u ropy Brent se kontrakty střídají ke konci měsíce). Příklad: 30. 9. 2026 se Brent ráno obchodoval kolem 102,5 USD, ale den uzavřel na 98,03 USD. Při rozporu uveď závěrečnou cenu a rozpor zmiň v poznámkách pro autora.
 
 ---
 
@@ -181,6 +182,12 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
    - Nesmí opakovat ani parafrázovat titulky předchozích zpráv (seznam v kapitole 10).
    - Vyhni se motivu „maxim/rekordů", pokud to není opravdu hlavní příběh – tři z pěti posledních titulků ho už použily.
 3. **Úvodní otázka a 4 odrážky:** otázka ve znění „{Pořadové číslo slovem} čtvrtletí roku {RRRR} je za námi. Jaké bylo a jak na něj budou investoři vzpomínat?" (u 4Q viz kapitola 0) a 4 odrážky. Odrážky jsou **přesně** názvy 4 tematických kapitol.
+   - **Pravidla pro odrážky a názvy kapitol** (vyplynula z připomínek ke zprávě za 3Q 2026):
+     - **Žádná konkrétní čísla** (ceny, procenta, roky typu „nad sto dolarů“, „nejvýše od roku 2007“). Čísla patří do textu kapitoly, kde je lze uvést přesně a v kontextu.
+     - **Musí platit pro celé čtvrtletí a jeho konec, ne jen pro krátkou epizodu.** Když byla ropa nad 100 dolary jen pár týdnů, nadpis „Ropa nad sto dolary“ je zavádějící. Lépe popiš příčinu a směr („Blízký východ znovu zdražil ropu“).
+     - **Nezobecňuj dílčí údaj na celou kategorii.** Rekord 10letého amerického výnosu neopravňuje k nadpisu „Výnosy dluhopisů nejvýše od…“, protože to neplatí pro evropské dluhopisy. Nadpis formuluj tak, aby platil pro celou kategorii („Dluhopisy pod tlakem vyšších sazeb“), konkrétní údaj dej do textu.
+     - Pojmenuj **příčinu a následek** srozumitelně, bez poplašných slov („šok“, „krach“) a bez kopírování stavby nadpisů z minulých zpráv (např. „Těžké čtvrtletí pro…“ podle „Špatné čtvrtletí pro zlato“).
+     - Vzor dobře přijatých odrážek (3Q 2026): „Blízký východ znovu zdražil ropu“ · „Centrální banky šláply na brzdu“ · „Dluhopisy pod tlakem vyšších sazeb“ · „Zisky firem drží akcie nad vodou“.
 4. **Úvodní odstavce (3):** shrnutí nálady kvartálu a navázání na stav z konce {PŘEDCHŮDCE}. Bez konkrétních čísel.
 5. **Graf: Zhodnocení vybraných tříd aktiv: {Q} {RRRR}** (příloha).
    - Okomentuj americké, evropské a japonské akcie, EUR korporátní dluhopisy, US krátkodobé a dlouhodobé dluhopisy a zlato.

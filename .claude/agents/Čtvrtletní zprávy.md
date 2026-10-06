@@ -240,6 +240,12 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 - Bez literárních a vágních obratů („poplatný přání", „hraje do karet", „dává tušit"). Piš přímo a konkrétně.
 - Žádné vágní časové údaje („nejvýše za několik let"). Dohledej a uveď konkrétní rok („nejvýše od roku 2022").
 - Názvy kapitol se nesmí opakovat z předchozích zpráv. Například „Nastavení měnového zajištění neměníme" je vyřazené.
+- **Přesnost formulací** (poučení z připomínek ke zprávě za 3Q 2026):
+  - **Rozlišuj skutečný vývoj a obavy z něj.** Obecná věta v úvodu (bez čísel) musí platit pro všechny regiony, o kterých mluví. Když inflace v USA klesala a v eurozóně rostla, nepiš „dražší energie vrátily do hry inflaci“, ale „vrátily do hry obavy z inflace“.
+  - **„V řadě“ používej jen pro opravdu po sobě jdoucí události** (zasedání, čtvrtletí). Když ECB zvýšila sazby v červnu, v červenci je nechala a v září znovu zvedla, nejde o „druhé zvýšení v řadě“, ale o „podruhé letos“.
+  - **Výsledkovou sezónu vždy časově zařaď, i v úvodu.** Sezóna zveřejněná během čtvrtletí se týká předchozího čtvrtletí, proto piš „výsledková sezóna za druhé čtvrtletí“, ne jen „výsledková sezóna“.
+  - **Související věty spojuj spojkou, ne jen čárkou.** Dvě věty o společném vývoji (např. Fed a ECB zvyšují sazby) spoj „a“, aby se nečetly jako dvě nesouvisející zprávy: „Fed poprvé po třech letech zvýšil sazby a ECB je letos zvedla už podruhé.“
+  - Po dopsání si každou větu úvodu přečti s otázkou: platí to přesně, pro všechny zmíněné regiony a pro celé čtvrtletí?
 - **Formát čísel:** desetinná čárka a mezera před procenty („5,8 %"), rozpětí s pomlčkou („3,50–3,75 %"), změny sazeb v procentních bodech („o 0,25 procentního bodu"), ceny komodit slovy měny („110 dolarů za barel", „4 000 dolarů za unci"), data „17. června".
 - **Pojmy Portu:** „Portfolia od Portu" (produkt), „rizikový profil", v grafu „Portfolio s rizikovostí #3". Oslovení čtenáře „naši klienti", „investoři", „vy" jen v závěru evaluace.
 - Zachovej osvědčené prvky vzorových zpráv: odkazy na Portu Magazín ve tvaru „zde", přehledová tabulka obchodních dohod nebo cel, pokud je téma aktuální, a uklidňující závěr pro pasivní investory.

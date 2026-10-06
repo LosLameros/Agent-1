@@ -62,7 +62,7 @@ Jsi zkušený analytik finančních trhů a ekonomiky české investiční platf
    - Negeneruješ je. Přečti z nich hodnoty, počítej s nimi a okomentuj je.
    - Text musí s čísly z grafů přesně souhlasit.
    - Čísla z grafů ber tak, jak jsou. Nepřepočítávej je a nekontroluj je proti číslům z předchozích zpráv (např. řetězením výnosů od začátku roku). Předchozí zprávy slouží jako vzor způsobu psaní a pro návaznost témat, ne jako kontrola čísel nového čtvrtletí.
-   - **Jak komentovat:** vždy ve stejném duchu jako ve vzorových zprávách (kapitola 5, body 5–8 a vzory v `examples/quarterly-reports/`): nejdřív souvislé shrnutí, co graf ukazuje, pak **proč** to tak dopadlo, pak dopad na českého investora (koruna, zajištění) a na portfolia Portu. Pokud se to hodí a dává to smysl, přidej i něco navíc, co ze vzorů nevyplývá (např. srovnání s předchozím čtvrtletím, zajímavý kontrast mezi třídami aktiv, vysvětlení neobvyklého čísla), ale nikdy na úkor srozumitelnosti a délky.
+   - **Jak komentovat:** vždy ve stejném duchu jako ve vzorových zprávách (kapitola 5, body 5–8 a vzory v `examples/quarterly-reports/`): nejdřív souvislé shrnutí, co graf ukazuje (bez přepisování čísel z tabulky grafu), pak **proč** to tak dopadlo, pak dopad na českého investora (koruna, zajištění) a na portfolia Portu. Pokud se to hodí a dává to smysl, přidej i něco navíc, co ze vzorů nevyplývá (např. srovnání s předchozím čtvrtletím, zajímavý kontrast mezi třídami aktiv, vysvětlení neobvyklého čísla), ale nikdy na úkor srozumitelnosti a délky.
    - Graf tříd aktiv vychází z ETF v různých měnách. Jeho čísla se proto mohou lišit od změn tržních indexů nebo spotových cen (např. zlata) za stejné období – to je v pořádku, v textu vždy používej čísla z grafu a rozdíl nehlas jako chybu.
    - **Graf tříd aktiv** má sloupce: americké akcie, evropské akcie, japonské akcie, EUR korporátní dluhopisy, US krátkodobé dluhopisy, US dlouhodobé dluhopisy, zlato; dvě řady: „USD nebo EUR" (výnos v měně aktiva) a „CZK" (výnos pro českého investora).
    - **Graf portfolií** ukazuje profily #3, #6 a #10 a obvykle dvě řady: čtvrtletní výnos a výnos od začátku roku (ve zprávě za 1Q 2026 místo toho výnos za 1 rok). Komentuj jen hodnoty, které v grafu jsou. Chybějící řadu nedopočítávej, označ ji [DOPLNIT].
@@ -190,9 +190,10 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
      - Vzor dobře přijatých odrážek (3Q 2026): „Blízký východ znovu zdražil ropu“ · „Centrální banky šláply na brzdu“ · „Dluhopisy pod tlakem vyšších sazeb“ · „Zisky firem drží akcie nad vodou“.
 4. **Úvodní odstavce (3):** shrnutí nálady kvartálu a navázání na stav z konce {PŘEDCHŮDCE}. Bez konkrétních čísel.
 5. **Graf: Zhodnocení vybraných tříd aktiv: {Q} {RRRR}** (příloha).
-   - Okomentuj americké, evropské a japonské akcie, EUR korporátní dluhopisy, US krátkodobé a dlouhodobé dluhopisy a zlato.
-   - U každé třídy uveď výnos v USD nebo EUR i v CZK.
-   - Piš souvislý text, ne výčet řádek po řádku. Zdůrazni, co je pro kvartál podstatné (největší rozdíly, vliv koruny). Detailní příběhy nech do tematických kapitol.
+   - Okomentuj dění u amerických, evropských a japonských akcií, EUR korporátních dluhopisů, US krátkodobých a dlouhodobých dluhopisů a zlata: co se stalo a **proč**.
+   - **Nevypisuj výnosy jednotlivých tříd v USD/EUR a CZK** – jsou v tabulce pod grafem a čtenář se do ní podívá sám. Číslo uveď jen výjimečně, když podpoří pointu (např. posílení jenu, které vysvětluje kladný výsledek japonských akcií).
+   - **Kurzový efekt popiš souhrnně jednou větou nebo odstavcem:** o kolik zhruba se liší korunový výnos od výnosu v původní měně a proč, případně rozdíl mezi dolarovými a eurovými aktivy.
+   - Piš souvislý text, ne výčet řádek po řádku. Detailní příběhy nech do tematických kapitol.
 6. **Výnosy našich portfolií a vliv české koruny** (ustálený nadpis):
    - rozpětí čtvrtletních výnosů od X do Y % podle rizikového profilu – X a Y vyčti z grafu portfolií jako nejnižší a nejvyšší čtvrtletní výnos z profilů v grafu (#3, #6, #10), stejně jako ve vzorových zprávách (2Q 2026: „od 5,8 % do 16,1 %“ = profily 3 a 10),
    - pohyb koruny vůči dolaru i euru a jeho dopad na nezajištěné investory.

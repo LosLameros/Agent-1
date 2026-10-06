@@ -56,8 +56,6 @@ HALER = Decimal("0.01")
 INK = HexColor("#111827")      # hlavní text
 MUTED = HexColor("#6B7280")    # popisky
 LINE = HexColor("#E5E7EB")     # vlasové linky
-ACCENT = HexColor("#135C9E")   # modrá z původních faktur, o odstín sytější
-ACCENT_SOFT = HexColor("#EFF4FA")
 
 PAGE_W, PAGE_H = A4
 OKRAJ = 40
@@ -65,32 +63,28 @@ SIRKA = PAGE_W - 2 * OKRAJ
 
 TEXTY = {
     "CZ": {
-        "druh": "FAKTURA – DAŇOVÝ DOKLAD", "cislo": "č. {}",
+        "titulek": "FAKTURA - DAŇOVÝ DOKLAD č. {}", "evidencni": "Evidenční č. {}",
         "dodavatel": "DODAVATEL", "odberatel": "ODBĚRATEL", "ico": "IČO", "dic": "DIČ",
-        "platce": "Plátce DPH", "kontakt": "Kontakt",
-        "ucet": "Číslo účtu", "forma": "Forma úhrady",
+        "platce": "Plátce DPH", "kontakt": "Kontaktní údaje",
+        "platebni": "Platební údaje", "ucet": "Číslo účtu", "forma": "Forma úhrady",
         "prevod": "Převodem", "vs": "Variabilní symbol", "qr": "QR Platba + F",
         "vystaveni": "Datum vystavení", "splatnost": "Datum splatnosti", "duzp": "Datum zd. plnění",
-        "splatnost_kratce": "Splatnost {}",
-        "pocet": "POČET", "popis": "POPIS", "cena": "JEDN. CENA", "sazba": "DPH %",
-        "zaklad": "ZÁKLAD", "dph": "DPH", "celkem": "CELKEM",
-        "rekap_sazba": "Sazba DPH", "rekap_zaklad": "Základ", "rekap_dph": "DPH", "rekap_celkem": "Celkem",
+        "pocet": "Počet", "popis": "Popis", "cena": "Jedn. cena", "sazba": "Sazba DPH",
+        "zaklad": "Základ daně", "dph": "DPH", "celkem": "Celkem", "zaklad_r": "Základ",
         "k_uhrade": "Celkem k úhradě", "vystavil": "Vystavil(a) {}", "strana": "Strana {} z {}",
-        "titul_pdf": "Faktura - daňový doklad č. {}",
     },
     "EN": {
-        "druh": "INVOICE", "cislo": "No. {}",
+        "titulek": "INVOICE no. {}", "evidencni": None,
         "dodavatel": "SUPPLIER", "odberatel": "CUSTOMER", "ico": "Company ID", "dic": "VAT ID",
         "platce": "VAT registered", "kontakt": "Contact",
-        "ucet": "IBAN", "forma": "Payment method",
+        "platebni": "Payment info", "ucet": "IBAN", "forma": "Payment method",
         "prevod": "Bank transfer", "vs": "Variable symbol", "qr": "SEPA payment",
         "vystaveni": "Issue date", "splatnost": "Due date", "duzp": "Date of taxable supply",
-        "splatnost_kratce": "Due {}",
-        "pocet": "QTY", "popis": "DESCRIPTION", "cena": "UNIT PRICE", "celkem": "TOTAL",
+        "pocet": "Quantity", "popis": "Description", "cena": "Unit price", "celkem": "Total",
         "k_uhrade": "Total due", "vystavil": "Issued by {}", "strana": "Page {} of {}",
-        "titul_pdf": "Invoice no. {}",
     },
 }
+
 
 POZNAMKA_DPH = {
     "EU": "VAT exempt – intra-Community supply of goods (Art. 138 Directive 2006/112/EC, § 64 Czech VAT Act).",
@@ -248,6 +242,15 @@ def epc(f, dod, celkem):
 
 
 # --- grafické bloky ------------------------------------------------------
+# Rozvržení odpovídá fakturám z FakturaOnline (vzory v examples/faktury/),
+# jen s většími a tmavšími písmy a QR kódem vykresleným jako jedna vektorová cesta.
+
+MODRA = HexColor("#0F5A8C")    # pruhy jako na vzoru
+NADPIS = HexColor("#1B6CA8")   # DODAVATEL / ODBĚRATEL
+EVID = HexColor("#8A94A6")
+PRUH = HexColor("#F4F6F9")
+POPISEK_V_PRUHU = HexColor("#C9DBEA")
+
 
 def nakresli_qr(c, data, x, y, size):
     """QR jako jedna vektorová cesta – bez světlých spár mezi moduly, ostrý v každém prohlížeči."""
@@ -272,102 +275,86 @@ def nakresli_qr(c, data, x, y, size):
     c.restoreState()
 
 
-class Hlavicka(Flowable):
-    """Druh dokladu a číslo vlevo, částka k úhradě a splatnost vpravo."""
+class PlatebniPas(Flowable):
+    """Modrý pás s platebními údaji a QR kódem, vpravo od něj data."""
 
-    def __init__(self, t, cislo, castka, splatnost):
+    def __init__(self, t, ucet, cislo, qr_data, data_radky):
         super().__init__()
-        self.t, self.cislo, self.castka, self.splatnost = t, cislo, castka, splatnost
-        self.width, self.height = SIRKA, 58
+        self.t, self.ucet, self.cislo = t, ucet, cislo
+        self.qr_data, self.data_radky = qr_data, data_radky
+        self.width, self.height = SIRKA, 108
 
     def draw(self):
-        c, h = self.canv, self.height
-        c.setFillColor(ACCENT)
-        c.setFont("FM", 8)
-        c.drawString(0, h - 8, self.t["druh"], charSpace=1.2)
-        c.setFillColor(INK)
-        c.setFont("FB", 26)
-        c.drawString(0, h - 40, self.t["cislo"].format(self.cislo))
-        c.setFillColor(MUTED)
-        c.setFont("F", 8)
-        c.drawRightString(SIRKA, h - 8, self.t["k_uhrade"])
-        c.setFillColor(INK)
-        c.setFont("FB", 20)
-        c.drawRightString(SIRKA, h - 34, self.castka)
-        c.setFillColor(MUTED)
-        c.setFont("F", 8)
-        c.drawRightString(SIRKA, h - 50, self.t["splatnost_kratce"].format(self.splatnost))
+        c, h, t = self.canv, self.height, self.t
+        pas_r = SIRKA * 0.78
+        c.setFillColor(MODRA)
+        c.rect(-OKRAJ, 0, OKRAJ + pas_r, h, stroke=0, fill=1)
 
-
-class Linka(Flowable):
-    def __init__(self, barva=LINE, tloustka=0.6):
-        super().__init__()
-        self.barva, self.tloustka = barva, tloustka
-        self.width, self.height = SIRKA, self.tloustka
-
-    def draw(self):
-        self.canv.setStrokeColor(self.barva)
-        self.canv.setLineWidth(self.tloustka)
-        self.canv.line(0, 0, SIRKA, 0)
-
-
-class PlatebniKarta(Flowable):
-    """Světlá karta: účet, VS, forma úhrady, data a QR kód."""
-
-    def __init__(self, t, ucet, cislo, d_vyst, d_splat, d_duzp, qr_data):
-        super().__init__()
-        self.t, self.qr_data = t, qr_data
-        self.bunky = [
-            [(t["ucet"], ucet), (t["vs"], str(cislo)), (t["forma"], t["prevod"])],
-            [(t["vystaveni"], d_vyst), (t["splatnost"], d_splat), (t["duzp"], d_duzp)],
-        ]
-        self.width, self.height = SIRKA, 112
-
-    def draw(self):
-        c, h = self.canv, self.height
-        c.setFillColor(ACCENT_SOFT)
-        c.roundRect(0, 0, SIRKA, h, 8, stroke=0, fill=1)
-        qr_box, qr_size = 88, 78
-        bx, by = SIRKA - qr_box - 12, h - qr_box - 10
         c.setFillColor(white)
-        c.roundRect(bx, by, qr_box, qr_box, 6, stroke=0, fill=1)
-        nakresli_qr(c, self.qr_data, bx + (qr_box - qr_size) / 2, by + (qr_box - qr_size) / 2, qr_size)
-        c.setFillColor(MUTED)
-        c.setFont("FM", 6.5)
-        c.drawCentredString(bx + qr_box / 2, 6, self.t["qr"])
-        sloupec = (bx - 18 - 12) / 3
-        for r, radek in enumerate(self.bunky):
-            y = h - 24 - r * 44
-            for i, (label, hodnota) in enumerate(radek):
-                x = 18 + i * sloupec
-                c.setFillColor(MUTED)
-                c.setFont("F", 7)
-                c.drawString(x, y, label)
-                c.setFillColor(INK)
-                c.setFont("FB", 10)
-                c.drawString(x, y - 15, hodnota)
+        c.setFont("FB", 9)
+        c.drawString(0, h - 24, t["platebni"])
+        radky = [((t["ucet"], self.ucet), (t["forma"], t["prevod"])),
+                 (None, (t["vs"], str(self.cislo)))]
+        sirka = pdfmetrics.stringWidth
+        sl1 = [r[0] for r in radky if r[0]]
+        sl2 = [r[1] for r in radky]
+        x1v = max(sirka(l, "F", 8.5) for l, _ in sl1) + 10
+        x2l = x1v + max(sirka(v, "FB", 9) for _, v in sl1) + 22
+        x2v = x2l + max(sirka(l, "F", 8.5) for l, _ in sl2) + 10
+        for i, (vlevo, vpravo) in enumerate(radky):
+            y = h - 44 - i * 17
+            for x_l, x_v, par in ((0, x1v, vlevo), (x2l, x2v, vpravo)):
+                if not par:
+                    continue
+                c.setFillColor(POPISEK_V_PRUHU)
+                c.setFont("F", 8.5)
+                c.drawString(x_l, y, par[0])
+                c.setFillColor(white)
+                c.setFont("FB", 9)
+                c.drawString(x_v, y, par[1])
+
+        qr_size, pad, popisek = 74, 5, 10
+        box_w = qr_size + 2 * pad
+        bx = pas_r - box_w - 8
+        by = (h - box_w - popisek) / 2
+        c.setFillColor(white)
+        c.roundRect(bx, by, box_w, box_w + popisek, 3, stroke=0, fill=1)
+        nakresli_qr(c, self.qr_data, bx + pad, by + popisek + pad, qr_size)
+        c.setFillColor(INK)
+        c.setFont("F", 6)
+        c.drawCentredString(bx + box_w / 2, by + 4, t["qr"])
+
+        dx = pas_r + 14
+        y = h - 22
+        for label, hodnota in self.data_radky:
+            c.setFillColor(MUTED)
+            c.setFont("F", 7.5)
+            c.drawString(dx, y, label)
+            c.setFillColor(INK)
+            c.setFont("FB", 9.5)
+            c.drawString(dx, y - 12, hodnota)
+            y -= 31
 
 
-class CelkemBlok(Flowable):
-    def __init__(self, label, castka, sirka=270):
+class CelkemPas(Flowable):
+    def __init__(self, label, castka):
         super().__init__()
         self.label, self.castka = label, castka
-        self.blok = sirka
-        self.width, self.height = SIRKA, 46
+        self.width, self.height = SIRKA, 42
 
     def draw(self):
         c = self.canv
-        x = SIRKA - self.blok
-        c.setFillColor(ACCENT)
-        c.roundRect(x, 0, self.blok, self.height, 8, stroke=0, fill=1)
+        x = SIRKA * 0.53
+        c.setFillColor(MODRA)
+        c.rect(x, 0, SIRKA - x + OKRAJ, self.height, stroke=0, fill=1)
         c.setFillColor(white)
-        c.setFont("FM", 9)
-        c.drawString(x + 16, 18, self.label)
-        c.setFont("FB", 16)
-        c.drawRightString(SIRKA - 16, 16, self.castka)
+        c.setFont("FB", 12)
+        c.drawString(x + 14, 15, self.label)
+        c.setFont("FB", 13.5)
+        c.drawRightString(SIRKA, 15, self.castka)
 
 
-def pata_factory(t, dod):
+def pata_factory(t, jmeno):
     class CislovanyCanvas(pdfcanvas.Canvas):
         def __init__(self, *a, **kw):
             super().__init__(*a, **kw)
@@ -381,16 +368,10 @@ def pata_factory(t, dod):
             n = len(self._stavy)
             for stav in self._stavy:
                 self.__dict__.update(stav)
-                self.setFillColor(ACCENT)
-                self.rect(0, PAGE_H - 6, PAGE_W, 6, stroke=0, fill=1)
-                self.setStrokeColor(LINE)
-                self.setLineWidth(0.6)
-                self.line(OKRAJ, 46, PAGE_W - OKRAJ, 46)
-                self.setFont("F", 7)
+                self.setFont("F", 7.5)
                 self.setFillColor(MUTED)
-                self.drawString(OKRAJ, 32, t["vystavil"].format(dod["jmeno"]) +
-                                f"  ·  {t['ico']} {dod['ico']}  ·  {t['dic']} {dod['dic']}")
-                self.drawRightString(PAGE_W - OKRAJ, 32, t["strana"].format(self._pageNumber, n))
+                self.drawString(OKRAJ, 30, t["vystavil"].format(jmeno))
+                self.drawCentredString(PAGE_W / 2, 30, t["strana"].format(self._pageNumber, n))
                 super().showPage()
             super().save()
     return CislovanyCanvas
@@ -424,113 +405,114 @@ def vytvor(f, dod, vystup):
         qr_data = epc(f, dod, celkem)
         castka = f"€{fmt(celkem)}"
 
-    def st(name, font="F", size=8.5, leading=12.5, color=INK, **kw):
+    def st(name, font="F", size=9, leading=13, color=INK, **kw):
         return ParagraphStyle(name, fontName=font, fontSize=size, leading=leading, textColor=color, **kw)
 
     s_txt = st("txt")
-    s_muted = st("muted", color=MUTED, size=8)
-    s_label = st("label", font="FM", size=7, leading=10, color=ACCENT)
-    s_name = st("name", font="FB", size=11, leading=15)
-    s_th = st("th", font="FM", size=6.8, leading=9, color=MUTED)
-    s_thr = st("thr", font="FM", size=6.8, leading=9, color=MUTED, alignment=TA_RIGHT)
+    s_b = st("b", font="FB")
+    s_head = st("head", font="FB", size=15, leading=19, color=NADPIS)
+    s_titul = st("titul", font="FB", size=16, leading=20, alignment=TA_RIGHT)
+    s_evid = st("evid", font="FM", size=11, leading=15, color=EVID, alignment=TA_RIGHT)
+    s_th = st("th", font="FB", size=8, leading=11)
+    s_thr = st("thr", font="FB", size=8, leading=11, alignment=TA_RIGHT)
     s_td = st("td", size=8.5, leading=11.5)
     s_tdr = st("tdr", size=8.5, leading=11.5, alignment=TA_RIGHT)
-    s_tdmr = st("tdmr", font="FM", size=8.5, leading=11.5, alignment=TA_RIGHT)
-    s_rl = st("rl", size=8, leading=11, color=MUTED, alignment=TA_RIGHT)
-    s_rv = st("rv", size=8.5, leading=11, alignment=TA_RIGHT)
-    s_rb = st("rb", font="FB", size=8.5, leading=11, alignment=TA_RIGHT)
+    s_tdbr = st("tdbr", font="FB", size=8.5, leading=11.5, alignment=TA_RIGHT)
+    s_pozn = st("pozn", size=8.5, leading=12, color=MUTED)
 
     def idy(ico, dic):
         casti = []
         if ico:
-            casti.append(f"<font color='#6B7280'>{t['ico']}</font>&nbsp;&nbsp;<font name='FM'>{ico}</font>")
+            casti.append(f"<font name='FB'>{t['ico']}</font> {ico}")
         if dic:
-            casti.append(f"<font color='#6B7280'>{t['dic']}</font>&nbsp;&nbsp;<font name='FM'>{dic}</font>")
-        return Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".join(casti), s_txt)
+            casti.append(f"<font name='FB'>{t['dic']}</font> {dic}")
+        return Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;".join(casti), s_txt)
 
-    story = [Spacer(1, 6),
-             Hlavicka(t, f["cislo"], castka, datum_txt(d_splat)),
-             Spacer(1, 18), Linka(), Spacer(1, 18)]
+    story = [Paragraph(t["titulek"].format(f["cislo"]), s_titul)]
+    if t["evidencni"]:
+        story.append(Paragraph(t["evidencni"].format(f["cislo"]), s_evid))
+    story.append(Spacer(1, 24))
 
     zeme = dod["zeme_cz"] if cz else dod["zeme_en"]
-    dod_bl = [Paragraph(t["dodavatel"], s_label), Spacer(1, 5),
-              Paragraph(dod["jmeno"], s_name), Spacer(1, 2),
-              Paragraph(dod["ulice"], s_txt), Paragraph(dod["psc_mesto"], s_txt),
-              Paragraph(zeme, s_txt), Spacer(1, 7), idy(dod["ico"], dod["dic"])]
+    dod_bl = [Paragraph(t["dodavatel"], s_head), Spacer(1, 8),
+              Paragraph(dod["jmeno"], s_b), Paragraph(dod["ulice"], s_txt),
+              Paragraph(dod["psc_mesto"], s_txt), Paragraph(zeme, s_txt), Spacer(1, 8),
+              idy(dod["ico"], dod["dic"])]
     if dod.get("platce_dph"):
-        dod_bl.append(Paragraph(t["platce"], s_muted))
+        dod_bl.append(Paragraph(t["platce"], s_b))
     o = f["odberatel"]
-    odb_bl = [Paragraph(t["odberatel"], s_label), Spacer(1, 5),
-              Paragraph(o["nazev"], s_name), Spacer(1, 2)]
+    odb_bl = [Paragraph(t["odberatel"], s_head), Spacer(1, 8), Paragraph(o["nazev"], s_b)]
     odb_bl += [Paragraph(r, s_txt) for r in o["adresa"]]
     if o.get("ico") or o.get("dic"):
-        odb_bl += [Spacer(1, 7), idy(o.get("ico"), o.get("dic"))]
+        odb_bl += [Spacer(1, 8), idy(o.get("ico"), o.get("dic"))]
     if o.get("kontakt"):
-        odb_bl += [Paragraph(f"<font color='#6B7280'>{t['kontakt']}</font>&nbsp;&nbsp;{o['kontakt']}", s_txt)]
+        odb_bl += [Spacer(1, 8), Paragraph(t["kontakt"], s_b), Paragraph(o["kontakt"], s_txt)]
     strany = Table([[dod_bl, odb_bl]], colWidths=[SIRKA / 2, SIRKA / 2])
     strany.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
                                 ("LEFTPADDING", (0, 0), (-1, -1), 0),
-                                ("RIGHTPADDING", (0, 0), (-1, -1), 12)]))
-    story += [strany, Spacer(1, 22)]
+                                ("RIGHTPADDING", (0, 0), (-1, -1), 10)]))
+    story += [strany, Spacer(1, 34)]
 
+    data_radky = [(t["vystaveni"], datum_txt(d_vyst)), (t["splatnost"], datum_txt(d_splat)),
+                  (t["duzp"], datum_txt(d_duzp))]
     ucet = dod["ucet_czk"] if cz else dod["iban_eur"]
-    story += [PlatebniKarta(t, ucet, f["cislo"], datum_txt(d_vyst), datum_txt(d_splat),
-                            datum_txt(d_duzp), qr_data), Spacer(1, 22)]
+    story += [PlatebniPas(t, ucet, f["cislo"], qr_data, data_radky), Spacer(1, 14)]
 
     # položky
     if cz:
         hlavicka = [Paragraph(t["pocet"], s_th), Paragraph(t["popis"], s_th), Paragraph(t["cena"], s_thr),
                     Paragraph(t["sazba"], s_thr), Paragraph(t["zaklad"], s_thr), Paragraph(t["dph"], s_thr),
                     Paragraph(t["celkem"], s_thr)]
-        sloupce = [52, SIRKA - 360, 62, 44, 72, 62, 68]
+        sloupce = [54, SIRKA - 380, 62, 56, 76, 62, 70]
         data = [hlavicka] + [[
             Paragraph(f"{mnozstvi(r['pocet'])} {r['jednotka']}", s_td), Paragraph(r["popis"], s_td),
             Paragraph(fmt(r["cena"]), s_tdr), Paragraph(f"{DPH_SAZBA:.0f} %", s_tdr),
             Paragraph(fmt(r["zaklad"]), s_tdr), Paragraph(fmt(r["dph"]), s_tdr),
-            Paragraph(fmt(r["celkem"]), s_tdmr)] for r in radky]
+            Paragraph(fmt(r["celkem"]), s_tdr)] for r in radky]
     else:
         hlavicka = [Paragraph(t["pocet"], s_th), Paragraph(t["popis"], s_th),
                     Paragraph(t["cena"], s_thr), Paragraph(t["celkem"], s_thr)]
-        sloupce = [52, SIRKA - 52 - 70 - 74, 70, 74]
+        sloupce = [58, SIRKA - 58 - 70 - 74, 70, 74]
         data = [hlavicka] + [[
             Paragraph(f"{mnozstvi(r['pocet'])} {r['jednotka']}", s_td), Paragraph(r["popis"], s_td),
-            Paragraph(fmt(r["cena"]), s_tdr), Paragraph(fmt(r["celkem"]), s_tdmr)] for r in radky]
+            Paragraph(fmt(r["cena"]), s_tdr), Paragraph(fmt(r["celkem"]), s_tdr)] for r in radky]
     tab = Table(data, colWidths=sloupce, repeatRows=1)
     styl = [("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("LEFTPADDING", (0, 0), (0, -1), 0), ("RIGHTPADDING", (-1, 0), (-1, -1), 0),
-            ("TOPPADDING", (0, 0), (-1, -1), 6), ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
-            ("LINEBELOW", (0, 0), (-1, 0), 0.9, INK)]
+            ("TOPPADDING", (0, 0), (-1, -1), 5), ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+            ("RIGHTPADDING", (-1, 0), (-1, -1), 6),
+            ("LINEBELOW", (0, 0), (-1, 0), 0.8, INK)]
     for i in range(1, len(data)):
-        styl.append(("LINEBELOW", (0, i), (-1, i), 0.5, LINE))
+        if i % 2 == 1:
+            styl.append(("BACKGROUND", (0, i), (-1, i), PRUH))
+        styl.append(("LINEBELOW", (0, i), (-1, i), 0.4, LINE))
     tab.setStyle(TableStyle(styl))
-    story += [tab, Spacer(1, 14)]
+    story += [tab, Spacer(1, 16)]
 
     konec = []
     if cz:
         rekap = Table([
-            [Paragraph(t["rekap_sazba"], s_rl), Paragraph(t["rekap_zaklad"], s_rl),
-             Paragraph(t["rekap_dph"], s_rl), Paragraph(t["rekap_celkem"], s_rl)],
-            [Paragraph(f"{DPH_SAZBA:.0f} %", s_rv), Paragraph(fmt(zaklad), s_rv),
-             Paragraph(fmt(dph), s_rv), Paragraph(fmt(celkem), s_rv)],
-            [Paragraph(t["rekap_celkem"], s_rb), Paragraph(fmt(zaklad), s_rb),
-             Paragraph(fmt(dph), s_rb), Paragraph(fmt(celkem), s_rb)],
-        ], colWidths=[60, 75, 60, 75], hAlign="RIGHT")
+            [Paragraph(t["sazba"], s_thr), Paragraph(t["zaklad_r"], s_thr), Paragraph(t["dph"], s_thr),
+             Paragraph(t["celkem"], s_thr)],
+            [Paragraph(f"{DPH_SAZBA:.0f} %", s_tdr), Paragraph(fmt(zaklad), s_tdr), Paragraph(fmt(dph), s_tdr),
+             Paragraph(fmt(celkem), s_tdr)],
+            [Paragraph(t["celkem"], s_tdbr), Paragraph(fmt(zaklad), s_tdbr), Paragraph(fmt(dph), s_tdbr),
+             Paragraph(fmt(celkem), s_tdbr)],
+        ], colWidths=[70, 90, 70, 90], hAlign="RIGHT")
         rekap.setStyle(TableStyle([("TOPPADDING", (0, 0), (-1, -1), 3), ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
-                                   ("RIGHTPADDING", (-1, 0), (-1, -1), 0),
-                                   ("LINEABOVE", (0, 2), (-1, 2), 0.5, LINE)]))
+                                   ("RIGHTPADDING", (-1, 0), (-1, -1), 6)]))
         konec += [rekap, Spacer(1, 12)]
-    konec.append(CelkemBlok(t["k_uhrade"], castka))
+    konec.append(CelkemPas(t["k_uhrade"], castka))
     poznamka = f.get("poznamka", POZNAMKA_DPH.get(rezim, ""))
     if poznamka:
-        konec += [Spacer(1, 18), Paragraph(poznamka, s_muted)]
+        konec += [Spacer(1, 18), Paragraph(poznamka, s_pozn)]
     story.append(KeepTogether(konec))
 
     vystup.parent.mkdir(parents=True, exist_ok=True)
     # rámec má vnitřní odsazení 6 pt, obsah tak začíná přesně na OKRAJ
     doc = SimpleDocTemplate(str(vystup), pagesize=A4, leftMargin=OKRAJ - 6, rightMargin=OKRAJ - 6,
-                            topMargin=38, bottomMargin=60,
-                            title=t["titul_pdf"].format(f["cislo"]), author=dod["jmeno"])
-    doc.build(story, canvasmaker=pata_factory(t, dod))
+                            topMargin=40, bottomMargin=55,
+                            title=t["titulek"].format(f["cislo"]), author=dod["jmeno"])
+    doc.build(story, canvasmaker=pata_factory(t, dod["jmeno"]))
 
     return {
         "cislo": f["cislo"], "rezim": rezim, "odberatel": o["nazev"],

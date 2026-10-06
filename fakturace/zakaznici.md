@@ -15,17 +15,16 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Adresa:** Lomená 1530, 742 58 Příbor, Česká republika
 - **IČO:** 26825147 · **DIČ:** CZ26825147
 - **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** na faktuře 26049 nebyla
-- **Fakturované položky:** Hlava knypliku V5 – 42,00 Kč/ks bez DPH
-- **Faktury:** 26049 (21. 09. 2026, 1 000 ks, 50 820,00 Kč s DPH)
-- **Poznámky:** Na faktuře 26049 je DIČ vytištěné dvakrát („CZ26825147CZ26825147“). Jde o chybu v adresáři FakturaOnline a je potřeba ji tam opravit.
+- **Fakturované položky:** Hlava knyplíku V5 – 42,00 Kč · Díl hmatníku větší V2 – 15,00 Kč (za ks bez DPH)
+- **Faktury:** 26049 (21. 09. 2026, 50 820,00 Kč s DPH) · 26050 (06. 10. 2026, 55 539,00 Kč s DPH)
+- **Poznámky:** Na faktuře 26049 je DIČ vytištěné dvakrát („CZ26825147CZ26825147“). Jde o chybu v adresáři FakturaOnline a je potřeba ji tam opravit. Od faktury 26050 se píše „Hlava knyplíku“ s diakritikou, jak to zadal uživatel (na 26049 bylo „knypliku“).
 
 ## Tomáš Trnka
 - **Kontakt:** tel. 618 919 200 · e-mail neúplný (začíná `tom.148`)
 - **Adresa:** Miskovice 148, 285 01 Miskovice, Česká republika
 - **IČO / DIČ:** neuvedeno (pravděpodobně fyzická osoba nepodnikatel)
 - **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
-- **Poznámky:** Předvolba 618 neodpovídá běžnému českému mobilnímu číslu. Telefon ověřit.
+- **Faktury:** žádné v podkladech. Uživatel je dodávat nebude, údaje si vyžádej až při první faktuře.
 
 ## HPH models, s.r.o.
 - **Kontakt:** Hodan · tel. 777 304 120 · e-mail neúplný (začíná `jirka@h`)
@@ -38,10 +37,13 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 
 ## Owl models s.r.o.
 - **Kontakt:** Hobža · tel. 603 728 096 · e-mail neúplný (začíná `owl@ow`)
-- **Adresa:** Mánesova 321/6, 746 01 Opava, Česká republika
-- **IČO / DIČ:** chybí
-- **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
+- **Adresa na faktuře 25012:** 31, Čermná ve Slezsku, 74901 Čermná ve Slezsku, Česká republika
+- **Adresa v tabulce zákazníků:** Mánesova 321/6, 746 01 Opava
+- **IČO:** 01627244 · **DIČ:** CZ01627244
+- **Režim:** CZ · **Splatnost:** 7 dní (dle 25012) · **Doprava:** na faktuře nebyla
+- **Fakturované položky (2025, bez DPH):** MG-81 1/72 – 37,00 · MG-81 1/48 – 47,00 · MG-131 1/72 – 40,00 · MG-131 1/48 – 45,00 · OWLME 72001 – 18,00 · OWLME 48001 – 22,00 Kč/ks
+- **Faktury:** 25012 (23. 04. 2025, 6 270,00 Kč, ještě jako neplátce DPH)
+- **Poznámky:** Adresy se liší. Formát „31, Čermná ve Slezsku“ je typický pro adresu převzatou z ARES, takže jde nejspíš o sídlo firmy, kdežto Opava může být provozovna. Před první fakturou se zeptej, kterou adresu použít.
 
 ## PJB Hobby Sp. z o.o.
 - **Kontakt:** Pawel Buchaniec · tel. +48 122 848 328 · e-mail neúplný (začíná `pawel.b`)
@@ -55,17 +57,20 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 
 ## STROZATECH s.r.o.
 - **Kontakt:** Pravoslav Kyselák · tel. 737 258 723 · e-mail neúplný (začíná `kyselak`)
-- **Adresa:** Dvořákova 588/13, 602 00 Brno, Česká republika
-- **IČO / DIČ:** chybí
-- **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
+- **Kontakt na faktuře:** info@strozatech.cz
+- **Adresa (na faktuře):** Dvořákova 588/13, Brno-město, 60200 Brno, Česká republika
+- **IČO:** 27715655 · **DIČ:** CZ27715655
+- **Režim:** CZ · **Splatnost:** 7 dní (dle 25043) · **Doprava:** na faktuře nebyla
+- **Fakturované položky (2025, bez DPH):** Hřídel ložiska 9910003 – 550,00 Kč/ks
+- **Faktury:** 25043 (10. 09. 2025, 10 ks, 5 500,00 Kč, ještě jako neplátce DPH)
+- **Poznámky:** Pod položkami byla poznámka „Materiál 12 050“ (jakost oceli). Pokud ji uživatel chce i příště, patří do pole `poznamka`.
 
 ## Josef Choreň
 - **Kontakt:** tel. 777 095 481 · e-mail neúplný (začíná `chory-m`)
 - **Adresa:** Skršín 70, 434 01 Skršín, Česká republika
-- **IČO / DIČ:** chybí
+- **IČO / DIČ:** neuvedeno
 - **Režim:** CZ · **Splatnost:** neznámá, výchozí 10 dní
-- **Faktury:** zatím žádná v podkladech
+- **Faktury:** žádné v podkladech. Uživatel je dodávat nebude, údaje si vyžádej až při první faktuře.
 
 ## VenPor s.r.o.
 - **Kontakt:** tel. 724 502 382 · venpor@seznam.cz · https://venpor.cz

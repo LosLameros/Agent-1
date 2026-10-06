@@ -13,12 +13,27 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | Me 410 | 452,00 | HPH models, s.r.o. | 26009 |
 | FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
 | Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |
-| Hlava knypliku V5 | 42,00 | JETI model s.r.o. | 26049 |
+| Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26050 |
+| Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26050 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |
 | Osa L40 | 80,00 | STRANKA s.r.o. | 26046 |
 | Osa L45 | 74,00 | STRANKA s.r.o. | 26046 |
 | Osa L75 | 73,00 | STRANKA s.r.o. | 26046 |
 | Poštovné a balné | 180,00 | STRANKA s.r.o. | 26046 |
+
+## Položky z roku 2025 (vystaveno jako neplátce DPH)
+
+Tyto ceny vznikly v době, kdy dodavatel nebyl plátcem DPH, a zákazník platil přesně je. Pro nového plátce DPH to znamená dvě možnosti: buď cena zůstane jako základ a zákazník zaplatí o 21 % víc, nebo zůstane konečná částka a základ bude nižší. **Před první fakturou na tyto položky se uživatele zeptej, kterou možnost chce.**
+
+| Položka | Cena 2025 | Odběratel | Faktura |
+|---|---|---|---|
+| MG-81 1/72 | 37,00 | Owl models s.r.o. | 25012 |
+| MG-81 1/48 | 47,00 | Owl models s.r.o. | 25012 |
+| MG-131 1/72 | 40,00 | Owl models s.r.o. | 25012 |
+| MG-131 1/48 | 45,00 | Owl models s.r.o. | 25012 |
+| OWLME 72001 | 18,00 | Owl models s.r.o. | 25012 |
+| OWLME 48001 | 22,00 | Owl models s.r.o. | 25012 |
+| Hřídel ložiska 9910003 | 550,00 | STROZATECH s.r.o. | 25043 |
 
 Tuzemské položky jsou zatím zakázkové díly pro konkrétního odběratele. Cenu jiného odběratele nepoužívej bez potvrzení.
 

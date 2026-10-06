@@ -24,6 +24,10 @@ Vychází z analýzy 8 unikátních vydání (#443–#451, ~1300 slov/vydání).
 
 Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze souboru `prompts/clanky-portu.md`.
 
+## Spolupráce
+
+- Připomínka nebo dotaz od uživatele **neznamená automaticky požadavek na změnu**. Uživatel chce kritický názor a samostatný postoj: nejdřív posuď, zda má připomínka pravdu, a obhaj nebo uprav své řešení podle faktů. Měň jen to, co je opravdu potřeba, a když nesouhlasíš, řekni proč.
+
 ## Poznámka
 
 Newsletter vždy píšeme v češtině.

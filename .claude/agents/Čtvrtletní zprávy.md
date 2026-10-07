@@ -251,7 +251,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
   - **Piš konkrétně a věcně.** Raději vyjmenuj skutečné faktory a čísla než obecné fráze („trhy byly pod tlakem“). Každá věta má nést informaci.
   - **Plynulá, přirozená stavba vět.** Střídej délku vět, jak by to přirozeně napsal člověk. Nepiš sérii krátkých úderných vět ani každý odstavec podle stejné šablony.
   - **Vyhýbej se typickým AI vzorcům:** rétorickým konstrukcím („Že…, je…“, „Nejde o X, ale o Y“), řečnickým otázkám, dramatickým jednovětým odstavcům a pointám („Mýlili jsme se.“), odhalování přes dvojtečku, trojicím pro efekt, šablonovitým přechodům („Pod povrchem ale…“, „Má to ale i druhou stranu.“, „Hlavní ponaučení je…“) a shrnujícím heslům na konci odstavců.
-  - **Žádné vsuvky mezi čárkami** typu „Akcie výrobců čipů, hvězdy jara, prudce zlevnily.“ nebo „ropovod East-West, hlavní cestu, kterou…“. Působí nepřirozeně a věta má zbytečně moc čárek. Napiš to jako běžnou větu: „Akcie výrobců čipů na jaře táhly trh nahoru, v létě ale prudce zlevnily.“
+  - **Žádné vsuvky mezi čárkami** typu „Akcie výrobců čipů, hvězdy jara, prudce zlevnily.“ nebo „ropovod East-West, hlavní cestu, kterou…“. Působí nepřirozeně a věta má zbytečně moc čárek. Obrat si klidně nech, jen ho zapoj do běžné věty: „Akcie výrobců čipů a pamětí byly hvězdami jara, během července a srpna ale prudce zlevnily.“
   - **Přechody ať jsou obyčejné** („zároveň“, „navíc“, „naopak“, „kromě toho“), ne efektní.
   - **Kontrola:** po dopsání si každý odstavec přečti s otázkou, jestli by ho takhle napsal analytik Portu pro klienty. Pokud zní jako šablona nebo slogan, přepiš ho.
   - **Vzor úpravy ze 3Q 2026** (nejdřív kontext, pak závěr):

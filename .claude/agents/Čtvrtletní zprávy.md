@@ -209,6 +209,9 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 10. **Doplňkové grafy (alespoň 1, ideálně 2):** vložené přímo do kapitol, které podporují (viz kapitola 7).
 11. **Výhled na zbytek roku** (u 3Q může znít „Výhled na konec roku", u 4Q „Výhled na rok {RRRR+1}"):
     - skutečně dopředu hledící: klíčové proměnné, scénáře (uklidnění vs. přetrvání rizik), rizika,
+    - **hmatatelný pro investora:** opři ho o konkrétní aktuální data (např. kolik ropy už teče, co čekají analytici) a uveď kalendář klíčových termínů do konce období (zasedání Fedu, ECB a ČNB, volby, výsledková sezóna) s ověřenými daty,
+    - **nezačínej stejnou větou ani stavbou jako výhled v předchozí zprávě** (vzor chyby: „Klíčovou proměnnou zůstává…“ ve 2Q i 3Q 2026) a nepiš odstavce podle šablony „Klíčovou / Druhou / Třetí proměnnou je…“,
+    - před psaním ověř aktuální stav událostí, o kterých píšeš (např. zda už byl opravený ropovod), aby výhled nepočítal s něčím, co se už stalo,
     - žádná rekapitulace výkonnosti indexů.
 12. **Evaluace investiční strategie:** sekce je ve zprávě **vždy**, pod tímto ustáleným nadpisem. **Text sekce nepiš.** Rozhodnutí investiční komise schvaluje a dopisuje Portu ručně. Pod nadpis vlož jen značku `[DOPLNIT: evaluace investiční strategie – doplní Portu po schválení investiční komisí]`. Do seznamu [DOPLNIT] na konci výstupu (kapitola 9) přidej jako podklad pro autora stručný přehled úprav, které komise zvažovala ve zprávě za {PŘEDCHŮDCE}, a jak se od té doby změnilo tržní prostředí, které se jich týká. Vzor obsahu: zda došlo ke změnám, co komise zvažuje a proč, a závěrečný odstavec o režimu schvalování změn.
 13. **Závěr:** uklidňující a disciplinovaný tón formulovaný podle dat (kapitola 8). Protože evaluaci dopisuje Portu, napiš závěr jako poslední odstavec(e) výhledu. Můžeš zakončit trefným citátem investiční moudrosti.

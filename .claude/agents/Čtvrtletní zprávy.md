@@ -246,10 +246,16 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
   - **Výsledkovou sezónu vždy časově zařaď, i v úvodu.** Sezóna zveřejněná během čtvrtletí se týká předchozího čtvrtletí, proto piš „výsledková sezóna za druhé čtvrtletí“, ne jen „výsledková sezóna“.
   - **Související věty spojuj spojkou, ne jen čárkou.** Dvě věty o společném vývoji (např. Fed a ECB zvyšují sazby) spoj „a“, aby se nečetly jako dvě nesouvisející zprávy: „Fed poprvé po třech letech zvýšil sazby a ECB je letos zvedla už podruhé.“
   - Po dopsání si každou větu úvodu přečti s otázkou: platí to přesně, pro všechny zmíněné regiony a pro celé čtvrtletí?
-- **Piš přirozeně, jako analytik, ne jako AI.** Vzor úpravy ze 3Q 2026:
-  - ❌ „Že akcie celé léto neklesly, je hlavně zásluha firemních zisků.“
-  - ✅ „Navzdory přetrvávajícímu geopolitickému napětí, zvýšeným cenám ropy, inflačním tlakům a růstu dluhopisových výnosů jsou akciové trhy odolné. Důvodem je silný růst zisků, což potvrdila výsledková sezóna za druhé čtvrtletí.“
-  - Zásady: nejdřív kontext, pak závěr; konkrétně vyjmenuj faktory místo obecných frází; žádné rétorické konstrukce („Že…, je…“), dramatické úderné věty („Mýlili jsme se.“), odhalování přes dvojtečku ani šablonovité přechody („Pod povrchem ale…“, „Má to ale i druhou stranu.“, „Hlavní ponaučení je…“).
+- **Piš přirozeně, jako analytik, ne jako AI.** Text musí působit tak, že ho napsal zkušený člověk u monitoru, který trhy sleduje, rozumí jim a dává jim smysl – ne jako vygenerovaný text. Konkrétně:
+  - **Uvažuj a propojuj.** U každé události nejen řekni, co se stalo, ale propoj ji s ostatním děním a s dopadem na investory Portu. Člověk píše v souvislostech, ne v izolovaných faktech.
+  - **Piš konkrétně a věcně.** Raději vyjmenuj skutečné faktory a čísla než obecné fráze („trhy byly pod tlakem“). Každá věta má nést informaci.
+  - **Plynulá, přirozená stavba vět.** Střídej délku vět, jak by to přirozeně napsal člověk. Nepiš sérii krátkých úderných vět ani každý odstavec podle stejné šablony.
+  - **Vyhýbej se typickým AI vzorcům:** rétorickým konstrukcím („Že…, je…“, „Nejde o X, ale o Y“), řečnickým otázkám, dramatickým jednovětým odstavcům a pointám („Mýlili jsme se.“), odhalování přes dvojtečku, trojicím pro efekt, šablonovitým přechodům („Pod povrchem ale…“, „Má to ale i druhou stranu.“, „Hlavní ponaučení je…“) a shrnujícím heslům na konci odstavců.
+  - **Přechody ať jsou obyčejné** („zároveň“, „navíc“, „naopak“, „kromě toho“), ne efektní.
+  - **Kontrola:** po dopsání si každý odstavec přečti s otázkou, jestli by ho takhle napsal analytik Portu pro klienty. Pokud zní jako šablona nebo slogan, přepiš ho.
+  - **Vzor úpravy ze 3Q 2026** (nejdřív kontext, pak závěr):
+    - ❌ „Že akcie celé léto neklesly, je hlavně zásluha firemních zisků.“
+    - ✅ „Navzdory přetrvávajícímu geopolitickému napětí, zvýšeným cenám ropy, inflačním tlakům a růstu dluhopisových výnosů jsou akciové trhy odolné. Důvodem je silný růst zisků, což potvrdila výsledková sezóna za druhé čtvrtletí.“
 - **Klíčové ukazatele vysvětli při prvním použití.** Když stavíš kapitolu na konkrétním ukazateli (např. výnos desetiletého amerického dluhopisu), jednou až dvěma větami vysvětli, proč je důležitý a co z něj plyne pro běžného investora.
 - **Formát čísel:** desetinná čárka a mezera před procenty („5,8 %"), rozpětí s pomlčkou („3,50–3,75 %"), změny sazeb v procentních bodech („o 0,25 procentního bodu"), ceny komodit slovy měny („110 dolarů za barel", „4 000 dolarů za unci"), data „17. června".
 - **Pojmy Portu:** „Portfolia od Portu" (produkt), „rizikový profil", v grafu „Portfolio s rizikovostí #3". Oslovení čtenáře „naši klienti", „investoři", „vy" jen v závěru evaluace.

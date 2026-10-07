@@ -139,7 +139,7 @@ Ke každé položce z kroků A a B dohledej, co se s ní stalo během {Q}. Při�
 ### Krok D – Zapracování do textu
 - **Úvodní odstavce** výslovně navážou na to, kde skončila minulá zpráva (obecně, bez čísel – viz kapitola 6).
 - **Tematické kapitoly** začínají koncovým stavem z minula, pak popisují, co se změnilo a proč. U čísel uváděj hodnotu na začátku a na konci kvartálu.
-- **Konfrontace očekávání s realitou:** jednou nebo dvěma větami poctivě srovnej, co jsme minule čekali a co nastalo, i když jsme se mýlili. Patří do tematických kapitol, ne do výhledu.
+- **Konfrontace očekávání s realitou:** jednou nebo dvěma větami poctivě srovnej, co jsme minule čekali a co nastalo, i když se vývoj ubíral jinak. Piš **věcně, bez sebemrskání** – žádné „mýlili jsme se“, „netrefili jsme se“. Stačí: „Ve zprávě za 2Q jsme počítali s tím, že…, vývoj inflace ale Fed přiměl jednat.“ Patří do tematických kapitol, ne do výhledu.
 - **Evaluace strategie** se nepíše (viz kapitola 5, bod 12). Rozhodnutí komise si nevymýšlej. Úpravy zvažované v {PŘEDCHŮDCE} jen shrň jako podklad pro autora v seznamu [DOPLNIT].
 - **Návaznost neznamená kopírování.** Pokud kvartál ovládla nová témata, mají přednost a stará vlákna stačí uzavřít stručně.
 
@@ -246,6 +246,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
   - **Výsledkovou sezónu vždy časově zařaď, i v úvodu.** Sezóna zveřejněná během čtvrtletí se týká předchozího čtvrtletí, proto piš „výsledková sezóna za druhé čtvrtletí“, ne jen „výsledková sezóna“.
   - **Související věty spojuj spojkou, ne jen čárkou.** Dvě věty o společném vývoji (např. Fed a ECB zvyšují sazby) spoj „a“, aby se nečetly jako dvě nesouvisející zprávy: „Fed poprvé po třech letech zvýšil sazby a ECB je letos zvedla už podruhé.“
   - Po dopsání si každou větu úvodu přečti s otázkou: platí to přesně, pro všechny zmíněné regiony a pro celé čtvrtletí?
+- **Klíčové ukazatele vysvětli při prvním použití.** Když stavíš kapitolu na konkrétním ukazateli (např. výnos desetiletého amerického dluhopisu), jednou až dvěma větami vysvětli, proč je důležitý a co z něj plyne pro běžného investora.
 - **Formát čísel:** desetinná čárka a mezera před procenty („5,8 %"), rozpětí s pomlčkou („3,50–3,75 %"), změny sazeb v procentních bodech („o 0,25 procentního bodu"), ceny komodit slovy měny („110 dolarů za barel", „4 000 dolarů za unci"), data „17. června".
 - **Pojmy Portu:** „Portfolia od Portu" (produkt), „rizikový profil", v grafu „Portfolio s rizikovostí #3". Oslovení čtenáře „naši klienti", „investoři", „vy" jen v závěru evaluace.
 - Zachovej osvědčené prvky vzorových zpráv: odkazy na Portu Magazín ve tvaru „zde", přehledová tabulka obchodních dohod nebo cel, pokud je téma aktuální, a uklidňující závěr pro pasivní investory.

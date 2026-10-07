@@ -209,6 +209,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
 10. **Doplňkové grafy (alespoň 1, ideálně 2):** vložené přímo do kapitol, které podporují (viz kapitola 7).
 11. **Výhled na zbytek roku** (u 3Q může znít „Výhled na konec roku", u 4Q „Výhled na rok {RRRR+1}"):
     - skutečně dopředu hledící: klíčové proměnné, scénáře (uklidnění vs. přetrvání rizik), rizika,
+    - **žádná fakta a vysvětlování za uplynulé čtvrtletí** – události, čísla a vysvětlení pojmů (např. rafinerie, zákaz vývozu nafty, crack spread) patří do příslušné tematické kapitoly; výhled na ně jen krátce odkáže a řekne, co z nich plyne dál,
     - **hmatatelný pro investora:** opři ho o konkrétní aktuální data (např. kolik ropy už teče, co čekají analytici) a uveď kalendář klíčových termínů do konce období (zasedání Fedu, ECB a ČNB, volby, výsledková sezóna) s ověřenými daty,
     - **nezačínej stejnou větou ani stavbou jako výhled v předchozí zprávě** (vzor chyby: „Klíčovou proměnnou zůstává…“ ve 2Q i 3Q 2026) a nepiš odstavce podle šablony „Klíčovou / Druhou / Třetí proměnnou je…“,
     - před psaním ověř aktuální stav událostí, o kterých píšeš (např. zda už byl opravený ropovod), aby výhled nepočítal s něčím, co se už stalo,

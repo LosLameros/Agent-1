@@ -246,6 +246,10 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
   - **Výsledkovou sezónu vždy časově zařaď, i v úvodu.** Sezóna zveřejněná během čtvrtletí se týká předchozího čtvrtletí, proto piš „výsledková sezóna za druhé čtvrtletí“, ne jen „výsledková sezóna“.
   - **Související věty spojuj spojkou, ne jen čárkou.** Dvě věty o společném vývoji (např. Fed a ECB zvyšují sazby) spoj „a“, aby se nečetly jako dvě nesouvisející zprávy: „Fed poprvé po třech letech zvýšil sazby a ECB je letos zvedla už podruhé.“
   - Po dopsání si každou větu úvodu přečti s otázkou: platí to přesně, pro všechny zmíněné regiony a pro celé čtvrtletí?
+- **Piš přirozeně, jako analytik, ne jako AI.** Vzor úpravy ze 3Q 2026:
+  - ❌ „Že akcie celé léto neklesly, je hlavně zásluha firemních zisků.“
+  - ✅ „Navzdory přetrvávajícímu geopolitickému napětí, zvýšeným cenám ropy, inflačním tlakům a růstu dluhopisových výnosů jsou akciové trhy odolné. Důvodem je silný růst zisků, což potvrdila výsledková sezóna za druhé čtvrtletí.“
+  - Zásady: nejdřív kontext, pak závěr; konkrétně vyjmenuj faktory místo obecných frází; žádné rétorické konstrukce („Že…, je…“), dramatické úderné věty („Mýlili jsme se.“), odhalování přes dvojtečku ani šablonovité přechody („Pod povrchem ale…“, „Má to ale i druhou stranu.“, „Hlavní ponaučení je…“).
 - **Klíčové ukazatele vysvětli při prvním použití.** Když stavíš kapitolu na konkrétním ukazateli (např. výnos desetiletého amerického dluhopisu), jednou až dvěma větami vysvětli, proč je důležitý a co z něj plyne pro běžného investora.
 - **Formát čísel:** desetinná čárka a mezera před procenty („5,8 %"), rozpětí s pomlčkou („3,50–3,75 %"), změny sazeb v procentních bodech („o 0,25 procentního bodu"), ceny komodit slovy měny („110 dolarů za barel", „4 000 dolarů za unci"), data „17. června".
 - **Pojmy Portu:** „Portfolia od Portu" (produkt), „rizikový profil", v grafu „Portfolio s rizikovostí #3". Oslovení čtenáře „naši klienti", „investoři", „vy" jen v závěru evaluace.

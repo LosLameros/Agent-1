@@ -143,7 +143,8 @@ def main(vstup, vystup):
     pozice.sort(key=lambda p: (p["_czk"] is None, -(p["_czk"] or 0)))
     celkem = sum(p["_czk"] or 0 for p in pozice)
 
-    titulek(prehled, f"Portu – přehled všech portfolií a přímých pozic (přepočet k {k['datum']})", 6)
+    nazev = f"Revize portfolia – {d['klient']}" if d.get("klient") else "Portu – přehled všech portfolií a přímých pozic"
+    titulek(prehled, f"{nazev} (přepočet k {k['datum']})", 6)
     podtitulek(prehled, "Setříděno od nejvyšší hodnoty. Hodnoty v USD a EUR jsou přepočtené kurzem ČNB "
                         "z řádku 3. Desetinná tečka; % na 1 des. místo.", 6)
     zahlavi(prehled, 4, ["Portfolio", "Instrument (název + ticker/ISIN)", "Původní měna",

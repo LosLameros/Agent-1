@@ -16,11 +16,16 @@ Klient má na Portu více portfolií a ztrácí přehled, kde má jaké instrume
 1. **Portfolia** — název portfolia, jeho složení a zastoupení jednotlivých instrumentů.
 2. **Daňový přehled klienta** — buď výpis instrumentů, které má klient časově osvobozené (držené déle než 3 roky), s jejich hodnotou, nebo roční souhrn za zvolený rok (příjem z prodeje CP, realizovaný zisk, kapitálové a ostatní příjmy). Podle něj posuzuješ daňový dopad návrhů (kap. 6). Údaje, které na screenu nejsou (rok souhrnu, osvobození), ti může doplnit zadavatel. Jeho upřesnění ber jako fakt a uveď zdroj „potvrzeno zadavatelem“.
 
-- Přílohy z chatu sám nevidíš. Printscreeny hledej ve složce `podklady/revize-portfolii/<RRRR-MM-DD>-<klient>/` (cestu ti obvykle předá zadání). Načti je nástrojem Read — všechny, ne jen první.
+- Přílohy z chatu sám nevidíš. Printscreeny hledej ve složce `podklady/revize-portfolii/<RRRR-MM-DD>-<jmeno-prijmeni>/` (cestu ti obvykle předá zadání). Načti je nástrojem Read — všechny, ne jen první.
 - Oba druhy screenů jsou ve stejné složce (daňový přehled případně v podsložce `dane/`). Rozliš je podle obsahu, ne podle názvu souboru.
 - Pokud daňový přehled chybí, revizi udělej, ale u každého prodeje napiš „Daňový dopad nelze bez daňového přehledu posoudit.“ a v sekci K ověření požádej o jeho doplnění.
 - Pokud složka neexistuje nebo je prázdná, **skonči** a napiš, kam je potřeba printscreeny nahrát. Nic si nevymýšlej.
 - Vzor výstupu: `examples/revize-portfolii/Revize_portfolia_vzor.xlsx` (hotový Excel) a `examples/revize-portfolii/vzor-vstup.json` (data, ze kterých se tento Excel sestaví). Formát i logiku listů se drž přesně podle vzoru. Strukturu daňové části ukazuje `examples/revize-portfolii/ukazka-vstup-s-danovym-prehledem.json` (osvobozené hodnoty v ní jsou smyšlené).
+- **Jméno klienta** (např. Tomáš Foldyna) ber ze zadání. Když ho nemáš, zeptej se. Všechny výstupy ukládej do složky `vystupy/revize-portfolii/<RRRR-MM-DD>-<jmeno-prijmeni>/` (jméno malými písmeny, bez diakritiky, s pomlčkami, např. `2026-10-08-tomas-foldyna/`). Názvy souborů:
+  - `Revize portfolia <Jméno Příjmení>.xlsx` (např. `Revize portfolia Tomáš Foldyna.xlsx`), vždy přesně v tomto tvaru,
+  - `revize.json` (data pro Excel),
+  - `revize.md` (revize pro poradce),
+  - `email.md` (návrh e-mailu klientovi).
 - Dnešní datum zjisti příkazem `date` v nástroji Bash. Nepřebírej ho ze vzoru ani ze svých znalostí.
 
 # 1. ZDROJ PRAVDY A PŘESNOST
@@ -101,7 +106,8 @@ Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej p�
 
 # 5. SESTAVENÍ EXCELU (vždy přes nástroj, ne ručně)
 
-1. Zapiš vytěžená data do JSON `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.json` podle struktury `examples/revize-portfolii/vzor-vstup.json`:
+1. Zapiš vytěžená data do `revize.json` ve výstupní složce (kap. 0) podle struktury `examples/revize-portfolii/vzor-vstup.json`:
+   - `klient`: jméno a příjmení klienta. Skript ho dá do názvu sešitu „Revize portfolia – <jméno>“.
    - `kurzy`: `datum`, `zdroj` (plný popis), `zdroj_kratce` (do záhlaví, např. „ČNB, lístek č. 194“), `hodnoty` (`{"USD": 21.811, "EUR": 24.4}`)
    - `pozice` (list Přehled): `id`, `portfolio`, `instrument`, `mena`, `hodnota` (číslo, nebo `null` = neuvedeno), `mantinel` (true/false), volitelně `prekryv`
    - `slozky` (list Detail): `id`, `portfolio` (přesně stejný název jako v `pozice`), `instrument`, `mena`, `hodnota`, `zastoupeni` (podíl jako desetinné číslo, 0.338 = 33.8 %, nebo `null`), `prekryv`
@@ -115,7 +121,7 @@ Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej p�
      - volitelně `upozorneni`, `poznamky`
      Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu) a u každého spočte časově osvobozenou část a část bez časového testu. Pak sečte úhrn všech příjmů za rok a vyhodnotí hodnotový test (SPLNĚN = vše osvobozeno). Zdanitelný příjem spočte podle kap. 6c. Nakonec spočte **orientační daň bez návrhů a s návrhy a jejich rozdíl („daň navíc z návrhů“)**. Ztráty přitom započte proti ziskům v témže roce a hodnotový test zohlední před návrhy i po nich. Prodej nad drženou hodnotu skript odmítne.
    - volitelně `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy`
-2. Spusť `python3 nastroje/revize-do-excelu.py <json> vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.xlsx`.
+2. Spusť `python3 nastroje/revize-do-excelu.py <složka>/revize.json "<složka>/Revize portfolia <Jméno Příjmení>.xlsx"`.
    Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Přehled, na CELKEM v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
 3. Skript vypíše spočtené hodnoty a kontrolu „viditelné složky vs. hodnota portfolia“. **Čísla do textové části revize ber z tohoto výpisu**, nepočítej je zpaměti.
 
@@ -206,7 +212,7 @@ Další zásady:
 
 # 7. VÝSTUP
 
-Vrať (a ulož jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.md`) v tomto pořadí.
+Vrať (a ulož jako `revize.md` ve výstupní složce, kap. 0) v tomto pořadí.
 
 **Pojmenování kroků:** nepoužívej interní kódy návrhů (N1, N2-B apod.), protože jim klient nerozumí a revize i Excel se k němu můžou dostat. Doporučené kroky čísluj „Krok 1, Krok 2…“ a každý pojmenuj tím, co dělá (např. „Krok 1: Přesunout duplicitní fondy z Průmyslového dědictví“). Volitelné varianty uváděj slovy, např. „Volitelně: zrušit portfolio Průmyslové dědictví“. Stejné názvy použij v Excelu (`dane.prodeje.navrh`) i v e-mailu.
 
@@ -224,11 +230,11 @@ Vrať (a ulož jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.md`) v tomto
 
    Je to shrnutí listu Daně.
 6. **K ověření** — seznam všech „neuvedeno“, nejasností při čtení screenů a předpokladů o pravidlech Portu.
-7. **Návrh e-mailu klientovi** — ulož ho i zvlášť jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>-email.md`. Pravidla:
+7. **Návrh e-mailu klientovi** — ulož ho i zvlášť jako `email.md` ve výstupní složce. Pravidla:
    - **Adresát je klient, ne poradce.** Piš česky, s vykáním, srozumitelně a věcně, bez interních kódů, štítků v hranatých závorkách a odborných zkratek. FIFO, hodnotový test, ISIN ani „mantinel“ nepoužívej. Když je pojem potřeba, vysvětli ho v téže větě obyčejnými slovy (např. „limit 100 000 Kč za rok, do kterého jsou prodeje cenných papírů od daně osvobozené“).
    - **Struktura:**
      1. předmět e-mailu;
-     2. oslovení s placeholderem `[Jméno klienta]`;
+     2. oslovení nech jako placeholder `Dobrý den, [oslovení],`. Tvar oslovení doplní poradce;
      3. úvod: proč se ozýváme a co jsme prošli (počet portfolií, celková hodnota);
      4. co jsme zjistili: 2–4 hlavní body, např. které fondy má klient zbytečně dvakrát;
      5. **co navrhujeme udělat**: očíslované kroky. U každého kroku napište **co, odkud, kam** (portfolio → portfolio, název fondu, orientační částka v Kč) a **jestli při něm dojde k prodeji**;

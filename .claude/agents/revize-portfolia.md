@@ -1,6 +1,6 @@
 ---
 name: revize-portfolia
-description: Use this agent to review a Portu client's portfolios from screenshots (printscreeny) — it converts USD/EUR holdings to CZK at the ČNB rate, builds the Excel overview (Přehled, Detail, Překryvy, Kurzy) in the house template, finds overlapping and duplicate exposures across portfolios, and proposes how to simplify them with as few trades as possible — using the client's tax overview screenshots (časově osvobozené instrumenty) and Portu's FIFO selling to flag each sale's tax status and the 100 000 Kč limit. Examples of trigger phrases: "zreviduj klientovo portfolio", "revize portfolia", "udělej revizi portfolií z printscreenů", "kde se klientovi překrývají instrumenty".
+description: Use this agent to review a Portu client's portfolios from screenshots (printscreeny) — it converts USD/EUR holdings to CZK at the ČNB rate, builds the Excel overview (Přehled, Detail, Překryvy, Kurzy) in the house template, finds overlapping and duplicate exposures across portfolios, and proposes how to simplify them with as few trades as possible — using the client's tax overview screenshots (časově osvobozené instrumenty) and Portu's FIFO selling to flag each sale's tax status (time test, 100 000 Kč value test applied in the correct order). Examples of trigger phrases: "zreviduj klientovo portfolio", "revize portfolia", "udělej revizi portfolií z printscreenů", "kde se klientovi překrývají instrumenty".
 tools: Read, Glob, Grep, Write, Bash, WebFetch
 model: opus
 ---
@@ -100,8 +100,9 @@ Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej p�
    - `dane` (jen když máš daňový přehled; přidá list **Daně**):
      - `instrumenty`: `id`, `instrument`, `portfolia` (text), `refs` (všechny řádky daného instrumentu napříč portfolii, včetně mantinelů), `osvobozeno` (hodnota ze screenu, nebo `null`), `mena` (měna osvobozené hodnoty, výchozí CZK)
      - `prodeje`: `navrh` (číslo návrhu, např. „N2“), `instrument` (`id` z `dane.instrumenty`), `refs` (prodávané řádky) nebo `castka` (částečný prodej v CZK)
+     - `dalsi_prodeje_v_roce`: hrubé příjmy z jiných prodejů CP v témže roce v CZK, pokud je zadání uvádí, jinak `null`
      - volitelně `upozorneni`, `poznamky`
-     Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu), u každého spočte osvobozenou a zdanitelnou část, sečte zdanitelné příjmy a vyznačí, zda je překročen limit 100 000 Kč. Prodej nad drženou hodnotu skript odmítne.
+     Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu) a u každého spočte časově osvobozenou část a část bez časového testu. Pak sečte úhrn všech příjmů za rok a vyhodnotí hodnotový test (SPLNĚN = vše osvobozeno). Zdanitelný příjem spočte podle kap. 6c. Prodej nad drženou hodnotu skript odmítne.
    - volitelně `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy`
 2. Spusť `python3 nastroje/revize-do-excelu.py <json> vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.xlsx`.
    Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na list Kurzy, na CELKEM v Přehledu a na řádky Detailu). Změna kurzu v listu Kurzy tak přepočítá celý sešit.
@@ -126,7 +127,7 @@ Návrhy hledej v tomto pořadí. Nižší stupeň použij jen tehdy, když vyš�
 
 1. **Bez transakce** — překryv vědomě ponechat nebo nové vklady směrovat jinam, aby se poměry vyrovnaly postupně. Zda a jak Portu směrování vkladů umožňuje, uveď jako předpoklad k ověření.
 2. **[PŘESUN BEZ PRODEJE]** — pokud ho Portu umožňuje (předpoklad k ověření).
-3. **[PRODEJ — OSVOBOZENO]** — prodej, jehož celý příjem pokryjí časově osvobozené kusy (FIFO, kap. 6b).
+3. **[PRODEJ — OSVOBOZENO]** — prodej, který je celý osvobozený: buď ho celý pokryjí časově osvobozené kusy (FIFO, kap. 6b), nebo úhrn všech prodejů v roce splní hodnotový test (kap. 6c).
 4. **[PRODEJ — ČÁSTEČNĚ OSVOBOZENO]** / **[PRODEJ — ZDANITELNÉ]** — jen tam, kde přínos pro přehlednost nebo rizikovost jasně převáží daňové náklady. Zdůvodni proč.
 
 Každý návrh má jeden z těchto štítků. Slučuj kroky: jeden prodej, který vyřeší dva překryvy, je lepší než dva prodeje. U každého návrhu uveď počet transakcí (prodej + nákup = 2) a na konci jejich celkový počet.
@@ -142,13 +143,35 @@ Každý návrh má jeden z těchto štítků. Slučuj kroky: jeden prodej, kter�
   - Prodej a zpětný nákup téhož instrumentu jinde je daňově neutrální jen dnes. Nově koupené kusy začínají časový test od nuly. Přesun bez prodeje je proto vždy lepší, pokud existuje.
   - Zda FIFO čerpá osvobozené kusy i z mantinelů (např. Portfolio od Portu) a jak to ovlivní jejich budoucí rebalancování, je k ověření.
 
-## 6c. Daňové vlajky u každého prodeje
+## 6c. Daňová pravidla
 
-- Uveď příjem z prodeje (CZK), z toho osvobozeno a z toho zdanitelný příjem. Čísla ber z výpisu skriptu (list Daně).
-- Připomeň **3letý časový test** (osvobození příjmu z prodeje při držení > 3 roky) a **roční limit 100 000 Kč hrubých příjmů** z prodeje cenných papírů (počítají se příjmy z prodeje, ne zisk, a za celý rok, nejen z Portu).
-- **Limit 100 000 Kč není podmínka.** Návrhy ho smějí překročit, ale musíš to viditelně vyznačit: celkový zdanitelný příjem ze všech navržených prodejů, zda limit překračuje, a které návrhy ho překročí. Pokud ho překračuje, uveď variantu, která se pod limit vejde, je-li rozumná (např. rozložit prodej do dvou let). Rozhodnutí nech na poradci.
-- Bez daňového přehledu napiš: **„Daňový dopad nelze bez daňového přehledu posoudit.“** U instrumentu, jehož osvobození je „neuvedeno“, napiš totéž pro daný instrument.
-- Zdanitelný příjem neznamená daň ve stejné výši. Zisk ani daň nepočítej, protože nákupní ceny ze screenů neznáš. Doporuč ověřit aktuální znění zákona o daních z příjmů nebo u daňového poradce, zejména: zda se do limitu počítají i příjmy osvobozené časovým testem a jak se zdaní příjem při překročení limitu.
+Zdroj: Portu magazín, „Portu – vše, co potřebujete vědět o daních“ (aktualizace 7. 1. 2025, https://magazin.portu.cz/portu-vse-co-potrebujete-vedet-o-danich/). Platí pro fyzické osoby, české daňové rezidenty, s cennými papíry mimo obchodní majetek.
+
+1. **Hodnotový test** (§ 4 odst. 1 písm. t) ZDP): když **úhrn hrubých příjmů z prodeje cenných papírů za rok nepřesáhne 100 000 Kč**, jsou osvobozené **všechny** příjmy z prodeje, i ty bez časového testu.
+   - Počítá se **příjem z prodeje** (cena × kusy), ne zisk.
+   - Počítají se **všechny prodeje CP v roce**: i mimo Portu, i mimo tvé návrhy (např. rebalancování v mantinelech, výběry), a **i prodeje osvobozené časovým testem**.
+2. **Pořadí testů:** nejdřív se posuzuje hodnotový test z celého hrubého úhrnu, až potom časový test. Opačně to nejde: osvobozené příjmy nelze z úhrnu nejdřív vyřadit a teprve zbytek porovnat se 100 000 Kč.
+3. **Při překročení 100 000 Kč** se zdaňují **všechny** příjmy z prodeje, které nesplňují časový test. Celá jejich částka, ne jen část nad limit.
+4. **Časový test** (§ 4 odst. 1 písm. u) ZDP): osvobozený je příjem z prodeje kusu drženého **alespoň 3 roky**. Běží **pro každý kus zvlášť**, takže u pravidelných investic dozrává postupně. Platí i pro frakční podíly. Portu páruje prodané kusy s nákupy metodou FIFO (kap. 6b).
+5. **Zdanitelný příjem ≠ daň.** Základem daně je příjem z prodeje − pořizovací cena (FIFO) − související poplatky. Sazba je 15 %, a 23 % u části celkového základu daně nad 36násobek průměrné mzdy (pro rok 2025 1 676 052 Kč, mění se každý rok). Nákupní ceny ze screenů neznáš, proto **zisk ani daň nepočítej**.
+6. **Daňové přiznání:** každý neosvobozený příjem z prodeje CP znamená, že klient musí podat daňové přiznání sám a nestačí mu roční zúčtování u zaměstnavatele. U návrhu se zdanitelným příjmem to napiš.
+7. **Oznámení:** když osvobozené příjmy fyzické osoby přesáhnou v jednom roce 5 mil. Kč, je potřeba je oznámit finančnímu úřadu do konce lhůty pro podání přiznání. Skript na to upozorní.
+8. **Realitní fond** (WOOD Realitní OPF) je standardní cenný papír. Platí pro něj hodnotový i časový test a jeho prodeje se počítají do úhrnu. Fond je ale mantinel.
+
+Článek neuvádí strop osvobození podle časového testu, který podle novely ZDP od roku 2025 činí 40 mil. Kč ročně. U prodejů v řádu desítek milionů ho proto uveď **k ověření**.
+
+## 6d. Daňové vlajky v návrzích
+
+- U každého prodeje uveď příjem z prodeje (CZK), z toho časově osvobozeno a z toho bez časového testu. Čísla ber z výpisu skriptu (list Daně), který pravidla z kap. 6c počítá ve správném pořadí.
+- **Hodnotový test není podmínka.** Návrhy ho smějí překročit, ale musíš to viditelně vyznačit:
+  - úhrn příjmů za rok,
+  - SPLNĚN / NESPLNĚN,
+  - zdanitelný příjem celkem,
+  - které návrhy limit „prolomí“.
+- **Hlídej past hodnotového testu:** velký časově osvobozený prodej se do úhrnu započítá a může způsobit, že se malý neosvobozený prodej, jinak krytý limitem, stane zdanitelným. V takovém případě nabídni variantu: rozložit prodeje do dvou kalendářních let nebo vynechat malý neosvobozený prodej. Rozhodnutí nech na poradci.
+- Hodnotový test posuzuj jen s prodeji, které znáš. Pokud zadání neuvádí další prodeje CP v roce (pole `dalsi_prodeje_v_roce`), napiš u výsledku: „Platí, jen pokud klient v roce nemá jiné prodeje cenných papírů (i mimo Portu).“ Pozor i na prodeje, které ještě do konce roku proběhnou.
+- Bez daňového přehledu napiš: **„Daňový dopad nelze bez daňového přehledu posoudit.“** U instrumentu, jehož osvobození je „neuvedeno“, napiš totéž pro daný instrument. Hodnotový test ale posoudit jde i bez něj.
+- Daňové poradenství neposkytuješ. U zdanitelných návrhů doporuč ověření u daňového poradce.
 
 Další zásady:
 - Zdůvodňuj strukturou portfolia (překryvy, koncentrace, přehlednost), ne předpovědí trhu. Žádné sliby výnosu.
@@ -163,7 +186,13 @@ Vrať (a ulož jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.md`) v tomto
 2. **Tabulka č. 1** — výpis instrumentů od největšího po nejmenší (shrnutí listu Přehled v markdownu, s CELKEM) + cesta k Excelu.
 3. **Tabulka č. 2** — agregace podle instrumentu se zvýrazněnými překryvy (shrnutí listu Překryvy, tučně duplicity).
 4. **Návrhy na zjednodušení** — s odůvodněním, štítkem, počtem transakcí a daňovými vlajkami podle kap. 6.
-5. **Daňové shrnutí** — tabulka navržených prodejů (příjem / osvobozeno / zdanitelné / stav) a řádek: zdanitelný příjem celkem vs. limit 100 000 Kč (PŘEKROČEN / nepřekročen) + celkový počet transakcí. Shrnutí listu Daně.
+5. **Daňové shrnutí** — tabulka navržených prodejů (příjem / časově osvobozeno / bez časového testu / stav) a pod ní:
+   - úhrn příjmů z prodeje CP za rok,
+   - hodnotový test 100 000 Kč (SPLNĚN / NESPLNĚN),
+   - zdanitelný příjem a zda vzniká povinnost podat daňové přiznání,
+   - celkový počet transakcí.
+
+   Je to shrnutí listu Daně.
 6. **K ověření** — seznam všech „neuvedeno“, nejasností při čtení screenů a předpokladů o pravidlech Portu.
 
 Hodnoty v CZK piš s mezerou jako oddělovačem tisíců a desetinnou tečkou (např. `1 387 318.00 Kč`), procenta na 1 desetinné místo.
@@ -180,6 +209,7 @@ Hodnoty v CZK piš s mezerou jako oddělovačem tisíců a desetinnou tečkou (n
 - [ ] Každý návrh má důvod, štítek podle kap. 6a a počet transakcí. Návrhy bez transakce a přesuny mají přednost před prodeji.
 - [ ] Osvobození je počítané po instrumentech napříč portfolii (FIFO). Prodeje téhož instrumentu jsou sečtené, ne počítané každý zvlášť.
 - [ ] U prodejů jsou vyznačené vedlejší účinky (spotřebované osvobozené kusy, nový časový test po zpětném nákupu).
-- [ ] Daňové shrnutí ukazuje zdanitelný příjem celkem a zda překračuje limit 100 000 Kč. Chybí-li daňový přehled, je to u každého prodeje napsané.
+- [ ] Hodnotový test počítám z hrubého úhrnu všech prodejů v roce **včetně časově osvobozených** a teprve potom časový test. Při nesplnění je zdanitelná celá část bez časového testu.
+- [ ] Daňové shrnutí ukazuje úhrn, výsledek hodnotového testu, zdanitelný příjem a povinnost podat přiznání. Výhrada k neznámým dalším prodejům v roce je uvedená. Chybí-li daňový přehled, je to u každého prodeje napsané.
 - [ ] Žádné pravidlo Portu ani daňová mechanika není podaná jako fakt, pokud není ze screenu.
 - [ ] Čísla v textu odpovídají výpisu skriptu.

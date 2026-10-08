@@ -17,7 +17,7 @@ MANTINEL = "FFD9EAD3"   # mantinely (nedotýkat se)
 PREKRYV = "FFFFF3CD"    # překryvy / duplicitní expozice
 CELKEM = "FFE9E2F3"     # součtové řádky
 ZDANITELNE = "FFF4CCCC" # prodej s daňovou povinností / překročený limit
-LIMIT_CP = 100000       # roční limit hrubých příjmů z prodeje cenných papírů (Kč)
+LIMIT_CP = 100000       # hodnotový test: roční limit hrubých příjmů z prodeje CP (Kč)
 NEUVEDENO = "neuvedeno"
 
 TENKA = Side(style="thin", color="FFBFBFBF")
@@ -304,7 +304,7 @@ def main(vstup, vystup):
     if d.get("dane"):
         dn = d["dane"]
         ws = wb.create_sheet("Daně", index=3)
-        titulek(ws, "Časový test a navržené prodeje (FIFO napříč portfolii)", 6)
+        titulek(ws, "Daně: časový a hodnotový test navržených prodejů (FIFO napříč portfolii)", 6)
         podtitulek(ws, dn.get("upozorneni",
                               "Osvobozená hodnota je z daňového přehledu klienta; neosvobozená část je dopočtena "
                               "(drženo celkem − osvobozeno). Portu prodává metodou FIFO napříč všemi portfolii: "
@@ -344,10 +344,12 @@ def main(vstup, vystup):
             x["navrhy"].append(pr["navrh"])
         r += 1
         zahlavi(ws, r, ["Prodávaný instrument", "Návrhy", "Příjem z prodeje (CZK)",
-                        "Z toho osvobozeno (FIFO)", "Z toho zdanitelný příjem", "Daňový stav"])
+                        "Z toho časově osvobozeno (FIFO)", "Z toho bez časového testu", "Daňový stav"])
         r += 1
         od = r
-        dane_vypis = []
+        r_suma = od + len(prodeje)          # úhrn navržených prodejů
+        r_dalsi, r_uhrn, r_test, r_zdan = r_suma + 1, r_suma + 2, r_suma + 3, r_suma + 4
+        radky_prodeju = []
         for tid, x in prodeje.items():
             radek_t, t = bunka_osvob[tid]
             casti = []
@@ -361,49 +363,86 @@ def main(vstup, vystup):
             if hodnota > t["_drzeno"] + 0.5:
                 sys.exit(f"Prodej {t['instrument']} ({hodnota:,.2f} CZK) převyšuje drženou hodnotu "
                          f"({t['_drzeno']:,.2f} CZK) – zkontroluj refs/castka.")
-            if t["_osvob"] is None:
-                osv, stav = None, "nelze posoudit – osvobození neuvedeno"
+            osv = None if t["_osvob"] is None else min(hodnota, t["_osvob"])
+            radky_prodeju.append((radek_t, t, x, casti, hodnota, osv))
+
+        dalsi = dn.get("dalsi_prodeje_v_roce")   # známé další prodeje CP v roce (CZK), None = neznámé
+        uhrn = sum(h for *_, h, _ in radky_prodeju) + (dalsi or 0)
+        hodnotovy = uhrn <= LIMIT_CP
+        nezname = any(o is None for *_, o in radky_prodeju)
+        osvobozeno_ct = sum(o for *_, o in radky_prodeju if o is not None)
+        zdanitelne = 0.0 if hodnotovy else sum(h - o for *_, h, o in radky_prodeju if o is not None)
+
+        dane_vypis = []
+        for radek_t, t, x, casti, hodnota, osv in radky_prodeju:
+            if hodnotovy:
+                stav = "osvobozeno (hodnotový test)"
+            elif osv is None:
+                stav = "nelze posoudit – osvobození neuvedeno"
+            elif hodnota - osv < 0.005:
+                stav = "osvobozeno (časový test)"
+            elif osv < 0.005:
+                stav = "zdanitelné"
             else:
-                osv = min(hodnota, t["_osvob"])
-                stav = "osvobozeno" if hodnota - osv < 0.005 else ("zdanitelné" if osv < 0.005 else "částečně osvobozeno")
-            barva = None if stav == "osvobozeno" else ZDANITELNE
+                stav = "částečně osvobozeno (časový test)"
+            barva = None if stav.startswith("osvobozeno") else ZDANITELNE
             bunka(ws, r, 1, t["instrument"], barva=barva)
             bunka(ws, r, 2, ", ".join(x["navrhy"]), barva=barva)
             bunka(ws, r, 3, "=" + "+".join(casti), "#,##0.00", "right", barva)
+            test = f"$C${r_uhrn}<={LIMIT_CP}"
             if osv is None:
                 bunka(ws, r, 4, NEUVEDENO, zarovnani="right", barva=barva)
                 bunka(ws, r, 5, NEUVEDENO, zarovnani="right", barva=barva)
+                bunka(ws, r, 6, f'=IF({test},"osvobozeno (hodnotový test)",'
+                                f'"nelze posoudit – osvobození neuvedeno")', barva=barva)
             else:
                 bunka(ws, r, 4, f"=MIN(C{r},D{radek_t})", "#,##0.00", "right", barva)
                 bunka(ws, r, 5, f"=C{r}-D{r}", "#,##0.00", "right", barva)
-            bunka(ws, r, 6, stav, zarovnani="left", barva=barva)
+                bunka(ws, r, 6, f'=IF({test},"osvobozeno (hodnotový test)",IF(E{r}<0.005,'
+                                f'"osvobozeno (časový test)",IF(D{r}<0.005,"zdanitelné",'
+                                f'"částečně osvobozeno (časový test)")))', barva=barva)
             dane_vypis.append((t["instrument"], ", ".join(x["navrhy"]), hodnota, osv, stav))
             r += 1
-        zdanitelne = sum(h - o for _, _, h, o, _ in dane_vypis if o is not None)
-        nezname = any(o is None for *_, o, _ in dane_vypis)
-        for sl in range(1, 7):
-            bunka(ws, r, sl, None, barva=CELKEM, tucne=True)
-        ws.cell(r, 1, "Úhrn navržených prodejů")
-        for sl, pis in ((3, "C"), (4, "D"), (5, "E")):
-            c = ws.cell(r, sl, f"=SUM({pis}{od}:{pis}{r - 1})")
-            c.number_format = "#,##0.00"
-            c.alignment = Alignment(horizontal="right")
-        r += 1
-        prekrocen = zdanitelne > LIMIT_CP
-        barva = ZDANITELNE if prekrocen or nezname else CELKEM
-        for sl in range(1, 7):
-            bunka(ws, r, sl, None, barva=barva, tucne=True)
-        ws.cell(r, 1, f"Limit {LIMIT_CP:,} Kč hrubých příjmů za rok".replace(",", " "))
-        ws.cell(r, 6, f'=IF(E{r - 1}>{LIMIT_CP},"PŘEKROČEN","nepřekročen")'
-                + (' & " (část neuvedeno)"' if nezname else ""))
-        r += 2
-        poznamky(ws, r, ["Červeně = prodej se zdanitelnou částí nebo s neznámým osvobozením; překročený limit.",
-                         "Limit posuzuje úhrn příjmů z prodeje CP za celý rok a u všech obchodníků – prodeje mimo "
-                         "tyto návrhy nejsou známé. Zda se do limitu počítají i příjmy osvobozené časovým testem "
-                         "a jak se zdaní příjem nad limitem, je k ověření."] + dn.get("poznamky", []), 6)
-        sirky(ws, [40, 30, 22, 22, 24, 26])
+
+        def souhrn(radek, popis, barva, hodnoty_sloupcu):
+            for sl in range(1, 7):
+                bunka(ws, radek, sl, None, barva=barva, tucne=True)
+            ws.cell(radek, 1, popis)
+            for sl, (hod, fmt) in hodnoty_sloupcu.items():
+                c = ws.cell(radek, sl, hod)
+                if fmt:
+                    c.number_format = fmt
+                c.alignment = Alignment(horizontal="right" if fmt else "left", wrap_text=not fmt)
+
+        souhrn(r_suma, "Úhrn navržených prodejů", CELKEM,
+               {s: (f"=SUM({pis}{od}:{pis}{r_suma - 1})", "#,##0.00") for s, pis in ((3, "C"), (4, "D"), (5, "E"))})
+        souhrn(r_dalsi, "Další prodeje CP v témže roce (i mimo Portu)", CELKEM,
+               {3: (dalsi if dalsi is not None else NEUVEDENO, "#,##0.00"),
+                6: ("zadáno" if dalsi is not None else "neznámé – počítáno s nulou", None)})
+        souhrn(r_uhrn, "Úhrn příjmů z prodeje CP za rok (hrubě, vč. časově osvobozených)", CELKEM,
+               {3: (f"=C{r_suma}+N(C{r_dalsi})", "#,##0.00")})
+        souhrn(r_test, f"Hodnotový test {LIMIT_CP:,} Kč".replace(",", " "),
+               CELKEM if hodnotovy else ZDANITELNE,
+               {6: (f'=IF(C{r_uhrn}<={LIMIT_CP},"SPLNĚN – vše osvobozeno","NESPLNĚN")', None)})
+        souhrn(r_zdan, "Zdanitelný příjem (bez časového testu)", ZDANITELNE if zdanitelne > 0 or (nezname and not hodnotovy) else CELKEM,
+               {5: (f"=IF(C{r_uhrn}<={LIMIT_CP},0,E{r_suma})", "#,##0.00"),
+                6: ("+ část neuvedeno" if nezname and not hodnotovy else ("povinnost podat DP" if zdanitelne > 0 else ""), None)})
+        r = r_zdan + 2
+        pozn = ["Červeně = prodej se zdanitelnou částí nebo s neznámým osvobozením; nesplněný hodnotový test.",
+                "Hodnotový test (§ 4 odst. 1 písm. t) ZDP): když úhrn hrubých příjmů z prodeje CP za rok – ze všech "
+                "prodejů, i mimo Portu a i časově osvobozených – nepřesáhne 100 000 Kč, je osvobozeno vše. Při "
+                "překročení se zdaňují všechny příjmy, které nesplňují časový test (ne jen část nad limit).",
+                "Časový test (§ 4 odst. 1 písm. u) ZDP): 3 roky mezi nákupem a prodejem, pro každý kus zvlášť; "
+                "Portu páruje metodou FIFO. Zdanitelný příjem ≠ daň: základem je příjem − pořizovací cena − poplatky."]
+        if osvobozeno_ct > 5_000_000:
+            pozn.append("POZOR: osvobozené příjmy přesahují 5 mil. Kč za rok – je třeba je oznámit finančnímu úřadu "
+                        "do konce lhůty pro podání daňového přiznání.")
+        poznamky(ws, r, pozn + dn.get("poznamky", []), 6)
+        sirky(ws, [40, 30, 22, 22, 24, 30])
         ws.freeze_panes = "A5"
-        dane_vypis = (dn["instrumenty"], dane_vypis, zdanitelne, prekrocen, nezname)
+        dane_vypis = (dn["instrumenty"], dane_vypis, dict(
+            uhrn=uhrn, dalsi=dalsi, hodnotovy=hodnotovy, zdanitelne=zdanitelne,
+            nezname=nezname, osvobozeno_ct=osvobozeno_ct))
 
     wb.save(vystup)
 
@@ -429,18 +468,24 @@ def main(vstup, vystup):
                   f"({soucty[p['portfolio']] / p['_czk']:.1%})")
 
     if dane_vypis:
-        instrumenty, prodeje, zdanitelne, prekrocen, nezname = dane_vypis
+        instrumenty, prodeje, sh = dane_vypis
         print("\nČasový test (drženo / osvobozeno / neosvobozeno):")
         for t in instrumenty:
             o = t["_osvob"]
             print(f"  {t['instrument']}: {t['_drzeno']:,.2f} / "
                   + (NEUVEDENO if o is None else f"{o:,.2f} / {max(0, t['_drzeno'] - o):,.2f} CZK"))
-        print("\nNavržené prodeje (příjem / osvobozeno / zdanitelné):")
+        print("\nNavržené prodeje (příjem / časově osvobozeno / bez časového testu):")
         for nazev, navrhy, h, o, stav in prodeje:
             print(f"  {nazev} [{navrhy}]: {h:,.2f} / "
                   + (f"{o:,.2f} / {h - o:,.2f} CZK" if o is not None else NEUVEDENO) + f" | {stav}")
-        print(f"  Zdanitelný příjem celkem: {zdanitelne:,.2f} CZK | limit {LIMIT_CP:,} Kč "
-              + ("PŘEKROČEN" if prekrocen else "nepřekročen") + (" (část neuvedeno)" if nezname else ""))
+        print(f"  Úhrn příjmů z prodeje CP za rok: {sh['uhrn']:,.2f} CZK"
+              + (" (další prodeje v roce neznámé – počítáno s nulou)" if sh["dalsi"] is None else ""))
+        print(f"  Hodnotový test {LIMIT_CP:,} Kč: " + ("SPLNĚN – vše osvobozeno" if sh["hodnotovy"] else "NESPLNĚN"))
+        print(f"  Zdanitelný příjem: {sh['zdanitelne']:,.2f} CZK"
+              + (" + část neuvedeno" if sh["nezname"] and not sh["hodnotovy"] else "")
+              + (" → povinnost podat daňové přiznání" if sh["zdanitelne"] > 0 else ""))
+        if sh["osvobozeno_ct"] > 5_000_000:
+            print("  POZOR: osvobozené příjmy > 5 mil. Kč → oznamovací povinnost vůči FÚ")
 
 
 if __name__ == "__main__":

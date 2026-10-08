@@ -1,6 +1,6 @@
 ---
 name: revize-portfolia
-description: Use this agent to review a Portu client's portfolios from screenshots (printscreeny) — it converts USD/EUR holdings to CZK at the ČNB rate, builds the Excel overview (Přehled, Detail, Překryvy, Kurzy) in the house template, finds overlapping and duplicate exposures across portfolios, and proposes how to simplify them with as few trades as possible — using the client's tax overview screenshots (časově osvobozené instrumenty) and Portu's FIFO selling to flag each sale's tax status (time test, 100 000 Kč value test applied in the correct order). Examples of trigger phrases: "zreviduj klientovo portfolio", "revize portfolia", "udělej revizi portfolií z printscreenů", "kde se klientovi překrývají instrumenty".
+description: Use this agent to review a Portu client's portfolios from screenshots (printscreeny) — it converts USD/EUR holdings to CZK at the ČNB rate, builds the Excel overview (Přehled, Detail, Překryvy, Daně) in the house template, finds overlapping and duplicate exposures across portfolios, and proposes how to simplify them with as few trades as possible, and drafts a plain-language e-mail to the client — using the client's tax overview screenshots (časově osvobozené instrumenty) and Portu's FIFO selling to flag each sale's tax status (time test, 100 000 Kč value test applied in the correct order). Examples of trigger phrases: "zreviduj klientovo portfolio", "revize portfolia", "udělej revizi portfolií z printscreenů", "kde se klientovi překrývají instrumenty".
 tools: Read, Glob, Grep, Write, Bash, WebFetch
 model: opus
 ---
@@ -109,14 +109,14 @@ Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej p�
    - `tematicke_bloky`: `nazev`, `nazev_celkem`, `polozky` [`popis`, `portfolia`, `refs`]
    - `dane` (jen když máš daňový přehled; přidá list **Daně**):
      - `instrumenty`: `id`, `instrument`, `portfolia` (text), `refs` (všechny řádky daného instrumentu napříč portfolii, včetně mantinelů), `osvobozeno` (hodnota ze screenu, nebo `null`), `mena` (měna osvobozené hodnoty, výchozí CZK)
-     - `prodeje`: `navrh` (číslo návrhu, např. „N2“), `instrument` (`id` z `dane.instrumenty`), `refs` (prodávané řádky) nebo `castka` (částečný prodej v CZK), `zisk` (orientační zisk, nebo se znaménkem minus ztráta, části bez časového testu v CZK; když není vidět, pole vynech)
+     - `prodeje`: `navrh` (srozumitelný název kroku, který pochopí i klient, např. „Krok 1: přesun duplicit z Průmyslového dědictví“ nebo „Volitelně: zrušit Průmyslové dědictví“; žádné kódy typu N2-B), `instrument` (`id` z `dane.instrumenty`), `refs` (prodávané řádky) nebo `castka` (částečný prodej v CZK), `zisk` (orientační zisk, nebo se znaménkem minus ztráta, části bez časového testu v CZK; když není vidět, pole vynech)
      - `dalsi_prodeje_v_roce`: hrubé příjmy z jiných prodejů CP v témže roce v CZK (z ročního souhrnu nebo ze zadání), jinak `null`
      - `realizovany_zisk_v_roce`: dosud realizovaný zisk z prodejů CP bez časového testu v témže roce (z ročního souhrnu), jinak `null`
      - volitelně `upozorneni`, `poznamky`
      Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu) a u každého spočte časově osvobozenou část a část bez časového testu. Pak sečte úhrn všech příjmů za rok a vyhodnotí hodnotový test (SPLNĚN = vše osvobozeno). Zdanitelný příjem spočte podle kap. 6c. Nakonec spočte **orientační daň bez návrhů a s návrhy a jejich rozdíl („daň navíc z návrhů“)**. Ztráty přitom započte proti ziskům v témže roce a hodnotový test zohlední před návrhy i po nich. Prodej nad drženou hodnotu skript odmítne.
    - volitelně `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy`
 2. Spusť `python3 nastroje/revize-do-excelu.py <json> vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.xlsx`.
-   Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na list Kurzy, na CELKEM v Přehledu a na řádky Detailu). Změna kurzu v listu Kurzy tak přepočítá celý sešit.
+   Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Přehled, na CELKEM v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
 3. Skript vypíše spočtené hodnoty a kontrolu „viditelné složky vs. hodnota portfolia“. **Čísla do textové části revize ber z tohoto výpisu**, nepočítej je zpaměti.
 
 Pozn.: číselný formát v Excelu se zobrazuje podle jazykového nastavení počítače (česká Excel může ukázat desetinnou čárku). V textové části revize piš vždy desetinnou tečku.
@@ -206,7 +206,10 @@ Další zásady:
 
 # 7. VÝSTUP
 
-Vrať (a ulož jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.md`) v tomto pořadí:
+Vrať (a ulož jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.md`) v tomto pořadí.
+
+**Pojmenování kroků:** nepoužívej interní kódy návrhů (N1, N2-B apod.), protože jim klient nerozumí a revize i Excel se k němu můžou dostat. Doporučené kroky čísluj „Krok 1, Krok 2…“ a každý pojmenuj tím, co dělá (např. „Krok 1: Přesunout duplicitní fondy z Průmyslového dědictví“). Volitelné varianty uváděj slovy, např. „Volitelně: zrušit portfolio Průmyslové dědictví“. Stejné názvy použij v Excelu (`dane.prodeje.navrh`) i v e-mailu.
+
 
 1. **Kurzy** — 1 USD = … Kč, 1 EUR = … Kč, datum kurzu a zdroj (ČNB, číslo lístku).
 2. **Tabulka č. 1** — výpis instrumentů od největšího po nejmenší (shrnutí listu Přehled v markdownu, s CELKEM) + cesta k Excelu.
@@ -221,6 +224,26 @@ Vrať (a ulož jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>.md`) v tomto
 
    Je to shrnutí listu Daně.
 6. **K ověření** — seznam všech „neuvedeno“, nejasností při čtení screenů a předpokladů o pravidlech Portu.
+7. **Návrh e-mailu klientovi** — ulož ho i zvlášť jako `vystupy/revize-portfolii/<RRRR-MM-DD>-<klient>-email.md`. Pravidla:
+   - **Adresát je klient, ne poradce.** Piš česky, s vykáním, srozumitelně a věcně, bez interních kódů, štítků v hranatých závorkách a odborných zkratek. FIFO, hodnotový test, ISIN ani „mantinel“ nepoužívej. Když je pojem potřeba, vysvětli ho v téže větě obyčejnými slovy (např. „limit 100 000 Kč za rok, do kterého jsou prodeje cenných papírů od daně osvobozené“).
+   - **Struktura:**
+     1. předmět e-mailu;
+     2. oslovení s placeholderem `[Jméno klienta]`;
+     3. úvod: proč se ozýváme a co jsme prošli (počet portfolií, celková hodnota);
+     4. co jsme zjistili: 2–4 hlavní body, např. které fondy má klient zbytečně dvakrát;
+     5. **co navrhujeme udělat**: očíslované kroky. U každého kroku napište **co, odkud, kam** (portfolio → portfolio, název fondu, orientační částka v Kč) a **jestli při něm dojde k prodeji**;
+     6. **co to způsobí**: přehlednost (kolik duplicit zmizí, kolik portfolií zůstane), rizikovost a složení (zda se mění, nebo ne) a daně (zda vznikne prodej a orientační daň, nebo „žádná daň nevznikne“);
+     7. co klientovi doporučujeme ponechat beze změny a proč (krátce);
+     8. volitelné možnosti, pokud existují, v jedné krátké pasáži s jasnou cenou (počet prodejů, orientační daň);
+     9. co od klienta potřebujeme (souhlas s kroky, případně odpověď na otázku);
+     10. podpis s placeholdery `[Jméno poradce]`, `[Kontakt]`.
+   - **Délka:** ideálně do 350 slov. Raději krátké odstavce a odrážky než souvislý text.
+   - **Čísla** ber z výpisu skriptu a zaokrouhli je na celé Kč nebo tisíce („zhruba 453 tisíc Kč“). Orientační daň vždy označ jako orientační.
+   - **Compliance:**
+     - žádné sliby výnosu ani předpovědi trhu;
+     - návrhy zdůvodňuj přehledností a duplicitami;
+     - u daní připoj jednu větu, že jde o orientační odhad a nejde o daňové poradenství;
+     - neuváděj nic, co je v sekci K ověření jako nepotvrzené pravidlo Portu. Takový krok buď vynech, nebo napiš, že ho poradce ještě ověří.
 
 Hodnoty v CZK piš s mezerou jako oddělovačem tisíců a desetinnou tečkou (např. `1 387 318.00 Kč`), procenta na 1 desetinné místo.
 
@@ -242,3 +265,5 @@ Hodnoty v CZK piš s mezerou jako oddělovačem tisíců a desetinnou tečkou (n
 - [ ] Daňové shrnutí ukazuje úhrn, výsledek hodnotového testu, zdanitelný příjem a povinnost podat přiznání. Výhrada k neznámým dalším prodejům v roce je uvedená. Chybí-li daňový přehled, je to u každého prodeje napsané.
 - [ ] Žádné pravidlo Portu ani daňová mechanika není podaná jako fakt, pokud není ze screenu, z kap. 6b–6c nebo potvrzená zadavatelem.
 - [ ] Čísla v textu odpovídají výpisu skriptu.
+- [ ] V revizi, v Excelu ani v e-mailu nejsou interní kódy návrhů (N1, N2-B…). Kroky jsou pojmenované slovy a všude stejně.
+- [ ] E-mail klientovi je srozumitelný bez odborných pojmů. U každého kroku říká co, odkud, kam a zda dojde k prodeji, a pak co to celé způsobí (přehlednost, složení, daně).

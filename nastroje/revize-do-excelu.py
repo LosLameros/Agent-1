@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # Použití: python3 nastroje/revize-do-excelu.py <vstup.json> <vystup.xlsx>
 # Sestaví Excel revize klientských portfolií ve formátu vzoru
-# examples/revize-portfolii/Revize_portfolia_vzor.xlsx (listy Přehled, Detail, Překryvy, Kurzy).
-# Všechny CZK hodnoty a procenta jsou vzorce (odkazy na list Kurzy a na CELKEM v Přehledu),
-# takže změna kurzu v listu Kurzy přepočítá celý sešit. Skript zároveň vypíše spočtené
+# examples/revize-portfolii/Revize_portfolia_vzor.xlsx (listy Přehled, Detail, Překryvy, volitelně Daně).
+# Kurzy ČNB jsou v řádku 3 listu Přehled. Všechny CZK hodnoty a procenta jsou vzorce (odkazy na
+# tyto kurzy a na CELKEM v Přehledu), takže změna kurzu přepočítá celý sešit. Skript zároveň vypíše spočtené
 # hodnoty pro textovou část revize. Struktura vstupního JSON je popsaná
 # v .claude/agents/revize-portfolia.md (kapitola 5).
 import json
@@ -12,7 +12,7 @@ import sys
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 
-ZELENA = "FF00A03C"     # záhlaví a titulek
+PORTU = "FF4840BB"      # záhlaví a titulek (barva Portu)
 MANTINEL = "FFD9EAD3"   # mantinely (nedotýkat se)
 PREKRYV = "FFFFF3CD"    # překryvy / duplicitní expozice
 CELKEM = "FFE9E2F3"     # součtové řádky
@@ -30,14 +30,14 @@ def vypln(barva):
 
 
 def font(**kw):
-    return Font(name="Arial", size=kw.pop("size", 10), **kw)
+    return Font(name="Rethink Sans", size=kw.pop("size", 10), **kw)
 
 
 def titulek(ws, text, sloupcu):
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=sloupcu)
     c = ws.cell(1, 1, text)
     c.font = font(size=14, bold=True, color="FFFFFFFF")
-    c.fill = vypln(ZELENA)
+    c.fill = vypln(PORTU)
     c.alignment = Alignment(horizontal="center", vertical="center")
     ws.row_dimensions[1].height = 24
 
@@ -54,7 +54,7 @@ def zahlavi(ws, radek, nazvy):
     for i, n in enumerate(nazvy, 1):
         c = ws.cell(radek, i, n)
         c.font = font(bold=True, color="FFFFFFFF")
-        c.fill = vypln(ZELENA)
+        c.fill = vypln(PORTU)
         c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
         c.border = RAMECEK
 
@@ -111,44 +111,30 @@ def main(vstup, vystup):
     prehled.title = "Přehled"
     detail = wb.create_sheet("Detail")
     prekryvy = wb.create_sheet("Překryvy")
-    list_kurzy = wb.create_sheet("Kurzy")
-
-    # ---------- Kurzy ----------
     k = d["kurzy"]
-    list_kurzy["A1"] = "Přepočet měn – použité kurzy"
-    list_kurzy["A1"].font = font(size=12, bold=True)
-    radky_kurzu = {}
-    r = 3
-    list_kurzy.cell(r, 1, "Datum").font = font(bold=True)
-    list_kurzy.cell(r, 2, k["datum"]).font = font()
-    r += 1
+    # kurzy v řádku 3 listu Přehled: „1 USD =“ | hodnota | „1 EUR =“ | hodnota | zdroj
+    bunka_kurzu = {}
+    c = prehled.cell(3, 1, f"Kurzy k {k['datum']}:")
+    c.font = font(bold=True)
+    sl = 2
     for mena in [m for m in ["USD", "EUR"] if m in kurzy] + sorted(m for m in kurzy if m not in ("USD", "EUR", "CZK")):
-        list_kurzy.cell(r, 1, f"1 {mena} =").font = font(bold=True)
-        c = list_kurzy.cell(r, 2, kurzy[mena])
+        c = prehled.cell(3, sl, f"1 {mena} =")
+        c.font = font(bold=True)
+        c.alignment = Alignment(horizontal="right")
+        c = prehled.cell(3, sl + 1, kurzy[mena])
         c.font = font()
-        c.number_format = '#,##0.000 "Kč"'
+        c.number_format = '0.000 "Kč"'
         c.alignment = Alignment(horizontal="left")
-        radky_kurzu[mena] = r
-        r += 1
-    list_kurzy.cell(r, 1, "Měna přepočtu").font = font(bold=True)
-    list_kurzy.cell(r, 2, "CZK").font = font()
-    r += 1
-    list_kurzy.cell(r, 1, "Zdroj").font = font(bold=True)
-    c = list_kurzy.cell(r, 2, k["zdroj"])
-    c.font = font()
-    c.alignment = Alignment(wrap_text=True, vertical="top")
-    r += 2
-    for t in d.get("poznamky_kurzy", []):
-        c = list_kurzy.cell(r, 1, t)
-        c.font = font(size=9, color="FF333333")
-        r += 1
-    sirky(list_kurzy, [16, 70])
+        bunka_kurzu[mena] = f"'Přehled'!${chr(64 + sl + 1)}$3"
+        sl += 2
+    c = prehled.cell(3, sl, f"Zdroj: {k.get('zdroj_kratce', k['zdroj'])}")
+    c.font = font(size=9, color="FF333333")
 
     def vzorec_czk(mena, adresa_hodnoty):
         mena = mena.upper()
         if mena == "CZK":
             return f"={adresa_hodnoty}"
-        return f"={adresa_hodnoty}*Kurzy!$B${radky_kurzu[mena]}"
+        return f"={adresa_hodnoty}*{bunka_kurzu[mena]}"
 
     # ---------- Přehled ----------
     pozice = d["pozice"]
@@ -158,9 +144,8 @@ def main(vstup, vystup):
     celkem = sum(p["_czk"] or 0 for p in pozice)
 
     titulek(prehled, f"Portu – přehled všech portfolií a přímých pozic (přepočet k {k['datum']})", 6)
-    meny = ", ".join(f"1 {m} = {kurzy[m]} Kč" for m in radky_kurzu)
-    podtitulek(prehled, f"Kurzy: {meny} ({k.get('zdroj_kratce', k['zdroj'])}). Setříděno od nejvyšší hodnoty. "
-                        "Desetinná tečka; % na 1 des. místo.", 6)
+    podtitulek(prehled, "Setříděno od nejvyšší hodnoty. Hodnoty v USD a EUR jsou přepočtené kurzem ČNB "
+                        "z řádku 3. Desetinná tečka; % na 1 des. místo.", 6)
     zahlavi(prehled, 4, ["Portfolio", "Instrument (název + ticker/ISIN)", "Původní měna",
                          "Hodnota (pův. měna)", "Hodnota v CZK", "Podíl na celku"])
     prvni = 5
@@ -191,7 +176,7 @@ def main(vstup, vystup):
     poz = ["Zeleně = MANTINELY (nedotýkat se; do součtu a % se ale počítají)."]
     if any(p.get("hodnota") is None for p in pozice):
         poz.append("Pozor: některé hodnoty nejsou na printscreenech čitelné (neuvedeno) – CELKEM je proto neúplný.")
-    poznamky(prehled, radek_celkem + 2, poz + d.get("poznamky_prehled", []), 6)
+    poznamky(prehled, radek_celkem + 2, poz + d.get("poznamky_prehled", []) + d.get("poznamky_kurzy", []), 6)
     sirky(prehled, [26, 42, 12, 20, 18, 14])
     prehled.freeze_panes = "A5"
     CELEK = f"'Přehled'!$E${radek_celkem}"
@@ -252,7 +237,7 @@ def main(vstup, vystup):
         return vzorec, sum(hodnoty[x] for x in platne), len(platne) < len(refs)
 
     titulek(prekryvy, "Překryvy a duplicitní expozice napříč portfolii", 4)
-    podtitulek(prekryvy, "Stejný / velmi podobný instrument sečtený napříč portfolii. CZK přes kurzy z listu Kurzy. "
+    podtitulek(prekryvy, "Stejný / velmi podobný instrument sečtený napříč portfolii. CZK přes kurzy ČNB z listu Přehled. "
                          "% z celku (list Přehled).", 4)
     zahlavi(prekryvy, 4, ["Instrument / expozice", "Ve kterých portfoliích (počet)",
                           "Hodnota v CZK (součet)", "Podíl na celku"])
@@ -327,7 +312,7 @@ def main(vstup, vystup):
                     bunka(ws, r, sl, NEUVEDENO, zarovnani="right")
             else:
                 hod = t["osvobozeno"]
-                vz = hod if t.get("mena", "CZK").upper() == "CZK" else f"={hod}*Kurzy!$B${radky_kurzu[t['mena'].upper()]}"
+                vz = hod if t.get("mena", "CZK").upper() == "CZK" else f"={hod}*{bunka_kurzu[t['mena'].upper()]}"
                 bunka(ws, r, 4, vz, "#,##0.00", "right")
                 bunka(ws, r, 5, f"=MAX(0,C{r}-D{r})", "#,##0.00", "right")
                 bunka(ws, r, 6, f"=IF(C{r}>0,MIN(1,D{r}/C{r}),0)", "0.0%", "right")
@@ -346,7 +331,7 @@ def main(vstup, vystup):
             x["castka"] += pr.get("castka", 0) or 0
             x["navrhy"].append(pr["navrh"])
         r += 1
-        zahlavi(ws, r, ["Prodávaný instrument", "Návrhy", "Příjem z prodeje (CZK)",
+        zahlavi(ws, r, ["Prodávaný instrument", "Návrh", "Příjem z prodeje (CZK)",
                         "Z toho časově osvobozeno (FIFO)", "Z toho bez časového testu", "Daňový stav",
                         "Orientační zisk/ztráta (bez čas. testu)"])
         r += 1

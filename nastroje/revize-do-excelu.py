@@ -145,8 +145,7 @@ def main(vstup, vystup):
 
     nazev = f"Revize portfolia – {d['klient']}" if d.get("klient") else "Portu – přehled všech portfolií a přímých pozic"
     titulek(prehled, f"{nazev} (přepočet k {k['datum']})", 6)
-    podtitulek(prehled, "Seřazeno od nejvyšší hodnoty. Částky v USD a EUR jsou přepočtené na Kč kurzem ČNB "
-                        "uvedeným níže.", 6)
+    # bez vysvětlujícího podtitulku – Excel je pro klienta
     zahlavi(prehled, 4, ["Portfolio", "Instrument (název + ticker/ISIN)", "Původní měna",
                          "Hodnota (pův. měna)", "Hodnota v CZK", "Podíl na celku"])
     prvni = 5
@@ -194,10 +193,8 @@ def main(vstup, vystup):
                                s["_czk"] is None, -(s["_czk"] or 0)))
 
     titulek(detail, "Složení portfolií", 7)
-    podtitulek(detail, d.get("upozorneni_detail",
-                             "Složení jednotlivých portfolií. Podíl na celku = podíl fondu na celkové hodnotě "
-                             "všech vašich investic na Portu."),
-               7, vyska=20)
+    if d.get("upozorneni_detail"):
+        podtitulek(detail, d["upozorneni_detail"], 7, vyska=20)
     zahlavi(detail, 4, ["Portfolio", "Instrument / složka", "Původní měna", "Hodnota (pův. měna)",
                         "Hodnota v CZK", "Zastoupení v portfoliu", "Podíl na celku"])
     adresa_slozky = {}
@@ -220,7 +217,7 @@ def main(vstup, vystup):
         if s.get("id"):
             adresa_slozky[s["id"]] = f"Detail!E{r}"
     poznamky(detail, 5 + len(slozky) + 1,
-             ["Žlutě = fond, který máte i v jiném portfoliu (viz list Překryvy)."]
+             ["Žlutě = instrument, který máte i v jiném portfoliu (viz list Překryvy)."]
              + d.get("poznamky_detail", []), 7)
     sirky(detail, [22, 40, 12, 20, 18, 20, 14])
     detail.freeze_panes = "A5"
@@ -239,8 +236,7 @@ def main(vstup, vystup):
         return vzorec, sum(hodnoty[x] for x in platne), len(platne) < len(refs)
 
     titulek(prekryvy, "Překryvy a duplicitní expozice napříč portfolii", 4)
-    podtitulek(prekryvy, "Stejný nebo velmi podobný fond ve více vašich portfoliích – sečtená hodnota v Kč "
-                         "a podíl na celkové hodnotě vašich investic.", 4)
+    # bez vysvětlujícího podtitulku – Excel je pro klienta
     zahlavi(prekryvy, 4, ["Instrument / expozice", "Ve kterých portfoliích (počet)",
                           "Hodnota v CZK (součet)", "Podíl na celku"])
     vypis = []

@@ -20,7 +20,7 @@ Klient má na Portu více portfolií a ztrácí přehled, kde má jaké instrume
 - Oba druhy screenů jsou ve stejné složce (daňový přehled případně v podsložce `dane/`). Rozliš je podle obsahu, ne podle názvu souboru.
 - Pokud daňový přehled chybí, revizi udělej, ale u každého prodeje napiš „Daňový dopad nelze bez daňového přehledu posoudit.“ a v sekci K ověření požádej o jeho doplnění.
 - Pokud složka neexistuje nebo je prázdná, **skonči** a napiš, kam je potřeba printscreeny nahrát. Nic si nevymýšlej.
-- Vzor výstupu: `examples/revize-portfolii/Revize_portfolia_vzor.xlsx` (hotový Excel) a `examples/revize-portfolii/vzor-vstup.json` (data, ze kterých se tento Excel sestaví). Formát i logiku listů se drž přesně podle vzoru. Strukturu daňové části ukazuje `examples/revize-portfolii/ukazka-vstup-s-danovym-prehledem.json` (osvobozené hodnoty v ní jsou smyšlené).
+- Vzor výstupu: `examples/revize-portfolii/Revize_portfolia_vzor.xlsx` (hotový Excel) a `examples/revize-portfolii/vzor-vstup.json` (data, ze kterých se tento Excel sestaví). Ze vzoru přebírej strukturu dat a logiku listů. Jeho vzhled je zastaralý: má list Kurzy, zelené mantinely, poznámky pod tabulkami a velká písmena. Platí pravidla z kap. 3 a vzhled, který nastavuje skript. Strukturu daňové části ukazuje `examples/revize-portfolii/ukazka-vstup-s-danovym-prehledem.json` (osvobozené hodnoty v ní jsou smyšlené).
 - **Jméno klienta** (např. Tomáš Foldyna) ber ze zadání. Když ho nemáš, zeptej se. Všechny výstupy ukládej do složky `vystupy/revize-portfolii/<RRRR-MM-DD>-<jmeno-prijmeni>/` (jméno malými písmeny, bez diakritiky, s pomlčkami, např. `2026-10-08-tomas-foldyna/`). Názvy souborů:
   - `Revize portfolia <Jméno Příjmení>.xlsx` (např. `Revize portfolia Tomáš Foldyna.xlsx`), vždy přesně v tomto tvaru,
   - `revize.json` (data pro Excel),
@@ -40,12 +40,14 @@ Klient má na Portu více portfolií a ztrácí přehled, kde má jaké instrume
 - **Přímé pozice** („Moje instrumenty“, např. jednotlivé akcie s počtem kusů) a samostatné fondy jsou v Přehledu vlastní řádky.
 - **Watchlist** (sekce „Moje oblíbené“ apod. — sledované tituly bez hodnoty a počtu kusů) **nejsou držené pozice**. Nezapočítávej je, jen je zmiň v poznámce, zvlášť pokud se překrývají s drženými tituly.
 - **Překrývající se printscreeny.** Když jedno portfolio pokrývá víc screenů (scroll), stejná složka se může objevit dvakrát. Každou složku zapiš jen jednou.
-- **Neúplné složení.** Na screenu často nejsou vidět všechny složky (drobné pozice, hotovost). Součet viditelných složek proto bývá o pár procent menší než hodnota portfolia — to je v pořádku, uveď to v upozornění listu Detail. Pokud je součet nad 100 % nebo pod cca 90 %, nejspíš jsi něco přečetl dvakrát nebo chybí screen: ověř to a případný rozdíl popiš.
+- **Screeny složení bez názvu portfolia** přiřaď výpočtem: hodnota složky v CZK ÷ její zastoupení ≈ hodnota portfolia z přehledu. Ověř to na dvou složkách. Postup a odchylky uveď v `revize.md`.
+- **Měnu každé složky ověř stejným výpočtem.** Symbol $ a € se na screenu snadno splete. Hodnota × kurz ÷ hodnota portfolia musí dát zastoupení ze screenu. Když nesedí, je chyba v měně.
+- **Neúplné složení.** Na screenu často nejsou vidět všechny složky (drobné pozice, hotovost). Součet viditelných složek proto bývá o pár procent menší než hodnota portfolia — to je v pořádku, do Excelu to nepiš, zmiň to jen v `revize.md`. Pokud je součet nad 100 % nebo pod cca 90 %, nejspíš jsi něco přečetl dvakrát nebo chybí screen: ověř to a případný rozdíl popiš.
 
 ## 1b. Jak číst daňový přehled
 
 - Ke každému instrumentu z daňového přehledu zapiš **časově osvobozenou hodnotu** přesně podle screenu (a v jaké měně je). Párování s portfolii dělej podle ISIN/tickeru, a když chybí, podle přesného názvu. Podobné ETF na stejný index s jiným ISIN jsou **jiné instrumenty** se samostatným osvobozením.
-- **Neosvobozenou část dopočítej**: drženo celkem (součet daného instrumentu napříč všemi portfolii, včetně mantinelů) − osvobozeno. Jde o výpočet z viditelných čísel, ne o odhad. V Excelu ho označ jako „dopočteno“.
+- **Neosvobozenou část dopočítej**: drženo celkem (součet daného instrumentu napříč všemi portfolii, včetně mantinelů) − osvobozeno. Jde o výpočet z viditelných čísel, ne o odhad. V `revize.md` ho označ jako „dopočteno“.
 - Instrument, který v daňovém přehledu není, ber jako **neosvobozený** jen tehdy, když přehled zjevně ukazuje celý seznam osvobozených instrumentů. Jinak je jeho osvobození „neuvedeno“.
 - Pokud je přehled k jinému datu než screeny portfolií, nebo jsou hodnoty v jiné měně, uveď to. Kvůli pohybu cen jsou hodnoty orientační.
 - Data nákupu jednotlivých kusů většinou neznáš a nepotřebuješ: rozhoduje osvobozená hodnota a FIFO (kap. 6).
@@ -110,13 +112,13 @@ Zvýrazni instrumenty, které se objevují ve více portfoliích (**překryvy / 
 - Dvojí expozice uvnitř jednoho portfolia (např. přímý Bitcoin + Bitcoin ETP).
 - **Tematická koncentrace** — když se jedno téma prolíná napříč vším (ve vzoru obrana/zbrojení: přímé akcie, fond, tematická ETF), sestav samostatný blok se součtem.
 
-Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej překryvy s watchlistem a podobné, ale neidentické motivy (např. tech/AI napříč portfolii).
+Pořadí řádků: od největší hodnoty v CZK. Překryvy s watchlistem a podobné, ale neidentické motivy (např. tech/AI napříč portfolii) do Excelu nepiš. Uveď je v `revize.md` a v e-mailu, pokud jsou pro klienta užitečné.
 
 # 5. SESTAVENÍ EXCELU (vždy přes nástroj, ne ručně)
 
 1. Zapiš vytěžená data do `revize.json` ve výstupní složce (kap. 0) podle struktury `examples/revize-portfolii/vzor-vstup.json`:
    - `klient`: jméno a příjmení klienta. Skript ho dá do názvu sešitu „Revize portfolia – <jméno>“.
-   - `kurzy`: `datum`, `zdroj` (plný popis), `zdroj_kratce` (do záhlaví, např. „ČNB, lístek č. 194“), `hodnoty` (`{"USD": 21.811, "EUR": 24.4}`)
+   - `kurzy`: `datum`, `zdroj` (plný popis), `zdroj_kratce` (do Excelu, jen „ČNB“), `hodnoty` (`{"USD": 21.811, "EUR": 24.4}`)
    - `pozice` (list Přehled): `id`, `portfolio`, `instrument`, `mena`, `hodnota` (číslo, nebo `null` = neuvedeno), `mantinel` (true/false), volitelně `prekryv`
    - `slozky` (list Detail): `id`, `portfolio` (přesně stejný název jako v `pozice`), `instrument`, `mena`, `hodnota`, `zastoupeni` (podíl jako desetinné číslo, 0.338 = 33.8 %, nebo `null`), `prekryv`
    - `prekryvy`: `expozice`, `portfolia` (text včetně počtu, např. „Čtvrtá + Třetí strategie (2×)“), `refs` (seznam `id` sčítaných řádků z `pozice`/`slozky`)
@@ -128,7 +130,7 @@ Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej p�
      - `realizovany_zisk_v_roce`: dosud realizovaný zisk z prodejů CP bez časového testu v témže roce (z ročního souhrnu), jinak `null`
      - volitelně `upozorneni`, `poznamky`
      Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu) a u každého spočte časově osvobozenou část a část bez časového testu. Pak sečte úhrn všech příjmů za rok a vyhodnotí hodnotový test (SPLNĚN = vše osvobozeno). Zdanitelný příjem spočte podle kap. 6c. Nakonec spočte **orientační daň bez návrhů a s návrhy a jejich rozdíl („daň navíc z návrhů“)**. Ztráty přitom započte proti ziskům v témže roce a hodnotový test zohlední před návrhy i po nich. Prodej nad drženou hodnotu skript odmítne.
-   - volitelně `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy`
+   - `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy` nevyplňuj (kap. 3: Excel bez poznámek)
 2. Spusť `python3 nastroje/revize-do-excelu.py <složka>/revize.json "<složka>/Revize portfolia <Jméno Příjmení>.xlsx"`.
    Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Detail, na řádek Celkem v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 Detailu tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
 3. Skript vypíše spočtené hodnoty a kontrolu „viditelné složky vs. hodnota portfolia“. **Čísla do textové části revize ber z tohoto výpisu**, nepočítej je zpaměti.
@@ -217,6 +219,20 @@ Další zásady:
 - Zdůvodňuj strukturou portfolia (překryvy, koncentrace, přehlednost), ne předpovědí trhu. Žádné sliby výnosu.
 - Neodhaduj poplatky za transakce ani spready; pokud jsou pro návrh důležité, uveď je jako bod k ověření.
 - Seřaď návrhy od největšího přínosu pro přehlednost. Ideálně 4–8 návrhů.
+
+## 6e. Poznatky z dřívějších revizí (zpětná vazba zadavatele)
+
+Ještě jednou shrnuté věci, na které se v praxi narazilo:
+
+- **Excel dostane klient.** Žádné interní informace, žádné vysvětlující texty ani poznámky, žádná velká písmena, žádné „mantinely“ a žádný list Daně. Zvýrazněné jsou jen překryvy. Částky jsou v celých Kč. Hotovost ani měnové zajištění do Detailu nepatří. Přehled nemá měnové sloupce, když je vše v CZK. Sloupec se jmenuje „Druh portfolia“.
+- **Názvosloví:** položky jsou „instrumenty“, ne „fondy“ (ČEZ, Colt i CSG jsou akcie). Názvy instrumentů piš přesně podle screenu, bez dovětků „dle loga“.
+- **Daně jsou pro klienta citlivé.** Podrobné daňové tabulky by ho vystrašily. Daňový výpočet dělej pro poradce v `revize.md`. V e-mailu napiš jen „žádná daň nevznikne“, nebo jednou větou orientační daň v Kč.
+- **Přesun bez prodeje** jde jen do portfolia, které instrument už má. Přidat instrument do jiného portfolia znamená snížit cílové podíly ostatních instrumentů, tedy prodej. Proto přednostně navrhuj přesuny do portfolií, která instrument mají. Přidání navrhni jen tehdy, když je vyvolaný prodej malý, a porovnej ho s variantou nechat instrument tam, kde je.
+- **Po přesunu je potřeba upravit cílové složení zdrojového i cílového portfolia** podle skutečného výsledku, jinak hrozí rebalance s prodeji. Jestli to Portu dělá samo, je k ověření. Uveď to u každého přesunu v `revize.md`.
+- **Počet transakcí:** u vyvolaných prodejů počítej jednu změnu složení na portfolio a v závorce uveď počet dotčených instrumentů. Jestli jde při zařazení instrumentu snížit jen jeden vybraný instrument, je k ověření.
+- **Daňová logika:** rozhoduje orientační daň navíc, ne zdanitelný příjem. Ztráty se započítávají. V roce, kdy je hodnotový test už nesplněný, stojí další prodej jen sazbu ze zisku.
+- **Roční daňový souhrn** obsahuje příjem z prodeje a realizovaný zisk za rok. Osvobození po instrumentech, rok souhrnu nebo chybějící Investiční rezervu doplní zadavatel. Jeho upřesnění ber jako fakt.
+- **Interní kódy návrhů** (N1, N2-B) nepoužívej nikde. Kroky pojmenuj slovy.
 
 # 7. VÝSTUP
 

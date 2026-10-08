@@ -930,14 +930,16 @@
     "instrument": "t_spx",
     "refs": [
      "d71"
-    ]
+    ],
+    "zisk": 1500
    },
    {
     "navrh": "N2",
     "instrument": "t_colt",
     "refs": [
      "d55"
-    ]
+    ],
+    "zisk": -2300
    },
    {
     "navrh": "N3",
@@ -962,8 +964,9 @@
    }
   ],
   "poznamky": [
-   "UKÁZKA: osvobozené hodnoty jsou smyšlené, slouží jen k předvedení struktury vstupu a výpočtu FIFO."
+   "UKÁZKA: osvobozené hodnoty a zisky jsou smyšlené, slouží jen k předvedení struktury vstupu a výpočtu FIFO."
   ],
-  "dalsi_prodeje_v_roce": null
+  "dalsi_prodeje_v_roce": null,
+  "realizovany_zisk_v_roce": null
  }
 }

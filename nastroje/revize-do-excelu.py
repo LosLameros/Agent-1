@@ -18,6 +18,7 @@ PREKRYV = "FFFFF3CD"    # překryvy / duplicitní expozice
 CELKEM = "FFE9E2F3"     # součtové řádky
 ZDANITELNE = "FFF4CCCC" # prodej s daňovou povinností / překročený limit
 LIMIT_CP = 100000       # hodnotový test: roční limit hrubých příjmů z prodeje CP (Kč)
+SAZBA = 0.15            # základní sazba daně z příjmů FO (orientační výpočet)
 NEUVEDENO = "neuvedeno"
 
 TENKA = Side(style="thin", color="FFBFBFBF")
@@ -304,12 +305,12 @@ def main(vstup, vystup):
     if d.get("dane"):
         dn = d["dane"]
         ws = wb.create_sheet("Daně", index=3)
-        titulek(ws, "Daně: časový a hodnotový test navržených prodejů (FIFO napříč portfolii)", 6)
+        titulek(ws, "Daně: časový a hodnotový test navržených prodejů (FIFO napříč portfolii)", 7)
         podtitulek(ws, dn.get("upozorneni",
                               "Osvobozená hodnota je z daňového přehledu klienta; neosvobozená část je dopočtena "
                               "(drženo celkem − osvobozeno). Portu prodává metodou FIFO napříč všemi portfolii: "
                               "prodej čerpá nejdřív nejstarší (osvobozené) kusy daného instrumentu, ať je prodej "
-                              "z kteréhokoli portfolia. Hodnoty jsou v aktuálních cenách – orientační."), 6, vyska=42)
+                              "z kteréhokoli portfolia. Hodnoty jsou v aktuálních cenách – orientační."), 7, vyska=42)
         zahlavi(ws, 4, ["Instrument (název + ticker/ISIN)", "Ve kterých portfoliích", "Drženo celkem v CZK",
                         "Časově osvobozeno (CZK)", "Neosvobozeno (CZK, dopočteno)", "Osvobozený podíl"])
         bunka_osvob = {}
@@ -338,17 +339,21 @@ def main(vstup, vystup):
         for pr in dn.get("prodeje", []):
             if pr["instrument"] not in bunka_osvob:
                 sys.exit(f"Prodej odkazuje na neznámý instrument daňového přehledu: {pr['instrument']}")
-            x = prodeje.setdefault(pr["instrument"], {"refs": [], "castka": 0.0, "navrhy": []})
+            x = prodeje.setdefault(pr["instrument"], {"refs": [], "castka": 0.0, "navrhy": [], "zisk": 0.0})
             x["refs"] += pr.get("refs", [])
+            # orientační zisk/ztráta části bez časového testu (CZK); chybí-li u kteréhokoli prodeje, je neznámý
+            x["zisk"] = None if x["zisk"] is None or pr.get("zisk") is None else x["zisk"] + pr["zisk"]
             x["castka"] += pr.get("castka", 0) or 0
             x["navrhy"].append(pr["navrh"])
         r += 1
         zahlavi(ws, r, ["Prodávaný instrument", "Návrhy", "Příjem z prodeje (CZK)",
-                        "Z toho časově osvobozeno (FIFO)", "Z toho bez časového testu", "Daňový stav"])
+                        "Z toho časově osvobozeno (FIFO)", "Z toho bez časového testu", "Daňový stav",
+                        "Orientační zisk/ztráta (bez čas. testu)"])
         r += 1
         od = r
         r_suma = od + len(prodeje)          # úhrn navržených prodejů
         r_dalsi, r_uhrn, r_test, r_zdan = r_suma + 1, r_suma + 2, r_suma + 3, r_suma + 4
+        r_rz, r_dan_pred, r_dan_po, r_dan_navic = r_suma + 5, r_suma + 6, r_suma + 7, r_suma + 8
         radky_prodeju = []
         for tid, x in prodeje.items():
             radek_t, t = bunka_osvob[tid]
@@ -401,11 +406,13 @@ def main(vstup, vystup):
                 bunka(ws, r, 6, f'=IF({test},"osvobozeno (hodnotový test)",IF(E{r}<0.005,'
                                 f'"osvobozeno (časový test)",IF(D{r}<0.005,"zdanitelné",'
                                 f'"částečně osvobozeno (časový test)")))', barva=barva)
-            dane_vypis.append((t["instrument"], ", ".join(x["navrhy"]), hodnota, osv, stav))
+            z = x["zisk"]
+            bunka(ws, r, 7, NEUVEDENO if z is None else z, None if z is None else "#,##0.00", "right", barva)
+            dane_vypis.append((t["instrument"], ", ".join(x["navrhy"]), hodnota, osv, stav, z))
             r += 1
 
         def souhrn(radek, popis, barva, hodnoty_sloupcu):
-            for sl in range(1, 7):
+            for sl in range(1, 8):
                 bunka(ws, radek, sl, None, barva=barva, tucne=True)
             ws.cell(radek, 1, popis)
             for sl, (hod, fmt) in hodnoty_sloupcu.items():
@@ -415,7 +422,7 @@ def main(vstup, vystup):
                 c.alignment = Alignment(horizontal="right" if fmt else "left", wrap_text=not fmt)
 
         souhrn(r_suma, "Úhrn navržených prodejů", CELKEM,
-               {s: (f"=SUM({pis}{od}:{pis}{r_suma - 1})", "#,##0.00") for s, pis in ((3, "C"), (4, "D"), (5, "E"))})
+               {s: (f"=SUM({pis}{od}:{pis}{r_suma - 1})", "#,##0.00") for s, pis in ((3, "C"), (4, "D"), (5, "E"), (7, "G"))})
         souhrn(r_dalsi, "Další prodeje CP v témže roce (i mimo Portu)", CELKEM,
                {3: (dalsi if dalsi is not None else NEUVEDENO, "#,##0.00"),
                 6: ("zadáno" if dalsi is not None else "neznámé – počítáno s nulou", None)})
@@ -427,22 +434,46 @@ def main(vstup, vystup):
         souhrn(r_zdan, "Zdanitelný příjem (bez časového testu)", ZDANITELNE if zdanitelne > 0 or (nezname and not hodnotovy) else CELKEM,
                {5: (f"=IF(C{r_uhrn}<={LIMIT_CP},0,E{r_suma})", "#,##0.00"),
                 6: ("+ část neuvedeno" if nezname and not hodnotovy else ("povinnost podat DP" if zdanitelne > 0 else ""), None)})
-        r = r_zdan + 2
+        # orientační daň: základ = zisky − ztráty z prodejů CP bez časového testu za rok (ztráty se započítávají)
+        rz = dn.get("realizovany_zisk_v_roce")   # dosud realizovaný zisk v roce (bez časového testu), None = neznámý
+        zisky = [z for *_, z in dane_vypis]
+        zisk_navrhu = None if any(z is None for z in zisky) else sum(zisky)
+        hodnotovy_pred = (dalsi or 0) <= LIMIT_CP
+        dan_pred = 0.0 if hodnotovy_pred else SAZBA * max(0.0, rz or 0.0)
+        dan_po = None if zisk_navrhu is None else (0.0 if hodnotovy else SAZBA * max(0.0, (rz or 0.0) + zisk_navrhu))
+        souhrn(r_rz, "Realizovaný zisk z dalších prodejů v roce (bez časového testu)", CELKEM,
+               {7: (rz if rz is not None else NEUVEDENO, "#,##0.00"),
+                6: ("zadáno" if rz is not None else "neznámý – počítáno s nulou", None)})
+        souhrn(r_dan_pred, f"Orientační daň z prodejů CP bez návrhů ({SAZBA:.0%})", CELKEM,
+               {7: (f"=IF(N(C{r_dalsi})<={LIMIT_CP},0,{SAZBA}*MAX(0,N(G{r_rz})))", "#,##0.00")})
+        souhrn(r_dan_po, f"Orientační daň z prodejů CP s návrhy ({SAZBA:.0%})", CELKEM,
+               {7: (f"=IF(C{r_uhrn}<={LIMIT_CP},0,{SAZBA}*MAX(0,N(G{r_rz})+G{r_suma}))"
+                    if zisk_navrhu is not None else NEUVEDENO, "#,##0.00")})
+        navic = None if dan_po is None else dan_po - dan_pred
+        souhrn(r_dan_navic, "DAŇ NAVÍC Z NÁVRHŮ (orientačně)",
+               ZDANITELNE if navic is None or navic > 0.5 else CELKEM,
+               {7: (f"=G{r_dan_po}-G{r_dan_pred}" if navic is not None else NEUVEDENO, "#,##0.00"),
+                6: ("zisk některého prodeje neuveden" if navic is None else "", None)})
+        r = r_dan_navic + 2
         pozn = ["Červeně = prodej se zdanitelnou částí nebo s neznámým osvobozením; nesplněný hodnotový test.",
                 "Hodnotový test (§ 4 odst. 1 písm. t) ZDP): když úhrn hrubých příjmů z prodeje CP za rok – ze všech "
                 "prodejů, i mimo Portu a i časově osvobozených – nepřesáhne 100 000 Kč, je osvobozeno vše. Při "
                 "překročení se zdaňují všechny příjmy, které nesplňují časový test (ne jen část nad limit).",
                 "Časový test (§ 4 odst. 1 písm. u) ZDP): 3 roky mezi nákupem a prodejem, pro každý kus zvlášť; "
-                "Portu páruje metodou FIFO. Zdanitelný příjem ≠ daň: základem je příjem − pořizovací cena − poplatky."]
+                "Portu páruje metodou FIFO. Zdanitelný příjem ≠ daň: základem je příjem − pořizovací cena − poplatky.",
+                f"Orientační daň: {SAZBA:.0%} ze součtu zisků a ztrát z prodejů CP bez časového testu za rok (ztráty "
+                "se proti ziskům ve stejném roce započítávají). Zisk je orientační (ze screenů výnosu) – skutečný zisk "
+                "určí párování FIFO, případně může jít o sazbu 23 % (základ nad 36násobek průměrné mzdy)."]
         if osvobozeno_ct > 5_000_000:
             pozn.append("POZOR: osvobozené příjmy přesahují 5 mil. Kč za rok – je třeba je oznámit finančnímu úřadu "
                         "do konce lhůty pro podání daňového přiznání.")
-        poznamky(ws, r, pozn + dn.get("poznamky", []), 6)
-        sirky(ws, [40, 30, 22, 22, 24, 30])
+        poznamky(ws, r, pozn + dn.get("poznamky", []), 7)
+        sirky(ws, [40, 30, 22, 22, 24, 30, 22])
         ws.freeze_panes = "A5"
         dane_vypis = (dn["instrumenty"], dane_vypis, dict(
             uhrn=uhrn, dalsi=dalsi, hodnotovy=hodnotovy, zdanitelne=zdanitelne,
-            nezname=nezname, osvobozeno_ct=osvobozeno_ct))
+            nezname=nezname, osvobozeno_ct=osvobozeno_ct, rz=rz, zisk_navrhu=zisk_navrhu,
+            dan_pred=dan_pred, dan_po=dan_po, navic=navic))
 
     wb.save(vystup)
 
@@ -475,15 +506,21 @@ def main(vstup, vystup):
             print(f"  {t['instrument']}: {t['_drzeno']:,.2f} / "
                   + (NEUVEDENO if o is None else f"{o:,.2f} / {max(0, t['_drzeno'] - o):,.2f} CZK"))
         print("\nNavržené prodeje (příjem / časově osvobozeno / bez časového testu):")
-        for nazev, navrhy, h, o, stav in prodeje:
+        for nazev, navrhy, h, o, stav, z in prodeje:
             print(f"  {nazev} [{navrhy}]: {h:,.2f} / "
-                  + (f"{o:,.2f} / {h - o:,.2f} CZK" if o is not None else NEUVEDENO) + f" | {stav}")
+                  + (f"{o:,.2f} / {h - o:,.2f} CZK" if o is not None else NEUVEDENO) + f" | {stav}"
+                  + f" | orient. zisk {NEUVEDENO if z is None else f'{z:,.2f} CZK'}")
         print(f"  Úhrn příjmů z prodeje CP za rok: {sh['uhrn']:,.2f} CZK"
               + (" (další prodeje v roce neznámé – počítáno s nulou)" if sh["dalsi"] is None else ""))
         print(f"  Hodnotový test {LIMIT_CP:,} Kč: " + ("SPLNĚN – vše osvobozeno" if sh["hodnotovy"] else "NESPLNĚN"))
         print(f"  Zdanitelný příjem: {sh['zdanitelne']:,.2f} CZK"
               + (" + část neuvedeno" if sh["nezname"] and not sh["hodnotovy"] else "")
               + (" → povinnost podat daňové přiznání" if sh["zdanitelne"] > 0 else ""))
+        print(f"  Realizovaný zisk v roce dosud: " + (NEUVEDENO if sh["rz"] is None else f"{sh['rz']:,.2f} CZK")
+              + " | zisk/ztráta z návrhů: " + (NEUVEDENO if sh["zisk_navrhu"] is None else f"{sh['zisk_navrhu']:,.2f} CZK"))
+        print(f"  Orientační daň ({SAZBA:.0%}) bez návrhů: {sh['dan_pred']:,.2f} CZK | s návrhy: "
+              + (NEUVEDENO if sh["dan_po"] is None else f"{sh['dan_po']:,.2f} CZK")
+              + " | DAŇ NAVÍC Z NÁVRHŮ: " + (NEUVEDENO if sh["navic"] is None else f"{sh['navic']:,.2f} CZK"))
         if sh["osvobozeno_ct"] > 5_000_000:
             print("  POZOR: osvobozené příjmy > 5 mil. Kč → oznamovací povinnost vůči FÚ")
 

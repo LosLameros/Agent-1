@@ -27,6 +27,7 @@ Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze 
 ## Spolupráce
 
 - Čtvrtletní zprávy existují ve dvou verzích (`.md` a `.docx` ve `vystupy/ctvrtletni-zpravy/`). Každou úpravu textu proveď v `.md` a hned znovu vygeneruj Word přes `node nastroje/zprava-do-wordu.js <md> <podklady/RRRR-Qn> <docx>`, aby byly obě verze vždy stejné.
+- Před odesláním čtvrtletní zprávy i každé navržené úpravy (i jen jedné věty) ji zkontroluj podle odborné revize v kapitole 8a promptu `.claude/agents/Čtvrtletní zprávy.md`.
 - Připomínka nebo dotaz od uživatele **neznamená automaticky požadavek na změnu**. Uživatel chce kritický názor a samostatný postoj: nejdřív posuď, zda má připomínka pravdu, a obhaj nebo uprav své řešení podle faktů. Měň jen to, co je opravdu potřeba, a když nesouhlasíš, řekni proč.
 
 ## Poznámka

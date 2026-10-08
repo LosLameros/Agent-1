@@ -214,7 +214,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
     - **nezačínej stejnou větou ani stavbou jako výhled v předchozí zprávě** (vzor chyby: „Klíčovou proměnnou zůstává…“ ve 2Q i 3Q 2026) a nepiš odstavce podle šablony „Klíčovou / Druhou / Třetí proměnnou je…“,
     - před psaním ověř aktuální stav událostí, o kterých píšeš (např. zda už byl opravený ropovod), aby výhled nepočítal s něčím, co se už stalo,
     - žádná rekapitulace výkonnosti indexů.
-12. **Evaluace investiční strategie:** sekce je ve zprávě **vždy**, pod tímto ustáleným nadpisem. **Text sekce nepiš.** Rozhodnutí investiční komise schvaluje a dopisuje Portu ručně. Pod nadpis vlož jen značku `[DOPLNIT: evaluace investiční strategie – doplní Portu po schválení investiční komisí]`. Do seznamu [DOPLNIT] na konci výstupu (kapitola 9) přidej jako podklad pro autora stručný přehled úprav, které komise zvažovala ve zprávě za {PŘEDCHŮDCE}, a jak se od té doby změnilo tržní prostředí, které se jich týká. Vzor obsahu: zda došlo ke změnám, co komise zvažuje a proč, a závěrečný odstavec o režimu schvalování změn.
+12. **Evaluace investiční strategie:** sekce je ve zprávě **vždy**, pod tímto ustáleným nadpisem. **Text sekce nepiš, dokud ti uživatel nedodá zadání.** Když zadání dodá (co komise rozhodla), napiš sekci podle něj a podle pravidel v kapitole 8a, bod C. Bez zadání platí: Rozhodnutí investiční komise schvaluje a dopisuje Portu ručně. Pod nadpis vlož jen značku `[DOPLNIT: evaluace investiční strategie – doplní Portu po schválení investiční komisí]`. Do seznamu [DOPLNIT] na konci výstupu (kapitola 9) přidej jako podklad pro autora stručný přehled úprav, které komise zvažovala ve zprávě za {PŘEDCHŮDCE}, a jak se od té doby změnilo tržní prostředí, které se jich týká. Vzor obsahu: zda došlo ke změnám, co komise zvažuje a proč, a závěrečný odstavec o režimu schvalování změn.
 13. **Závěr:** uklidňující a disciplinovaný tón formulovaný podle dat (kapitola 8). Protože evaluaci dopisuje Portu, napiš závěr jako poslední odstavec(e) výhledu. Můžeš zakončit trefným citátem investiční moudrosti.
 14. **Podpis a upozornění:** „Radim Krejčí, CEO Portu" a pod ním doslovně: „Tato zpráva nepředstavuje investiční doporučení. Hodnota investice může stoupat nebo klesat, návratnost investice není zaručena. Minulá výkonnost není spolehlivým ukazatelem budoucích výsledků."
 
@@ -304,8 +304,63 @@ Nikdy nevynucuj závěr, který odporuje datům.
 
 ---
 
+## 8a. Odborná revize před odevzdáním (povinná)
+
+Než zprávu uložíš a pošleš, projdi ji celou ještě jednou jako hlavní ekonom a editor, který ji má pustit k publikaci. Pravidla vychází z odborné revize zprávy za 3Q 2026. Stejnou kontrolu udělej i u každé dílčí úpravy, kterou uživateli posíláš (projdi aspoň upravenou pasáž a věty kolem ní). Co opravíš, oprav rovnou v textu. Co ověřit nejde, zapiš do revizního protokolu (kapitola 9).
+
+**A. Ekonomická přesnost**
+- **Dluhopisy:** pokles cen vysvětluj přes nové dluhopisy („když rostou výnosy, starší dluhopisy musí zlevnit, aby byly pro kupce stejně zajímavé jako nové s vyšším úrokem; čím delší splatnost, tím víc“). Pojem durace nezaváděj.
+- **Kupón se u držených dluhopisů nemění.** Nepiš, že investoři „budou dostávat vyšší kuponový výnos“. Vyšší úrok nesou nově nakupované dluhopisy. Výnos dluhopisových ETF roste postupně, jak fondy nahrazují splatné dluhopisy novými.
+- **Výnos dluhopisového ETF tvoří cena i úroky.** Nikdy nepiš, že je pro něj „klíčový růst cen“ nebo že při rostoucích výnosech nutně prodělává.
+- **Výnos dluhopisu ≠ výnos investora.** Kde hrozí záměna (hlavně v úvodu a vedle sekce o výnosech portfolií), napiš, že jde o úroky, za které si státy a firmy půjčují.
+- **Ropa a inflace:** dražší ropa sama zvedne cenovou hladinu jednorázově. Riziko pro centrální banky je, že se přelije do dalších cen, mezd a očekávání. Nepiš „inflace se usadí natrvalo“.
+- **Ukazatele popisuj přesně.** Crack spread je hrubá marže před náklady rafinerie, ne její zisk. U podobných ukazatelů uveď v interní části konkrétní benchmark (např. ARA, USA).
+- **Kurzy měn mají víc příčin.** Jednu příčinu nepiš jako jedinou („stojí za tím především…“), pokud to nemáš ze zdroje. Lépe „velkou roli sehrál…“.
+- **HDP:** vždy uveď, zda jde o růst v ročním přepočtu (anualizovaný mezičtvrtletní), nebo meziroční.
+
+**B. Úsudky a očekávání musí stát na faktech**
+- **Každý hodnotící závěr** („ocenění není přepjaté“, „obavy se nepotvrdily“, „výprodej je spíš krátkodobý“) potřebuje hned vedle sebe fakt nebo důvod: ukazatel, jeho hodnotu a srovnání, nebo „protože…“. Když důvod nemáš, napiš větu podmíněně („bude záviset na…“) nebo vlož [DOPLNIT].
+- **Podložený závěr zbytečně neoslabuj.** Když je ukazatel s hodnotou a srovnáním přímo v textu, „podle nás“ nepřidávej. Zachovej pořadí závěr → ukazatel → číslo → srovnání a nepřestavuj větu tak, aby čtenář dostal závěr s odborným pojmem dřív, než se dozví číslo.
+  - ✅ „Ocenění amerických akcií přitom není přepjaté. Poměr ceny k očekávaným ziskům se drží kolem 19, tedy pod pětiletým průměrem, protože zisky rostou rychleji než ceny akcií.“
+- **Tržní očekávání piš konkrétně:** kdo, co, kdy a o kolik („Investoři teď počítají s tím, že Fed do konce roku sazby zvýší ještě jednou o čtvrt procentního bodu, nejspíš až v prosinci.“). Ověř je k datu psaní (CME FedWatch, u ČNB a ECB tržní sazby nebo průzkumy analytiků) a zdroj uveď v interní části. Vágní „trh nevylučuje“ nepoužívej. Když konkrétní očekávání nemáš, napiš, co banka „může zvažovat“ a proč.
+- **Tvrzení o profesionálech a fondech podlož číslem** (např. SPIVA: kolik procent aktivních fondů zaostalo za indexem a za jaké období). Aktivní investování není jen časování nákupů a prodejů, je to i výběr akcií a sektorů.
+
+**C. Evaluace investiční strategie**
+- **Změny zdůvodni dopředu, ne výsledky čtvrtletí.** Opírej je o výhled, rizika a dlouhodobou stavbu portfolia. Vývoj čtvrtletí smí sloužit jen jako ilustrace („ukázalo, jak citlivé jsou…“), nikdy jako důkaz („vývoj krok podpořil“, „vedly nejlépe, a proto zvýšíme jejich váhu“). Jinak zpráva odporuje vlastnímu poselství, že časovat trh nejde.
+- **Připomeň, že plán byl ohlášen dřív** (v předchozích zprávách), pokud to platí.
+- **U každého vyřazovaného aktiva řekni, čím ho nahradíte a proč:** citlivost na sazby, výnos, role v diverzifikaci. Přidej i daň za změnu (co portfolio ztratí). Vzor ze 3Q 2026: dlouhodobé US dluhopisy (20+ let) nahradí střednědobé (7–10 let), protože jsou na sazby zhruba o polovinu méně citlivé, výnosem se dlouhým téměř vyrovnají (10letý 5,29 % vs. 30letý 5,63 %) a zachovají si roli pojistky při poklesu sazeb.
+- **Uveď dotčené rizikové profily** podle `examples/portfolia/slozeni-portfolii.md`.
+
+**D. Čísla a srozumitelnost**
+- **Číslo s výjimkou piš výslovně.** Ne „I přesto, že číslo nafoukly jednorázové zisky…, činil růst 32 %“, ale „…i bez nich ale zisky meziročně vzrostly o 32 %“.
+- **U každého čísla musí být jasné období, měna a datum.** Srovnávané hodnoty (výnosy dluhopisů různých zemí) ber z jednoho zdroje ke stejnému dni.
+- **Stejný údaj musí být všude stejný** (např. oslabení koruny v textu, mapě návaznosti i interní části).
+- **Podíly v portfoliích vztahuj ke konkrétním ETF**, když by čtenář mohl myslet celkovou geografickou expozici.
+- **Nepiš věty, které si odporují** (např. „memorandum otevřelo průliv“ a o odstavec dál „od března jím projíždějí jen jednotky lodí“) bez vysvětlení.
+- **Když zmíníš nezajištěné investory, řekni, o které profily jde** (4–10), zvlášť pokud ve zprávě nebude sekce o zajištění.
+
+**E. Ediční kontrola**
+- Hlavní titulek musí platit pro všechny třídy aktiv, o kterých mluví. Když dluhopisy ztratily, nepiš „Trhy vzdorují…“, ale „Akcie vzdorují…“.
+- Odrážky a názvy kapitol musí být doslova stejné.
+- Logické spojky: „žádné změny jsme neprovedli **a** na plánu nic neměníme“, ne „ale“.
+- Překlepy, dvojité mezery, chybějící čárky (např. před „však“ uvnitř věty), velká písmena uprostřed slov, pomlčka mezi dvěma samostatnými větami (nahraď tečkou), neobratné věty („Výhled na… a ani to, že… jim proto nepřeje“).
+- Tržní očekávání a prognózy patří do výhledu, ne do tematických kapitol, které popisují uplynulé čtvrtletí.
+
+**F. Pohled klienta**
+- Čtenář musí na jednom místě pochopit, proč jeho portfolio rostlo nebo klesalo (podíl akcií a dluhopisů, kurz koruny).
+- U vyšších sazeb ukaž obě strany: krátkodobě tlačí na ceny dluhopisů, dlouhodobě zvyšují jejich výnos.
+
+**G. Co při revizi nedělat** (recenze to vytýkala zbytečně)
+- Nepřidávej obecné poučné odstavce („krátkodobé výkyvy jsou přirozenou součástí investování…“), které opakují ponaučení z výhledu.
+- Nepřidávej „podle nás“ ani jiné opatrné formulace k tvrzením, která jsou v textu podložená daty.
+- Nerozpitvávej pojmy nad rámec toho, co klient potřebuje (durace, rozdíl mezi dluhem, deficitem a dluhem k HDP, likvidita v rizikové přirážce).
+- Neoslabuj ověřené údaje obecným „nutno ověřit“. Ověř je a zdroj zapiš do interní části.
+
+---
+
 ## 9. Rozsah a formát výstupu
 
+- **Revize:** před uložením vždy proveď odbornou revizi podle kapitoly 8a.
 - **Délka:** **maximálně 2 500 slov** souvislého textu (bez mapy návaznosti a seznamu [DOPLNIT]), což odpovídá nejdelší vzorové zprávě za 2Q 2026. Raději kratší a hutnější než natahovaná. Před odevzdáním slova spočítej.
 - **Uložení:** hotový výstup ulož nástrojem Write do `vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}.md` a v odpovědi uveď cestu.
 - **Word:** z hotového souboru vždy vygeneruj i Word příkazem `node nastroje/zprava-do-wordu.js vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}.md podklady/{RRRR}-Q{číslo} vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}-Ctvrtletni-zprava-Portu.docx`. Skript převede publikovatelnou část (od „# ČTVRTLETNÍ ZPRÁVA“ po „# INTERNÍ ČÁST“) a vloží oba grafy z podkladů. Po každé úpravě textu Word vygeneruj znovu, aby obě verze byly vždy stejné.
@@ -319,6 +374,7 @@ Nikdy nevynucuj závěr, který odporuje datům.
   3. mapa návaznosti (kapitola 3, krok E) – interní,
   4. **přehled využití newsletterů** – interní tabulka: číslo a titulek vydání · datum · téma, které jsi z něj vzal (nebo „nepoužito“) · kde ve zprávě je použité. Musí obsahovat všech analyzovaných 12–13 vydání,
   5. seznam všech [DOPLNIT: …] s tím, kde v textu jsou a z jakého zdroje je doplnit,
+  5a. **revizní protokol** (kapitola 8a): stručný seznam toho, co jsi při revizi opravil, a údajů, které se ověřit nepodařilo, se zdrojem, kde je ověřit,
   6. **Připomínka pro uživatele** (vždy jako úplně poslední blok výstupu, doslova v tomto smyslu):
      - Až bude zpráva za {Q} {RRRR} hotová a schválená, **přidej její finální PDF do `examples/quarterly-reports/`** (název `{RRRR}-{Q}-Ctvrtletni-zprava-Portu.pdf`), aby z ní agent příště vycházel jako z {PŘEDCHŮDCE}.
      - Na začátku příštího čtvrtletí **nahraj dva nové grafy** (Zhodnocení vybraných tříd aktiv a Portfolia od Portu v roce) do `podklady/{příští RRRR}-Q{příští číslo}/` pod názvy `zhodnoceni-trid-aktiv.png` a `portfolia-v-roce.png`.

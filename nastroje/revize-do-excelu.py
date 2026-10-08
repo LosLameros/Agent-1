@@ -2,7 +2,7 @@
 # Použití: python3 nastroje/revize-do-excelu.py <vstup.json> <vystup.xlsx>
 # Sestaví Excel revize klientských portfolií ve formátu vzoru
 # examples/revize-portfolii/Revize_portfolia_vzor.xlsx (listy Přehled, Detail, Překryvy, volitelně Daně).
-# Kurzy ČNB jsou v řádku 3 listu Přehled. Všechny CZK hodnoty a procenta jsou vzorce (odkazy na
+# Kurzy ČNB jsou v řádku 3 listu Detail. Všechny CZK hodnoty a procenta jsou vzorce (odkazy na
 # tyto kurzy a na CELKEM v Přehledu), takže změna kurzu přepočítá celý sešit. Skript zároveň vypíše spočtené
 # hodnoty pro textovou část revize. Struktura vstupního JSON je popsaná
 # v .claude/agents/revize-portfolia.md (kapitola 5).
@@ -112,22 +112,22 @@ def main(vstup, vystup):
     detail = wb.create_sheet("Detail")
     prekryvy = wb.create_sheet("Překryvy")
     k = d["kurzy"]
-    # kurzy v řádku 3 listu Přehled: „1 USD =“ | hodnota | „1 EUR =“ | hodnota | zdroj
+    # kurzy v řádku 3 listu Detail (tam jsou měny): „1 USD =“ | hodnota | „1 EUR =“ | hodnota | zdroj
     bunka_kurzu = {}
-    c = prehled.cell(3, 1, f"Kurzy k {k['datum']}:")
+    c = detail.cell(3, 1, f"Kurzy k {k['datum']}:")
     c.font = font(bold=True)
     sl = 2
     for mena in [m for m in ["USD", "EUR"] if m in kurzy] + sorted(m for m in kurzy if m not in ("USD", "EUR", "CZK")):
-        c = prehled.cell(3, sl, f"1 {mena} =")
+        c = detail.cell(3, sl, f"1 {mena} =")
         c.font = font(bold=True)
         c.alignment = Alignment(horizontal="right")
-        c = prehled.cell(3, sl + 1, kurzy[mena])
+        c = detail.cell(3, sl + 1, kurzy[mena])
         c.font = font()
         c.number_format = '0.000 "Kč"'
         c.alignment = Alignment(horizontal="left")
-        bunka_kurzu[mena] = f"'Přehled'!${chr(64 + sl + 1)}$3"
+        bunka_kurzu[mena] = f"Detail!${chr(64 + sl + 1)}$3"
         sl += 2
-    c = prehled.cell(3, sl, f"Zdroj: {k.get('zdroj_kratce', k['zdroj'])}")
+    c = detail.cell(3, sl, f"Zdroj: {k.get('zdroj_kratce', k['zdroj'])}")
     c.font = font(size=9, color="FF333333")
 
     def vzorec_czk(mena, adresa_hodnoty):
@@ -144,10 +144,17 @@ def main(vstup, vystup):
     celkem = sum(p["_czk"] or 0 for p in pozice)
 
     nazev = f"Revize portfolia – {d['klient']}" if d.get("klient") else "Portu – přehled všech portfolií a přímých pozic"
-    titulek(prehled, f"{nazev} (přepočet k {k['datum']})", 6)
+    titulek(prehled, f"{nazev} (přepočet k {k['datum']})",
+            6 if any(p["mena"].upper() != "CZK" for p in pozice) else 4)
     # bez vysvětlujícího podtitulku – Excel je pro klienta
-    zahlavi(prehled, 4, ["Portfolio", "Instrument (název + ticker/ISIN)", "Původní měna",
-                         "Hodnota (pův. měna)", "Hodnota v CZK", "Podíl na celku"])
+    # Sloupce s původní měnou a hodnotou jen tehdy, když některá položka není v CZK.
+    s_menou = any(p["mena"].upper() != "CZK" for p in pozice)
+    hlavicky = ["Portfolio", "Druh portfolia"] + (["Původní měna", "Hodnota (pův. měna)"] if s_menou else []) \
+        + ["Hodnota v CZK", "Podíl na celku"]
+    n = len(hlavicky)
+    sl_czk, sl_pod = n - 1, n                       # čísla sloupců hodnoty v CZK a podílu
+    L_czk, L_pod = chr(64 + sl_czk), chr(64 + sl_pod)
+    zahlavi(prehled, 4, hlavicky)
     prvni = 5
     radek_celkem = prvni + len(pozice)
     adresa_pozice = {}
@@ -157,30 +164,34 @@ def main(vstup, vystup):
         barva = PREKRYV if p.get("prekryv") else None
         bunka(prehled, r, 1, p["portfolio"], barva=barva)
         bunka(prehled, r, 2, p["instrument"], barva=barva)
-        bunka(prehled, r, 3, p["mena"].upper(), zarovnani="center", barva=barva)
+        if s_menou:
+            bunka(prehled, r, 3, p["mena"].upper(), zarovnani="center", barva=barva)
         if p.get("hodnota") is None:
-            for s in (4, 5, 6):
-                bunka(prehled, r, s, NEUVEDENO, zarovnani="right", barva=barva)
+            for sl in range(3, n + 1):
+                bunka(prehled, r, sl, NEUVEDENO, zarovnani="right", barva=barva)
         else:
-            bunka(prehled, r, 4, p["hodnota"], CZK_FMT, "right", barva)
-            bunka(prehled, r, 5, vzorec_czk(p["mena"], f"D{r}"), CZK_FMT, "right", barva)
-            bunka(prehled, r, 6, f"=E{r}/$E${radek_celkem}", "0.0%", "right", barva)
+            if s_menou:
+                bunka(prehled, r, 4, p["hodnota"], CZK_FMT, "right", barva)
+                bunka(prehled, r, sl_czk, vzorec_czk(p["mena"], f"D{r}"), CZK_FMT, "right", barva)
+            else:
+                bunka(prehled, r, sl_czk, p["hodnota"], CZK_FMT, "right", barva)
+            bunka(prehled, r, sl_pod, f"={L_czk}{r}/${L_czk}${radek_celkem}", "0.0%", "right", barva)
         if p.get("id"):
-            adresa_pozice[p["id"]] = f"'Přehled'!E{r}"
-    for s in range(1, 7):
-        bunka(prehled, radek_celkem, s, None, barva=CELKEM, tucne=True)
-    prehled.cell(radek_celkem, 1, "CELKEM")
-    prehled.cell(radek_celkem, 5, f"=SUM(E{prvni}:E{radek_celkem - 1})").number_format = CZK_FMT
-    prehled.cell(radek_celkem, 6, f"=SUM(F{prvni}:F{radek_celkem - 1})").number_format = "0.0%"
-    for s in (5, 6):
-        prehled.cell(radek_celkem, s).alignment = Alignment(horizontal="right")
+            adresa_pozice[p["id"]] = f"'Přehled'!{L_czk}{r}"
+    for sl in range(1, n + 1):
+        bunka(prehled, radek_celkem, sl, None, barva=CELKEM, tucne=True)
+    prehled.cell(radek_celkem, 1, "Celkem")
+    prehled.cell(radek_celkem, sl_czk, f"=SUM({L_czk}{prvni}:{L_czk}{radek_celkem - 1})").number_format = CZK_FMT
+    prehled.cell(radek_celkem, sl_pod, f"=SUM({L_pod}{prvni}:{L_pod}{radek_celkem - 1})").number_format = "0.0%"
+    for sl in (sl_czk, sl_pod):
+        prehled.cell(radek_celkem, sl).alignment = Alignment(horizontal="right")
     poz = []
     if any(p.get("hodnota") is None for p in pozice):
         poz.append("Některé hodnoty nejsou k dispozici (neuvedeno), celková hodnota je proto neúplná.")
-    poznamky(prehled, radek_celkem + 2, poz + d.get("poznamky_prehled", []) + d.get("poznamky_kurzy", []), 6)
-    sirky(prehled, [26, 42, 12, 20, 18, 14])
+    poznamky(prehled, radek_celkem + 2, poz + d.get("poznamky_prehled", []) + d.get("poznamky_kurzy", []), n)
+    sirky(prehled, [26, 42, 12, 20, 18, 14] if s_menou else [26, 42, 18, 14])
     prehled.freeze_panes = "A5"
-    CELEK = f"'Přehled'!$E${radek_celkem}"
+    CELEK = f"'Přehled'!${L_czk}${radek_celkem}"
 
     # ---------- Detail ----------
     poradi = {}
@@ -256,7 +267,7 @@ def main(vstup, vystup):
     for blok in d.get("tematicke_bloky", []):
         r += 1
         prekryvy.merge_cells(start_row=r, start_column=1, end_row=r, end_column=4)
-        c = bunka(prekryvy, r, 1, blok["nazev"].upper(), barva=PREKRYV, tucne=True)
+        c = bunka(prekryvy, r, 1, blok["nazev"], barva=PREKRYV, tucne=True)
         r += 1
         od = r
         polozky = []

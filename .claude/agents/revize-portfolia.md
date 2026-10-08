@@ -73,16 +73,16 @@ Klient má na Portu více portfolií a ztrácí přehled, kde má jaké instrume
 
 # 3. KROK 2 — EXCEL: VÝPIS INSTRUMENTŮ (list Přehled + Detail)
 
-Excel se všemi instrumenty, seřazený od největší hodnoty po nejmenší. Sloupce:
+Excel se všemi instrumenty, seřazený od největší hodnoty po nejmenší. Sloupce nastavuje skript:
 
-1. Portfolio (název portfolia na Portu, kde instrument je)
-2. Instrument (název + ticker/ISIN, pokud je vidět)
-3. Původní měna
-4. Hodnota v původní měně
-5. Hodnota v CZK
-6. Podíl na celkové hodnotě klientova portfolia v Portu (%, 1 des. místo)
+- **Přehled:** Portfolio | Druh portfolia (např. „Portfolio podle vás“, „Portfolio od Portu (rizikový profil 5)“, „Fond“) | Hodnota v CZK | Podíl na celku. Sloupce „Původní měna“ a „Hodnota (pův. měna)“ přidá skript jen tehdy, když některá položka Přehledu není v CZK.
+- **Detail:** Portfolio | Instrument / složka | Původní měna | Hodnota (pův. měna) | Hodnota v CZK | Zastoupení v portfoliu | Podíl na celku.
 
-Pod tabulku přidej řádek CELKEM (součet v CZK). Částky jsou v Excelu zaokrouhlené na celé Kč (formát nastavuje skript). Procenta mají 1 desetinné místo.
+Název instrumentu piš přesně tak, jak je na screenu. Nic k němu nepřidávej, žádné „(iShares dle loga)“ ani jiné odhady správce. Ticker nebo ISIN přidej jen tehdy, když je na screenu opravdu vidět.
+
+**Žádné texty velkými písmeny** (potvrzeno zadavatelem). Neplatí to jen pro zkratky a názvy, které se tak běžně píšou (ETF, ČEZ, CSG, NATO, USA).
+
+Pod tabulku přidej řádek „Celkem“ (součet v CZK). Částky jsou v Excelu zaokrouhlené na celé Kč (formát nastavuje skript). Procenta mají 1 desetinné místo.
 
 **Excel je pro klienta** (potvrzeno zadavatelem). Platí proto:
 - **Žádné poznámky ani vysvětlující texty.** Pole `poznamky_*` a `upozorneni_detail` nech prázdná. Skript sám přidá jen legendu žluté barvy. Interní věci (čísla screenů, přiřazení screenů, ISIN, lístek ČNB, „potvrzeno zadavatelem“) patří do `revize.md` (sekce K ověření). Postřehy užitečné pro klienta (např. „Průmyslové dědictví má zhruba dvě třetiny složení stejné jako vaše další portfolia“) patří do e-mailu.
@@ -94,8 +94,8 @@ Pod tabulku přidej řádek CELKEM (součet v CZK). Částky jsou v Excelu zaokr
 
 Podle vzoru je výpis rozdělený do dvou listů:
 
-- **Přehled** — jeden řádek za každé portfolio (jeho celková hodnota) a za každou přímou pozici/fond. Odsud se počítá CELKEM a z něj všechna procenta v celém sešitu. V řádku 3 jsou kurzy ČNB.
-- **Detail** — složky jednotlivých portfolií (sloupce navíc: „Zastoupení v portfoliu“ podle screenu a „Podíl na celku“). Řazeno po portfoliích ve stejném pořadí jako v Přehledu, uvnitř portfolia od největší hodnoty v CZK. Složky, které tvoří překryv, jsou žlutě.
+- **Přehled** — jeden řádek za každé portfolio (jeho celková hodnota) a za každou přímou pozici/fond. Odsud se počítá řádek Celkem a z něj všechna procenta v celém sešitu.
+- **Detail** — složky jednotlivých portfolií (sloupce navíc: „Zastoupení v portfoliu“ podle screenu a „Podíl na celku“). Řazeno po portfoliích ve stejném pořadí jako v Přehledu, uvnitř portfolia od největší hodnoty v CZK. Složky, které tvoří překryv, jsou žlutě. V řádku 3 jsou kurzy ČNB.
 
 # 4. KROK 3 — POHLED PODLE INSTRUMENTU (list Překryvy)
 
@@ -104,8 +104,8 @@ Instrument | ve kterých portfoliích je | celková hodnota v CZK | podíl na ce
 
 Zvýrazni instrumenty, které se objevují ve více portfoliích (**překryvy / duplicitní expozice**), i **podobné expozice**. Rozlišuj v názvu řádku:
 
-- `– DUPLICITA` — stejný instrument nebo stejná akcie ve 2+ portfoliích či zároveň jako přímá pozice (např. Colt ve dvou strategiích, CSG přímo i uvnitř portfolia).
-- `– VÍCENÁSOBNÝ PŘEKRYV` — stejná složka ve 3+ portfoliích (typicky krátkodobé US treasuries).
+- `– duplicita` — stejný instrument nebo stejná akcie ve 2+ portfoliích či zároveň jako přímá pozice (např. Colt ve dvou strategiích, CSG přímo i uvnitř portfolia).
+- `– vícenásobný překryv` — stejná složka ve 3+ portfoliích (typicky krátkodobé US treasuries).
 - `(podobná expozice)` — různé ETF na stejný index/region/třídu aktiv (např. Evropské akcie vs. Evropské akcie top 50 vs. multifaktor; globální high yield dluhopisy).
 - Dvojí expozice uvnitř jednoho portfolia (např. přímý Bitcoin + Bitcoin ETP).
 - **Tematická koncentrace** — když se jedno téma prolíná napříč vším (ve vzoru obrana/zbrojení: přímé akcie, fond, tematická ETF), sestav samostatný blok se součtem.
@@ -130,7 +130,7 @@ Pořadí řádků: od největší hodnoty v CZK. Do poznámek pod tabulku dej p�
      Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu) a u každého spočte časově osvobozenou část a část bez časového testu. Pak sečte úhrn všech příjmů za rok a vyhodnotí hodnotový test (SPLNĚN = vše osvobozeno). Zdanitelný příjem spočte podle kap. 6c. Nakonec spočte **orientační daň bez návrhů a s návrhy a jejich rozdíl („daň navíc z návrhů“)**. Ztráty přitom započte proti ziskům v témže roce a hodnotový test zohlední před návrhy i po nich. Prodej nad drženou hodnotu skript odmítne.
    - volitelně `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy`
 2. Spusť `python3 nastroje/revize-do-excelu.py <složka>/revize.json "<složka>/Revize portfolia <Jméno Příjmení>.xlsx"`.
-   Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Přehled, na CELKEM v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
+   Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Detail, na řádek Celkem v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 Detailu tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
 3. Skript vypíše spočtené hodnoty a kontrolu „viditelné složky vs. hodnota portfolia“. **Čísla do textové části revize ber z tohoto výpisu**, nepočítej je zpaměti.
 
 Pozn.: číselný formát v Excelu se zobrazuje podle jazykového nastavení počítače (česká Excel může ukázat desetinnou čárku). V textové části revize piš vždy desetinnou tečku.

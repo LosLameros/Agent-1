@@ -747,7 +747,7 @@
  ],
  "prekryvy": [
   {
-   "expozice": "Colt (zbrojní akcie) – DUPLICITA",
+   "expozice": "Colt (zbrojní akcie) – duplicita",
    "portfolia": "Čtvrtá strategie + Třetí strategie (2×)",
    "refs": [
     "d35",
@@ -755,7 +755,7 @@
    ]
   },
   {
-   "expozice": "Czechoslovak Group (CSG) – DUPLICITA",
+   "expozice": "Czechoslovak Group (CSG) – duplicita",
    "portfolia": "Moje instrumenty (přímo) + První Crypto investice (2×)",
    "refs": [
     "p18",
@@ -763,7 +763,7 @@
    ]
   },
   {
-   "expozice": "Americké akcie (S&P 500) – DUPLICITA",
+   "expozice": "Americké akcie (S&P 500) – duplicita",
    "portfolia": "Moje první portfolio + Druhá strategie M (2×)",
    "refs": [
     "d5",
@@ -771,7 +771,7 @@
    ]
   },
   {
-   "expozice": "Krátkodobé US treasuries – VÍCENÁSOBNÝ PŘEKRYV",
+   "expozice": "Krátkodobé US treasuries – vícenásobný překryv",
    "portfolia": "Moje první + Technologický + Víra v hodnotu + Třetí + Druhá (5×)",
    "refs": [
     "d8",
@@ -811,7 +811,7 @@
  "tematicke_bloky": [
   {
    "nazev": "Tematická koncentrace – obrana / zbrojení (napříč vším)",
-   "nazev_celkem": "Obranný blok CELKEM",
+   "nazev_celkem": "Obranný blok celkem",
    "polozky": [
     {
      "popis": "DOOSAN Škoda Power (přímo)",

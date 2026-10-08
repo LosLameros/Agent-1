@@ -13,13 +13,13 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 
 PORTU = "FF4840BB"      # záhlaví a titulek (barva Portu)
-MANTINEL = "FFD9EAD3"   # mantinely (nedotýkat se)
 PREKRYV = "FFFFF3CD"    # překryvy / duplicitní expozice
 CELKEM = "FFE9E2F3"     # součtové řádky
 ZDANITELNE = "FFF4CCCC" # prodej s daňovou povinností / překročený limit
 LIMIT_CP = 100000       # hodnotový test: roční limit hrubých příjmů z prodeje CP (Kč)
 SAZBA = 0.15            # základní sazba daně z příjmů FO (orientační výpočet)
 NEUVEDENO = "neuvedeno"
+CZK_FMT = "#,##0"         # částky zaokrouhlené na celé jednotky
 
 TENKA = Side(style="thin", color="FFBFBFBF")
 RAMECEK = Border(top=TENKA, bottom=TENKA, left=TENKA, right=TENKA)
@@ -145,8 +145,8 @@ def main(vstup, vystup):
 
     nazev = f"Revize portfolia – {d['klient']}" if d.get("klient") else "Portu – přehled všech portfolií a přímých pozic"
     titulek(prehled, f"{nazev} (přepočet k {k['datum']})", 6)
-    podtitulek(prehled, "Setříděno od nejvyšší hodnoty. Hodnoty v USD a EUR jsou přepočtené kurzem ČNB "
-                        "z řádku 3. Desetinná tečka; % na 1 des. místo.", 6)
+    podtitulek(prehled, "Seřazeno od nejvyšší hodnoty. Částky v USD a EUR jsou přepočtené na Kč kurzem ČNB "
+                        "uvedeným níže.", 6)
     zahlavi(prehled, 4, ["Portfolio", "Instrument (název + ticker/ISIN)", "Původní měna",
                          "Hodnota (pův. měna)", "Hodnota v CZK", "Podíl na celku"])
     prvni = 5
@@ -154,7 +154,8 @@ def main(vstup, vystup):
     adresa_pozice = {}
     for i, p in enumerate(pozice):
         r = prvni + i
-        barva = MANTINEL if p.get("mantinel") else (PREKRYV if p.get("prekryv") else None)
+        # mantinely se v klientském Excelu nevyznačují, zvýrazňují se jen překryvy
+        barva = PREKRYV if p.get("prekryv") else None
         bunka(prehled, r, 1, p["portfolio"], barva=barva)
         bunka(prehled, r, 2, p["instrument"], barva=barva)
         bunka(prehled, r, 3, p["mena"].upper(), zarovnani="center", barva=barva)
@@ -162,21 +163,21 @@ def main(vstup, vystup):
             for s in (4, 5, 6):
                 bunka(prehled, r, s, NEUVEDENO, zarovnani="right", barva=barva)
         else:
-            bunka(prehled, r, 4, p["hodnota"], "#,##0.00", "right", barva)
-            bunka(prehled, r, 5, vzorec_czk(p["mena"], f"D{r}"), "#,##0.00", "right", barva)
+            bunka(prehled, r, 4, p["hodnota"], CZK_FMT, "right", barva)
+            bunka(prehled, r, 5, vzorec_czk(p["mena"], f"D{r}"), CZK_FMT, "right", barva)
             bunka(prehled, r, 6, f"=E{r}/$E${radek_celkem}", "0.0%", "right", barva)
         if p.get("id"):
             adresa_pozice[p["id"]] = f"'Přehled'!E{r}"
     for s in range(1, 7):
         bunka(prehled, radek_celkem, s, None, barva=CELKEM, tucne=True)
     prehled.cell(radek_celkem, 1, "CELKEM")
-    prehled.cell(radek_celkem, 5, f"=SUM(E{prvni}:E{radek_celkem - 1})").number_format = "#,##0.00"
+    prehled.cell(radek_celkem, 5, f"=SUM(E{prvni}:E{radek_celkem - 1})").number_format = CZK_FMT
     prehled.cell(radek_celkem, 6, f"=SUM(F{prvni}:F{radek_celkem - 1})").number_format = "0.0%"
     for s in (5, 6):
         prehled.cell(radek_celkem, s).alignment = Alignment(horizontal="right")
-    poz = ["Zeleně = MANTINELY (nedotýkat se; do součtu a % se ale počítají)."]
+    poz = []
     if any(p.get("hodnota") is None for p in pozice):
-        poz.append("Pozor: některé hodnoty nejsou na printscreenech čitelné (neuvedeno) – CELKEM je proto neúplný.")
+        poz.append("Některé hodnoty nejsou k dispozici (neuvedeno), celková hodnota je proto neúplná.")
     poznamky(prehled, radek_celkem + 2, poz + d.get("poznamky_prehled", []) + d.get("poznamky_kurzy", []), 6)
     sirky(prehled, [26, 42, 12, 20, 18, 14])
     prehled.freeze_panes = "A5"
@@ -192,11 +193,11 @@ def main(vstup, vystup):
     slozky.sort(key=lambda s: (poradi.get(s["portfolio"], 999), s["portfolio"],
                                s["_czk"] is None, -(s["_czk"] or 0)))
 
-    titulek(detail, "Detail viditelných složek portfolií", 7)
+    titulek(detail, "Složení portfolií", 7)
     podtitulek(detail, d.get("upozorneni_detail",
-                             "POZOR: zobrazeny jen složky viditelné na printscreenech. Hodnoty složek jsou "
-                             "vnitřní podíly portfolií – NEsčítají se do celku znovu, celkovou hodnotu drží list Přehled."),
-               7, vyska=42)
+                             "Složení jednotlivých portfolií. Podíl na celku = podíl fondu na celkové hodnotě "
+                             "všech vašich investic na Portu."),
+               7, vyska=20)
     zahlavi(detail, 4, ["Portfolio", "Instrument / složka", "Původní měna", "Hodnota (pův. měna)",
                         "Hodnota v CZK", "Zastoupení v portfoliu", "Podíl na celku"])
     adresa_slozky = {}
@@ -211,15 +212,15 @@ def main(vstup, vystup):
             bunka(detail, r, 5, NEUVEDENO, zarovnani="right", barva=barva)
             bunka(detail, r, 7, NEUVEDENO, zarovnani="right", barva=barva)
         else:
-            bunka(detail, r, 4, s["hodnota"], "#,##0.00", "right", barva)
-            bunka(detail, r, 5, vzorec_czk(s["mena"], f"D{r}"), "#,##0.00", "right", barva)
+            bunka(detail, r, 4, s["hodnota"], CZK_FMT, "right", barva)
+            bunka(detail, r, 5, vzorec_czk(s["mena"], f"D{r}"), CZK_FMT, "right", barva)
             bunka(detail, r, 7, f"=E{r}/{CELEK}", "0.0%", "right", barva)
         z = s.get("zastoupeni")
         bunka(detail, r, 6, NEUVEDENO if z is None else z, None if z is None else "0.0%", "right", barva)
         if s.get("id"):
             adresa_slozky[s["id"]] = f"Detail!E{r}"
     poznamky(detail, 5 + len(slozky) + 1,
-             ["Žlutě = složka, která se objevuje i v jiném portfoliu / jako přímá pozice (překryv – viz list Překryvy)."]
+             ["Žlutě = fond, který máte i v jiném portfoliu (viz list Překryvy)."]
              + d.get("poznamky_detail", []), 7)
     sirky(detail, [22, 40, 12, 20, 18, 20, 14])
     detail.freeze_panes = "A5"
@@ -238,8 +239,8 @@ def main(vstup, vystup):
         return vzorec, sum(hodnoty[x] for x in platne), len(platne) < len(refs)
 
     titulek(prekryvy, "Překryvy a duplicitní expozice napříč portfolii", 4)
-    podtitulek(prekryvy, "Stejný / velmi podobný instrument sečtený napříč portfolii. CZK přes kurzy ČNB z listu Přehled. "
-                         "% z celku (list Přehled).", 4)
+    podtitulek(prekryvy, "Stejný nebo velmi podobný fond ve více vašich portfoliích – sečtená hodnota v Kč "
+                         "a podíl na celkové hodnotě vašich investic.", 4)
     zahlavi(prekryvy, 4, ["Instrument / expozice", "Ve kterých portfoliích (počet)",
                           "Hodnota v CZK (součet)", "Podíl na celku"])
     vypis = []
@@ -252,7 +253,7 @@ def main(vstup, vystup):
     for v, p, f, neuplne in radky:
         bunka(prekryvy, r, 1, p["expozice"], barva=PREKRYV)
         bunka(prekryvy, r, 2, p["portfolia"])
-        bunka(prekryvy, r, 3, f, "#,##0.00", "right")
+        bunka(prekryvy, r, 3, f, CZK_FMT, "right")
         bunka(prekryvy, r, 4, f"=C{r}/{CELEK}" if f != NEUVEDENO else NEUVEDENO, "0.0%", "right")
         vypis.append((p["expozice"], v, neuplne))
         r += 1
@@ -270,13 +271,13 @@ def main(vstup, vystup):
         for v, pol, f in polozky:
             bunka(prekryvy, r, 1, "   " + pol["popis"])
             bunka(prekryvy, r, 2, pol["portfolia"])
-            bunka(prekryvy, r, 3, f, "#,##0.00", "right")
+            bunka(prekryvy, r, 3, f, CZK_FMT, "right")
             bunka(prekryvy, r, 4, f"=C{r}/{CELEK}" if f != NEUVEDENO else NEUVEDENO, "0.0%", "right")
             r += 1
         for s in range(1, 5):
             bunka(prekryvy, r, s, None, barva=CELKEM, tucne=True)
         prekryvy.cell(r, 1, f"{blok['nazev_celkem']}")
-        prekryvy.cell(r, 3, f"=SUM(C{od}:C{r - 1})").number_format = "#,##0.00"
+        prekryvy.cell(r, 3, f"=SUM(C{od}:C{r - 1})").number_format = CZK_FMT
         prekryvy.cell(r, 4, f"=C{r}/{CELEK}").number_format = "0.0%"
         for s in (3, 4):
             prekryvy.cell(r, s).alignment = Alignment(horizontal="right")
@@ -307,15 +308,15 @@ def main(vstup, vystup):
             t["_osvob"] = czk(t.get("mena", "CZK"), t.get("osvobozeno"))
             bunka(ws, r, 1, t["instrument"])
             bunka(ws, r, 2, t.get("portfolia", ""))
-            bunka(ws, r, 3, f, "#,##0.00", "right")
+            bunka(ws, r, 3, f, CZK_FMT, "right")
             if t["_osvob"] is None:
                 for sl in (4, 5, 6):
                     bunka(ws, r, sl, NEUVEDENO, zarovnani="right")
             else:
                 hod = t["osvobozeno"]
                 vz = hod if t.get("mena", "CZK").upper() == "CZK" else f"={hod}*{bunka_kurzu[t['mena'].upper()]}"
-                bunka(ws, r, 4, vz, "#,##0.00", "right")
-                bunka(ws, r, 5, f"=MAX(0,C{r}-D{r})", "#,##0.00", "right")
+                bunka(ws, r, 4, vz, CZK_FMT, "right")
+                bunka(ws, r, 5, f"=MAX(0,C{r}-D{r})", CZK_FMT, "right")
                 bunka(ws, r, 6, f"=IF(C{r}>0,MIN(1,D{r}/C{r}),0)", "0.0%", "right")
             bunka_osvob[t["id"]] = (r, t)
             r += 1
@@ -379,7 +380,7 @@ def main(vstup, vystup):
             barva = None if stav.startswith("osvobozeno") else ZDANITELNE
             bunka(ws, r, 1, t["instrument"], barva=barva)
             bunka(ws, r, 2, ", ".join(x["navrhy"]), barva=barva)
-            bunka(ws, r, 3, "=" + "+".join(casti), "#,##0.00", "right", barva)
+            bunka(ws, r, 3, "=" + "+".join(casti), CZK_FMT, "right", barva)
             test = f"$C${r_uhrn}<={LIMIT_CP}"
             if osv is None:
                 bunka(ws, r, 4, NEUVEDENO, zarovnani="right", barva=barva)
@@ -387,13 +388,13 @@ def main(vstup, vystup):
                 bunka(ws, r, 6, f'=IF({test},"osvobozeno (hodnotový test)",'
                                 f'"nelze posoudit – osvobození neuvedeno")', barva=barva)
             else:
-                bunka(ws, r, 4, f"=MIN(C{r},D{radek_t})", "#,##0.00", "right", barva)
-                bunka(ws, r, 5, f"=C{r}-D{r}", "#,##0.00", "right", barva)
+                bunka(ws, r, 4, f"=MIN(C{r},D{radek_t})", CZK_FMT, "right", barva)
+                bunka(ws, r, 5, f"=C{r}-D{r}", CZK_FMT, "right", barva)
                 bunka(ws, r, 6, f'=IF({test},"osvobozeno (hodnotový test)",IF(E{r}<0.005,'
                                 f'"osvobozeno (časový test)",IF(D{r}<0.005,"zdanitelné",'
                                 f'"částečně osvobozeno (časový test)")))', barva=barva)
             z = x["zisk"]
-            bunka(ws, r, 7, NEUVEDENO if z is None else z, None if z is None else "#,##0.00", "right", barva)
+            bunka(ws, r, 7, NEUVEDENO if z is None else z, None if z is None else CZK_FMT, "right", barva)
             dane_vypis.append((t["instrument"], ", ".join(x["navrhy"]), hodnota, osv, stav, z))
             r += 1
 
@@ -408,17 +409,17 @@ def main(vstup, vystup):
                 c.alignment = Alignment(horizontal="right" if fmt else "left", wrap_text=not fmt)
 
         souhrn(r_suma, "Úhrn navržených prodejů", CELKEM,
-               {s: (f"=SUM({pis}{od}:{pis}{r_suma - 1})", "#,##0.00") for s, pis in ((3, "C"), (4, "D"), (5, "E"), (7, "G"))})
+               {s: (f"=SUM({pis}{od}:{pis}{r_suma - 1})", CZK_FMT) for s, pis in ((3, "C"), (4, "D"), (5, "E"), (7, "G"))})
         souhrn(r_dalsi, "Další prodeje CP v témže roce (i mimo Portu)", CELKEM,
-               {3: (dalsi if dalsi is not None else NEUVEDENO, "#,##0.00"),
+               {3: (dalsi if dalsi is not None else NEUVEDENO, CZK_FMT),
                 6: ("zadáno" if dalsi is not None else "neznámé – počítáno s nulou", None)})
         souhrn(r_uhrn, "Úhrn příjmů z prodeje CP za rok (hrubě, vč. časově osvobozených)", CELKEM,
-               {3: (f"=C{r_suma}+N(C{r_dalsi})", "#,##0.00")})
+               {3: (f"=C{r_suma}+N(C{r_dalsi})", CZK_FMT)})
         souhrn(r_test, f"Hodnotový test {LIMIT_CP:,} Kč".replace(",", " "),
                CELKEM if hodnotovy else ZDANITELNE,
                {6: (f'=IF(C{r_uhrn}<={LIMIT_CP},"SPLNĚN – vše osvobozeno","NESPLNĚN")', None)})
         souhrn(r_zdan, "Zdanitelný příjem (bez časového testu)", ZDANITELNE if zdanitelne > 0 or (nezname and not hodnotovy) else CELKEM,
-               {5: (f"=IF(C{r_uhrn}<={LIMIT_CP},0,E{r_suma})", "#,##0.00"),
+               {5: (f"=IF(C{r_uhrn}<={LIMIT_CP},0,E{r_suma})", CZK_FMT),
                 6: ("+ část neuvedeno" if nezname and not hodnotovy else ("povinnost podat DP" if zdanitelne > 0 else ""), None)})
         # orientační daň: základ = zisky − ztráty z prodejů CP bez časového testu za rok (ztráty se započítávají)
         rz = dn.get("realizovany_zisk_v_roce")   # dosud realizovaný zisk v roce (bez časového testu), None = neznámý
@@ -428,17 +429,17 @@ def main(vstup, vystup):
         dan_pred = 0.0 if hodnotovy_pred else SAZBA * max(0.0, rz or 0.0)
         dan_po = None if zisk_navrhu is None else (0.0 if hodnotovy else SAZBA * max(0.0, (rz or 0.0) + zisk_navrhu))
         souhrn(r_rz, "Realizovaný zisk z dalších prodejů v roce (bez časového testu)", CELKEM,
-               {7: (rz if rz is not None else NEUVEDENO, "#,##0.00"),
+               {7: (rz if rz is not None else NEUVEDENO, CZK_FMT),
                 6: ("zadáno" if rz is not None else "neznámý – počítáno s nulou", None)})
         souhrn(r_dan_pred, f"Orientační daň z prodejů CP bez návrhů ({SAZBA:.0%})", CELKEM,
-               {7: (f"=IF(N(C{r_dalsi})<={LIMIT_CP},0,{SAZBA}*MAX(0,N(G{r_rz})))", "#,##0.00")})
+               {7: (f"=IF(N(C{r_dalsi})<={LIMIT_CP},0,{SAZBA}*MAX(0,N(G{r_rz})))", CZK_FMT)})
         souhrn(r_dan_po, f"Orientační daň z prodejů CP s návrhy ({SAZBA:.0%})", CELKEM,
                {7: (f"=IF(C{r_uhrn}<={LIMIT_CP},0,{SAZBA}*MAX(0,N(G{r_rz})+G{r_suma}))"
-                    if zisk_navrhu is not None else NEUVEDENO, "#,##0.00")})
+                    if zisk_navrhu is not None else NEUVEDENO, CZK_FMT)})
         navic = None if dan_po is None else dan_po - dan_pred
         souhrn(r_dan_navic, "DAŇ NAVÍC Z NÁVRHŮ (orientačně)",
                ZDANITELNE if navic is None or navic > 0.5 else CELKEM,
-               {7: (f"=G{r_dan_po}-G{r_dan_pred}" if navic is not None else NEUVEDENO, "#,##0.00"),
+               {7: (f"=G{r_dan_po}-G{r_dan_pred}" if navic is not None else NEUVEDENO, CZK_FMT),
                 6: ("zisk některého prodeje neuveden" if navic is None else "", None)})
         r = r_dan_navic + 2
         pozn = ["Červeně = prodej se zdanitelnou částí nebo s neznámým osvobozením; nesplněný hodnotový test.",
@@ -461,6 +462,10 @@ def main(vstup, vystup):
             nezname=nezname, osvobozeno_ct=osvobozeno_ct, rz=rz, zisk_navrhu=zisk_navrhu,
             dan_pred=dan_pred, dan_po=dan_po, navic=navic))
 
+    # List Daně se do Excelu pro klienta neukládá (je pro něj nepřehledný). Výpočet zůstává
+    # ve výpisu níže jako podklad pro revizi a e-mail.
+    if "Daně" in wb.sheetnames:
+        wb.remove(wb["Daně"])
     wb.save(vystup)
 
     # ---------- Kontrolní výpis pro textovou část revize ----------

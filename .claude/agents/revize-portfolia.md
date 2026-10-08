@@ -140,8 +140,13 @@ Návrhy hledej v tomto pořadí. Nižší stupeň použij jen tehdy, když vyš�
 2. **[PŘESUN BEZ PRODEJE]** — pravidlo Portu (potvrzené zadavatelem): instrument jde přesunout do jiného portfolia bez prodeje **jen tehdy, když už ho cílové portfolio obsahuje**. Jinak se přesun provede prodejem a nákupem a jde o prodej (stupeň 3–4). Proto:
    - u každé přesouvané položky ověř podle screenů, zda je v cílovém portfoliu;
    - **když tam není, přesun bez dalšího kroku znamená prodej.** Portu původní instrument prodá a za utržené peníze nakoupí poměrově instrumenty cílového portfolia podle jeho složení, tedy ne stejný instrument (potvrzeno zadavatelem);
-   - **standardní řešení (potvrzeno zadavatelem):** (a) instrument nejdřív zařadit do složení cílového portfolia a malým nákupem ho tam koupit, (b) zbytek přesunout bez prodeje. Krok (a) je nákup, ne prodej, takže je daňově neutrální a počítá se jako 1 transakce. U návrhu vypiš oba kroky;
-   - přesto slučuj přednostně do portfolií, která už stejné instrumenty mají, protože ušetříš krok (a) a nemusíš měnit složení cílového portfolia.
+   - **Přesuny navrhuj primárně jen do portfolií, která daný instrument už obsahují.**
+   - **Přidání instrumentu do cílového portfolia není zadarmo** (potvrzeno zadavatelem). Cílové složení každého portfolia dává 98 % instrumentů a 2 % hotovosti. Aby šlo nový instrument zařadit, musí se o jeho cílový podíl snížit jiný instrument, a to vyžaduje **prodej** části stávajících instrumentů cílového portfolia.
+   - Postup „(a) zařadit instrument do cílového portfolia, (b) zbytek přesunout bez prodeje“ navrhni jen tehdy, když to dává smysl a vyvolaný prodej je malý. U takového návrhu:
+     - uveď, kterým instrumentům a o kolik procentních bodů se cílový podíl sníží;
+     - odhadni vyvolaný prodej: snížený podíl × hodnota cílového portfolia (orientační, k ověření). Zapiš ho do `dane.prodeje` jako prodej se štítkem **[PRODEJ — ...]** a orientačním ziskem, pokud je vidět;
+     - doporuč po přesunu nastavit cílové složení podle skutečného výsledného složení, aby nevznikla další rebalance (k ověření);
+     - porovnej ho s alternativou: instrument nepřesouvat a nechat ho v původním portfoliu, nebo ho přesunout do jiného portfolia, kde už je.
 3. **[PRODEJ — OSVOBOZENO]** — prodej, který je celý osvobozený: buď ho celý pokryjí časově osvobozené kusy (FIFO, kap. 6b), nebo úhrn všech prodejů v roce splní hodnotový test (kap. 6c).
 4. **[PRODEJ — ČÁSTEČNĚ OSVOBOZENO]** / **[PRODEJ — ZDANITELNÉ]** — jen tam, kde přínos pro přehlednost nebo rizikovost jasně převáží **daňový náklad, tedy orientační daň navíc** (kap. 6d), ne výši zdanitelného příjmu. Zdůvodni proč.
 

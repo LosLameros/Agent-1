@@ -257,12 +257,17 @@ Vrať (a ulož jako `revize.md` ve výstupní složce, kap. 0) v tomto pořadí.
 7. **Návrh e-mailu klientovi** — ulož ho i zvlášť jako `email.md` ve výstupní složce. Pravidla:
    - **Adresát je klient, ne poradce.** Piš česky, s vykáním, srozumitelně a věcně, bez interních kódů, štítků v hranatých závorkách a odborných zkratek. FIFO, hodnotový test, ISIN ani „mantinel“ nepoužívej. Když je pojem potřeba, vysvětli ho v téže větě obyčejnými slovy (např. „limit 100 000 Kč za rok, do kterého jsou prodeje cenných papírů od daně osvobozené“).
    - **Píše poradce za sebe, v 1. osobě jednotného čísla** („prošel jsem“, „doporučuji“, „bych investoval“), ne „my“ za firmu (potvrzeno zadavatelem). Výjimkou jsou názvy produktů jako „Portfolio od Portu“.
-   - **Jen doporučení, žádná vata** (potvrzeno zadavatelem). Nepiš sekce typu „co od vás potřebujeme“, žádost o souhlas, shrnutí zjištění ani výčet toho, co zůstává beze změny. Výjimkou je, když je to samo doporučení (např. „do Zlatého přístavu bych už další peníze neposílal“).
+   - **Jen doporučení, žádná vata** (potvrzeno zadavatelem). Nepiš sekce typu „co od vás potřebujeme“, shrnutí zjištění ani výčet toho, co zůstává beze změny. Jediná výzva je jedna věta za přesuny (viz bod 4). Výjimkou je, když je to samo doporučení (např. „do Zlatého přístavu bych už další peníze neposílal“).
    - **Struktura:**
      1. předmět;
      2. `Dobrý den, [oslovení],` (tvar oslovení doplní poradce);
      3. jedna úvodní věta;
-     4. **Zjednodušení portfolií**: u každého kroku co, odkud, kam, orientační částka v Kč a jestli dojde k prodeji. Pak v 2–3 větách, co to způsobí: kolik zdvojení zmizí, že se složení ani rizikovost nemění, a daň („žádná daň nevznikne“, nebo jednou větou orientační daň v Kč). Volitelnou variantu uveď jen tehdy, když ji poradce chce;
+     4. **Zjednodušení portfolií**: u každého kroku co, odkud, kam, orientační částka v Kč a jestli dojde k prodeji. Pak v 2–3 větách, co to způsobí: že se klient zbaví většiny duplicit (kolik zdvojení zmizí) a daň („žádná daň nevznikne“, nebo jednou větou orientační daň v Kč). Pak:
+       - **změna vah v cílových portfoliích:** napiš, že se váhy instrumentů v cílovém portfoliu změní, ale že bys v tom zatím neviděl problém. U každého cílového portfolia uveď konkrétní změnu podílu (z kolika na kolik %, spočítej ji z hodnot) a důvod, proč nevadí. Např. ETF je diverzifikovanější než jednotlivé tituly, nebo portfolio zůstane rozložené. Změnu nezlehčuj: když se podíl instrumentu zhruba zdvojnásobí, napiš to;
+       - pak větu: „Pokud budete souhlasit, přesuny provedu. Pak se můžeme pobavit o případné úpravě vah nebo o dalších přesunech.“;
+       - **nové peníze:** doporuč, aby nové peníze směřovaly jen do Portfolií od Portu a do realitního fondu, ne do tematických portfolií, kvůli lepší diverzifikaci (potvrzeno zadavatelem). Navaž na to i případnou koncentraci (např. zlato).
+
+       Volitelnou variantu uveď jen tehdy, když ji poradce chce;
      5. **Rozinvestování volných peněz**, jen když ho zadání obsahuje (např. „rozinvestování 8 milionů Kč“). Jedna podkapitola na každou část s částkou v nadpisu („Realitní fond – 2 660 000 Kč“). Texty a argumenty od zadavatele převezmi a jen je převeď do 1. osoby a krátkých vět, nic si nedomýšlej. Odkaz na graf, který zadavatel nedodal, nech jako placeholder `[graf výkonnosti]`. **Pravidelné vklady přepočítej:** počet vkladů a částku jednoho vkladu (např. 4 měsíce týdně = 16 vkladů, 2 660 000 / 16 = 166 250 Kč). Otázku na další krok (např. zda sestavit rizikovější portfolio) polož přímo v příslušné podkapitole a uveď u ní rizika, která zadavatel jmenuje;
      6. podpis `[Jméno poradce]`, `[Kontakt]`;
      7. jedna řádka na konci: „Historické výnosy nejsou zárukou budoucích výnosů a cílový výnos není zaručený.“, pokud e-mail uvádí výnosy nebo cílové výnosy.

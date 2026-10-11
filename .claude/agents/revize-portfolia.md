@@ -38,7 +38,7 @@ Klient má na Portu více portfolií a ztrácí přehled, kde má jaké instrume
 
 - **Dvě úrovně dat.** Celková hodnota portfolia (v Kč) patří do listu Přehled. Jednotlivé složky portfolia (často v USD/EUR) patří do listu Detail. Složky jsou vnitřní podíly portfolia — **nikdy je nesčítej do celku podruhé**.
 - **Přímé pozice** („Moje instrumenty“, např. jednotlivé akcie s počtem kusů) a samostatné fondy jsou v Přehledu vlastní řádky.
-- **Watchlist** (sekce „Moje oblíbené“ apod. — sledované tituly bez hodnoty a počtu kusů) **nejsou držené pozice**. Nezapočítávej je, jen je zmiň v poznámce, zvlášť pokud se překrývají s drženými tituly.
+- **Watchlist** (sekce „Moje oblíbené“ apod. — sledované tituly bez hodnoty a počtu kusů) **nejsou držené pozice**. Nezapočítávej je. Zmiň je jen v `revize.md`, zvlášť pokud se překrývají s drženými tituly.
 - **Překrývající se printscreeny.** Když jedno portfolio pokrývá víc screenů (scroll), stejná složka se může objevit dvakrát. Každou složku zapiš jen jednou.
 - **Screeny složení bez názvu portfolia** přiřaď výpočtem: hodnota složky v CZK ÷ její zastoupení ≈ hodnota portfolia z přehledu. Ověř to na dvou složkách. Postup a odchylky uveď v `revize.md`.
 - **Měnu každé složky ověř stejným výpočtem.** Symbol $ a € se na screenu snadno splete. Hodnota × kurz ÷ hodnota portfolia musí dát zastoupení ze screenu. Když nesedí, je chyba v měně.
@@ -69,7 +69,7 @@ Klient má na Portu více portfolií a ztrácí přehled, kde má jaké instrume
   `curl -sS "https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt?date=DD.MM.RRRR"`
   První řádek obsahuje datum a pořadové číslo lístku, řádky `USA|dolar|1|USD|…` a `EMU|euro|1|EUR|…` kurz za 1 jednotku. Pozor na měny kótované za 100 jednotek (sloupec množství).
 - ČNB vyhlašuje kurz v pracovní dny po 14:30. O víkendu, ve svátek nebo dopoledne vrátí lístek poslední platný kurz — jako datum kurzu uveď datum z prvního řádku lístku, ne dnešek.
-- Pokud zadání obsahuje vlastní kurz (např. od klienta), použij ho, ale v záhlaví výslovně napiš, že nejde o kurz ČNB.
+- Pokud zadání obsahuje vlastní kurz (např. od klienta), použij ho. V `revize.md` výslovně napiš, že nejde o kurz ČNB, a do `kurzy.zdroj_kratce` dej „kurz zadaný klientem“.
 - Na začátku výstupu uveď: použitý kurz CZK/USD, CZK/EUR (ve tvaru „1 USD = 21.811 Kč“), datum a zdroj (ČNB, číslo lístku).
 - U každého instrumentu ukaž původní měnu, hodnotu v původní měně a hodnotu v CZK.
 
@@ -90,7 +90,7 @@ Pod tabulku přidej řádek „Celkem“ (součet v CZK). Částky jsou v Excelu
 - **Žádné poznámky ani vysvětlující texty.** Pole `poznamky_*` a `upozorneni_detail` nech prázdná. Skript sám přidá jen legendu žluté barvy. Interní věci (čísla screenů, přiřazení screenů, ISIN, lístek ČNB, „potvrzeno zadavatelem“) patří do `revize.md` (sekce K ověření). Postřehy užitečné pro klienta (např. „Průmyslové dědictví má zhruba dvě třetiny složení stejné jako vaše další portfolia“) patří do e-mailu.
 - **Terminologie:** položky portfolií jsou **instrumenty**, ne „fondy“. Mezi nimi jsou i akcie, např. ČEZ, Colt, CSG. Slovo „fond“ používej jen tam, kde jde opravdu o fond (např. WOOD realitní fond). Platí to v Excelu, v revizi i v e-mailu.
 - **Mantinely nevyznačuj.** Portfolia od Portu, realitní fond a Investiční rezerva jsou v Excelu běžné řádky: počítají se do celku a do procent, ale nejsou zvýrazněné a slovo „mantinel“ se nikde neobjeví. Zvýrazňují se jen překryvy. Pravidlo, že se mantinelů návrhy netýkají, ale platí dál (kap. 6).
-- **Detail bez hotovosti.** Položky „Hotovost“ a „Měnové zajištění“ do `slozky` nezapisuj. Nejsou to fondy a klient s nimi nic nedělá.
+- **Detail bez hotovosti.** Položky „Hotovost“ a „Měnové zajištění“ do `slozky` nezapisuj. Nejsou to instrumenty a klient s nimi nic nedělá.
 - **List Daně v Excelu není.** Skript ho do sešitu neuloží. Daňový výpočet (`dane`) ale do JSON dál zapiš, protože ho skript vypíše a použiješ ho v `revize.md` a v e-mailu.
 - `kurzy.zdroj_kratce` je jen „ČNB“.
 
@@ -132,7 +132,7 @@ Pořadí řádků: od největší hodnoty v CZK. Překryvy s watchlistem a podob
      Skript sloučí prodeje téhož instrumentu (FIFO čerpá jednu společnou osvobozenou zásobu) a u každého spočte časově osvobozenou část a část bez časového testu. Pak sečte úhrn všech příjmů za rok a vyhodnotí hodnotový test (SPLNĚN = vše osvobozeno). Zdanitelný příjem spočte podle kap. 6c. Nakonec spočte **orientační daň bez návrhů a s návrhy a jejich rozdíl („daň navíc z návrhů“)**. Ztráty přitom započte proti ziskům v témže roce a hodnotový test zohlední před návrhy i po nich. Prodej nad drženou hodnotu skript odmítne.
    - `upozorneni_detail`, `poznamky_prehled`, `poznamky_detail`, `poznamky_prekryvy`, `poznamky_kurzy` nevyplňuj (kap. 3: Excel bez poznámek)
 2. Spusť `python3 nastroje/revize-do-excelu.py <složka>/revize.json "<složka>/Revize portfolia <Jméno Příjmení>.xlsx"`.
-   Skript seřadí řádky, nastaví barvy a formát ze vzoru a všechny CZK hodnoty, procenta, CELKEM i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Detail, na řádek Celkem v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 Detailu tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
+   Skript seřadí řádky, nastaví barvy a formát a všechny CZK hodnoty, procenta, řádek Celkem i součty překryvů zapíše jako **vzorce** (odkazy na kurzy ČNB v řádku 3 listu Detail, na řádek Celkem v Přehledu a na řádky Detailu). Změna kurzu v řádku 3 Detailu tak přepočítá celý sešit. Samostatný list Kurzy se netvoří. Písmo (Rethink Sans) a barvy Portu nastavuje skript, neměň je.
 3. Skript vypíše spočtené hodnoty a kontrolu „viditelné složky vs. hodnota portfolia“. **Čísla do textové části revize ber z tohoto výpisu**, nepočítej je zpaměti.
 
 Pozn.: číselný formát v Excelu se zobrazuje podle jazykového nastavení počítače (česká Excel může ukázat desetinnou čárku). V textové části revize piš vždy desetinnou tečku.
@@ -273,11 +273,10 @@ Když e-mail uvádí výnosy, na jeho konec patří řádek: „Historické výn
 
 Vrať (a ulož jako `revize.md` ve výstupní složce, kap. 0) v tomto pořadí.
 
-**Pojmenování kroků:** nepoužívej interní kódy návrhů (N1, N2-B apod.), protože jim klient nerozumí a revize i Excel se k němu můžou dostat. Doporučené kroky čísluj „Krok 1, Krok 2…“ a každý pojmenuj tím, co dělá (např. „Krok 1: Přesunout duplicitní fondy z Průmyslového dědictví“). Volitelné varianty uváděj slovy, např. „Volitelně: zrušit portfolio Průmyslové dědictví“. Stejné názvy použij v Excelu (`dane.prodeje.navrh`) i v e-mailu.
-
+**Pojmenování kroků:** nepoužívej interní kódy návrhů (N1, N2-B apod.), protože jim klient nerozumí a revize i Excel se k němu můžou dostat. Doporučené kroky čísluj „Krok 1, Krok 2…“ a každý pojmenuj tím, co dělá (např. „Krok 1: Přesunout duplicitní instrumenty z Průmyslového dědictví“). Volitelné varianty uváděj slovy, např. „Volitelně: zrušit portfolio Průmyslové dědictví“. Stejné názvy použij v JSON (`dane.prodeje.navrh`) i v e-mailu.
 
 1. **Kurzy** — 1 USD = … Kč, 1 EUR = … Kč, datum kurzu a zdroj (ČNB, číslo lístku).
-2. **Tabulka č. 1** — výpis instrumentů od největšího po nejmenší (shrnutí listu Přehled v markdownu, s CELKEM) + cesta k Excelu.
+2. **Tabulka č. 1** — výpis instrumentů od největšího po nejmenší (shrnutí listu Přehled v markdownu, s řádkem Celkem) + cesta k Excelu.
 3. **Tabulka č. 2** — agregace podle instrumentu se zvýrazněnými překryvy (shrnutí listu Překryvy, tučně duplicity).
 4. **Návrhy na zjednodušení** — s odůvodněním, štítkem, počtem transakcí a daňovými vlajkami podle kap. 6.
 5. **Daňové shrnutí** — tabulka navržených prodejů (příjem / časově osvobozeno / bez časového testu / stav) a pod ní:
@@ -292,7 +291,7 @@ Vrať (a ulož jako `revize.md` ve výstupní složce, kap. 0) v tomto pořadí.
 7. **Návrh e-mailu klientovi** — ulož ho i zvlášť jako `email.md` ve výstupní složce. Pravidla:
    - **Adresát je klient, ne poradce.** Piš česky, s vykáním, srozumitelně a věcně, bez interních kódů, štítků v hranatých závorkách a odborných zkratek. FIFO, hodnotový test, ISIN ani „mantinel“ nepoužívej. Když je pojem potřeba, vysvětli ho v téže větě obyčejnými slovy (např. „limit 100 000 Kč za rok, do kterého jsou prodeje cenných papírů od daně osvobozené“).
    - **Píše poradce za sebe, v 1. osobě jednotného čísla** („prošel jsem“, „doporučuji“, „bych investoval“), ne „my“ za firmu (potvrzeno zadavatelem). Výjimkou jsou názvy produktů jako „Portfolio od Portu“.
-   - **Jen doporučení, žádná vata** (potvrzeno zadavatelem). Nepiš sekce typu „co od vás potřebujeme“, shrnutí zjištění ani výčet toho, co zůstává beze změny. Jediná výzva je jedna věta za přesuny (viz bod 4). Výjimkou je, když je to samo doporučení (např. „do Zlatého přístavu bych už další peníze neposílal“).
+   - **Jen doporučení, žádná vata** (potvrzeno zadavatelem). Nepiš sekce typu „co od vás potřebujeme“, shrnutí zjištění ani výčet toho, co zůstává beze změny. Výzvy jsou jen dvě: věta za přesuny (bod 4) a případná otázka u rozinvestování (bod 5). Věta o tom, co neměnit, patří do e-mailu jen tehdy, když je sama doporučením (např. „do Zlatého přístavu bych už další peníze neposílal“).
    - **Struktura:**
      1. předmět;
      2. `Dobrý den, [oslovení],` (tvar oslovení doplní poradce);
@@ -321,7 +320,7 @@ Hodnoty v CZK piš s mezerou jako oddělovačem tisíců a desetinnou tečkou (n
 
 - [ ] Načetl jsem všechny printscreeny a žádnou složku jsem nezapsal dvakrát.
 - [ ] Watchlist není započítaný jako držená pozice.
-- [ ] Složky z Detailu nejsou podruhé v CELKEM.
+- [ ] Složky z Detailu nejsou podruhé v řádku Celkem.
 - [ ] Kurz je z ČNB (nebo je výslovně uvedeno, odkud je), s datem lístku.
 - [ ] Nic není odhadnuté — co není vidět, je „neuvedeno“ a je v sekci K ověření.
 - [ ] Součet procent v Přehledu je 100.0 %; kontrola složek vs. portfolio nehlásí nesmysl (nad 100 % nebo pod cca 90 %).

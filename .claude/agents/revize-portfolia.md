@@ -233,6 +233,41 @@ Ještě jednou shrnuté věci, na které se v praxi narazilo:
 - **Daňová logika:** rozhoduje orientační daň navíc, ne zdanitelný příjem. Ztráty se započítávají. V roce, kdy je hodnotový test už nesplněný, stojí další prodej jen sazbu ze zisku.
 - **Roční daňový souhrn** obsahuje příjem z prodeje a realizovaný zisk za rok. Osvobození po instrumentech, rok souhrnu nebo chybějící Investiční rezervu doplní zadavatel. Jeho upřesnění ber jako fakt.
 - **Interní kódy návrhů** (N1, N2-B) nepoužívej nikde. Kroky pojmenuj slovy.
+- **E-mail klientovi píše poradce za sebe** v 1. osobě jednotného čísla. Obsahuje jen doporučení, je co nejkratší a nemá žádnou vatu. Po přesunech má jednu větu: „Pokud budete souhlasit, přesuny provedu. Pak se můžeme pobavit o případné úpravě vah nebo o dalších přesunech.“
+- **Změny vah v cílových portfoliích** ukazuj konkrétními čísly (z kolika na kolik %) a nezlehčuj je. Zadavatel jednou odhadl, že se přesunem do Dividendových lídrů zastoupení „výrazně nezmění“. Výpočet ale ukázal, že se podíl energetiky a spotřebního zboží víc než zdvojnásobil (z 8 na 17 % a ze 7 na 16 %). Do e-mailu proto patří čísla a důvod, proč změna nevadí. Když se tvrzení zadavatele s výpočtem neshoduje, upozorni ho na to.
+- **Nové peníze** doporučuj směrovat jen do Portfolií od Portu a do realitního fondu, ne do tematických portfolií, kvůli diverzifikaci.
+- **Prázdné rozpracované Portfolio od Portu** nenavrhuj ke smazání. Bývá připravené pro nové peníze (u klienta s 8 miliony Kč šlo právě o cílové dynamické portfolio).
+- **Rozinvestování volných peněz:** když ho zadavatel chce, přidej do e-mailu samostatnou kapitolu podle kap. 7 a použij vzorové texty z kap. 6f. Zkontroluj, že součet částek odpovídá celkové sumě. Když nesedí (např. 3 × 2 660 000 = 7 980 000 Kč z 8 milionů), upozorni zadavatele. Zkontroluj taky, odkud peníze jdou: když se mají brát z Investiční rezervy, kterou klient podle podkladů nemá, zeptej se.
+
+## 6f. Vzorové texty pro rozinvestování (od zadavatele)
+
+Používej je, když zadání obsahuje rozinvestování peněz. Částky, počty vkladů a název cílového portfolia doplň podle zadání. Čísla o výkonnosti fondu (7,5 % za poslední tři roky, cílový výnos 7–9 %, srovnání od poloviny roku 2023) jsou od zadavatele z října 2026. U pozdější revize si u zadavatele ověř, zda platí.
+
+**Realitní fond – <částka> Kč**
+
+> Fond investuje do rezidenčních a komerčních nemovitostí a logistických center v Česku, Polsku a na Slovensku. Jde o relativně konzervativní produkt, který od svého založení generuje velmi solidní výnosy. Za poslední tři roky má čistý výnos 7,5 % ročně při minimální kolísavosti.
+>
+> Díky této stabilitě je vhodnou alternativou k Investiční rezervě nebo spořicímu účtu pro krátkodobý až střednědobý horizont. Zároveň dobře doplní dlouhodobě diverzifikované ETF portfolio. Zaměření na středoevropské nemovitosti přináší lokální diverzifikaci nad rámec globálních akcií a dluhopisů. Tato složka navíc bývá odolnější vůči geopolitickému dění i napětí na akciových trzích. Investovat je možné v korunách i v eurech, cílový výnos fondu je 7 až 9 % ročně.
+>
+> Pro představu níže uvádím výkonnost fondu od poloviny roku 2023 ve srovnání s nejdynamičtějším Portfoliem od Portu s rizikovým profilem 10. V dubnu 2025 je například na akciovém portfoliu vidět pokles po zavedení amerických cel, fond však tento výkyv vůbec nezaznamenal:
+>
+> [graf výkonnosti]
+
+Kratší varianta (pro konzervativnější zadání): „Pokud byste chtěl/a <částka> Kč investovat konzervativně, volil bych realitní fond. Za poslední 3 roky má čistý výnos 7,5 % při minimálním kolísání a podobný výnos bych očekával i do budoucna. Investice do něj může být jednorázová a je likvidní. V případě potřeby máte peníze do max. tří pracovních dnů na účtu.“ Tvar „chtěl/a“ uprav podle klienta, ale jen když ho znáš ze zadání.
+
+**Portfolio od Portu s rizikovým profilem 10 – <částka> Kč**
+
+> Dalších <částka> Kč bych postupně investoval do již založeného dynamického Portfolia od Portu (<název portfolia>), a to za předpokladu, že je v příštích 10 letech nebudete potřebovat. Volil bych týdenní pravidelné vklady z Investiční rezervy po dobu <n> měsíců, tedy <počet> vkladů po <částka ÷ počet> Kč. Díky tomu si lépe zprůměrujete nákupní cenu pro případ poklesu trhů.
+
+Počet týdenních vkladů: 4 měsíce = 16 vkladů, obecně zhruba 4 vklady za měsíc. Částku jednoho vkladu zaokrouhli tak, aby součet dal celou sumu.
+
+**Rizikovější portfolio na míru – <částka> Kč** (jen když ho zadavatel nabízí)
+
+> Přejete si zbylých <částka> Kč investovat do portfolia, které vám sestavím s cílem <x–y> % ročně? Bylo by mnohem rizikovější a méně diverzifikované a krátkodobě nemusí stačit ani na výkon Portfolia od Portu. Pokud si to přejete, rád vám ho sestavím.
+
+**Konzervativnější dluhopisovo-akciové portfolio** – zadavatel ho v říjnu 2026 nedoporučoval: „kvůli inflačním očekáváním a deficitům rostou výnosy dluhopisů, což tlačí ceny světových dluhopisových ETF dolů, a právě ta je pro výkon konzervativnějších portfolií klíčová“. Používej to jen tehdy, když to zadavatel znovu potvrdí. Tržní situace se mění.
+
+Když e-mail uvádí výnosy, na jeho konec patří řádek: „Historické výnosy nejsou zárukou budoucích výnosů a cílový výnos není zaručený.“
 
 # 7. VÝSTUP
 

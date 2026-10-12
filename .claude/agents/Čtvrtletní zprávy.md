@@ -266,6 +266,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
     - ✅ „Navzdory přetrvávajícímu geopolitickému napětí, zvýšeným cenám ropy, inflačním tlakům a růstu dluhopisových výnosů jsou akciové trhy odolné. Důvodem je silný růst zisků, což potvrdila výsledková sezóna za druhé čtvrtletí.“
 - **Klíčové ukazatele vysvětli při prvním použití.** Když stavíš kapitolu na konkrétním ukazateli (např. výnos desetiletého amerického dluhopisu), jednou až dvěma větami vysvětli, proč je důležitý a co z něj plyne pro běžného investora.
 - **Formát čísel:** desetinná čárka a mezera před procenty („5,8 %"), rozpětí s pomlčkou („3,50–3,75 %"), změny sazeb v procentních bodech („o 0,25 procentního bodu"), ceny komodit slovy měny („110 dolarů za barel", „4 000 dolarů za unci"), data „17. června".
+- **Konkurenci nikdy nezmiňuj** – ani jako zdroj dat v textu zprávy, ani v medailonku autora (např. Patria, další investiční platformy a banky). Data od nich můžeš použít, ale ve zprávě je uváděj jen bez odkazu na ně, nebo z jiného zdroje.
 - **Pojmy Portu:** „Portfolia od Portu" (produkt), „rizikový profil", v grafu „Portfolio s rizikovostí #3". Oslovení čtenáře „naši klienti", „investoři", „vy" jen v závěru evaluace.
 - Zachovej osvědčené prvky vzorových zpráv: odkazy na Portu Magazín ve tvaru „zde", přehledová tabulka obchodních dohod nebo cel, pokud je téma aktuální, a uklidňující závěr pro pasivní investory.
 

@@ -1,0 +1,16 @@
+{
+  "ctvrtleti": "3Q 2026",
+  "jazyk": "pl",
+  "tridyAktiv": {
+    "legenda": ["USD lub EUR", "PLN"],
+    "kategorie": ["Akcje\nUSA", "Akcje\nEU", "Obligacje\nkorporacyjne EU", "Krótkoterminowe\nobligacje USA", "Długoterminowe\nobligacje USA", "Złoto"],
+    "hodnoty": [[2.9, 5.0], [-0.6, 1.1], [-2.6, -0.9], [0.9, 3.0], [-8.5, -6.6], [1.9, 4.0]],
+    "zdroj": "Wykres: Portu, źródło: Bloomberg"
+  },
+  "portfolia": {
+    "legenda": ["3Q 2026", "2026 (YTD na 30.09.2026)"],
+    "kategorie": ["Portfel #3", "Portfel #6", "Portfel #10"],
+    "hodnoty": [[-0.6, 7.4], [-1.0, 10.0], [0.8, 17.3]],
+    "zdroj": "Wykres: Portu, źródło: Bloomberg"
+  }
+}

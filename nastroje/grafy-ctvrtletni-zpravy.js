@@ -20,7 +20,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
 function osaY(hodnoty,dolni,rucne){
   const vys=dolni-TOP, LABEL=55; // px rezerva pro popisek hodnoty nad/pod sloupcem
   const lo0=Math.min(0,...hodnoty), hi0=Math.max(0,...hodnoty);
-  for(const krok of [1,2,2.5,5,10,20,25,50]){
+  for(const krok of [1,2,5,10,20,25,50]){
     let lo=Math.floor(lo0/krok)*krok, hi=Math.ceil(hi0/krok)*krok;
     for(let i=0;i<4;i++){ const px=vys/(hi-lo);
       if(hi0>0&&(hi-hi0)*px<LABEL) hi+=krok; else if(lo0<0&&(lo0-lo)*px<LABEL) lo-=krok; else break; }

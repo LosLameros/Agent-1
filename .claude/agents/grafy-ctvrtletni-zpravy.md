@@ -70,7 +70,7 @@ Poslední den čtvrtletí: 1Q → 31. 3., 2Q → 30. 6., 3Q → 30. 9., 4Q → 3
 ```
 
    - `hodnoty[i]` = `[řada 1, řada 2]` pro i-tou kategorii, ve stejném pořadí jako `kategorie`.
-   - Volitelně: `"zdroj"` (výchozí „Graf: Portu, zdroj: Bloomberg" – měň jen když se zdroj ve starém grafu liší), `"osa": {"lo": -10, "hi": 6, "krok": 2}` (rozsah osy Y; jinak ho skript spočítá sám: krok 1/2/2,5/5…, nejvýš 10 dílků, s rezervou na popisky). Osu nastavuj ručně jen tehdy, když automatická vypadá špatně.
+   - Volitelně: `"zdroj"` (výchozí „Graf: Portu, zdroj: Bloomberg" – měň jen když se zdroj ve starém grafu liší), `"osa": {"lo": -10, "hi": 6, "krok": 2}` (rozsah osy Y; jinak ho skript spočítá sám: krok 1/2/5/10…, nejvýš 10 dílků, s rezervou na popisky). Osu nastavuj ručně jen tehdy, když automatická vypadá špatně.
    - Popisky kategorií grafu 1 se lámou automaticky před posledním slovem („Americké / akcie"). Vlastní zalomení zapiš jako `\n`.
    - Pole `ctvrtleti` čte agent `ctvrtletni-zpravy` pro kontrolu, že grafy patří ke správnému čtvrtletí (nové grafy nemají nadpis). Vždy ho vyplň.
 

@@ -1,6 +1,6 @@
 ---
 name: grafy-ctvrtletni-zpravy
-description: Use this agent to redraw the two opening charts of Portu's quarterly report („Zhodnocení vybraných tříd aktiv: nQ RRRR" and „Portfolia od Portu v roce RRRR") from the old look (title, logo, data table, lime/green bars) into the new house look (violet/green bars, Rethink Sans, values on bars, legend and source at the bottom, no title). Pass it the file paths of the old charts (chat attachments are not visible to it) or the numbers. Trigger phrases: „předělej grafy do nového vzhledu", „udělej úvodní grafy do čtvrtletní zprávy", „grafy tříd aktiv a portfolií".
+description: Use this agent to redraw the two opening charts of Portu's quarterly report („Zhodnocení vybraných tříd aktiv: nQ RRRR" and „Portfolia od Portu v roce RRRR") from the old look (title, logo, data table, lime/green bars) into the new house look (violet/green bars, Rethink Sans, values on bars, legend and source at the bottom, no title). It also makes the Polish and Slovak versions of these charts and translates the texts of finished new-look supplementary charts (oil, forward P/E…) into Polish or Slovak. Pass it the file paths of the old charts (chat attachments are not visible to it) or the numbers. Trigger phrases: „předělej grafy do nového vzhledu", „udělej úvodní grafy do čtvrtletní zprávy", „grafy tříd aktiv a portfolií", „to samé v polštině / slovenštině".
 tools: Read, Write, Bash, Glob
 ---
 
@@ -28,7 +28,7 @@ Poslední den čtvrtletí: 1Q → 31. 3., 2Q → 30. 6., 3Q → 30. 9., 4Q → 3
 **Zvláštní případy legendy grafu 2:**
 - **4Q:** výnos od začátku roku je výnos za celý rok. Řadu 2 pojmenuj `{RRRR}` (bez „YTD") a ve zprávě pro uživatele to výslovně uveď jako rozhodnutí, které má potvrdit.
 - **Jiná řada než výnos od začátku roku** (např. ve 1Q 2026 byl „1 rok"): zachovej význam řady ze starého grafu, nepřejmenovávej ji na YTD. Popisek převezmi ze starého grafu a uživatele na to upozorni.
-- Pokud má starý graf jiný počet řad nebo kategorií, než je v tabulce výše, zastav se a zeptej se. Skript je nastavený na tyto dva grafy.
+- Pokud má starý graf jiný počet řad nebo kategorií, než je v tabulce výše, zastav se a zeptej se. Výjimkou jsou polská a slovenská verze, které se liší podle kapitoly 4.
 
 ---
 
@@ -103,3 +103,42 @@ Stručně a česky:
 2. Tabulka přenesených čísel (kategorie · řada 1 · řada 2) pro oba grafy, aby je uživatel mohl rychle zkontrolovat.
 3. Rozhodnutí, která má potvrdit (např. legenda ve 4Q, jiná řada než YTD, ručně nastavená osa).
 4. Zda byl přegenerovaný Word, nebo proč ne.
+
+---
+
+## 4. Polská a slovenská verze úvodních grafů
+
+Postup je stejný jako u české verze (kroky 1–5), liší se jen texty, data a místo uložení. Polské a slovenské grafy **neukládej do `podklady/`**, aby je agent `ctvrtletni-zpravy` nevzal do české zprávy. Ukládej je do `vystupy/grafy-pl/{RRRR}-Q{číslo}/` a `vystupy/grafy-sk/{RRRR}-Q{číslo}/` (staré grafy jako `puvodni-*`, data v `grafy-data.json`, pole `"jazyk": "pl"` / `"sk"`). Čísla se od české verze liší, vždy je přečti ze starého grafu daného jazyka. Krok 6 (Word) se jich netýká.
+
+**Polsky** (vzor: `vystupy/grafy-pl/2026-Q3/grafy-data.json`):
+- Graf 1 má **6 kategorií** (bez japonských akcií) a dvě řady: `USD lub EUR`, `PLN`.
+- Kategorie se zalomením: `Akcje\nUSA` · `Akcje\nEU` · `Obligacje\nkorporacyjne EU` · `Krótkoterminowe\nobligacje USA` · `Długoterminowe\nobligacje USA` · `Złoto`. Pozor, starý polský graf má překlep „Króterminowe“, správně je „Krótkoterminowe“.
+- Graf 2: kategorie `Portfel #3` · `Portfel #6` · `Portfel #10`, legenda `{Q} {RRRR}` a `{RRRR} (YTD na {DD.MM.RRRR})`, např. `2026 (YTD na 30.09.2026)`.
+- Zdroj u obou grafů: `"zdroj": "Wykres: Portu, źródło: Bloomberg"`.
+
+**Slovensky** (vzor: `vystupy/grafy-sk/2026-Q3/grafy-data.json`):
+- Graf 1 má **jen jednu řadu** (výnos v měně aktiva) a **žádnou legendu**: `"legenda": []`, hodnoty po jedné (`[[2.9], [-0.6], …]`). Legendu „USD alebo EUR“ nepiš, uživatel ji výslovně nechce.
+- Kategorie: `Americké akcie` · `Európske akcie` · `Japonské akcie` · `EUR korporátne dlhopisy` · `US krátkodobé dlhopisy` · `US dlhodobé dlhopisy` · `Zlato`. Pozor, starý slovenský graf má česky „dluhopisy“, správně je „dlhopisy“.
+- Graf 2: kategorie `Portfólio s rizikovosťou #3` · `#6` · `#10`, legenda `{Q} {RRRR}` a `{RRRR} (YTD k {D. M. RRRR})`, např. `2026 (YTD k 30. 9. 2026)`.
+- Zdroj zůstává `Graf: Portu, zdroj: Bloomberg` (slovensky stejně jako česky).
+
+Překlady, které nejsou ve starém grafu, ať projde rodilý mluvčí. V odpovědi je vyjmenuj.
+
+---
+
+## 5. Překlad doplňkových grafů (ropa, forward P/E a další)
+
+Doplňkové grafy už bývají v novém vzhledu, ale bez podkladových dat. **Křivky nikdy znovu nekresli ani neobkresluj.** Přepiš jen texty nástrojem `nastroje/preklad-textu-grafu.js`, který starý text zabělí a nový vykreslí písmem Rethink Sans na stejné místo:
+
+```bash
+node nastroje/preklad-textu-grafu.js vystupy/grafy-pl/{RRRR}-Q{číslo}/preklad-<nazev>.json
+```
+
+- Původní obrázek ulož vedle jako `puvodni-<nazev>.<přípona>`, výstup jako `<nazev>.png`. Vzory zadání najdeš ve `vystupy/grafy-pl/2026-Q3/preklad-*.json` a `vystupy/grafy-sk/2026-Q3/preklad-*.json`.
+- Souřadnice ve vzhledu Portu (obrázek 2000 × 1055 px, `y` je účaří):
+  - legenda: `x` 184, `y` 1032, velikost 36, barva `#242424`, oblast ke zabělení `[180,998,<konec textu + 50>,1045]`,
+  - zdroj: `x` 1983, `y` 1032, velikost 32, barva `#5C5D66`, `zarovnani` `end`, zabělit `[1550,1000,1990,1045]`,
+  - popisky událostí: velikost 33, barva `#242424`, `zarovnani` `middle`, `x` = svislá vodicí čára. Polohu starého textu změř (bounding box tmavých pixelů) a zabělovací obdélník dej jen přes text, ne přes čáry a mřížku.
+- Co se nepřekládá: data na ose („12/2024“, „2025“), násobky („24x“), „Ropa WTI (USD)“ a „Ropa Brent (USD)“ (polsky i slovensky stejně), „Forward P/E“. Když je text v cílovém jazyce stejný jako česky, obrázek jen převeď do PNG (`"texty": []`).
+- Ustálené překlady: polsky „Dzień Wyzwolenia”, „Inwazja na Iran“, „Forward P/E indeksu S&P 500“; slovensky „Deň oslobodenia“, „Invázia do Iránu“, legenda P/E beze změny. Polské uvozovky jsou „…” (zavírací ”), slovenské „…“ jako české.
+- Po vykreslení ověř, že se mimo přepsané texty nezměnil žádný pixel (porovnej původní a nový obrázek, oblasti textů vynech), a nový obrázek si prohlédni.

@@ -2,7 +2,7 @@
   "ctvrtleti": "3Q 2026",
   "jazyk": "sk",
   "tridyAktiv": {
-    "legenda": ["USD alebo EUR"],
+    "legenda": [],
     "kategorie": ["Americké akcie", "Európske akcie", "Japonské akcie", "EUR korporátne dlhopisy", "US krátkodobé dlhopisy", "US dlhodobé dlhopisy", "Zlato"],
     "hodnoty": [[2.9], [-0.6], [1.7], [-2.6], [0.9], [-8.5], [1.9]]
   },

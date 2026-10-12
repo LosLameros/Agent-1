@@ -1,0 +1,14 @@
+{
+  "ctvrtleti": "3Q 2026",
+  "jazyk": "sk",
+  "tridyAktiv": {
+    "legenda": ["USD alebo EUR"],
+    "kategorie": ["Americké akcie", "Európske akcie", "Japonské akcie", "EUR korporátne dlhopisy", "US krátkodobé dlhopisy", "US dlhodobé dlhopisy", "Zlato"],
+    "hodnoty": [[2.9], [-0.6], [1.7], [-2.6], [0.9], [-8.5], [1.9]]
+  },
+  "portfolia": {
+    "legenda": ["3Q 2026", "2026 (YTD k 30. 9. 2026)"],
+    "kategorie": ["Portfólio s rizikovosťou #3", "Portfólio s rizikovosťou #6", "Portfólio s rizikovosťou #10"],
+    "hodnoty": [[-2.5, 3.0], [-1.2, 7.6], [0.4, 13.1]]
+  }
+}

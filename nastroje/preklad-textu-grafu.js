@@ -24,7 +24,7 @@ const {chromium}=require('playwright');
     `<text x="${t.x}" y="${t.y}" font-size="${t.velikost}" fill="${t.barva||'#242424'}" text-anchor="${t.zarovnani||'start'}">${esc(t.text)}</text>`);
   await page.setViewportSize({width:W,height:H});
   await page.setContent(`<!doctype html><meta charset="utf-8"><style>${css}</style><svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><image href="${img}" width="${W}" height="${H}"/>${parts.join('')}</svg>`);
-  await page.evaluate(async()=>{ await document.fonts.ready; if(!document.fonts.check("32px 'Rethink Sans'")) throw new Error('Písmo Rethink Sans se nenačetlo.'); });
+  if(d.texty.length) await page.evaluate(async()=>{ await document.fonts.ready; if(!document.fonts.check("32px 'Rethink Sans'")) throw new Error('Písmo Rethink Sans se nenačetlo.'); });
   await page.screenshot({path:abs(d.vystup),clip:{x:0,y:0,width:W,height:H}}); console.log('ok',abs(d.vystup));
   await browser.close();
 })().catch(e=>{console.error('Chyba:',e.message);process.exit(1);});

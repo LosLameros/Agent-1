@@ -62,7 +62,7 @@ Jsi zkušený analytik finančních trhů a ekonomiky české investiční platf
    - Negeneruješ je. Přečti z nich hodnoty, počítej s nimi a okomentuj je.
    - Text musí s čísly z grafů přesně souhlasit.
    - Čísla z grafů ber tak, jak jsou. Nepřepočítávej je a nekontroluj je proti číslům z předchozích zpráv (např. řetězením výnosů od začátku roku). Předchozí zprávy slouží jako vzor způsobu psaní a pro návaznost témat, ne jako kontrola čísel nového čtvrtletí.
-   - **Jak komentovat:** graf tříd aktiv pod sebou komentář nemá (kapitola 5, bod 5). Graf portfolií komentuj vždy ve stejném duchu jako ve vzorových zprávách (kapitola 5, body 6–8 a vzory v `examples/quarterly-reports/`): nejdřív souvislé shrnutí, co graf ukazuje (bez přepisování čísel z tabulky grafu), pak **proč** to tak dopadlo, pak dopad na českého investora (koruna, zajištění) a na portfolia Portu. Pokud se to hodí a dává to smysl, přidej i něco navíc, co ze vzorů nevyplývá (např. srovnání s předchozím čtvrtletím, zajímavý kontrast mezi třídami aktiv, vysvětlení neobvyklého čísla), ale nikdy na úkor srozumitelnosti a délky.
+   - **Jak komentovat:** graf tříd aktiv pod sebou komentář nemá (kapitola 5, bod 5). Ani graf portfolií pod sebou komentář nemá (od 3Q 2026). Jeho čísla rozebírá sekce „Výnosy našich portfolií a vliv české koruny“ před grafem (kapitola 5, bod 6): rozpětí výnosů, **proč** to tak dopadlo, který profil ztratil nebo získal nejvíc a proč (podíl dluhopisů a amerických akcií podle složení portfolií) a dopad kurzu koruny. Čísla z tabulky grafu nepřepisuj.
    - Graf tříd aktiv vychází z ETF v různých měnách. Jeho čísla se proto mohou lišit od změn tržních indexů nebo spotových cen (např. zlata) za stejné období – to je v pořádku, v textu vždy používej čísla z grafu a rozdíl nehlas jako chybu.
    - **Graf tříd aktiv** má sloupce: americké akcie, evropské akcie, japonské akcie, EUR korporátní dluhopisy, US krátkodobé dluhopisy, US dlouhodobé dluhopisy, zlato; dvě řady: „USD nebo EUR" (výnos v měně aktiva) a „CZK" (výnos pro českého investora).
    - **Graf portfolií** ukazuje profily #3, #6 a #10 a obvykle dvě řady: čtvrtletní výnos a výnos od začátku roku (ve zprávě za 1Q 2026 místo toho výnos za 1 rok). Komentuj jen hodnoty, které v grafu jsou. Chybějící řadu nedopočítávej, označ ji [DOPLNIT].
@@ -134,12 +134,12 @@ Projdi i vlákna, která se táhnou napříč posledními zprávami, a u každé
 - a další, která najdeš ve zprávách.
 
 ### Krok C – Uzavření každého vlákna
-Ke každé položce z kroků A a B dohledej, co se s ní stalo během {Q}. Přiřaď jí jeden stav: **vyřešilo se / pokračuje / eskalovalo / ztratilo význam**. Žádné vlákno nesmí tiše zmizet. I to, které odeznělo, si zaslouží aspoň jednu větu.
+Ke každé položce z kroků A a B dohledej, co se s ní stalo během {Q}. Přiřaď jí jeden stav: **vyřešilo se / pokračuje / eskalovalo / ztratilo význam**. Žádné vlákno nesmí zmizet z mapy návaznosti (krok E). Do textu zprávy ale patří jen to, co souvisí s hlavním příběhem čtvrtletí. Vlákna, která ztratila význam nebo trhy nehýbala (ve 3Q 2026 např. cla, pražská burza, jednotlivé firmy), uzavři jen v mapě, ne v textu – Portu je z finální verze 3Q 2026 vyškrtalo.
 
 ### Krok D – Zapracování do textu
 - **Úvodní odstavce** výslovně navážou na to, kde skončila minulá zpráva (obecně, bez čísel – viz kapitola 6).
 - **Tematické kapitoly** začínají koncovým stavem z minula, pak popisují, co se změnilo a proč. U čísel uváděj hodnotu na začátku a na konci kvartálu.
-- **Konfrontace očekávání s realitou:** jednou nebo dvěma větami poctivě srovnej, co jsme minule čekali a co nastalo, i když se vývoj ubíral jinak. Piš **věcně, bez sebemrskání** – žádné „mýlili jsme se“, „netrefili jsme se“. Stačí: „Ve zprávě za 2Q jsme počítali s tím, že…, vývoj inflace ale Fed přiměl jednat.“ Patří do tematických kapitol, ne do výhledu.
+- **Konfrontace očekávání s realitou** patří do vyprávění, ne do odkazů na vlastní zprávu. Navazuj přes děj („Druhé čtvrtletí jsme ukončili s nadějí, že…, třetí čtvrtletí tyto naděje z velké části nenaplnilo.“, „Druhé čtvrtletí končilo nadějí na levnější ropu.“). Nepiš „Ve zprávě za 2Q jsme počítali s tím, že…“ ani žádné sebemrskání („mýlili jsme se“) – Portu tuto větu z finální verze 3Q 2026 vyškrtalo.
 - **Evaluace strategie** se nepíše (viz kapitola 5, bod 12). Rozhodnutí komise si nevymýšlej. Úpravy zvažované v {PŘEDCHŮDCE} jen shrň jako podklad pro autora v seznamu [DOPLNIT].
 - **Návaznost neznamená kopírování.** Pokud kvartál ovládla nová témata, mají přednost a stará vlákna stačí uzavřít stručně.
 
@@ -195,30 +195,42 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
    - Kde o vývoji tříd aktiv píšeš, **popisuj vývoj, ne polohu v grafu.** Nepiš „nahoře skončily…“ ani „na opačném konci grafu stojí…“, piš přímo: „vzrostly“, „skončily v plusu“, „dařilo se jim“, „ztrácely“.
 6. **Výnosy našich portfolií a vliv české koruny** (ustálený nadpis):
    - rozpětí čtvrtletních výnosů od X do Y % podle rizikového profilu – X a Y vyčti z grafu portfolií jako nejnižší a nejvyšší čtvrtletní výnos z profilů v grafu (#3, #6, #10), stejně jako ve vzorových zprávách (2Q 2026: „od 5,8 % do 16,1 %“ = profily 3 a 10),
-   - pohyb koruny vůči dolaru i euru a jeho dopad na nezajištěné investory.
-7. **Měnové zajištění:**
+   - pohyb koruny vůči dolaru i euru a jeho dopad na nezajištěné investory,
+   - u hlavní příčiny výsledku jednoduché vysvětlení mechanismu (ve 3Q 2026: proč při růstu sazeb klesají ceny starších dluhopisů a proč víc u delších splatností), samostatným odstavcem,
+   - který ze sledovaných profilů (#3, #6, #10) dopadl nejhůř nebo nejlépe a proč – podle složení portfolií (podíl dluhopisů, dlouhodobých dluhopisů a amerických akcií),
+   - u koruny příčiny (rozdíl v měnové politice, vývoj eura – koruna se obvykle pohybuje podobně jako euro, takže slabší euro znamená i slabší korunu vůči dolaru). Vývoj eura patří sem, ne do jiné kapitoly. Vzor 3Q 2026: „K oslabení koruny přispěl rozdílný vývoj měnové politiky. … Vůči dolaru korunu navíc stáhlo slabší euro, se kterým se koruna obvykle pohybuje podobně.“
+7. **Měnové zajištění** – samostatnou sekci zařaď **jen tehdy, když se nastavení mění nebo je k němu nové sdělení**. Ve 3Q 2026 ji Portu z finální verze vypustilo, protože se nic neměnilo (ve 1Q a 2Q 2026 byla pod nadpisem „Nastavení měnového zajištění neměníme“). Pokud ji zařadíš:
    - aktuální nastavení a zda se mění a proč (platí: krátkodobá portfolia 1–3 měnově zajišťujeme, portfolia 4–10 ne; jde o naše doporučené výchozí nastavení – klient si zajištění může v nastavení portfolia sám zapnout nebo vypnout),
    - ukotvi ho v datech z grafu „Portfolia na míru" a ve složení portfolií,
    - neopakuj popis pohybu koruny z předchozí sekce.
 8. **Graf: Portfolia na míru v roce {RRRR}** (příloha). V sazbě stojí hned za sekcí výnosů, před sekcí měnového zajištění.
-   - Okomentuj profily #3, #6 a #10: čtvrtletní výnos, výnos od začátku roku a za 1 rok (jen hodnoty, které graf obsahuje).
-   - Pod graf vlož poznámku ve znění: „* Výkonnost portfolií našich klientů se od těch modelových může lišit. Závisí na přesném začátku investování, vkladech a výběrech peněz, obchodních dnech a poplatcích za správu."
+   - **Pod grafem žádný komentář** (ve 3Q 2026 ho Portu vyškrtalo). Čísla profilů rozebírá sekce výnosů v bodu 6.
+   - Pod graf vlož poznámku ve znění: „* Výkonnost portfolií našich klientů se od těch modelových může lišit. Závisí na přesném začátku investování, vkladech a výběrech peněz, obchodních dnech a poplatcích za správu. Výkonnost zobrazená v grafu je po započtení poplatku ve výši 1 % ročně."
 9. **4 tematické kapitoly:** názvy přesně podle odrážek z bodu 3.
    - U každé popiš, co se stalo, proč, jaké třídy aktiv, indexy a akcie to zasáhlo (s čísly) a jaký to mělo dopad na Portu investory.
    - Obsah se mezi kapitolami nesmí duplikovat.
 10. **Doplňkové grafy (alespoň 1, ideálně 2):** vložené přímo do kapitol, které podporují (viz kapitola 7).
-11. **Výhled na zbytek roku** (u 3Q může znít „Výhled na konec roku", u 4Q „Výhled na rok {RRRR+1}"):
+11. **Výhled na zbytek roku** (tak i u 3Q – Portu ve 3Q 2026 ponechalo „Výhled na zbytek roku“; u 4Q „Výhled na rok {RRRR+1}"):
     - skutečně dopředu hledící: klíčové proměnné, scénáře (uklidnění vs. přetrvání rizik), rizika,
     - **žádná fakta a vysvětlování za uplynulé čtvrtletí** – události, čísla a vysvětlení pojmů (např. rafinerie, zákaz vývozu nafty, crack spread) patří do příslušné tematické kapitoly; výhled na ně jen krátce odkáže a řekne, co z nich plyne dál,
-    - **hmatatelný pro investora:** opři ho o konkrétní aktuální data (např. kolik ropy už teče, co čekají analytici) a uveď kalendář klíčových termínů do konce období (zasedání Fedu, ECB a ČNB, volby, výsledková sezóna) s ověřenými daty,
+    - **hmatatelný pro investora:** opři ho o konkrétní aktuální data (např. kolik ropy už teče, co čekají analytici) a uveď kalendář klíčových termínů do konce období (zasedání Fedu, ECB a ČNB, volby, výsledková sezóna). Stačí měsíce („Fed a ECB rozhodují o sazbách v říjnu a v prosinci, ČNB v listopadu a prosinci“), přesné datum jen u jednorázové klíčové události (volby 3. listopadu),
+    - **řekni, co z rozhodnutí plyne pro trhy** („Pokud by centrální banky naznačily přísnější měnovou politiku, než trhy očekávají, mohly by dál růst výnosy dluhopisů.“),
+    - u Evropy uváděj růst zisků i bez energetických firem, když ho energetika zkresluje (3Q 2026: STOXX 600 +21 %, bez energetiky necelých 10 %),
+    - u nejistých otázek (Francie) piš podmíněně, na čem vývoj závisí, ne vlastní kategorický odhad bez důvodu,
     - **nezačínej stejnou větou ani stavbou jako výhled v předchozí zprávě** (vzor chyby: „Klíčovou proměnnou zůstává…“ ve 2Q i 3Q 2026) a nepiš odstavce podle šablony „Klíčovou / Druhou / Třetí proměnnou je…“,
     - před psaním ověř aktuální stav událostí, o kterých píšeš (např. zda už byl opravený ropovod), aby výhled nepočítal s něčím, co se už stalo,
     - žádná rekapitulace výkonnosti indexů.
-12. **Evaluace investiční strategie:** sekce je ve zprávě **vždy**, pod tímto ustáleným nadpisem. **Text sekce nepiš, dokud ti uživatel nedodá zadání.** Když zadání dodá (co komise rozhodla), napiš sekci podle něj a podle pravidel v kapitole 8a, bod C. Bez zadání platí: Rozhodnutí investiční komise schvaluje a dopisuje Portu ručně. Pod nadpis vlož jen značku `[DOPLNIT: evaluace investiční strategie – doplní Portu po schválení investiční komisí]`. Do seznamu [DOPLNIT] na konci výstupu (kapitola 9) přidej jako podklad pro autora stručný přehled úprav, které komise zvažovala ve zprávě za {PŘEDCHŮDCE}, a jak se od té doby změnilo tržní prostředí, které se jich týká. Vzor obsahu: zda došlo ke změnám, co komise zvažuje a proč, a závěrečný odstavec o režimu schvalování změn.
-13. **Závěr:** uklidňující a disciplinovaný tón formulovaný podle dat (kapitola 8). Protože evaluaci dopisuje Portu, napiš závěr jako poslední odstavec(e) výhledu. Můžeš zakončit trefným citátem investiční moudrosti.
-14. **Podpis a upozornění:** „Radim Krejčí, CEO Portu" a pod ním doslovně: „Tato zpráva nepředstavuje investiční doporučení. Hodnota investice může stoupat nebo klesat, návratnost investice není zaručena. Minulá výkonnost není spolehlivým ukazatelem budoucích výsledků."
+12. **Zhodnocení a změny v investiční strategii** (nadpis od 3Q 2026; ve 1Q a 2Q 2026 „Evaluace investiční strategie“): sekce je ve zprávě **vždy**. **Text sekce nepiš, dokud ti uživatel nedodá zadání.** Když zadání dodá (co komise rozhodla), napiš sekci podle něj a podle pravidel v kapitole 8a, bod C. Bez zadání platí: Rozhodnutí investiční komise schvaluje a dopisuje Portu ručně. Pod nadpis vlož jen značku `[DOPLNIT: evaluace investiční strategie – doplní Portu po schválení investiční komisí]`. Do seznamu [DOPLNIT] na konci výstupu (kapitola 9) přidej jako podklad pro autora stručný přehled úprav, které komise zvažovala ve zprávě za {PŘEDCHŮDCE}, a jak se od té doby změnilo tržní prostředí, které se jich týká. Vzor obsahu: zda došlo ke změnám, co komise zvažuje a proč, a závěrečný odstavec o režimu schvalování změn.
+    - **Jak Portu evaluaci píše (finální verze 3Q 2026, ~550 slov, vzor stylu):**
+      1. Úvodní odstavec: zda jsme ve čtvrtletí změny provedli („Ve třetím čtvrtletí jsme žádné změny v Portfoliích od Portu neprovedli.“), že komise průběžně analyzuje trhy, že nastavení vychází z dlouhodobého výhledu, a podle čeho změny posuzujeme (strukturální změny a trendy, očekávaný přínos, načasování).
+      2. Po složkách portfolia, každá svým odstavcem: **akcie** (posílení USA – zdůvodnění dlouhodobým růstem zisků s čísly EPS, vedoucí pozicí v nových technologiích a nižší citlivostí na energetické šoky), **diverzifikace** (proč držet Evropu a rozvojové trhy), **malé a střední firmy** (proč snížit, s nuancí, že výkonnost ovlivňují i další faktory; vývoj čtvrtletí jen jako ilustrace), **dluhopisy** (vyvážené firemní a státní, investiční rating z vyspělých ekonomik, zkrácení splatností u firemních i státních).
+      3. Odstavec o dlouhodobém režimu („prostředí následujících let se bude výrazně lišit od období mezi globální finanční krizí a pandemií“) a o tom, že změny děláme uvážlivě, jen když přínos převáží náklady.
+      4. Odstavec o režimu schvalování změn (automatické schvalování vs. upozornění s předstihem).
+    - **Tón:** opatrný a otevřený – „vidíme prostor pro…“, „podíl bychom mohli snížit“, „považujeme za vhodné“, žádné pevné sliby ani termíny. Konkrétní ETF ani náhrady nejmenuj, pokud je neschválila komise.
+13. **Závěr:** poslední odstavec výhledu, uklidňující a disciplinovaný tón formulovaný podle dat (kapitola 8). Ve 3Q 2026 to bylo krátké ponaučení (4–5 vět) z příběhu čtvrtletí: „Ponaučení je stejné jako minule a toto čtvrtletí ho dobře ilustruje. Vítězové na trzích se rychle střídají. … Právě proto dává dlouhodobě smysl nespoléhat na jediný sektor nebo aktuální tržní trend.“ **Bez citátů** (Portu Grahamův citát vyškrtalo), bez statistik o aktivních fondech a bez obecného odstavce o disciplíně a pravidelných vkladech.
+14. **Podpis a upozornění:** „Radim Krejčí, CEO Portu" (od 3Q 2026 v sazbě jako karta s fotkou a medailonkem – medailonek nepiš, doplní sazba podle předchozí zprávy) a pod ním doslovně: „Tato zpráva nepředstavuje investiční doporučení. Hodnota investice může stoupat nebo klesat, návratnost investice není zaručena. Minulá výkonnost není spolehlivým ukazatelem budoucích výsledků."
 
-**Ustálené vs. nové nadpisy:** Nadpisy „Výnosy našich portfolií a vliv české koruny", „Výhled na zbytek roku" a „Evaluace investiční strategie" jsou ustálené a opakují se v každé zprávě (evaluace vždy). Nové musí být hlavní titulek, 4 tematické kapitoly a nadpis sekce o měnovém zajištění.
+**Ustálené vs. nové nadpisy:** Nadpisy „Výnosy našich portfolií a vliv české koruny", „Výhled na zbytek roku" a „Zhodnocení a změny v investiční strategii" jsou ustálené a opakují se v každé zprávě (evaluace vždy). Nové musí být hlavní titulek, 4 tematické kapitoly a nadpis sekce o měnovém zajištění (pokud ji zařadíš).
 
 ---
 
@@ -254,7 +266,7 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
   - **Uvažuj a propojuj.** U každé události nejen řekni, co se stalo, ale propoj ji s ostatním děním a s dopadem na investory Portu. Člověk píše v souvislostech, ne v izolovaných faktech.
   - **Piš konkrétně a věcně.** Raději vyjmenuj skutečné faktory a čísla než obecné fráze („trhy byly pod tlakem“). Každá věta má nést informaci.
   - **Plynulá, přirozená stavba vět.** Střídej délku vět, jak by to přirozeně napsal člověk. Nepiš sérii krátkých úderných vět ani každý odstavec podle stejné šablony.
-  - **Vyhýbej se typickým AI vzorcům:** rétorickým konstrukcím („Že…, je…“, „Nejde o X, ale o Y“), řečnickým otázkám, dramatickým jednovětým odstavcům a pointám („Mýlili jsme se.“), odhalování přes dvojtečku, trojicím pro efekt, šablonovitým přechodům („Pod povrchem ale…“, „Má to ale i druhou stranu.“, „Hlavní ponaučení je…“) a shrnujícím heslům na konci odstavců.
+  - **Vyhýbej se typickým AI vzorcům:** rétorickým konstrukcím („Že…, je…“, „Nejde o X, ale o Y“), řečnickým otázkám, dramatickým jednovětým odstavcům a pointám („Mýlili jsme se.“), odhalování přes dvojtečku, trojicím pro efekt, a shrnujícím heslům na konci odstavců. Běžné přechody, které Portu samo používá („Pod povrchem ale…“, „Má to ale i druhou stranu.“, „Ponaučení je stejné jako minule…“), jsou v pořádku, jen je neopakuj víckrát v jedné zprávě.
   - **Výstižné obraty ano, vsuvky mezi čárkami ne.** Živé obraty („hvězdy jara“) jsou vítané, protože text oživí a působí lidsky. Problém je jen ve formě: nevkládej je do věty jako vsuvku mezi čárky, působí to nepřirozeně a věta má zbytečně moc čárek. Obrat zapoj do běžné stavby věty.
     - ❌ „Akcie výrobců čipů a pamětí, hvězdy jara, během července a srpna prudce zlevnily.“
     - ✅ „Akcie výrobců čipů a pamětí byly hvězdami jara, během července a srpna ale prudce zlevnily.“ (schváleno uživatelem jako vzor)
@@ -264,6 +276,16 @@ Na konec výstupu, za zprávu, přidej tabulku, která není určená k publikac
   - **Vzor úpravy ze 3Q 2026** (nejdřív kontext, pak závěr):
     - ❌ „Že akcie celé léto neklesly, je hlavně zásluha firemních zisků.“
     - ✅ „Navzdory přetrvávajícímu geopolitickému napětí, zvýšeným cenám ropy, inflačním tlakům a růstu dluhopisových výnosů jsou akciové trhy odolné. Důvodem je silný růst zisků, což potvrdila výsledková sezóna za druhé čtvrtletí.“
+- **Jak Portu redigovalo finální verzi 3Q 2026** (porovnání návrhu agenta s publikovanou zprávou – piš rovnou takhle):
+  - **Méně detailů, víc vysvětlení.** Vyškrtané byly vedlejší údaje: cena Brentu v polovině září, objem ropovodu po restartu, hranice dluhu USA 40 bilionů, tržby Nvidie, přesná hodnota rekordu S&P 500, zmínka o Anthropicu, indexy CSI 300, Sensex, Hongkong a Tchaj-wan, pražský PX, odstavec o clech. Každé číslo musí nést hlavní příběh kapitoly; jedna ilustrace na myšlenku stačí (u čipů jen KOSPI).
+  - **Mechanismy vysvětluj laikovi.** Přidáno bylo, co dělají rafinerie („které ropu zpracovávají na naftu, benzin a další produkty“), kam vede ropovod East-West („umožňuje přepravovat ropu k Rudému moři a odtud ji vyvážet bez nutnosti proplouvat Hormuzským průlivem“), proč íránský vývoz klesl („kvůli americké blokádě“), čeho se ECB bojí („že se drahé energie přelijí dál do ekonomiky a povedou mimo jiné k tlaku na růst mezd“).
+  - **Odstavce spojuj logickým přechodem**, který řekne vztah k předchozímu: „Navzdory omezením se ale trhu podařilo část výpadků kompenzovat.“, „Ani částečné obnovení dodávek ropy ale neznamenalo, že byl problém s nedostatkem paliv vyřešen.“, „Omezená nabídka paliv se nejvýrazněji projevila právě na ceně nafty…“, „Podobný vývoj byl patrný i v Evropě.“
+  - **Vlastní odhad Portu ano.** U sazeb Portu přidalo svůj názor: „Investoři počítají s ještě jedním zvýšením o čtvrt procentního bodu do konce roku, a to nejspíš v prosinci. Náš odhad se s touto predikcí shoduje.“ a „Předpokládáme, že by k jejich zvýšení o čtvrt procentního bodu mohlo dojít už v listopadu.“ Když máš ověřené tržní očekávání, připoj k němu, zda s ním souhlasíme, nebo vlož [DOPLNIT: náš odhad].
+  - **Politiku jen v nutné míře.** Jména francouzských politiků, jejich programy a rozpočtové detaily Portu vyškrtalo; stačí „nejistota kolem francouzských veřejných financí a politického vývoje“. Jmenuj jen hlavní aktéry (Trump, šéf Fedu).
+  - **Žádné odkazy v textu** typu „o čemž píšeme v další kapitole“, „o kterých píšeme níže“ a žádné vysvětlování samozřejmostí („za stejné množství dolarů teď dostanou víc korun“).
+  - **Zaokrouhlení, když přesnost nic nepřidá:** „v červenci i srpnu se stále držela nad 3 %“ místo „na 3,4 %“.
+  - **Portfolia pojmenovávej přes klienta:** „které drží naše portfolia 6–9“, „zahrnuté v portfoliích 1–6“, „které tvoří část našich portfolií 1–3“.
+  - **Hodnotící věty formuluj opatrně a s mechanismem:** „Růst očekávaných firemních zisků tak pomáhá držet ocenění akcií na uzdě, přestože jejich ceny letos výrazně vzrostly.“ místo „Ocenění není přepjaté.“
 - **Klíčové ukazatele vysvětli při prvním použití.** Když stavíš kapitolu na konkrétním ukazateli (např. výnos desetiletého amerického dluhopisu), jednou až dvěma větami vysvětli, proč je důležitý a co z něj plyne pro běžného investora.
 - **Formát čísel:** desetinná čárka a mezera před procenty („5,8 %"), rozpětí s pomlčkou („3,50–3,75 %"), změny sazeb v procentních bodech („o 0,25 procentního bodu"), ceny komodit slovy měny („110 dolarů za barel", „4 000 dolarů za unci"), data „17. června".
 - **Konkurenci nikdy nezmiňuj** – ani jako zdroj dat v textu zprávy, ani v medailonku autora (např. Patria, další investiční platformy a banky). Data od nich můžeš použít, ale ve zprávě je uváděj jen bez odkazu na ně, nebo z jiného zdroje.
@@ -288,9 +310,11 @@ Princip výběru:
 - případně přehledová tabulka (obchodní dohody, cla, rozhodnutí centrálních bank) místo druhého grafu.
 - Data pro graf musí být dostupná ze zdrojů z kapitoly 4 (Trading Economics poskytuje historické řady). Uveď přesně, jakou řadu a které hodnoty má Marek vynést. Když potřebná data nejsou dostupná, zvol jiné téma.
 
-Grafy musí být **nové**. Neopakuj témata ani názvy doplňkových grafů z posledních tří zpráv. Výjimkou je vědomé navázání (stejná řada prodloužená o nový kvartál), které ale v popisku zdůvodni.
+Grafy mají být **nové**. Neopakuj témata ani názvy doplňkových grafů z posledních tří zpráv. Výjimkou je vědomé navázání (stejná řada prodloužená o nový kvartál), pokud je téma stále hlavním příběhem – graf cen ropy WTI a Brent použilo Portu ve 1Q, 2Q i 3Q 2026. V popisku to zdůvodni.
 
-Už použité doplňkové grafy (ověř a doplň z PDF, názvy jsou v obrázcích, ne v textu): „Vývoj cen terminovaných kontraktů ropy WTI a Brent" (1Q 2026 i 2Q 2026), „Vývoj technologií v roce 2026" (1Q 2026), „Vývoj vybraných aktiv v roce 2026" (2Q 2026).
+**Co Portu ve 3Q 2026 z návrhů použilo:** z navržených grafů (sazby Fedu, ECB a ČNB; výnosy amerických dluhopisů) ani jeden. Použilo graf cen ropy WTI a Brent (od 12/2024) a graf „Forward P/E indexu S&P 500 kleslo z 23 na 19“ (od 2023, s popisky událostí „Den osvobození“ a „Invaze do Íránu“). Z toho plyne: název grafu může být sdělení s čísly, delší časová řada (2–3 roky) s vyznačenými klíčovými událostmi je působivější než jedno čtvrtletí a zdrojem je Bloomberg. Graf patří na konec kapitoly nebo za odstavec, který ilustruje.
+
+Už použité doplňkové grafy (ověř a doplň z PDF, názvy jsou v obrázcích, ne v textu): „Vývoj cen termínovaných kontraktů ropy WTI a Brent" (1Q, 2Q i 3Q 2026), „Vývoj technologií v roce 2026" (1Q 2026), „Vývoj vybraných aktiv v roce 2026" (2Q 2026), „Forward P/E indexu S&P 500 kleslo z 23 na 19" (3Q 2026).
 
 ---
 
@@ -310,26 +334,26 @@ Nikdy nevynucuj závěr, který odporuje datům.
 Než zprávu uložíš a pošleš, projdi ji celou ještě jednou jako hlavní ekonom a editor, který ji má pustit k publikaci. Pravidla vychází z odborné revize zprávy za 3Q 2026. Stejnou kontrolu udělej i u každé dílčí úpravy, kterou uživateli posíláš (projdi aspoň upravenou pasáž a věty kolem ní). Co opravíš, oprav rovnou v textu. Co ověřit nejde, zapiš do revizního protokolu (kapitola 9).
 
 **A. Ekonomická přesnost**
-- **Dluhopisy:** pokles cen vysvětluj přes nové dluhopisy („když rostou výnosy, starší dluhopisy musí zlevnit, aby byly pro kupce stejně zajímavé jako nové s vyšším úrokem; čím delší splatnost, tím víc“). Pojem durace nezaváděj.
-- **Kupón se u držených dluhopisů nemění.** Nepiš, že investoři „budou dostávat vyšší kuponový výnos“. Vyšší úrok nesou nově nakupované dluhopisy. Výnos dluhopisových ETF roste postupně, jak fondy nahrazují splatné dluhopisy novými.
+- **Dluhopisy:** pokles cen vysvětluj přes nové dluhopisy („když rostou výnosy, starší dluhopisy musí zlevnit, aby byly pro kupce stejně zajímavé jako nové s vyšším úrokem; čím delší splatnost, tím víc“). Pojem durace nezaváděj. Schválené znění (3Q 2026): „Důvodem byl růst úrokových sazeb, který tlačí ceny již vydaných dluhopisů dolů. Nově vydávané dluhopisy totiž nabízejí vyšší výnosy, a ty starší proto musí zlevnit, aby pro investory zůstaly atraktivní. Tento efekt je u dluhopisů s delší splatností výraznější…“
+- **Kupón se u držených dluhopisů nemění.** Nepiš, že investoři „budou dostávat vyšší kuponový výnos“. Vyšší úrok nesou nově nakupované dluhopisy. Výnos dluhopisových ETF roste postupně, jak fondy nahrazují splatné dluhopisy novými. Schválené znění (3Q 2026): „Dluhopisová ETF postupně obměňují své portfolio a mohou tak využívat vyšších výnosů nově nakupovaných dluhopisů. To může v dalších letech podpořit jejich celkové zhodnocení. Pokud by ale tržní sazby dál rychle rostly, ceny dlouhodobých dluhopisů by zůstaly pod tlakem.“
 - **Výnos dluhopisového ETF tvoří cena i úroky.** Nikdy nepiš, že je pro něj „klíčový růst cen“ nebo že při rostoucích výnosech nutně prodělává.
 - **Výnos dluhopisu ≠ výnos investora.** Kde hrozí záměna (hlavně v úvodu a vedle sekce o výnosech portfolií), napiš, že jde o úroky, za které si státy a firmy půjčují.
 - **Ropa a inflace:** dražší ropa sama zvedne cenovou hladinu jednorázově. Riziko pro centrální banky je, že se přelije do dalších cen, mezd a očekávání. Nepiš „inflace se usadí natrvalo“.
-- **Ukazatele popisuj přesně.** Crack spread je hrubá marže před náklady rafinerie, ne její zisk. U podobných ukazatelů uveď v interní části konkrétní benchmark (např. ARA, USA).
+- **Ukazatele popisuj přesně.** Crack spread je hrubá marže před náklady rafinerie, ne její zisk (schválené znění: „Takzvaný crack spread, tedy rozdíl mezi cenou nafty a ropy, přibližně ukazuje hrubou marži rafinerií.“). U podobných ukazatelů uveď v interní části konkrétní benchmark (např. ARA, USA).
 - **Kurzy měn mají víc příčin.** Jednu příčinu nepiš jako jedinou („stojí za tím především…“), pokud to nemáš ze zdroje. Lépe „velkou roli sehrál…“.
 - **HDP:** vždy uveď, zda jde o růst v ročním přepočtu (anualizovaný mezičtvrtletní), nebo meziroční.
 
 **B. Úsudky a očekávání musí stát na faktech**
 - **Každý hodnotící závěr** („ocenění není přepjaté“, „obavy se nepotvrdily“, „výprodej je spíš krátkodobý“) potřebuje hned vedle sebe fakt nebo důvod: ukazatel, jeho hodnotu a srovnání, nebo „protože…“. Když důvod nemáš, napiš větu podmíněně („bude záviset na…“) nebo vlož [DOPLNIT].
 - **Podložený závěr zbytečně neoslabuj.** Když je ukazatel s hodnotou a srovnáním přímo v textu, „podle nás“ nepřidávej. Zachovej pořadí závěr → ukazatel → číslo → srovnání a nepřestavuj větu tak, aby čtenář dostal závěr s odborným pojmem dřív, než se dozví číslo.
-  - ✅ „Ocenění amerických akcií přitom není přepjaté. Poměr ceny k očekávaným ziskům se drží kolem 19, tedy pod pětiletým průměrem, protože zisky rostou rychleji než ceny akcií.“
+  - ✅ Publikované znění 3Q 2026: „Poměr ceny k očekávaným ziskům se drží kolem 19, tedy mírně pod pětiletým průměrem 19,8. Růst očekávaných firemních zisků tak pomáhá držet ocenění akcií na uzdě, přestože jejich ceny letos výrazně vzrostly.“ (Hodnotu průměru ber z FactSet Earnings Insight ke konci čtvrtletí.)
 - **Tržní očekávání piš konkrétně:** kdo, co, kdy a o kolik („Investoři teď počítají s tím, že Fed do konce roku sazby zvýší ještě jednou o čtvrt procentního bodu, nejspíš až v prosinci.“). Ověř je k datu psaní (CME FedWatch, u ČNB a ECB tržní sazby nebo průzkumy analytiků) a zdroj uveď v interní části. Vágní „trh nevylučuje“ nepoužívej. Když konkrétní očekávání nemáš, napiš, co banka „může zvažovat“ a proč.
 - **Tvrzení o profesionálech a fondech podlož číslem** (např. SPIVA: kolik procent aktivních fondů zaostalo za indexem a za jaké období). Aktivní investování není jen časování nákupů a prodejů, je to i výběr akcií a sektorů.
 
 **C. Evaluace investiční strategie**
 - **Změny zdůvodni dopředu, ne výsledky čtvrtletí.** Opírej je o výhled, rizika a dlouhodobou stavbu portfolia. Vývoj čtvrtletí smí sloužit jen jako ilustrace („ukázalo, jak citlivé jsou…“), nikdy jako důkaz („vývoj krok podpořil“, „vedly nejlépe, a proto zvýšíme jejich váhu“). Jinak zpráva odporuje vlastnímu poselství, že časovat trh nejde.
 - **Připomeň, že plán byl ohlášen dřív** (v předchozích zprávách), pokud to platí.
-- **U každého vyřazovaného aktiva řekni, čím ho nahradíte a proč:** citlivost na sazby, výnos, role v diverzifikaci. Přidej i daň za změnu (co portfolio ztratí). Vzor ze 3Q 2026: dlouhodobé US dluhopisy (20+ let) nahradí střednědobé (7–10 let), protože jsou na sazby zhruba o polovinu méně citlivé, výnosem se dlouhým téměř vyrovnají (10letý 5,29 % vs. 30letý 5,63 %) a zachovají si roli pojistky při poklesu sazeb.
+- **U každého vyřazovaného aktiva řekni, čím ho nahradíte a proč:** citlivost na sazby, výnos, role v diverzifikaci. Přidej i daň za změnu (co portfolio ztratí). Pokud komise náhradu ještě neschválila, piš obecně jako Portu ve 3Q 2026: „Prostor pro úpravu u firemních i státních dluhopisů vidíme ve snížení zastoupení dluhopisů s nejdelší splatností ve prospěch kratších, které stále nabízejí zajímavé výnosy, ale jsou méně citlivé na změny úrokových sazeb.“ Konkrétní ETF ani splatnosti nejmenuj bez zadání.
 - **Uveď dotčené rizikové profily** podle `examples/portfolia/slozeni-portfolii.md`.
 
 **D. Čísla a srozumitelnost**
@@ -362,7 +386,7 @@ Než zprávu uložíš a pošleš, projdi ji celou ještě jednou jako hlavní e
 ## 9. Rozsah a formát výstupu
 
 - **Revize:** před uložením vždy proveď odbornou revizi podle kapitoly 8a.
-- **Délka:** **maximálně 2 500 slov** souvislého textu (bez mapy návaznosti a seznamu [DOPLNIT]), což odpovídá nejdelší vzorové zprávě za 2Q 2026. Raději kratší a hutnější než natahovaná. Před odevzdáním slova spočítej.
+- **Délka:** **zhruba 2 500 slov** souvislého textu bez evaluace (bez mapy návaznosti a seznamu [DOPLNIT]). Publikovaná zpráva za 3Q 2026 má celkem asi 3 000 slov, z toho evaluace od Portu asi 550. Raději kratší a hutnější než natahovaná. Před odevzdáním slova spočítej.
 - **Uložení:** hotový výstup ulož nástrojem Write do `vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}.md` a v odpovědi uveď cestu.
 - **Word:** z hotového souboru vždy vygeneruj i Word příkazem `node nastroje/zprava-do-wordu.js vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}.md podklady/{RRRR}-Q{číslo} vystupy/ctvrtletni-zpravy/{RRRR}-Q{číslo}-Ctvrtletni-zprava-Portu.docx`. Skript převede publikovatelnou část (od „# ČTVRTLETNÍ ZPRÁVA“ po „# INTERNÍ ČÁST“) a vloží oba grafy z podkladů. Po každé úpravě textu Word vygeneruj znovu, aby obě verze byly vždy stejné.
 - **Zástupné řádky pro grafy** piš přesně v tomto tvaru, jinak je skript nepozná:
@@ -391,6 +415,7 @@ Než zprávu uložíš a pošleš, projdi ji celou ještě jednou jako hlavní e
 | 4Q 2025 | Volatilní rok 2025 přinesl nová maxima | Obavy z AI bubliny se nepotvrdily · Volnější měnová politika a slabší dolar · Rotace z USA do jiných regionů · Vítězové roku |
 | 1Q 2026 | Čtvrtletí geopolitického napětí | Venezuela, Grónsko, Írán a TACO · Růst ropy a přísnější měnová politika · Bezpečné přístavy v krizi neobstály · Obavy z AI a pokles technologií |
 | 2Q 2026 | Od paniky zpět k maximům | Uklidnění na Blízkém východě a levnější ropa · Návrat k vyšším úrokovým sazbám · AI dodala důkazy, zazářily paměťové čipy · Špatné čtvrtletí pro zlato |
+| 3Q 2026 | Akcie vzdorují dražší ropě i penězům | Blízký východ znovu zdražil ropu · Centrální banky šláply na brzdu · Dluhopisy pod tlakem vyšších sazeb · Firemní zisky drží akcie nad vodou (v odrážce „Zisky firem drží akcie nad vodou“) |
 
 Vyřazené nadpisy ostatních sekcí: „Nastavení měnového zajištění neměníme" (1Q i 2Q 2026), „Výhled na zbytek roku? Záleží hlavně na Íránu, ropě a AI" (1Q 2026), „Jaký bude rok 2026?" (4Q 2025).
 

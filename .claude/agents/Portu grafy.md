@@ -58,7 +58,9 @@ Všechno níže je změřené z originálů a zabudované v modulu `nastroje/por
 - Čára o síle ≈ 3,5 px, bez bodů na čáře. Bez mřížky svisle.
 - Popisky osy x: `12/2024, 06/2025…` u víceletých řad po půl roce, `2023, 2024…` u delších řad, dny a měsíce u řad do jednoho roku.
 - **Anotace událostí** jako u Forward P/E: bod na čáře, krátká svislá šedá linka a popisek pod bodem nebo nad ním (např. „Den osvobození", „Invaze do Íránu"). Nejvýš 2–3 anotace. Popisek nesmí překrýt čáru.
-- Osa y nemusí začínat nulou, ale rozsah volej s kulatými hodnotami (50–130, 16x–24x).
+- Osa y nemusí začínat nulou, ale rozsah volej s kulatými hodnotami (50–130, 16x–24x). Když řada klesá pod nulu, tmavá je čára nuly, ne spodní okraj.
+- Sazby centrálních bank kresli schodovitě podle data změny (`schody=('název řady',)`), ne jako šikmou čáru mezi měsíci.
+- U dlouhých řad, kde čtenáře zajímá dnešní stav, dej poslední hodnotu vpravo za konec čáry (`popisky_konec=True`, např. „3,75 %“, „2,5 %“). U řad přes 10 let dej na osu x každý druhý rok (`interval_let=2`).
 
 **Formát čísel (stejný jako v textu zpráv)**
 - Desetinná čárka, mezera před procenty, pravé minus: `−8,5 %`, `14,5 %`, `0 %`. Funkce `pg.cislo()` to dělá sama.

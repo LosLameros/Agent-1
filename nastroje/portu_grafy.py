@@ -248,27 +248,45 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 
 # --- Spojnicový graf (časové řady) --------------------------------------------
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
-               format_x="%m/%Y", interval_mesicu=6, anotace=None, nadpis=None, rozsah_x=None):
+               format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
+               rozsah_x=None, schody=(), popisky_konec=False, mista_konec=1):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
-    rady         – {název řady: [hodnoty]}; pořadí určuje barvu (1. fialová, 2. zelená)
+    rady         – {název řady: [hodnoty]} nebo {název: (vlastní datumy, hodnoty)};
+                   pořadí určuje barvu (1. fialová, 2. zelená)
     osa_y        – (min, max, krok); jednotka '%', 'x' (násobky) nebo '' (prosté číslo)
     format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny
+    interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
+    schody       – názvy řad kreslených schodovitě (sazby centrálních bank platné do další změny)
+    popisky_konec – poslední hodnota každé řady vpravo za koncem čáry („3,75 %“)
     """
     barvy = barvy or BARVY
     fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis)
+    if popisky_konec:  # místo vpravo pro popisky posledních hodnot
+        fy = fig._portu["fy"]
+        ax.set_position([_fx(GRAF_LEVA), fy(GRAF_DOLNI_1RADEK), _fx(GRAF_PRAVA - 85 - GRAF_LEVA),
+                         fy(GRAF_HORNI) - fy(GRAF_DOLNI_1RADEK)])
     _osa_y(ax, osa_y, jednotka, mista_osa)
-    for i, (nazev, hodnoty) in enumerate(rady.items()):
-        ax.plot(x, hodnoty, color=barvy[i], linewidth=3.5 / PT, solid_joinstyle="round", zorder=3 + len(rady) - i)
-    ax.axhline(osa_y[0], color=ZAKLADNA, linewidth=2 * 72 / DPI, zorder=4)
+    for i, (nazev, data) in enumerate(rady.items()):
+        xs, hodnoty = data if isinstance(data, tuple) else (x, data)
+        ax.plot(xs, hodnoty, color=barvy[i], linewidth=3.5 / PT, solid_joinstyle="round",
+                drawstyle="steps-post" if nazev in schody else "default", zorder=3 + len(rady) - i)
+        if popisky_konec:
+            posledni = [(d, h) for d, h in zip(xs, hodnoty) if h is not None][-1]
+            mista = mista_konec if round(posledni[1], mista_konec) == posledni[1] else 2  # 3,75 %
+            ax.annotate(cislo(posledni[1], mista, jednotka), (rozsah_x[1] if rozsah_x else x[-1], posledni[1]),
+                        xytext=(12 / PT, 0), textcoords="offset points", ha="left", va="center",
+                        fontsize=PISMO_HODNOTA, color=TEXT_TMAVY, annotation_clip=False)
+    # tmavá spodní osa; když řada klesá pod nulu, je tmavá místo ní čára nuly
+    ax.axhline(0 if osa_y[0] < 0 < osa_y[1] else osa_y[0], color=ZAKLADNA, linewidth=2 * 72 / DPI, zorder=2)
     if rozsah_x:
         ax.set_xlim(*rozsah_x)
     else:
         ax.set_xlim(x[0], x[-1])
     if format_x == "%Y":
-        ax.xaxis.set_major_locator(mdates.YearLocator())
+        ax.xaxis.set_major_locator(mdates.YearLocator(interval_let))
     else:
         # popisky od prvního měsíce řady (12/2024, 06/2025, 12/2025 …)
         prvni = (rozsah_x[0] if rozsah_x else x[0]).month

@@ -71,4 +71,4 @@ Pořadí v předchozí zprávě (srpen): 6. ze 41 států. Pořadí podle sloupc
 - Eurozóna je za září jen z předběžného odhadu (finální data 16. 10.). V textu je to uvedeno.
 - Shrnutí TE k zápisu z jednání ECB (8. 10.) mluví o „first rate hike since 2023 at the September meeting“, což odporuje shrnutí ze 10. 9. (druhé zvýšení, první bylo v červnu). Ve zprávě je převzata verze z 10. 9.
 - Shrnutí TE k ČR (finální data) neobsahuje rozpad na energie, zboží a služby. Ten byl jen v předběžném odhadu, proto ve zprávě není.
-- Zkontroluj objem majetku pod správou v odstavci o Portu (ze šablony: „přes 70 miliard Kč“).
+- Objem majetku pod správou v odstavci o Portu: 76 miliard Kč z portu.cz (13. 10. 2026).

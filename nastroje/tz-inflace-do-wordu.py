@@ -2,7 +2,10 @@
 """Převede tiskovou zprávu o inflaci z Markdownu do Wordu v šabloně Portu.
 
 Použití:
-    python3 -I nastroje/tz-inflace-do-wordu.py <vstup.md> <vystup.docx> [--autor "Jméno Příjmení"] [--sablona <sablona.docx>]
+    python3 -I nastroje/tz-inflace-do-wordu.py <vstup.md> <vystup.docx> [--autor "Jméno Příjmení"] [--aum 76] [--sablona <sablona.docx>]
+
+--aum = objem zainvestovaných peněz v miliardách Kč z portu.cz (zjistí ho `node nastroje/portu-aum.js`),
+        doplní se do věty „pod správou má … miliard Kč“ v odstavci o Portu.
 
 Šablona = poslední vydaná tisková zpráva (výchozí: abecedně poslední soubor
 v examples/tiskove-zpravy-inflace/). Ze šablony zůstane hlavička „TISKOVÁ ZPRÁVA“,
@@ -70,6 +73,31 @@ def nastav_text_odstavce(p, text):
     t.text = text
     t.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
     prvni.append(t)
+
+
+def nahrad_v_odstavci(d, vzor, novy):
+    """Nahradí text, který může být rozdělený do více běhů, a zachová formát prvního z nich."""
+    for p in d.paragraphs:
+        ts = list(p._p.iter(qn("w:t")))
+        celek = "".join(t.text or "" for t in ts)
+        m = re.search(vzor, celek)
+        if not m:
+            continue
+        pozice = 0
+        hotovo = False
+        for t in ts:
+            s = t.text or ""
+            zac, kon = pozice, pozice + len(s)
+            pozice = kon
+            if kon <= m.start() or zac >= m.end():
+                continue
+            pred = s[: max(0, m.start() - zac)]
+            za = s[max(0, m.end() - zac):] if kon > m.end() else ""
+            t.text = pred + ("" if hotovo else novy) + za
+            t.set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
+            hotovo = True
+        return True
+    sys.exit(f"CHYBA: v šabloně nenalezeno {vzor!r}")
 
 
 def beh(vzor_rpr, text, tucne):
@@ -167,6 +195,29 @@ def main():
         for rel in d.part.rels.values():
             if rel.is_external and stary["email"] in rel.target_ref:
                 rel._target = rel.target_ref.replace(stary["email"], novy["email"])
+    # Pozice v podpisu: fialově a bez tučného, stejná velikost jako řádky s kontakty
+    for t in d.element.body.iter(qn("w:t")):
+        if t.text and t.text.strip() == "Financial Markets Analyst":
+            rpr = t.getparent().find(qn("w:rPr"))
+            for tag in ("w:b", "w:bCs", "w:sz", "w:szCs", "w:color"):
+                for el in rpr.findall(qn(tag)):
+                    rpr.remove(el)
+            barva = rpr.makeelement(qn("w:color"), {qn("w:val"): "9646AA"})
+            velikost = rpr.makeelement(qn("w:szCs"), {qn("w:val"): "18"})
+            lang = rpr.find(qn("w:lang"))
+            for el in (barva, velikost):
+                if lang is not None:
+                    lang.addprevious(el)
+                else:
+                    rpr.append(el)
+
+    # Objem majetku pod správou z portu.cz (nastroje/portu-aum.js)
+    aum = argument("--aum")
+    if aum:
+        nahrad_v_odstavci(d, r"pod správou má (přes )?\d+(,\d+)? miliard Kč", f"pod správou má {aum.replace('.', ',')} miliard Kč")
+    else:
+        print("POZOR: bez --aum zůstává objem majetku pod správou ze šablony")
+
     d.core_properties.author = autor
 
     d.save(out)

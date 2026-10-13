@@ -1,0 +1,300 @@
+"""Grafy v novém vzhledu Portu (podle finální čtvrtletní zprávy za 3Q 2026).
+
+Vzhled je změřený z grafů v examples/quarterly-reports/2026-Q3-Ctvrtletni-zprava-Portu.pdf
+(Zhodnocení vybraných tříd aktiv, Portfolia od Portu, ropa WTI a Brent, Forward P/E S&P 500).
+Rozměry jsou v pixelech výsledného PNG 1370 × 722 px (200 dpi, 6,85 × 3,61 palce).
+
+Použití:
+    import sys; sys.path.insert(0, 'nastroje')
+    import portu_grafy as pg
+    fig = pg.sloupcovy(['Americké akcie', 'Zlato'], {'USD nebo EUR': [2.9, 1.9], 'CZK': [4.1, 3.2]},
+                       osa_y=(-2, 6, 2), jednotka='%')
+    pg.uloz(fig, 'vystupy/grafy/priklad.png')
+"""
+from __future__ import annotations
+
+import os
+import textwrap
+
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.dates as mdates  # noqa: E402
+import matplotlib.pyplot as plt  # noqa: E402
+from matplotlib import font_manager  # noqa: E402
+from matplotlib.patches import FancyBboxPatch  # noqa: E402
+
+# --- Barvy --------------------------------------------------------------------
+FIALOVA = "#4840BB"        # 1. řada (USD nebo EUR, čtvrtletí, ropa WTI, P/E)
+ZELENA = "#06B33E"         # 2. řada (CZK, od začátku roku, ropa Brent)
+# Doplňkové barvy pro 3. a další řadu. V originálech Portu nejsou, jsou odvozené
+# ze dvou hlavních (světlejší odstíny a neutrální šedé). Používej jen výjimečně.
+SVETLE_FIALOVA = "#A39EE3"
+SVETLE_ZELENA = "#7FD99E"
+TMAVE_SEDA = "#2B2B2B"
+SEDA = "#A0A2AE"
+BARVY = [FIALOVA, ZELENA, SVETLE_FIALOVA, SVETLE_ZELENA, TMAVE_SEDA, SEDA]
+
+TEXT_TMAVY = "#2B2B2B"     # hodnoty u sloupců, legenda, popisky anotací, nadpis
+TEXT_SEDY = "#606271"      # popisky os, kategorie, zdroj
+MRIZKA = "#E7E7EB"         # vodorovné pomocné čáry
+NULOVA_CARA = "#3A3A3A"    # čára nuly u sloupcových grafů
+ZAKLADNA = "#616161"       # spodní osa u spojnicových grafů
+ANOTACE_CARA = "#8A8A8A"   # svislá linka od bodu k popisku události
+POZADI = "#FFFFFF"
+
+# --- Rozměry (px při 200 dpi) -------------------------------------------------
+DPI = 200
+SIRKA_PX, VYSKA_PX = 1370, 722
+PT = DPI / 72  # px na 1 bod písma
+
+PISMO_OSA = 22 / PT        # ≈ 7,9 pt – popisky os a kategorií
+PISMO_HODNOTA = 21.5 / PT  # ≈ 7,7 pt – hodnoty u sloupců
+PISMO_LEGENDA = 24.5 / PT  # ≈ 8,8 pt – legenda
+PISMO_ZDROJ = 21.5 / PT    # ≈ 7,7 pt – „Graf: Portu, zdroj: …“
+PISMO_NADPIS = 36 / PT     # ≈ 13 pt – jen u varianty s nadpisem v obrázku
+
+GRAF_LEVA, GRAF_PRAVA = 91, 1358   # okraje kreslicí plochy
+POPISKY_Y_PRAVA = 71               # popisky osy y zarovnané vpravo k tomuto x
+GRAF_HORNI = 37                    # horní mřížka
+GRAF_DOLNI_1RADEK = 598            # spodní hrana plochy, popisky osy x na 1 řádek
+GRAF_DOLNI_2RADKY = 556            # spodní hrana plochy, kategorie na 2 řádky
+LEGENDA_STRED_Y = 698              # svislý střed legendy a zdroje
+CTVEREC = 20                       # značka v legendě (zaoblený čtverec)
+
+ZDROJ = "Graf: Portu, zdroj: Bloomberg"
+
+_ADRESAR = os.path.dirname(os.path.abspath(__file__))
+_PISMO = os.path.join(_ADRESAR, "fonty", "DMSans.ttf")
+font_manager.fontManager.addfont(_PISMO)
+_RODINA = font_manager.FontProperties(fname=_PISMO).get_name()
+plt.rcParams.update({
+    "font.family": _RODINA,
+    "axes.unicode_minus": True,
+    "svg.fonttype": "none",
+})
+
+MINUS = "−"
+NBSP = " "
+
+
+# --- Formát čísel -------------------------------------------------------------
+def cislo(hodnota: float, mista: int = 1, jednotka: str = "") -> str:
+    """Český formát: desetinná čárka, pravé minus, mezera před %, tisíce s mezerou."""
+    text = f"{abs(hodnota):,.{mista}f}".replace(",", NBSP).replace(".", ",")
+    if hodnota < 0 and float(text.replace(NBSP, "").replace(",", ".")) != 0:
+        text = MINUS + text
+    if jednotka == "%":
+        text += NBSP + "%"
+    elif jednotka:
+        text += jednotka if jednotka == "x" else NBSP + jednotka
+    return text
+
+
+def _fx(px: float) -> float:
+    return px / SIRKA_PX
+
+
+def _fy(px_shora: float) -> float:
+    return 1 - px_shora / VYSKA_PX
+
+
+def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = None):
+    vyska = VYSKA_PX + (70 if nadpis else 0)
+    fig = plt.figure(figsize=(SIRKA_PX / DPI, vyska / DPI), dpi=DPI, facecolor=POZADI)
+    posun = 70 if nadpis else 0
+
+    def fy(px):
+        return 1 - (px + posun) / vyska
+
+    ax = fig.add_axes([_fx(GRAF_LEVA), fy(dolni_px), _fx(GRAF_PRAVA - GRAF_LEVA), fy(horni_px) - fy(dolni_px)])
+    ax.set_facecolor(POZADI)
+    for strana in ax.spines.values():
+        strana.set_visible(False)
+    ax.tick_params(length=0, colors=TEXT_SEDY, labelsize=PISMO_OSA)
+    ax.grid(axis="y", color=MRIZKA, linewidth=1.0 * 72 / DPI * 1.4)
+    ax.set_axisbelow(True)
+    fig._portu = {"fy": fy, "vyska": vyska}
+    if nadpis:
+        fig.text(_fx(GRAF_LEVA - 80), fy(-40), nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
+                 ha="left", va="center")
+    return fig, ax
+
+
+def _osa_y(ax, osa_y, jednotka, mista_osa):
+    dolni, horni, krok = osa_y
+    hodnoty = []
+    v = dolni
+    while v <= horni + 1e-9:
+        hodnoty.append(round(v, 10))
+        v += krok
+    ax.set_ylim(dolni, horni)
+    ax.set_yticks(hodnoty)
+    ax.set_yticklabels([cislo(h, mista_osa, jednotka) for h in hodnoty])
+    # popisky zarovnané vpravo, 20 px vlevo od plochy
+    for t in ax.get_yticklabels():
+        t.set_horizontalalignment("right")
+    ax.tick_params(axis="y", pad=(GRAF_LEVA - POPISKY_Y_PRAVA) / PT)
+
+
+def _legenda_a_zdroj(fig, polozky, zdroj):
+    fy = fig._portu["fy"]
+    x = GRAF_LEVA + 3
+    for nazev, barva in polozky:
+        fig.patches.append(FancyBboxPatch(
+            (_fx(x), fy(LEGENDA_STRED_Y + CTVEREC / 2)), _fx(CTVEREC), fy(LEGENDA_STRED_Y - CTVEREC / 2) - fy(LEGENDA_STRED_Y + CTVEREC / 2),
+            boxstyle="round,pad=0,rounding_size=0.003", transform=fig.transFigure,
+            facecolor=barva, edgecolor="none"))
+        t = fig.text(_fx(x + CTVEREC + 13), fy(LEGENDA_STRED_Y), nazev, fontsize=PISMO_LEGENDA,
+                     color=TEXT_TMAVY, ha="left", va="center_baseline")
+        sirka = t.get_window_extent(renderer=fig.canvas.get_renderer()).width
+        x += CTVEREC + 13 + sirka + 37
+    if zdroj:
+        fig.text(_fx(GRAF_PRAVA), fy(LEGENDA_STRED_Y), zdroj, fontsize=PISMO_ZDROJ, color=TEXT_SEDY,
+                 ha="right", va="center_baseline")
+
+
+# --- Sloupcový graf (svislé sloupce, seskupené řady) --------------------------
+def sloupcovy(kategorie, rady: dict, osa_y, jednotka="%", mista=1, mista_osa=0,
+              zdroj=ZDROJ, barvy=None, nadpis=None, sirka_zalomeni=None, legenda=True):
+    """Seskupené svislé sloupce s hodnotami nad/pod sloupcem (styl „Zhodnocení tříd aktiv“).
+
+    kategorie  – popisky pod sloupci (dlouhé se zalomí na 2 řádky)
+    rady       – {název řady: [hodnoty v pořadí kategorií]}, max. 2–3 řady
+    osa_y      – (min, max, krok)
+    sirka_zalomeni – max. znaků na řádek popisku; None = podle šířky sloupce
+    """
+    barvy = barvy or BARVY
+    if sirka_zalomeni is None:  # kolik znaků se vejde pod jeden sloupec (≈ 11,5 px na znak)
+        sirka_zalomeni = max(6, int((GRAF_PRAVA - GRAF_LEVA) / len(kategorie) * 0.92 / 11.5))
+    zalomene = [textwrap.fill(k, sirka_zalomeni) for k in kategorie]
+    dva_radky = any("\n" in k for k in zalomene)
+    fig, ax = _platno(GRAF_DOLNI_2RADKY if dva_radky else GRAF_DOLNI_1RADEK, nadpis=nadpis)
+    _osa_y(ax, osa_y, jednotka, mista_osa)
+
+    n_kat, n_rad = len(kategorie), len(rady)
+    slot_px = (GRAF_PRAVA - GRAF_LEVA) / n_kat
+    sloupec_px = min(0.24 * slot_px, 85) if n_rad > 1 else min(0.4 * slot_px, 110)
+    mezera_px = 14
+    ax.set_xlim(-0.5, n_kat - 0.5)
+    sloupec = sloupec_px / slot_px
+    mezera = mezera_px / slot_px
+    skupina = n_rad * sloupec + (n_rad - 1) * mezera
+    rozsah = osa_y[1] - osa_y[0]
+    vyska_plochy_px = (GRAF_DOLNI_2RADKY if dva_radky else GRAF_DOLNI_1RADEK) - GRAF_HORNI
+    odsazeni = 8 / vyska_plochy_px * rozsah
+
+    for i, (nazev, hodnoty) in enumerate(rady.items()):
+        xs = [k - skupina / 2 + i * (sloupec + mezera) + sloupec / 2 for k in range(n_kat)]
+        ax.bar(xs, hodnoty, width=sloupec, color=barvy[i], zorder=2, linewidth=0)
+        for x, h in zip(xs, hodnoty):
+            if h is None:
+                continue
+            ax.text(x, h + (odsazeni if h >= 0 else -odsazeni), cislo(h, mista, jednotka),
+                    ha="center", va="bottom" if h >= 0 else "top", fontsize=PISMO_HODNOTA, color=TEXT_TMAVY)
+    if osa_y[0] < 0 < osa_y[1]:
+        ax.axhline(0, color=NULOVA_CARA, linewidth=2 * 72 / DPI, zorder=3)
+    ax.set_xticks(range(n_kat))
+    ax.set_xticklabels(zalomene, fontsize=PISMO_OSA, color=TEXT_SEDY, linespacing=1.3)
+    ax.tick_params(axis="x", pad=(580 - GRAF_DOLNI_2RADKY) / PT if dva_radky else 27 / PT)
+    if legenda:
+        _legenda_a_zdroj(fig, [(n, barvy[i]) for i, n in enumerate(rady)], zdroj)
+    else:
+        _legenda_a_zdroj(fig, [], zdroj)
+    return fig
+
+
+# --- Vodorovný sloupcový graf (pořadí, žebříčky) -------------------------------
+def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdroj=ZDROJ,
+              barva=FIALOVA, barvy_sloupcu=None, nazev_rady=None, nadpis=None):
+    """Vodorovné sloupce seřazené shora dolů (žebříčky sektorů, akcií, zemí).
+
+    osa_x         – (min, max, krok); nech rezervu, aby se hodnota u nejdelšího sloupce vešla
+    barvy_sloupcu – volitelně barva pro každý sloupec (např. zvýraznění jedné položky zelenou)
+    """
+    levy_okraj, pravy_okraj = 300, GRAF_PRAVA - 30
+    fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis)
+    fy = fig._portu["fy"]
+    ax.set_position([_fx(levy_okraj), fy(GRAF_DOLNI_1RADEK), _fx(pravy_okraj - levy_okraj),
+                     fy(GRAF_HORNI) - fy(GRAF_DOLNI_1RADEK)])
+    ax.grid(axis="y", visible=False)
+    ax.grid(axis="x", color=MRIZKA, linewidth=1.4 * 72 / DPI)
+    dolni, horni, krok = osa_x
+    ticks = []
+    v = dolni
+    while v <= horni + 1e-9:
+        ticks.append(round(v, 10))
+        v += krok
+    ax.set_xlim(dolni, horni)
+    ax.set_xticks(ticks)
+    ax.set_xticklabels([cislo(t, mista_osa, jednotka) for t in ticks])
+    ax.tick_params(axis="x", pad=27 / PT)
+    n = len(kategorie)
+    ys = list(range(n))[::-1]
+    barvy = barvy_sloupcu or [barva] * n
+    ax.barh(ys, hodnoty, height=0.62, color=barvy, zorder=2, linewidth=0)
+    ax.set_yticks(ys)
+    ax.set_yticklabels(kategorie, fontsize=PISMO_OSA, color=TEXT_SEDY)
+    ax.tick_params(axis="y", pad=20 / PT)
+    odsazeni = (horni - dolni) * 0.008
+    for y, h in zip(ys, hodnoty):
+        ax.text(h + (odsazeni if h >= 0 else -odsazeni), y, cislo(h, mista, jednotka),
+                ha="left" if h >= 0 else "right", va="center", fontsize=PISMO_HODNOTA, color=TEXT_TMAVY)
+    if dolni < 0 < horni:
+        ax.axvline(0, color=NULOVA_CARA, linewidth=2 * 72 / DPI, zorder=3)
+    _legenda_a_zdroj(fig, [(nazev_rady, barvy[0])] if nazev_rady else [], zdroj)
+    return fig
+
+
+# --- Spojnicový graf (časové řady) --------------------------------------------
+def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
+               format_x="%m/%Y", interval_mesicu=6, anotace=None, nadpis=None, rozsah_x=None):
+    """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
+
+    x            – seznam datumů (datetime/date) společný všem řadám
+    rady         – {název řady: [hodnoty]}; pořadí určuje barvu (1. fialová, 2. zelená)
+    osa_y        – (min, max, krok); jednotka '%', 'x' (násobky) nebo '' (prosté číslo)
+    format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny
+    anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
+    """
+    barvy = barvy or BARVY
+    fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis)
+    _osa_y(ax, osa_y, jednotka, mista_osa)
+    for i, (nazev, hodnoty) in enumerate(rady.items()):
+        ax.plot(x, hodnoty, color=barvy[i], linewidth=3.5 / PT, solid_joinstyle="round", zorder=3 + len(rady) - i)
+    ax.axhline(osa_y[0], color=ZAKLADNA, linewidth=2 * 72 / DPI, zorder=4)
+    if rozsah_x:
+        ax.set_xlim(*rozsah_x)
+    else:
+        ax.set_xlim(x[0], x[-1])
+    if format_x == "%Y":
+        ax.xaxis.set_major_locator(mdates.YearLocator())
+    else:
+        # popisky od prvního měsíce řady (12/2024, 06/2025, 12/2025 …)
+        prvni = (rozsah_x[0] if rozsah_x else x[0]).month
+        mesice = sorted({(prvni - 1 + k * interval_mesicu) % 12 + 1 for k in range(max(1, 12 // interval_mesicu))})
+        ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=mesice))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter(format_x))
+    for t in ax.get_xticklabels():
+        t.set_fontsize(PISMO_OSA)
+        t.set_color(TEXT_SEDY)
+    ax.tick_params(axis="x", pad=29 / PT)
+    rozsah = osa_y[1] - osa_y[0]
+    vyska_px = GRAF_DOLNI_1RADEK - GRAF_HORNI
+    for datum, hodnota, text, smer in anotace or []:
+        ax.plot([datum], [hodnota], marker="o", markersize=6 / PT, color=FIALOVA, zorder=10)
+        delka = 55 / vyska_px * rozsah
+        konec = hodnota - delka if smer == "pod" else hodnota + delka
+        ax.plot([datum, datum], [hodnota, konec], color=ANOTACE_CARA, linewidth=1.5 * 72 / DPI, zorder=9)
+        ax.text(datum, konec + (-6 if smer == "pod" else 6) / vyska_px * rozsah, text,
+                ha="center", va="top" if smer == "pod" else "bottom", fontsize=PISMO_OSA, color=TEXT_TMAVY)
+    _legenda_a_zdroj(fig, [(n, barvy[i]) for i, n in enumerate(rady)], zdroj)
+    return fig
+
+
+def uloz(fig, cesta: str):
+    """Uloží PNG 1370 × 722 px (200 dpi). Neořezávat – rozměr je součástí vzhledu."""
+    os.makedirs(os.path.dirname(os.path.abspath(cesta)), exist_ok=True)
+    fig.savefig(cesta, dpi=DPI, facecolor=POZADI)
+    plt.close(fig)
+    return cesta

@@ -222,9 +222,10 @@ Projdi celý text a oprav vše, co neprojde:
 
 2. Zjisti aktuální objem zainvestovaných peněz z úvodní stránky portu.cz příkazem `node nastroje/portu-aum.js` (vypíše číslo v miliardách Kč, např. 76). Když skript selže, zeptej se uživatele a číslo nehádej.
 3. Vygeneruj Word:
-   `python3 -I nastroje/tz-inflace-do-wordu.py vystupy/tiskove-zpravy-inflace/{RRRR-MM}-TZ-inflace.md vystupy/tiskove-zpravy-inflace/{RRRR-MM}-TZ-inflace.docx --autor "Marek Pokorný" --aum <číslo z portu.cz>`
+   `python3 -I nastroje/tz-inflace-do-wordu.py vystupy/tiskove-zpravy-inflace/{RRRR-MM}-TZ-inflace.md "vystupy/tiskove-zpravy-inflace/TZ inflace - {M} {RRRR}.docx" --autor "Marek Pokorný" --aum <číslo z portu.cz>`
    - Skript vezme jako šablonu poslední zprávu v `examples/tiskove-zpravy-inflace/` (hlavička, nadpis, podpis s kontakty, odstavec o Portu) a převede jen část nad `# INTERNÍ ČÁST`.
    - `--aum` doplní číslo do věty „pod správou má … miliard Kč“ v odstavci o Portu. Skript zároveň formátuje pozici „Financial Markets Analyst“ v podpisu (fialově, bez tučného).
+   - **Název Wordu je vždy „TZ inflace - {M} {RRRR}.docx“**, kde {M} je cílový měsíc v 1. pádě malým písmenem a {RRRR} jeho rok (např. `TZ inflace - září 2026.docx`, `TZ inflace - prosinec 2026.docx`). Cestu dávej do uvozovek, obsahuje mezery.
    - Výchozí autor je Marek Pokorný. Když uživatel uvede jiného autora (např. Lukáš Raška), použij `--autor`. Neznámého autora je třeba nejdřív doplnit do slovníku `AUTORI` ve skriptu.
 4. Po každé úpravě textu uprav `.md` a Word vygeneruj znovu, aby obě verze byly vždy stejné.
-5. V odpovědi uživateli uveď: za jaký měsíc zpráva je, cesty k `.md` a `.docx`, pořadí ČR v Evropě, použitý objem majetku z portu.cz a všechny body z „Poznámek pro redakci“. Připomeň, ať finální verzi zprávy po vydání uloží do `examples/tiskove-zpravy-inflace/{RRRR-MM}-TZ-inflace.docx`, aby příští měsíc sloužila jako šablona a jako zdroj pořadí ČR.
+5. V odpovědi uživateli uveď: za jaký měsíc zpráva je, cesty k `.md` a `.docx`, pořadí ČR v Evropě, použitý objem majetku z portu.cz a všechny body z „Poznámek pro redakci“. Připomeň, ať finální verzi zprávy po vydání uloží pod stejným názvem do `examples/tiskove-zpravy-inflace/` (např. `examples/tiskove-zpravy-inflace/TZ inflace - září 2026.docx`), aby příští měsíc sloužila jako šablona a jako zdroj pořadí ČR.

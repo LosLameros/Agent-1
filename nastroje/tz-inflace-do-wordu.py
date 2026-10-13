@@ -34,6 +34,22 @@ AUTORI = {
 VYCHOZI_AUTOR = "Marek Pokorný"
 
 
+MESICE = ["leden", "únor", "březen", "duben", "květen", "červen",
+          "červenec", "srpen", "září", "říjen", "listopad", "prosinec"]
+
+
+def obdobi_sablony(cesta):
+    """Období zprávy z názvu souboru: „TZ inflace - září 2026.docx“ nebo „2026-09-TZ-inflace.docx“."""
+    nazev = os.path.basename(cesta).lower()
+    m = re.search(r"(\d{4})-(\d{2})", nazev)
+    if m:
+        return (int(m.group(1)), int(m.group(2)))
+    m = re.search(r"(" + "|".join(MESICE) + r")\s+(\d{4})", nazev)
+    if m:
+        return (int(m.group(2)), MESICE.index(m.group(1)) + 1)
+    return (0, 0)
+
+
 def argument(nazev, vychozi=None):
     if nazev in sys.argv:
         return sys.argv[sys.argv.index(nazev) + 1]
@@ -131,7 +147,7 @@ def main():
         sys.exit(__doc__)
     md, out = sys.argv[1], sys.argv[2]
     koren = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    sablony = sorted(glob.glob(os.path.join(koren, "examples", "tiskove-zpravy-inflace", "*.docx")))
+    sablony = sorted(glob.glob(os.path.join(koren, "examples", "tiskove-zpravy-inflace", "*.docx")), key=obdobi_sablony)
     sablona = argument("--sablona", sablony[-1] if sablony else None)
     autor = argument("--autor", VYCHOZI_AUTOR)
     if not sablona:

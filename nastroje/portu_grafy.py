@@ -260,7 +260,8 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
     schody       – názvy řad kreslených schodovitě (sazby centrálních bank platné do další změny)
-    popisky_konec – poslední hodnota každé řady vpravo za koncem čáry („3,75 %“)
+    popisky_konec – poslední hodnota každé řady vpravo za koncem čáry („3,75 %“); u více řad
+                    v barvě řady a blízké hodnoty automaticky odsunuté od sebe
     """
     barvy = barvy or BARVY
     fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis)
@@ -269,16 +270,28 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         ax.set_position([_fx(GRAF_LEVA), fy(GRAF_DOLNI_1RADEK), _fx(GRAF_PRAVA - 85 - GRAF_LEVA),
                          fy(GRAF_HORNI) - fy(GRAF_DOLNI_1RADEK)])
     _osa_y(ax, osa_y, jednotka, mista_osa)
+    konce = []
     for i, (nazev, data) in enumerate(rady.items()):
         xs, hodnoty = data if isinstance(data, tuple) else (x, data)
         ax.plot(xs, hodnoty, color=barvy[i], linewidth=3.5 / PT, solid_joinstyle="round",
                 drawstyle="steps-post" if nazev in schody else "default", zorder=3 + len(rady) - i)
         if popisky_konec:
-            posledni = [(d, h) for d, h in zip(xs, hodnoty) if h is not None][-1]
-            mista = mista_konec if round(posledni[1], mista_konec) == posledni[1] else 2  # 3,75 %
-            ax.annotate(cislo(posledni[1], mista, jednotka), (rozsah_x[1] if rozsah_x else x[-1], posledni[1]),
+            konce.append([h for h in hodnoty if h is not None][-1])
+    if konce:
+        # popisky blízkých hodnot od sebe odsuň, aby se nepřekrývaly (min. 26 px)
+        mezera = 26 / (GRAF_DOLNI_1RADEK - GRAF_HORNI) * (osa_y[1] - osa_y[0])
+        poradi = sorted(range(len(konce)), key=lambda k: konce[k])
+        pozice = {k: konce[k] for k in poradi}
+        for a, b in zip(poradi, poradi[1:]):
+            if pozice[b] - pozice[a] < mezera:
+                pozice[b] = pozice[a] + mezera
+        posun = (sum(pozice.values()) - sum(konce)) / len(konce)  # vyrovnej kolem skutečných hodnot
+        for k, h in enumerate(konce):
+            mista = mista_konec if round(h, mista_konec) == h else 2  # 3,75 %
+            ax.annotate(cislo(h, mista, jednotka), (rozsah_x[1] if rozsah_x else x[-1], pozice[k] - posun),
                         xytext=(12 / PT, 0), textcoords="offset points", ha="left", va="center",
-                        fontsize=PISMO_HODNOTA, color=TEXT_TMAVY, annotation_clip=False)
+                        fontsize=PISMO_HODNOTA, annotation_clip=False,
+                        color=barvy[k] if len(konce) > 1 else TEXT_TMAVY)  # u více řad v barvě řady
     # tmavá spodní osa; když řada klesá pod nulu, je tmavá místo ní čára nuly
     ax.axhline(0 if osa_y[0] < 0 < osa_y[1] else osa_y[0], color=ZAKLADNA, linewidth=2 * 72 / DPI, zorder=2)
     if rozsah_x:

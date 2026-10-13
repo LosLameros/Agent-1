@@ -1,7 +1,8 @@
-"""Grafy v novém vzhledu Portu (podle finální čtvrtletní zprávy za 3Q 2026).
+"""Grafy v jednotném vzhledu Portu.
 
-Vzhled je změřený z grafů v examples/quarterly-reports/2026-Q3-Ctvrtletni-zprava-Portu.pdf
-(Zhodnocení vybraných tříd aktiv, Portfolia od Portu, ropa WTI a Brent, Forward P/E S&P 500).
+Vzorem vzhledu jsou grafy v examples/grafy/ (meziroční inflace ČR a repo sazba ČNB,
+meziroční inflace v USA a eurozóně). Barvy a písmo jsou oficiální podle brand manuálu
+Portu (https://guidelines.portu.cz/barvy/): fialová #4840BB, zelená #00AA3C, písmo Rethink Sans.
 Rozměry jsou v pixelech výsledného PNG 1370 × 722 px (200 dpi, 6,85 × 3,61 palce).
 
 Použití:
@@ -25,10 +26,10 @@ from matplotlib import font_manager  # noqa: E402
 from matplotlib.patches import FancyBboxPatch  # noqa: E402
 
 # --- Barvy --------------------------------------------------------------------
-FIALOVA = "#4840BB"        # 1. řada (USD nebo EUR, čtvrtletí, ropa WTI, P/E)
-ZELENA = "#06B33E"         # 2. řada (CZK, od začátku roku, ropa Brent)
-# Doplňkové barvy pro 3. a další řadu. V originálech Portu nejsou, jsou odvozené
-# ze dvou hlavních (světlejší odstíny a neutrální šedé). Používej jen výjimečně.
+FIALOVA = "#4840BB"        # oficiální fialová Portu – 1. řada
+ZELENA = "#00AA3C"         # oficiální zelená Portu – 2. řada
+# Doplňkové barvy pro 3. a další řadu – odvozené ze dvou hlavních (světlejší odstíny
+# a neutrální šedé). Používej jen výjimečně.
 SVETLE_FIALOVA = "#A39EE3"
 SVETLE_ZELENA = "#7FD99E"
 TMAVE_SEDA = "#2B2B2B"
@@ -65,7 +66,7 @@ CTVEREC = 20                       # značka v legendě (zaoblený čtverec)
 ZDROJ = "Graf: Portu, zdroj: Bloomberg"
 
 _ADRESAR = os.path.dirname(os.path.abspath(__file__))
-_PISMO = os.path.join(_ADRESAR, "fonty", "DMSans.ttf")
+_PISMO = os.path.join(_ADRESAR, "fonty", "RethinkSans.ttf")
 font_manager.fontManager.addfont(_PISMO)
 _RODINA = font_manager.FontProperties(fname=_PISMO).get_name()
 plt.rcParams.update({

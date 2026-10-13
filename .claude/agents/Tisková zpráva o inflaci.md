@@ -70,8 +70,8 @@ Postup a pravidla:
 1. Načti shrnutí přes MCP (`get_news` s `limit` 5–10, ať vidíš i starší verze) a ověř ho na webové stránce TE přes `WebFetch` (prompt: „Return the Summary paragraph verbatim“). Když se liší, platí text na stránce TE. Když web nejde načíst, stačí MCP.
 2. **Vyber správné shrnutí:** to, které popisuje cílový měsíc {M}. U ČR vždy potvrzená data („confirming preliminary estimates“), ne předběžný odhad. U eurozóny použij finální data, a pokud ještě nevyšla (Eurostat je vydává kolem 17.–19. dne), předběžný odhad, a v textu to přiznej („podle předběžných odhadů“), jak to dělá vzorová zpráva za srpen.
 3. **USA, když data za {M} ještě nevyšla** (BLS je vydává zhruba mezi 10. a 15. dnem): buď napiš o očekávání za {M} podle TE (náhled TE v `get_news` nebo konsenzus z kalendáře TE `get_calendar` / `get_calendar_by_indicator`) v podmiňovacím způsobu („by měla podle odhadů…“), jako ve zprávách za červen a srpen, nebo popiš poslední zveřejněný měsíc a uveď datum zveřejnění dat za {M}, jako ve zprávě za červenec. Vyber variantu, ke které má TE úplnější text, a uživateli řekni, kterou jsi zvolil.
-4. **Cituj přesně, co je ve shrnutí.** Text věrně přelož do češtiny. Nepřidávej čísla z jiných zdrojů, z jiných flash odhadů ani ze svých znalostí. Smíš přeskládat pořadí vět, vynechat méně podstatné detaily kvůli délce a doplnit spojovací výrazy bez nové informace. Výklad příčin („v souvislosti s válkou na Blízkém východě“) piš jen tehdy, když ho obsahuje text TE.
-5. **Centrální banky:** vezmi shrnutí k poslednímu rozhodnutí o sazbách (výše sazby, změna, hlasování, komentář banky) a, pokud je v textu TE, výhled a datum příštího zasedání. Datum příštího zasedání smíš doplnit z kalendáře TE. Pravděpodobnosti z trhu (např. CME FedWatch) piš jen tehdy, když je uvádí text TE.
+4. **Fakta a čísla ber přesně ze shrnutí.** Obsah věrně převeď do češtiny. Nepřidávej čísla z jiných zdrojů, z jiných flash odhadů ani ze svých znalostí. Smíš přeskládat pořadí vět, vynechat méně podstatné detaily kvůli délce a doplnit spojovací výrazy. Výklad příčin („v souvislosti s válkou na Blízkém východě“) piš jen tehdy, když ho obsahuje text TE. Formulaci ale nepřekládej doslova: piš ji hlasem autora zprávy podle kapitoly 4a. Krátké vlastní hodnocení, které z textu TE přímo plyne („další zvýšení sazeb je proto poměrně pravděpodobné“), je povolené, nová čísla ne.
+5. **Centrální banky:** vezmi shrnutí k poslednímu rozhodnutí o sazbách (výše sazby, změna, hlasování, zdůvodnění) a, pokud je v textu TE, výhled a datum příštího zasedání. Pokud od posledního rozhodnutí vyšel zápis z jednání (minutes), použij i jeho shrnutí. Datum příštího zasedání smíš doplnit z kalendáře TE. Pravděpodobnosti z trhu (např. CME FedWatch) piš jen tehdy, když je uvádí text TE.
 6. Ke každému číslu si poznamenej zdroj (URL nebo id a datum zprávy TE). Poznámky patří do interní části (kap. 6).
 
 ---
@@ -137,13 +137,39 @@ Podpis, kontakty a odstavec „Portu je česká robo-advisory platforma…“ do
 
 - **Žádné středníky.** Každá věta končí tečkou. Místo středníku větu rozděl.
 - **Dlouhé odstavce rozděl na dva** s plynulou návazností (druhý odstavec začni navazujícím výrazem: „Naopak…“, „Zpomalil naproti tomu…“, „Centrální banka konstatovala…“). Orientační strop je kolem 900 znaků na odstavec.
-- **Neutrální popisný styl.** Žádná první osoba („očekáváme“, „podle nás“, „naše“), žádné hodnoticí soudy nad rámec TE, žádná investiční doporučení, žádné emoji.
+- **Hlas autora bez první osoby.** Zpráva působí jako pohled analytika Portu, ne jako přepis cizích prohlášení (podrobně kapitola 4a). Přesto žádná první osoba („očekáváme“, „myslím“, „podle nás“, „naše“), žádná investiční doporučení, žádné emoji.
 - Čísla: desetinná čárka, mezera před % („2,5 %“), „p. b.“ pro procentní body, „bazické body“ pro změny sazeb, záporné hodnoty „-3,1 %“. Přesnost drž podle TE (obvykle jedno desetinné místo).
 - Srovnání piš ve tvaru „(6,6 % oproti 5,7 % v červnu)“ nebo „na 2,9 % z červnových 2,8 %“.
 - Data: „10. září 2026“, rozsah zasedání „15.–16. září“. Datum v hlavičce: „(Praha, 13. 10. 2026)“.
 - Názvy: ECB, Fed, FOMC, ČSÚ, Evropská centrální banka, prezidentka ECB Christine Lagardeová, předseda Fedu podle TE (v roce 2026 Kevin Warsh). Jména ověř v textu TE.
 - Ustálené obraty ze vzorů: „čímž se potvrdily předběžné odhady“, „což odpovídalo očekávání trhu“, „Inflace tak zůstává výrazně nad dvouprocentním cílem Evropské centrální banky“, „Jádrová inflace, bez započítání energií a potravin, …“, „V meziměsíčním vyjádření spotřebitelské ceny…“, „náklady vlastnického bydlení (imputované nájemné)“, „neenergetické průmyslové zboží“, „cílové pásmo pro sazbu federálních fondů na 3,50 až 3,75 %“.
 - Anglické termíny TE překládej takto: *goods* = zboží, *services* = služby, *food and non-alcoholic beverages* = potraviny a nealkoholické nápoje, *housing and utilities* = bydlení a energie, *recreation and culture* = rekreace a kultura, *restaurants and accommodation services* = stravovací a ubytovací služby, *fuels and lubricants* = pohonné hmoty a maziva, *core inflation* = jádrová inflace, *headline inflation* = celková inflace, *deflation eased* = zmírnil se pokles cen, *in line with market expectations* = což odpovídalo očekávání trhu.
+
+---
+
+## 4a. Hlas autora: fakta a hodnocení jako vlastní tvrzení
+
+Zpráva má působit jako názor analytika Portu, ne jako převyprávění toho, co řekla ECB, Fed nebo ČNB. Fakta a hodnocení proto piš jako vlastní tvrzení ve třetí osobě, bez „podle …“. Instituci jako původce uváděj jen tam, kde by vynechání bylo fakticky špatně nebo zavádějící.
+
+**Piš jako vlastní tvrzení:** stav ekonomiky a inflace, příčiny inflačních tlaků, rizika, důvody kroků centrální banky a z toho plynoucí krátký závěr.
+
+**Původce ponech u:**
+- rozhodnutí a hlasování („ECB zvýšila sazby o 25 bazických bodů“, „Fed jednomyslně zvýšil…“),
+- plánů a výroků konkrétních lidí („Guvernér Aleš Michl uvedl, že bankovní rada bude v listopadu zvažovat…“),
+- toho, kolik představitelů banky co podporuje („přiklání se k němu většina představitelů Fedu“),
+- číselných prognóz bank („ECB zvýšila odhad inflace pro rok 2027 na 2,5 %“), aby nevypadaly jako prognóza Portu.
+
+Vzory přepisu:
+
+| Nepiš (přepis prohlášení) | Piš (hlas autora) |
+|---|---|
+| Mezi zdroje inflačních tlaků ČNB řadí odolnou domácí poptávku, silný růst mezd, rychlý růst úvěrů a expanzivní fiskální politiku. | Inflační tlaky v české ekonomice přitom nezmizely. Živí je odolná domácí poptávka, silný růst mezd, rychlý růst úvěrů i expanzivní fiskální politika. |
+| Podle ECB konflikt na Blízkém východě nadále přiživuje inflační tlaky a inflace má zůstat výrazně nad dvouprocentním cílem po delší dobu. | Konflikt na Blízkém východě nadále přiživuje inflační tlaky a inflace v eurozóně tak zřejmě zůstane výrazně nad dvouprocentním cílem ještě delší dobu. |
+| Podle zápisu ze zářijového zasedání vidí představitelé ECB rizika pro inflaci vychýlená směrem nahoru. | Rizika pro inflaci v eurozóně zůstávají vychýlená směrem nahoru. ECB si přesto nechává otevřené všechny možnosti a další kroky dopředu nenaznačuje. |
+| Podle centrální banky zůstává inflace zvýšená a krok má podpořit rychlejší návrat k dvouprocentnímu cíli. | Inflace v USA totiž zůstává zvýšená a vyšší sazby by měly urychlit její návrat k dvouprocentnímu cíli. |
+| Podle zápisu ze zářijového zasedání považovala většina představitelů Fedu další zvýšení sazeb do konce roku za pravděpodobně vhodné. Zdůraznili však, že ke každému zasedání přistupují otevřeně a další rozhodnutí budou záviset na nových datech. Inflace podle nich zůstává zvýšená, trh práce se blíží plné zaměstnanosti a ekonomická aktivita roste solidním tempem. | Další zvýšení sazeb do konce roku je proto poměrně pravděpodobné, přiklání se k němu většina představitelů Fedu. O dalším kroku ale rozhodnou až nová data. Inflace zůstává zvýšená, trh práce se blíží plné zaměstnanosti a ekonomika roste solidním tempem. |
+
+Hodnoticí slova („zřejmě“, „poměrně pravděpodobné“) používej střídmě a jen tam, kde závěr přímo plyne z textu TE. Nikdy z nich nedělej doporučení k investici.
 
 ---
 
@@ -155,7 +181,7 @@ Projdi celý text a oprav vše, co neprojde:
 2. **Čísla:** každé číslo v textu dohledáš ve shrnutí TE nebo ve výstupu skriptu. Nic navíc. Rozdíl v p. b. u ČR sedí s hodnotami TE.
 3. **Evropské srovnání:** počet států, pořadí ČR, sousedé, trojice nejvyšších a nejnižších odpovídají výstupu skriptu, včetně shod a poznámek o jiném měsíci.
 4. **Středníky:** `grep -n ";" <soubor.md>` nesmí nic najít.
-5. **První osoba a doporučení:** žádné „očekáváme“, „podle nás“, „doporučujeme“.
+5. **Hlas autora:** žádné zbytečné „podle ECB / podle Fedu / podle zápisu / podle centrální banky / ČNB řadí“ u faktů a hodnocení (kap. 4a). Původce zůstává jen u rozhodnutí, plánů, číselných prognóz a výroků konkrétních lidí. Žádné „očekáváme“, „myslím“, „podle nás“, „doporučujeme“.
 6. **Skloňování měsíců** podle tabulky v kap. 0 a rod sloves u států.
 7. **Délka odstavců:** žádný odstavec výrazně nad 900 znaků. Delší rozděl.
 8. **Tučné písmo** jen u úvodních frází podle kap. 3.

@@ -70,8 +70,16 @@ ax.set_ylim(H, 0)
 ax.axis("off")
 
 
+VETSI = 2  # všechna písma o 2 body větší než v podkladu (čitelnost)
+
+
 def text(x, y, s, px, barva, font, **kw):
-    ax.text(x, y, s, fontsize=px / PT, color=barva, fontproperties=font, **kw)
+    """px = velikost písma v podkladovém grafu; vykreslí se o VETSI bodů větší."""
+    return ax.text(x, y, s, fontsize=px / PT + VETSI, color=barva, fontproperties=font, **kw)
+
+
+def sirka_textu(t):
+    return t.get_window_extent(renderer=fig.canvas.get_renderer()).width
 
 
 def sloupec(x, y_vrch, sirka, vyska, barva, r=4):
@@ -91,10 +99,12 @@ def cislo(v, mista=1):
 
 # nadpis, legenda
 text(32, 74, "Meziroční růst zisků S&P 500 ve 3. čtvrtletí 2026", 44, NADPIS, REGULAR, va="baseline")
-for x, barva, popis in ((33, ORANZOVA, "Aktuální odhad"), (308, SEDA, "Odhad k 30. 6. 2026")):
-    ax.add_patch(FancyBboxPatch((x, 117), 18, 18, boxstyle="round,pad=0,rounding_size=3",
+x = 33
+for barva, popis in ((ORANZOVA, "Aktuální odhad"), (SEDA, "Odhad k 30. 6. 2026")):
+    ax.add_patch(FancyBboxPatch((x, 115), 22, 22, boxstyle="round,pad=0,rounding_size=3",
                                 facecolor=barva, edgecolor="none"))
-    text(x + 32, 126, popis, 23, LEGENDA, MEDIUM, va="center_baseline")
+    t = text(x + 36, 126, popis, 23, LEGENDA, MEDIUM, va="center_baseline")
+    x += 36 + sirka_textu(t) + 60
 
 # osa y a mřížka: 0 % na y = 863, 25 % = 132 px
 NULA, KROK_PX = 863.5, 132
@@ -106,18 +116,43 @@ for i, hodnota in enumerate(range(0, 126, 25)):
 
 # sloupce: dvojice 61 px + mezera 6 px, rozteč 150 px, první začíná na x = 104
 SIRKA, MEZERA, ROZTEC, START = 61, 6, 149.8, 104
+popisky_kategorii = []
 for k, (kat, a, c) in enumerate(zip(kategorie, aktualni, cerven)):
     x0 = START + k * ROZTEC
+    popisky = []
     for x, hodnota, barva, popisek in ((x0, a, ORANZOVA, ORANZOVA), (x0 + SIRKA + MEZERA, c, SEDA, SEDA_POPISEK)):
         vyska = hodnota / 25 * KROK_PX
         sloupec(x, NULA - vyska, SIRKA, vyska, barva)
-        text(x + SIRKA / 2, NULA - vyska - 12, cislo(hodnota), 18, popisek, BOLD, ha="center", va="baseline", zorder=3)
+        popisky.append([x + SIRKA / 2, NULA - vyska - 12, cislo(hodnota), popisek])
+    # popisky hodnot: větší písmo je širší než sloupec – když by se dva vedle sebe překrývaly,
+    # zvedni popisek vyššího sloupce nad popisek nižšího (oba zůstanou u svých sloupců)
+    (xl, yl, tl, cl), (xp, yp, tp, cp) = popisky
+    t_l = text(xl, yl, tl, 18, cl, BOLD, ha="center", va="baseline", zorder=3)
+    t_p = text(xp, yp, tp, 18, cp, BOLD, ha="center", va="baseline", zorder=3)
+    if (sirka_textu(t_l) + sirka_textu(t_p)) / 2 > xp - xl - 4:
+        vyska_textu = t_l.get_window_extent(renderer=fig.canvas.get_renderer()).height + 4
+        if abs(yl - yp) < vyska_textu:
+            if yl <= yp:
+                t_l.set_y(yp - vyska_textu)
+            else:
+                t_p.set_y(yl - vyska_textu)
     stred = x0 + SIRKA + MEZERA / 2
     je_index = kat == "S&P 500"
     radky = kat.split(" ", 1) if (" " in kat and len(kat) > 10 and not je_index) else [kat]
-    for j, radek in enumerate(radky):
-        text(stred, 911 + j * 29, radek, 21.5, NADPIS if je_index else TEXT, BOLD if je_index else MEDIUM,
-             ha="center", va="baseline")
+    texty = [text(stred, 916 + j * 36, radek, 21.5, NADPIS if je_index else TEXT, BOLD if je_index else REGULAR,
+                  ha="center", va="baseline") for j, radek in enumerate(radky)]
+    popisky_kategorii.append([stred, max(sirka_textu(t) for t in texty), texty])
+
+# popisky kategorií: když se dva sousední překrývají, odsuň je od sebe (min. mezera 14 px)
+for _ in range(5):
+    for levy, pravy in zip(popisky_kategorii, popisky_kategorii[1:]):
+        prekryv = (levy[0] + levy[1] / 2 + 14) - (pravy[0] - pravy[1] / 2)
+        if prekryv > 0:
+            levy[0] -= prekryv / 2
+            pravy[0] += prekryv / 2
+for stred, _, texty in popisky_kategorii:
+    for t in texty:
+        t.set_x(stred)
 
 # zdroj
 text(32, 1003, "Zdroj: FactSet, vytvořeno AI", 26, ZDROJ, MEDIUM, va="baseline")

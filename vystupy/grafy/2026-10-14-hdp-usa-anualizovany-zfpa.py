@@ -66,17 +66,16 @@ for hodnota in range(-2, 9, 2):
             linewidth=2 / z.PT, zorder=3 if hodnota == 0 else 1)
     text(76, y, z.cislo(hodnota, 0), 21, z.OSA, z.REGULAR, ha="right", va="center_baseline")
 
-# sloupce: šedé, poslední čtvrtletí oranžově
+# sloupce: kladné oranžově, záporné šedě
 ROZTEC = (PRAVA - LEVA - 12) / len(hodnoty)
 SIRKA = 56
 for i, (q, h) in enumerate(zip(ctvrtleti, hodnoty)):
-    posledni = i == len(hodnoty) - 1
-    barva = z.ORANZOVA if posledni else z.SEDA
+    barva = z.ORANZOVA if h >= 0 else z.SEDA
     x = LEVA + 6 + i * ROZTEC + (ROZTEC - SIRKA) / 2
     vyska = h * PX_NA_PROCENTO
     z.sloupec(ax, x, NULA, SIRKA, vyska, barva)
     if h >= 0:
-        text(x + SIRKA / 2, NULA - vyska - 12, z.cislo(h), 18, z.ORANZOVA if posledni else z.SEDA_POPISEK,
+        text(x + SIRKA / 2, NULA - vyska - 12, z.cislo(h), 18, z.ORANZOVA,
              z.BOLD, ha="center", va="baseline", zorder=4)
     else:
         text(x + SIRKA / 2, NULA - vyska + 12, z.cislo(h), 18, z.SEDA_POPISEK,

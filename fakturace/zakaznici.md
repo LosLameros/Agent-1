@@ -77,8 +77,8 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Adresa:** Na Hlavaticích 521, 583 01 Chotěboř, Česká republika
 - **IČO:** 03321169 · **DIČ:** CZ03321169
 - **Režim:** CZ · **Splatnost:** 30 dní · **Doprava:** na faktuře 26048 nebyla
-- **Fakturované položky:** Silové sloupky PBS08012024-P002 – 60,00 Kč/ks bez DPH
-- **Faktury:** 26048 (09. 09. 2026, 300 ks, 21 780,00 Kč s DPH)
+- **Fakturované položky:** Silové sloupky PBS08012024-P002 – 60,00 Kč · OSIČKA 4022 261 45581-A – 85,00 Kč (za ks bez DPH)
+- **Faktury:** 26048 (09. 09. 2026, 21 780,00 Kč s DPH) · 26055 (14. 10. 2026, 20 570,00 Kč s DPH)
 - **Poznámky:** Na faktuře jsou uvedené i kontaktní údaje (e-mail a web). Zachovat.
 
 ## Attack HK s.r.o.

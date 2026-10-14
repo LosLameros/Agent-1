@@ -1,0 +1,17 @@
+{
+  "cislo": "26055",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-10-14",
+  "duzp": "2026-10-14",
+  "splatnost_dni": 30,
+  "odberatel": {
+    "nazev": "VenPor s.r.o.",
+    "adresa": ["Na Hlavaticích 521, Chotěboř", "58301 Chotěboř", "Česká republika"],
+    "ico": "03321169",
+    "dic": "CZ03321169",
+    "kontakt": "venpor@seznam.cz https://venpor.cz"
+  },
+  "polozky": [
+    {"pocet": 200, "jednotka": "ks", "popis": "OSIČKA 4022 261 45581-A", "cena": "85.00"}
+  ]
+}

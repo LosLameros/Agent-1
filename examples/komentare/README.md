@@ -2,7 +2,7 @@
 
 Vzorové komentáře, které analytik Portu poslal do redakcí. Slouží subagentovi `komentare-do-medii` (`.claude/agents/komentare-do-medii.md`) jako podklad pro styl a strukturu.
 
-Texty jsou uložené **doslova**, tedy včetně drobných chyb a odchylek od vlastních pravidel (pomlčka jako interpunkce, neshoda rodu, nevysvětlený žargon, opakovaná vazba „není X, ale Y“, nepřesné dopočty, vnitřní rozpory). Přehled těchto odchylek je v promptu agenta v kapitole „Čemu se ve vzorech vyhnout“. Agent má převzít stavbu a způsob uvažování, ne tyto chyby.
+Texty jsou uložené **doslova**. Slouží k tomu, aby agent poznal, na jaké typy otázek se média ptají a jak na ně analytik odpovídá (typologie je v kapitole 3a promptu agenta). Agent z nich přebírá stavbu a způsob uvažování.
 
 | Soubor | Typ | Téma |
 |---|---|---|

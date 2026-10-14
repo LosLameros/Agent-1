@@ -1,58 +1,21 @@
 """Meziroční růst zisků S&P 500 ve 3. čtvrtletí 2026 – verze v barvách ZFP akademie.
 
-Rozvržení 1:1 podle podkladového grafu (1920 × 1032 px). Změněné jsou jen barvy a písmo:
-- barvy ZFP akademie (zfpa.cz): oranžová #ED6D09 (logo), šedá #9C9C9C (šedá z webu ZFPA;
-  šedá z loga #D6D6D6 je na bílém pozadí příliš světlá), popisky šedých sloupců tmavší
-  #6F6F6F kvůli čitelnosti, téměř černá #0F0F0F
-  místo tmavě modré Portu v nadpisu,
-- písmo: Fedra Sans Pro (písmo ZFPA), když jsou jeho soubory v podklady/zfpa-pismo/
-  (FedraSansPro-Normal/Medium/Demi/Bold.otf nebo .ttf); jinak zástupné Fira Sans.
+Rozvržení 1:1 podle podkladového grafu (1920 × 1032 px), změněné jen barvy a písmo
+(styl ZFP akademie, viz nastroje/zfpa_grafy.py) a všechna písma o 2 body větší.
 Data: podkladový graf (zdroj FactSet), uložená v CSV vedle skriptu.
 Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-14-zisky-sp500-3q2026-zfpa.py
 """
 import csv
-import glob
-import os
+import sys
 
-import matplotlib
+from matplotlib.patches import FancyBboxPatch
 
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
-from matplotlib import font_manager  # noqa: E402
-from matplotlib.patches import FancyBboxPatch, PathPatch  # noqa: E402
-from matplotlib.path import Path  # noqa: E402
+sys.path.insert(0, "nastroje")
+from zfpa_grafy import (BOLD, LEGENDA, MEDIUM, MRIZKA, NADPIS, ORANZOVA, OSA, PT, REGULAR,  # noqa: E402
+                        SEDA, SEDA_POPISEK, TEXT, ZDROJ, cislo, platno, uloz)
+import zfpa_grafy as z  # noqa: E402
 
 ZAKLAD = "vystupy/grafy/2026-10-14-zisky-sp500-3q2026-zfpa"
-W, H, DPI = 1920, 1032, 200
-PT = DPI / 72
-
-ORANZOVA = "#ED6D09"
-SEDA = "#9C9C9C"
-SEDA_POPISEK = "#6F6F6F"  # tmavší šedá pro popisky hodnot, #9C9C9C je na bílé málo čitelná
-NADPIS = "#0F0F0F"
-TEXT = "#202020"
-LEGENDA = "#2B2B2B"
-OSA = "#5D5D5D"
-ZDROJ = "#3D3D3D"
-MRIZKA = "#DEDEDE"
-
-
-# --- písmo: Fedra Sans Pro, když je k dispozici, jinak Fira Sans --------------
-def pismo(*vzory):
-    for vzor in vzory:
-        nalez = sorted(glob.glob(vzor))
-        if nalez:
-            return font_manager.FontProperties(fname=nalez[0])
-    raise FileNotFoundError(vzory)
-
-
-F = "podklady/zfpa-pismo/FedraSans*"
-FIRA = "nastroje/fonty/fira/FiraSans-"
-FEDRA = bool(glob.glob(F + "*"))
-REGULAR = pismo(F + "*Normal.*", F + "*Book.*", FIRA + "Regular.ttf")
-MEDIUM = pismo(F + "*Medium.*", FIRA + "Medium.ttf")
-DEMI = pismo(F + "*Demi.*", FIRA + "SemiBold.ttf")
-BOLD = pismo(F + "*Bold.*", FIRA + "Bold.ttf")
 
 # --- data ---------------------------------------------------------------------
 kategorie, aktualni, cerven = [], [], []
@@ -62,39 +25,19 @@ with open(ZAKLAD + ".csv", encoding="utf-8") as f:
         aktualni.append(float(r["aktualni_odhad_pct"]))
         cerven.append(float(r["odhad_k_30_6_2026_pct"]))
 
-# --- plátno v pixelech (osa y dolů) -------------------------------------------
-fig = plt.figure(figsize=(W / DPI, H / DPI), dpi=DPI, facecolor="white")
-ax = fig.add_axes([0, 0, 1, 1])
-ax.set_xlim(0, W)
-ax.set_ylim(H, 0)
-ax.axis("off")
+fig, ax = platno()
 
 
-VETSI = 2  # všechna písma o 2 body větší než v podkladu (čitelnost)
-
-
-def text(x, y, s, px, barva, font, **kw):
-    """px = velikost písma v podkladovém grafu; vykreslí se o VETSI bodů větší."""
-    return ax.text(x, y, s, fontsize=px / PT + VETSI, color=barva, fontproperties=font, **kw)
+def text(*args, **kw):
+    return z.text(ax, *args, **kw)
 
 
 def sirka_textu(t):
-    return t.get_window_extent(renderer=fig.canvas.get_renderer()).width
+    return z.sirka_textu(ax, t)
 
 
-def sloupec(x, y_vrch, sirka, vyska, barva, r=4):
-    """Sloupec se zaobleným jen horním okrajem – jeden tvar, bez švu."""
-    r = min(r, vyska / 2, sirka / 2)
-    y0 = y_vrch + vyska
-    body = [(x, y0), (x, y_vrch + r), (x, y_vrch), (x + r, y_vrch), (x + sirka - r, y_vrch),
-            (x + sirka, y_vrch), (x + sirka, y_vrch + r), (x + sirka, y0), (x, y0)]
-    kody = [Path.MOVETO, Path.LINETO, Path.CURVE3, Path.CURVE3, Path.LINETO,
-            Path.CURVE3, Path.CURVE3, Path.LINETO, Path.CLOSEPOLY]
-    ax.add_patch(PathPatch(Path(body, kody), facecolor=barva, edgecolor="none", zorder=2))
-
-
-def cislo(v, mista=1):
-    return f"{v:.{mista}f}".replace(".", ",") + " %"
+def sloupec(x, y_vrch, sirka, vyska, barva):
+    z.sloupec(ax, x, y_vrch + vyska, sirka, vyska, barva)
 
 
 # nadpis, legenda
@@ -157,6 +100,4 @@ for stred, _, texty in popisky_kategorii:
 # zdroj
 text(32, 1003, "Zdroj: FactSet, vytvořeno AI", 26, ZDROJ, MEDIUM, va="baseline")
 
-os.makedirs(os.path.dirname(ZAKLAD), exist_ok=True)
-fig.savefig(ZAKLAD + ".png", dpi=DPI, facecolor="white")
-print("písmo:", "Fedra Sans Pro" if FEDRA else "Fira Sans (zástupné)")
+uloz(fig, ZAKLAD + ".png")

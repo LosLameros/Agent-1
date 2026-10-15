@@ -28,20 +28,23 @@ K tomu ideálně: název pořadu/média, datum, moderátor nebo spoluhost, odkaz
 
 2. **Kontext (1 věta)** — kde a s kým: „V pondělí jsem o tom mluvil v Ekonomice ČT24 s …“ / „Napsal jsem k tomu článek pro Portu Magazín.“ Krátce, ne jako hlavní sdělení.
 
-3. **Jádro (3–5 bodů nebo krátkých odstavců)** — o čem se mluvilo. Každý bod = jedna myšlenka, ideálně s číslem v kontextu (meziročně, „nejvíc od…“, vs. srovnání). Body piš jako `→` nebo `–` na začátku řádku, nebo jako odstavce po 1–2 větách. Vyber jen to nejsilnější — post není přepis rozhovoru.
+3. **Jádro (3–5 krátkých odstavců)** — o čem se mluvilo. Každý odstavec = jedna myšlenka v 1–3 větách, ideálně s číslem v kontextu (meziročně, „nejvíc od…“, vs. srovnání). Piš normální souvislý text: **žádné šipky ani odrážky** a **žádné řečnické mezititulky** typu „Proč to lidi láká?“, „Co dál?“, „Pro koho to je?“ — autor je vnímá jako AI styl. Vyber jen to nejsilnější — post není přepis rozhovoru.
 
 4. **Závěr / takeaway (1–2 věty)** — co si z toho má čtenář odnést. Jasná myšlenka, kterou si zapamatuje, typicky obecný investiční princip ukotvený v tématu (dlouhý horizont, diverzifikace, nepanikařit, nekupovat podle titulků, náklady, měnové riziko…). Uveď ho třeba „Moje pointa:“, „Co si z toho vzít?“, „Za mě:“ — nebo bez uvozovací fráze, jen silnou větou. **Takeaway není investiční doporučení** (viz Compliance).
 
 5. **Odkaz / CTA (1 řádek)** — „Celý rozhovor najdete tady: [odkaz]“ / „Celý článek v komentáři.“ Pokud odkaz nemáš, `[DOPLNIT: odkaz]`. Volitelně krátká otázka do diskuse („Jak to vidíte vy?“) — jen když přirozeně sedí, ne pokaždé.
 
-6. **Hashtagy** — 2–4 na posledním řádku, česky nebo zavedené anglické (#investování #akcie #ETF #inflace #ČNB #Portu …). Žádné hashtagy uprostřed textu.
+6. **Portu (volitelně, poslední odstavec)** — pokud téma přirozeně vede k nějakému produktu Portu, jedna až dvě věty o tom, co tam čtenář najde (např. konzervativnější portfolia, realitní fond). Věcně, ne jako reklamní slogan.
+
+**Hashtagy ani řádek s upozorněním („Nejde o investiční doporučení…“) autor nechce** — nepřidávej je, pokud si o ně výslovně neřekne.
 
 ## Délka a forma
 
 - **Cíl 500–900 znaků včetně mezer, tvrdý strop 1 300.** Krátký a úderný > vyčerpávající. Po napsání délku zkontroluj a uveď ji v poznámkách.
-- Krátké řádky, hodně prázdných řádků mezi bloky (LinkedIn se čte na mobilu).
+- Krátké odstavce, prázdný řádek mezi nimi (LinkedIn se čte na mobilu).
+- **Časové údaje vztahuj k datu zveřejnění postu**, ne k datu výstupu. Autor obvykle publikuje den po výstupu, takže „včera“, ne „dnes“. Když datum zveřejnění neznáš, zeptej se nebo to uveď v poznámkách.
 - Věty krátké, aktivní rod, žádná dlouhá souvětí.
-- **Emoji ne**, výjimečně max. 1 na celý post, a jen pokud to autor chce. Šipky `→` jako odrážky jsou v pořádku.
+- **Emoji ne**, výjimečně max. 1 na celý post, a jen pokud to autor chce.
 - Nepoužívej tučné písmo přes Unicode znaky (𝗕𝗼𝗹𝗱) — špatně se čte a je to kýč.
 
 ## Hlas a tón
@@ -79,4 +82,5 @@ Pokud tě o to uživatel požádá, ulož post do `vystupy/linkedin/RRRR-MM-DD-t
 - [ ] Pochází každé číslo a výrok z podkladu? Nic není vymyšlené?
 - [ ] Žádné investiční doporučení, žádný slib výnosu?
 - [ ] Žádné korporátní fráze, žádný nevysvětlený žargon, max. 1 emoji?
-- [ ] 2–4 hashtagy na konci?
+- [ ] Žádné šipky, odrážky, řečnické mezititulky, hashtagy ani řádek s upozorněním?
+- [ ] Sedí „včera/dnes“ k datu zveřejnění?

@@ -2,7 +2,24 @@
 
 > Kontext ke dni přípravy: druhé upisovací období (24. 8. – 4. 10. 2026) je uzavřené, dluhopisy se vydávají dnes, 15. 10. 2026. Výsledek úpisu ministerstvo zatím nezveřejnilo (viz „Ověřit těsně před vysíláním“).
 
-## 1. Úročení, splatnost a způsob připisování výnosů
+## 1. Parametry druhé emise Dluhopisů Republiky
+
+**Odpověď:**
+Druhá emise je mnohem jednodušší než ta jarní. Stát tentokrát nabídl jediný produkt: tříměsíční státní dluhopis Flexi Bond s úrokem 3,75 procenta ročně. Ten úrok se nedaní. Koupit šlo od 1 000 korun do 3 milionů na člověka, a to od konce srpna do 4. října. Dnes, 15. října, stát dluhopisy vydává a lidé je mají na účtu. Splatné budou 15. ledna 2027.
+
+Na jaře si lidé mohli vybrat ze tří dluhopisů: tříměsíčního, pětiletého s pevným úrokem a protiinflačního. Teď zbyl jen ten nejkratší. Jinak jsou pravidla stejná jako u prvního tříměsíčního dluhopisu. Rozdíl je v úroku: tentokrát začíná rovnou na 3,75 procenta, protože ČNB v červnu zvedla sazby. První začínal na 3,5 procenta a na 3,75 se dostal až po rozhodnutí ČNB.
+
+Ministerstvo chce touto emisí získat až 30 miliard korun. Do toho se ale počítají i peníze lidí, kteří si nechali první tříměsíční dluhopis automaticky převést do druhého. Zbylé dva typy dluhopisů se podle ministerstva vrátí v dalším kole před Vánoci.
+
+**Shrnutí k zapamatování:**
+- Ve 2. kole byl **jen jeden produkt**: tříměsíční **Flexi Bond 002**.
+- Úrok **3,75 % ročně, bez daně**. Ze 100 000 Kč je to za 3 měsíce 958 Kč.
+- Investice **1 000 Kč – 3 mil. Kč** na osobu, upisovalo se **24. 8. – 4. 10. 2026**.
+- Emise **15. 10. 2026**, splatnost **15. 1. 2027**. Pak se peníze automaticky převedou do dalšího Flexi Bondu.
+- Plán ministerstva je **až 30 mld. Kč**, včetně automaticky převedených peněz z jarního Flexi Bondu 001.
+- Na jaře byly **3 typy** (Flexi, fixní na 5 let, protiinflační). Fixní a protiinflační se mají vrátit **před Vánoci**.
+
+## 2. Úročení, splatnost a způsob připisování výnosů
 
 **Odpověď:**
 Ve druhém kole stát nabídl jediný produkt: tříměsíční státní dluhopis, kterému ministerstvo říká Flexi Bond. Úrok je 3,75 procenta ročně a je pevný na celé tři měsíce, od 15. října 2026 do 15. ledna 2027. Pozor, je to sazba za rok. Za tři měsíce tedy dostanete zhruba čtvrtinu: když jste dali 100 000 korun, vyděláte asi 958 korun. A ty jsou celé vaše, protože úrok ze státních dluhopisů se nedaní.
@@ -21,7 +38,7 @@ A jak se výnos připisuje? Nevyplácí se průběžně. Po třech měsících s
 - Výnos se nevyplácí průběžně. Peníze se i s úrokem **automaticky převedou do dalšího Flexi Bondu**.
 - Výplata jen na žádost podanou **16. 10. 2026 – 11. 1. 2027**, peníze přijdou 15. 1. 2027. Jde vybrat i část.
 
-## 2. Podmínky nákupu a minimální investice
+## 3. Podmínky nákupu a minimální investice
 
 **Odpověď:**
 Nejmenší investice je 1 000 korun, nejvíc může jeden člověk vložit 3 miliony korun. Do toho limitu se počítají i peníze, které si někdo automaticky převedl z prvního tříměsíčního dluhopisu. Kupovat mohou jen lidé, ne firmy. Za děti je mohou pořídit rodiče.
@@ -40,7 +57,7 @@ Dluhopisy nejdou koupit ani prodat na burze. Drží se na účtu u ministerstva 
 - Další šance bude **před Vánoci**: Flexi Bond 003 a podle MF i fixní a protiinflační dluhopis. Termíny ještě nejsou.
 - Na burze se s nimi neobchoduje.
 
-## 3. Zájem domácností o státní dluhopisy
+## 4. Zájem domácností o státní dluhopisy
 
 **Odpověď:**
 Zájem byl letos rekordní. V prvním kole, které skončilo v červnu, si lidé koupili Dluhopisy Republiky za 74 miliard korun. Objednávky dosáhly 80 miliard, což je podle Hospodářských novin zhruba čtyřnásobek toho, s čím stát počítal. Pro srovnání: v prvním kole v roce 2019 to byly necelé 3 miliardy. Nakoupilo skoro 92 tisíc lidí a víc než dvě třetiny z nich kupovaly státní dluhopisy poprvé v životě. Nejžádanější byl pětiletý dluhopis s pevným úrokem (38 miliard), pak tříměsíční Flexi Bond (27,6 miliardy) a protiinflační dluhopis (8,5 miliardy).
@@ -56,7 +73,7 @@ U druhého kola se čeká, že bude slabší. Ministerstvo počítá s objemem d
 - Celkem drží DR **124 tisíc lidí za 130,7 mld. Kč** (3,4 % státního dluhu).
 - 2. kolo bude pravděpodobně slabší. MF čeká **do 30 mld.**, ale i s automaticky převedenými penězi z Flexi Bondu 001. Nabízel se jen jeden produkt a banky zvyšují sazby.
 
-## 4. Srovnání výnosů se spořicími účty a termínovanými vklady
+## 5. Srovnání výnosů se spořicími účty a termínovanými vklady
 
 **Odpověď:**
 Při srovnání je důležitá daň. Úrok ze státního dluhopisu se nedaní. Ze spořicího účtu nebo termínovaného vkladu vám banka automaticky strhne 15 procent. Aby spořicí účet vydělal stejně jako dluhopis s 3,75 procenta, musel by nabízet zhruba 4,4 procenta.
@@ -74,7 +91,7 @@ Dluhopis tedy po zdanění porazí většinu běžných nabídek. Spořicí úč
 - Ze **100 000 Kč na 3 měsíce**: dluhopis **958 Kč**, spořicí účet s 3,5 % zhruba **750 Kč** čistého.
 - Výhoda spořicího účtu: **peníze kdykoli** a **pojištění vkladů do 100 000 EUR**. Dluhopis jde vybrat jen jednou za 3 měsíce.
 
-## 5. Vliv inflace na skutečné zhodnocení úspor
+## 6. Vliv inflace na skutečné zhodnocení úspor
 
 **Odpověď:**
 Inflace ukusuje z každého úroku. Skutečné zhodnocení se dá jednoduše spočítat: od úroku odečtete inflaci. V září byla inflace 2,5 procenta, o něco víc než v srpnu. Táhly ji hlavně ceny benzínu a nafty. Dluhopis s 3,75 procenta tedy reálně vydělává jen něco přes 1 procento ročně.
@@ -92,7 +109,7 @@ Obecně platí, že dluhopisy a spoření drží úspory jen o kousek nad inflac
 - ČNB čeká, že inflace začátkem 2027 **přechodně překročí 3 %**. Analytici proto většinou čekají **zvýšení sazeb v listopadu**.
 - Flexi Bond **přenastavuje úrok každé 3 měsíce**. Zvýšení v listopadu se projeví až v předvánočním Flexi Bondu 003, ne v dnešní emisi.
 
-## 6. Rizika spojená s investicí do státních dluhopisů
+## 7. Rizika spojená s investicí do státních dluhopisů
 
 **Odpověď:**
 Státní dluhopisy patří k nejbezpečnějším způsobům, jak uložit peníze, ale úplně bez rizika nejsou. Hlavní rizika jsou čtyři.

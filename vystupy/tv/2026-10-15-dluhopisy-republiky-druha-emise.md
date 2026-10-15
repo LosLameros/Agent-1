@@ -78,15 +78,17 @@ U druhého kola se čeká, že bude slabší. Ministerstvo počítá s objemem d
 **Odpověď:**
 Při srovnání je důležitá daň. Úrok ze státního dluhopisu se nedaní. Ze spořicího účtu nebo termínovaného vkladu vám banka automaticky strhne 15 procent. Aby spořicí účet vydělal stejně jako dluhopis s 3,75 procenta, musel by nabízet zhruba 4,4 procenta.
 
-Takových nabídek je málo. Nejvyšší sazby na spořicích účtech kolem 5 procent mají Česká spořitelna a mBank, ale jen se splněním podmínek, třeba s pravidelným investováním. Bez podmínek nabízí třeba Creditas 4,25 procenta, což je po zdanění asi 3,6 procenta. Velké banky dávají bez podmínek často jen 3 až 3,5 procenta, po zdanění kolem 3 procent. U tříměsíčních termínovaných vkladů jsou nejvyšší sazby kolem 4 procent, po zdanění zhruba 3,4 procenta. Ve velkých bankách jsou to spíš 2,5 až 3 procenta.
+Takové nabídky na trhu teď prakticky nejsou. Nejlepší spořicí účty nabízejí kolem 4 až 4,3 procenta, třeba UniCredit, Creditas, mBank nebo Raiffeisenbank. Po zdanění je to nejvýš asi 3,65 procenta. A skoro vždy to platí jen se splněním podmínek a jen do určité částky, obvykle do 250 až 500 tisíc korun. Podmínky jsou třeba několik plateb kartou měsíčně, pravidelný příjem na účet nebo pravidelné investování. Kdo je nesplní, dostane ve velkých bankách často jen desetiny procenta až 2,5 procenta. Bez podmínek dává slušný úrok jen pár bank, třeba Fio 3,5 procenta do 200 tisíc korun, po zdanění necelá 3 procenta. U tříměsíčních termínovaných vkladů jsou nejvyšší sazby kolem 4 procent, po zdanění zhruba 3,4 procenta. Ve velkých bankách jsou to spíš 2,5 až 3 procenta.
 
 Na příkladu: 100 000 korun na tři měsíce vynese v dluhopisu 958 korun čistého. Na spořicím účtu se 3,5 procenta je to po zdanění asi 750 korun.
 
-Dluhopis tedy po zdanění porazí většinu běžných nabídek. Spořicí účet má ale jednu velkou výhodu: peníze máte k dispozici kdykoli a vklady jsou pojištěné do 100 tisíc eur. U dluhopisu můžete peníze vybrat jen jednou za tři měsíce. Dluhopis se proto hodí na peníze, které člověk tři měsíce určitě nebude potřebovat. Rezervu na nečekané výdaje je rozumné mít na spořicím účtu.
+Dluhopis tedy po zdanění vydělá víc než prakticky všechny běžné spořicí účty a termínované vklady. Spořicí účet má ale jednu velkou výhodu: peníze máte k dispozici kdykoli a vklady jsou pojištěné do 100 tisíc eur. U dluhopisu můžete peníze vybrat jen jednou za tři měsíce. Dluhopis se proto hodí na peníze, které člověk tři měsíce určitě nebude potřebovat. Rezervu na nečekané výdaje je rozumné mít na spořicím účtu.
 
 **Shrnutí k zapamatování:**
 - 3,75 % bez daně odpovídá zhruba **4,4 % na spořicím účtu** (tam banka strhává **15% daň**).
-- Nejlepší spořicí účty mají **až 5,0–5,2 %**, ale s podmínkami. **Bez podmínek kolem 3,5–4,25 %**, tedy čistě asi **3–3,6 %**.
+- Nejlepší spořicí účty mají **kolem 4–4,3 %** (UniCredit 4,3, Creditas 4,25, mBank 4,21, Raiffeisenbank 4,2), po zdanění **nejvýš asi 3,65 %**. Platí **s podmínkami** (platby kartou, příjem, investice) a **do limitu** 250–500 tis. Kč.
+- Bez podmínek dává slušný úrok jen pár bank, třeba **Fio 3,5 %** do 200 tis. Kč. Velké banky dávají bez splnění podmínek často jen **0,25–2,5 %**.
+- Po zdanění dluhopis vydělá víc než **prakticky všechny běžné nabídky**.
 - Tříměsíční termínované vklady: nejlépe **kolem 4 %**, ve velkých bankách **2,5–3 %**.
 - Ze **100 000 Kč na 3 měsíce**: dluhopis **958 Kč**, spořicí účet s 3,5 % zhruba **750 Kč** čistého.
 - Výhoda spořicího účtu: **peníze kdykoli** a **pojištění vkladů do 100 000 EUR**. Dluhopis jde vybrat jen jednou za 3 měsíce.
@@ -164,7 +166,8 @@ K tomu pár praktických rad. Peníze posílejte se správným variabilním symb
 - [HN: Zájem o Dluhopisy Republiky byl čtyřnásobný oproti plánu](https://byznys.hn.cz/c1-67899490-zajem-o-dluhopisy-republiky-byl-ctyrnasobny-oproti-planu-lide-si-jich-objednali-za-80-miliard-korun)
 - [Finex: Stát dnes začíná prodávat nové Dluhopisy Republiky, nabídka je výrazně chudší](https://finex.cz/stat-dnes-zacina-prodavat-nove-dluhopisy-republiky-nabidka-je-vyrazne-chudsi-nez-posledne/)
 - [KN.cz: Flexi Bond 002 – sazba 3,75 % a skutečný výnos](https://www.kn.cz/flexi-bond-002-vynos-dluhopis-republiky/)
-- [Kurzy.cz: Přehled úrokových sazeb na spořicích účtech od října 2026](https://zpravy.kurzy.cz/877599-prehled-urokovych-sazeb-na-sporicich-uctech-od-rijna-2026/)
+- Tisková zpráva Portu ke spořicím účtům (Marek Pokorný, září 2026)
+- [mBank: mSpořicí účet Plus (sazba 4,21 %, platí minimálně do 31. 10. 2026)](https://www.mbank.cz/osobni/sporeni/msporici-ucet-plus/)
 - [Finance.cz: Srovnání termínovaných vkladů v říjnu 2026](https://www.finance.cz/clanky/srovnani-terminovanych-vkladu-v-rijnu-2026-rada-bank-od-zari-zvysila-urokove-sazby/)
 - [ČTK / České noviny: Inflace v září zrychlila na 2,5 %, podle analytiků ČNB zvýší sazby](https://www.ceskenoviny.cz/zpravy/inflace-v-cr-v-zari-zrychlila-na-25-podle-analytiku-cnb-zvysi-sazby/2883404)
 - [ČNB: Inflaci v září opět poháněly ceny nafty a benzínu](https://www.cnb.cz/cs/verejnost/servis-pro-media/komentare-cnb-ke-zverejnenym-statistickym-udajum-o-inflaci-a-hdp/Inflaci-v-zari-opet-pohanely-ceny-nafty-a-benzinu/)

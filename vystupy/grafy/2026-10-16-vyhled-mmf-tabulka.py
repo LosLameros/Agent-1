@@ -4,7 +4,7 @@ Data: Mezinárodní měnový fond, World Economic Outlook (říjen 2026), převz
 tabulky; světové hodnoty (3,5 / 3,1 / 3,4 %) potvrzují zprávy o říjnovém WEO.
 Vzhled: oficiální barvy Portu fialová #4840BB a zelená #00AA3C (+ jejich tmavší a světlé
 odstíny pro buňky projekcí), písmo Rethink Sans (pevné řezy v nastroje/fonty/).
-Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-16-vyhled-mmf-tabulka.py
+Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-16-vyhled-mmf-tabulka.py [cs|sk]
 """
 import csv
 import os
@@ -40,10 +40,23 @@ ZAPORNA = "#BE0000"
 W, DPI = 1100, 200
 PT = DPI / 72
 
+TEXTY = {
+    "cs": {"nadpis": "Výhled světové ekonomiky: projekce růstu", "podtitulek": "(Reálné HDP, meziroční změna v %)",
+           "projekce": "PROJEKCE", "zdroj": "Zdroj:",
+           "zdroj_text": "Mezinárodní měnový fond (MMF), World Economic Outlook, říjen 2026.",
+           "ai": "Tabulka byla vytvořena pomocí AI.", "sloupec": "oblast"},
+    "sk": {"nadpis": "Výhľad svetovej ekonomiky: projekcie rastu", "podtitulek": "(Reálny HDP, medziročná zmena v %)",
+           "projekce": "PROJEKCIE", "zdroj": "Zdroj:",
+           "zdroj_text": "Medzinárodný menový fond (MMF), World Economic Outlook, október 2026.",
+           "ai": "Tabuľka bola vytvorená pomocou AI.", "sloupec": "oblast_sk"},
+}
+jazyk = sys.argv[1] if len(sys.argv) > 1 else "cs"  # python3 … sk → slovenská verze (soubor …-sk.png)
+T = TEXTY[jazyk]
+
 radky = []
 with open(ZAKLAD + ".csv", encoding="utf-8") as f:
     for r in csv.DictReader(f):
-        radky.append((r["oblast"], r["typ"], [float(r[k]) for k in ("2025", "2026", "2027")]))
+        radky.append((r[T["sloupec"]], r["typ"], [float(r[k]) for k in ("2025", "2026", "2027")]))
 
 # výška: hlavička 250, řádky světa/skupin 74, ostatní 56, patička 120
 H = 250 + sum(74 if t in ("svet", "skupina") else 56 for _, t, _ in radky) + 130
@@ -63,12 +76,12 @@ SLOUPCE = [600, 770, 920, P]  # hranice sloupců 2025 | 2026 | 2027
 STREDY = [(a + b) / 2 for a, b in zip(SLOUPCE, SLOUPCE[1:])]
 
 # nadpis, akcent, podtitulek
-text(L, 62, "Výhled světové ekonomiky: projekce růstu", 40, pg.TEXT_TMAVY, REGULAR, va="baseline")
+text(L, 62, T["nadpis"], 40, pg.TEXT_TMAVY, REGULAR, va="baseline")
 ax.add_patch(FancyBboxPatch((L, 82), 110, 9, boxstyle="round,pad=0,rounding_size=4.5", facecolor=ZELENA, edgecolor="none"))
-text(L, 132, "(Reálné HDP, meziroční změna v %)", 24, FIALOVA, MEDIUM, va="baseline")
+text(L, 132, T["podtitulek"], 24, FIALOVA, MEDIUM, va="baseline")
 
 # hlavička tabulky
-text((SLOUPCE[1] + SLOUPCE[3]) / 2, 180, "PROJEKCE", 20, ZELENA, BOLD, ha="center", va="baseline")
+text((SLOUPCE[1] + SLOUPCE[3]) / 2, 180, T["projekce"], 20, ZELENA, BOLD, ha="center", va="baseline")
 ax.add_patch(Rectangle((SLOUPCE[1], 194), SLOUPCE[3] - SLOUPCE[1], 52, facecolor=ZELENA_SVETLA, edgecolor="none"))
 for stred, rok in zip(STREDY, ("2025", "2026", "2027")):
     text(stred, 230, rok, 26, TEXT, BOLD, ha="center", va="baseline")
@@ -117,11 +130,11 @@ for nazev, typ, hodnoty in radky:
 
 # patička se zdrojem
 y += 50
-t = text(L, y, "Zdroj:", 19, pg.TEXT_SEDY, BOLD, va="baseline")
+t = text(L, y, T["zdroj"], 19, pg.TEXT_SEDY, BOLD, va="baseline")
 sirka = t.get_window_extent(renderer=fig.canvas.get_renderer()).width
-text(L + sirka + 4, y, "Mezinárodní měnový fond (MMF), World Economic Outlook, říjen 2026.", 19, pg.TEXT_SEDY,
+text(L + sirka + 4, y, T["zdroj_text"], 19, pg.TEXT_SEDY,
      REGULAR, va="baseline")
-text(L, y + 32, "Tabulka byla vytvořena pomocí AI.", 19, pg.TEXT_SEDY, REGULAR, va="baseline")
+text(L, y + 32, T["ai"], 19, pg.TEXT_SEDY, REGULAR, va="baseline")
 
 os.makedirs(os.path.dirname(ZAKLAD), exist_ok=True)
-fig.savefig(ZAKLAD + ".png", dpi=DPI, facecolor="white")
+fig.savefig(ZAKLAD + ("" if jazyk == "cs" else "-" + jazyk) + ".png", dpi=DPI, facecolor="white")

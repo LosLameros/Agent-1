@@ -78,7 +78,10 @@ plt.rcParams.update({
 
 MINUS = "−"
 NBSP = " "
-MESICE = ["led", "úno", "bře", "dub", "kvě", "čvn", "čvc", "srp", "zář", "říj", "lis", "pro"]
+MESICE = {
+    "cs": ["led", "úno", "bře", "dub", "kvě", "čvn", "čvc", "srp", "zář", "říj", "lis", "pro"],
+    "sk": ["jan", "feb", "mar", "apr", "máj", "jún", "júl", "aug", "sep", "okt", "nov", "dec"],
+}
 
 
 # --- Formát čísel -------------------------------------------------------------
@@ -252,7 +255,8 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 # --- Spojnicový graf (časové řady) --------------------------------------------
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
-               rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None):
+               rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
+               jazyk="cs"):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -260,7 +264,8 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
                    pořadí určuje barvu (1. fialová, 2. zelená)
     osa_y        – (min, max, krok); jednotka '%', 'x' (násobky) nebo '' (prosté číslo)
     format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny,
-                   'mesic' pro české zkratky měsíců („lis 25“) u řad za poslední rok (interval_mesicu=1)
+                   'mesic' pro zkratky měsíců („lis 25“, slovensky „nov 25“) u řad za poslední rok (interval_mesicu=1)
+    jazyk        – 'cs' nebo 'sk' (zkratky měsíců na ose x)
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
     schody       – názvy řad kreslených schodovitě (sazby centrálních bank platné do další změny)
@@ -315,7 +320,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=mesice))
     if format_x == "mesic":
         ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(
-            lambda v, _: f"{MESICE[mdates.num2date(v).month - 1]} {mdates.num2date(v).year % 100:02d}"))
+            lambda v, _: f"{MESICE[jazyk][mdates.num2date(v).month - 1]} {mdates.num2date(v).year % 100:02d}"))
     else:
         ax.xaxis.set_major_formatter(mdates.DateFormatter(format_x))
     for t in ax.get_xticklabels():

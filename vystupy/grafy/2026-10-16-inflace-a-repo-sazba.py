@@ -3,7 +3,7 @@
 Data: ČSÚ DataStat, výběr CEN0101HT02 (přírůstek indexu spotřebitelských cen ke stejnému
 měsíci předchozího roku, ukazatel 6134J05); ČNB, historie 2T repo sazby
 (https://www.cnb.cz/cs/casto-kladene-dotazy/.galleries/vyvoj_repo_historie.txt).
-Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-16-inflace-a-repo-sazba.py
+Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-16-inflace-a-repo-sazba.py [cs|sk]
 """
 import csv
 import datetime as dt
@@ -35,13 +35,22 @@ for d, s in zmeny:
 repo_x.append(KONEC)
 repo.append(repo[-1])
 
+TEXTY = {
+    "cs": {"inflace": "Meziroční inflace", "repo": "2T repo sazba ČNB",
+           "nadpis": "Vývoj meziroční inflace a dvoutýdenní reposazby ČNB"},
+    "sk": {"inflace": "Medziročná inflácia", "repo": "2T repo sadzba ČNB",
+           "nadpis": "Vývoj medziročnej inflácie a dvojtýždňovej repo sadzby ČNB"},
+}
+jazyk = sys.argv[1] if len(sys.argv) > 1 else "cs"  # python3 … sk → slovenská verze (soubor …-sk.png)
+T = TEXTY[jazyk]
+
 fig = pg.spojnicovy(
     inflace_x,
-    {"Meziroční inflace": (inflace_x, inflace), "2T repo sazba ČNB": (repo_x, repo)},
+    {T["inflace"]: (inflace_x, inflace), T["repo"]: (repo_x, repo)},
     osa_y=(-2, 20, 2), jednotka="%", barvy=[pg.ZELENA, pg.FIALOVA],
     format_x="%Y", interval_let=2, rozsah_x=(ZACATEK, KONEC),
-    schody=("2T repo sazba ČNB",), popisky_konec=True,
+    schody=(T["repo"],), popisky_konec=True,
     zdroj="Graf: Portu, zdroj: ČSÚ, ČNB",
-    nadpis="Vývoj meziroční inflace a dvoutýdenní reposazby ČNB",
+    nadpis=T["nadpis"],
 )
-pg.uloz(fig, ZAKLAD + ".png")
+pg.uloz(fig, ZAKLAD + ("" if jazyk == "cs" else "-" + jazyk) + ".png")

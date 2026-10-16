@@ -54,7 +54,7 @@ ax.tick_params(axis="x", pad=29 / pg.PT)
 ax2 = ax.twinx()
 ax2.set_ylim(-30, 43)
 ax2.axis("off")
-ax2.plot(range(n), marze, color=pg.TEXT_TMAVY, linewidth=3 / pg.PT, marker="o", markersize=8 / pg.PT, zorder=5)
+ax2.plot(range(n), marze, color=pg.FIALOVA, linewidth=3 / pg.PT, marker="o", markersize=8 / pg.PT, zorder=5)
 for i, m in enumerate(marze):
     ax2.text(i, m + 2.2, pg.cislo(round(m), 0, "%"), ha="center", va="bottom", fontsize=pg.PISMO_HODNOTA,
              color=pg.TEXT_TMAVY, zorder=6, bbox=dict(facecolor="white", edgecolor="none", pad=1.5, alpha=0.85))
@@ -68,5 +68,5 @@ for a in (ax, ax2):
     a.set_position([pg._fx(leva), pos.y0, pg._fx(pg.GRAF_PRAVA - leva), pos.height])
 
 pg._legenda_a_zdroj(fig, [("Celkové tržby (mil. eur)", pg.ZELENA), ("Čistý zisk (mil. eur)", pg.FIALOVA),
-                          ("Provozní zisková marže", pg.TEXT_TMAVY, "cara")], "Graf: Portu, zdroj: ASML")
+                          ("Provozní zisková marže", pg.FIALOVA, "cara")], "Graf: Portu, zdroj: ASML")
 pg.uloz(fig, ZAKLAD + ".png")

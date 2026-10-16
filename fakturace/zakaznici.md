@@ -15,8 +15,8 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Adresa:** Lomená 1530, 742 58 Příbor, Česká republika
 - **IČO:** 26825147 · **DIČ:** CZ26825147
 - **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** na faktuře 26049 nebyla
-- **Fakturované položky:** Hlava knyplíku V5 – 42,00 Kč · Díl hmatníku větší V2 – 15,00 Kč (za ks bez DPH)
-- **Faktury:** 26049 (21. 09. 2026, 50 820,00 Kč s DPH) · 26053 (07. 10. 2026, 55 539,00 Kč s DPH, splatnost 7 dní na přání uživatele)
+- **Fakturované položky:** Hlava knyplíku V5 – 42,00 Kč · Díl hmatníku větší V2 – 15,00 Kč · Klíč V-2 – 32,00 Kč (za ks bez DPH)
+- **Faktury:** 26049 (21. 09. 2026, 50 820,00 Kč s DPH) · 26053 (07. 10. 2026, 55 539,00 Kč s DPH, splatnost 7 dní na přání uživatele) · 26056 (17. 10. 2026, 41 987,00 Kč s DPH)
 - **Poznámky:** Na faktuře 26049 je DIČ vytištěné dvakrát („CZ26825147CZ26825147“). Jde o chybu v adresáři FakturaOnline a je potřeba ji tam opravit. Od faktury 26053 se píše „Hlava knyplíku“ s diakritikou, jak to zadal uživatel (na 26049 bylo „knypliku“).
 
 ## Tomáš Trnka

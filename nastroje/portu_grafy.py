@@ -22,6 +22,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.dates as mdates  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.ticker  # noqa: E402
 from matplotlib import font_manager  # noqa: E402
 from matplotlib.patches import FancyBboxPatch  # noqa: E402
 
@@ -77,6 +78,7 @@ plt.rcParams.update({
 
 MINUS = "−"
 NBSP = " "
+MESICE = ["led", "úno", "bře", "dub", "kvě", "čvn", "čvc", "srp", "zář", "říj", "lis", "pro"]
 
 
 # --- Formát čísel -------------------------------------------------------------
@@ -250,26 +252,25 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 # --- Spojnicový graf (časové řady) --------------------------------------------
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
-               rozsah_x=None, schody=(), popisky_konec=False, mista_konec=1):
+               rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
     rady         – {název řady: [hodnoty]} nebo {název: (vlastní datumy, hodnoty)};
                    pořadí určuje barvu (1. fialová, 2. zelená)
     osa_y        – (min, max, krok); jednotka '%', 'x' (násobky) nebo '' (prosté číslo)
-    format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny
+    format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny,
+                   'mesic' pro české zkratky měsíců („lis 25“) u řad za poslední rok (interval_mesicu=1)
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
     schody       – názvy řad kreslených schodovitě (sazby centrálních bank platné do další změny)
     popisky_konec – poslední hodnota každé řady vpravo za koncem čáry („3,75 %“); u více řad
                     v barvě řady a blízké hodnoty automaticky odsunuté od sebe
+    mista_konec  – desetinná místa koncového popisku; None = 1, u hodnot typu 3,75 dvě
+    jednotka_konec – jednotka koncového popisku, když se liší od osy (např. 'b.' u indexu – mezeru před ní doplní cislo())
     """
     barvy = barvy or BARVY
     fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis)
-    if popisky_konec:  # místo vpravo pro popisky posledních hodnot
-        fy = fig._portu["fy"]
-        ax.set_position([_fx(GRAF_LEVA), fy(GRAF_DOLNI_1RADEK), _fx(GRAF_PRAVA - 85 - GRAF_LEVA),
-                         fy(GRAF_HORNI) - fy(GRAF_DOLNI_1RADEK)])
     _osa_y(ax, osa_y, jednotka, mista_osa)
     konce = []
     for i, (nazev, data) in enumerate(rady.items()):
@@ -287,26 +288,36 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
             if pozice[b] - pozice[a] < mezera:
                 pozice[b] = pozice[a] + mezera
         posun = (sum(pozice.values()) - sum(konce)) / len(konce)  # vyrovnej kolem skutečných hodnot
+        popisky = []
         for k, h in enumerate(konce):
-            mista = mista_konec if round(h, mista_konec) == h else 2  # 3,75 %
-            ax.annotate(cislo(h, mista, jednotka), (rozsah_x[1] if rozsah_x else x[-1], pozice[k] - posun),
+            if mista_konec is None:  # 1 desetinné místo, u sazeb typu 3,75 % dvě
+                mista = 2 if round(h, 1) != h and round(h, 2) == h else 1
+            else:
+                mista = mista_konec
+            popisky.append(ax.annotate(cislo(h, mista, jednotka if jednotka_konec is None else jednotka_konec), (rozsah_x[1] if rozsah_x else x[-1], pozice[k] - posun),
                         xytext=(12 / PT, 0), textcoords="offset points", ha="left", va="center",
                         fontsize=PISMO_HODNOTA, annotation_clip=False,
-                        color=barvy[k] if len(konce) > 1 else TEXT_TMAVY)  # u více řad v barvě řady
+                        color=barvy[k] if len(konce) > 1 else TEXT_TMAVY))  # u více řad v barvě řady
     # tmavá spodní osa; když řada klesá pod nulu, je tmavá místo ní čára nuly
     ax.axhline(0 if osa_y[0] < 0 < osa_y[1] else osa_y[0], color=ZAKLADNA, linewidth=2 * 72 / DPI, zorder=2)
     if rozsah_x:
         ax.set_xlim(*rozsah_x)
     else:
         ax.set_xlim(x[0], x[-1])
-    if format_x == "%Y":
+    if format_x == "mesic":
+        ax.xaxis.set_major_locator(mdates.MonthLocator(interval=interval_mesicu, bymonthday=1))
+    elif format_x == "%Y":
         ax.xaxis.set_major_locator(mdates.YearLocator(interval_let))
     else:
         # popisky od prvního měsíce řady (12/2024, 06/2025, 12/2025 …)
         prvni = (rozsah_x[0] if rozsah_x else x[0]).month
         mesice = sorted({(prvni - 1 + k * interval_mesicu) % 12 + 1 for k in range(max(1, 12 // interval_mesicu))})
         ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=mesice))
-    ax.xaxis.set_major_formatter(mdates.DateFormatter(format_x))
+    if format_x == "mesic":
+        ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(
+            lambda v, _: f"{MESICE[mdates.num2date(v).month - 1]} {mdates.num2date(v).year % 100:02d}"))
+    else:
+        ax.xaxis.set_major_formatter(mdates.DateFormatter(format_x))
     for t in ax.get_xticklabels():
         t.set_fontsize(PISMO_OSA)
         t.set_color(TEXT_SEDY)
@@ -320,6 +331,15 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         ax.plot([datum, datum], [hodnota, konec], color=ANOTACE_CARA, linewidth=1.5 * 72 / DPI, zorder=9)
         ax.text(datum, konec + (-6 if smer == "pod" else 6) / vyska_px * rozsah, text,
                 ha="center", va="top" if smer == "pod" else "bottom", fontsize=PISMO_OSA, color=TEXT_TMAVY)
+    # okraje podle nejdelších popisků: osa y vlevo (např. „15 000“) a koncové popisky vpravo („11 581 b.“)
+    renderer = fig.canvas.get_renderer()
+    fig.canvas.draw()
+    leva = max(GRAF_LEVA, max(t.get_window_extent(renderer).width for t in ax.get_yticklabels()) + 31)
+    rezerva = 0
+    if konce:
+        rezerva = max(85, max(t.get_window_extent(renderer).width for t in popisky) + 22)
+    pos = ax.get_position()
+    ax.set_position([_fx(leva), pos.y0, _fx(GRAF_PRAVA - rezerva - leva), pos.height])
     _legenda_a_zdroj(fig, [(n, barvy[i]) for i, n in enumerate(rady)], zdroj)
     return fig
 

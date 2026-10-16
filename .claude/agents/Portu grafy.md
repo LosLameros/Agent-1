@@ -49,7 +49,8 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 
 **Spojnicový graf** (`pg.spojnicovy`) – jako oba vzory
 - Čára o síle ≈ 3,5 px, bez bodů na čáře, bez svislé mřížky.
-- Osa x: u řad přes 10 let každý druhý rok (`interval_let=2`), u kratších víceletých řad roky nebo `12/2024, 06/2025…` po půl roce, u řad do jednoho roku dny a měsíce.
+- Osa x: u řad přes 10 let každý druhý rok (`interval_let=2`), u kratších víceletých řad roky nebo `12/2024, 06/2025…` po půl roce, u řad za poslední rok české zkratky měsíců `lis 25, pro 25…` (`format_x='mesic', interval_mesicu=1`).
+- Indexy a ceny v bodech: osa bez jednotky s mezerou v tisících (`15 000`), koncový popisek s jednotkou a bez desetin (`popisky_konec=True, mista_konec=0, jednotka_konec='b.'` → „11 581 b.“). Okraje se samy rozšíří podle nejdelšího popisku osy i koncového popisku.
 - Osa y s kulatými hodnotami a pravidelným krokem. Když řada klesá pod nulu, tmavá je čára nuly, ne spodní okraj.
 - **Poslední hodnota vpravo za koncem čáry** (`popisky_konec=True`), u více řad v barvě řady a s automatickým odsunutím blízkých hodnot („3,8 %" nad „3,4 %").
 - Sazby centrálních bank schodovitě podle data změny (`schody=('název řady',)`), ne šikmou čarou mezi měsíci.

@@ -24,6 +24,7 @@ import matplotlib.dates as mdates  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402
 import matplotlib.ticker  # noqa: E402
 from matplotlib import font_manager  # noqa: E402
+from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import FancyBboxPatch  # noqa: E402
 
 # --- Barvy --------------------------------------------------------------------
@@ -144,17 +145,27 @@ def _osa_y(ax, osa_y, jednotka, mista_osa):
 
 
 def _legenda_a_zdroj(fig, polozky, zdroj):
+    """polozky: (název, barva) = zaoblený čtvereček, (název, barva, 'cara') = čára s bodem."""
     fy = fig._portu["fy"]
     x = GRAF_LEVA + 3
-    for nazev, barva in polozky:
-        fig.patches.append(FancyBboxPatch(
-            (_fx(x), fy(LEGENDA_STRED_Y + CTVEREC / 2)), _fx(CTVEREC), fy(LEGENDA_STRED_Y - CTVEREC / 2) - fy(LEGENDA_STRED_Y + CTVEREC / 2),
-            boxstyle="round,pad=0,rounding_size=0.003", transform=fig.transFigure,
-            facecolor=barva, edgecolor="none"))
-        t = fig.text(_fx(x + CTVEREC + 13), fy(LEGENDA_STRED_Y), nazev, fontsize=PISMO_LEGENDA,
+    for polozka in polozky:
+        nazev, barva = polozka[0], polozka[1]
+        if len(polozka) > 2 and polozka[2] == "cara":
+            sirka_znacky = 34
+            fig.add_artist(Line2D([_fx(x), _fx(x + sirka_znacky)], [fy(LEGENDA_STRED_Y)] * 2, transform=fig.transFigure,
+                                  color=barva, linewidth=3 / PT))
+            fig.add_artist(Line2D([_fx(x + sirka_znacky / 2)], [fy(LEGENDA_STRED_Y)], transform=fig.transFigure,
+                                  color=barva, marker="o", markersize=8 / PT, linestyle="none"))
+        else:
+            sirka_znacky = CTVEREC
+            fig.patches.append(FancyBboxPatch(
+                (_fx(x), fy(LEGENDA_STRED_Y + CTVEREC / 2)), _fx(CTVEREC), fy(LEGENDA_STRED_Y - CTVEREC / 2) - fy(LEGENDA_STRED_Y + CTVEREC / 2),
+                boxstyle="round,pad=0,rounding_size=0.003", transform=fig.transFigure,
+                facecolor=barva, edgecolor="none"))
+        t = fig.text(_fx(x + sirka_znacky + 13), fy(LEGENDA_STRED_Y), nazev, fontsize=PISMO_LEGENDA,
                      color=TEXT_TMAVY, ha="left", va="center_baseline")
         sirka = t.get_window_extent(renderer=fig.canvas.get_renderer()).width
-        x += CTVEREC + 13 + sirka + 37
+        x += sirka_znacky + 13 + sirka + 37
     if zdroj:
         fig.text(_fx(GRAF_PRAVA), fy(LEGENDA_STRED_Y), zdroj, fontsize=PISMO_ZDROJ, color=TEXT_SEDY,
                  ha="right", va="center_baseline")

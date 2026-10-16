@@ -8,9 +8,11 @@ Kalibrace podle mřížky a popisků v obrázku:
 Postup:
   WOOD (schodovitý vývoj): v každém sloupci pixelů střed vodorovné čáry; sloupce se svislou hranou
   skoku se vynechají a graf řadu kreslí schodovitě → skoky jsou svislé, rovné úseky rovné.
-  Portfolio 10: v každém sloupci pixelů střed čáry (přesný u šikmých úseků), u lokálního vrcholu/dna
-  krajní okraj čáry, u velkých pohybů (úsek > 3× tloušťka čáry) vstupní a výstupní bod – prudké
-  propady a růsty tak zůstanou svislé.
+  Portfolio 10: v každém sloupci pixelů bod, při kterém čára o skutečné tloušťce (4,2 px) pokryje
+  přesně ten úsek, který pokrývá v podkladu (okraje s přesností na zlomky pixelu); body se dolaďují
+  opakovaně se sousedy, takže sedí šikmé úseky, ostré špičky i prudké propady. Nakonec se každý bod
+  doladí přímo podle vykreslení: zkusí se polohy ±3 px po 0,25 px a zůstane ta, při které se vykreslená
+  čára odstínem pixelů nejvíc shoduje s podkladem.
   Nakonec zjednodušení Ramer–Douglas–Peucker (tolerance 0,5 px) – tvar stejný, bez nadbytečných bodů.
 Spouštěj z kořene repozitáře:
   python3 vystupy/grafy/2026-10-16-portu10-vs-wood-odecet.py podklady/grafy/2026-10-16-portu10-vs-wood-podklad.png vystupy/grafy/2026-10-16-portu10-vs-wood.csv [kontrola.png]
@@ -31,6 +33,7 @@ X_OD, X_DO = 116, 1228
 KONCE = {"portu_10": (68.9, 80.0), "wood_opf": (28.0, 469.0)}   # hodnota a y středu koncové tečky
 BARVY = {"portu_10": (0x00, 0x52, 0x7A), "wood_opf": (0x18, 0xA1, 0xCD)}
 TL = 4.5      # tloušťka čáry v px
+HLADKOST = 0.0  # vyzkoušeno 0–0,4: každé vyhlazení překryv s podkladem zhoršuje
 POLOVINA = TL / 2
 
 
@@ -82,37 +85,72 @@ def wood(barva):
     return body
 
 
-def tah_pera(barva, tloustka=5.0):
-    """Střed čáry v každém sloupci; u vrcholu/dna krajní okraj; u velkého pohybu (úsek > 3× tloušťka)
-    vstupní a výstupní bod, aby prudké propady a růsty zůstaly svislé."""
+def pokryti(barva):
+    """Pro každý pixel podíl, jak moc ho zakrývá čára dané barvy (0–1), z vyhlazených okrajů."""
+    br, bg, bb = barva
+    wr, wg, wb = 255 - br, 255 - bg, 255 - bb
+    norma = wr * wr + wg * wg + wb * wb
+
+    def a(p):
+        r, g, b = p
+        dr, dg, db = 255 - r, 255 - g, 255 - b
+        # jen pixely v odstínu dané čáry (ne šedá mřížka, ne druhá čára)
+        if abs(dr * wg - dg * wr) + abs(dg * wb - db * wg) > 0.25 * norma:
+            return 0.0
+        return max(0.0, min(1.0, (dr * wr + dg * wg + db * wb) / norma))
+    return a
+
+
+def tah_pera(barva, tloustka=4.2, pruchody=8, hladkost=HLADKOST):
+    """Střed čáry v každém sloupci pixelů tak, aby čára o skutečné tloušťce pokryla v daném sloupci
+    přesně ten svislý úsek, který pokrývá v podkladu (horní a dolní okraj s přesností na zlomky pixelu).
+    V každém sloupci prochází čára od poloviny cesty k předchozímu bodu přes svůj bod k polovině cesty
+    k dalšímu bodu; body se dolaďují opakovaně, protože každý ovlivňuje i sousední sloupce."""
+    a = pokryti(barva)
     sl = sloupce(barva)
     xs = sorted(sl)
-    stredy = {x: (sl[x][0] + sl[x][1]) / 2 for x in xs}
-    pul = tloustka / 2
-    body = []
-    for i, x in enumerate(xs):
+    okraje = []
+    for x in xs:
         s, p = sl[x]
-        y_pred = stredy[xs[i - 1]] if i > 0 else None
-        y_dal = stredy[xs[i + 1]] if i + 1 < len(xs) else None
-        if p - s > 3 * tloustka and y_pred is not None and y_dal is not None:
-            horni, dolni = s + pul, p - pul
-            vstup = horni if abs(y_pred - horni) < abs(y_pred - dolni) else dolni
-            vyst = horni if abs(y_dal - horni) < abs(y_dal - dolni) else dolni
-            if vstup == vyst:  # špička: vstup → opačný kraj → zpět
-                body += [(x - 0.33, vstup), (x, dolni if vstup == horni else horni), (x + 0.33, vyst)]
-            else:
-                body += [(x - 0.25, vstup), (x + 0.25, vyst)]
-            continue
-        y = stredy[x]
-        if y_pred is not None and y_dal is not None and p - s > tloustka + 2:
-            s1, p1 = sl[xs[i - 1]]
-            s2, p2 = sl[xs[i + 1]]
-            if s <= s1 and s <= s2 and (s < s1 or s < s2):
-                y = s + pul  # vrchol
-            elif p >= p1 and p >= p2 and (p > p1 or p > p2):
-                y = p - pul  # dno
-        body.append((x, y))
-    return body
+        sloupec = [(y, a(im.getpixel((x, y)))) for y in range(s - 2, p + 3)]
+        nad = [y for y, v in sloupec if v >= 0.5] or [s, p]
+        horni = nad[0] - 0.5 + (1 - a(im.getpixel((x, nad[0] - 1)))) * 0.5
+        dolni = nad[-1] + 0.5 - (1 - a(im.getpixel((x, nad[-1] + 1)))) * 0.5
+        okraje.append((horni, dolni))
+    pul = tloustka / 2
+    y = [(h + d) / 2 for h, d in okraje]
+    n = len(y)
+
+    def predpoved(i):
+        m1 = (y[i - 1] + y[i]) / 2 if i > 0 else y[i]
+        m2 = (y[i] + y[i + 1]) / 2 if i < n - 1 else y[i]
+        sklon = abs(m2 - m1)
+        h = pul * min((1 + sklon * sklon) ** 0.5, 2.0)
+        return min(m1, y[i], m2) - h, max(m1, y[i], m2) + h
+
+    def chyba(i):
+        e = 0.0
+        for j in (i - 1, i, i + 1):
+            if 0 <= j < n:
+                h, d = predpoved(j)
+                e += (h - okraje[j][0]) ** 2 + (d - okraje[j][1]) ** 2
+                if 0 < j < n - 1:  # mírná penalizace kmitání: ze stejně dobrých řešení vyhraje rovnější čára
+                    e += hladkost * (y[j] - (y[j - 1] + y[j + 1]) / 2) ** 2
+        return e
+
+    for _ in range(pruchody):
+        for i in range(n):
+            horni, dolni = okraje[i]
+            nejlepsi, nejmensi = y[i], chyba(i)
+            kandidat = horni - 1
+            while kandidat <= dolni + 1:
+                y[i] = kandidat
+                e = chyba(i)
+                if e < nejmensi:
+                    nejlepsi, nejmensi = kandidat, e
+                kandidat += 0.25
+            y[i] = nejlepsi
+    return list(zip(xs, y))
 
 
 def zjednodus(body, tolerance=0.5):
@@ -130,7 +168,45 @@ def zjednodus(body, tolerance=0.5):
 
 
 sys.setrecursionlimit(10000)
-vystupy = {"portu_10": zjednodus(tah_pera(BARVY["portu_10"])), "wood_opf": wood(BARVY["wood_opf"])}
+def dolad_vykreslenim(body, barva, sirka=4.2, pruchody=4, rozsah=3.0, krok=0.25, nasobek=8):
+    """Každý bod doladí přímo podle vykreslení: v okolí ±rozsah px zkusí polohy po krok px, vykreslí
+    okolní kus čáry (vyhlazeně, nasobek× zvětšený a zmenšený) a nechá polohu s nejmenším rozdílem
+    odstínu proti podkladu."""
+    import numpy as np
+    a = pokryti(barva)
+    w, h = im.size
+    podklad = np.array([[a(im.getpixel((x, y))) for x in range(w)] for y in range(h)], dtype=np.float32)
+    xs = [x for x, _ in body]
+    ys = [y for _, y in body]
+    n = len(body)
+    sirka_px = int(round(sirka * nasobek))
+    for _ in range(pruchody):
+        for i in range(n):
+            j0, j1 = max(0, i - 5), min(n, i + 6)
+            x0, x1 = int(xs[max(0, i - 3)]) - 1, int(xs[min(n - 1, i + 3)]) + 2
+            okno_y = ys[j0:j1]
+            y0 = int(min(okno_y) - rozsah - sirka - 2)
+            y1 = int(max(okno_y) + rozsah + sirka + 3)
+            cil = podklad[y0:y1, x0:x1]
+            puvodni = ys[i]
+            nejlepsi, nejmensi = puvodni, None
+            kandidat = puvodni - rozsah
+            while kandidat <= puvodni + rozsah + 1e-9:
+                ys[i] = kandidat
+                obr = Image.new("L", ((x1 - x0) * nasobek, (y1 - y0) * nasobek), 0)
+                ImageDraw.Draw(obr).line([((xs[j] - x0 + 0.5) * nasobek, (ys[j] - y0 + 0.5) * nasobek) for j in range(j0, j1)],
+                                         fill=255, width=sirka_px, joint="curve")
+                vykres = np.asarray(obr.resize((x1 - x0, y1 - y0), Image.BOX), dtype=np.float32) / 255
+                e = float(np.abs(vykres - cil).sum())
+                if nejmensi is None or e < nejmensi:
+                    nejlepsi, nejmensi = kandidat, e
+                kandidat += krok
+            ys[i] = nejlepsi
+    return list(zip(xs, ys))
+
+
+vystupy = {"portu_10": dolad_vykreslenim(tah_pera(BARVY["portu_10"]), BARVY["portu_10"]),
+           "wood_opf": wood(BARVY["wood_opf"])}
 with open(sys.argv[2], "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["datum", "rada", "hodnota_pct"])

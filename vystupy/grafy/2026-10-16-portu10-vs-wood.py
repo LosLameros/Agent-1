@@ -1,9 +1,9 @@
 """Portfolio od Portu 10 vs. WOOD realitní OPF – kumulativní zhodnocení v %, Portu vzhled.
 
-Data: odečtená po pixelech z podkladového grafu (Datawrapper, výřez 1416 × 786 px) skriptem
+Data: odečtená po pixelech z podkladového grafu (Datawrapper, výřez 1354 × 768 px) skriptem
 vystupy/grafy/2026-10-16-portu10-vs-wood-odecet.py do vystupy/grafy/2026-10-16-portu10-vs-wood.csv
 (sloupce datum s časem, rada portu_10 / wood_opf, hodnota_pct). Přesnost zhruba ±0,1 p. b.;
-konce 68,9 % a 28,0 % z popisků v podkladu.
+konce 68,9 % a 28,0 % z popisků v podkladu. WOOD se kreslí schodovitě jako v podkladu.
 Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-16-portu10-vs-wood.py [cesta_k_csv]
 """
 import csv
@@ -33,7 +33,7 @@ osa = (0, 80, 10)
 fig = pg.spojnicovy(
     datumy, rady, osa_y=osa, jednotka="%",
     format_x="%m/%Y", interval_mesicu=6, prvni_mesic=1, rozsah_x=(datumy[0], datumy[-1]),
-    popisky_konec=True, mista_konec=1,
+    popisky_konec=True, mista_konec=1, schody=(NAZVY[1],), tloustka_cary=2.5,  # WOOD roste skokově – svislé skoky, rovné úseky
     zdroj="Graf: Portu, zdroj: Portu, WOOD & Company",
     nadpis="Portfolio od Portu 10 vs. WOOD realitní OPF",
 )

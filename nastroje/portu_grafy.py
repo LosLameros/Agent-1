@@ -308,7 +308,8 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
                rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
-               jazyk="cs", hlavicka=None, vypln=False, prvni_mesic=None):
+               jazyk="cs", hlavicka=None, vypln=False, prvni_mesic=None,
+               tloustka_cary=3.5):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -319,6 +320,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
                    'mesic' pro zkratky měsíců („lis 25“, slovensky „nov 25“) u řad za poslední rok (interval_mesicu=1)
     jazyk        – 'cs' nebo 'sk' (zkratky měsíců na ose x)
     prvni_mesic  – u format_x='%m/%Y' měsíc, od kterého se popisky počítají (1 → 01/2024, 07/2024 …)
+    tloustka_cary – v px (výchozí 3,5); u hustých denních řad za více let 2,5, aby se čára neslévala
     hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
     vypln        – barevný přechod pod čarou první řady (jen na výslovné přání, Portu ho jinak nepoužívá)
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
@@ -337,7 +339,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     konce = []
     for i, (nazev, data) in enumerate(rady.items()):
         xs, hodnoty = data if isinstance(data, tuple) else (x, data)
-        ax.plot(xs, hodnoty, color=barvy[i], linewidth=3.5 / PT, solid_joinstyle="round",
+        ax.plot(xs, hodnoty, color=barvy[i], linewidth=tloustka_cary / PT, solid_joinstyle="round",
                 drawstyle="steps-post" if nazev in schody else "default", zorder=3 + len(rady) - i)
         if vypln and i == 0:
             _vypln(ax, xs, hodnoty, barvy[i], osa_y[0])

@@ -54,6 +54,8 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 - Osa y s kulatými hodnotami a pravidelným krokem. Když řada klesá pod nulu, tmavá je čára nuly, ne spodní okraj.
 - **Poslední hodnota vpravo za koncem čáry** (`popisky_konec=True`), u více řad v barvě řady a s automatickým odsunutím blízkých hodnot („3,8 %" nad „3,4 %").
 - Sazby centrálních bank schodovitě podle data změny (`schody=('název řady',)`), ne šikmou čarou mezi měsíci.
+- **Hlavička s velkým číslem** (kurzy, ceny, indexy): pod nadpisem poslední hodnota velkým tučným písmem, vedle změna za období v zelené Portu (`▼ −3,56 % (−0,0414) za 1 rok`) a pod tím fialový popis („Referenční kurz ECB k 15. 10. 2026“) – `hlavicka=(hodnota, změna, popis)`. Vzor: `vystupy/grafy/2026-10-16-eurusd.png`.
+- **Barevný přechod pod čarou** (`vypln=True`) jen na výslovné přání; jinak Portu přechody nepoužívá.
 - **Anotace událostí:** bod na čáře, krátká svislá šedá linka a popisek pod bodem nebo nad ním. Nejvýš 2–3 anotace. Popisek nesmí překrýt čáru.
 
 **Sloupcový graf** (`pg.sloupcovy`)

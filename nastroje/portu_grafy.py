@@ -71,6 +71,8 @@ _ADRESAR = os.path.dirname(os.path.abspath(__file__))
 _PISMO = os.path.join(_ADRESAR, "fonty", "RethinkSans.ttf")
 font_manager.fontManager.addfont(_PISMO)
 _RODINA = font_manager.FontProperties(fname=_PISMO).get_name()
+_TUCNE = font_manager.FontProperties(fname=os.path.join(_ADRESAR, "fonty", "RethinkSans-Bold.ttf"))
+_STREDNI = font_manager.FontProperties(fname=os.path.join(_ADRESAR, "fonty", "RethinkSans-Medium.ttf"))
 plt.rcParams.update({
     "font.family": _RODINA,
     "axes.unicode_minus": True,
@@ -106,10 +108,11 @@ def _fy(px_shora: float) -> float:
     return 1 - px_shora / VYSKA_PX
 
 
-def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = None):
-    vyska = VYSKA_PX + (70 if nadpis else 0)
+def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = None, navic: int = 0):
+    """navic = další výška hlavičky pod nadpisem (např. pro velké číslo, viz _hlavicka_cislo)."""
+    posun = (70 if nadpis else 0) + navic
+    vyska = VYSKA_PX + posun
     fig = plt.figure(figsize=(SIRKA_PX / DPI, vyska / DPI), dpi=DPI, facecolor=POZADI)
-    posun = 70 if nadpis else 0
 
     def fy(px):
         return 1 - (px + posun) / vyska
@@ -123,9 +126,47 @@ def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = 
     ax.set_axisbelow(True)
     fig._portu = {"fy": fy, "vyska": vyska}
     if nadpis:
-        fig.text(_fx(GRAF_LEVA - 80), fy(-40), nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
+        fig.text(_fx(GRAF_LEVA - 80), 1 - 30 / vyska, nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
                  ha="left", va="center")
     return fig, ax
+
+
+HLAVICKA_PX = 110  # výška hlavičky s velkým číslem
+
+
+def _hlavicka_cislo(fig, hodnota, zmena, popis, barva_zmeny=None):
+    """Velké číslo s poslední hodnotou, vedle změna (např. „▼ −3,56 % (−0,0414) za 1 rok“), pod tím popis."""
+    vyska = fig._portu["vyska"]
+    x = _fx(GRAF_LEVA - 80)
+    t = fig.text(x, 1 - 122 / vyska, hodnota, fontsize=64 / PT, color=TEXT_TMAVY, fontproperties=_TUCNE,
+                 ha="left", va="baseline")
+    sirka = t.get_window_extent(renderer=fig.canvas.get_renderer()).width
+    barva = barva_zmeny or ZELENA
+    x_zmena = x + _fx(sirka + 24)
+    if zmena[:1] in ("▼", "▲"):  # Rethink Sans šipky nemá – trojúhelník jako tvar
+        fig.add_artist(Line2D([x_zmena + _fx(9)], [1 - 111 / vyska], transform=fig.transFigure, linestyle="none",
+                              marker="v" if zmena[0] == "▼" else "^", markersize=13 / PT, color=barva))
+        zmena, x_zmena = zmena[1:].lstrip(), x_zmena + _fx(28)
+    fig.text(x_zmena, 1 - 120 / vyska, zmena, fontsize=26 / PT, color=barva,
+             fontproperties=_STREDNI, ha="left", va="baseline")
+    fig.text(x, 1 - 160 / vyska, popis, fontsize=PISMO_LEGENDA, color=FIALOVA, ha="left", va="center_baseline")
+
+
+def _vypln(ax, xs, hodnoty, barva, dolni):
+    """Barevný přechod pod čarou: u čáry 35 % krytí, dole do bílé."""
+    import numpy as np
+    from matplotlib.colors import to_rgb
+    from matplotlib.patches import Polygon
+    xn = mdates.date2num(xs)
+    body = [(xn[0], dolni)] + list(zip(xn, hodnoty)) + [(xn[-1], dolni)]
+    tvar = Polygon(body, closed=True, facecolor="none", edgecolor="none")
+    ax.add_patch(tvar)
+    r, g, b = to_rgb(barva)
+    prechod = np.zeros((256, 1, 4))
+    prechod[:, 0, 0], prechod[:, 0, 1], prechod[:, 0, 2] = r, g, b
+    prechod[:, 0, 3] = np.linspace(0.35, 0.0, 256)
+    obr = ax.imshow(prechod, aspect="auto", extent=[xn[0], xn[-1], dolni, max(hodnoty)], origin="upper", zorder=1)
+    obr.set_clip_path(tvar)
 
 
 def _osa_y(ax, osa_y, jednotka, mista_osa):
@@ -267,7 +308,7 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
                rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
-               jazyk="cs"):
+               jazyk="cs", hlavicka=None, vypln=False):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -277,6 +318,8 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny,
                    'mesic' pro zkratky měsíců („lis 25“, slovensky „nov 25“) u řad za poslední rok (interval_mesicu=1)
     jazyk        – 'cs' nebo 'sk' (zkratky měsíců na ose x)
+    hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
+    vypln        – barevný přechod pod čarou první řady (jen na výslovné přání, Portu ho jinak nepoužívá)
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
     schody       – názvy řad kreslených schodovitě (sazby centrálních bank platné do další změny)
@@ -286,13 +329,17 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     jednotka_konec – jednotka koncového popisku, když se liší od osy (např. 'b.' u indexu – mezeru před ní doplní cislo())
     """
     barvy = barvy or BARVY
-    fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis)
+    fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis, navic=HLAVICKA_PX if hlavicka else 0)
+    if hlavicka:
+        _hlavicka_cislo(fig, *hlavicka)
     _osa_y(ax, osa_y, jednotka, mista_osa)
     konce = []
     for i, (nazev, data) in enumerate(rady.items()):
         xs, hodnoty = data if isinstance(data, tuple) else (x, data)
         ax.plot(xs, hodnoty, color=barvy[i], linewidth=3.5 / PT, solid_joinstyle="round",
                 drawstyle="steps-post" if nazev in schody else "default", zorder=3 + len(rady) - i)
+        if vypln and i == 0:
+            _vypln(ax, xs, hodnoty, barvy[i], osa_y[0])
         if popisky_konec:
             konce.append([h for h in hodnoty if h is not None][-1])
     if konce:

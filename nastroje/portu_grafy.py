@@ -308,7 +308,7 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
                rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
-               jazyk="cs", hlavicka=None, vypln=False):
+               jazyk="cs", hlavicka=None, vypln=False, prvni_mesic=None):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -318,6 +318,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     format_x     – '%m/%Y' (12/2024) pro víceleté řady po půlroce, '%Y' pro roky, '%-d. %-m.' pro dny,
                    'mesic' pro zkratky měsíců („lis 25“, slovensky „nov 25“) u řad za poslední rok (interval_mesicu=1)
     jazyk        – 'cs' nebo 'sk' (zkratky měsíců na ose x)
+    prvni_mesic  – u format_x='%m/%Y' měsíc, od kterého se popisky počítají (1 → 01/2024, 07/2024 …)
     hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
     vypln        – barevný přechod pod čarou první řady (jen na výslovné přání, Portu ho jinak nepoužívá)
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
@@ -373,7 +374,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         ax.xaxis.set_major_locator(mdates.YearLocator(interval_let))
     else:
         # popisky od prvního měsíce řady (12/2024, 06/2025, 12/2025 …)
-        prvni = (rozsah_x[0] if rozsah_x else x[0]).month
+        prvni = prvni_mesic or (rozsah_x[0] if rozsah_x else x[0]).month
         mesice = sorted({(prvni - 1 + k * interval_mesicu) % 12 + 1 for k in range(max(1, 12 // interval_mesicu))})
         ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=mesice))
     if format_x == "mesic":

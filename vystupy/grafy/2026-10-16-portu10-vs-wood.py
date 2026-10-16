@@ -1,8 +1,8 @@
 """Portfolio od Portu 10 vs. WOOD realitní OPF – kumulativní zhodnocení v %, Portu vzhled.
 
-Data: CSV z Datawrapperu („Get the data“ pod původním grafem) uložené jako
-podklady/grafy/portu10-vs-wood.csv. Skript načte první sloupec jako datum a další dva sloupce
-jako řady (Portu CZK Model Portfolio 10, WOOD and Co Realitní OPF) v pořadí, v jakém v CSV jsou.
+Data: odečtená po pixelech z podkladového grafu (Datawrapper) do vystupy/grafy/2026-10-16-portu10-vs-wood.csv
+(přesnost zhruba ±0,5 procentního bodu). Když bude k dispozici CSV z Datawrapperu („Get the data“), stačí ho
+předat jako argument – skript načte první sloupec jako datum a další dva jako řady (Portu 10, WOOD OPF).
 Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-10-16-portu10-vs-wood.py [cesta_k_csv]
 """
 import csv
@@ -12,7 +12,7 @@ import sys
 sys.path.insert(0, "nastroje")
 import portu_grafy as pg  # noqa: E402
 
-VSTUP = sys.argv[1] if len(sys.argv) > 1 else "podklady/grafy/portu10-vs-wood.csv"
+VSTUP = sys.argv[1] if len(sys.argv) > 1 else "vystupy/grafy/2026-10-16-portu10-vs-wood.csv"
 ZAKLAD = "vystupy/grafy/2026-10-16-portu10-vs-wood"
 NAZVY = ["Portfolio od Portu 10", "WOOD & Company realitní OPF"]
 
@@ -43,13 +43,10 @@ for k, nazev in enumerate(NAZVY, start=1):
     rady[nazev] = ([d for d, _ in body], [v for _, v in body])
 print("sloupce v CSV:", hlavicka, "| období:", datumy[0], "–", datumy[-1])
 
-maximum = max(max(v) for _, v in rady.values())
-minimum = min(min(v) for _, v in rady.values())
-krok = 10
-osa = (min(0, krok * (minimum // krok)), krok * (maximum // krok + 1), krok)
+osa = (0, 80, 10)
 fig = pg.spojnicovy(
     datumy, rady, osa_y=osa, jednotka="%",
-    format_x="%m/%Y", interval_mesicu=6, rozsah_x=(datumy[0], datumy[-1]),
+    format_x="%m/%Y", interval_mesicu=6, prvni_mesic=1, rozsah_x=(datumy[0], datumy[-1]),
     popisky_konec=True, mista_konec=1,
     zdroj="Graf: Portu, zdroj: Portu, WOOD & Company",
     nadpis="Portfolio od Portu 10 vs. WOOD realitní OPF",

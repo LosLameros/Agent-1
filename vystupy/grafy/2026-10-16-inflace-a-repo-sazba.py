@@ -42,5 +42,6 @@ fig = pg.spojnicovy(
     format_x="%Y", interval_let=2, rozsah_x=(ZACATEK, KONEC),
     schody=("2T repo sazba ČNB",), popisky_konec=True,
     zdroj="Zdroj: ČNB, ČSÚ, vygenerováno AI",
+    nadpis="Vývoj meziroční inflace ČR a dvoutýdenní repo sazby ČNB",
 )
 pg.uloz(fig, ZAKLAD + ".png")

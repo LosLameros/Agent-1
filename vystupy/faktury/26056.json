@@ -1,17 +1,31 @@
 {
   "cislo": "26056",
   "rezim": "CZ",
-  "datum_vystaveni": "2026-10-17",
+  "datum_vystaveni": "2026-10-16",
   "duzp": "2026-10-17",
-  "splatnost_dni": 10,
+  "splatnost_dni": 7,
   "odberatel": {
     "nazev": "JETI model s.r.o.",
-    "adresa": ["Lomená 1530", "74258 Příbor", "Česká republika"],
+    "adresa": [
+      "Lomená 1530",
+      "74258 Příbor",
+      "Česká republika"
+    ],
     "ico": "26825147",
     "dic": "CZ26825147"
   },
   "polozky": [
-    {"pocet": 750, "jednotka": "ks", "popis": "Hlava knyplíku V5", "cena": "42.00"},
-    {"pocet": 100, "jednotka": "ks", "popis": "Klíč V-2", "cena": "32.00"}
+    {
+      "pocet": 750,
+      "jednotka": "ks",
+      "popis": "Hlava knyplíku V5",
+      "cena": "42.00"
+    },
+    {
+      "pocet": 100,
+      "jednotka": "ks",
+      "popis": "Klíč V-2",
+      "cena": "32.00"
+    }
   ]
 }

@@ -22,7 +22,7 @@ with open(ZAKLAD + ".csv", encoding="utf-8") as f:
 
 fig = pg.spojnicovy(
     datumy, {"Meziroční inflace": inflace},
-    osa_y=(-3, 10, 1), jednotka="%", barvy=[pg.ZELENA],
+    osa_y=(-3, 10, 1), jednotka="%", barvy=[pg.FIALOVA],
     format_x="%Y", interval_let=2, rozsah_x=(dt.date(2000, 1, 1), dt.date(2026, 10, 1)),
     popisky_konec=True,
     zdroj="Graf: Portu, zdroj: BLS",

@@ -26,7 +26,7 @@ Jeden z typů obsahu (případně kombinaci):
 
 ## Struktura příspěvku
 
-Post je **souvislý analytický text ve 4–6 odstavcích**, ne seznam bodů. Odstavce na sebe navazují jako argument, chronologicky a logicky:
+Post je **souvislý analytický text v krátkých odstavcích**, ne seznam bodů. Počet odstavců určuje téma. Odstavce na sebe navazují jako argument, chronologicky a logicky. Níže je pořadí částí; kratší post nepotřebuje všechny, často stačí fakt s rozkladem, postřeh a závěr:
 
 1. **Fakt a jeho rozklad (1. odstavec)** — začni rovnou hlavní zprávou s číslem („Stát včera vydal Flexi Bondy za 44,6 miliardy korun…“). Hned v něm čísla rozlož a vysvětli, z čeho se skládají a proč (např. celkový objem vs. plán → kolik jsou nové peníze → kolik se převedlo z minulé emise a proč → co by to znamenalo bez nich). Postřeh má zaznít už v prvních ~200 znacích, které LinkedIn ukáže před „…více“.
 
@@ -38,7 +38,7 @@ Post je **souvislý analytický text ve 4–6 odstavcích**, ne seznam bodů. Od
 
 ## Délka a forma
 
-- **Obvykle 1 200–1 800 znaků včetně mezer.** Autor dává přednost úplnosti a srozumitelnosti před krátkostí — každá věta ale musí nést informaci. Kratší post (kolem 800 znaků) jen tehdy, když si o něj řekne nebo když téma víc neunese.
+- **Délka není pevně daná, řídí se tématem.** Většina postů bude kratší. Delší post (vzor o Flexi Bondu má asi 1 750 znaků a je výjimečně dlouhý) jen tehdy, když téma potřebuje vysvětlit mechanismus. Každá věta musí nést informaci; srozumitelnost má přednost před krátkostí, ale nic nenatahuj. Tvrdý strop je limit LinkedInu 3 000 znaků.
 - Odstavce o 3–5 větách, prázdný řádek mezi nimi.
 - **Časové údaje vztahuj k datu zveřejnění postu**, ne k datu výstupu. Autor obvykle publikuje den po výstupu, takže „včera“. Když datum zveřejnění neznáš, zeptej se nebo to uveď v poznámkách.
 - Věty krátké a jednoznačné, aktivní rod, žádná dlouhá souvětí.
@@ -89,4 +89,4 @@ Pokud tě o to uživatel požádá, ulož post do `vystupy/linkedin/RRRR-MM-DD-t
 - [ ] Pochází každé číslo z podkladu nebo ověřeného zdroje? Dopočty jsou označené v poznámkách?
 - [ ] Žádné šipky, odrážky, mezititulky, hashtagy, disclaimer, „byl jsem v TV“, vynucený Portu?
 - [ ] Žádné investiční doporučení, žádný slib výnosu?
-- [ ] Sedí „včera/dnes“ k datu zveřejnění? Délka zhruba 1 200–1 800 znaků?
+- [ ] Sedí „včera/dnes“ k datu zveřejnění? Neobsahuje post nic, co by šlo vypustit bez ztráty srozumitelnosti?

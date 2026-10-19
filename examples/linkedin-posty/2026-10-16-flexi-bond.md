@@ -42,4 +42,4 @@ Nejde o investiční doporučení. Minulá výkonnost není zárukou budoucích 
 - Konkrétní výhody i nevýhody produktu (bez daně, do 3 mil. Kč bez podmínek × výběr jen jednou za 3 měsíce na žádost předem).
 - Závěr jako vyústění argumentu, ne slogan.
 - Pryč: šipky, řečnické mezititulky, „hvězdičky“, výhled na další emisi, reklama na Portu, disclaimer, hashtagy.
-- Délka: autor nakonec preferoval úplnost a srozumitelnost před krátkostí (cca 1 750 znaků).
+- Délka: cca 1 750 znaků. Tento post je **výjimečně dlouhý**, protože téma vyžadovalo vysvětlit mechanismus; běžné posty budou kratší. Délka není podmínkou.

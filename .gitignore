@@ -3,3 +3,7 @@ podklady/revize-portfolii/*
 !podklady/revize-portfolii/README.md
 vystupy/revize-portfolii/*
 !vystupy/revize-portfolii/.gitkeep
+__pycache__/
+
+# komerční písmo ZFP akademie (Fedra Sans Pro) – licencované, do repozitáře nepatří
+podklady/zfpa-pismo/

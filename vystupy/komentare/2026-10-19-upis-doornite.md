@@ -17,7 +17,7 @@ Očekávání úpis nesplnil. DOORNITE prodal 65 270 akcií, tedy zhruba třetin
 
 ## Co říká finální objem poptávky a její rozložení podle cen o zájmu investorů?
 
-Poptávka pokryla jen třetinu nabídky, takže nikdo nebyl krácen a každý investor dostal tolik akcií, kolik chtěl. Kniha objednávek se přitom plnila pomalu, po prvním týdnu v ní byly objednávky na 36,6 tisíce akcií. [DOPLNIT: rozložení objednávek podle cen z knihy objednávek, například „Naprostá většina objednávek přitom stála na spodní hranici 400 Kč, nad 450 Kč bylo jen X % poptávky.“] Zájem tedy existoval, ale jen v objemu, který na plán firmy zdaleka nestačil.
+Poptávka pokryla jen třetinu nabídky, takže nikdo nebyl krácen a každý investor dostal tolik akcií, kolik chtěl. Kniha objednávek se přitom plnila pomalu, po prvním týdnu v ní byly objednávky na 36,6 tisíce akcií. Investoři byli navíc citliví na cenu. Zhruba 40 tisíc akcií, tedy přes 60 % poptávky, objednali přesně za spodní hranici 400 Kč a střed pásma 450 Kč nebo více bylo ochotno zaplatit jen asi 10 % poptávky. Zájem tedy existoval, ale jen v objemu, který na plán firmy zdaleka nestačil.
 
 ## Jak hodnotíš výslednou cenu úpisu vzhledem k původnímu pásmu 400-500 Kč?
 
@@ -31,8 +31,13 @@ Podle mě výsledek ukazuje, že investoři cenu nepovažovali za výhodnou, i k
 
 **Pouze pro autora, neposílat do redakce:**
 
-**Doplnit:**
-- Rozložení objednávek podle cen (druhá odpověď). Veřejně jsem ho nenašel. Je v knize objednávek na https://pxupis.pse.cz/offers/detail/24 (přihlášení jako host), ale stránku jsem nedokázal načíst. Pokud data nebudou k dispozici, větu v hranatých závorkách vynech, odpověď drží i bez ní.
+**Doplnit:** Žádné.
+
+**Rozložení poptávky podle cen** (odečteno z grafu knihy objednávek na pxupis.pse.cz, snímek od autora asi 2 hodiny před koncem nabídky, tedy kolem 10:00 dne 19. 10. 2026; hodnoty jsou přibližné):
+- kumulovaná poptávka za 400 Kč: asi 65 000 ks (odpovídá konečným 65 270 ks), z toho přesně za 400 Kč asi 40 000 ks (asi 62 %),
+- objednávky nad 400 Kč: asi 24 000 ks, nejvíce těsně nad spodní hranicí (402 Kč asi 2 500 ks, 404 Kč asi 10 000 ks),
+- za 450 Kč a více: asi 6 500 ks (asi 10 %), za 500 Kč: asi 3 000 ks (asi 5 %).
+Konečný stav knihy po 12:00 se mohl mírně lišit, celkový objem ale odpovídá.
 
 **Body k ověření:**
 - **Národní rozvojová investiční (NRI):** prospekt uvádí, že firma zvažuje smlouvu s NRI na úpis až 30 % nabízených akcií (až 60 000 ks), a zmiňuje i možnou investici fondu CZEGG VENTURES (podfond STARTEEPO). Zda se kdokoli z nich úpisu zúčastnil, jsem nenašel. Pokud ano, tvořil by velkou část z 65 270 prodaných akcií a obraz zájmu drobných investorů by to výrazně změnilo. Doporučuji se zeptat firmy nebo novináře.

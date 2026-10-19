@@ -1,0 +1,6 @@
+{"vstup":"puvodni-forward-pe-sp500.webp","vystup":"forward-pe-sp500.png","texty":[
+ {"smaz":[180,998,700,1045],"text":"Forward P/E indeksu S&P 500","x":184,"y":1032,"velikost":36,"barva":"#242424"},
+ {"smaz":[1550,1000,1990,1045],"text":"Wykres: Portu, źródło: Bloomberg","x":1983,"y":1032,"velikost":32,"barva":"#5C5D66","zarovnani":"end"},
+ {"smaz":[1110,738,1400,782],"text":"„Dzień Wyzwolenia”","x":1253,"y":770,"velikost":33,"barva":"#252525","zarovnani":"middle"},
+ {"smaz":[1585,684,1830,730],"text":"Inwazja na Iran","x":1709,"y":721,"velikost":33,"barva":"#242424","zarovnani":"middle"}
+]}

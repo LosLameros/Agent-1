@@ -10,6 +10,7 @@ Repozitář slouží ke psaní newsletterů pro Portu (česko-slovenská investi
 - `.claude/agents/linkedin-posty.md` — subagent `linkedin-posty`, píše krátké a úderné LinkedIn příspěvky (1. osoba, česky) o autorových výstupech v TV/rádiu/podcastech, článcích a komentářích v médiích: hook → kontext → shrnutí → takeaway → odkaz (bez šipek, mezititulků a hashtagů). Hotové posty (na požádání) ukládá do `vystupy/linkedin/`.
 - `.claude/agents/tv-vystupy.md` — subagent `tv-vystupy`, připravuje na výstupy v TV/rádiu: na okruhy od redakce (a případné poznámky hlavního ekonoma, které ověří) napíše srozumitelné mluvené odpovědi pro běžné diváky a pod každou otázku shrnutí v bodech na naučení. Podklady ukládá do `vystupy/tv/`.
 - `.claude/agents/komentare-do-medii.md` — subagent `komentare-do-medii`, píše odborné komentáře pro novináře (odpověď na otázku, sadu otázek, komentář k události, komentář ke čtvrtletním výsledkům firem) a kontroluje uživatelem přepsané verze. Vzory jsou v `examples/komentare/` (uložené doslova, i s chybami, které agent nemá opakovat), hotové komentáře ukládá do `vystupy/komentare/`. U čtvrtletních výsledků navazuje na komentář ke stejné firmě z minulého čtvrtletí.
+- `.claude/agents/Tisková zpráva o inflaci.md` — subagent `tiskova-zprava-inflace`, píše měsíční tiskovou zprávu o inflaci (ČR + evropské srovnání, „Inflace ve světě“: eurozóna + ECB, USA + Fed, Čína) za poslední ukončený měsíc, vše z Trading Economics. Vzory jsou v `examples/tiskove-zpravy-inflace/` (nejnovější slouží i jako šablona Wordu), hotové zprávy ukládá do `vystupy/tiskove-zpravy-inflace/`. Pořadí ČR v Evropě počítá `nastroje/poradi-inflace.py`, Word vyrábí `nastroje/tz-inflace-do-wordu.py`.
 - `prompts/clanky-portu.md` — master prompt pro články do Portu Magazínu (vstupní proměnné, rešerše, struktura, styl, produktové napojení, compliance, sebekontrola).
 
 ## Styl newsletteru Portu
@@ -30,6 +31,7 @@ Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze 
 ## Spolupráce
 
 - Čtvrtletní zprávy existují ve dvou verzích (`.md` a `.docx` ve `vystupy/ctvrtletni-zpravy/`). Každou úpravu textu proveď v `.md` a hned znovu vygeneruj Word přes `node nastroje/zprava-do-wordu.js <md> <podklady/RRRR-Qn> <docx>`, aby byly obě verze vždy stejné.
+- Tiskové zprávy o inflaci platí totéž: každou úpravu proveď v `.md` ve `vystupy/tiskove-zpravy-inflace/` a hned znovu vygeneruj Word přes `python3 -I nastroje/tz-inflace-do-wordu.py <md> "<TZ inflace - měsíc RRRR.docx>" --autor "Jméno Příjmení" --aum $(node nastroje/portu-aum.js)` (číslo `--aum` je aktuální objem zainvestovaných peněz z portu.cz).
 - Před odesláním čtvrtletní zprávy i každé navržené úpravy (i jen jedné věty) ji zkontroluj podle odborné revize v kapitole 8a promptu `.claude/agents/Čtvrtletní zprávy.md`.
 - Připomínka nebo dotaz od uživatele **neznamená automaticky požadavek na změnu**. Uživatel chce kritický názor a samostatný postoj: nejdřív posuď, zda má připomínka pravdu, a obhaj nebo uprav své řešení podle faktů. Měň jen to, co je opravdu potřeba, a když nesouhlasíš, řekni proč.
 

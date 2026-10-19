@@ -13,5 +13,6 @@ Texty jsou uložené **doslova**. Slouží k tomu, aby agent poznal, na jaké ty
 | `2026-idnes-ipo-spacex.md` | sada otázek k IPO (iDNES) | Úpis SpaceX: vhodnost, přístup drobných investorů, indexy |
 | `2026-parket-seznam-saaspocalypse.md` | osobní sloupek do newsletteru (Parket, Seznam Zprávy) | Obrat nálady u softwarových firem, Meta jako příležitost |
 | `2026-10-ai-agenti-cestovni-platformy.md` | sada otázek, schválená po připomínkách autora | AI agenti (Meta Muse) a Booking, Expedia, Airbnb: fundament, nebo nálada; kdo je ohrožený |
+| `2026-10-upis-doornite.md` | sada otázek k výsledku úpisu, schválená po připomínkách autora | Úpis DOORNITE na trhu Start: výsledek, poptávka podle cen, cena v pásmu, ocenění a dluh |
 
 Nové hotové komentáře ukládá agent do `vystupy/komentare/`. Když uživatel potvrdí, že text odešel do redakce v dané podobě, přesuň nebo zkopíruj jeho finální verzi sem, aby archiv vzorů rostl.

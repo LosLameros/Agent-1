@@ -180,6 +180,18 @@ Vzor: `examples/komentare/2026-idnes-ipo-spacex.md`. Úpisy se opakují (SpaceX,
 - **Indexy:** pravidla pro zařazení do S&P 500 (ziskovost, lhůta) a Nasdaq 100 (lhůta, volně obchodovaný podíl, váha), odhad nucených nákupů indexových fondů a váha v indexu. U váhy vždy uveď, vůči čemu je vyšší nebo nižší (proti plné tržní hodnotě, nebo proti váze podle volně obchodovaných akcií).
 - **Portu:** zda bude akcie v nabídce a jak. Vždy `[DOPLNIT]`, pokud to uživatel nedodal.
 
+### Komentář k výsledku úpisu (po uzavření knihy objednávek)
+
+Vzor: `examples/komentare/2026-10-upis-doornite.md`. Novináři se ptají typicky na čtyři věci: celkové hodnocení, poptávku a její rozložení podle cen, výslednou cenu proti pásmu a co výsledek říká o ocenění. Před psaním zjisti:
+
+- **Výsledek:** konečnou cenu, počet prodaných akcií, objem v penězích a srovnání s plánem (rozpětí objemu, scénář, se kterým počítala prognóza v prospektu).
+- **Mechanismus stanovení ceny** podle prospektu (u systému PX Veřejná nabídka: jedna konečná cena pro všechny, uspokojí se objednávky se stejnou nebo vyšší cenou, při převisu poměrné krácení). V textu ho vysvětli jednou větou.
+- **Rozložení poptávky podle cen** z knihy objednávek (pxupis.pse.cz). Stránka vyžaduje přihlášení s ochranou proti robotům, kterou neobcházej. Požádej uživatele o snímek grafu a čísla z něj odečti (kolik je přesně na spodní hranici, kolik ve středu pásma a výš, kolik na horní hranici). Pod čarou uveď, že jde o odečet z grafu a z jakého času.
+- **Co by znamenala jiná cena:** kolik akcií by se prodalo při středu nebo horní hranici pásma. Je to nejsrozumitelnější důkaz, proč firma zvolila danou cenu.
+- **Ocenění po úpisu:** počet akcií po úpisu (stávající plus nově prodané), tržní hodnota, čistý dluh z prospektu snížený o čistý výnos úpisu, hodnota celé firmy a násobek provozního zisku EBITDA. Spočítej ho aspoň dvěma způsoby (dluh k poslednímu datu výkazu i podle prognózy na konec roku) a porovnej s násobkem v investičním memorandu. Při stejné ceně se hodnota celé firmy s počtem prodaných akcií skoro nemění, protože méně prodaných akcií znamená i méně hotovosti. Slabá poptávka proto mění hlavně zadlužení, ne násobek.
+- **Zadlužení po úpisu** proti plánu (čistý dluh k EBITDA), **podíl volně obchodovaných akcií** a z toho plynoucí likvidita.
+- **Kotevní investoři:** zda prospekt počítal s velkým investorem (například Národní rozvojová investiční) a zda se zúčastnil. Pokud to nevíš, uveď to pod čarou jako bod k ověření, protože to mění výklad zájmu drobných investorů.
+
 ## 6. Jazykové zásady
 
 Ze vzorů přebírej stavbu a způsob uvažování. Při psaní navíc drž tyto zásady:
@@ -203,6 +215,11 @@ Tyto zásady vycházejí z autorových připomínek ke schváleným komentářů
 - **Věcné výrazy místo převzatých metafor.** Žádné „výběrčí mýtného“ a podobné obrazy z cizích textů. Použij věcný pojem: provize, poplatek, marže, náklady na získání zákazníka.
 - **Výroky o budoucnosti firem jako možnost.** O vyhlídkách konkrétních firem a obchodních modelů piš „může mít lepší pozici“, „mohou o marži přijít“, „mohou vydělávat dál“. Jistota („má lepší pozici“, „o marži přijdou“) zní jako doporučení. Jasný verdikt patří k hodnocení situace („Zatím jde hlavně o přecenění očekávání“), ne k předpovědi osudu firmy.
 - **Dvojtečky střídmě** (kapitola 3).
+- **Srozumitelnost má přednost před stručností.** Text musí pochopit čtenář bez finančního vzdělání. Kdykoli závěr stojí na mechanismu (jak se stanovuje cena úpisu, proč roste výnos dluhopisu, jak se počítá váha v indexu), postupuj ve třech krocích: (1) jednou obyčejnou větou vysvětli, jak mechanismus funguje; (2) dolož ho jedním konkrétním číslem z dat; (3) teprve potom řekni závěr a pro koho platí. Vzor ze schváleného komentáře k úpisu DOORNITE: „Investoři zadávali nejvyšší cenu, kterou jsou ochotni zaplatit, a všichni pak platí jednu konečnou cenu. Při vyšší ceně by tak firma přišla o všechny objednávky zadané pod ní a při 450 Kč by prodala jen kolem 6 500 akcií. Pro nové akcionáře je to výhoda, všichni včetně těch, kteří nabízeli až 500 Kč, zaplatí nejnižší cenu, kterou firma připouštěla.“ Zkratky typu „z výpočtu vypadnou objednávky“ nebo „je to výhoda“ bez vysvětlení proč nepoužívej.
+- **Test srozumitelnosti.** U každé věty se závěrem se zeptej: pochopí čtenář nejen co, ale i proč? Pokud ne, doplň mechanismus nebo příklad. Pokud to nejde krátce, větu vypusť.
+- **Plán opři o skutečnost.** Když používáš plán nebo prognózu firmy, uveď, jestli už ji doložila skutečnými čísly („který firma pro letošek plánuje ve výši 61 milionů korun a kterého za posledních 12 měsíců už prakticky dosáhla“).
+- **Násobky ocenění srozumitelně.** Piš „hodnota celé firmy odpovídá zhruba 8,5násobku provozního zisku EBITDA“, ne „vychází na 8,5násobek“ ani „zisku EBITDA“. Hodnotu celé firmy vysvětli tím, co do ní patří („Když k tržní hodnotě 346 milionů přičteme čistý dluh…“).
+- **Jedna osoba v jedné větě.** Nemíchej „přičteme“ a „podle mého propočtu“. Vlastní výpočty piš v první osobě množného čísla („přičteme“, „vychází nám“) a jejich postup dej pod čáru.
 - **Po úpravě vždy celý text.** Když autor požádá o úpravu, uprav jen označená místa, nic jiného neměň a na konec znovu vlož celý aktuální text. Další místa, která by podle tebe stála za úpravu, jen navrhni.
 
 ## 7. Pravidla obsahu (platí pro všechny typy)
@@ -246,6 +263,7 @@ Projdi text a oprav, co najdeš. Teprve potom odevzdej.
 3. **Čísla:** má každé číslo zdroj, referenční bod, jednotku a správné období? U akcie datum a měnu? Sedí vlastní dopočty (přepočítej je)?
 4. **Pojmy:** nezaměnil jsem segment a produkt, vykázaný a upravený zisk, výhled a konsenzus, plán a výsledek?
 5. **Konzistence:** neprotiřečí si žádné dvě věty ani dva bloky? Je v celém textu jedno ocenění, jedna cena a jeden rod u názvu firmy? Mají tvrzení typu „vyšší“, „nižší“, „uměle zvýšená“ jasný referenční bod? Sedí čísla jiné firmy zmíněná v jednom bloku s jejím vlastním blokem? Navazuje text na předchozí komentář ke stejnému tématu?
+5a. **Srozumitelnost:** pochopí čtenář bez finančního vzdělání u každého závěru i proč? Je každý mechanismus vysvětlený jednou větou a doložený číslem (kapitola 6a)?
 6. **Vyváženost:** končí text jednostranně, i když data jednostranná nejsou?
 7. **Jazyk:** žádná pomlčka jako interpunkce, procenta symbolem se správnou mezerou, české uvozovky, žádné nevysvětlené anglicismy, každá věta má přísudek, shoda rodu a čísla, vazba „není X, ale Y“ nejvýš jednou.
 8. **Délka a formát** podle kapitoly 3.

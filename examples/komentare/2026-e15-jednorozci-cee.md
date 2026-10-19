@@ -1,0 +1,21 @@
+# Technologičtí jednorožci v regionu CEE (E15)
+
+- **Typ:** sada otázek od novináře (přes PR tým)
+- **Médium:** E15
+- **Období:** léto 2026
+- **Zadání od PR:** „V e15 připravují téma týkající se žebříčku technologických jednorožců v regionu CEE, kde dominuje Polsko a Česko. Můžeme se zapojit krátkým komentářem. Reakce do zítřejší cca 10:00.“
+
+## 1) Čím je dáno, že je Česko tak dobře zastoupeno v žebříčku?
+
+Klíčovým důvodem je paradoxně malý domácí trh. Polské firmy typu Allegro nebo platebního systému BLIK vyrostly do miliardových hodnot především na téměř čtyřicetimilionovém domácím trhu, česká firma ale musí od prvního dne prodávat do zahraničí, jinak nemá kam růst. Výsledkem je, že tuzemské úspěchy jsou skoro výhradně globálně obchodovatelný software, tedy antivirové programy Avastu a AVG, vývojářské nástroje JetBrains nebo hotelový systém Mews. Nic z toho nepotřebuje český zákazník, aby to fungovalo.
+Druhým faktorem je inženýrská tradice a velmi specifická česká škola kybernetické bezpečnosti, ze které vyrostla celá generace lidí, kteří dnes zakládají další firmy. A třetí věc je pro investora nejzajímavější: část těchto firem vznikla úplně bez rizikového kapitálu. JetBrains s hodnotou sedmi miliard dolarů nikdy nevzal externí investici a rostl z vlastních peněz. To je model, který v Polsku ani v Pobaltí prakticky nevidíme, a znamená, že hodnota firmy zůstala v rukách zakladatelů a zaměstnanců v Česku.
+
+## 2) Překvapil vás něčím ten žebříček?
+
+Nejvíc mě překvapilo, jak moc je české zastoupení historií, a ne přítomností. Ze šesti tuzemských jmen jsou tři už prodaná a dvě z nich, Avast a AVG, jsou navíc stejná rodina, protože Avast koupil AVG v roce 2016. Vysoká pozice Česka tedy stojí hlavně na jedné vlně kybernetické bezpečnosti z devadesátých a nultých let. Polsko má naopak firmy, které jsou dodnes veřejně obchodované a stále rostou. Sporná je i samotná národnost, protože Mews dnes sídlí v Amsterdamu a nejhodnotnější firma žebříčku, ElevenLabs, je vedená jako polská, i když má vedení v Londýně. Ty žebříčky měří spíš původ zakladatelů a umístění vývoje než skutečné sídlo.
+Druhá věc je, že některá ocenění jsou zastaralá. Rohlík je v tabulce veden na 1,2 miliardy dolarů, přitom sám vykazuje hodnotu mírně nad dvě miliardy eur podle nezávislého posudku, který si nechává dělat dvakrát ročně, a tržby, které naposledy vzrostly o 34,2 % na 1,114 miliardy eur. Nejvíc rostoucí české aktivum je tedy v žebříčku podhodnocené o polovinu. A pak jsou tu absence. Chybí FTMO, které v prosinci koupilo globálního brokera OANDA, i Productboard, jehož ocenění 1,72 miliardy dolarů pochází z února 2022 a metodika ho vyřadila jako valuaci z éry levných peněz. To je poctivý přístup, ale zároveň dobrá připomínka, jak křehká celá kategorie jednorožců je.
+
+## 3) Vidíte startupy nebo obory, v nichž se může Česko prosadit s dalšími unicorny?
+
+Nejsilnější českou linií zůstává kybernetická bezpečnost a nástroje pro vývojáře, tedy přesně to, co Česko umí třicet let. Nejzřetelnějším kandidátem je dnes Exaforce, firma s americkým a českým zakladatelem, která staví inženýrské jádro v Praze a v květnu získala 125 milionů dolarů, celkem už dvě stě milionů, od velkých fondů ze Silicon Valley. Druhým oborem je logistický a obchodní software prodávaný jako produkt, nikoli jako služba. Rohlík se právě posouvá z kategorie online supermarketu do technologické skupiny, odděluje software Veloq pro další obchodníky a v posledním kvartálu fiskálního roku poprvé vykázal provozní zisk. Vstup na burzu plánuje nejdřív v roce 2027, a to nejspíš ve Frankfurtu, Londýně nebo Amsterdamu.
+Pro běžného investora z toho ale vyplývá jedna nepříjemná věc. Skoro nic z české technologické hodnoty se dnes nedá koupit, protože je buď v soukromých rukách, nebo už prodaná zahraničnímu vlastníkovi. Zastoupení regionu se v praxi kupuje na varšavské burze, ne na pražské. Zlomem by byl právě vstup Rohlíku na trh, který by ale téměř jistě neproběhl v Praze, protože kapitál pro technologické firmy je dnes v Americe. Nasdaq měl letos s 129,3 miliardy dolarů z nových emisí nejsilnější první pololetí v historii amerických burz a v červenci na něj zamířila i italská softwarová firma Bending Spoons. Dokud tenhle rozdíl v likviditě zůstane, budou česká technologická jména vznikat doma a zhodnocovat se jinde.

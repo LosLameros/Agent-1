@@ -31,7 +31,9 @@ for(let raw of lines){
   if(l==='**Komentář k vývoji portfolií**'){ kids.push(new Paragraph({spacing:{after:360},children:[new TextRun({text:'Komentář k vývoji portfolií',size:22,color:'666666'})]})); continue;}
   if(l.startsWith('## ')){ const first=kids.length<4; kids.push(new Paragraph({heading:first?HeadingLevel.HEADING_1:HeadingLevel.HEADING_2,children:[new TextRun(l.slice(3))]})); continue;}
   if(l.startsWith('- ')){ kids.push(new Paragraph({numbering:{reference:'b',level:0},children:runs(l.slice(2))})); continue;}
-  const f0=imgFor(l); if(f0){ const f=f0; const [w,h]=pngSize(f); const W=600; kids.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:120,after:120},children:[new ImageRun({type:'png',data:fs.readFileSync(f),transformation:{width:W,height:Math.round(W*h/w)}})]})); continue;}
+  const f0=imgFor(l); if(f0){ const f=f0;
+    // Grafy v novém vzhledu (vykreslené z grafy-data.json) nemají nadpis v obrázku – doplň ho nad graf.
+    if(fs.existsSync(CHARTS+'/grafy-data.json')) kids.push(new Paragraph({keepNext:true,spacing:{before:240,after:60},children:[new TextRun({text:l.slice('**[GRAF V PŘÍLOZE: '.length,-3),bold:true})]})); const [w,h]=pngSize(f); const W=600; kids.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{before:120,after:120},children:[new ImageRun({type:'png',data:fs.readFileSync(f),transformation:{width:W,height:Math.round(W*h/w)}})]})); continue;}
   if(l.startsWith('**[DOPLŇKOVÝ GRAF:')){ const [t,d='',src='']=l.slice('**[DOPLŇKOVÝ GRAF:'.length,-3).split('|').map(x=>x.trim()); const bd={style:BorderStyle.SINGLE,size:6,color:GREEN,space:4};
     const box={border:{top:bd,bottom:bd,left:bd,right:bd},shading:{fill:'F1F8F3',type:'clear',color:'auto'}};
     kids.push(new Paragraph({...box,spacing:{before:120},children:[new TextRun({text:'[NÁVRH GRAFU PRO SAZBU] Doplňkový graf: '+t,bold:true})]}));

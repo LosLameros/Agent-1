@@ -3,7 +3,7 @@
 - **Typ:** komentář ke čtvrtletním výsledkům (typ D)
 - **Datum:** 21. 10. 2026, po zveřejnění výsledků po skončení obchodování
 - **Stav:** schváleno autorem („Takhle to má vypadat!“) po třech kolech úprav
-- **Délka:** 354 slov, tři odstavce. Toto je cílová délka a stavba pro komentář k výsledkům jedné firmy. Třetí odstavec (akcie třídy C) autor dodatečně dvakrát vrátil, viz bod 4 níže.
+- **Délka:** 358 slov, tři odstavce. Toto je cílová délka a stavba pro komentář k výsledkům jedné firmy. Třetí odstavec (akcie třídy C) autor dodatečně dvakrát vrátil, viz bod 4 níže.
 
 ## Meta
 

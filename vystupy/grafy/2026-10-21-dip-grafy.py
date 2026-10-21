@@ -14,7 +14,9 @@ import portu_grafy as pg  # noqa: E402
 MODEL = "vystupy/grafy/2026-10-21-dip-model.xlsx"
 wb = openpyxl.load_workbook(MODEL, data_only=True)
 pred = wb["Předpoklady"]
-VKLAD, VYNOS, USPORA = pred["B4"].value, pred["B5"].value, pred["B12"].value
+VKLAD, VYNOS, USPORA = pred["B4"].value, pred["B5"].value, pred["B14"].value
+POPLATEK_DIP, SLEVA = pred["B9"].value, pred["B10"].value
+POPLATEK_FIX = pred["C18"].value  # poplatek mimo DIP po slevě v nejnižším pásmu (do 0,5 mil. Kč)
 roky = [r for r in wb["Roky"].iter_rows(min_row=2, max_row=32, values_only=True)]
 if any(v is None for r in roky for v in r[:8]):
     sys.exit("Excel nemá spočítané hodnoty – nejdřív ho přepočítejte (otevřít a uložit, nebo recalc.py).")
@@ -34,15 +36,19 @@ def kc(v):
 def graf(horizont, krok_x, osa_y):
     data = roky[: horizont + 1]
     let = [r[0] for r in data]
-    fig, ax = pg._platno(pg.GRAF_DOLNI_1RADEK, nadpis=f"Kolik můžete mít za {horizont} let", navic=86)
+    fig, ax = pg._platno(pg.GRAF_DOLNI_1RADEK, nadpis=f"Kolik můžete mít za {horizont} let", navic=122)
     vyska = fig._portu["vyska"]
     x_text = pg._fx(pg.GRAF_LEVA - 80)
     fig.text(x_text, 1 - 84 / vyska,
              f"Při investici {pg.cislo(VKLAD, 0)} Kč měsíčně • výnos {pg.cislo(VYNOS * 100, 0, '%')} p. a. • "
              f"daňová úspora {pg.cislo(USPORA, 0)} Kč ročně", fontsize=pg.PISMO_LEGENDA, color=pg.TEXT_SEDY,
              va="center")
+    fig.text(x_text, 1 - 120 / vyska,
+             f"Poplatky: DIP {pg.cislo(POPLATEK_DIP * 100, 1, '%')} ročně • mimo DIP s fixací "
+             f"{pg.cislo(POPLATEK_FIX * 100, 1, '%')} ročně (sleva {pg.cislo(SLEVA * 100, 0, '%')}), s objemem klesá",
+             fontsize=pg.PISMO_LEGENDA, color=pg.TEXT_SEDY, va="center")
     vyhoda, vyhoda_reinv = data[-1][6], data[-1][7]
-    fig.text(x_text, 1 - 128 / vyska,
+    fig.text(x_text, 1 - 164 / vyska,
              f"Výhoda DIPu: +{kc(vyhoda)}   •   s reinvestovanou úsporou: +{kc(vyhoda_reinv)}",
              fontsize=pg.PISMO_LEGENDA, color=pg.ZELENA, fontproperties=pg._STREDNI, va="center")
 

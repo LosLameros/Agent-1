@@ -8,18 +8,17 @@
 
 ## Meta
 
-Meta vykázala za třetí čtvrtletí tržby 64,6 mld. USD, meziročně o 26 % více a zhruba o 2 % nad konsenzem 63,4 mld. USD. Průměrná cena reklamy vzrostla o 14 % a jejich počet o 10 %, Meta tedy víc vydělává tím, že reklamu umí lépe zacílit. To je zatím nejpřímější doklad, že se investice do umělé inteligence v hlavním byznysu vracejí. Zisk na akcii 3,83 USD srazil jednorázový náklad 9,89 mld. USD na urovnání sporů o dopad sociálních sítí na dospívající, bez něj by činil 7,40 USD. Výhled tržeb na čtvrté čtvrtletí 73 až 76 mld. USD má střed o 1,3 % nad konsenzem 73,57 mld. USD a akcie po skončení obchodování posilovaly [DOPLNIT: % a čas].
+Meta vykázala za třetí čtvrtletí tržby 64,6 mld. USD, meziročně o 26 % více a zhruba o 2 % nad konsenzem 63,4 mld. USD. Průměrná cena reklamy vzrostla o 14 % a jejich počet o 10 %, Meta tedy víc vydělává tím, že reklamu umí lépe zacílit. Zisk na akcii 3,83 USD srazil jednorázový náklad 9,89 mld. USD na urovnání sporů o dopad sociálních sítí na dospívající, bez něj by činil 7,40 USD. Bez této položky by provozní marže dosáhla 35 % proti 40 % před rokem, protože náklady rostly o 36 %, tedy rychleji než tržby.
 
-Pod povrchem ale náklady rostou rychleji než tržby. Bez jednorázové položky se zvýšily o 36 % a provozní marže klesla ze 40 % na 35 %. Kapitálové výdaje dosáhly 34,9 mld. USD, tedy 54 % tržeb proti 38 % před rokem, a volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, se propadly do záporu. Aby Meta splnila aspoň spodní hranici celoročního výhledu investic 135 mld. USD, musí ve čtvrtém čtvrtletí utratit nejméně 49 mld. USD, o 40 % víc než ve třetím.
+Akcie po skončení obchodování posílily zhruba o 4 %. Trh ocenil hlavně výhled tržeb na čtvrté čtvrtletí 73 až 76 mld. USD, jehož střed je o 1,3 % nad konsenzem 73,57 mld. USD, a slib silného růstu tržeb po celý rok 2027. Rostoucí cena reklamy navíc dokládá, že se investice do umělé inteligence v hlavním byznysu už vracejí, a investoři proto snáz přijali, že Meta zvýšila výhled kapitálových výdajů. Spodní hranici letošního výhledu posunula ze 130 na 135 mld. USD při nezměněné horní hranici 145 mld. USD. Aby ji splnila, musí ve čtvrtém čtvrtletí investovat nejméně 49 mld. USD, o 40 % víc než ve třetím. Už teď investice tvoří 54 % tržeb proti 38 % před rokem a volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, se propadly do záporu.
 
-Nejdůležitější zprávou dne ale mohou být nové akcie třídy C bez hlasovacích práv, které Meta od ledna rozdá akcionářům v poměru jedna ku jedné. Hodnota podílů se tím nezmění. Firma je ale chce používat k získávání kapitálu, takže může investice do umělé inteligence financovat vydáváním nových akcií, aniž by Mark Zuckerberg ztratil kontrolu. Pro akcionáře to znamená riziko naředění, na každou stávající akcii by pak připadal menší díl zisku. Podle mě Meta potvrdila, že umělá inteligence už v reklamě vydělává, ale účet za ni bude vyšší a delší, než trh doufal. Rozhodující bude, jestli tržby porostou rychleji než náklady.
+Neméně důležité jsou nové akcie třídy C bez hlasovacích práv, které Meta od ledna rozdá akcionářům v poměru jedna ku jedné. Hodnota podílů se tím nezmění, firma je ale chce používat k získávání kapitálu. Může tak investice do umělé inteligence financovat vydáváním nových akcií, aniž by Mark Zuckerberg ztratil kontrolu, pro akcionáře to ale znamená riziko naředění. Meta tak potvrdila, že umělá inteligence už v reklamě vydělává, zároveň ale naznačila, že účet za ni bude vyšší a delší, než trh doufal. Rozhodující pro další čtvrtletí bude, jestli tržby porostou rychleji než náklady a jaký výhled investic firma dá na rok 2027.
 
 ---
 
 **Pouze pro autora, neposílat do redakce:**
 
-**Doplnit:**
-- Pohyb akcií po skončení obchodování a čas. Zdroje se zatím liší: CNBC/Yahoo „o více než 3 %“, 24/7 Wall St nejdřív „asi 2 %“, později „asi 5 %“. Doplň číslo k okamžiku odeslání.
+**Doplnit:** Žádné. Pohyb akcií po zavření trhu (+4 %) dodal autor; zdroje uváděly 2 až 5 % podle času (Benzinga +3,12 % na 719,30 USD, Bloomberg asi 4 %).
 
 **Body k ověření:**
 - **Konsenzus zisku na akcii jsem do textu nedal.** Odhady se rozcházejí podle toho, zda zahrnují jednorázový náklad: LSEG 5,75 USD (CNBC sama uvádí, že nemusí být srovnatelný), 24/7 Wall St 6,80 USD. Očištěných 7,40 USD by bylo nad oběma, ale bez jistého srovnatelného konsenzu to nepíšu. Pokud máš konsenzus z Bloombergu bez jednorázové položky, lze doplnit větu „a překonal by tak odhad X USD“.
@@ -46,6 +45,8 @@ Nejdůležitější zprávou dne ale mohou být nové akcie třídy C bez hlasov
 | Výsledky 3Q, výhled 4Q a 2026, akcie třídy C | 21. 10. 2026 | tisková zpráva Mety |
 | Zavírací cena 699,33 USD | 21. 10. 2026 | před zveřejněním výsledků |
 | Pohyb po zavření trhu | průběžně | doplnit při odeslání |
+
+**Úpravy podle autora:** doplněno zvýšení výhledu investic (spodní hranice ze 130 na 135 mld. USD) a důvod růstu akcií po zavření trhu, vypuštěno „Podle mě“.
 
 **Zkráceno na žádost autora** z 575 na 303 slov (vzory mají 253 až 441 slov na firmu, průměr 337). Vypadlo: srovnání reklamy s 2Q, vysvětlení odpisů, výhled investic 135 až 145 jako rozpětí, vlastní akcie a dluh, Reality Labs, soudní spory, vývoj akcie od 30. 7.
 

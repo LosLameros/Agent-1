@@ -139,6 +139,10 @@ def main(vstup, vystup):
     # ---------- Přehled ----------
     pozice = d["pozice"]
     for p in pozice:
+        if p.get("soucet_slozek"):
+            # hodnota pozice = součet jejích složek v Detailu (např. účet u jiného obchodníka)
+            sl_p = [x for x in d.get("slozky", []) if x["portfolio"] == p["portfolio"]]
+            p["mena"], p["hodnota"] = "CZK", sum(czk(x["mena"], x["hodnota"]) or 0 for x in sl_p)
         p["_czk"] = czk(p["mena"], p.get("hodnota"))
     pozice.sort(key=lambda p: (p["_czk"] is None, -(p["_czk"] or 0)))
     celkem = sum(p["_czk"] or 0 for p in pozice)
@@ -178,6 +182,7 @@ def main(vstup, vystup):
             bunka(prehled, r, sl_pod, f"={L_czk}{r}/${L_czk}${radek_celkem}", "0.0%", "right", barva)
         if p.get("id"):
             adresa_pozice[p["id"]] = f"'Přehled'!{L_czk}{r}"
+        p["_radek"] = r
     for sl in range(1, n + 1):
         bunka(prehled, radek_celkem, sl, None, barva=CELKEM, tucne=True)
     prehled.cell(radek_celkem, 1, "Celkem")
@@ -232,6 +237,12 @@ def main(vstup, vystup):
              + d.get("poznamky_detail", []), 7)
     sirky(detail, [22, 40, 12, 20, 18, 20, 14])
     detail.freeze_panes = "A5"
+    # pozice počítané ze složek: v Přehledu vzorec na součet jejich řádků v Detailu
+    for p in pozice:
+        if p.get("soucet_slozek"):
+            radky = [5 + i for i, x in enumerate(slozky) if x["portfolio"] == p["portfolio"]]
+            if radky:
+                prehled.cell(p["_radek"], sl_czk, f"=SUM(Detail!E{min(radky)}:E{max(radky)})")
 
     # ---------- Překryvy ----------
     adresy = {**adresa_pozice, **adresa_slozky}

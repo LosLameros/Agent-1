@@ -120,6 +120,7 @@ Pořadí řádků: od největší hodnoty v CZK. Překryvy s watchlistem a podob
    - `klient`: jméno a příjmení klienta. Skript ho dá do názvu sešitu „Revize portfolia – <jméno>“.
    - `kurzy`: `datum`, `zdroj` (plný popis), `zdroj_kratce` (do Excelu, jen „ČNB“), `hodnoty` (`{"USD": 21.811, "EUR": 24.4}`)
    - `pozice` (list Přehled): `id`, `portfolio`, `instrument`, `mena`, `hodnota` (číslo, nebo `null` = neuvedeno), `mantinel` (true/false), volitelně `prekryv`
+     - **Účet u jiného obchodníka** (např. Degiro): do `pozice` jeden řádek s `"soucet_slozek": true`. Skript mu hodnotu spočte jako vzorec ze součtu jeho složek v Detailu, takže `hodnotu` ani `menu` nevyplňuj. Jednotlivé pozice dej do `slozky` s portfoliem stejného jména, každou v její původní měně a s ISIN. Hotovost vynech. FIFO napříč portfolii a přesuny bez prodeje platí jen uvnitř Portu. Pozice u jiného obchodníka jde změnit jen prodejem, a ten se počítá do hodnotového testu.
    - `slozky` (list Detail): `id`, `portfolio` (přesně stejný název jako v `pozice`), `instrument`, `mena`, `hodnota`, `zastoupeni` (podíl jako desetinné číslo, 0.338 = 33.8 %, nebo `null`), `prekryv`
    - `prekryvy`: `expozice`, `portfolia` (text včetně počtu, např. „Čtvrtá + Třetí strategie (2×)“), `refs` (seznam `id` sčítaných řádků z `pozice`/`slozky`)
    - `tematicke_bloky`: `nazev`, `nazev_celkem`, `polozky` [`popis`, `portfolia`, `refs`]
@@ -233,6 +234,8 @@ Ještě jednou shrnuté věci, na které se v praxi narazilo:
 - **Daňová logika:** rozhoduje orientační daň navíc, ne zdanitelný příjem. Ztráty se započítávají. V roce, kdy je hodnotový test už nesplněný, stojí další prodej jen sazbu ze zisku.
 - **Roční daňový souhrn** obsahuje příjem z prodeje a realizovaný zisk za rok. Osvobození po instrumentech, rok souhrnu nebo chybějící Investiční rezervu doplní zadavatel. Jeho upřesnění ber jako fakt.
 - **Interní kódy návrhů** (N1, N2-B) nepoužívej nikde. Kroky pojmenuj slovy.
+- **Netvrď víc, než návrh udělá.** „Zmizí všechny překryvy“ piš jen tehdy, když po návrhu opravdu žádná podobná expozice nezůstane. Globální ETF, které zůstane vedle globálně rozloženého Portfolia od Portu, je pořád podobná expozice. Pak piš „zbavíte se většiny překryvů“.
+- **Názvy instrumentů v e-mailu** piš celé, ne zkrácené tak, jak je ořízne výpis obchodníka (např. „iShares S&P 500 Information Technology“, ne „Info Technolg“).
 - **E-mail klientovi píše poradce za sebe** v 1. osobě jednotného čísla. Obsahuje jen doporučení, je co nejkratší a nemá žádnou vatu. Po přesunech má jednu větu: „Pokud budete souhlasit, přesuny provedu. Pak se můžeme pobavit o případné úpravě vah nebo o dalších přesunech.“
 - **Změny vah v cílových portfoliích** ukazuj konkrétními čísly (z kolika na kolik %) a nezlehčuj je. Zadavatel jednou odhadl, že se přesunem do Dividendových lídrů zastoupení „výrazně nezmění“. Výpočet ale ukázal, že se podíl energetiky a spotřebního zboží víc než zdvojnásobil (z 8 na 17 % a ze 7 na 16 %). Do e-mailu proto patří čísla a důvod, proč změna nevadí. Když se tvrzení zadavatele s výpočtem neshoduje, upozorni ho na to.
 - **Nové peníze** doporučuj směrovat jen do Portfolií od Portu a do realitního fondu, ne do tematických portfolií, kvůli diverzifikaci.

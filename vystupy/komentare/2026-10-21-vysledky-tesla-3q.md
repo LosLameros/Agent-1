@@ -8,15 +8,17 @@
 
 ## Tesla
 
-Tesla vykázala za třetí čtvrtletí tržby 28,0 mld. USD, meziročně beze změny a mírně pod konsenzem 28,1 mld. USD. Tržby z prodeje aut klesly o 3 % a z ukládání energie o 16 %, propad vyrovnaly služby a ostatní tržby s růstem o 33 %. Hrubá marže se zlepšila na 19,6 % z 18,0 % před rokem. Provozní marže ale klesla na 2,6 % z 5,8 %, protože provozní náklady vzrostly o 39 %, hlavně kvůli vývoji umělé inteligence a robotiky. Upravený zisk na akcii 0,48 USD přesto překonal odhad 0,44 USD.
+Tesla vykázala za třetí čtvrtletí tržby 28 mld. USD, meziročně beze změny a mírně pod konsenzem 28,1 mld. USD. Tržby z prodeje aut klesly o 3 % a z ukládání energie o 16 %, propad vyrovnaly služby a ostatní tržby s růstem o 33 %. Hrubá marže se zlepšila na 19,6 % z 18,0 % před rokem. Provozní marže ale klesla na 2,6 % z 5,8 %, protože provozní náklady vzrostly o 39 %, hlavně kvůli vývoji umělé inteligence a robotiky. Upravený zisk na akcii 0,48 USD přesto překonal odhad 0,44 USD.
 
-Akcie po skončení obchodování posílily zhruba o 2 %. Trh ocenil hlavně hotovost. Volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, dosáhly 1,5 mld. USD, zatímco analytici čekali záporných 4,9 mld. USD. Hlavním důvodem je, že Tesla investovala jen 4,7 mld. USD proti očekávaným 8,0 mld. USD. Úspora ale může být jen dočasná. Pokud firma drží celoroční výhled investic přes 25 mld. USD, musí ve čtvrtém čtvrtletí utratit téměř 12 mld. USD, zhruba dvaapůlkrát víc než ve třetím. Investoři kladně přijali i růst placeného asistenta řízení FSD, který má 1,74 mil. předplatitelů, o 67 % víc než před rokem.
+Akcie po výsledcích rostou o 2 %, a to díky vyšší než očekávané volné hotovosti. Volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, dosáhly 1,5 mld. USD, zatímco analytici čekali záporných 4,9 mld. USD. Hlavním důvodem je, že Tesla investovala jen 4,7 mld. USD proti očekávaným 8,0 mld. USD. Úspora ale může být jen dočasná. Pokud firma drží celoroční výhled investic přes 25 mld. USD, musí ve čtvrtém čtvrtletí utratit téměř 12 mld. USD, zhruba dvaapůlkrát víc než ve třetím. Investoři kladně přijali i růst placeného asistenta řízení FSD, který má 1,74 mil. předplatitelů, o 67 % víc než před rokem.
 
-Hlavní byznys s auty přitom stagnuje. Dodávky klesly meziročně o 2 % a výrobu podle firmy brzdí nedostatek baterií, přestože má největší zásobu objednávek za čtyři roky. Ocenění Tesly stojí hlavně na projektech, které zatím vydělávají málo, tedy na robotaxi s vozy Cybercab, které od září jezdí v Austinu, a na humanoidním robotovi Optimus, jehož výroba začala ve Fremontu. Akcie jsou od začátku roku asi o 14 % níž. Rozhodující pro další čtvrtletí bude, jestli Tesla po zajištění baterií zvýší výrobu aut a jestli se rostoucí investice začnou projevovat v tržbách z autonomního řízení.
+Hlavní byznys s auty přitom stagnuje. Dodávky klesly meziročně o 2 % a výrobu podle firmy brzdí nedostatek baterií, přestože má největší zásobu objednávek za čtyři roky. Ocenění Tesly stojí hlavně na projektech, které zatím vydělávají málo, tedy na robotaxi s vozy Cybercab, které od září jezdí v Austinu, a na humanoidním robotovi Optimus, jehož výroba začala ve Fremontu. V dalším čtvrtletí bude důležité, jestli Tesla po zajištění baterií zvýší výrobu aut a jestli se rostoucí investice začnou projevovat v tržbách z autonomního řízení.
 
 ---
 
 **Pouze pro autora, neposílat do redakce:**
+
+**Stav:** finální verze autora (odeslaná), uložená i jako vzor `examples/komentare/2026-10-vysledky-meta-tesla-3q.md`.
 
 **Doplnit:** Žádné.
 

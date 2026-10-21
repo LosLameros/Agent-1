@@ -8,15 +8,17 @@
 
 ## Meta
 
-Meta vykázala za třetí čtvrtletí tržby 64,6 mld. USD, meziročně o 26 % více a zhruba o 2 % nad konsenzem 63,4 mld. USD. Průměrná cena reklamy vzrostla o 14 % a jejich počet o 10 %, Meta tedy víc vydělává tím, že reklamu umí lépe zacílit. Zisk na akcii 3,83 USD srazil jednorázový náklad 9,89 mld. USD na urovnání sporů o dopad sociálních sítí na dospívající, bez něj by činil 7,40 USD. Bez této položky by provozní marže dosáhla 35 % proti 40 % před rokem, protože náklady rostly o 36 %, tedy rychleji než tržby.
+Metě ve třetím čtvrtletí meziročně vzrostly tržby o 26 % na 64,6 mld. USD a byly zhruba 2 % nad konsenzem 63,4 mld. USD. Průměrná cena reklamy vzrostla o 14 % a jejich počet o 10 %, Meta tedy víc vydělává tím, že reklamu umí lépe zacílit. Zisk na akcii 3,83 USD srazil jednorázový náklad 9,89 mld. USD na urovnání sporů o dopad sociálních sítí na dospívající, bez něj by činil 7,40 USD. Bez této položky by provozní marže dosáhla 35 % proti 40 % před rokem, protože náklady rostly o 36 %, tedy rychleji než tržby.
 
 Akcie po skončení obchodování posílily zhruba o 4 %. Trh ocenil hlavně výhled tržeb na čtvrté čtvrtletí 73 až 76 mld. USD, jehož střed je o 1,3 % nad konsenzem 73,57 mld. USD, a slib silného růstu tržeb po celý rok 2027. Rostoucí cena reklamy navíc dokládá, že se investice do umělé inteligence v hlavním byznysu už vracejí, a investoři proto snáz přijali, že Meta zvýšila výhled kapitálových výdajů. Spodní hranici letošního výhledu posunula ze 130 na 135 mld. USD při nezměněné horní hranici 145 mld. USD. Aby ji splnila, musí ve čtvrtém čtvrtletí investovat nejméně 49 mld. USD, o 40 % víc než ve třetím. Už teď investice tvoří 54 % tržeb proti 38 % před rokem a volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, se propadly do záporu.
 
-Neméně důležitá je nová třída akcií C. Ekonomicky jde o štěpení akcií v poměru 2 : 1, kdo má dnes deset akcií Mety, dostane v lednu navíc deset akcií C a hodnota jeho investice se nezmění. Meta pak bude moct vydávat další, úplně nové akcie C a prodávat je investorům, aby získala peníze na umělou inteligenci. Čím víc akcií bude existovat, tím menší kus zisku připadne na každou z nich. Mark Zuckerberg přitom o kontrolu nepřijde, protože akcie C nemají hlasovací právo. Meta tak potvrdila, že umělá inteligence už v reklamě vydělává, zároveň ale naznačila, že účet za ni bude vyšší a delší, než trh doufal. Rozhodující pro další čtvrtletí bude, jestli tržby porostou rychleji než náklady a jaký výhled investic firma dá na rok 2027.
+Neméně důležité jsou nové akcie třídy C bez hlasovacích práv, které Meta od ledna rozdá akcionářům v poměru jedna ku jedné. Hodnota podílů se tím nezmění, firma je ale chce používat k získávání kapitálu. Může tak investice do umělé inteligence financovat vydáváním nových akcií, aniž by Mark Zuckerberg ztratil kontrolu, pro akcionáře to ale znamená riziko naředění. Meta tak potvrdila, že umělá inteligence už v reklamě vydělává, zároveň ale naznačila, že účet za ni bude vyšší a delší, než trh doufal. Rozhodující pro další čtvrtletí bude, jestli tržby porostou rychleji než náklady a jaký výhled investic firma dá na rok 2027.
 
 ---
 
 **Pouze pro autora, neposílat do redakce:**
+
+**Stav:** finální verze autora (odeslaná), uložená i jako vzor `examples/komentare/2026-10-vysledky-meta-tesla-3q.md`.
 
 **Doplnit:** Žádné. Pohyb akcií po zavření trhu (+4 %) dodal autor; zdroje uváděly 2 až 5 % podle času (Benzinga +3,12 % na 719,30 USD, Bloomberg asi 4 %).
 

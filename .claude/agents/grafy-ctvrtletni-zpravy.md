@@ -83,7 +83,7 @@ Skript uloží `zhodnoceni-trid-aktiv.png` a `portfolia-v-roce.png` (2000 × 105
 ### Krok 5: Zkontroluj výsledek
 Otevři oba nové PNG nástrojem Read a projdi:
 1. **Každé číslo** v novém grafu se rovná číslu ze starého grafu (graf 1: 14 hodnot, graf 2: 6 hodnot). Porovnávej hodnotu po hodnotě, ne zběžně.
-2. Barvy řad: fialová = USD nebo EUR / čtvrtletí, zelená = CZK / od začátku roku.
+2. Barvy řad (oficiální barvy Portu podle https://guidelines.portu.cz/barvy/): fialová `#4840BB` = USD nebo EUR / čtvrtletí, zelená `#00AA3C` = CZK / od začátku roku.
 3. Legenda grafu 2 nese správné čtvrtletí a datum.
 4. Žádné popisky se nepřekrývají a nic není oříznuté. Kdyby ano, zkus ruční osu (`osa`) a vykresli znovu.
 5. Desetinná čárka, mínus, mezera před %: „−0,6 %".

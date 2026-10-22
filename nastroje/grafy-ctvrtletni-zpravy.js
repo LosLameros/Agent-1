@@ -6,7 +6,7 @@ const {chromium}=require('playwright');
 // Vzor JSON: nastroje/grafy-ctvrtletni-zpravy.vzor.json
 
 const W=2000, H=1055, LEFT=133, RIGHT=1983, TOP=55;
-const C={rada1:'#4840BA', rada2:'#06B33F', grid:'#EAEAEA', nula:'#333333', osa:'#5C5D66', hodnota:'#282828', legenda:'#242424'};
+const C={rada1:'#4840BB', rada2:'#00AA3C', grid:'#EAEAEA', nula:'#333333', osa:'#5C5D66', hodnota:'#282828', legenda:'#242424'};
 // Rozvržení podle vzorových grafů: tříd aktiv je 7 (popisky na dva řádky), portfolií 3 (popisky na jeden řádek).
 const PRESET={
   tridyAktiv:{soubor:'zhodnoceni-trid-aktiv.png', dolni:812, sirka:66, mezera:20, popisky:[881,937]},

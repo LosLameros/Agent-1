@@ -49,7 +49,8 @@ VSTUPY = [
     (7, "Sazba daně z příjmů", 0.15, PCT, True, "Zadání: daňová úspora 7 200 Kč ročně = 48 000 Kč × 15 %."),
     (8, "Měsíc vrácení daně v následujícím roce", 4, "0", True, "Přeplatek na dani se vrací typicky v dubnu po podání přiznání / ročním zúčtování."),
     (9, "Poplatek DIP (ročně, účtovaný měsíčně)", 0.003, PCT2, True, "Zadání: DIP má poplatek 0,3 % ročně, účtuje se měsíčně (1/12 z hodnoty majetku)."),
-    (10, "Sleva na poplatku za fixaci (mimo DIP)", 0.40, PCT, True, "Zadání: investice mimo DIP s fixací se slevou 40 % (Program pro dlouhodobé investory; 40 % odpovídá fixaci na 15 let)."),
+    (10, "Sleva na poplatku za fixaci (mimo DIP)", 0.40, PCT, True, "Zadání: investice mimo DIP s fixací se slevou 40 % (Program pro dlouhodobé investory; 40 % odpovídá fixaci na 15 let). Platí pro horizonty 20 a 30 let."),
+    (11, "Sleva na poplatku za fixaci – 10letý horizont", 0.30, PCT, True, "Zadání: u 10letého horizontu je poplatek mimo DIP s fixací 0,7 % ročně = 1 % × (1 − 30 %); s objemem klesá stejně jako u 40% slevy."),
     (12, "Měsíční výnos (odvozený)", "=(1+B5)^(1/12)-1", PCT4, False, "Měsíční výnos tak, aby za 12 měsíců dal přesně roční výnos z B5."),
     (13, "Roční vklady", "=B4*12", KC, False, ""),
     (14, "Roční daňová úspora", "=MIN(B13,B6)*B7", KC, False, "Odečitatelné příspěvky (max. limit) × sazba daně."),
@@ -65,7 +66,7 @@ for r, popis, hodnota, fmt, vstup, pozn in VSTUPY:
 
 ws["A16"] = "Poplatek za správu mimo DIP (Portfolia od Portu)"
 ws["A16"].font = TUCNE
-for j, h in enumerate(["Majetek od (Kč)", "Sazba ročně", "Sazba po slevě za fixaci"], 1):
+for j, h in enumerate(["Majetek od (Kč)", "Sazba ročně", "Po slevě (20 a 30 let)", "Po slevě (10 let)"], 1):
     c = ws.cell(17, j, h)
     c.font, c.fill = TUCNE, HLAV
 PASMA = [(0, 0.01), (500000, 0.008), (1000000, 0.006), (5000000, 0.004)]
@@ -76,6 +77,8 @@ for i, (od, sazba) in enumerate(PASMA):
     b = ws.cell(r, 2, sazba)
     b.number_format, b.font, b.fill = PCT2, MODRA, ZLUTA
     c = ws.cell(r, 3, f"=B{r}*(1-$B$10)")
+    c.number_format = PCT2
+    c = ws.cell(r, 4, f"=B{r}*(1-$B$11)")
     c.number_format = PCT2
 ws["A22"] = ("Zdroj: Portu magazín, Nový sazebník Portu (23. 4. 2024, platí od 1. 5. 2024), "
              "https://magazin.portu.cz/novy-sazebnik-portu-je-jednodussi-a-umoznuje-investovat-levneji/ – "
@@ -111,8 +114,10 @@ wm = wb.create_sheet("Měsíce")
 hlavicka(wm, 1, ["Měsíc", "Rok", "Vklad",
                  "Bez DIP: hodnota před poplatkem", "Bez DIP: sazba poplatku ročně", "Bez DIP s fixací: hodnota (konec měsíce)",
                  "DIP: hodnota investice (konec měsíce)", "Vrácená daň v měsíci", "Vrácená daň kumulovaně (hotovost)",
-                 "Reinvestovaná daňová úspora v DIP (hodnota)", "Poplatky bez DIP kumulovaně", "Poplatky DIP kumulovaně"],
-         [7, 5, 11, 15, 11, 16, 16, 12, 15, 17, 14, 14])
+                 "Reinvestovaná daňová úspora v DIP (hodnota)", "Poplatky bez DIP kumulovaně", "Poplatky DIP kumulovaně",
+                 "Bez DIP (10 let): hodnota před poplatkem", "Bez DIP (10 let): sazba poplatku ročně",
+                 "Bez DIP s fixací (10 let): hodnota (konec měsíce)", "Poplatky bez DIP (10 let) kumulovaně"],
+         [7, 5, 11, 15, 11, 16, 16, 12, 15, 17, 14, 14, 15, 11, 16, 14])
 for m in range(1, 361):
     r = m + 1
     pr = r - 1
@@ -129,9 +134,15 @@ for m in range(1, 361):
     wm.cell(r, 11, f"={'K' + str(pr) if m > 1 else '0'}+D{r}*E{r}/12")
     wm.cell(r, 12, f"={'L' + str(pr) if m > 1 else '0'}+(({'G' + str(pr) if m > 1 else '0'}+C{r})"
                    f"+{'J' + str(pr) if m > 1 else '0'})*(1+{P}$B$12)*{P}$B$9/12")
-    for j in (3, 4, 6, 7, 8, 9, 10, 11, 12):
+    # stejný výpočet bez DIPu se slevou pro 10letý horizont (sazby ze sloupce D tabulky poplatků)
+    wm.cell(r, 13, f"=({'O' + str(pr) if m > 1 else '0'}+C{r})*(1+{P}$B$12)")
+    wm.cell(r, 14, f"=INDEX({P}$D$18:$D$21,MATCH(M{r},{P}$A$18:$A$21,1))")
+    wm.cell(r, 15, f"=M{r}*(1-N{r}/12)")
+    wm.cell(r, 16, f"={'P' + str(pr) if m > 1 else '0'}+M{r}*N{r}/12")
+    for j in (3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16):
         wm.cell(r, j).number_format = KC
-    wm.cell(r, 5).number_format = PCT2
+    for j in (5, 14):
+        wm.cell(r, j).number_format = PCT2
 wm.freeze_panes = "A2"
 
 M = "'Měsíce'!"
@@ -139,8 +150,10 @@ M = "'Měsíce'!"
 wr = wb.create_sheet("Roky")
 hlavicka(wr, 1, ["Rok", "Měsíc", "Vloženo celkem", "Bez DIP s fixací", "DIP + daňová úspora",
                  "DIP + reinvestovaná daňová úspora", "Výhoda DIP oproti fixaci", "Výhoda DIP s reinvestováním",
-                 "Poplatky bez DIP kumulovaně", "Poplatky DIP kumulovaně"],
-         [6, 8, 16, 18, 18, 22, 18, 20, 16, 16])
+                 "Poplatky bez DIP kumulovaně", "Poplatky DIP kumulovaně",
+                 "Bez DIP s fixací (sleva pro 10 let)", "Výhoda DIP oproti fixaci (10 let)",
+                 "Výhoda DIP s reinvestováním (10 let)", "Poplatky bez DIP kumulovaně (10 let)"],
+         [6, 8, 16, 18, 18, 22, 18, 20, 16, 16, 18, 18, 20, 16])
 for t in range(0, 31):
     r = t + 2
     wr.cell(r, 1, t)
@@ -153,7 +166,11 @@ for t in range(0, 31):
     wr.cell(r, 8, f"=F{r}-D{r}")
     wr.cell(r, 9, f"=IF(A{r}=0,0,INDEX({M}$K$2:$K$361,B{r}))")
     wr.cell(r, 10, f"=IF(A{r}=0,0,INDEX({M}$L$2:$L$361,B{r}))")
-    for j in range(3, 11):
+    wr.cell(r, 11, f"=IF(A{r}=0,0,INDEX({M}$O$2:$O$361,B{r}))")
+    wr.cell(r, 12, f"=E{r}-K{r}")
+    wr.cell(r, 13, f"=F{r}-K{r}")
+    wr.cell(r, 14, f"=IF(A{r}=0,0,INDEX({M}$P$2:$P$361,B{r}))")
+    for j in range(3, 15):
         wr.cell(r, j).number_format = KC
 wr["A34"] = "Hodnoty ke konci roku. Daňová úspora za právě skončený rok je započtená jako nárok (vrací se v dubnu dalšího roku)."
 wr["A34"].font = POZN
@@ -171,7 +188,8 @@ R = "'Roky'!"
 for i, n in enumerate((10, 20, 30)):
     r = 4 + i
     wv.cell(r, 1, n).font = MODRA
-    for j, sl in enumerate("CDEFGHIJ", 2):
+    # 10letý horizont: bez DIPu se slevou pro 10 let (sloupce K–N listu Roky), 20 a 30 let se slevou 40 %
+    for j, sl in enumerate("CKEFLMNJ" if n == 10 else "CDEFGHIJ", 2):
         c = wv.cell(r, j, f"=INDEX({R}${sl}$2:${sl}$32,A{r}+1)")
         c.number_format, c.font = KC, ZELENA
     wv.cell(r, 10, f'=60-A{r}&" let"')

@@ -15,17 +15,25 @@ MODEL = "vystupy/grafy/2026-10-21-dip-model.xlsx"
 wb = openpyxl.load_workbook(MODEL, data_only=True)
 pred = wb["Předpoklady"]
 VKLAD, VYNOS, USPORA = pred["B4"].value, pred["B5"].value, pred["B14"].value
-POPLATEK_DIP, SLEVA = pred["B9"].value, pred["B10"].value
-POPLATEK_FIX = pred["C18"].value  # poplatek mimo DIP po slevě v nejnižším pásmu (do 0,5 mil. Kč)
+POPLATEK_DIP = pred["B9"].value
+# sleva za fixaci a poplatek mimo DIP v nejnižším pásmu (do 0,5 mil. Kč): 10 let vlastní sleva, 20 a 30 let 40 %
+SLEVA = {10: pred["B11"].value, 20: pred["B10"].value, 30: pred["B10"].value}
+POPLATEK_FIX = {10: pred["D18"].value, 20: pred["C18"].value, 30: pred["C18"].value}
 roky = [r for r in wb["Roky"].iter_rows(min_row=2, max_row=32, values_only=True)]
-if any(v is None for r in roky for v in r[:8]):
+if any(v is None for r in roky for v in r[:14]):
     sys.exit("Excel nemá spočítané hodnoty – nejdřív ho přepočítejte (otevřít a uložit, nebo recalc.py).")
 
-RADY = [  # (sloupec v listu Roky, název, barva čáry) – v pořadí odshora
-    (5, "DIP + reinvestovaná úspora", pg.ZELENA),
-    (4, "DIP + daňová úspora", pg.SVETLE_ZELENA),
-    (3, "Bez DIP s fixací", pg.FIALOVA),
-]
+# sloupce listu Roky pro „Bez DIP s fixací“, výhodu DIPu a výhodu s reinvesticí – 10 let má vlastní slevu
+SLOUPCE_BEZ_DIP = {10: (10, 11, 12), 20: (3, 6, 7), 30: (3, 6, 7)}
+
+
+def rady(horizont):  # (sloupec v listu Roky, název, barva čáry) – v pořadí odshora
+    return [
+        (5, "DIP + reinvestovaná úspora", pg.ZELENA),
+        (4, "DIP + daňová úspora", pg.SVETLE_ZELENA),
+        (SLOUPCE_BEZ_DIP[horizont][0], "Bez DIP s fixací", pg.FIALOVA),
+    ]
+
 POPISEK = {pg.SVETLE_ZELENA: "#3DAA62"}  # světle zelená je jako text málo čitelná – popisek tmavší
 
 
@@ -35,6 +43,8 @@ def kc(v):
 
 def graf(horizont, krok_x, osa_y):
     data = roky[: horizont + 1]
+    RADY = rady(horizont)
+    bez_dip, s_vyhoda, s_vyhoda_reinv = SLOUPCE_BEZ_DIP[horizont]
     let = [r[0] for r in data]
     fig, ax = pg._platno(pg.GRAF_DOLNI_1RADEK, nadpis=f"Kolik můžete mít za {horizont} let", navic=122)
     vyska = fig._portu["vyska"]
@@ -45,9 +55,9 @@ def graf(horizont, krok_x, osa_y):
              va="center")
     fig.text(x_text, 1 - 120 / vyska,
              f"Poplatky: DIP {pg.cislo(POPLATEK_DIP * 100, 1, '%')} ročně • mimo DIP s fixací "
-             f"{pg.cislo(POPLATEK_FIX * 100, 1, '%')} ročně (sleva {pg.cislo(SLEVA * 100, 0, '%')}), s objemem klesá",
+             f"{pg.cislo(POPLATEK_FIX[horizont] * 100, 1, '%')} ročně (sleva {pg.cislo(SLEVA[horizont] * 100, 0, '%')}), s objemem klesá",
              fontsize=pg.PISMO_LEGENDA, color=pg.TEXT_SEDY, va="center")
-    vyhoda, vyhoda_reinv = data[-1][6], data[-1][7]
+    vyhoda, vyhoda_reinv = data[-1][s_vyhoda], data[-1][s_vyhoda_reinv]
     fig.text(x_text, 1 - 164 / vyska,
              f"Výhoda DIPu: +{kc(vyhoda)}   •   s reinvestovanou úsporou: +{kc(vyhoda_reinv)}",
              fontsize=pg.PISMO_LEGENDA, color=pg.ZELENA, fontproperties=pg._STREDNI, va="center")
@@ -61,7 +71,7 @@ def graf(horizont, krok_x, osa_y):
     ax.tick_params(axis="x", pad=24 / pg.PT)
 
     # pás výhody DIPu mezi investicí bez DIPu a DIPem s reinvestovanou úsporou
-    ax.fill_between(let, [r[3] for r in data], [r[5] for r in data], color=pg.ZELENA, alpha=0.10, linewidth=0, zorder=1)
+    ax.fill_between(let, [r[bez_dip] for r in data], [r[5] for r in data], color=pg.ZELENA, alpha=0.10, linewidth=0, zorder=1)
     body = list(range(0, horizont + 1, krok_x))
     for sloupec, nazev, barva in reversed(RADY):
         hodnoty = [r[sloupec] for r in data]

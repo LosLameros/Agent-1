@@ -108,9 +108,14 @@ def _fy(px_shora: float) -> float:
     return 1 - px_shora / VYSKA_PX
 
 
-def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = None, navic: int = 0):
-    """navic = další výška hlavičky pod nadpisem (např. pro velké číslo, viz _hlavicka_cislo)."""
-    posun = (70 if nadpis else 0) + navic
+PODNADPIS_PX = 36  # výška řádku s podnadpisem pod nadpisem
+
+
+def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = None, navic: int = 0,
+            podnadpis: str | None = None):
+    """navic = další výška hlavičky pod nadpisem (např. pro velké číslo, viz _hlavicka_cislo).
+    podnadpis = jednotka/upřesnění pod nadpisem fialově („v % HDP“, „Čtvrtletní údaje v miliardách USD“)."""
+    posun = (70 if nadpis else 0) + (PODNADPIS_PX if podnadpis else 0) + navic
     vyska = VYSKA_PX + posun
     fig = plt.figure(figsize=(SIRKA_PX / DPI, vyska / DPI), dpi=DPI, facecolor=POZADI)
 
@@ -126,6 +131,9 @@ def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = 
     ax.set_axisbelow(True)
     fig._portu = {"fy": fy, "vyska": vyska}
     if nadpis:
+        if podnadpis:
+            fig.text(_fx(GRAF_LEVA - 80), 1 - 76 / vyska, podnadpis, fontsize=PISMO_LEGENDA, color=FIALOVA,
+                     fontproperties=_STREDNI, va="center")
         fig.text(_fx(GRAF_LEVA - 80), 1 - 30 / vyska, nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
                  ha="left", va="center")
     return fig, ax
@@ -309,7 +317,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
                rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
                jazyk="cs", hlavicka=None, vypln=False, prvni_mesic=None,
-               tloustka_cary=3.5):
+               tloustka_cary=3.5, podnadpis=None):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -320,6 +328,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
                    'mesic' pro zkratky měsíců („lis 25“, slovensky „nov 25“) u řad za poslední rok (interval_mesicu=1)
     jazyk        – 'cs' nebo 'sk' (zkratky měsíců na ose x)
     prvni_mesic  – u format_x='%m/%Y' měsíc, od kterého se popisky počítají (1 → 01/2024, 07/2024 …)
+    podnadpis    – řádek pod nadpisem fialově (jednotka, frekvence dat), jen spolu s nadpisem
     tloustka_cary – v px (výchozí 3,5); u hustých denních řad za více let 2,5, aby se čára neslévala
     hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
     vypln        – barevný přechod pod čarou první řady (jen na výslovné přání, Portu ho jinak nepoužívá)
@@ -332,7 +341,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     jednotka_konec – jednotka koncového popisku, když se liší od osy (např. 'b.' u indexu – mezeru před ní doplní cislo())
     """
     barvy = barvy or BARVY
-    fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis, navic=HLAVICKA_PX if hlavicka else 0)
+    fig, ax = _platno(GRAF_DOLNI_1RADEK, nadpis=nadpis, navic=HLAVICKA_PX if hlavicka else 0, podnadpis=podnadpis)
     if hlavicka:
         _hlavicka_cislo(fig, *hlavicka)
     _osa_y(ax, osa_y, jednotka, mista_osa)

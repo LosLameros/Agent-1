@@ -30,7 +30,8 @@ pg._osa_y(ax, OSA, "", 0)
 
 n = len(hodnoty)
 ax.set_xlim(-0.6, n - 0.4)
-ax.bar(range(n), hodnoty, width=0.62, color=pg.FIALOVA, zorder=2, linewidth=0)
+ax.bar(range(n), hodnoty, width=0.62, color=[pg.ZELENA if h < 0 else pg.FIALOVA for h in hodnoty], zorder=2,
+       linewidth=0)  # záporný volný cash flow zvýrazněný zelenou
 ax.axhline(0, color=pg.NULOVA_CARA, linewidth=2 * 72 / pg.DPI, zorder=3)
 
 # hodnoty nad sloupci svisle – 47 sloupců je na vodorovné popisky moc úzkých

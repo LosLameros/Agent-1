@@ -12,12 +12,13 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | Čep 8x30 | 11,00 | MyJa Tech s.r.o. | 26010 |
 | Čep L131 | 27,00 | MyJa Tech s.r.o. | 26054 |
 | Rolna | 24,00 | MyJa Tech s.r.o. | 26054 |
+| Pouzdro L18 | 18,00 | MyJa Tech s.r.o. | 26058 |
 | Me 410 | 452,00 | HPH models, s.r.o. | 26009 |
 | FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
 | Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |
-| Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26057 |
+| Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26059 |
 | Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26053 |
-| Klíč V-2 | 32,00 | JETI model s.r.o. | 26056 |
+| Klíč V-2 | 32,00 | JETI model s.r.o. | 26059 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |
 | OSIČKA 4022 261 45581-A | 85,00 | VenPor s.r.o. | 26055 |
 | Osa L40 | 80,00 | STRANKA s.r.o. | 26046 |

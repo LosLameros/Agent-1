@@ -1,0 +1,25 @@
+{
+  "cislo": "26058",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-10-27",
+  "duzp": "2026-10-27",
+  "odberatel": {
+    "nazev": "MyJa Tech s.r.o.",
+    "adresa": [
+      "55, Libomyšl",
+      "26723 Libomyšl",
+      "Česká republika"
+    ],
+    "ico": "02566435",
+    "dic": "CZ02566435"
+  },
+  "splatnost_dni": 10,
+  "polozky": [
+    {
+      "pocet": 300,
+      "jednotka": "ks",
+      "popis": "Pouzdro L18",
+      "cena": "18.00"
+    }
+  ]
+}

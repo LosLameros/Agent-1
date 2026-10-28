@@ -1,7 +1,7 @@
 # Microsoft: výsledky za 1. čtvrtletí fiskálního roku 2027 (červenec až září 2026)
 
 - **Typ:** komentář ke čtvrtletním výsledkům (typ D), podle hlavního vzoru Meta a Tesla 3Q
-- **Datum:** 28. 10. 2026, výsledky zveřejněné po skončení obchodování, před konferenčním hovorem (23:30 SEČ)
+- **Datum:** 28. 10. 2026, výsledky zveřejněné po skončení obchodování, před konferenčním hovorem (začátek 22:30 SEČ, tj. 17:30 v New Yorku, obvykle trvá zhruba hodinu)
 - **Podklady:** tisková zpráva Microsoftu FY27 Q1, 8-K ze 2. 9. 2026 (nové segmenty, přepočtená loňská čísla, výhled), konsenzus z předběžných zpráv, ceny akcií Trading Economics, pohyb po zavření trhu od autora
 
 ---
@@ -12,14 +12,14 @@ Microsoft v prvním čtvrtletí fiskálního roku 2027, které odpovídá kalend
 
 Hlavním důvodem růstu akcií zhruba o 5 % po skončení obchodování je Azure. Tržby cloudové platformy vzrostly o 48 % na 33,2 mld. USD, víc než vedením slibovaných 44 až 45 % a rychleji než o 43 % v minulém čtvrtletí. Azure tak sám přinesl téměř tři čtvrtiny meziročního přírůstku tržeb celé firmy. Nasmlouvané a dosud nevyfakturované zakázky navíc vzrostly o 73 % na 677 mld. USD, poptávka po výpočetním výkonu je tedy podložená smlouvami na roky dopředu. Investice do budov a vybavení dosáhly 39,4 mld. USD, tedy 43 % tržeb proti 25 % před rokem. Volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, ale zůstaly kladné ve výši 18,6 mld. USD.
 
-Microsoft tak potvrdil, že letní zrychlení Azure nebylo jednorázové a že umělá inteligence se v tržbách projevuje rychleji, než trh čekal. Otevřenou otázkou zůstávají investice. [DOPLNIT po konferenčním hovoru: výhled kapitálových výdajů a růstu Azure na další čtvrtletí, případně změna proti minulému výhledu.] Investoři teď budou sledovat hlavně to, jestli Azure udrží tempo kolem 45 % i v dalších čtvrtletích a jestli tržby porostou dál rychleji než odpisy.
+Microsoft tak potvrdil, že letní zrychlení Azure nebylo jednorázové a že umělá inteligence se v tržbách projevuje rychleji, než trh čekal. Otevřenou otázkou zůstávají investice. [DOPLNIT po konferenčním hovoru: výhled kapitálových výdajů a růstu Azure na další čtvrtletí, případně změna proti minulému výhledu.] Trh teď bude sledovat hlavně, jestli Azure udrží tempo kolem 45 %. Pokud ano a investice nebudou růst rychleji než tržby, může akciím dál pomáhat i rostoucí objem nasmlouvaných zakázek. Pokud by se ale růst Azure zpomalil dřív, než se nové datové kapacity zaplatí, mohly by se rychle vrátit obavy, že Microsoft za umělou inteligenci utrácí víc, než mu vynáší.
 
 ---
 
 **Pouze pro autora, neposílat do redakce:**
 
 **Doplnit:**
-- Výhled z konferenčního hovoru (23:30 SEČ): růst Azure a kapitálové výdaje na 2. fiskální čtvrtletí (říjen až prosinec), případně na celý fiskální rok 2027. V červenci právě výhled rozhodl o reakci akcií. Pokud vedení výhled investic zvýší nebo sníží, musí to být v textu výslovně.
+- Výhled z konferenčního hovoru (22:30 až zhruba 23:30 SEČ; výhled finanční ředitelka obvykle říká v úvodním vystoupení, agentury ho hlásí během hovoru): růst Azure a kapitálové výdaje na 2. fiskální čtvrtletí (říjen až prosinec), případně na celý fiskální rok 2027. V červenci právě výhled rozhodl o reakci akcií. Pokud vedení výhled investic zvýší nebo sníží, musí to být v textu výslovně.
 - Kapitálové výdaje včetně finančních leasingů. Microsoft pro tohle čtvrtletí čekal „přes 50 mld. USD“ včetně finančních leasingů, tisková zpráva ale uvádí jen pořízení majetku 39,4 mld. USD bez leasingů. Srovnání s výhledem proto v textu není, číslo zazní na hovoru nebo ve výkazech.
 
 **Body k ověření:**

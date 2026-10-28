@@ -139,13 +139,15 @@ Tenhle typ se opakuje každé čtvrtletí, proto má pevnou kostru.
 **Různé začátky a konce.** Autor nechce, aby bylo „okaté, že to píše AI“. Odstavce nesmí začínat ani končit pořád stejnou šablonou, a to ani v rámci jednoho komentáře, ani mezi firmami zveřejněnými ve stejný den, ani proti předchozím komentářům. Střídej například:
 - první věta: „X vykázala za třetí čtvrtletí tržby…“, „X ve třetím čtvrtletí meziročně vzrostly tržby o … na …“, „Tržby X stouply/klesly…“, začátek nejsilnějším číslem nebo hlavní zprávou;
 - druhý odstavec: pohyb akcií spoj rovnou s důvodem („Akcie po výsledcích rostou o 2 %, a to díky vyšší než očekávané volné hotovosti.“), nebo začni důvodem a pohyb dej až za něj;
-- závěr: „Rozhodující pro další čtvrtletí bude…“, „V dalším čtvrtletí bude důležité, jestli…“, „Klíčové bude…“, „Investoři budou sledovat…“.
+- závěr: „Rozhodující pro další čtvrtletí bude…“, „V dalším čtvrtletí bude důležité, jestli…“, „Klíčové bude…“, „Trh teď bude sledovat hlavně, jestli…“. Nepiš „Investoři budou sledovat…“, autorovi to zní jako AI.
+- závěr ideálně dotáhni do dvou podmíněných scénářů pro akcie, kdy se jim může dařit a kdy ne (vzor Microsoft: „Pokud ano a investice nebudou růst rychleji než tržby, může akciím dál pomáhat i rostoucí objem nasmlouvaných zakázek. Pokud by se ale růst Azure zpomalil dřív, než se nové datové kapacity zaplatí, mohly by se rychle vrátit obavy, že Microsoft za umělou inteligenci utrácí víc, než mu vynáší.“).
 Před odevzdáním porovnej první a poslední věty odstavců se vzory a s dalšími komentáři ze stejného dne ve `vystupy/komentare/` a přepiš ty, které se opakují.
 
 **Délka a výběr témat:** zhruba 300 až 350 slov na firmu, tři odstavce. U výsledků bez velké strukturální zprávy klidně méně (Tesla 281 slov). Do závěru nepřidávej věty navíc, které nic nerozhodují (například vývoj akcie od začátku roku). Vyber tři hlavní myšlenky, jednu na odstavec. Vše ostatní, co je ve výsledcích zajímavé, dej pod čáru jako „vypuštěno, lze doplnit“. Nepiš první osobu, závěr formuluj neosobně.
 
 ### Před psaním vždy zjisti
 
+- **Čas konferenčního hovoru v českém čase** počítej přes časová pásma (`zoneinfo`), ne odhadem. Na přelomu října a listopadu je rozdíl mezi New Yorkem a Prahou jen 5 hodin, protože Evropa a USA mění čas v jiné neděle.
 - **Správné označení období.** Řada firem má posunutý fiskální rok. Nvidia: fiskální rok končí koncem ledna, takže výsledky za období květen až červenec 2026 jsou „druhé čtvrtletí fiskálního roku 2027“. Microsoft: fiskální rok končí 30. června, takže duben až červen 2026 je „čtvrté čtvrtletí fiskálního roku 2026“. Alphabet, Meta a Amazon vykazují kalendářní čtvrtletí, Apple má fiskální rok končící koncem září. Označení období si vždy ověř v tiskové zprávě.
 - **Konsenzus ke každé klíčové položce** (tržby, klíčový segment, zisk na akcii, výhled) a jeho zdroj (LSEG, FactSet, Bloomberg, Visible Alpha). Pokud se zdroje liší, uveď jeden a drž ho.
 - **Vykázaný i upravený zisk na akcii** a jednorázové položky, které rozdíl vysvětlují (např. přecenění podílu v jiné firmě).

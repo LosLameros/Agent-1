@@ -4,6 +4,8 @@ Podklad pro nový obsah workshopu. Zdroje: přepisy YouTube videí (2 přepisy, 
 
 ## 1. Kolik lidí AI používá (jen nezávislé zdroje, zaměřené na ČR)
 
+- **EY Global AI Sentiment Survey (24. 4. 2026, 18 000+ lidí, 23 zemí):** 49 % použilo za posledních 6 měsíců AI při rozhodování o spoření nebo investicích. 18 % ji používá na rozpočet a domácí finance, 14 % nechalo AI vybrat finanční službu za ně. Nejvíc ji používá generace Z a vysokoškoláci. (Údaj „11 % nechává AI spravovat finance“ je jen v sekundárním článku.)
+- **EY Global Wealth Research Report 2025 (3 600 klientů správců majetku, 30 zemí):** 60 % čeká, že jim jejich poskytovatel nabídne AI. 28 % věří AI stejně jako poradci.
 - **ČSÚ, šetření ICT v domácnostech (2025):** nástroje AI pro tvorbu obsahu používalo 32 % Čechů starších 16 let. Ve věku 16–24 let 78 %, nad 65 let 4 %. Mezi vysokoškoláky v produktivním věku 60 %.
 - **Ipsos / Zlatá koruna (červenec 2025, 1 010 lidí):** AI ve financích využívá 19 % Čechů. 70 % vidí přínos v jednoduchém vysvětlení finančních pojmů. 49 % si myslí, že AI může nahradit poradce, 25 % by dalo přednost AI poradci před lidským.
 - **Deloitte TMT Highlights ČR 2026 (květen 2026):** AI aspoň občas používá 78 % Čechů, víc než trojnásobek proti roku 2023. Nejpoužívanější je ChatGPT. Pozor, vzorek je jen 341 lidí.
@@ -65,6 +67,7 @@ Co z toho plyne pro workshop:
 
 ## Zdroje
 
+- EY Global AI Sentiment Survey 2026: https://ey.com/en_gl/newsroom/2026/04/nearly-half-of-global-consumers-now-use-ai-to-guide-savings-and-investment-decisions
 - ČSÚ: https://csu.gov.cz/produkty/umelou-inteligenci-pouziva-tretina-populace
 - Deloitte TMT Highlights ČR 2026: https://www.deloitte.com/cz-sk/cs/about/press-room/ai-se-stava-beznou-soucasti-zivota-cechu.html
 - Ipsos / Zlatá koruna: https://www.ipsos.com/sites/default/files/ct/news/documents/2025-08/Vyzkum_Zlata-koruna_2025.pdf

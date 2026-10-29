@@ -1,4 +1,4 @@
-# Workshop AI: nový obsah prezentace (návrh, verze 2, 29. 10. 2026)
+# Workshop AI: nový obsah prezentace (návrh, verze 3, 29. 10. 2026)
 
 **Hlavní sdělení:** AI je skvělý investiční asistent pro **českého investora**. Ukážeme, na co a jak ji používat. Rizika nejsou samostatné téma, jsou to tipy, jak AI používat dobře.
 
@@ -12,7 +12,7 @@
 **Stavba:**
 - 4 slajdy úvodu (dřív 7),
 - praktická část: každý slajd = jedno použití s promptem a živou ukázkou,
-- „Jak to děláme my v Portu“,
+- „Jak to děláme my“ (osobní postup obou řečníků),
 - shrnutí, dotazy, závěr.
 
 Celkem 16 slajdů. U každé živé ukázky mít záložní screenshot.
@@ -27,14 +27,16 @@ Celkem 16 slajdů. U každé živé ukázky mít záložní screenshot.
 - **Podtitul:** „Co za vás zvládne. Ukážeme naživo.“
 - Jména a role obou řečníků na titulu, slajd „Kdo vás provede“ odpadá. Představení ústně, jedna věta: „Já AI používám hlavně na…“.
 
-### 2. Třetina Čechů AI používá. Na peníze jen každý pátý. (staré 3 + 4 + 5)
-*Rozvržení: Klíčová čísla na jednom místě (dvě čísla)*
+### 2. Ve světě se na peníze ptá AI už polovina lidí. V Česku zatím každý pátý. (staré 3 + 4 + 5)
+*Rozvržení: Klíčová čísla na jednom místě (tři čísla)*
 - **Anketa v Teams hned na začátku:** „Ptali jste se už AI na něco kolem peněz? Ano / ne / pravidelně.“
-- **32 %** Čechů starších 16 let používalo v roce 2025 nástroje AI typu ChatGPT. *(ČSÚ, šetření ICT v domácnostech, 2025)*
+- **49 %** lidí ve světě použilo za posledních 6 měsíců AI při rozhodování o spoření a investicích. *(EY Global AI Sentiment Survey, duben 2026, 18 000+ lidí ve 23 zemích)*
+- **32 %** Čechů starších 16 let používá nástroje AI typu ChatGPT. *(ČSÚ, šetření ICT v domácnostech, 2025)*
 - **19 %** Čechů využívá AI při správě financí. *(Ipsos pro Zlatou korunu, výzkum Finance a AI, 2025)*
 - Pod čísly: „Dnes vám ukážeme, jak AI na peníze využít. Konkrétně, s prompty, které si zkopírujete.“
 - Pravidla webináře řekne moderátor a napíše je do chatu.
-- *Alternativa s vyšším a novějším číslem:* Deloitte TMT Highlights ČR 2026 uvádí, že AI aspoň občas používá 78 % Čechů. Vzorek je ale jen 341 lidí. ČSÚ je spolehlivější, proto ho dávám na slajd.
+- Ústně, pokud se hodí: stejný průzkum EY uvádí, že 18 % lidí používá AI na rozpočet a správu domácích financí a 14 % už nechalo AI vybrat finanční službu za ně.
+- *Alternativa pro ČR s novějším číslem:* Deloitte TMT Highlights ČR 2026 uvádí, že AI aspoň občas používá 78 % Čechů. Vzorek je ale jen 341 lidí, proto na slajd dávám ČSÚ.
 
 ### 3. Jak se AI ptát, aby odpověď stála za to (staré 6 + 7 „Jak?“)
 *Rozvržení: Když je potřeba víc vysvětlit (2)*
@@ -118,12 +120,12 @@ Stavba každého slajdu:
 
 ---
 
-## JAK TO DĚLÁME MY V PORTU
+## JAK TO DĚLÁME MY
 
-### 12. Jak to děláme my: analýza firmy ve třech krocích (postup kolegů)
+### 12. Jak to děláme my: analýza firmy ve třech krocích
 *Rozvržení: Jak začít během pár minut (3 kroky)*
 
-Celé naživo na jedné firmě, ideálně na té, ke které jste naposledy psali komentář k výsledkům.
+Osobní postup obou řečníků, ne oficiální postup Portu. Na slajdu i ústně „my dva“ / „já“, ne „v Portu“. Celé naživo na jedné firmě, ideálně na té, ke které jste naposledy psali komentář k výsledkům.
 
 1. **Přepis výsledkového hovoru → česky za minutu.**
    > Tady je přepis hovoru k výsledkům. Shrň česky: co se firmě dařilo, co ne, co řekl management o výhledu a na co se ptali analytici.
@@ -191,6 +193,7 @@ Pod tím: „Všechny prompty z dnešního workshopu vám pošleme e-mailem.“
   - Upozornění: když AI modeluje budoucí hodnotu bez nákladů, vyjde jí víc, než bude realita. Proto v Projektu zůstává „piš předpoklady“.
 - **ChatGPT a bankovní účty, Robinhood agenti:** jen jako připravená odpověď v Q&A.
 - **Nový slajd 12** s postupem kolegů.
+- **Verze 3:** slajd 12 je osobní postup obou řečníků, ne „jak to děláme v Portu“. Na slajd 2 přibyl globální průzkum EY (duben 2026).
 
 ## Před workshopem ověřit
 - Váhy 10 největších firem v S&P 500 (slajd 8).

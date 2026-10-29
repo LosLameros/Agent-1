@@ -131,7 +131,7 @@ Pravidla pro poznámky řečníka:
 - Neslibuj výnosy. U výhledů „analytici čekají“, „pravděpodobně“. Minulé výnosy vždy s větou, že nezaručují budoucí.
 - Daně a právo jen obecně, s doporučením ověřit u odborníka.
 - Konkrétní akcie nebo firmy jen jako ilustrace tématu, ne jako tip.
-- **Žádné zdroje od konkurence:** průzkumy, studie ani čísla od správců fondů, bank, brokerů a poradenských firem (např. Amundi, eToro, XTB, OVB, banky). Použij nezávislé zdroje: ČSÚ, ČNB, Eurostat, výzkumné agentury bez vazby na konkurenci (Ipsos pro Zlatou korunu, Deloitte).
+- **Žádné zdroje od konkurence:** průzkumy, studie ani čísla od správců fondů, bank, brokerů a poradenských firem (např. Amundi, eToro, XTB, OVB, banky). Použij nezávislé zdroje: ČSÚ, ČNB, Eurostat, výzkumné agentury a poradenské firmy bez vazby na konkurenci (Ipsos pro Zlatou korunu, Deloitte, EY). Vždy kombinuj český a globální pohled.
 - **Nic, co klientům ukazuje, kolik je stojí poplatky.** Portu má roční poplatek, takže žádné kalkulačky nákladů, srovnávání poplatků ani hledání levnějších fondů. Ani v promptech na slajdech.
 - **Primárně pro českého investora:** nástroje a postupy, které fungují v Česku a česky. Americké novinky jen jednou větou (např. v připravené odpovědi v Q&A).
 - Názory Portu na trhy jen tak, jak je zadavatel dodá, nebo jak zazněly ve zveřejněných materiálech Portu (čtvrtletní zprávy ve `vystupy/ctvrtletni-zpravy/`, newslettery).
@@ -146,7 +146,7 @@ Rozpracováno v říjnu 2026: stará prezentace „Co všechno za vás AI (ne)ud
 - **Teorie a úvod nanejvýš 4 slajdy**, pak hned praktická část. Každý praktický slajd = jedno použití: co AI udělá za vás, prompt ke zkopírování, nástroj, co si z toho vzít, živá ukázka se záložním screenshotem.
 - **Klienti chtějí vědět, jaký nástroj na co** (ChatGPT, Claude, Gemini / Google Finance, Perplexity, NotebookLM) a co je zdarma. Schopnosti nástrojů se mění po měsících, ověř je k datu workshopu.
 - Prompty ze staré prezentace (portfolio na 10 let, 5 akcií) zadavatel chce zachovat.
-- Zadavatel je analytik a investiční konzultant Portu. Blok **„Jak to děláme my v Portu“** stojí na postupu analytiků: přepis výsledkového hovoru → pohled Buffetta a Mungera → scénáře bull/base/bear. Placené analýzy (Morningstar) do AI na webináři nenahrávat.
+- Zadavatel je analytik a investiční konzultant Portu. Blok **„Jak to děláme my“** je **osobní postup obou řečníků (analytiků), ne oficiální postup Portu**. Nepiš „v Portu to děláme takhle“. Stojí na: přepis výsledkového hovoru → pohled Buffetta a Mungera → scénáře bull/base/bear. Placené analýzy (Morningstar) do AI na webináři nenahrávat.
 - **Jak AI používáme v Portu** jen pokud to zadavatel dodá a potvrdí.
 
 # 6. VÝSTUP

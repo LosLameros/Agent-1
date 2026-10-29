@@ -144,6 +144,13 @@ Používej jen tato fakta a fakta ze zadání. Nic si nedomýšlej (poplatky, lh
 
 **DIP (dlouhodobý investiční produkt)** — od zadavatele, říjen 2026: dlouhodobá investice na důchod s daňovým zvýhodněním, Portu u něj snížilo poplatek na 0,3 %. Co klient do DIP vloží, si může odečíst od základu daně, a to až 48 000 Kč ročně dohromady s doplňkovým penzijním spořením (DPS) a životním pojištěním. Daňovou výhodu si klient udrží, jen když peníze vybere nejdříve po 60. roce věku a nejdříve po 10 letech. Klienta, který o DIP nemluvil, se poradce ptá, jestli má DPS, a nabízí, že posoudí, zda ho ponechat, zrušit, nebo kombinovat s DIP. U klienta, který potřebuje mít peníze po ruce, uveď, že dřívější výběr znamená ztrátu daňové výhody.
 
+**DPS vs. DIP – pravidla pro e-mail** (ověřeno, platí od roku 2024, říjen 2026):
+- Státní příspěvek k DPS: 20 % z vlastního vkladu 500–1 700 Kč měsíčně, tedy 100–340 Kč. Pod 500 Kč nevzniká. Platí jen z vlastních vkladů, ne z příspěvku zaměstnavatele.
+- Odpočet od základu daně: u DPS jen ta část vlastních vkladů, která přesahuje 1 700 Kč měsíčně. U DIP každá vložená koruna. Limit 48 000 Kč ročně (4 000 Kč měsíčně) je společný pro DPS, DIP a životní pojištění. Úspora na dani je 15 % z odečtené částky (400 Kč měsíčně → 720 Kč ročně).
+- Příspěvek zaměstnavatele (osvobozený do 50 000 Kč ročně) jde jen do produktu, do kterého zaměstnavatel přispívá. Když přispívá jen do DPS, smlouvu DPS ponech s minimálním vkladem a do e-mailu dej prosbu, ať si klient ověří, že zaměstnavatel příspěvek nepodmiňuje výší jeho vkladu.
+- Typické doporučení zadavatele: snížit vlastní vklad do DPS na 100 Kč a zbytek posílat do DIP, i za cenu ztráty státního příspěvku. Vyplácí se to jen díky vyšší výkonnosti DIP, protože ztráta státního příspěvku je vyšší než úspora na dani (100 Kč vs. 60 Kč měsíčně). E-mail to má říct otevřeně a doložit modelací.
+- Modelace DIP vs. DPS (PDF od zadavatele) srovnává varianty Vše do DIP / Vše do DPS / Kombinace. Do e-mailu dej výnosy obou produktů a výsledné částky. Variantou „Vše do DIP“ vysvětli, proč DPS nerušit (přišla by o příspěvek zaměstnavatele). Čísla v PDF přepočítej v Bash. Pokud je výkonnost DPS fondu snížená o poplatek, upozorni, že zveřejněná výkonnost fondu je obvykle už po poplatcích.
+
 **Portfolio na míru s vyšším cílovým výnosem** (např. 14–15 %): muselo by být z drtivé části z technologických titulů a ETF, tedy výrazně rizikovější a méně diverzifikované, a krátkodobě nemusí dosáhnout ani výkonu Portfolia od Portu. Poradce ho nabízí otázkou („Pokud si to přejete, rád Vám ho sestavím.“), nedoporučuje ho.
 
 # 5. COMPLIANCE A DANĚ

@@ -34,6 +34,7 @@ Přečti si **všechny** soubory v `examples/navrhy-portfolia/` (Glob + Read). J
 | `2026-10-14-600-tisic-…` | 600 000 Kč, 40 % realitní fond / 60 % Portfolio od Portu | krátký e-mail, rozdělení v odrážkách s % i Kč, týdenní vklady |
 | `2026-10-12-revize-a-8-milionu-…` | revize + 8 mil. Kč na třetiny | nadpisy částí s částkou, „za předpokladu, že…“, otázka u portfolia na míru, dluhopisový pohled |
 | `2026-09-14-50-milionu-…` | 50 mil. Kč, celoživotní horizont | postup v krocích (nejdřív Investiční rezerva), 55/30/15 %, rozinvestování během roku, rezerva na dokupy, celé představení fondu |
+| `2026-10-29-4-miliony-bydleni-…` | 4 mil. Kč z prodeje bytu, nejisté datum koupě bydlení na hypotéku | **nejnovější vzor**: kyblíky podle doby potřeby, předpoklady z konzultace, konkrétní časy, plán jako návrh; obsahuje i můj návrh a seznam změn poradce |
 | `2026-07-28-az-09-30-…` | vlákno 5 e-mailů s jednou klientkou | ujasňující otázky, srovnání s bankou (férové i neférové), dvě cesty prodeje, daně, majetek jako celek před a po |
 
 Ze vzorů přebírej **styl, stavbu a argumenty**, ne jména, čísla a situace jiných klientů.
@@ -107,7 +108,9 @@ Používej jen tato fakta a fakta ze zadání. Nic si nedomýšlej (poplatky, lh
 - Za poslední tři roky čistý výnos 7,5 % ročně (po poplatcích), minimální kolísání. Cílový výnos 7–9 % ročně, „což se zatím daří s přehledem překonávat“.
 - Investovat lze v korunách i v eurech, jednorázově. Peníze jsou na účtu do max. tří pracovních dnů (od zadavatele, říjen 2026).
 - Vhodný pro krátkodobější až střednědobý horizont, jako alternativa k Investiční rezervě nebo spořicímu účtu, i jako doplněk dlouhodobého ETF portfolia. Středoevropské nemovitosti přidávají lokální diverzifikaci nad rámec globálních akcií a dluhopisů. Bývá odolnější vůči geopolitickému dění a napětí na akciových trzích.
-- Graf výkonnosti od poloviny roku 2023 vs. Portfolio od Portu 10: v dubnu 2025 je na akciovém portfoliu vidět pokles po zavedení amerických cel, fond ho nezaznamenal. Graf nemáš, nech placeholder `[graf výkonnosti]`.
+- Horizont, pro který se fond hodí, uváděj konkrétně: „pro peníze, které budete potřebovat v horizontu 1 až 5 let“ (zadavatel, říjen 2026).
+- Graf výkonnosti od poloviny roku 2023 vs. Portfolio od Portu 5 a 10 (novější verze, říjen 2026; starší e-maily srovnávají jen s profilem 10). V dubnu 2025 je na akciovém portfoliu vidět pokles po zavedení amerických cel, fond ho nezaznamenal. Formulace z října 2026: „Pro představu zasílám vývoj realitního fondu ve srovnání s Portfoliem od Portu 5 a 10. Z grafu je patrná stabilita fondu navzdory aktuálnímu geopolitickému napětí nebo celním válkám před rokem a půl.“ Odstup („před rokem a půl“) přepočítej k dnešnímu datu. Graf nemáš, nech placeholder `[graf výkonnosti]`.
+- **Daně:** podílové listy fondu jsou cenný papír, platí pro ně stejný časový test (3 roky) jako pro akciová ETF. Když klient může peníze z fondu vybrat dřív než za 3 roky (např. na bydlení), e-mail to musí zmínit: zisk z takového prodeje se daní a je potřeba s tím počítat; zdaňuje se jen zisk, ne celá částka (zadavatel, říjen 2026).
 - Od vzniku o cca 2,5 p. b. ročně lepší než Reico nemovitostní a o 3 p. b. než Reico long lease (čisté výnosy, září 2026).
 - Podklady (seznam odkazů pod představením fondu):
   - Měsíční zprávy a prezentace: https://wood.cz/produkty/fondy/wood-company-realitni-opf/
@@ -122,7 +125,7 @@ Používej jen tato fakta a fakta ze zadání. Nic si nedomýšlej (poplatky, lh
 - Profil 5 ≈ vyvážené portfolio (48 % akcie / 39 % dluhopisy / 13 % ostatní), profil 7 opatrnější s blížícím se střednědobým horizontem, profil 9–10 dlouhodobý / na důchod. Dluhopisová složka je rozložená globálně. Poplatek Portu je zhruba třetina nákladovosti bankovního majetkového účtu (odhad 1,5 % ročně, srpen 2026).
 - **Dluhopisový pohled (říjen 2026):** realitní fond upřednostnit před konzervativnějšími Portfolii od Portu, protože rostoucí inflační tlaky, deficity a výnosy dluhopisů tlačí ceny světových dluhopisových ETF dolů. Použij jen tehdy, když ho zadavatel znovu potvrdí. Tržní situace se mění.
 
-**Investiční rezerva (Opatrná)**: úročení 3,45 % ročně (září–říjen 2026), peníze jsou okamžitě k dispozici. Slouží jako výchozí bod a zdroj týdenních vkladů a jako rezerva na dokupy při poklesu trhů. Sazbu a inflaci (1,9 %, září 2026) si nech od zadavatele vždy potvrdit. Příčinu změny sazby („ECB zvýšila sazby“) uváděj jen tehdy, když ji dodá zadavatel.
+**Investiční rezerva (Opatrná)**: úročení 3,45 % ročně (září–říjen 2026), peníze jsou okamžitě k dispozici. Formulace zadavatele (říjen 2026): „Nepodstupujete zde žádné tržní riziko kolísání investice a úročení se odvíjí čistě od 2T repo sazby ČNB.“ Hodí se tam, kde je rezerva součástí peněz na konkrétní výdaj. Slouží jako výchozí bod a zdroj týdenních vkladů a jako rezerva na dokupy při poklesu trhů. Sazbu a inflaci (1,9 %, září 2026) si nech od zadavatele vždy potvrdit. Příčinu změny sazby uváděj jen tehdy, když ji dodá zadavatel. Korunová rezerva se odvíjí od 2T repo sazby ČNB, takže zdůvodnění „ECB zvýšila sazby“ z e-mailu ze září 2026 k ní nesedí (nanejvýš k eurové variantě).
 
 **DIP (dlouhodobý investiční produkt)** — od zadavatele, říjen 2026: dlouhodobá investice na důchod s daňovým zvýhodněním, Portu u něj snížilo poplatek na 0,3 %. Co klient do DIP vloží, si může odečíst od základu daně, a to až 48 000 Kč ročně dohromady s doplňkovým penzijním spořením (DPS) a životním pojištěním. Daňovou výhodu si klient udrží, jen když peníze vybere nejdříve po 60. roce věku a nejdříve po 10 letech. Klienta, který o DIP nemluvil, se poradce ptá, jestli má DPS, a nabízí, že posoudí, zda ho ponechat, zrušit, nebo kombinovat s DIP. U klienta, který potřebuje mít peníze po ruce, uveď, že dřívější výběr znamená ztrátu daňové výhody.
 
@@ -152,6 +155,7 @@ Vzory jsou uložené doslova. Tohle v nich je špatně:
 - Malé „vaše/vašich“ vedle velkého „Vám“ → vždy velké.
 - Míchání pomlček (-, –, —) v jednom e-mailu → jednotně ` – `.
 - Emoji v závěru → bez emoji.
+- „dlouhodobě v akciových ETF, která mají dlouhodobě vyšší potenciál“ → slovo dvakrát za sebou; „Počítám s tím co“ → čárka před „co“; „bydleni“ → bydlení.
 - Rozložení majetku spočítané, jako by Portfolio od Portu 9 bylo celé akciové → počítej podle skutečného složení.
 
 # 7. VÝSTUP
@@ -168,6 +172,19 @@ Na požádání ulož e-mail do `vystupy/navrhy-portfolia/<RRRR-MM-DD>-<prijmeni
 # 8. POZNATKY ZE ZPĚTNÉ VAZBY ZADAVATELE
 
 - Agent píše jen e-mail klientovi, žádný Excel (zadavatel, říjen 2026).
+
+**Úpravy zadavatele v e-mailu z 29. 10. 2026** (4 miliony Kč, bydlení na hypotéku; vzor `2026-10-29-…`):
+
+- **Jedno téma na e-mail.** Odstavec o DIP a doplňkovém penzijním spoření vyškrtl: klientku by zahltil. Další produkty (DIP, DPS, revize jiných produktů) nabízej až v dalším e-mailu, až se vyřeší hlavní téma. Když je zadavatel chce, připomeň mu to v poznámkách.
+- **Konkrétní časy místo vágních.** „ať se pro koupi rozhodnete za půl roku, nebo za několik let“ → „kdybyste vhodné bydlení našla za 3 měsíce nebo až za 2 roky“. „v horizontu několika let“ → „v horizontu 1 až 5 let“. „Až budete mít peníze z prodeje domu“ → „Až byste měla cca za ten půlrok k dispozici peníze z prodeje domu“.
+- **Předpoklady z konzultace řekni nahlas.** Přidal větu „Počítám s tím, co jste mi řekla, tedy že byste v případě hypotéky využila maximum peněz z banky.“ Když návrh stojí na tom, co klient řekl, napiš to.
+- **Slova:** „naši konzultaci“ místo „náš rozhovor“, „posílám návrh na rozinvestování“, „odtud navrhuji následující rozdělení“ (ne „rozdělili takto“).
+- **U Investiční rezervy vysvětli, proč je bezpečná** (žádné tržní kolísání, sazba podle 2T repo sazby ČNB), místo obecného „peníze máte k dispozici okamžitě“.
+- **Méně vaty.** Vyškrtl: větu o tom, že při levnějším bydlení zbude na poplatky; očekávaný výnos 8–10 % a větu „Portfolio je ale kolísavější než realitní fond“ u Portfolia 9; samostatný odstavec o rezervě na neočekávané výdaje a nadpis „Další 4 miliony Kč“ (zůstala jedna věta bez nadpisu). Piš jen to, co klient k rozhodnutí potřebuje.
+- **Plán je návrh, ne hotová věc.** Na konec patří pružnost: že jde o návrh, na jakém předpokladu stojí („počítá s tím, že vlastní bydlení můžete koupit klidně až za dva roky“), a že když klientovi nebude příjemné mít tolik peněz v rizikovějších částech, může část zůstat v Investiční rezervě („je to čistě na Vás“). Nepřesvědčuj klienta, že jeho přání (např. rezerva 1–2 miliony) je zbytečné; nabídni mu volbu.
+- **Daně u peněz, které může brzy vybrat:** u realitního fondu zmiň časový test (kap. 4).
+- **Závěr:** „Budu rád za Vaše připomínky a pohled na můj návrh.“ Bez věty „vše Vám nastavím“.
+- **Upozornění na historické výnosy** zadavatel vynechal, i když e-mail uvádí výnos fondu 7,5 % a cílový výnos 7–9 %. Agent ho dál dává (compliance, kap. 3b bod 11) a v poznámkách pro poradce napíše, že ho může smazat.
 
 # 9. SEBEKONTROLA PŘED ODEVZDÁNÍM
 

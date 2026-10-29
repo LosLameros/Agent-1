@@ -1,10 +1,21 @@
-# Workshop AI: nový obsah prezentace (návrh, 29. 10. 2026)
+# Workshop AI: nový obsah prezentace (návrh, verze 2, 29. 10. 2026)
 
-**Hlavní sdělení:** AI je skvělý investiční asistent. Ukážeme, na co a jak ji používat, aby vám šetřila čas a peníze. Rizika nejsou samostatné téma. Jsou to tipy, jak AI používat dobře.
+**Hlavní sdělení:** AI je skvělý investiční asistent pro **českého investora**. Ukážeme, na co a jak ji používat. Rizika nejsou samostatné téma, jsou to tipy, jak AI používat dobře.
 
-**Stavba:** 4 slajdy úvodu (dřív 7) → 7 praktických slajdů, každý = jedno použití s promptem na slajdu a živou ukázkou → shrnutí, dotazy, závěr. Celkem 16 slajdů (dřív 12), protože praktická část je teď hlavní. U každé živé ukázky mít připravený záložní screenshot.
+**Pro českého investora** to v praxi znamená:
+- AI odstraní jazykovou bariéru: výsledky firem, přepisy hovorů i analýzy jsou anglicky, AI je za minutu shrne česky,
+- ukázky jsou na nástrojích, které fungují v Česku a česky,
+- americké novinky (napojení účtů v ChatGPT, AI agenti u Robinhoodu) zazní jen jednou větou.
 
-Čísla odkazují na starou prezentaci, rozvržení na novou šablonu. Rešerše a zdroje jsou v `01-reserse-ai-v-investovani.md`.
+**Co v prezentaci není:** poplatky a srovnávání nákladů, průzkumy a čísla od konkurence (správci fondů, banky, brokeři, poradenské firmy).
+
+**Stavba:**
+- 4 slajdy úvodu (dřív 7),
+- praktická část: každý slajd = jedno použití s promptem a živou ukázkou,
+- „Jak to děláme my v Portu“,
+- shrnutí, dotazy, závěr.
+
+Celkem 16 slajdů. U každé živé ukázky mít záložní screenshot.
 
 ---
 
@@ -13,200 +24,178 @@
 ### 1. Titulní (staré 1 + 2)
 *Rozvržení: Titulní – tmavá*
 - **Název:** „AI jako váš investiční asistent“
-- **Podtitul:** „7 věcí, které za vás zvládne. Ukážeme je naživo.“
-- Jména a role obou řečníků přímo na titulu, slajd „Kdo vás provede“ odpadá.
-- Ústně, do 30 s na řečníka, místo životopisu jedna věta: „Já AI používám hlavně na…“.
+- **Podtitul:** „Co za vás zvládne. Ukážeme naživo.“
+- Jména a role obou řečníků na titulu, slajd „Kdo vás provede“ odpadá. Představení ústně, jedna věta: „Já AI používám hlavně na…“.
 
-### 2. 7 z 10 investorů se už ptá AI (staré 3 + 4 + 5)
-*Rozvržení: Jedno číslo, které si publikum zapamatuje*
+### 2. Třetina Čechů AI používá. Na peníze jen každý pátý. (staré 3 + 4 + 5)
+*Rozvržení: Klíčová čísla na jednom místě (dvě čísla)*
 - **Anketa v Teams hned na začátku:** „Ptali jste se už AI na něco kolem peněz? Ano / ne / pravidelně.“
-- **Číslo:** **7 z 10** drobných investorů ve světě už použilo AI při investičním rozhodnutí. Pravidelně ji používá 19 %, čtyřikrát víc než před rokem. *(Amundi, září 2026, 18 000 investorů z 26 zemí)*
-- **Dnes si odnesete:**
-  - jak se AI ptát, aby odpověď stála za to,
-  - který nástroj na co,
-  - 7 konkrétních použití s hotovými prompty, které si můžete zkopírovat.
-- Pravidla webináře (dotazy do chatu) řekne moderátor a napíše je do chatu. Na slajd nepatří.
-- Staré „Co říkají Češi a regulace“ vypadá. Případně ústně: „V Česku AI ve financích používá zatím 19 % lidí. Jste napřed.“ (Ipsos 2025)
+- **32 %** Čechů starších 16 let používalo v roce 2025 nástroje AI typu ChatGPT. *(ČSÚ, šetření ICT v domácnostech, 2025)*
+- **19 %** Čechů využívá AI při správě financí. *(Ipsos pro Zlatou korunu, výzkum Finance a AI, 2025)*
+- Pod čísly: „Dnes vám ukážeme, jak AI na peníze využít. Konkrétně, s prompty, které si zkopírujete.“
+- Pravidla webináře řekne moderátor a napíše je do chatu.
+- *Alternativa s vyšším a novějším číslem:* Deloitte TMT Highlights ČR 2026 uvádí, že AI aspoň občas používá 78 % Čechů. Vzorek je ale jen 341 lidí. ČSÚ je spolehlivější, proto ho dávám na slajd.
 
 ### 3. Jak se AI ptát, aby odpověď stála za to (staré 6 + 7 „Jak?“)
 *Rozvržení: Když je potřeba víc vysvětlit (2)*
-Pět tipů, každý s větou ke zkopírování:
 1. **Řekněte, kdo jste.** „Je mi 40, investuju 5 000 Kč měsíčně, peníze budu potřebovat za 20 let.“
 2. **Chtějte možnosti i protiargumenty.** „Dej mi 3 varianty a ke každé, co by se mohlo pokazit.“
-3. **Chtějte počty se vším.** „Započítej poplatky, daně a inflaci.“
+3. **Chtějte počty se vším.** „Započítej inflaci a daně a napiš, s jakými předpoklady počítáš.“
 4. **Chtějte zdroj a datum.** „Ke každému číslu napiš, odkud je a k jakému datu.“
 5. **Ať se zeptá ona vás.** „Než odpovíš, zeptej se mě na všechno, co potřebuješ vědět.“
 
-Spodní lišta, jedna věta: *„Rodné číslo, čísla účtů a hesla do AI nedávejte. V nastavení si vypněte, aby se na vašich konverzacích učila. Neplatí to jen pro verze zdarma.“*
+Spodní lišta: *„Rodné číslo, čísla účtů a hesla do AI nedávejte. V nastavení si vypněte, aby se na vašich konverzacích učila. Platí to i pro placené verze.“*
 
-Ze starých slajdů 6 a 7 se rizika změnila na tipy:
-- „nepřesná a neaktuální data“ → tip 4,
-- „algoritmické přitakávání“ → tip 2,
-- „nebere v úvahu osobní faktory“ → tip 1,
-- „prověřte poplatky a daně“ → tip 3.
-
-Vypadlo: „nepodléhá regulaci“, „používejte jen jako doplněk“, „poradce ze zákona může převzít odpovědnost“ (ústně v závěru, jednou větou).
-
-### 4. Který nástroj na co (nový, odpověď na otázku odborníka „jaké AI používáte“)
-*Rozvržení: Čtyři skupiny bodů v mřížce (nebo Tři karty vedle sebe)*
+### 4. Který nástroj na co (podnět odborníka „jaké AI používáte“)
+*Rozvržení: Čtyři skupiny bodů v mřížce*
 | Nástroj | Na co je nejlepší |
 |---|---|
 | **ChatGPT** | počítání, tabulky, grafy, nahrané soubory |
 | **Claude** | dlouhé dokumenty, Projekty s trvalými instrukcemi |
-| **Gemini / Google Finance** | aktuální dění na trzích, hloubková rešerše se zdroji |
-| **Perplexity** | rychlé odpovědi s odkazy na zdroje, „proč se hýbe akcie“ |
 | **NotebookLM** | odpovídá jen z vašich dokumentů, umí z nich udělat i podcast |
+| **Gemini / Google Finance, Perplexity** | aktuální dění na trzích s odkazy na zdroje |
 
-- Pod tabulkou: „Na většinu věcí stačí verze zdarma.“ (Ověřit k datu workshopu.)
-- Přechod: „A teď to ukážeme naživo.“ Přepnout na sdílení obrazovky.
+- Pod tabulkou: **„Největší výhoda pro českého investora: AI vám česky vysvětlí cokoli, co je jen v angličtině.“** A: „Na většinu věcí stačí verze zdarma.“ (Ověřit.)
+- Přechod: „A teď to ukážeme naživo.“
 
 ---
 
-## PRAKTICKÁ ČÁST (staré 7 „Na co?“, 8, 9, 10 → 7 slajdů)
+## PRAKTICKÁ ČÁST
 
-Každý slajd má stejnou stavbu:
+Stavba každého slajdu:
 - **titulek** = co AI udělá za vás,
 - **prompt** ke zkopírování,
 - **nástroj**,
-- **co si z toho vzít** (jedna věta).
+- **co si z toho vzít**,
+- živá ukázka.
 
-Pak živá ukázka.
-
-### 5. Předěl: „7 věcí, které za vás AI udělá“
+### 5. Předěl: „Co za vás AI udělá“
 *Rozvržení: Předěl – tmavý*
 
 ### 6. Přečte za vás 80 stran za minutu (staré 7 „shrnutí reportů“ + 8 „vysvětlení produktů“)
 *Rozvržení: Text a obrázek*
-- **Prompt:** „Shrň mi tento dokument do 5 bodů pro člověka, který není odborník. Pak mi napiš 3 největší rizika a kolik zaplatím na poplatcích ročně při investici 100 000 Kč. U každého čísla uveď stranu.“
-- **Doplňující otázka:** „Vysvětli mi poplatek TER na příkladu.“ / „Co je P/E? Vysvětli to na pekárně.“
-- **Nástroj:** Claude nebo ChatGPT. **Bonus:** stejný dokument v NotebookLM jako 5minutový podcast.
-- **Ukázka:** sdělení klíčových informací (KID) nebo měsíční přehled fondu, případně výroční zpráva firmy. Číslo poplatku hned ukázat v dokumentu (tip 4 v praxi).
+- **Prompt:** „Shrň mi tento dokument česky do 5 bodů pro člověka, který není odborník. Do čeho fond investuje, jak funguje a jaká jsou 3 největší rizika? U každého bodu uveď stranu.“
+- **Doplňující otázka:** „Co je P/E? Vysvětli to na pekárně.“
+- **Nástroj:** Claude nebo ChatGPT. **Bonus:** stejný dokument v NotebookLM jako krátký podcast (češtinu ověřit).
+- **Ukázka:** výroční zpráva nebo dokument k fondu v angličtině. Uvidíte, že jazyk přestane být překážka.
 - **Co si vzít:** AI je nejsilnější, když jí dáte originální dokument.
-- *Odborník: „mega dobrý“. Ipsos: 70 % Čechů vidí největší přínos AI právě ve vysvětlování.*
 
-### 7. Najde vám skryté poplatky (nový, inspirace z praxe)
-*Rozvržení: Jedno číslo, které si publikum zapamatuje*
-- **Příběh na úvod:** moderátor podcastu s CEO Robinhoodu nahrál své portfolio do AI a ta našla fond, který stál víc než téměř stejný levnější. **Úspora 16 000 dolarů ročně.**
-- **Prompt:** „Tady je seznam mých fondů a jejich poplatků. Kolik ročně platím v Kč? Kolik to dělá za 20 let? Existují fondy se stejnou strategií a nižšími náklady?“
-- **Číslo na slajd:** 5 000 Kč měsíčně na 20 let. Při 7 % ročně asi **2,54 mil. Kč**, při 6 % (o 1 % vyšší poplatky) asi **2,27 mil. Kč**. Rozdíl **270 000 Kč** za jediný procentní bod. *(Ilustrativní výpočet, nezohledňuje daně.)*
-- **Ukázka:** vymyšlený klient se dvěma bankovními podílovými fondy (vstupní poplatek, vyšší roční poplatek).
-- **Co si vzít:** poplatky jsou nejsnazší peníze, které můžete ušetřit, a AI je spočítá za minutu.
-
-### 8. Spočítá, kolik budete mít, a pamatuje si vaše cíle (staré 9 + podnět odborníka: trvalé instrukce a Projekty)
+### 7. Spočítá, kolik budete mít, a pamatuje si vaše cíle (staré 9 + podnět odborníka: trvalé instrukce a Projekty)
 *Rozvržení: Dvě varianty vedle sebe (vlevo „Bez kontextu“, vpravo „S Projektem“)*
-- **Vlevo, starý prompt ze slajdu 9 v češtině:** „Navrhni mi investiční portfolio, když plánuji investovat 10 let, a zdůvodni ho.“ → obecná odpověď (screenshot ze staré prezentace).
+- **Vlevo, starý prompt ze slajdu 9 v češtině:** „Navrhni mi investiční portfolio, když plánuji investovat 10 let, a zdůvodni ho.“ → obecná odpověď.
 - **Vpravo, Projekt „Moje investice“ s trvalými instrukcemi:**
-  > Je mi 40, mám 300 000 Kč a investuju 5 000 Kč měsíčně. Cíl: 3 mil. Kč do 60 let. Propad o 30 % bych ustál, ale nerad. Vždy počítej s poplatky, daněmi a inflací, piš předpoklady a zeptej se, když ti něco chybí. Nedoporučuj mi konkrétní akcie.
+  > Je mi 40, mám 300 000 Kč a investuju 5 000 Kč měsíčně. Cíl: 3 mil. Kč do 60 let. Propad o 30 % bych ustál, ale nerad. Počítej s inflací a daněmi, piš předpoklady a zeptej se, když ti něco chybí. Nedoporučuj mi konkrétní akcie.
 
-  Pak dotazy: „Stihnu svůj cíl? Co když přidám 1 000 Kč měsíčně? Co když trh 2 roky klesá?“
+  Pak: „Stihnu svůj cíl? Co když přidám 1 000 Kč měsíčně? Co když trh 2 roky klesá?“
 - **Nástroj:** Projekty v Claude nebo ChatGPT, případně Gemini Gems.
-- **Co si vzít:** stejná otázka, mnohem lepší odpověď, a příště už kontext nemusíte psát znovu.
-- *Výraz „system prompt“ klientům neříkat, říkat „trvalé instrukce“. Ukázku dělat na vymyšleném klientovi.*
+- **Co si vzít:** stejná otázka, mnohem lepší odpověď, a kontext už nemusíte psát znovu.
 
-### 9. Udělá rentgen vašeho portfolia (staré 7 „AI jako zpětná vazba“ + 8 „druhý názor“)
+### 8. Udělá rentgen vašeho portfolia (staré 7 „zpětná vazba“ + 8 „druhý názor“; u kolegy „Portfolio analysis cez ETF“)
 *Rozvržení: Text a obrázek*
-- **Prompt:** „Mám ETF na MSCI World, S&P 500 a Nasdaq 100 a k tomu akcie Nvidie. Kolik mám celkem v Nvidii a v 10 největších firmách? Kde se fondy překrývají?“
-- **Wow moment:** 10 největších firem dělá asi 40 % S&P 500, samotná Nvidia 7–8 % *(ověřit aktuální váhy)*. Kdo má tři „různé“ fondy, má často třikrát totéž.
-- **Tip 2 v praxi (podnět odborníka, 30 s):** „Je moje portfolio dobré?“ → AI pochválí. „Kde je moje portfolio nejvíc zranitelné?“ → užitečná odpověď.
-- **Co si vzít:** AI jako druhý pár očí na fakta: překryvy, poplatky, koncentrace. Vaše cíle zná ten, s kým jste je probírali.
-- *Rentgen hodnotí fakta, ne poradce. Tím odpadá riziko, na které upozornil odborník („AI by změnilo 3 fondy“).*
+- **Prompt:** „Mám ETF na MSCI World, S&P 500 a Nasdaq 100 a k tomu akcie Nvidie. Jak je moje portfolio rozložené podle regionů, sektorů a měn? Kolik mám celkem v 10 největších firmách? Kde se fondy překrývají?“
+- **Wow moment:** 10 největších firem tvoří asi 40 % S&P 500 *(ověřit)*. Kdo má tři „různé“ fondy, má často třikrát totéž.
+- **Tip 2 v praxi (30 s):** „Je moje portfolio dobré?“ → AI pochválí. „Kde je moje portfolio nejvíc zranitelné?“ → užitečná odpověď.
+- **Co si vzít:** AI jako druhý pár očí na fakta: překryvy, koncentrace, měny.
 
-### 10. Hlídá za vás zprávy (staré 7 „personalizované zpravodajství“)
+### 9. Hlídá za vás zprávy a přeloží je (staré 7 „personalizované zpravodajství“)
 *Rozvržení: Text a obrázek*
-- **Prompt:** „Proč akcie X minulý týden klesly o 8 %? Uveď zdroje.“ / „Shrň mi, co se tento týden stalo u firem z mého portfolia.“
-- **Nástroj:** Perplexity Finance nebo Google Finance s AI (od května 2026 v Evropě, ověřit češtinu). Na pravidelné shrnutí naplánovaná úloha v ChatGPT (ověřit).
-- **Co si vzít:** místo hodiny na zpravodajských webech 2 minuty a s odkazy na zdroje.
-- *Odpověď na otázku odborníka: řekněte na rovinu, co používáte vy.* Pokud tlačí čas, tento slajd zkrátit.
+- **Prompt:** „Proč akcie X minulý týden klesly o 8 %? Odpověz česky a uveď zdroje.“
+- **Nástroj:** Perplexity nebo Google Finance s AI (v Evropě od května 2026, češtinu ověřit).
+- **Co si vzít:** místo hodiny na anglických webech 2 minuty česky a se zdroji.
+- Pokud tlačí čas, tento slajd zkrátit.
 
-### 11. Najde firmy k tématu, kterému věříte (staré 7 „brainstorming“ + příklad odborníka)
+### 10. Najde firmy k tématu, kterému věříte (staré 7 „brainstorming“ + příklad odborníka)
 *Rozvržení: Text a obrázek*
 - **Prompt:** „Jaké firmy na burze vyrábějí čipy? Kolik tržeb z toho mají? A existuje ETF, které pokryje celé téma najednou?“
-- **Co si vzít:** AI je skvělý start rešerše. Z 20 firem se za minutu zorientujete. Rozhodnutí je pak vaše, a často se ukáže, že téma jde koupit šířeji přes ETF.
+- **Co si vzít:** skvělý start rešerše. Rozhodnutí je pak vaše, a často se ukáže, že téma jde koupit šířeji přes ETF.
 
-### 12. Na kterých pěti akciích vydělám nejvíc? (staré 10)
-*Rozvržení: Varianta A, nebo varianta B? (tři sloupce s pěti jmény, shody barevně)*
-- **Nejdřív anketa:** „Které akcie AI podle vás jmenuje?“
-- **Pak odhalení:** tři nástroje, tři různé odpovědi (vygenerovat znovu pár dní před workshopem, pojmenovat nástroje, dát datum). Shody zvýraznit.
-- **Pointa (pozitivně):** „AI není věštkyně. Je to skvělý analytik. Tak se jí ptejte jako analytika:“
-  - místo „Co vyroste?“ → „Jaká jsou rizika a příležitosti těchto firem?“
-  - místo „Co koupit?“ → „Jak velkou část mého portfolia už tvoří?“
-- Jedna věta ústně: v pokusu Alpha Arena (květen 2026) obchodovalo 8 velkých AI modelů dva týdny a v zisku skončilo jen 6 z 32 výsledků.
-- **Co si vzít:** na budoucnost se neptejte. Ptejte se na fakta a souvislosti, tam AI exceluje.
+### 11. Takhle ne: „Na kterých pěti akciích vydělám nejvíc?“ (staré 10; u kolegy „Príklad zlej analýzy“)
+*Rozvržení: Varianta A, nebo varianta B? (tři sloupce po pěti jménech, shody barevně)*
+- **Anketa:** „Které akcie AI podle vás jmenuje?“
+- **Odhalení:** tři nástroje, tři různé odpovědi (vygenerovat znovu před workshopem, pojmenovat nástroje, dát datum). Sugestivní otázka = odpověď, kterou chcete slyšet, a „horké tipy“.
+- **Pointa a most na další slajd:** „AI není věštkyně, je to skvělý analytik. Tak se jí ptejte jako analytika. Ukážeme vám, jak to děláme my.“
+- Ústně jedna věta: v pokusu Alpha Arena (květen 2026) obchodovalo 8 velkých AI modelů dva týdny a v zisku skončilo jen 6 z 32 výsledků.
+
+---
+
+## JAK TO DĚLÁME MY V PORTU
+
+### 12. Jak to děláme my: analýza firmy ve třech krocích (postup kolegů)
+*Rozvržení: Jak začít během pár minut (3 kroky)*
+
+Celé naživo na jedné firmě, ideálně na té, ke které jste naposledy psali komentář k výsledkům.
+
+1. **Přepis výsledkového hovoru → česky za minutu.**
+   > Tady je přepis hovoru k výsledkům. Shrň česky: co se firmě dařilo, co ne, co řekl management o výhledu a na co se ptali analytici.
+
+   Hodinový hovor v angličtině za minutu česky. To je pro českého investora největší přínos.
+2. **Očima Buffetta a Mungera.**
+   > Posuď tuto firmu, jak by ji posuzovali Warren Buffett a Charlie Munger: rozumím byznysu? Má trvalou konkurenční výhodu? Je management poctivý a schopný? Je cena rozumná? Nepřisuzuj jim žádné citáty.
+
+   Klienti Buffetta znají, je to zábavné a naučí to ptát se na podstatné věci.
+3. **Tři scénáře místo předpovědi.**
+   > Napiš optimistický, střední a pesimistický scénář pro tuto firmu na 3 roky. Ke každému napiš, co by se muselo stát, a jaké jsou hlavní předpoklady.
+
+   Přesně tohle je „ptát se jako analytika“ místo „co vyroste?“.
+
+- **Co si vzít:** AI vám neřekne, co koupit. S dobrým postupem ale za 10 minut pochopíte firmu líp než za večer čtení.
+- Morningstar jako samostatný krok nedávám (proč, viz rozbor níže). Jeho rámec (konkurenční výhoda, férová hodnota, míra nejistoty) se vejde do kroku 2.
 
 ---
 
 ## ZÁVĚR
 
-### 13. Jak to dělám já: AI jako osobní finanční asistent (TIPS od odborníka)
+### 13. Vyzkoušejte doma (TIPS od odborníka)
 *Rozvržení: Tři karty vedle sebe*
-1. **Projekt „Moje finance“:** cíle, horizonty, přehled smluv. Na podmínky smlouvy nebo číslo pojistky se zeptám místo hledání v šuplíku. (Citlivé údaje začerněné, učení na datech vypnuté.)
-2. **Měsíční kontrola výdajů:** z banky stáhnu výpis jako CSV jen se sloupci datum, popis a částka. „Kde jsem utratil víc, než jsem chtěl, a jak se držím plánu?“
-3. **Sparing k novému cíli:** „Chci za 3 roky auto za 600 000 Kč. Jak to zapadá do mého plánu a co to udělá s mými investicemi?“
-
-Říct jako osobní příběh řečníka. Na slajdu jen 3 karty.
+1. **Projekt „Moje finance“:** cíle, horizonty, přehled smluv. Na podmínky smlouvy se zeptáte místo hledání v šuplíku. (Citlivé údaje začerněné.)
+2. **Měsíční kontrola výdajů:** výpis z banky jako CSV jen se sloupci datum, popis a částka. „Kde jsem utratil víc, než jsem chtěl?“
+3. **Rozmyslete s ní nový cíl:** „Chci za 3 roky auto za 600 000 Kč. Jak to zapadá do mého plánu?“
 
 ### 14. Vyzkoušejte ještě dnes večer
 *Rozvržení: Shrnutí a další kroky*
 1. Vypněte v nastavení učení na svých datech (2 minuty).
-2. Nahrajte do AI dokument ke svému fondu a nechte si ho shrnout.
-3. Spočítejte si, kolik ročně platíte na poplatcích.
-4. Založte si Projekt s vašimi cíli.
+2. Nahrajte do AI anglický dokument k vaší investici a nechte si ho česky shrnout.
+3. Nechte si udělat rentgen svého portfolia.
+4. Založte si Projekt se svými cíli.
 
-Pod tím: „Všechny prompty z dnešního workshopu vám pošleme e-mailem.“ (Tahák na jednu stranu, viz níže.)
+Pod tím: „Všechny prompty z dnešního workshopu vám pošleme e-mailem.“
 
 ### 15. Otázky a odpovědi (staré 11)
-*Rozvržení: Otázky a odpovědi (s připravenými otázkami, ať se lidi nestydí začít)*
+*Rozvržení: Otázky a odpovědi (připravené otázky)*
 - Která AI je na investice nejlepší?
 - Potřebuju placenou verzi?
-- Můžu AI dát přístup ke svému účtu?
+- **Můžu AI dát přístup ke svému účtu?** *Připravená odpověď: „V USA už ano: ChatGPT umí číst bankovní účty a u brokera Robinhood můžete napojit AI agenta, který za vás obchoduje. V Česku zatím ne, a my bychom AI peníze do ruky zatím nedávali.“* Tady americké novinky zazní a nic dalšího nepotřebují.
 - Nahradí AI poradce?
 
 ### 16. Děkujeme + Právní upozornění (staré 12)
-*Rozvržení: Děkujeme! Máte dotazy? (2) a Právní upozornění*
-- Starý anglický disclaimer z roku 2024 nahradit českým ze šablony.
-- Jedna věta ústně: „Za investiční rozhodnutí odpovídáte vy. Rádi vám s ním pomůžeme. Ozvěte se, když budete chtít výstup z AI probrat s člověkem.“
+- Starý anglický disclaimer nahradit českým ze šablony.
 
 ---
 
-## Co se stalo se starými slajdy
+## Rozbor bodů od kolegy
 
-| Starý slajd | Co s ním |
-|---|---|
-| 1 Titulní | nový 1, název i podtitul pozitivně |
-| 2 Kdo vás provede | jména na titul, slajd vypadá |
-| 3 Koncepce | vypadá (moderátor + chat) |
-| 4 Úvod / obsah | nový 2 jako „Dnes si odnesete“ |
-| 5 Co říkají Češi a regulace | nahrazen čerstvým číslem Amundi (9/2026), Ipsos ústně |
-| 6 Upozornění a rizika | 4 body převedené na tipy v novém 3, zbytek vypadá |
-| 7 Jak a na co | „Jak?“ → nový 3. „Na co?“ → praktické slajdy 6–11, každý bod jeden slajd s ukázkou |
-| 8 Praktické příklady | druhý názor → nový 9 (rentgen), vysvětlení produktů → nový 6 |
-| 9 Prompt: portfolio na 10 let | nový 8, česky, srovnání bez kontextu a s Projektem |
-| 10 Prompt: 5 akcií | nový 12, anketa a pozitivní pointa |
-| 11 Q&A | nový 15 s připravenými otázkami |
-| 12 Děkujeme | nový 16 s českým právním upozorněním |
+| Bod | Hodí se? | Kam a proč |
+|---|---|---|
+| **Earnings Call Transcript** | **Ano, silně** | Slajd 12, krok 1. Pro českého investora je to nejlepší ukázka: hodinový anglický hovor za minutu česky. Přepis vzít z veřejného zdroje (stránky firmy pro investory), ne z placeného serveru. |
+| **Morningstar analysis** | **Ne jako samostatný bod** | Analýzy Morningstar jsou placené a autorsky chráněné. Nahrávat je do AI na webináři pro veřejnost je problém a klienti je stejně nemají. Jejich rámec (konkurenční výhoda, férová hodnota, nejistota) jsem dal do kroku 2. |
+| **Buffett/Munger pohled** | **Ano** | Slajd 12, krok 2. Zábavné, Buffetta zná každý a naučí to ptát se na podstatu. AI ale musí dostat pokyn, ať nevymýšlí citáty. |
+| **Bull/Base/Bear Scenarios** | **Ano, silně** | Slajd 12, krok 3. Je to pozitivní odpověď na slajd „5 akcií“: místo předpovědi scénáře s předpoklady. |
+| **Stock analysis** | **Ano, jako zastřešení** | Celý slajd 12 je analýza akcie. Jen jedna firma: většina klientů Portu má ETF, analýza jednotlivých akcií je pro ně ukázka postupu, ne hlavní téma. |
+| **Portfolio analysis cez ETF** | **Ano, nejdůležitější pro naše klienty** | Slajd 8 (rentgen portfolia). Prompt mluví o rozložení, překryvech a měnách, ne o nákladech. |
+| **Príklad zlej analýzy** | **Ano** | Slajd 11 („5 akcií“) jako „takhle ne“ a hned po něm slajd 12 jako „takhle ano“. Díky tomu příklad nevyzní negativně. |
 
-## Jak je zapracovaný Google Doc odborníka
-
-| Podnět | Kde |
-|---|---|
-| Víc praktických ukázek, živě místo screenshotů | slajdy 6–12: každý je živá ukázka se záložním screenshotem |
-| Porovnání výsledků mezi nástroji | slajdy 4 a 12 |
-| Ukázka system promptu | slajd 8 (trvalé instrukce s poplatky, daněmi, inflací) |
-| Projekty v Claude na vymyšleném případu | slajdy 8 a 13 |
-| Jaké AI na zpravodajství používáte | slajdy 4 a 10 |
-| Přitakávání: zabarvená vs. neutrální otázka | tip 2 na slajdu 3, ukázka na slajdu 9 |
-| Zpětná vazba od AI se může obrátit proti poradci | slajd 9 je rentgen faktů, ne hodnocení poradce |
-| Pozor, co lidé do AI sypou | lišta na slajdu 3, slajd 14 bod 1. Opraveno: placená verze sama nestačí, rozhoduje přepínač |
-| Hledání firem k tématu (čipy) | slajd 11 |
-| Varování u „5 akcií“, nekonzistence nástrojů | slajd 12 |
-| Jak AI používá sám (TIPS) | slajd 13 |
-| Převod do barev Portu přes Copilot | není potřeba, je hotová nová šablona |
+## Co se oproti minulé verzi změnilo
+- **Amundi pryč.** Na slajdu 2 je ČSÚ 2025 a Ipsos 2025.
+- **Vynechané průzkumy od konkurence:** eToro, XTB, OVB a Raiffeisenbank (všechny z let 2025–2026).
+- **Slajd o poplatcích vyřazený.** Poplatky jsem vyndal i ze všech ostatních promptů a slajdů (tip 3, shrnutí dokumentu, Projekt, rentgen, „vyzkoušejte večer“).
+  - Upozornění: když AI modeluje budoucí hodnotu bez nákladů, vyjde jí víc, než bude realita. Proto v Projektu zůstává „piš předpoklady“.
+- **ChatGPT a bankovní účty, Robinhood agenti:** jen jako připravená odpověď v Q&A.
+- **Nový slajd 12** s postupem kolegů.
 
 ## Před workshopem ověřit
-
-- Aktuální váhy Nvidie a top 10 v S&P 500 (slajd 9).
-- Co je zdarma: Projekty v Claude a ChatGPT, Gems v Gemini, NotebookLM v češtině (slajdy 4 a 8).
-- Google Finance s AI v češtině, naplánované úlohy v ChatGPT (slajd 10).
-- Přepínač učení na datech u ChatGPT, Claude a Gemini (slajdy 3 a 14).
-- Odpovědi na „5 akcií“ vygenerovat znovu (slajd 12).
-- Připravit vymyšlené podklady: klient pro Projekt, dva bankovní fondy s poplatky, portfolio ze tří ETF, KID fondu (slajdy 6–9).
+- Váhy 10 největších firem v S&P 500 (slajd 8).
+- Co je zdarma: Projekty v Claude a ChatGPT, Gems, NotebookLM v češtině (slajdy 4, 6, 7).
+- Google Finance s AI v češtině (slajd 9).
+- Přepínač učení na datech (slajdy 3 a 14).
+- Odpovědi na „5 akcií“ vygenerovat znovu (slajd 11).
+- Připravit: vymyšleného klienta pro Projekt, portfolio ze tří ETF, anglický dokument k fondu, přepis výsledkového hovoru vybrané firmy.

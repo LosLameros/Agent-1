@@ -2,11 +2,12 @@
 
 Podklad pro nový obsah workshopu. Zdroje: přepisy YouTube videí (2 přepisy, pak YouTube další stahování zablokoval), přehled ~100 letošních videí podle sledovanosti, průzkumy a články. U každého čísla je zdroj; co je označené „ověřit“, se mění rychle a před workshopem se musí zkontrolovat.
 
-## 1. Kolik lidí AI při investování používá
+## 1. Kolik lidí AI používá (jen nezávislé zdroje, zaměřené na ČR)
 
-- **Amundi „Decoding Investors“ (22. 9. 2026, 18 000 investorů, 26 zemí):** 7 z 10 drobných investorů už použilo AI při investičním rozhodnutí, 59 % z nich se podle odpovědi zařídilo. **Pravidelně** AI používá 19 %, **čtyřikrát víc než před rokem**. Německo 40 %, Francie 28 %, Indie 68 %.
-- **Investing.com (duben 2026, USA, 938 investorů):** 62 % použilo AI k investičnímu rozhodnutí, 54 % chatboty typu ChatGPT.
-- **Ipsos / Zlatá koruna (červenec 2025, ČR, 1 010 lidí):** AI ve financích využívá 19 % Čechů. 70 % vidí přínos v jednoduchém vysvětlení finančních pojmů. 49 % si myslí, že AI může nahradit poradce, 25 % by dalo přednost AI poradci před lidským.
+- **ČSÚ, šetření ICT v domácnostech (2025):** nástroje AI pro tvorbu obsahu používalo 32 % Čechů starších 16 let. Ve věku 16–24 let 78 %, nad 65 let 4 %. Mezi vysokoškoláky v produktivním věku 60 %.
+- **Ipsos / Zlatá koruna (červenec 2025, 1 010 lidí):** AI ve financích využívá 19 % Čechů. 70 % vidí přínos v jednoduchém vysvětlení finančních pojmů. 49 % si myslí, že AI může nahradit poradce, 25 % by dalo přednost AI poradci před lidským.
+- **Deloitte TMT Highlights ČR 2026 (květen 2026):** AI aspoň občas používá 78 % Čechů, víc než trojnásobek proti roku 2023. Nejpoužívanější je ChatGPT. Pozor, vzorek je jen 341 lidí.
+- **Vyřazeno, protože jde o konkurenci:** Amundi (správce fondů), eToro a XTB (brokeři), OVB (poradenská firma), Raiffeisenbank (banka). Investing.com vyřazen, je to americký vzorek.
 
 ## 2. Co lidé s AI při investování skutečně dělají (nejčastější scénáře z videí a návodů)
 
@@ -64,8 +65,8 @@ Co z toho plyne pro workshop:
 
 ## Zdroje
 
-- Amundi: https://www.wealthprofessional.ca/news/industry-news/seven-in-ten-investors-now-ask-ai-before-they-invest-study/393599
-- Investing.com průzkum: https://hedgefundalpha.com/news/retail-investors-now-use-ai-to-inform-investment-decisions/
+- ČSÚ: https://csu.gov.cz/produkty/umelou-inteligenci-pouziva-tretina-populace
+- Deloitte TMT Highlights ČR 2026: https://www.deloitte.com/cz-sk/cs/about/press-room/ai-se-stava-beznou-soucasti-zivota-cechu.html
 - Ipsos / Zlatá koruna: https://www.ipsos.com/sites/default/files/ct/news/documents/2025-08/Vyzkum_Zlata-koruna_2025.pdf
 - ChatGPT Finances: https://help.openai.com/en/articles/20001222-finances-in-chatgpt
 - Robinhood agenti a asistenti brokerů: https://walnutinvest.com/resources/which-brokers-have-an-ai-assistant

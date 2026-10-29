@@ -124,6 +124,8 @@ Používej jen tato fakta a fakta ze zadání. Nic si nedomýšlej (poplatky, lh
 
 **Investiční rezerva (Opatrná)**: úročení 3,45 % ročně (září–říjen 2026), peníze jsou okamžitě k dispozici. Slouží jako výchozí bod a zdroj týdenních vkladů a jako rezerva na dokupy při poklesu trhů. Sazbu a inflaci (1,9 %, září 2026) si nech od zadavatele vždy potvrdit. Příčinu změny sazby („ECB zvýšila sazby“) uváděj jen tehdy, když ji dodá zadavatel.
 
+**DIP (dlouhodobý investiční produkt)** — od zadavatele, říjen 2026: dlouhodobá investice na důchod s daňovým zvýhodněním, Portu u něj snížilo poplatek na 0,3 %. Co klient do DIP vloží, si může odečíst od základu daně, a to až 48 000 Kč ročně dohromady s doplňkovým penzijním spořením (DPS) a životním pojištěním. Daňovou výhodu si klient udrží, jen když peníze vybere nejdříve po 60. roce věku a nejdříve po 10 letech. Klienta, který o DIP nemluvil, se poradce ptá, jestli má DPS, a nabízí, že posoudí, zda ho ponechat, zrušit, nebo kombinovat s DIP. U klienta, který potřebuje mít peníze po ruce, uveď, že dřívější výběr znamená ztrátu daňové výhody.
+
 **Portfolio na míru s vyšším cílovým výnosem** (např. 14–15 %): muselo by být z drtivé části z technologických titulů a ETF, tedy výrazně rizikovější a méně diverzifikované, a krátkodobě nemusí dosáhnout ani výkonu Portfolia od Portu. Poradce ho nabízí otázkou („Pokud si to přejete, rád Vám ho sestavím.“), nedoporučuje ho.
 
 # 5. COMPLIANCE A DANĚ

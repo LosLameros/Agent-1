@@ -1,9 +1,6 @@
 # Workshop AI: rozbor slajdů 1–10 a připomínek odborníka (29. 10. 2026)
 
-**Podklady:** stará prezentace „Co všechno za vás AI (ne)udělá“ (12 slajdů, webinář v MS Teams). Soubor staré prezentace nedorazil, rozbor stojí na screenshotech v Google Docu odborníka:
-- slajdy 4, 6 a 7 vidím celé,
-- slajdy 3, 5 a 8 jen jako náhledy (u slajdu 5 nepřečtu procenta),
-- slajdy 9 a 10 znám jen ze zadání promptů a z poznámek odborníka.
+**Podklady:** stará prezentace „Co všechno za vás AI (ne)udělá“ z 14. 7. 2026 (12 slajdů, webinář v MS Teams, řečníci Marek Pokorný a Marek Malina): `podklady/workshopy/2026-11-umela-inteligence/puvodni-ai-v-investovani.pptx`. Rozbor je ověřený přímo na souboru, včetně screenshotů odpovědí AI na slajdech 9 a 10.
 
 Připomínky odborníka jsou doslova v `podklady/workshopy/2026-11-umela-inteligence/pripominky-odbornika.md`.
 
@@ -21,7 +18,7 @@ Připomínky odborníka jsou doslova v `podklady/workshopy/2026-11-umela-intelig
 ### Nový slajd 1: Titulní (staré 1 + 2)
 - Slajd 2 „Kdo vás provede“ vyhodit. Jména a role dát na titulní slajd, šablona na to místo má.
 - Představení říct ústně, do 30 sekund na řečníka. Místo životopisu jedna osobní věta: „Já AI používám na… a jednou mě pěkně napálila, když…“. Lidi to probudí víc než výčet zkušeností.
-- Název „Co všechno za vás AI (ne)udělá“ je dobrý, klidně nechat. Alternativy, které víc slibují užitek:
+- Název „Co všechno za vás AI (ne)udělá“ je dobrý, klidně nechat. Datum na titulu přepsat (stará verze má 14. 7. 2026). Alternativy, které víc slibují užitek:
   - „AI a vaše peníze: kdy pomůže a kdy naletíte“
   - „Zeptejte se AI správně“
   - „AI jako finanční parťák. Ne jako guru.“
@@ -33,12 +30,15 @@ Připomínky odborníka jsou doslova v `podklady/workshopy/2026-11-umela-intelig
   - „Uvidíte, kde vám AI ušetří hodinu čtení.“
   - „Dozvíte se, kterým radám od AI nevěřit.“
 - Bod „AI portfolio – měli by mu investoři důvěřovat?“ odborník oprávněně kritizuje: slib, na který workshop neodpověděl. Buď ho vyhodit, nebo (lepší) nechat jako otázku na začátku a **výslovně ji zodpovědět** na slajdu 10 (viz C).
-- **Slajd 5 (Co říkají Češi)**: ze 4 statistik nechat **jedno** číslo, to o tom, kolik Čechů by přijalo investiční radu od AI. Jak s ním pracovat:
-  - Nejdřív anketa v Teams nebo v chatu: „Přijali byste investiční radu od AI? Ano / ne / už jsem to udělal.“
-  - Pak ukázat, jak odpovídá zbytek Česka. Lidi se porovnávají rádi, a hned v 2. minutě jsou zapojení.
-  - Ostatní tři čísla (AI místo poradce, obavy o data, ochrana před phishingem) a „Shrnutí“ vyhodit. Pokud je chcete, číslo o obavách o data se hodí do slajdu 3.
-  - Slovo „regulace“ z nadpisu pryč. Slajd o regulaci skoro nic neříká.
-  - Číslo ověřit: zdroj a datum průzkumu (odkaz „Zdroj“ na náhledu nepřečtu).
+- **Slajd 5 (Co říkají Češi)**: ze 4 statistik nechat **jedno** číslo. Zdroj ověřený: výzkum Ipsos pro Zlatou korunu „Finance a AI“, červenec 2025, 1 010 respondentů.
+  - **Doporučuju: 49 % Čechů si myslí, že AI může nahradit lidské finanční poradce.** Od dvou poradců to zní sebeironicky a hned to vytvoří napětí: „Možná si to myslí i polovina z vás. Za hodinu uvidíte, proč (zatím) ne.“
+  - Postup: nejdřív anketa v Teams „Může AI nahradit finančního poradce? Ano / ne“, pak odhalit číslo za Česko. Lidi se rádi porovnávají a jsou zapojení hned ve 2. minutě.
+  - Jako kontrast stačí ústně: jen 25 % by dalo přednost AI poradci před lidským a 48 % považuje za důvěryhodnější člověka (AI jen 19 %).
+  - Pozor, stará prezentace číslo zkreslila. „~¼ Čechů by přijala investiční radu od AI“ výzkum neříká. Otázka zněla, zda by dali **přednost** AI poradci **před lidským**. Údaj „mladší (25–34) jí věří víc“ ve zveřejněných výsledcích nenacházím, vypustit.
+  - Ostatní čísla ze slajdu pryč. Číslo o obavách o data (32 %, v roce 2023 26 %) se hodí ústně ke kartě 3 na slajdu 3.
+  - Slovo „regulace“ z nadpisu pryč. Slajd o regulaci nic neříká.
+  - Data jsou z července 2025, k datu workshopu přes rok stará. Na slajd uvést „Ipsos, 2025“. Než to zafixujeme, zkusím najít novější vlnu.
+  - Hodí se i do praktické části: 70 % Čechů vidí přínos AI v jednoduchém vysvětlení složitých finančních pojmů (stejný výzkum). Dobrý úvod k ukázce č. 1.
 
 ### Nový slajd 3: Tři zlozvyky AI (staré 6)
 Ze 7 bodů udělat 3 karty. Každá má jasný problém a konkrétní „co s tím“:
@@ -104,17 +104,37 @@ Celý seznam ze slajdu jako text vyhodit a udělat z něj **osnovu ukázek** v p
 - **Vysvětlení produktů → ukázka č. 1** (viz B). Bod „vypočte poplatky“ využít k ověření naživo: porovnat poplatek, který AI napíše, s dokumentem. Buď sedí, nebo máte přímo na workshopu důkaz pro kartu 1.
 
 ### Slajd 9 „Urob mi návrh investičného portfólia na 10 rokov a zdôvodni“
-- **Nechat.** Pro české publikum přeložit do češtiny.
-- Udělat z něj **„špatný dotaz → dobrý dotaz“**: vlevo tenhle jednovětý prompt a obecná odpověď, vpravo stejný dotaz podle receptu ze slajdu 4 (věk, částka, cíl, poplatky, „zeptej se mě“) a lepší odpověď. Recept tak hned dostane důkaz.
+Na slajdu je screenshot odpovědi: tabulka (akcie rozvinuté trhy 70 %, rozvíjející se 10 %, dluhopisy 15 %, zlato nebo REITs 5 %) a zdůvodnění. Slajd ukazuje odpověď, ale neříká, co si z ní vzít.
+
+- **Nechat a udělat z něj hru „Najděte 3 chyby“.** Publikum píše do chatu, co je na odpovědi špatně. Pak odhalit:
+  1. **Neptala se, kdo jste.** Znala jen horizont, a stejně rozdala 80 % do akcií. Nezná věk, částku, cíl ani to, jak snesete propad o třetinu.
+  2. **REITs jsou realitní akcie, ne stabilizátor.** Ve zdůvodnění je ale počítá do „stabilizační složky 20 %“, která má tlumit propady akcií.
+  3. **MSCI World a S&P 500 se z velké části překrývají** (americké firmy tvoří většinu MSCI World). „MSCI World / S&P 500“ jako jedna položka mate.
+  - Případně čtvrtá: nezmínila poplatky ani daně a dluhopisy zajišťuje do EUR, což pro českého investora nesedí (pro slovenského ano).
+- **Pak „špatný dotaz → dobrý dotaz“**: stejný požadavek podle receptu ze slajdu 4 (věk, částka, cíl, poplatky, „zeptej se mě“) a lepší odpověď. Recept tak dostane důkaz.
+- **Jazyk:** prompt i odpověď jsou slovensky. Pokud je webinář společný pro Česko a Slovensko (prezentuje i Marek Malina), nechat. Pokud je jen pro české klienty, přeložit.
 - **Ukázka č. 3 navazuje:** dobrý dotaz uložit do Projektu jako trvalé instrukce (podnět odborníka: system prompt + Projects v jedné ukázce, na vymyšleném klientovi). Výraz „system prompt“ klientům neříkat, říkat „trvalé instrukce“.
 
 ### Slajd 10 „Na kterých pěti akciích vydělám v příštích 5 letech nejvíc?“
-- **Nechat, je to nejsilnější slajd.** Tři nástroje, tři různé odpovědi.
-- **Přidat interakci:** nejdřív anketa „Které akcie AI podle vás jmenuje?“, pak odhalení.
-- **Graficky zvýraznit** akcie, na kterých se všechny tři shodly, proti těm, které jmenoval jen jeden nástroj. Pointa se tak ukáže sama.
+Na slajdu jsou tři screenshoty, bez označení nástroje:
+- **A:** TSMC, ASML, Broadcom, Vistra/Constellation, Micron. Samý hardware pro AI a dlouhé odstavce plné žargonu („moat“, „forward earnings“, „custom ASIC“, „hyperscaleři“).
+- **B:** Microsoft, Berkshire Hathaway, Alphabet, JPMorgan, Johnson & Johnson. Obranné velké firmy.
+- **C:** „Pokud bych investoval vlastní peníze“: Nvidia 25 %, TSMC 20 %, Broadcom 20 %, Meta 20 %, SK Hynix 15 %. 100 % peněz do pěti firem jednoho tématu.
+
+Úpravy:
+- **Nechat, je to nejsilnější slajd.** Jedna otázka a odpovědi od agresivní sázky na čipy po obranné konglomeráty. Shodují se jen TSMC a Broadcom (A a C), B se s nimi nepotkává vůbec.
+- **Screenshoty na webináři nikdo nepřečte.** Na slajd dát jen tři sloupce s pěti jmény a **barevně zvýraznit** shody. Screenshoty schovat do zálohy.
+- **Pojmenovat nástroje** (ChatGPT, Gemini, Claude…). Lidi to zajímá a odborník se na to ptá také.
+- **Odpověď C rozebrat zvlášť.** „Kdybych investoval vlastní peníze“ zní osobně, ale jde o 100 % v jednom tématu, tedy přesný opak rozložení rizika. Silná, konkrétní lekce.
+- **Přidat interakci:** před odhalením anketa „Které akcie AI podle vás jmenuje?“.
 - **Pointa nahlas** (odborník se ptá, jestli zazní; musí): „Kdyby to AI věděla, nebude to říkat nám. Kdo vám slibuje jistý zisk, ať člověk, nebo robot, ten lže.“ Sem přesunout „sliby rychlého zisku“ ze slajdu 6. Postřeh odborníka „když o tom píše AI, boom už asi propásli“ použít ústně.
+- **Důkaz pod pointu:** v poznámkách u slajdu 1 máte článek Seznam Zpráv z 8. 5. 2026 o experimentu Alpha Arena. Osm velkých AI modelů (Claude, Gemini, ChatGPT, Grok a další) dostalo po 10 000 dolarech na každou ze 4 strategií a dva týdny obchodovalo americké technologické akcie. Ziskových bylo jen 6 z 32 výsledků a dohromady modely přišly asi o třetinu peněz. Článek patří sem, ne na titulní slajd. Jedna věta a jedno číslo: „6 z 32 skončilo v zisku.“
 - **Tady zodpovědět otázku z úvodu**, jestli AI portfoliu věřit: „Jako inspiraci ano, jako hotový plán ne. Každý nástroj odpoví jinak, na poplatky zapomíná a vás nezná.“ Tři důvody, které publikum právě vidělo.
-- Odpovědi **vygenerovat znovu** pár dní před workshopem a na slajd dát datum. Staré screenshoty AI odpovědí stárnou rychle.
+- Odpovědi **vygenerovat znovu** pár dní před workshopem a na slajd dát datum. Současné jsou zhruba z června 2026 (zmiňují „začátek června“), a navíc se dá ukázat, jak se odpovědi za pár měsíců změnily.
+
+### Slajdy 11–12 (mimo zadání, jen poznámka)
+- Q&A: v šabloně je rozvržení „Otázky a odpovědi“ s připravenými otázkami. Doplnit 3–4 skutečné dotazy z minulého webináře, ať se lidi nestydí začít.
+- Závěr má anglický disclaimer z roku 2024. Šablona má český „Právní upozornění“, použít ten.
 
 ---
 
@@ -150,7 +170,8 @@ U každé ukázky předem připravit **záložní screenshoty**, kdyby nástroj 
 ## F. Ověřit a doplnit
 
 - Datum a délka workshopu (složku přejmenuju na `RRRR-MM-DD-umela-inteligence`).
-- Soubor staré prezentace: ověřím slajdy 3, 5, 9–12 přímo, ne z náhledů.
-- Číslo ze slajdu 5: zdroj a datum průzkumu.
+- Je webinář jen pro české klienty, nebo společný CZ + SK? (Jazyk slajdu 9.)
+- Novější vlna výzkumu Ipsos / Zlatá koruna než červenec 2025.
+- Které nástroje daly odpovědi A, B a C na slajdu 10.
 - Nastavení učení na datech u ChatGPT, Claude a Gemini těsně před workshopem (mění se; ověřeno ze sekundárních zdrojů k 29. 10. 2026).
 - Jaké nástroje reálně používáte na zpravodajství (do slajdu 4 a odpovědi publiku).

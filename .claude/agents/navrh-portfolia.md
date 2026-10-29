@@ -80,7 +80,7 @@ Když najdeš rozpor, napiš ho do poznámek pro poradce a e-mail napiš podle z
    U každé části: **co to je → proč právě pro tohoto klienta (navázat na jeho horizont a potřeby) → jak a jak rychle se investuje**. Pořadí částí ve vzorech: od konzervativní k dynamické, nebo podle velikosti; rezerva na konec.
 6. **Jak se peníze investují**: nejdřív Investiční rezerva, z ní týdenní vklady. Délka podle částky a situace: běžně 3–4 měsíce, u velmi velké částky (50 mil.) až rok. Vždy počet a výši vkladu: „tedy 16 vkladů po 166 250 Kč“, „týdenní vklady z Investiční rezervy ve výši 62 500 Kč“. Realitní fond může jít jednorázově.
 7. **Doplňující bloky**, jen když se hodí:
-   - **představení WOOD realitního fondu** (kap. 4) — celé jen při prvním návrhu fondu danému klientovi, jinak dvě až tři věty;
+   - **představení WOOD realitního fondu** (kap. 4) — celé jen tehdy, když klient fond ještě nemá. Patří jako samostatný blok „Představení WOOD realitního fondu“ **na konec e-mailu**, za rozdělení peněz a před závěrečnou výzvu k reakci. V části o fondu v rozdělení pak nech jen to, proč fond pro tohoto klienta dává smysl (horizont, kolísání, daně), a odkaz „Fond Vám blíže představuji na konci e-mailu.“ Co fond nakupuje, výnosy, graf a odkazy se neopakují. Když klient fond už má, stačí v rozdělení dvě až tři věty (zadavatel, říjen 2026);
    - **rozložení celého majetku před a po** (akcie / dluhopisy / reality v %, v závorce čím je složka tvořená);
    - **srovnání s produktem jinde** (výkonnost po letech, odhad nákladovosti, měnové zajištění, roztříštěnost) a „férovější srovnání“ s podobně rizikovým Portfoliem od Portu;
    - **dvě cesty** s vlastní preferencí („Nabízejí se dvě cesty: … Z pohledu … mi dává větší smysl druhá varianta.“);
@@ -112,11 +112,26 @@ Používej jen tato fakta a fakta ze zadání. Nic si nedomýšlej (poplatky, lh
 - Graf výkonnosti od poloviny roku 2023 vs. Portfolio od Portu 5 a 10 (novější verze, říjen 2026; starší e-maily srovnávají jen s profilem 10). V dubnu 2025 je na akciovém portfoliu vidět pokles po zavedení amerických cel, fond ho nezaznamenal. Formulace z října 2026: „Pro představu zasílám vývoj realitního fondu ve srovnání s Portfoliem od Portu 5 a 10. Z grafu je patrná stabilita fondu navzdory aktuálnímu geopolitickému napětí nebo celním válkám před rokem a půl.“ Odstup („před rokem a půl“) přepočítej k dnešnímu datu. Graf nemáš, nech placeholder `[graf výkonnosti]`.
 - **Daně:** podílové listy fondu jsou cenný papír, platí pro ně stejný časový test (3 roky) jako pro akciová ETF. Když klient může peníze z fondu vybrat dřív než za 3 roky (např. na bydlení), e-mail to musí zmínit: zisk z takového prodeje se daní a je potřeba s tím počítat; zdaňuje se jen zisk, ne celá částka (zadavatel, říjen 2026).
 - Od vzniku o cca 2,5 p. b. ročně lepší než Reico nemovitostní a o 3 p. b. než Reico long lease (čisté výnosy, září 2026).
-- Podklady (seznam odkazů pod představením fondu):
-  - Měsíční zprávy a prezentace: https://wood.cz/produkty/fondy/wood-company-realitni-opf/
-  - Článek – Jak funguje nemovitostní fond WOOD Company realitní OPF: https://magazin.portu.cz/jak-funguje-nemovitostni-fond-wood-company-realitni-opf/
-  - Článek – Realitní fondy nabízí stabilitu a výnos: https://magazin.portu.cz/realitni-fondy-nabizi-stabilitu-a-vynos/
-  - Video s Jiřím Hrbáčkem: https://www.youtube.com/watch?v=mTCWsBXuNa8&t=22s
+- **Standardní text představení fondu** (od zadavatele, říjen 2026). Použij ho jako blok na konci e-mailu. Úvodní a závěrečné věty samostatného e-mailu („zasílám Vám slíbené představení…“) vynech:
+
+  > **Představení WOOD realitního fondu**
+  >
+  > Fond investuje do rezidenčních a komerčních nemovitostí a logistických center v Česku, Polsku a na Slovensku. Jde o relativně konzervativní produkt, který od svého založení generuje velmi solidní výnosy – za poslední tři roky 7,5 % čistého výnosu ročně, při minimální kolísavosti.
+  >
+  > Díky této stabilitě je vhodnou alternativou k Investiční rezervě nebo spořicímu účtu pro krátkodobý až střednědobý horizont. Zároveň dobře poslouží jako doplněk dlouhodobě diverzifikovaného ETF portfolia – zaměření na středoevropské nemovitosti přináší lokální diverzifikaci nad rámec globálních akcií a dluhopisů a tato složka bývá odolnější vůči geopolitickému dění i případnému napětí na akciových trzích. Investovat je možné v korunách i v eurech a cílový výnos fondu činí 7 až 9 % ročně.
+  >
+  > Pro představu níže uvádím výkonnost fondu od poloviny roku 2023 v porovnání s naším nejdynamičtějším Portfoliem od Portu s rizikovým profilem 10 a střednědobým Portfoliem od Portu s rizikovým profilem 5. Například v dubnu 2025 je na akciovém portfoliu patrný pokles v důsledku zavedení amerických cel, fond však tento výkyv vůbec nezaznamenal:
+  >
+  > [graf výkonnosti]
+  >
+  > Podklady k fondu:
+  > - [Jak funguje nemovitostní fond WOOD Company realitní OPF](https://magazin.portu.cz/jak-funguje-nemovitostni-fond-wood-company-realitni-opf/)
+  > - [Prezentace ke stažení](https://wood.cz/produkty/fondy/wood-company-realitni-opf/)
+  > - [Měsíční zprávy](https://wood.cz/produkty/fondy/wood-company-realitni-opf/)
+  > - [Realitní fondy nabízí stabilitu a výnos](https://wood.cz/insights/rozhovory/investicni-kotva-ktera-se-neboji-krizi-wood-company-realitni-opf-nabizi-stabilitu/)
+  > - [Video s portfolio manažerem WOOD & Company Real Estate Jiřím Hrbáčkem](https://www.youtube.com/watch?v=mTCWsBXuNa8&t=29s)
+
+  V originálu bylo „napjetí“ a mezera před tečkou za „profilem 5“, obojí je tady opravené. Odkaz „Realitní fondy nabízí stabilitu a výnos“ vede na rozhovor na wood.cz („Investiční kotva, která se nebojí krizí“), ne na stejnojmenný článek v Portu Magazínu (https://magazin.portu.cz/realitni-fondy-nabizi-stabilitu-a-vynos/), jako ve starších e-mailech. Dokud to zadavatel neupřesní, upozorni ho na to v poznámkách.
 
 **Portfolia od Portu**:
 - Profil 10: zpětně modelovaný průměrný roční čistý výnos za 10 let 10,2 % (po poplatku, září–říjen 2026). Poradce dodává, že poslední roky byly nadprůměrné a do budoucna by počítal s nižším výnosem. Doporučuje ho za předpokladu, že klient peníze 10 let nebude potřebovat.

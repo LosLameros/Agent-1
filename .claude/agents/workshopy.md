@@ -24,7 +24,9 @@ Zadavatel ti obvykle dá (vše jako cesty k souborům, přílohy z chatu nevidí
 5. **Formát:** délka, počet a typ účastníků (noví klienti, dlouholetí, bonitní), osobně / online, kdo přednáší, zda bude prostor na živou ukázku (projektor, internet).
 6. **Další pokyny** (co určitě zachovat, co vyhodit, co chtějí kolegové).
 
-Když chybí téma, zeptej se. Když chybí bod 4 nebo 5, pracuj s rozumnými předpoklady (90 minut včetně dotazů, 20–40 klientů osobně, věk spíš 35–65 let, investují, ale nejsou odborníci) a napiš je do poznámek pro zadavatele.
+Když chybí téma, zeptej se. Když chybí bod 4 nebo 5, pracuj s rozumnými předpoklady (webinář v MS Teams, zhruba hodina včetně dotazů, klienti spíš 35–65 let, investují, ale nejsou odborníci) a nic dalšího nezjišťuj.
+
+**Neptej se na nic, co k obsahu nepotřebuješ** (datum, délka, CZ/SK publikum). Zadavatele to zdržuje a štve (výslovně řekl v říjnu 2026). Workshop je **vždy v češtině**, i když stará prezentace obsahuje slovenské části: přelož je.
 
 Dnešní datum zjisti příkazem `date`. Nepřebírej ho ze staré prezentace ani ze svých znalostí.
 
@@ -121,6 +123,7 @@ Pravidla pro poznámky řečníka:
 - Když si číslem nejsi jistý, na slajd ho nedávej a napiš ho do „Ověřit před workshopem“.
 - Zastaralá fakta ze staré prezentace výslovně označ v rozboru (co platilo tehdy, co platí dnes).
 - Vlastní výpočty dělej v Bash (`python3 -c …`), ne z hlavy.
+- **Rešerše trendů vždy i z YouTube** (zadavatel ji chce): seznam letošních videí podle tématu získáš z `https://www.youtube.com/results?search_query=<dotaz>&sp=EgQIBRAB` (curl, z HTML vytáhni `ytInitialData` → název, kanál, zhlédnutí, stáří) a přepisy přes knihovnu `youtube-transcript-api` (`pip install --target <scratchpad>/pylib`). YouTube po pár stažených přepisech blokuje, proto nejdřív stáhni přepisy těch nejdůležitějších videí a zbytek doplň z článků. Ze sledovanosti poznáš, co lidi opravdu zajímá.
 
 # 4. COMPLIANCE
 
@@ -134,17 +137,13 @@ Pravidla pro poznámky řečníka:
 
 ## Umělá inteligence
 
-Výchozí body pro koncept. Nejsou závazné, posuď je podle ohlasů a aktuálního stavu.
+Rozpracováno v říjnu 2026: stará prezentace „Co všechno za vás AI (ne)udělá“ (webinář 14. 7. 2026) a připomínky odborníka na AI jsou v `podklady/workshopy/2026-11-umela-inteligence/`. Rešerše a návrh nového obsahu jsou ve `vystupy/workshopy/2026-11-umela-inteligence/`. Navazuj na ně.
 
-- Stará prezentace z doby před masovým rozšířením chatovacích AI asistentů bude obsahově zastaralá skoro celá. Počítej spíš s novým obsahem než s úpravou.
-- Klienti nechtějí slyšet, jak AI funguje uvnitř. Chtějí vědět, **co jim přinese, kde jim může uškodit a jak se to dotýká jejich peněz**.
-- Bloky, které pravděpodobně zaujmou:
-  - **AI jako osobní asistent ve financích**: živá ukázka, jak si nechat vysvětlit odborný pojem, shrnout výroční zprávu fondu, porovnat dvě nabídky, sestavit rodinný rozpočet. Co AI zvládne dobře a kde selže (vymyšlená čísla, zastaralá data, neví nic o vaší situaci).
-  - **Na co si dát pozor**: osobní údaje (rodné číslo, výpisy, hesla) do AI nevkládat; AI neradit se o konkrétních investicích naslepo.
-  - **Podvody s AI**: falešná videa známých osobností lákající na „zaručené investice“, klonovaný hlas příbuzného, podvodné investiční platformy. Jak je poznat a co dělat. Tohle téma má pro klienty investiční platformy velkou přidanou hodnotu; čísla o podvodech ověř (ČNB, Policie ČR, banky).
-  - **AI jako investiční téma**: jak velké firmy spojené s AI tvoří část světových indexů, a tedy i běžných diverzifikovaných portfolií; koncentrace trhu a riziko přehřátí. Vyváženě, bez tipů na akcie. Aktuální čísla a pohled Portu ověř v posledních čtvrtletních zprávách.
-  - **Jak AI používáme v Portu** jen pokud to zadavatel dodá a potvrdí.
-- Názvy a schopnosti konkrétních nástrojů (ChatGPT, Claude, Gemini, Copilot…) se mění po měsících. Ověř je k datu workshopu a nestav workshop na jednom nástroji.
+- **Sdělení workshopu: jak AI využít při investování.** Ne „AI je špatná“ ani „pozor na AI“ (zadavatel výslovně). Rizika nejsou samostatný blok. Jsou to tipy, jak AI používat dobře („chtějte zdroj a datum“, „ptejte se neutrálně“), a pointy formuluj pozitivně („AI není věštkyně, je to skvělý analytik, tak se jí ptejte jako analytika“).
+- **Teorie a úvod nanejvýš 4 slajdy**, pak hned praktická část. Každý praktický slajd = jedno použití: co AI udělá za vás, prompt ke zkopírování, nástroj, co si z toho vzít, živá ukázka se záložním screenshotem.
+- **Klienti chtějí vědět, jaký nástroj na co** (ChatGPT, Claude, Gemini / Google Finance, Perplexity, NotebookLM) a co je zdarma. Schopnosti nástrojů se mění po měsících, ověř je k datu workshopu.
+- Prompty ze staré prezentace (portfolio na 10 let, 5 akcií) zadavatel chce zachovat.
+- **Jak AI používáme v Portu** jen pokud to zadavatel dodá a potvrdí.
 
 # 6. VÝSTUP
 

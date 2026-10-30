@@ -7,26 +7,26 @@
 ## Návrhy titulku
 
 1. Ne každá miliarda do AI je stejně riskantní
-2. Trh hází technologie do jednoho pytle. Neměl by
+2. Trh trestá i ty, kterým se AI vrací
 3. Kdo za umělou inteligenci dostává zaplaceno už dnes
 
 ## Perex
 
-Technologické akcie padají bez ohledu na to, jak dobré výsledky firmy ukážou. Podle mě trh dělá chybu: riziko investic do umělé inteligence není u všech stejné.
+Technologické akcie padají i u firem, kterým se investice do umělé inteligence už vracejí. Podle mě trh dělá chybu: riziko těchto investic není u všech stejné.
 
 ## Článek
 
-Microsoft tento týden ukázal možná nejlepší výsledky z celé technologické špičky. Tržby mu vzrostly o 19 % na 92,3 mld. USD a cloud Azure o 48 %, víc, než sám čekal. Večer po výsledcích akcie rostly o 4 %, v pátek 30. října se přesto obchodovaly níž než před nimi. Technologický index Nasdaq 100 ten den ztrácel 2,5 % a Intel 28 %. Trh trestá celý sektor za to, že peníze na umělou inteligenci zdražily. V tom má pravdu. **Mýlí se ale v tom, že trestá všechny stejně.**
+Microsoft tento týden ukázal možná nejlepší výsledky z celé technologické špičky. Tržby mu vzrostly o 19 % na 92,3 mld. USD a cloud Azure o 48 %, víc, než sám čekal. Večer po výsledcích akcie rostly o 4 %, v pátek 30. října se přesto obchodovaly níž než před nimi. Technologický index Nasdaq 100 ten den ztrácel 2,5 % a Intel 28 %. Trh trestá celý sektor za to, že peníze na umělou inteligenci zdražily. V tom má pravdu. **Mýlí se ale v tom, že trestá i firmy, kterým se investice do umělé inteligence už vracejí.**
 
 Že peníze zdražily, je zřejmé. Technologické firmy letos podle Bloombergu utratí za umělou inteligenci kolem 750 mld. USD a vlastní hotovost jim nestačí. Půjčily si skoro 500 mld. USD, víc než dvakrát tolik co loni, a rekordně prodávají vlastní akcie. Kdo je koupil, prodělal: nové akcie Alphabetu z června jsou o pětinu levnější, Intelu ze srpna téměř o třetinu. Meta si letos půjčovala až za 6,45 %, před čtyřmi lety jí stačilo 4,65 %.
 
-Rozhodující je ale, za co ty peníze firmy utrácejí. Microsoft, Google a Amazon výpočetní výkon prodávají. Jejich investice mají zákazníka, který už podepsal smlouvu. Microsoft eviduje nasmlouvané a dosud nevyfakturované zakázky za 677 mld. USD, o 73 % víc než před rokem, a podle finanční ředitelky Amy Hood poptávka stále převyšuje to, co dokáže dodat. Google Cloud zdvojnásobil tržby na 30,7 mld. USD a má zakázky za 561 mld. USD. Cloud Amazonu AWS roste nejrychleji za skoro pět let.
+Rozhodující je ale, za co ty peníze firmy utrácejí. Microsoft, Google a Amazon výpočetní výkon prodávají, jejich investice mají zákazníka, který už podepsal smlouvu. Microsoft eviduje nasmlouvané a dosud nevyfakturované zakázky za 677 mld. USD, o 73 % víc než před rokem, Google Cloud za 561 mld. USD. Ani to je neochránilo. Alphabet po výsledcích odepsal 13 %, protože mu vyhledávání rostlo pomaleji, než trh čekal, a investice ho dostaly do záporné hotovosti. Amazon byl v pátek ráno o víc než 5 % níž, i když jeho cloud roste nejrychleji za skoro pět let. Trh u nich neřeší, jestli se investice vrátí, ale kdy a za jakou cenu. **Podle mě je to u nich otázka načasování, ne toho, jestli umělá inteligence vydělá.**
 
-Bez rizika nejsou ani oni. Velkou část zakázek Microsoftu tvoří OpenAI, která sama žije z cizích peněz. Riziko se tak přesouvá, nemizí. Alphabetu navíc rostly tržby z vyhledávání pomaleji, než trh čekal, a jeho volné peněžní toky klesly do záporu. Přesto platí, že tyto firmy dostávají za své investice zaplaceno už dnes.
+Úplně bez rizika ale nejsou. Velkou část zakázek Microsoftu tvoří OpenAI, která sama žije z cizích peněz, takže se riziko přesouvá, nemizí. A Alphabet musí ukázat, že mu umělá inteligence neubírá tržby z vyhledávání. Přesto tyto firmy dostávají za své investice zaplaceno už dnes.
 
 Jinak je na tom Meta. Výkon staví hlavně pro sebe a vrátit se jí má teprve přes budoucí zpeněžení, třeba asistenta Muse. Za to letos prodává akcie a dluhy za téměř 100 mld. USD a její volné peněžní toky jsou v minusu. Tady jsou obavy trhu oprávněnější. Intel je zase úplně jiný příběh. Netrápí ho slabá poptávka po umělé inteligenci, ale vlastní problémy s dodávkami a zmenšující se trh s počítači.
 
-Na trhu s dluhy už investoři rozlišovat začali. Když Oracle slíbil, že si do roku 2030 řekne nanejvýš o dalších 20 mld. USD, cena pojištění jeho dluhu klesla nejvíc za devět měsíců. Na akciích to zatím nevidím, tam padají dobří i slabí stejně.
+Na trhu s dluhy už investoři rozlišovat začali. Když Oracle slíbil, že si do roku 2030 řekne nanejvýš o dalších 20 mld. USD, cena pojištění jeho dluhu klesla nejvíc za devět měsíců. Na akciích to zatím nevidím, tam padají i ti, kterým se investice vracejí.
 
 Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je položená špatně. Lepší otázka zní, kdo za své investice do umělé inteligence dostává zaplaceno už dnes a kdo teprve doufá, že jednou dostane. Kdo má fond na americké akcie, drží obě skupiny a měl by vědět, že nenesou stejné riziko. Levné peníze skončily. Vyhrají ty firmy, jejichž investice do umělé inteligence vydělají víc, než kolik je teď stojí kapitál. **Lepší pozici k tomu podle mě mají ty, které zákazníky mají už dnes, než ty, které je teprve hledají.**
 
@@ -34,11 +34,11 @@ Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je 
 
 **Pouze pro autora, neposílat do redakce:**
 
-**Teze:** Trh má pravdu, že peníze na AI zdražily, ale chybuje, když trestá všechny stejně. Firmy, které výpočetní výkon prodávají (Microsoft, Google, Amazon), mají za investicemi podepsané zakázky; firmy, které ho staví pro sebe (Meta), sázejí na budoucí zpeněžení. Intel je jiný příběh (výroba, PC).
+**Teze:** Trh má pravdu, že peníze na AI zdražily, ale chybuje, když trestá i firmy, kterým se investice už vracejí (Microsoft, Google, Amazon mají podepsané zakázky; u nich jde o načasování, ne o to, zda AI vydělá). U firem, které výkon staví pro sebe (Meta), jsou obavy oprávněnější. Intel je jiný příběh (výroba, PC). Pozn.: trh mezi firmami rozlišuje podle výsledků (Microsoft −1,7 %, Intel −28 %), proto teze nezní „trestá všechny stejně“.
 
 **Co si odnese investor:** Neptat se, jestli jsou technologie drahé, ale kdo za investice do AI dostává zaplaceno už dnes. Fond na americké akcie drží obě skupiny s různým rizikem.
 
-**Délka:** 2 893 znaků včetně mezer, 497 slov (bez titulku a perexu), do jedné strany A4.
+**Délka:** 3 137 znaků včetně mezer, 542 slov (bez titulku a perexu), do jedné strany A4.
 
 **Čísla a zdroje:**
 
@@ -61,6 +61,7 @@ Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je 
 | Zakázky Google Cloud | 560,8 mld. USD (Alphabet celkem 567,7 mld.) | 30. 9. 2026 | 10-Q Alphabetu (sec.gov) |
 | Zakázky AWS | 496 mld. USD | 30. 6. 2026 | Amazon (2Q); číslo za 3Q (578 mld.) neověřeno, v textu nepoužito |
 | OpenAI v tržbách Microsoftu | asi 10 mld. USD, asi 11 % tržeb ve čtvrtletí | 1Q fiskálního 2027 | Pomegra (jeden zdroj); v textu jen obecně „velkou část zakázek“ |
+| Reakce akcií po výsledcích | Alphabet 324,89 → 283,82 USD (−12,6 %, 29. 10.); Amazon 243,79 → páteční minimum 230,35 (−5,5 %), dopoledne 240,78 (−1,2 %); Microsoft −1,7 %; Intel −28 % | 29. až 30. 10. 2026 | Trading Economics |
 | Výdaje na AI | kolem 750 mld. USD letos | 2026 | Bloomberg (podklad autora) |
 | Půjčky na AI | skoro 500 mld. USD letos, asi 200 mld. za rok 2025 | říjen 2026 | data Bloombergu (podklad autora) |
 | CDS Intelu | 127,9 b. (= asi 1,3 % ročně), rekord | 30. 10. 2026 během dne | ICE Data Services přes Bloomberg |

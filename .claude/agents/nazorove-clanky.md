@@ -142,7 +142,7 @@ Doporuč jedno téma a řekni proč. Článek piš až po výběru tématu, poku
 
 ## 8. Sebekontrola před odevzdáním (povinná)
 
-1. **Teze:** dá se názor článku shrnout jednou větou? Zazní v prvním nebo druhém odstavci? Je to opravdu názor, ne shrnutí zpráv?
+1. **Teze:** dá se názor článku shrnout jednou větou? Zazní v prvním nebo druhém odstavci? Je to opravdu názor, ne shrnutí zpráv? **Test názoru: dá se s tezí rozumně nesouhlasit?** Popis toho, co dělá trh („trh přestal…“, „levné peníze skončily“), není názor. Názor odpovídá na otázku, kterou si čtenář po přečtení položí (má trh pravdu, nebo přehání? kdo je na tom líp a proč?), a autor ho říká v první osobě („Podle mě…“). Pokud test neprojde, přepiš tezi dřív, než text odevzdáš. (Poučení z článku o financování AI z 30. 10. 2026, který byl napoprvé jen analýzou bez postoje.)
 2. **Odnesu si:** ví čtenář na konci, co z toho plyne pro něj a jeho peníze nebo investice?
 3. **Analýza:** je vysvětleno proč, nejen co? Je tu aspoň jedno srovnání (historické, mezinárodní, s očekáváním) a jeden protiargument nebo alternativní scénář?
 4. **Čísla:** má každé číslo zdroj, datum, jednotku a referenční bod? Sedí dopočty (přepočítej)?

@@ -194,3 +194,20 @@
 - Co je zdarma: Projekty v Claude a ChatGPT, NotebookLM, Google Finance s AI v češtině (slajdy 4, 6, 9).
 - Kde v nastavení se vypíná učení na datech (slajdy 3 a 14).
 - Vymyšlený klient pro Projekt, anglický dokument k fondu, přepis výsledkového hovoru vybrané firmy.
+
+---
+
+## Verze 2 (30. 10. 2026): podněty kolegy a nová posloupnost
+
+19 slajdů. Pořadí: teorie → praxe pro většinu → jak to děláme my → závěr.
+
+1. Titulní · 2. Čísla · 3. 6 tipů, jak se AI ptát (přibyl tip „Ať zkontroluje sama sebe“) · 4. Který nástroj na co
+5. Předěl 01 Praktická část · 6. Dokumenty · 7. Váš plán (Projekt) · 8. Rentgen portfolia · **9. Postaví vám vlastní nástroj (nový)** · 10. Zprávy · 11. Témata · **12. AI jako osobní finanční asistent (přesunuto z konce)** · 13. Takhle ne: 5 akcií
+**14. Předěl 02 Jak to děláme my (nový)** · 15. Analýza firmy ve čtyřech krocích (přibyl krok „Ověříme a rozhodneme“)
+16. Vyzkoušejte ještě dnes večer · 17. Otázky a odpovědi · 18. Děkujeme · 19. Právní upozornění
+
+**Slajd 9, Postaví vám vlastní nástroj** (rozvržení „Co si navzájem přinášíme“): karta Kalkulačka na míru (posuvníky, graf vkladů a výnosu, výsledek po inflaci) + karta Přehled portfolia (grafy podle regionů, sektorů a měn, 10 největších firem). Nadpis karty kalkulačky je odkaz na záložní kalkulačku `kalkulacka-ukazka.html` (musí ležet ve stejné složce jako prezentace).
+
+**Z podnětů kolegy doplněno jen do poznámek řečníka:** dotaz na přidání ETF (slajd 8, jen rozložení, ne výnos a náklady), DCF ústně s výhradou k předpokladům a rámec Morningstar (slajd 15), odpověď „jako inspiraci ano, jako hotový plán ne“ a postřeh o propásnutém boomu (slajd 13).
+
+**Vynecháno:** DCF a porovnání ETF se simulací výnosu na slajdech (předpověď, poplatky, žargon).

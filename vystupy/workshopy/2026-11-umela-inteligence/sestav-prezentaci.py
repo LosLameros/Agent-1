@@ -1,10 +1,10 @@
 """Doplní obsah workshopu AI do šablony Portu.
 
 Postup (skill pptx):
-1. Z podklady/workshopy/sablona/sablona-workshop.pptx zduplikovat slajdy 14 a 22 (add_slide.py),
-   v ppt/presentation.xml nechat pořadí 2, 23, 15, 19, 13, 14, 20, 24, 56, 35, 22, 25, 57, 44, 45, 48, 52,
-   spustit clean.py a zabalit jako stage1.pptx.
-2. python3 -I sestav-prezentaci.py stage1.pptx "AI jako váš investiční asistent - workshop.pptx"
+1. Z podklady/workshopy/sablona/sablona-workshop.pptx zduplikovat slajdy 14, 22 a 13 (add_slide.py),
+   v ppt/presentation.xml nechat pořadí 2, 23, 15, 19, 13, 14, 20, 24, 40, 56, 35, 57, 22, 58, 25, 44, 45, 48, 52,
+   spustit clean.py a zabalit jako stage2.pptx.
+2. python3 -I sestav-prezentaci.py stage2.pptx "AI jako váš investiční asistent - workshop.pptx"
    (fotky řečníků ve složce foto/ ze staré prezentace, slajd 2).
 """
 import copy, sys
@@ -304,10 +304,49 @@ for p in s5[1:]:
     p.space_before = Pt(10)
 fill(s, 7, [['40 ', '%'], 'tvoří 10 největších firem v indexu S&P 500', 'Kdo má tři „různé“ fondy, má často třikrát totéž.'])
 notes(s, '30vteřinová ukázka: „Je moje portfolio dobré?“ (AI pochválí) vs. „Kde je moje portfolio nejvíc zranitelné?“ (užitečná odpověď). '
-         'Číslo 40 % ověřit těsně před workshopem (podíl 10 největších firem v S&P 500). Rentgen hodnotí fakta, ne poradce.')
+         'Číslo 40 % ověřit těsně před workshopem (podíl 10 největších firem v S&P 500). Rentgen hodnotí fakta, ne poradce. '
+         'Doplňující dotaz (podnět kolegy): „Co se změní v rozložení mého portfolia, když přidám ETF X?“ Ptát se na regiony, sektory a měny, ne na výnos ani náklady. '
+         'Přechod: „A teď si z toho necháme postavit vlastní přehled.“')
 
-# ---------- 9 Zprávy ----------
-text_image(S[8], '4 · ZPRÁVY', 'Zprávy z anglických webů česky za 2 minuty',
+
+# ---------- 9 Vlastní nástroje ----------
+s = S[8]
+fill(s, 3, ['4 · VLASTNÍ NÁSTROJE'])
+fill(s, 4, ['Postaví vám vlastní nástroj. Bez programování.'])
+delete(s, 6, 18)
+fill(s, 7, ['Kalkulačka na míru'])
+geom(s, 7, y=2.42)
+fill(s, 19, ['Přehled portfolia'])
+geom(s, 19, y=2.42)
+clone_text(s, 9, 1.17, 2.82, 5.0, 0.3, ['„Udělej mi kalkulačku na pravidelné investování.“'], 'Prompt A')
+clone_text(s, 21, 7.36, 2.82, 5.0, 0.3, ['„Udělej mi z mých investic přehled s grafy.“'], 'Prompt B')
+for x in s.shapes:
+    if x.name in ('Prompt A', 'Prompt B'):
+        for r in x.text_frame.paragraphs[0].runs:
+            r.font.italic = True
+            r.font.size = Pt(12)
+for sid, t in zip((9, 11, 13, 15), ('Posuvníky pro vklad, počet let a zhodnocení',
+                                   'Graf: kolik jsou vklady a kolik výnos',
+                                   'Výsledek i v dnešních penězích po inflaci',
+                                   'Uložíte si ji a použijete znovu')):
+    fill(s, sid, [t])
+for sid, t in zip((21, 23, 25, 27), ('Stačí seznam investic a částek',
+                                    'Grafy podle regionů, sektorů a měn',
+                                    '10 největších firem napříč fondy',
+                                    'Příště jen přepíšete čísla')):
+    fill(s, sid, [t])
+move(s, (8, 9, 10, 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 25, 26, 27), dy=0.1)
+fill(s, 28, ['Claude, ChatGPT nebo Gemini vám ho postaví za minutu. Jeden výpočet si ověřte ručně a do přehledu dávejte jen názvy a částky.'])
+title_run = sh(s, 7).text_frame.paragraphs[0].runs[0]
+title_run.hyperlink.address = 'kalkulacka-ukazka.html'
+notes(s, 'Podnět kolegy: AI jako tvůrce vlastních nástrojů. Živě v Claude (Artifacts), ChatGPT nebo Gemini (Canvas). '
+         'Prompt A: „Udělej mi kalkulačku, kolik budu mít, když budu každý měsíc investovat určitou částku. Chci posuvníky pro počáteční vklad, měsíční vklad, počet let, roční zhodnocení a inflaci, graf vkladů a výnosu a výsledek i v dnešních penězích.“ '
+         'Prompt B: „Z tohoto seznamu mých investic a částek mi udělej přehled s grafy podle regionů, sektorů a měn a s 10 největšími firmami napříč fondy.“ (vymyšlené portfolio, žádná čísla účtů) '
+         'ZÁLOHA: klik na nadpis „Kalkulačka na míru“ otevře hotovou kalkulačku kalkulacka-ukazka.html v prohlížeči (soubor musí ležet ve stejné složce jako prezentace). '
+         'Jeden výpočet ukázat ručně (tip 4).')
+
+# ---------- 9b Zprávy ----------
+text_image(S[9], '5 · ZPRÁVY', 'Zprávy z anglických webů česky za 2 minuty',
            'Místo hodiny na zpravodajských webech dvě minuty, a s odkazy na zdroje.',
            'Prompt: „Proč akcie X minulý týden klesly o 8 %? Odpověz česky a uveď zdroje.“',
            ['Nástroj: Perplexity nebo Google Finance s AI',
@@ -315,8 +354,8 @@ text_image(S[8], '4 · ZPRÁVY', 'Zprávy z anglických webů česky za 2 minuty
            'Vpravo vložit záložní screenshot odpovědi se zdroji. Pokud tlačí čas, projít rychle.')
 
 # ---------- 10 Témata ----------
-s = S[9]
-fill(s, 3, ['5 · TÉMATA'])
+s = S[10]
+fill(s, 3, ['6 · TÉMATA'])
 fill(s, 4, ['Najde firmy k tématu, kterému věříte'])
 fill(s, 5, ['ZEPTEJTE SE', 'Kdo vyrábí čipy?', '„Jaké firmy na burze vyrábějí čipy? Kolik tržeb z toho mají? A existuje ETF na celé téma?“'])
 fill(s, 7, ['AI NAJDE', 'Firmy a souvislosti', 'Přehled firem, čím se liší a kolik vydělávají na čipech. Za minutu místo večera.'])
@@ -325,7 +364,7 @@ fill(s, 10, ['Často se ukáže, že téma jde koupit šířeji přes ETF.'])
 notes(s, 'Živá ukázka promptu. Příklad s čipy navrhl odborník na AI. Zdůraznit: seznam od AI není tip na nákup.')
 
 # ---------- 11 Pět akcií ----------
-s = S[10]
+s = S[12]
 fill(s, 3, ['TAKHLE NE'])
 fill(s, 4, ['„Na kterých pěti akciích vydělám v příštích 5 letech nejvíc?“'])
 geom(s, 4, w=11.67)
@@ -350,11 +389,19 @@ for x in s.shapes:
             r.font.size = Pt(18)
 notes(s, 'Nejdřív anketa: „Které akcie AI podle vás jmenuje?“ Pak odhalení. Zeleně: akcie, které se opakují (TSMC, Broadcom). '
          'Ústně: v pokusu Alpha Arena (Seznam Zprávy, květen 2026) obchodovalo 8 velkých AI modelů dva týdny a v zisku skončilo jen 6 z 32 výsledků. '
-         'Přechod: „Ukážeme vám, jak se ptáme my.“ '
+         'Odpověď na otázku, jestli AI portfoliu věřit: „Jako inspiraci ano, jako hotový plán ne. Každý nástroj odpoví jinak a vás nezná.“ '
+         'Postřeh odborníka: když už o akcii píše AI, rychlý boom jste nejspíš propásli. '
+         'Přechod: „Jak se tedy na firmy ptát? Ukážeme vám, jak to děláme my.“ '
          'PŘED WORKSHOPEM: odpovědi vygenerovat znovu (tyto jsou z léta 2026), místo „Odpověď 1–3“ napsat názvy nástrojů a doplnit datum.')
 
+
+# ---------- Předěl 02 ----------
+s = S[13]
+fill(s, 4, ['02', 'Jak to děláme my', 'Jak se na firmy díváme my dva. Naživo, na skutečné firmě.'])
+notes(s, 'Druhá část: náš osobní postup, ne oficiální postup Portu.')
+
 # ---------- 12 Jak to děláme my ----------
-s = S[11]
+s = S[14]
 fill(s, 3, ['JAK TO DĚLÁME MY'])
 geom(s, 3, x=5.6, w=2.13)
 fill(s, 4, ['Analýza firmy ve čtyřech krocích'])
@@ -369,14 +416,15 @@ for t, d, tt, dd in steps:
     fill(s, t, [tt]); fill(s, d, [dd])
     geom(s, d, h=0.7)
 notes(s, 'Krok 4 doplněn: čísla od AI ověřujeme v originále (tip 4). Mluvit za sebe („my dva“), ne za Portu. Celé naživo na jedné firmě, ideálně té, ke které jsme naposledy psali komentář k výsledkům. '
-         'Přepis hovoru z veřejného webu firmy pro investory. Prompty: '
+         'Přepis hovoru z veřejného webu firmy pro investory. Ústně k DCF: „Necháváme si od AI spočítat i DCF, ale věříme mu jen tolik, kolik věříme předpokladům.“ '
+         'Krok 2 stojí i na rámci analýz Morningstar (konkurenční výhoda, férová cena, nejistota); jejich placené analýzy do AI nenahráváme. Prompty: '
          '1) „Tady je přepis hovoru k výsledkům. Shrň česky: co se firmě dařilo, co ne, co řekl management o výhledu a na co se ptali analytici.“ '
          '2) „Posuď tuto firmu, jak by ji posuzovali Warren Buffett a Charlie Munger: rozumím byznysu? Má trvalou konkurenční výhodu? Je management poctivý a schopný? Je cena rozumná? Nepřisuzuj jim žádné citáty.“ '
          '3) „Napiš optimistický, střední a pesimistický scénář pro tuto firmu na 3 roky. Ke každému napiš, co by se muselo stát, a jaké jsou hlavní předpoklady.“')
 
 # ---------- 13 Na doma ----------
-s = S[12]
-fill(s, 3, ['NA DOMA'])
+s = S[11]
+fill(s, 3, ['7 · NA DOMA'])
 fill(s, 4, ['AI jako váš osobní finanční asistent'])
 cards = [
     (6, 7, 8, 'PROJEKT', 'Moje finance', 'Cíle, horizonty a přehled smluv na jednom místě. Na podmínky se zeptáte, místo hledání v šuplíku.'),
@@ -390,13 +438,13 @@ delete(s, 9, 10, 16, 17, 23, 24)
 notes(s, 'Osobní postup odborníka na AI, kterého jsme se ptali. Citlivé údaje ve smlouvách a výpisech začernit nebo smazat.')
 
 # ---------- 14 Dnes večer ----------
-s = S[13]
+s = S[15]
 fill(s, 3, ['SHRNUTÍ'])
 fill(s, 4, ['Vyzkoušejte ještě dnes večer'])
 fill(s, 5, ['Všechny prompty z dnešního webináře vám pošleme e-mailem.'])
 rows = [(8, 9, 'Vypněte učení na svých datech', 'V nastavení soukromí ve vašem AI nástroji.', '2\u00a0MIN'),
         (13, 14, 'Nechte si shrnout dokument', 'Anglický dokument k vaší investici, česky do 5 bodů.', '5\u00a0MIN'),
-        (18, 19, 'Udělejte si rentgen portfolia', 'Regiony, sektory, měny a překryvy fondů.', '5\u00a0MIN'),
+        (18, 19, 'Rentgen a přehled portfolia', 'Překryvy fondů a vlastní přehled s grafy.', '10\u00a0MIN'),
         (23, 24, 'Založte si Projekt', 'S vašimi cíli, horizontem a pravidly.', '10\u00a0MIN')]
 for t, tag, a, b, c in rows:
     fill(s, t, [a, b])
@@ -406,7 +454,7 @@ delete(s, 10, 15, 20, 25)
 notes(s, 'Po webináři poslat e-mailem tahák na jednu stranu A4 se všemi prompty ze slajdů 3, 6, 7, 8, 9, 10 a 12.')
 
 # ---------- 15 Q&A ----------
-s = S[14]
+s = S[16]
 for sid, q in zip((8, 12, 16, 20), ('Která AI je na investice nejlepší?', 'Potřebuju placenou verzi?',
                                     'Můžu AI dát přístup ke svému účtu?', 'Nahradí AI poradce?')):
     fill(s, sid, [q])
@@ -415,7 +463,7 @@ notes(s, 'Odpověď na otázku o účtu: „V USA už ano: ChatGPT umí číst b
          'Placená verze: na většinu ukázaných věcí stačí verze zdarma, placená má víc dotazů a silnější modely.')
 
 # ---------- 16, 17 ----------
-notes(S[15], 'Jedna věta: „Za investiční rozhodnutí odpovídáte vy. Rádi vám s ním pomůžeme. Ozvěte se, když budete chtít výstup z AI probrat s člověkem.“')
+notes(S[17], 'Jedna věta: „Za investiční rozhodnutí odpovídáte vy. Rádi vám s ním pomůžeme. Ozvěte se, když budete chtít výstup z AI probrat s člověkem.“')
 
 for sl in S:
     footer(sl)

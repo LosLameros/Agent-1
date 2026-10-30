@@ -28,7 +28,7 @@ A ten příběh je drahý. Technologické firmy letos podle Bloombergu utratí z
 
 O konec umělé inteligence přitom nejde. O nové akcie Mety byl pětinásobný zájem a cloudy rostou. Trh ale začal rozlišovat. Když Oracle slíbil, že si do roku 2030 řekne nanejvýš o dalších 20 mld. USD, cena pojištění jeho dluhu klesla nejvíc za devět měsíců. **Trh dnes neodměňuje toho, kdo utratí nejvíc, ale toho, kdo ví, kdy přestat.**
 
-Pro investory se tím mění pravidla. Technologičtí giganti už nejsou hotovostní stroje, jejichž zisky rostou samy. Jejich výnos teď záleží i na tom, kolik je stojí peníze a kolik jich ještě budou potřebovat. Napoví to výhledy investic na rok 2027, které firmy zveřejní na přelomu ledna a února. Účet za umělou inteligenci už začali platit akcionáři i věřitelé. Vyhrají ty firmy, které přestanou utrácet dřív, než jim trh přestane půjčovat levně.
+Pro investory se tím mění pravidla. Technologičtí giganti už nejsou hotovostní stroje, jejichž zisky rostou samy. Jejich výnos teď záleží i na tom, kolik je stojí peníze a kolik jich ještě budou potřebovat. Napoví to výhledy investic na rok 2027, které firmy zveřejní na přelomu ledna a února. Účet za umělou inteligenci už začali platit akcionáři i věřitelé. Levné peníze skončily. Vyhrají ty firmy, jejichž investice do umělé inteligence vydělají víc, než kolik je teď stojí kapitál.
 
 ---
 
@@ -56,6 +56,7 @@ Pro investory se tím mění pravidla. Technologičtí giganti už nejsou hotovo
 | Alphabet | tržby 127,6 mld. USD (+25 %, mírně pod odhadem 128,2), vyhledávání 63,4 mld. (+12 %, pod odhady), Google Cloud 30,7 mld. (+103 %), investice 51,4 mld. USD, volné peněžní toky −9,1 mld. USD; výhled investic 2026 195 až 205 mld. USD, 2027 „výrazně víc“; akcie −12,6 % | 3Q 2026, výsledky 28. 10. 2026 | 8-K Alphabetu (sec.gov), CNBC, Yahoo Finance, Trading Economics |
 | Amazon | tržby 201,9 mld. USD (+12 %), AWS 46,0 mld. (+39 %, nejrychleji za skoro 5 let), Severní Amerika +6 % (Prime Day přesunut do 2Q, podle firmy asi −4 p. b. na celkovém růstu), investice 2026 asi 220 mld. USD, 2027 „meaningfully more“ | 3Q 2026, výsledky 29. 10. 2026 | 8-K Amazonu (sec.gov), CNBC, přepis hovoru |
 | Intel | upravený zisk na akcii 0,52 USD (odhad asi 0,40), výhled tržeb 4Q 15 až 16 mld. USD (odhad asi 17 mld.), omezení dodávek v datových centrech, trh PC letos asi −12 %; akcie −28,0 % | 3Q 2026, výsledky 29. 10. 2026 | Investing.com, Quartz, Bloomberg, Trading Economics |
+| Cena dluhu Mety | dluhopisy z roku 2022 s úrokem 3,5 až 4,65 %, z května 2026 4,55 až 6,45 %; výnos 10letého US dluhopisu asi 5,02 % (22. 10.) | 30. 9. 2026 | 10-Q Mety (Note 9), Yahoo Finance |
 | Výdaje na AI | kolem 750 mld. USD letos | 2026 | Bloomberg (podklad autora) |
 | Půjčky na AI | skoro 500 mld. USD letos, asi 200 mld. za rok 2025 | říjen 2026 | data Bloombergu (podklad autora) |
 | CDS Intelu | 127,9 b. (= asi 1,3 % ročně), rekord | 30. 10. 2026 během dne | ICE Data Services přes Bloomberg |

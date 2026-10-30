@@ -2,9 +2,9 @@
 
 Postup (skill pptx):
 1. Z podklady/workshopy/sablona/sablona-workshop.pptx zduplikovat slajdy 14, 22 a 13 (add_slide.py),
-   v ppt/presentation.xml nechat pořadí 2, 23, 15, 19, 13, 14, 20, 24, 40, 56, 35, 57, 22, 58, 25, 44, 45, 48, 52,
-   spustit clean.py a zabalit jako stage2.pptx.
-2. python3 -I sestav-prezentaci.py stage2.pptx "AI jako váš investiční asistent - workshop.pptx"
+   v ppt/presentation.xml nechat pořadí 2, 23, 15, 19, 13, 14, 20, 24, 40, 56, 35, 57, 22, 58, 25, 36, 44, 45, 48, 52,
+   spustit clean.py a zabalit jako stage3.pptx.
+2. python3 -I sestav-prezentaci.py stage3.pptx "AI jako váš investiční asistent - workshop.pptx"
    (fotky řečníků ve složce foto/ ze staré prezentace, slajd 2).
 """
 import copy, sys
@@ -416,8 +416,8 @@ for t, d, tt, dd in steps:
     fill(s, t, [tt]); fill(s, d, [dd])
     geom(s, d, h=0.7)
 notes(s, 'Krok 4 doplněn: čísla od AI ověřujeme v originále (tip 4). Mluvit za sebe („my dva“), ne za Portu. Celé naživo na jedné firmě, ideálně té, ke které jsme naposledy psali komentář k výsledkům. '
-         'Přepis hovoru z veřejného webu firmy pro investory. Ústně k DCF: „Necháváme si od AI spočítat i DCF, ale věříme mu jen tolik, kolik věříme předpokladům.“ '
-         'Krok 2 stojí i na rámci analýz Morningstar (konkurenční výhoda, férová cena, nejistota); jejich placené analýzy do AI nenahráváme. Prompty: '
+         'Přepis hovoru z veřejného webu firmy pro investory. '
+         'Krok 2 stojí i na rámci analýz Morningstar (konkurenční výhoda, férová cena, nejistota); jejich placené analýzy do AI nenahráváme. DCF a porovnání ETF jsou na dalším slajdu. Prompty: '
          '1) „Tady je přepis hovoru k výsledkům. Shrň česky: co se firmě dařilo, co ne, co řekl management o výhledu a na co se ptali analytici.“ '
          '2) „Posuď tuto firmu, jak by ji posuzovali Warren Buffett a Charlie Munger: rozumím byznysu? Má trvalou konkurenční výhodu? Je management poctivý a schopný? Je cena rozumná? Nepřisuzuj jim žádné citáty.“ '
          '3) „Napiš optimistický, střední a pesimistický scénář pro tuto firmu na 3 roky. Ke každému napiš, co by se muselo stát, a jaké jsou hlavní předpoklady.“')
@@ -437,8 +437,36 @@ for a, b, c, t1, t2, d in cards:
 delete(s, 9, 10, 16, 17, 23, 24)
 notes(s, 'Osobní postup odborníka na AI, kterého jsme se ptali. Citlivé údaje ve smlouvách a výpisech začernit nebo smazat.')
 
-# ---------- 14 Dnes večer ----------
+# ---------- 16 DCF a ETF ----------
 s = S[15]
+fill(s, 3, ['JAK TO DĚLÁME MY'])
+fill(s, 4, ['DCF a porovnání ETF'])
+fill(s, 5, ['Pokročilejší věci, které si od AI necháváme spočítat. S rozumem.',
+            'DCF = odhad hodnoty firmy z peněz, které podle předpokladů vydělá v budoucnu.'])
+geom(s, 3, y=2.2); geom(s, 4, y=2.69, h=0.85)
+geom(s, 5, y=3.6, h=1.6)
+for p_ in sh(s, 5).text_frame.paragraphs[1:]:
+    p_.space_before = Pt(8)
+fill(s, 7, ['Co nám AI ušetří'])
+fill(s, 19, ['Na co si dát pozor'])
+yes = ['DCF model firmy za pár minut', 'Dopad jiného růstu nebo sazby',
+       'ETF: složení, regiony, měny', 'Překryv nového ETF s portfoliem',
+       'Chování portfolia v minulosti']
+no = ['DCF stojí na předpokladech', 'Není to cílová cena ani tip',
+      'Minulost nezaručuje budoucnost']
+for sid, t in zip((9, 11, 13, 15, 17), yes):
+    fill(s, sid, [t]); geom(s, sid, w=3.0)
+for sid, t in zip((21, 23, 25), no):
+    fill(s, sid, [t]); geom(s, sid, w=3.0)
+notes(s, 'Podnět kolegy. Disclaimery říct nahlas: DCF stojí na předpokladech (růst tržeb, marže, diskontní sazba, konečný růst); '
+         'malá změna předpokladu udělá velkou změnu výsledku. Výsledek není cílová cena ani doporučení ke koupi či prodeji. '
+         'U ETF: srovnání historie ukazuje minulost, ne budoucnost; simulace není předpověď. '
+         'Prompt DCF: „Spočítej DCF pro firmu X. Vypiš všechny předpoklady (růst tržeb, marže, diskontní sazba, konečný růst) a ukaž, jak se výsledek změní, když každý posunu o 1 procentní bod. Neuváděj doporučení.“ '
+         'Prompt ETF: „Porovnej ETF A a ETF B: co drží, regiony, sektory a měny, jak moc se překrývají s mým portfoliem a jak by se portfolio s každým z nich chovalo v minulosti. Neuváděj doporučení.“ '
+         'Poplatky na slajdu záměrně nejsou.')
+
+# ---------- 14 Dnes večer ----------
+s = S[16]
 fill(s, 3, ['SHRNUTÍ'])
 fill(s, 4, ['Vyzkoušejte ještě dnes večer'])
 fill(s, 5, ['Všechny prompty z dnešního webináře vám pošleme e-mailem.'])
@@ -454,7 +482,7 @@ delete(s, 10, 15, 20, 25)
 notes(s, 'Po webináři poslat e-mailem tahák na jednu stranu A4 se všemi prompty ze slajdů 3, 6, 7, 8, 9, 10 a 12.')
 
 # ---------- 15 Q&A ----------
-s = S[16]
+s = S[17]
 for sid, q in zip((8, 12, 16, 20), ('Která AI je na investice nejlepší?', 'Potřebuju placenou verzi?',
                                     'Můžu AI dát přístup ke svému účtu?', 'Nahradí AI poradce?')):
     fill(s, sid, [q])
@@ -463,7 +491,7 @@ notes(s, 'Odpověď na otázku o účtu: „V USA už ano: ChatGPT umí číst b
          'Placená verze: na většinu ukázaných věcí stačí verze zdarma, placená má víc dotazů a silnější modely.')
 
 # ---------- 16, 17 ----------
-notes(S[17], 'Jedna věta: „Za investiční rozhodnutí odpovídáte vy. Rádi vám s ním pomůžeme. Ozvěte se, když budete chtít výstup z AI probrat s člověkem.“')
+notes(S[18], 'Jedna věta: „Za investiční rozhodnutí odpovídáte vy. Rádi vám s ním pomůžeme. Ozvěte se, když budete chtít výstup z AI probrat s člověkem.“')
 
 for sl in S:
     footer(sl)

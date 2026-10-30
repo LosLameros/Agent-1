@@ -211,3 +211,11 @@
 **Z podnětů kolegy doplněno jen do poznámek řečníka:** dotaz na přidání ETF (slajd 8, jen rozložení, ne výnos a náklady), DCF ústně s výhradou k předpokladům a rámec Morningstar (slajd 15), odpověď „jako inspiraci ano, jako hotový plán ne“ a postřeh o propásnutém boomu (slajd 13).
 
 **Vynecháno:** DCF a porovnání ETF se simulací výnosu na slajdech (předpověď, poplatky, žargon).
+
+## Verze 3 (30. 10. 2026): DCF a porovnání ETF
+
+20 slajdů. Za analýzu firmy (slajd 15) přibyl **slajd 16 „DCF a porovnání ETF“** (rozvržení „Co umíme a co ještě ne“, štítek Jak to děláme my).
+- Vlevo: „Pokročilejší věci, které si od AI necháváme spočítat. S rozumem.“ a vysvětlení DCF.
+- Co nám AI ušetří: DCF model firmy za pár minut · Dopad jiného růstu nebo sazby · ETF: složení, regiony, měny · Překryv nového ETF s portfoliem · Chování portfolia v minulosti.
+- Na co si dát pozor: DCF stojí na předpokladech · Není to cílová cena ani tip · Minulost nezaručuje budoucnost.
+- V poznámkách: plné disclaimery k řečení nahlas a prompty pro DCF a porovnání ETF. Poplatky na slajdu záměrně nejsou.

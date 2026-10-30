@@ -16,9 +16,9 @@ Technologické akcie padají i u firem, kterým se investice do umělé intelige
 
 ## Článek
 
-Microsoft tento týden ukázal možná nejlepší výsledky z celé technologické špičky. Růst akcií ale nevydržel a výprodej technologického sektoru zasáhl i jména s dobrými čtvrtletními výsledky. Trh trestá celý sektor za to, že peníze na umělou inteligenci zdražily. V tom má pravdu. **Mýlí se ale v tom, že trestá všechny stejně.**
+Microsoft tento týden ukázal možná nejlepší výsledky z celé technologické špičky. Růst akcií ale nevydržel a výprodej technologického sektoru zasáhl i jména s dobrými čtvrtletními výsledky. Trh trestá celý sektor za to, že peníze na umělou inteligenci zdražily. V tom má pravdu. **Mýlí se ale v tom, že trestá i firmy, kterým se investice do umělé inteligence už vracejí.**
 
-Že peníze zdražily, je zřejmé. Technologické firmy letos mají za AI utratit kolem 750 mld. USD a vlastní hotovost jim k tomu nestačí. Půjčily si skoro 500 mld. USD, více než dvojnásobek oproti loňsku.
+Že peníze zdražily, je zřejmé. Technologické firmy mají letos dle Bloombergu za AI utratit kolem 750 mld. USD a vlastní hotovost jim k tomu nestačí. Půjčily si skoro 500 mld. USD, více než dvojnásobek oproti loňsku.
 
 Rozhodující je ale, za co ty peníze firmy utrácejí. Microsoft, Google a Amazon výpočetní výkon prodávají, jejich investice mají zákazníka, který už podepsal smlouvu. Microsoft eviduje nasmlouvané a dosud nevyfakturované zakázky za 677 mld. USD, o 73 % víc než před rokem, Google Cloud za 561 mld. USD. Ani to je neochránilo. Alphabet po výsledcích odepsal 13 %, protože mu vyhledávání rostlo pomaleji, než trh čekal, a investice ho dostaly do záporné hotovosti. Amazon byl v pátek ráno o víc než 5 % níž, i když jeho cloud roste nejrychleji za skoro pět let. Trh u nich neřeší, jestli se investice vrátí, ale kdy a za jakou cenu. **Podle mě je to u nich otázka načasování, ne toho, jestli umělá inteligence vydělá.**
 
@@ -28,7 +28,7 @@ Jinak je na tom Meta. Výkon staví hlavně pro sebe a vrátit se jí má teprve
 
 Na trhu s dluhy už investoři rozlišovat začali. Když Oracle slíbil, že si do roku 2030 řekne nanejvýš o dalších 20 mld. USD, cena pojištění jeho dluhu klesla nejvíc za devět měsíců. Na akciích to zatím nevidím, tam padají i ti, kterým se investice vracejí.
 
-Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je položená špatně. Lepší otázka zní, kdo za své investice do umělé inteligence dostává zaplaceno už dnes a kdo teprve doufá, že jednou dostane. Kdo má fond na americké akcie, drží obě skupiny a měl by vědět, že nenesou stejné riziko. Levné peníze skončily. Vyhrají ty firmy, jejichž investice do umělé inteligence vydělají víc, než kolik je teď stojí kapitál. **Lepší pozici k tomu podle mě mají ty, které zákazníky mají už dnes, než ty, které je teprve hledají.**
+Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je položená špatně. Lepší otázka zní, kdo za své investice do umělé inteligence dostává zaplaceno už dnes a kdo teprve doufá, že jednou dostane. Kdo má fond na americké akcie, drží obě skupiny a měl by vědět, že nenesou stejné riziko. Levné peníze skončily. Vyhrají ty firmy, jejichž investice do umělé inteligence vydělají víc, než kolik je teď stojí kapitál. **Lepší pozici k tomu podle mě mají ty, které zákazníky mají už dnes, než ty, které je teprve hledají.** Tedy spíš Microsoft, Alphabet a Amazon, které výpočetní výkon prodávají, než Meta, která ho staví hlavně pro sebe.
 
 ---
 
@@ -38,7 +38,7 @@ Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je 
 
 **Co si odnese investor:** Neptat se, jestli jsou technologie drahé, ale kdo za investice do AI dostává zaplaceno už dnes. Fond na americké akcie drží obě skupiny s různým rizikem.
 
-**Délka:** 2 712 znaků včetně mezer, 457 slov (bez titulku a perexu), do jedné strany A4. Úvodní dva odstavce jsou autorovy (30. 10. 2026).
+**Délka:** 2 888 znaků včetně mezer, 485 slov (bez titulku a perexu), do jedné strany A4. Úvodní dva odstavce jsou autorovy (30. 10. 2026).
 
 **Čísla a zdroje:**
 
@@ -79,7 +79,7 @@ Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je 
 
 **Trvanlivost:** ceny akcií jsou z pátečního dopoledne v New Yorku. Při vydání přepočítej od zavírací ceny nebo ponech zaokrouhlené („o pětinu“, „téměř o třetinu“, „pod vodou“). Text platí do výhledů investic na rok 2027 (přelom ledna a února 2027). Pokud do té doby další gigant (Microsoft) oznámí prodej akcií, hodí se doplnit.
 
-**Compliance:** v textu není doporučení. Věta „Kdo má v portfoliu hlavně americké technologie, sází na to, že se jim tyhle peníze vrátí“ popisuje riziko, nevyzývá k transakci.
+**Compliance:** Poslední věta jmenuje firmy (Microsoft, Alphabet, Amazon proti Metě). Je formulovaná jako názor na jejich pozici („spíš“, „lepší pozici“), ne jako doporučení ke koupi; pokud by PR nebo compliance chtěli neutrálnější verzi, stačí ji zkrátit na „Tedy spíš firmy, které výpočetní výkon prodávají, než ty, které ho staví hlavně pro sebe.“ Původně: v textu není doporučení. Věta „Kdo má v portfoliu hlavně americké technologie, sází na to, že se jim tyhle peníze vrátí“ popisuje riziko, nevyzývá k transakci.
 
 **Graf (návrh):** půjčky technologických firem na AI 2025 proti 2026, nebo CDS Intelu, Amazonu, Microsoftu a Alphabetu za poslední rok (ICE). Nakreslí `portu-grafy`, pokud dodáš data.
 

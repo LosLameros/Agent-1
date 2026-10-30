@@ -133,6 +133,49 @@ def footer(slide):
                 s.width = need
 
 
+from PIL import ImageFont
+from pptx.enum.text import PP_ALIGN
+_FONT = ImageFont.truetype('/home/user/Agent-1/nastroje/fonty/RethinkSans-SemiBold.ttf', 1000)
+
+
+def text_width_in(shape):
+    """Width of the pill text in inches (caps, size and letter spacing from the run)."""
+    r = shape.text_frame.paragraphs[0].runs[0]._r
+    rpr = r.find(qn('a:rPr'))
+    sz = int(rpr.get('sz', '1000')) / 100
+    spc = int(rpr.get('spc', '0')) / 100
+    t = shape.text_frame.text
+    if rpr.get('cap') == 'all':
+        t = t.upper()
+    pts = _FONT.getlength(t) / 1000 * sz + spc * len(t)
+    return pts / 72
+
+
+def fit_pill(shape, align='left', right=None):
+    materialize(shape)
+    bp = shape.text_frame._txBody.find(qn('a:bodyPr'))
+    ins = (int(bp.get('lIns', '91440')) + int(bp.get('rIns', '91440'))) / 914400
+    w = Inches(text_width_in(shape) + ins + 0.10)
+    if align == 'center':
+        shape.left = int((prs.slide_width - w) / 2)
+    elif right is not None:
+        shape.left = Inches(right) - w
+    shape.width = w
+    for p_ in shape.text_frame.paragraphs:
+        p_.alignment = PP_ALIGN.CENTER
+
+
+def pills():
+    centred = {6, 14}            # slides whose label sits above a centred title
+    for i, sl in enumerate(S):
+        for x in sl.shapes:
+            if x.name == 'Štítek' and x.has_text_frame and x.top < Inches(3) and x.left < Inches(9):
+                fit_pill(x, 'center' if i in centred else 'left')
+    tags = S[16]
+    for sid in (9, 14, 19, 24):
+        fit_pill(sh(tags, sid), right=12.5)
+
+
 # ---------- 1 Titulní ----------
 s = S[0]
 fill(s, 3, ['WEBINÁŘ · INVESTIČNÍ KONZULTACE'])
@@ -337,8 +380,29 @@ for sid, t in zip((21, 23, 25, 27), ('Stačí seznam investic a částek',
     fill(s, sid, [t])
 move(s, (8, 9, 10, 11, 12, 13, 14, 15, 20, 21, 22, 23, 24, 25, 26, 27), dy=0.1)
 fill(s, 28, ['Claude, ChatGPT nebo Gemini vám ho postaví za minutu. Jeden výpočet si ověřte ručně a do přehledu dávejte jen názvy a částky.'])
-title_run = sh(s, 7).text_frame.paragraphs[0].runs[0]
-title_run.hyperlink.address = 'kalkulacka-ukazka.html'
+sh(s, 7).click_action.hyperlink.address = 'kalkulacka-ukazka.html'
+for x in s.shapes:
+    if x.name == 'Prompt A':
+        x.click_action.hyperlink.address = 'kalkulacka-ukazka.html'
+# plus: replace text placeholder with a geometrically centred circle + plus sign
+pl = sh(s, 16)
+cx, cy, d = pl.left + pl.width // 2, pl.top + pl.height // 2, pl.width
+pl._element.getparent().remove(pl._element)
+from pptx.enum.shapes import MSO_SHAPE
+circ = s.shapes.add_shape(MSO_SHAPE.OVAL, cx - d // 2, cy - d // 2, d, d)
+circ.name = 'Plus – kruh'
+circ.fill.solid(); circ.fill.fore_color.theme_color = MSO_THEME_COLOR.ACCENT_1
+circ.line.fill.background(); circ.shadow.inherit = False
+k = int(d * 0.5)
+plus = s.shapes.add_shape(MSO_SHAPE.MATH_PLUS, cx - k // 2, cy - k // 2, k, k)
+plus.name = 'Plus – znak'
+plus.adjustments[0] = 0.16
+plus.fill.solid(); plus.fill.fore_color.theme_color = MSO_THEME_COLOR.BACKGROUND_1
+plus.line.fill.background(); plus.shadow.inherit = False
+for shp in (circ, plus):
+    st = shp._element.find(qn('p:style'))
+    if st is not None:
+        shp._element.remove(st)
 notes(s, 'Podnět kolegy: AI jako tvůrce vlastních nástrojů. Živě v Claude (Artifacts), ChatGPT nebo Gemini (Canvas). '
          'Prompt A: „Udělej mi kalkulačku, kolik budu mít, když budu každý měsíc investovat určitou částku. Chci posuvníky pro počáteční vklad, měsíční vklad, počet let, roční zhodnocení a inflaci, graf vkladů a výnosu a výsledek i v dnešních penězích.“ '
          'Prompt B: „Z tohoto seznamu mých investic a částek mi udělej přehled s grafy podle regionů, sektorů a měn a s 10 největšími firmami napříč fondy.“ (vymyšlené portfolio, žádná čísla účtů) '
@@ -367,7 +431,7 @@ notes(s, 'Živá ukázka promptu. Příklad s čipy navrhl odborník na AI. Zdů
 s = S[12]
 fill(s, 3, ['TAKHLE NE'])
 fill(s, 4, ['„Na kterých pěti akciích vydělám v příštích 5 letech nejvíc?“'])
-geom(s, 4, w=11.67)
+geom(s, 4, w=11.67, h=1.15)
 cards = [
     (6, 7, 8, 'ODPOVĚĎ 1', 'Sázka na čipy', ['TSMC', 'ASML', 'Broadcom', 'Vistra / Constellation', 'Micron']),
     (13, 14, 15, 'ODPOVĚĎ 2', 'Obranné jistoty', ['Microsoft', 'Berkshire Hathaway', 'Alphabet', 'JPMorgan', 'Johnson & Johnson']),
@@ -435,6 +499,8 @@ for a, b, c, t1, t2, d in cards:
     fill(s, a, [t1]); fill(s, b, [t2]); fill(s, c, [d])
     geom(s, c, h=1.2)
 delete(s, 9, 10, 16, 17, 23, 24)
+for card in (5, 11, 12, 18, 19, 25):
+    geom(s, card, h=2.1)
 notes(s, 'Osobní postup odborníka na AI, kterého jsme se ptali. Citlivé údaje ve smlouvách a výpisech začernit nebo smazat.')
 
 # ---------- 16 DCF a ETF ----------
@@ -495,6 +561,7 @@ notes(S[18], 'Jedna věta: „Za investiční rozhodnutí odpovídáte vy. Rádi
 
 for sl in S:
     footer(sl)
+pills()
 
 prs.save(OUT)
 print('saved', OUT)

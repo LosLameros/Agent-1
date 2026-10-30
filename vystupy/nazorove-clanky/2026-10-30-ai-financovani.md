@@ -16,9 +16,9 @@ Technologické akcie padají i u firem, kterým se investice do umělé intelige
 
 ## Článek
 
-Microsoft tento týden ukázal možná nejlepší výsledky z celé technologické špičky. Tržby mu vzrostly o 19 % na 92,3 mld. USD a cloud Azure o 48 %, víc, než sám čekal. Večer po výsledcích akcie rostly o 4 %, v pátek 30. října se přesto obchodovaly níž než před nimi. Technologický index Nasdaq 100 ten den ztrácel 2,5 % a Intel 28 %. Trh trestá celý sektor za to, že peníze na umělou inteligenci zdražily. V tom má pravdu. **Mýlí se ale v tom, že trestá i firmy, kterým se investice do umělé inteligence už vracejí.**
+Microsoft tento týden ukázal možná nejlepší výsledky z celé technologické špičky. Růst akcií ale nevydržel a výprodej technologického sektoru zasáhl i jména s dobrými čtvrtletními výsledky. Trh trestá celý sektor za to, že peníze na umělou inteligenci zdražily. V tom má pravdu. **Mýlí se ale v tom, že trestá všechny stejně.**
 
-Že peníze zdražily, je zřejmé. Technologické firmy letos podle Bloombergu utratí za umělou inteligenci kolem 750 mld. USD a vlastní hotovost jim nestačí. Půjčily si skoro 500 mld. USD, víc než dvakrát tolik co loni, a rekordně prodávají vlastní akcie. Kdo je koupil, prodělal: nové akcie Alphabetu z června jsou o pětinu levnější, Intelu ze srpna téměř o třetinu. Meta si letos půjčovala až za 6,45 %, před čtyřmi lety jí stačilo 4,65 %.
+Že peníze zdražily, je zřejmé. Technologické firmy letos mají za AI utratit kolem 750 mld. USD a vlastní hotovost jim k tomu nestačí. Půjčily si skoro 500 mld. USD, více než dvojnásobek oproti loňsku.
 
 Rozhodující je ale, za co ty peníze firmy utrácejí. Microsoft, Google a Amazon výpočetní výkon prodávají, jejich investice mají zákazníka, který už podepsal smlouvu. Microsoft eviduje nasmlouvané a dosud nevyfakturované zakázky za 677 mld. USD, o 73 % víc než před rokem, Google Cloud za 561 mld. USD. Ani to je neochránilo. Alphabet po výsledcích odepsal 13 %, protože mu vyhledávání rostlo pomaleji, než trh čekal, a investice ho dostaly do záporné hotovosti. Amazon byl v pátek ráno o víc než 5 % níž, i když jeho cloud roste nejrychleji za skoro pět let. Trh u nich neřeší, jestli se investice vrátí, ale kdy a za jakou cenu. **Podle mě je to u nich otázka načasování, ne toho, jestli umělá inteligence vydělá.**
 
@@ -38,7 +38,7 @@ Pro investora z toho plyne, že otázka „nejsou technologie moc drahé?“ je 
 
 **Co si odnese investor:** Neptat se, jestli jsou technologie drahé, ale kdo za investice do AI dostává zaplaceno už dnes. Fond na americké akcie drží obě skupiny s různým rizikem.
 
-**Délka:** 3 137 znaků včetně mezer, 542 slov (bez titulku a perexu), do jedné strany A4.
+**Délka:** 2 712 znaků včetně mezer, 457 slov (bez titulku a perexu), do jedné strany A4. Úvodní dva odstavce jsou autorovy (30. 10. 2026).
 
 **Čísla a zdroje:**
 

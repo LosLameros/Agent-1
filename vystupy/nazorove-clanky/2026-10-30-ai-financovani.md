@@ -28,8 +28,6 @@ O konec umělé inteligence přitom nejde. O nové akcie Mety byl pětinásobný
 
 Pro investory se tím mění pravidla. Technologičtí giganti už nejsou hotovostní stroje, jejichž zisky rostou samy. Jejich výnos teď záleží i na tom, kolik je stojí peníze a kolik jich ještě budou potřebovat. Napoví to výhledy investic na rok 2027, které firmy zveřejní na přelomu ledna a února. Kdo má v portfoliu hlavně americké technologie, sází na to, že se jim tyhle peníze vrátí. Účet za umělou inteligenci už začali platit akcionáři i věřitelé. Vyhrají ty firmy, které přestanou utrácet dřív, než jim trh přestane půjčovat levně.
 
-[Jméno Příjmení], analytik Portu
-
 ---
 
 **Pouze pro autora, neposílat do redakce:**

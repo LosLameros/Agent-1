@@ -91,6 +91,8 @@ U každého okruhu použij tento blok:
 
 Vyber 3 až 5 témat, která jsou **aktuální právě v týdnu natáčení** a mají dopad na peníze diváka: zasedání ECB a Fedu, volby, válka a ceny energií, státní dluhy (např. francouzské dluhopisy), kurz eura a koruny, výsledky velkých firem, ocenění Evropy proti USA, střední Evropa a pražská burza. U každého otázku moderátorky a odpověď v délce 60 až 120 slov. Přednost mají témata, na která navazuje i výhled v závěru.
 
+**Ocenění a srovnání s USA** (okruh „Je Evropa levná?“ patří do každého rozhovoru o evropských akciích): poměr ceny k zisku na 12 měsíců dopředu pro Stoxx 600 (týdenní zpráva LSEG I/B/E/S) a S&P 500 (FactSet Earnings Insight, PDF `https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_MMDDYY.pdf`, text vytáhneš přes `pdftotext -layout`), oba proti vlastním desetiletým průměrům, sleva Evropy v procentech, růst zisků a podíl překonaných odhadů na obou stranách, výkon od začátku roku v místní měně i v korunách a důvody slevy (složení indexů, růst a ziskovost, rizika). Totéž udělej pro sektor, o kterém se zrovna mluví (např. banky: výkon letos a loni, výsledky proti odhadům, ocenění proti americkým bankám).
+
 ## 7. Pravidla pro čísla a srovnání
 
 - **HDP srovnávej stejné se stejným.** Americký mezičtvrtletní růst se uvádí v ročním přepočtu (anualizovaný), evropský ne. Buď srovnej meziroční čísla, nebo evropské tempo přepočti na rok ((1 + q)^4 − 1) a řekni to. V dubnovém scénáři toto srovnání nesedělo.

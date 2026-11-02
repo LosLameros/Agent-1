@@ -80,7 +80,7 @@ Kdo zatím vyhrál? Ropné firmy. Shell měl upravený zisk 10,8 miliardy dolar�
 
 Kdo zklamal? Automobilky. Volkswagen měl provozní ztrátu skoro 6 miliard eur, analytici čekali kolem 2,6 miliardy, hlavně kvůli odpisu v Porsche. Mercedes kvůli Číně snížil výhled marže. Luxus: LVMH, Hermès i Kering měly tržby pod odhady. A část bank, třeba HSBC, Santander nebo britská NatWest, akcie po výsledcích ztratily 5 až 9 procent.
 
-Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují, a evropské akcie se přitom obchodují zhruba za 14násobek očekávaných zisků, pod desetiletým průměrem.
+Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují.
 
 *Kdyby se doptala:* „Na které výsledky se tento týden dívat?“
 
@@ -92,7 +92,39 @@ Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 pro
 
 ---
 
-## 6. Co se stalo s dubnovými vítězi a poraženými
+## 6. Je Evropa teď levná? Srovnání s Amerikou
+
+**Moderátorka:** „Často se říká, že Evropa je levná. Je to pravda? A jak si letos vede proti Americe?“
+
+**Já:** Proti Americe ano, proti vlastní historii ne. Evropský index Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které analytici čekají na příštích dvanáct měsíců. Americký S&P 500 za 18,7násobek. Evropa je tedy zhruba o čtvrtinu levnější. Jenže obě čísla jsou těsně pod svými desetiletými průměry, u Evropy 14,2, u Ameriky 19,1. Evropa tedy není ve výprodeji, je levná zhruba tak, jak bývá vždycky.
+
+Zajímavé je, že Amerika letos zlevnila, přestože její akcie rostly. Ještě v březnu stála přes 21násobek zisků. Zisky amerických firem totiž rostou rychleji než ceny akcií. Ve třetím čtvrtletí vyrostly o 30 procent a 82 procent firem překonalo odhady. V Evropě je to 24 procent, bez energetiky 10, a odhady překonala zhruba polovina firem. To je hlavní důvod, proč Amerika letos zase vede. S&P 500 je od začátku roku na plus 11 procentech, Stoxx 600 na plus 9, a v korunách je to 17 proti 10 procentům. Loni přitom byly v místních měnách skoro stejně, oba indexy přidaly kolem 16 až 17 procent.
+
+Proč je Evropa levnější? Zaprvé kvůli složení. Evropa má hodně bank, energetiky, surovin a spotřebního zboží, a to jsou odvětví, která jsou levná i v Americe. Americký finanční sektor stojí kolem 15násobku zisků, energetika 13. Zadruhé kvůli růstu, americké firmy dlouhodobě rostou rychleji a jsou ziskovější. A zatřetí kvůli rizikům, která jsou letos dobře vidět: drahá energie, pomalejší ekonomika a politika, jako teď ve Francii. Sleva tedy není chyba trhu, je to cena za pomalejší růst. Pro investora to znamená, že v Evropě za každé euro zisku platí méně, ale zisky mu také rostou pomaleji.
+
+*Kdyby se doptala:* „Takže se teď vyplatí víc Evropa?“
+
+**Já:** Tak bych to neřekl, levnější neznamená automaticky lepší. Evropa a Amerika se navzájem doplňují. Evropě se daří, když táhnou banky, energetika a průmysl, Americe, když táhnou technologie. Letos jsme viděli obojí: do února vedla Evropa, od války zase Amerika. Kdo má v portfoliu jen jednu z nich, sází na jeden scénář.
+
+---
+
+## 7. Jak jsou na tom evropské banky a proti americkým
+
+**Moderátorka:** „Evropské banky byly loni hvězdou trhu. Jak jsou na tom letos? A proti americkým?“
+
+**Já:** Letos přešlapují na místě, ale ne proto, že by se jim dařilo špatně. Loni index bank eurozóny vyrostl o 80 procent. Letos je od začátku roku jen asi o 4 procenta výš a za poslední měsíc ztratil zhruba 8 procent. Přitom zisky bank dál rostou. Vyšší sazby ECB jim zvedají příjmy z úroků a všechny velké banky eurozóny, které už reportovaly, měly zisk na akcii vyšší než před rokem. Jenže po takovém růstu už trh čeká hodně a stačí malé zklamání.
+
+Přesně to se stalo ve výsledkové sezoně. Deutsche Bank, Société Générale nebo Crédit Agricole odhady překonaly, ale Santander, HSBC nebo britská NatWest zklamaly a jejich akcie ztratily 5 až 9 procent. Rozdíly mezi bankami jsou velké. Nizozemská ING je letos na plus 18 procentech, Société Générale kvůli francouzským problémům na minus 11.
+
+Americké banky na tom letos nejsou lépe. JPMorgan je od začátku roku na plus 5 procentech, Goldman Sachs na plus 2, Bank of America a Wells Fargo dokonce na minus 9 a 10 procentech. Liší se hlavně ocenění. Evropské banky stojí zhruba za desetinásobek očekávaných zisků, americké za dvanáct až patnáct. Evropská centrální banka sama píše, že rozdíl je hlavně kvůli slabší evropské ekonomice, ne kvůli bankám samotným. Riziko vidím v tom, že kdyby drahá energie zpomalila ekonomiku víc, začnou firmy a domácnosti hůř splácet úvěry a bankám porostou ztráty.
+
+*Kdyby se doptala:* „A středoevropské a české banky?“
+
+**Já:** Středoevropské banky vydělávají na vyšších sazbách v regionu a právě banky letos táhnou polskou burzu, která je na plus 34 procentech. Rakouská Erste, která vlastní Českou spořitelnu, je letos na plus 5 procentech. [OVĚŘIT před natáčením: Komerční banka a Moneta od začátku roku.]
+
+---
+
+## 8. Co se stalo s dubnovými vítězi a poraženými
 
 **Moderátorka:** „Minule jste jako vítěze vybral ASML a jako poražené SAP a LVMH. Jak dopadli?“
 
@@ -108,7 +140,7 @@ LVMH naopak spadl ještě hlouběji, z minus 26 na minus 40 procent. Móda a ko�
 
 ---
 
-## 7. Vítězové letoška: TotalEnergies a Bayer
+## 9. Vítězové letoška: TotalEnergies a Bayer
 
 **Moderátorka:** „Kdo jsou letošní vítězové mezi evropskými akciemi?“
 
@@ -132,7 +164,7 @@ Druhá strana mince: rozsudek řeší jen část žalob, takže spor úplně nek
 
 ---
 
-## 8. Poražení letoška: Stellantis a Rheinmetall
+## 10. Poražení letoška: Stellantis a Rheinmetall
 
 **Moderátorka:** „A kdo letos naopak nejvíc ztrácí?“
 
@@ -158,33 +190,33 @@ Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 mil
 
 ---
 
-## 9. Další okruhy, kdyby zbyl čas
+## 11. Další okruhy, kdyby zbyl čas
 
-### 9.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
+### 11.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
 
 **Moderátorka:** „Ropa je zase kolem 110 dolarů. Co bude dál?“
 
 **Já:** Rozhodující může být už tento týden. V úterý 3. listopadu jsou v Americe volby do Kongresu a prezident Trump opakovaně naznačil, že po nich může obnovit útoky na Írán. Zároveň běží jednání přes Katar, Pákistán nebo Saúdskou Arábii. Ropa Brent v říjnu zdražila o víc než 15 procent a 23. října byla nejdráž od roku 2022. Pro evropské akcie to má jasnou logiku. Dražší ropa znamená vyšší inflaci, vyšší sazby a slabší spotřebu, pomáhá jen energetickým firmám. Dohoda by naopak Evropě ulevila nejvíc ze všech. Viděli jsme to v dubnu po příměří i v létě, kdy evropské indexy vylezly na rekordy. Evropa se zatím brání tím, že během tří měsíců uvolní 42 milionů barelů ze strategických zásob.
 
-### 9.2 ECB zvedá sazby a Lagardeová odchází
+### 11.2 ECB zvedá sazby a Lagardeová odchází
 
 **Moderátorka:** „ECB letos sazby zvedá. Co to znamená a co odchod Christine Lagardeové?“
 
 **Já:** ECB je v nepříjemné situaci. Inflace je kvůli energiím skoro dvakrát nad cílem a ekonomika přitom roste pomalu. Letos proto dvakrát zvedla sazby, depozitní sazba je na 2,5 procenta a trh čeká další zvýšení v prosinci. Pro akcie to znamená dvě věci. Bankám vyšší sazby pomáhají, firmám s dluhy a domácnostem s hypotékou škodí. Navíc Christine Lagardeová oznámila, že z čela ECB odejde už 7. února, zhruba o devět měsíců dřív. Nejčastěji se mluví o Nizozemci Klaasi Knotovi, Španělovi Pablu Hernándezi de Cosovi, Němce Isabel Schnabelové a šéfovi Bundesbanky Joachimu Nagelovi. Kdo to bude, rozhodne i o tom, jak tvrdě bude ECB s inflací bojovat.
 
-### 9.3 Francie jako nová slabina eurozóny
+### 11.3 Francie jako nová slabina eurozóny
 
 **Moderátorka:** „Proč se teď tolik mluví o Francii?“
 
 **Já:** Francie je druhá největší ekonomika eurozóny a má problém s dluhem i s politikou. Parlament je roztříštěný, spor o rozpočet na příští rok se táhne od září a v říjnu se přidaly sociální nepokoje. Investoři proto po Francii chtějí za půjčku víc. Výnos desetiletých dluhopisů se dostal nad 5 procent, nejvýš od roku 2002. Ekonomika ve třetím čtvrtletí klesla o 0,1 procenta a index CAC 40 je letos v minusu. Pro celou eurozónu je to riziko, protože to oslabuje euro a zdražuje půjčky i jiným státům. Lagardeová minulý týden řekla, že ECB má nástroje, kdyby se trhy chovaly neodůvodněně.
 
-### 9.4 Co z toho plyne pro českého investora
+### 11.4 Co z toho plyne pro českého investora (měna)
 
-**Moderátorka:** „Je Evropa teď levná? A co z toho plyne pro české investory?“
+**Moderátorka:** „Co z toho všeho plyne pro české investory?“
 
-**Já:** Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které se čekají na příštích dvanáct měsíců, pod svým desetiletým průměrem. V srpnu to bylo asi o čtvrtinu méně než u amerických akcií. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. A zisky evropských firem letos rostou, i bez energetiky zhruba o 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
+**Já:** Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Když si český investor kupuje zahraniční akcie, vydělává nebo prodělává i na kurzu, a letos mu silnější dolar pomohl. Příští rok to může být naopak. Kdyby se válka uklidnila a euro posílilo, evropské akcie by mu v korunách mohly vydělat víc než americké, i kdyby v místních měnách rostly stejně.
 
-### 9.5 Výprodej technologií na konci října
+### 11.5 Výprodej technologií na konci října
 
 **Moderátorka:** „Minulý týden padaly technologické akcie. Dotkne se to Evropy?“
 
@@ -192,7 +224,7 @@ Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 mil
 
 ---
 
-## 10. Závěr: na co se dívat do konce roku
+## 12. Závěr: na co se dívat do konce roku
 
 **Moderátorka:** „Co bude pro evropské akcie do konce roku rozhodující?“
 

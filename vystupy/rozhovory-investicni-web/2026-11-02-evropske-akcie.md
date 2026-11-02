@@ -31,6 +31,8 @@
 
 **Výsledková sezona 3Q** (LSEG k 29. 10., Stoxx 600): reportovalo 144 firem, odhady překonalo 54,2 % (průměr 54 %), růst zisků +23,6 %, bez energetiky +9,8 %, výhled na 4Q +38,8 %. Tento týden Bayer (3. 11.), BMW (4. 11.), Rheinmetall (5. 11.).
 
+**Ocenění** (cena k zisku na 12 měsíců dopředu): Stoxx 600 13,8 (průměr 14,2), S&P 500 18,7 (průměr 19,1), Evropa o 26 % levnější. **Banky:** Euro Stoxx Banks 2025 +80 %, letos +4,2 %, za měsíc −8,2 %, ocenění asi 10 proti 12,5 u amerických bank. Americké banky letos v průměru −0,7 %.
+
 **Vítězové a poražení** (ceny v EUR, závěr 30. 10.):
 
 | Akcie | od začátku roku | od 22. 4. | cena |
@@ -158,7 +160,7 @@ Kdo zatím vyhrál? Ropné firmy. Shell měl upravený zisk 10,8 miliardy dolar�
 
 Kdo zklamal? Automobilky. Volkswagen měl provozní ztrátu skoro 6 miliard eur, analytici čekali kolem 2,6 miliardy, hlavně kvůli odpisu v Porsche. Mercedes kvůli Číně snížil výhled marže. Luxus: LVMH, Hermès i Kering měly tržby pod odhady. A část bank, třeba HSBC, Santander nebo britská NatWest, akcie po výsledcích ztratily 5 až 9 procent.
 
-Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují, a evropské akcie se přitom obchodují zhruba za 14násobek očekávaných zisků, pod desetiletým průměrem.
+Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují.
 
 **Čísla do ruky** (LSEG I/B/E/S k 29. 10. 2026, Stoxx 600):
 - Výsledky zveřejnilo 144 firem. Odhady zisku překonalo 54,2 % (průměr od roku 2012 je 54 %), v souhrnu byly zisky o 5 % nad odhady (dlouhodobý průměr 5,9 %). Tržby nad odhady mělo 61,1 % ze 180 firem.
@@ -200,7 +202,55 @@ Opět kvůli ropě. Ve druhém čtvrtletí příštího roku se zisky budou srov
 
 ---
 
-## 6. Co se stalo s dubnovými vítězi a poraženými
+## 6. Je Evropa teď levná? Srovnání s Amerikou
+
+**Moderátorka se pravděpodobně zeptá:** „Často se říká, že Evropa je levná. Je to pravda? A jak si letos vede proti Americe?“
+
+**Odpověď:**
+Proti Americe ano, proti vlastní historii ne. Evropský index Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které analytici čekají na příštích dvanáct měsíců. Americký S&P 500 za 18,7násobek. Evropa je tedy zhruba o čtvrtinu levnější. Jenže obě čísla jsou těsně pod svými desetiletými průměry, u Evropy 14,2, u Ameriky 19,1. Evropa tedy není ve výprodeji, je levná zhruba tak, jak bývá vždycky.
+
+Zajímavé je, že Amerika letos zlevnila, přestože její akcie rostly. Ještě v březnu stála přes 21násobek zisků. Zisky amerických firem totiž rostou rychleji než ceny akcií. Ve třetím čtvrtletí vyrostly o 30 procent a 82 procent firem překonalo odhady. V Evropě je to 24 procent, bez energetiky 10, a odhady překonala zhruba polovina firem. To je hlavní důvod, proč Amerika letos zase vede. S&P 500 je od začátku roku na plus 11 procentech, Stoxx 600 na plus 9, a v korunách je to 17 proti 10 procentům. Loni přitom byly v místních měnách skoro stejně, oba indexy přidaly kolem 16 až 17 procent.
+
+Proč je Evropa levnější? Zaprvé kvůli složení. Evropa má hodně bank, energetiky, surovin a spotřebního zboží, a to jsou odvětví, která jsou levná i v Americe. Americký finanční sektor stojí kolem 15násobku zisků, energetika 13. Zadruhé kvůli růstu, americké firmy dlouhodobě rostou rychleji a jsou ziskovější. A zatřetí kvůli rizikům, která jsou letos dobře vidět: drahá energie, pomalejší ekonomika a politika, jako teď ve Francii. Sleva tedy není chyba trhu, je to cena za pomalejší růst. Pro investora to znamená, že v Evropě za každé euro zisku platí méně, ale zisky mu také rostou pomaleji.
+
+**Čísla do ruky:**
+- Poměr ceny k zisku na 12 měsíců dopředu: Stoxx 600 13,8 (desetiletý průměr 14,2; LSEG I/B/E/S k 29. 10.), S&P 500 18,7 (pětiletý průměr 19,8, desetiletý 19,1; FactSet k 30. 10.; 30. 9. 19,0; 6. 3. 21,2). Evropa je o 26 % levnější.
+- Americké sektory: cyklické spotřební zboží 23,8, základní spotřeba 22,9, průmysl 22,8, finance 14,9, energetika 13,2 (FactSet).
+- Zisky ve 3Q: S&P 500 +30,2 %, nad odhady 82 % firem (pětiletý průměr 78 %), sedm největších technologických firem +22,6 %, zbylých 493 firem +32,6 %, energetika +146 %. Výhled na 4Q +28,4 %. Stoxx 600 +23,6 %, bez energetiky +9,8 %, nad odhady 54,2 %, výhled na 4Q +38,8 %.
+- Výkon od začátku roku (k 30. 10.): S&P 500 +10,7 % (v eurech +16,5 %, v korunách +17,4 %), Nasdaq 100 +12,4 %, Stoxx 600 +9,1 % (v korunách +10,0 %), Euro Stoxx 50 +5,9 %.
+- Rok 2025 v místních měnách: S&P 500 +16,4 %, Stoxx 600 +16,8 %.
+- Před válkou (27. 2.): Stoxx 600 +6,9 % od začátku roku, S&P 500 +0,5 %.
+
+**Kdyby se doptala:** „Takže se teď vyplatí víc Evropa?“
+Tak bych to neřekl, levnější neznamená automaticky lepší. Evropa a Amerika se navzájem doplňují. Evropě se daří, když táhnou banky, energetika a průmysl, Americe, když táhnou technologie. Letos jsme viděli obojí: do února vedla Evropa, od války zase Amerika. Kdo má v portfoliu jen jednu z nich, sází na jeden scénář.
+
+---
+
+## 7. Jak jsou na tom evropské banky a proti americkým
+
+**Moderátorka se pravděpodobně zeptá:** „Evropské banky byly loni hvězdou trhu. Jak jsou na tom letos? A proti americkým?“
+
+**Odpověď:**
+Letos přešlapují na místě, ale ne proto, že by se jim dařilo špatně. Loni index bank eurozóny vyrostl o 80 procent. Letos je od začátku roku jen asi o 4 procenta výš a za poslední měsíc ztratil zhruba 8 procent. Přitom zisky bank dál rostou. Vyšší sazby ECB jim zvedají příjmy z úroků a všechny velké banky eurozóny, které už reportovaly, měly zisk na akcii vyšší než před rokem. Jenže po takovém růstu už trh čeká hodně a stačí malé zklamání.
+
+Přesně to se stalo ve výsledkové sezoně. Deutsche Bank, Société Générale nebo Crédit Agricole odhady překonaly, ale Santander, HSBC nebo britská NatWest zklamaly a jejich akcie ztratily 5 až 9 procent. Rozdíly mezi bankami jsou velké. Nizozemská ING je letos na plus 18 procentech, Société Générale kvůli francouzským problémům na minus 11.
+
+Americké banky na tom letos nejsou lépe. JPMorgan je od začátku roku na plus 5 procentech, Goldman Sachs na plus 2, Bank of America a Wells Fargo dokonce na minus 9 a 10 procentech. Liší se hlavně ocenění. Evropské banky stojí zhruba za desetinásobek očekávaných zisků, americké za dvanáct až patnáct. Evropská centrální banka sama píše, že rozdíl je hlavně kvůli slabší evropské ekonomice, ne kvůli bankám samotným. Riziko vidím v tom, že kdyby drahá energie zpomalila ekonomiku víc, začnou firmy a domácnosti hůř splácet úvěry a bankám porostou ztráty.
+
+**Čísla do ruky:**
+- Euro Stoxx Banks: rok 2025 +80,3 % (z 146,04 na 263,27 bodu), 2026 +4,2 % (274,22 bodu k 30. 10.), za poslední měsíc −8,2 %. Pořád 44 % pod rekordem z roku 2007. Podle Reuters (20. 10.) index od začátku září ztratil 7 % a stojí asi za 10násobek zisků na rok dopředu.
+- Evropské banky od začátku roku (k 30. 10.): ING +17,7 %, HSBC +8,8 % (v GBp), BNP Paribas +6,0 %, BBVA +5,0 %, UniCredit +3,0 %, Santander +0,5 %, Intesa −0,5 %, Deutsche Bank −9,2 %, Société Générale −11,2 %. Commerzbank +5,7 % a Erste +4,6 % (k 2. 11.).
+- Americké banky od začátku roku (k 30. 10.): Citigroup +5,1 %, JPMorgan +4,6 %, Morgan Stanley +3,8 %, Goldman Sachs +1,8 %, Bank of America −8,7 %, Wells Fargo −10,5 %. Prostý průměr −0,7 %.
+- Ocenění: evropské banky asi 10 (Reuters, 20. 10.; BNP Paribas WM v červenci 10,4), americké banky 12,5 a cena k účetní hodnotě 1,65 (BNP Paribas WM, červenec), americký finanční sektor 14,9 (FactSet, 30. 10.).
+- Zisk na akcii ve 3Q proti loňsku: BNP 2,91 (2,61), Société Générale 2,35 (1,76), Deutsche Bank 0,94 (0,89), Santander 0,25 (0,22), BBVA 0,52 (0,42), ING 0,65 (0,60), Intesa 0,15 (0,13) EUR. Americký finanční sektor: zisky ve 3Q +5,5 % (FactSet).
+- ECB (Zpráva o finanční stabilitě, květen 2026): rozdíl v ocenění proti americkým bankám vychází hlavně ze slabší makroekonomiky eurozóny, ne ze slabších bank.
+
+**Kdyby se doptala:** „A středoevropské a české banky?“
+Středoevropské banky vydělávají na vyšších sazbách v regionu a právě banky letos táhnou polskou burzu, která je na plus 34 procentech. Rakouská Erste, která vlastní Českou spořitelnu, je letos na plus 5 procentech. [OVĚŘIT před natáčením: Komerční banka a Moneta od začátku roku.]
+
+---
+
+## 8. Co se stalo s dubnovými vítězi a poraženými
 
 **Moderátorka se pravděpodobně zeptá:** „Minule jste jako vítěze vybral ASML a jako poražené SAP a LVMH. Jak dopadli?“
 
@@ -222,7 +272,7 @@ Celého sektoru. Hermès je letos na minus 39 procentech a Kering, majitel Gucci
 
 ---
 
-## 7. Vítězové letoška: TotalEnergies a Bayer
+## 9. Vítězové letoška: TotalEnergies a Bayer
 
 **Moderátorka se pravděpodobně zeptá:** „Kdo jsou letošní vítězové mezi evropskými akciemi?“
 
@@ -260,7 +310,7 @@ ASML jsme měli jako vítěze minule, a tak jsem chtěl ukázat jiné příběhy
 
 ---
 
-## 8. Poražení letoška: Stellantis a Rheinmetall
+## 10. Poražení letoška: Stellantis a Rheinmetall
 
 **Moderátorka se pravděpodobně zeptá:** „A kdo letos naopak nejvíc ztrácí?“
 
@@ -299,37 +349,37 @@ CSG vstoupila na burzu v Amsterdamu v lednu za 25 eur za akcii a první den vysk
 
 ---
 
-## 9. Další okruhy, kdyby zbyl čas
+## 11. Další okruhy, kdyby zbyl čas
 
-### 9.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
+### 11.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
 
 **Moderátorka se pravděpodobně zeptá:** „Ropa je zase kolem 110 dolarů. Co bude dál?“
 
 **Odpověď:**
 Rozhodující může být už tento týden. V úterý 3. listopadu jsou v Americe volby do Kongresu a prezident Trump opakovaně naznačil, že po nich může obnovit útoky na Írán. Zároveň běží jednání přes Katar, Pákistán nebo Saúdskou Arábii. Ropa Brent v říjnu zdražila o víc než 15 procent a 23. října byla nejdráž od roku 2022. Pro evropské akcie to má jasnou logiku. Dražší ropa znamená vyšší inflaci, vyšší sazby a slabší spotřebu, pomáhá jen energetickým firmám. Dohoda by naopak Evropě ulevila nejvíc ze všech. Viděli jsme to v dubnu po příměří i v létě, kdy evropské indexy vylezly na rekordy. Evropa se zatím brání tím, že během tří měsíců uvolní 42 milionů barelů ze strategických zásob.
 
-### 9.2 ECB zvedá sazby a Lagardeová odchází
+### 11.2 ECB zvedá sazby a Lagardeová odchází
 
 **Moderátorka se pravděpodobně zeptá:** „ECB letos sazby zvedá. Co to znamená a co odchod Christine Lagardeové?“
 
 **Odpověď:**
 ECB je v nepříjemné situaci. Inflace je kvůli energiím skoro dvakrát nad cílem a ekonomika přitom roste pomalu. Letos proto dvakrát zvedla sazby, depozitní sazba je na 2,5 procenta a trh čeká další zvýšení v prosinci. Pro akcie to znamená dvě věci. Bankám vyšší sazby pomáhají, firmám s dluhy a domácnostem s hypotékou škodí. Navíc Christine Lagardeová oznámila, že z čela ECB odejde už 7. února, zhruba o devět měsíců dřív. Nejčastěji se mluví o Nizozemci Klaasi Knotovi, Španělovi Pablu Hernándezi de Cosovi, Němce Isabel Schnabelové a šéfovi Bundesbanky Joachimu Nagelovi. Kdo to bude, rozhodne i o tom, jak tvrdě bude ECB s inflací bojovat.
 
-### 9.3 Francie jako nová slabina eurozóny
+### 11.3 Francie jako nová slabina eurozóny
 
 **Moderátorka se pravděpodobně zeptá:** „Proč se teď tolik mluví o Francii?“
 
 **Odpověď:**
 Francie je druhá největší ekonomika eurozóny a má problém s dluhem i s politikou. Parlament je roztříštěný, spor o rozpočet na příští rok se táhne od září a v říjnu se přidaly sociální nepokoje. Investoři proto po Francii chtějí za půjčku víc. Výnos desetiletých dluhopisů se dostal nad 5 procent, nejvýš od roku 2002. Ekonomika ve třetím čtvrtletí klesla o 0,1 procenta a index CAC 40 je letos v minusu. Pro celou eurozónu je to riziko, protože to oslabuje euro a zdražuje půjčky i jiným státům. Lagardeová minulý týden řekla, že ECB má nástroje, kdyby se trhy chovaly neodůvodněně.
 
-### 9.4 Co z toho plyne pro českého investora
+### 11.4 Co z toho plyne pro českého investora (měna)
 
-**Moderátorka se pravděpodobně zeptá:** „Je Evropa teď levná? A co z toho plyne pro české investory?“
+**Moderátorka se pravděpodobně zeptá:** „Co z toho všeho plyne pro české investory?“
 
 **Odpověď:**
-Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které se čekají na příštích dvanáct měsíců, pod svým desetiletým průměrem. V srpnu to bylo asi o čtvrtinu méně než u amerických akcií. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. A zisky evropských firem letos rostou, i bez energetiky zhruba o 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
+Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Když si český investor kupuje zahraniční akcie, vydělává nebo prodělává i na kurzu, a letos mu silnější dolar pomohl. Příští rok to může být naopak. Kdyby se válka uklidnila a euro posílilo, evropské akcie by mu v korunách mohly vydělat víc než americké, i kdyby v místních měnách rostly stejně.
 
-### 9.5 Výprodej technologií na konci října
+### 11.5 Výprodej technologií na konci října
 
 **Moderátorka se pravděpodobně zeptá:** „Minulý týden padaly technologické akcie. Dotkne se to Evropy?“
 
@@ -342,7 +392,7 @@ Méně než Ameriky, a je to přesně ten argument z dubna, jen obráceně. Po v
 
 ---
 
-## 10. Závěr: na co se dívat do konce roku
+## 12. Závěr: na co se dívat do konce roku
 
 **Moderátorka se pravděpodobně zeptá:** „Co bude pro evropské akcie do konce roku rozhodující?“
 
@@ -381,6 +431,7 @@ Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. 
 - ČEZ, Komerční banka, Erste: vývoj od začátku roku a od září (proč PX zaostává).
 - Maďarsko: co stálo za jarním skokem BUX (jarní volby?). Bez ověření důvod neuváděj.
 - Inflace eurozóny za říjen (pokud vyjde před natáčením) a data prosincových zasedání ECB a Fedu.
+- Banky: Komerční banka a Moneta od začátku roku, aktuální ocenění evropských a amerických bank (údaj o amerických bankách 12,5 je z července).
 - Meziroční růst HDP USA za 3Q u BEA (náš propočet zhruba 2,1 %).
 - Výsledková sezona: konsenzus u ASML (zdroje se rozcházejí, zda tržby byly nad, nebo těsně pod odhadem; TE uvádí odhad 10,33 mld. EUR, který se zdá zastaralý), reakce akcií LVMH, Hermès a Kering v den výsledků, výsledky Stellantisu za 3Q. Nový souhrn LSEG I/B/E/S vychází obvykle v úterý.
 
@@ -410,5 +461,6 @@ Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. 
 - Polsko: [Notes from Poland](https://notesfrompoland.com/2026/08/04/polands-wig20-stock-market-index-hits-record-high/)
 - Francie: [Trading Economics, francouzské dluhopisy](https://tradingeconomics.com/france/government-bond-yield/news/595005)
 - ECB a Lagardeová: [Il Foglio](https://www.ilfoglio.it/economy/2026/10/29/news/lagarde-bids-farewell-to-the-ecb-ahead-of-schedule-im-leaving-on-7-february--412032), [OMFIF](https://www.omfif.org/2026/04/omfif-survey-finds-three-candidates-level-pegging-to-succeed-lagarde/)
+- Ocenění Evropa vs. USA a banky: [FactSet Earnings Insight, 30. 10. 2026](https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_103026.pdf), [BNP Paribas Wealth Management, bankovní sektor (červenec 2026)](https://wealthmanagement.bnpparibas/content/dam/wmpublicsite/global/pdfs/en/august-2026/20260731%20Equity%20Insights%20-%20Banking%20sector%20EN.pdf), [Reuters přes Investing.com, 20. 10.](https://www.investing.com/news/stock-market-news/europes-earnings-boom-widens-beyond-energy-and-ai-4959045), ECB Zpráva o finanční stabilitě (květen 2026), Trading Economics (ceny bankovních akcií)
 - Výsledková sezona: [Teleborsa / Borsa Italiana, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), Trading Economics (kalendář výsledků Euro Stoxx 50), [Shell, Newsquawk](https://www.newsquawk.com/headlines/shell-shel-ln-q3-2026-usd-adj-profit-1081bln-exp-1023bln-), [Shell, AJ Bell](https://www.ajbell.co.uk/news/articles/shell-raises-share-buyback-quarterly-earnings-beat-expectations), [Volkswagen, Analytics Insight](https://www.analyticsinsight.net/news/volkswagen-q3-operating-loss-hits-euro-59-billion-on-porsche-write-down), [Mercedes-Benz, ad hoc oznámení](https://group.mercedes-benz.com/investors/reports-news/ad-hoc/adhoc-release-453568.html), [Reuters přes Investing.com, 20. 10.](https://www.investing.com/news/stock-market-news/europes-earnings-boom-widens-beyond-energy-and-ai-4959045)
 - Zisky a ocenění Evropy: [Borsa Italiana / Teleborsa, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), [Kitco / Reuters, anketa strategů ze srpna](https://www.kitco.com/news/off-the-wire/2026-08-26/stoxx-600-seen-rising-modestly-year-end-poll-shows)

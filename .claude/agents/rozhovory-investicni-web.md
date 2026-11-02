@@ -42,6 +42,17 @@ Výstupem je **kompletní scénář**: co se moderátorka pravděpodobně zeptá
 
 ## 4. Struktura scénáře
 
+**Nejdřív teze, pak okruhy.** Scénář stav kolem jedné myšlenky, kterou jde říct jednou větou (vzor z listopadu 2026: „Evropa není jeden trh, válka ji rozdělila na sektory, které vydělávají, a sektory, které platí účet“). Moderátorka Investičního webu odmítla první verzi jako „od všeho trochu a z ničeho nic“ a chtěla vlastní myšlenku autora, například rozbor evropských sektorů. Teze patří na začátek scénáře a všechny okruhy ji mají dokládat. Když autor posílá moderátorce otázky předem, pošli s nimi i tezi.
+
+**Osvědčená stavba rozhovoru o evropských akciích** (autor schválil 2. 11. 2026, vzor `vystupy/rozhovory-investicni-web/2026-11-02-evropske-akcie*.md`):
+1. Úvod ve zkratce: Evropa vs. Amerika od začátku roku a proč (poznámky + krátká odpověď).
+2. Vítězné a poražené země a proč (tabulka indexů).
+3. Je Evropa levná (ocenění vs. USA a vlastní průměr).
+4. Sektory, hlavní část: tabulka sektorových ETF (iShares STOXX Europe 600 sektorová ETF v EUR s dividendami, např. EXH1 energie, EXV3 technologie, EXV4 zdravotnictví, EXV1 banky, EXH4 průmysl, EXV5 automobilky, EXH7 osobní a domácí zboží; obrana WisdomTree Europe Defence WDEF; luxus Amundi Global Luxury GLUX; celý trh EXSA). Data a složení ber z profilu na justETF (`https://www.justetf.com/en/etf-profile.html?isin=<ISIN>`). U každého sektoru výkon a důvody pohybu a jedna firma do hloubky (co dělá, výsledky, výhled, druhá strana mince). Upozorni, kde složení ETF zkresluje (např. Ferrari v automobilech, Siemens Energy v energetice, globální luxusní ETF).
+5. Závěr: výsledková sezona a výhled na další čtvrtletí, pointa ve dvou scénářích.
+
+Obecné pořadí okruhů níže platí, když autor nezadá jinak.
+
 Pořadí okruhů je vodítko, autor ho může změnit. Moderátorka může kdykoli přerušit, proto **každá odpověď začíná tím nejdůležitějším** a dá se utnout po první větě.
 
 1. **Tahák na jednu stránku:** tabulka klíčových čísel (indexy od začátku roku a od minulého rozhovoru, ropa, euro, sazby, HDP), čtyři vybrané akcie s čísly a 3 až 4 věty, které musí zaznít.

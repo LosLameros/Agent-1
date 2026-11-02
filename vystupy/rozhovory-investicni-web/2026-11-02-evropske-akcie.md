@@ -1,466 +1,395 @@
-# Rozhovor pro Investiční web: Evropské akcie (natáčení 2. 11. 2026)
+# Rozhovor pro Investiční web: Evropské akcie po sektorech (natáčení 2. 11. 2026)
 
-> **Data platí k závěru obchodování v pátek 30. 10. 2026** (Trading Economics), ropa a zprávy o Íránu k ránu 2. 11. 2026.
-> **Minulý rozhovor:** konec dubna 2026, video „Evropské akcie: Kdo je zatím vítěz a kdo poražený íránské války?“. Jako den minulého rozhovoru počítám **22. 4. 2026**, poslední den v grafu z dubnového scénáře.
-> „Od začátku roku“ = proti závěru 31. 12. 2025.
+> **Data:** indexy a akcie k závěru 30. 10. 2026 (Trading Economics), sektorová ETF podle justETF (výnos v EUR včetně dividend, zhruba k 30. 10., ověřit), ropa k ránu 2. 11.
+> **Minulý rozhovor:** konec dubna 2026 („Evropské akcie: Kdo je zatím vítěz a kdo poražený íránské války?“), srovnávací den 22. 4. 2026.
+> **Teze rozhovoru:** Evropa není jeden trh. Válka s Íránem ji rozdělila na sektory, které vydělávají, a sektory, které platí účet. Proto je letos důležitější vědět, v jakých sektorech jste, než jestli máte Evropu, nebo Ameriku.
 
 ## Tahák na jednu stránku
 
-| | od začátku roku | od minulého rozhovoru (22. 4.) |
-|---|---:|---:|
-| Stoxx Europe 600 (celá Evropa) | +9,1 % | +5,4 % |
-| Euro Stoxx 50 (50 největších z eurozóny) | +5,9 % | +3,8 % |
-| DAX (Německo) | +5,4 % | +6,7 % |
-| CAC 40 (Francie) | −2,2 % | −2,3 % |
-| FTSE MIB (Itálie) | +10,1 % | +3,6 % |
-| IBEX 35 (Španělsko) | +7,8 % | +3,6 % |
-| AEX (Nizozemsko) | +19,3 % | +11,1 % |
-| SMI (Švýcarsko) | +11,6 % | +13,3 % |
-| FTSE 100 (Británie) | +8,0 % | +2,4 % |
-| WIG (Polsko) | +34,5 % | +18,8 % |
-| BUX (Maďarsko) | +30,8 % | +6,6 % |
-| PX (Praha) | −2,2 % | −0,5 % |
-| Euro Stoxx Banks (banky eurozóny) | +4,2 % | +4,7 % |
-| S&P 500 (USA) | +10,7 % | +6,2 % |
-| Nasdaq 100 (USA, technologie) | +12,4 % | +5,4 % |
-| S&P 500 přepočtený do eur | +16,5 % | +11,4 % |
-| S&P 500 přepočtený do korun | +17,4 % | |
-| Stoxx Europe 600 přepočtený do korun | +10,0 % | |
+**Evropa vs. Amerika od začátku roku:** Stoxx 600 +9,1 % (s dividendami +11,8 %), Euro Stoxx 50 +5,9 %, S&P 500 +10,7 %, Nasdaq 100 +12,4 %. V korunách S&P 500 +17,4 %, Stoxx 600 +10,0 %. Před válkou (27. 2.) Evropa vedla 6,9 % proti 0,5 %, od začátku války Stoxx 600 +2,0 %, S&P 500 +10,2 %.
 
-**Makro:** ropa Brent z 60,85 na 113,43 USD za barel (+86 %, 22. 4. stála 101,91 USD), EUR/USD z 1,174 na 1,116 (−5,0 %, nejslabší euro od května 2025), HDP eurozóny ve 3Q +0,4 % mezičtvrtletně a +1,3 % meziročně, USA +3,4 % anualizovaně, inflace eurozóny v září 3,8 %, depozitní sazba ECB 2,50 % (letos dvakrát nahoru), Fed 3,75 až 4,00 % (v září nahoru).
+**Země:** Polsko +34,5 %, Maďarsko +30,8 %, Nizozemsko +19,3 %, Švýcarsko +11,6 %, Itálie +10,1 %, Británie +8,0 %, Španělsko +7,8 %, Německo +5,4 %, Praha −2,2 %, Francie −2,2 %.
 
-**Výsledková sezona 3Q** (LSEG k 29. 10., Stoxx 600): reportovalo 144 firem, odhady překonalo 54,2 % (průměr 54 %), růst zisků +23,6 %, bez energetiky +9,8 %, výhled na 4Q +38,8 %. Tento týden Bayer (3. 11.), BMW (4. 11.), Rheinmetall (5. 11.).
+**Ocenění** (cena k zisku na 12 měsíců dopředu): Stoxx 600 13,8 (průměr 14,2), S&P 500 18,7 (průměr 19,1). Evropa je o 26 % levnější, obě jsou těsně pod svým průměrem.
 
-**Ocenění** (cena k zisku na 12 měsíců dopředu): Stoxx 600 13,8 (průměr 14,2), S&P 500 18,7 (průměr 19,1), Evropa o 26 % levnější. **Banky:** Euro Stoxx Banks 2025 +80 %, letos +4,2 %, za měsíc −8,2 %, ocenění asi 10 proti 12,5 u amerických bank. Americké banky letos v průměru −0,7 %.
+**Sektory** (ETF, od začátku roku, s dividendami):
 
-**Vítězové a poražení** (ceny v EUR, závěr 30. 10.):
+| Sektor | ETF | od začátku roku | firma do hloubky |
+|---|---|---:|---|
+| Energie | EXH1 | +50,6 % | TotalEnergies +53,7 % |
+| Technologie | EXV3 | +22,4 % | ASML +53,3 % |
+| Zdravotnictví | EXV4 | +11,1 % | Bayer +36,7 % |
+| Banky | EXV1 | +10,0 % | Erste +4,6 % |
+| Obrana | WDEF | +6,7 % | Rheinmetall −33,4 % |
+| Luxus | GLUX | −6,8 % | LVMH −40,0 % |
+| Automobilky | EXV5 | −16,5 % | Volkswagen −32,8 % |
+| Celý trh | EXSA | +11,8 % | |
 
-| Akcie | od začátku roku | od 22. 4. | cena |
-|---|---:|---:|---:|
-| TotalEnergies | +53,7 % | +12,4 % | 85,43 |
-| Bayer | +36,7 % | +25,7 % | 50,58 |
-| Stellantis | −56,2 % | −43,3 % | 4,14 |
-| Rheinmetall | −33,4 % | −26,8 % | 1 040,20 |
+**Výsledková sezona 3Q:** Stoxx 600 zisky +23,6 %, bez energetiky +9,8 %, odhady překonalo 54 % firem. S&P 500 zisky +30,2 %, nad odhady 82 %. Výhled na 4Q: Evropa +38,8 % (hlavně ropa), USA +28,4 %. Tento týden výsledky Bayer (3. 11.), BMW (4. 11.), Rheinmetall (5. 11.).
 
-**Čtyři věty, které musí zaznít:**
-1. „Od našeho posledního rozhovoru vydělala Evropa v místních měnách skoro stejně jako Amerika. Rozdíl letos dělá hlavně silnější dolar a technologie.“
-2. „Evropa není jeden trh. Polsko a Maďarsko jsou přes 30 procent v plusu, Francie a Praha v minusu.“
-4. „Před válkou s Íránem vedla Evropa nad Amerikou o 6 procentních bodů. Válka jí celý náskok vzala.“
-3. „Válka s Íránem je pro Evropu jako celek daň, pro ropné firmy bonus.“
+**Tři věty, které musí zaznít:**
+1. „Do války Evropa porážela Ameriku o šest procentních bodů. Válka jí celý náskok vzala.“
+2. „Evropa není jeden trh. Energetika je letos na plus 50 procentech, automobilky na minus 17 a velká jména luxusu na minus 40.“
+3. „Letos je u Evropy důležitější vědět, v jakých sektorech jste, než jestli máte Evropu, nebo Ameriku.“
 
 ---
 
-## 1. Úvodní navázání: „Když jsme se tu naposled bavili…“
+## 1. Úvod ve zkratce: Evropa proti Americe letos a proč
 
-**Moderátorka se pravděpodobně zeptá:** „Na jaře jste tady říkal, že Evropa měla skvělý začátek roku, ale válka s Íránem ji srazila. Jak jsou na tom evropské akcie dnes?“
+**Poznámky:**
+- Od začátku roku (k 30. 10.): Stoxx 600 +9,1 % (ETF EXSA s dividendami +11,8 %), Euro Stoxx 50 +5,9 %, DAX +5,4 %, S&P 500 +10,7 %, Nasdaq 100 +12,4 %.
+- Pro českého investora: S&P 500 v korunách +17,4 %, Stoxx 600 +10,0 % (dolar ke koruně +6,1 %, euro +0,8 %). Euro k dolaru −5 %, nejslabší od května 2025.
+- Průběh roku: do 27. 2. Stoxx 600 +6,9 %, S&P 500 +0,5 %. Válka od 28. 2.: dno koncem března (Stoxx 600 −9,2 %, S&P 500 −7,8 % proti 27. 2.), příměří 8. 4. (Euro Stoxx 50 za den +5,0 %, ropa −13 %), srpnová maxima (Stoxx 600 663 bodů 7. 8.), říjen zpět dolů s ropou. Od 27. 2. do 30. 10.: Stoxx 600 +2,0 %, Euro Stoxx 50 −0,1 %, S&P 500 +10,2 % (v eurech +16,7 %).
+- Od minulého rozhovoru (22. 4.): Stoxx 600 +5,4 %, S&P 500 +6,2 %, tedy skoro stejně.
+- Rok 2025 v místních měnách: Stoxx 600 +16,8 %, S&P 500 +16,4 %.
+- Proč vede Amerika: (1) energie, Evropa dováží, Brent z 60,85 na 113,43 USD (+86 %), dnes ráno kolem 109 USD; (2) inflace eurozóny z 1,7 % v lednu na 3,8 % v září, ECB dvakrát zvedla sazby (depozitní 2,50 %); (3) ekonomika, HDP eurozóny ve 3Q +0,4 % za čtvrtletí (ročním tempem 1,6 %), USA 3,4 % ročním tempem; (4) zisky, S&P 500 ve 3Q +30,2 %, Stoxx 600 +23,6 %, bez energetiky +9,8 %; (5) silnější dolar.
+
+**Moderátorka se pravděpodobně zeptá:** „Jak si letos vede Evropa proti Americe?“
 
 **Odpověď:**
-Když jsme se tu naposled bavili o evropských akciích, bylo to koncem dubna, necelé dva měsíce po začátku války s Íránem. Tehdy jsme si ukazovali, že evropské a hlavně středoevropské akcie do konce února Ameriku porážely. Pak je ale válka srazila víc, protože Evropa ropu a plyn dováží. Euro Stoxx 50 byl tehdy od začátku roku jen lehce v plusu, americký S&P 500 zhruba na plus čtyřech procentech a barel ropy Brent stál kolem sto dolarů.
+Letos zase vede Amerika, ale méně, než se často říká. Evropský index Stoxx 600 je od začátku roku na plus 9 procentech, americký S&P 500 na plus 11. Velký rozdíl vidí až český investor. Dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti.
 
-Od té doby se stalo hodně. V létě napětí polevilo a evropské indexy v srpnu vylezly na historická maxima. Evropská centrální banka mezitím dvakrát zvedla sazby, protože inflace vyskočila skoro na čtyři procenta. A v říjnu se napětí kolem Íránu vrátilo, ropa je kolem 110 dolarů a technologie zažily výprodej.
+Zajímavější je, jak se rok vyvíjel. Do konce února Evropa vedla o šest procentních bodů. Pak začala válka s Íránem a ta jí celý náskok vzala. Od začátku války je Stoxx 600 jen o 2 procenta výš, americký trh o 10. Důvod je jednoduchý: Evropa ropu a plyn dováží, Amerika je vyváží. Drahá energie zvedla inflaci, ECB musela dvakrát zdražit peníze a ekonomika zpomalila. A americké firmy navíc rostou rychleji, zisky jim ve třetím čtvrtletí vyrostly o 30 procent, evropským o 24 a bez energetiky jen o 10.
 
-Dnes je široký evropský index Stoxx 600 od začátku roku zhruba na plus devíti procentech, americký S&P 500 na plus jedenácti. Od našeho posledního rozhovoru jsou na tom ale skoro stejně, oba přidaly kolem pěti až šesti procent. Velký rozdíl vidí až český investor. Dolar letos posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti.
-
-**Čísla do ruky:**
-- 22. 4.: Euro Stoxx 50 +2,0 % od začátku roku (v dubnovém grafu z Bloombergu, počítaném od 2. 1., +0,95 %), S&P 500 +4,3 %, Brent 101,91 USD.
-- Srpen: Stoxx 600 historické maximum 663,41 bodu (7. 8.), Euro Stoxx 50 6 582 bodů (12. 8.). Dnes je Euro Stoxx 50 asi 7 % pod maximem.
-- Euro Stoxx 50 je proti 27. 2. (poslední obchodní den před válkou) prakticky beze změny (−0,1 %), Stoxx 600 +2,0 %.
-- Od 22. 4.: Stoxx 600 +5,4 %, S&P 500 +6,2 %, Nasdaq 100 +5,4 %.
-- Kurz USD/CZK z 20,58 na 21,82 Kč (+6,1 %), EUR/CZK z 24,16 na 24,35 Kč (+0,8 %).
-
-**Kdyby se doptala:** „Takže Evropa letos zase prohrává?“
-V korunách ano, v místních měnách jen o kousek. A některé evropské trhy, Polsko, Maďarsko nebo Nizozemsko, Ameriku letos předběhly výrazně, i když počítáme v korunách.
+**Kdyby se doptala:** „Tak proč se o Evropě vůbec bavit?“
+Protože pod tím průměrem se schovávají obrovské rozdíly. Některé evropské trhy a sektory letos vydělaly víc než Amerika, jiné ztratily třetinu i víc. Evropa není jeden trh a právě to je letos na ní nejzajímavější.
 
 ---
 
-## 2. Jak se Evropě daří za krize na Blízkém východě
+## 2. Kde se v Evropě letos vydělávalo: vítězné a poražené země
 
-**Moderátorka se pravděpodobně zeptá:** „Minule jsme řešili, jak válka s Íránem dopadá na Evropu. Jak se jí za krize na Blízkém východě daří teď?“
+**Poznámky:**
 
-**Odpověď:**
-Evropa válku zvládla, ale přišla kvůli ní o celý náskok, který měla na začátku roku. Než válka 28. února začala, byl evropský index Stoxx 600 od začátku roku na plus sedmi procentech a americký S&P 500 prakticky na nule. Pak přišel šok. Za první měsíc spadly evropské akcie zhruba o 9 až 10 procent, americké o 8, a ropa vyletěla ze 73 na přes 100 dolarů za barel.
+| Země (index) | od začátku roku | od 22. 4. | co ji táhne nebo brzdí |
+|---|---:|---:|---|
+| Polsko (WIG) | +34,5 % | +18,8 % | banky, PKO BP má ve WIG20 přes 15 %, WIG20 v srpnu poprvé po 19 letech nad rekordem; WIG je výnosový index |
+| Maďarsko (BUX) | +30,8 % | +6,6 % | většina růstu už do dubna (+22,8 %), OTP; důvod jarního skoku ověřit |
+| Nizozemsko (AEX) | +19,3 % | +11,1 % | ASML (+53 %) |
+| Švýcarsko (SMI) | +11,6 % | +13,3 % | farmacie (Roche, Novartis), sektor za měsíc +13,6 % |
+| Itálie (FTSE MIB) | +10,1 % | +3,6 % | Eni +68 % |
+| Británie (FTSE 100) | +8,0 % | +2,4 % | Shell, BP |
+| Španělsko (IBEX 35) | +7,8 % | +3,6 % | Repsol +93 %, Iberdrola +20 % |
+| Německo (DAX) | +5,4 % | +6,7 % | výnosový index; brzdí automobilky a Rheinmetall |
+| Praha (PX) | −2,2 % | −0,5 % | ČEZ a banky; rekord 4. 9., od té doby −6,9 % |
+| Francie (CAC 40) | −2,2 % | −2,3 % | luxus (LVMH, Hermès, Kering kolem −40 %), politika a dluh |
 
-Zajímavé je, jak citlivě Evropa reaguje oběma směry. Když 8. dubna přišlo příměří, ropa za jediný den zlevnila o 13 procent a Euro Stoxx 50 vyskočil o 5 procent, americký trh jen o dvě a půl. V srpnu, kdy ropa stála kolem 84 dolarů, vylezly evropské akcie na historická maxima. A teď v říjnu, když se ropa vrátila nad 110 dolarů, zase ztrácejí. Evropské akcie se letos pohybují skoro zrcadlově k ceně ropy.
+- Francie: výnos desetiletého dluhopisu přes 5 % (nejvýš od roku 2002), HDP ve 3Q −0,1 %, spor o rozpočet na rok 2027, roztříštěný parlament, sociální nepokoje.
+- ČEZ: vláda plánuje vykoupit menšinové akcionáře, termín ani cena nejsou jasné. Vývoj ČEZ, KB a Erste ověřit.
 
-Celkově je Stoxx 600 od začátku války jen o 2 procenta výš a Euro Stoxx 50 zhruba na nule. Americký S&P 500 za stejnou dobu přidal 10 procent, v eurech skoro 17. Důvod je pořád stejný: Evropa ropu a plyn dováží, Amerika je vyváží. Pro Evropu je drahá energie daň, která jde z kapes firem a domácností ven.
-
-**Čísla do ruky:**
-- Před válkou (27. 2.): Stoxx 600 +6,9 % od začátku roku, S&P 500 +0,5 %, Brent 72,87 USD.
-- Dno koncem března: Stoxx 600 −9,2 % a Euro Stoxx 50 −10,3 % proti 27. 2. (27. 3.), S&P 500 −7,8 % (30. 3.), Brent 107,39 USD (30. 3.).
-- Příměří 8. 4.: Brent −13,3 % za den (ze 109,27 na 94,75 USD), Euro Stoxx 50 +5,0 %, Stoxx 600 +3,9 %, S&P 500 +2,5 %.
-- 7. 8.: Brent 83,55 USD, Stoxx 600 660,25 bodu (+4,2 % proti 27. 2.), maximum 663,41 bodu během dne.
-- Od 27. 2. do 30. 10.: Stoxx 600 +2,0 %, Euro Stoxx 50 −0,1 %, DAX +2,1 %, PX −0,9 %, WIG +24,4 %, S&P 500 +10,2 % (v eurech +16,7 %), Nasdaq 100 +13,7 %, Brent +55,7 %, euro k dolaru −5,5 %.
-- Ekonomika: HDP eurozóny v 1Q 0,0 %, inflace z 1,9 % v únoru na 3,8 % v září, ECB dvakrát zvedla sazby.
-- Dnes ráno (2. 11.): Brent kolem 109 USD (−3,8 %). Podle zpráv chce Trump dát po úterních volbách ještě čas diplomacii, Katar a Írán jednají třetí den, OPEC+ nechal těžbu do prosince beze změny.
-
-**Kdyby se doptala:** „Kdo na válce vydělal a kdo prodělal?“
-Vydělaly energetické firmy. TotalEnergies je od začátku roku na plus 54 procentech, Eni na plus 68 a Repsol na plus 93. Prodělali hlavně spotřebitelé a firmy, které energii potřebují nebo prodávají zboží domácnostem, protože jim vyšší ceny a sazby berou peníze. A v těžké pozici je i ECB, která musí zvedat sazby, přestože ekonomika roste pomalu.
-
-**Kdyby se doptala:** „A co bude dál?“
-Hodně se rozhodne tento týden. Po úterních volbách do Kongresu se Trump rozhodne mezi diplomacií a obnovením útoků. Dohoda by Evropě ulevila nejvíc ze všech, viděli jsme to v dubnu i v létě. Další eskalace by ji naopak zasáhla nejvíc. Evropské akcie teď proto hodně závisejí na tom, co se stane s ropou.
-
----
-
-## 3. Jak si vede evropská ekonomika a proč
-
-**Moderátorka se pravděpodobně zeptá:** „Jak je na tom evropská ekonomika? Pořád zaostává za Amerikou?“
+**Moderátorka se pravděpodobně zeptá:** „Které evropské země letos vyhrávají a které prohrávají?“
 
 **Odpověď:**
-Zaostává, ale méně, než by člověk po energetickém šoku čekal. Eurozóna ve třetím čtvrtletí vyrostla o 0,4 procenta proti předchozímu čtvrtletí, analytici přitom čekali polovinu. Meziročně je to 1,3 procenta, nejvíc za víc než rok. Amerika rostla tempem 3,4 procenta, jenže Američané uvádějí růst přepočtený na celý rok. Když eurozónu přepočteme stejně, roste zhruba 1,6 procenta ročně, tedy asi o polovinu pomaleji.
+Rozdíly jsou obrovské a skoro vždycky je vysvětlí složení burzy. Nejlépe je na tom střední Evropa. Polský index WIG je od začátku roku na plus 34 procentech a maďarský BUX na plus 31. Polsko táhnou hlavně banky, polské největší akcie v srpnu poprvé po devatenácti letech překonaly rekord. Na západě vede Nizozemsko s plus 19 procenty, a to díky jedné firmě, výrobci strojů na čipy ASML. Itálie a Španělsko přidaly 8 až 10 procent, hodně díky ropným firmám Eni a Repsol.
 
-Hlavní důvod je energie. Evropa ropu a plyn dováží, takže každé zdražení z ní tahá peníze ven. Ropa Brent je od začátku roku dražší o víc než 80 procent. To se propsalo do inflace, která v eurozóně vyskočila z 1,7 procenta v lednu na 3,8 procenta v září. Evropská centrální banka proto v červnu a v září zvedla sazby, i když ekonomika roste pomalu. Amerika je naopak vývozce ropy a plynu a táhnou ji obří investice do umělé inteligence.
-
-Uvnitř Evropy jsou přitom velké rozdíly. Německo vyrostlo jen o 0,2 procenta, Francie dokonce o 0,1 procenta klesla. Španělsko přidalo 0,6 procenta a Irsko díky investicím do umělé inteligence 5,5 procenta. Evropu drží hlavně výdaje na obranu, infrastrukturu a umělou inteligenci.
-
-**Čísla do ruky:**
-- HDP eurozóny: 1Q 2026 0,0 %, 2Q +0,6 %, 3Q +0,4 % mezičtvrtletně (odhad 0,2 %), 3Q meziročně +1,3 % (2Q +1,2 %). Rychlý odhad Eurostatu z 30. 10.
-- USA 3Q: +3,4 % anualizovaně, tedy asi +0,8 % za čtvrtletí. Meziročně zhruba +2,1 % (náš propočet z posledních čtyř čtvrtletí, ověřit u BEA). Eurozóna anualizovaně +1,6 %.
-- Inflace eurozóny: leden 1,7 %, září 3,8 %, jádrová (bez energií a potravin) 2,5 %. Německo v říjnu 2,8 % (v září 3,3 %).
-- ECB: 11. 6. a 10. 9. po 0,25 procentního bodu, depozitní sazba 2,50 %, hlavní 2,65 %. 29. 10. beze změny, trh čeká zvýšení v prosinci (pravděpodobnost přes 80 %).
-- Fed: 16. 9. +0,25 bodu na 3,75 až 4,00 %, 28. 10. beze změny. Inflace v USA v září 3,7 %.
-- Nezaměstnanost eurozóny 6,5 % (nejvíc od února 2024), spotřebitelská důvěra −17,9 (nejníž od května), průmyslová důvěra −3,4 (nejlépe od dubna 2023).
-
-**Kdyby se doptala:** „Hrozí Evropě recese?“
-Zatím to čísla neukazují. Třetí čtvrtletí dopadlo lépe, než se čekalo, a průmyslové firmy jsou nejoptimističtější za tři a půl roku. Riziko je v kombinaci drahé energie a vyšších sazeb. Domácnosti jsou opatrnější a nezaměstnanost je nejvyšší od začátku roku 2024. Kdyby se válka znovu rozhořela a ropa dál zdražovala, odolnost by se mohla rychle vyčerpat.
-
----
-
-## 4. Jak se dařilo evropským indexům: kdo rostl a kdo ne
-
-**Moderátorka se pravděpodobně zeptá:** „Které evropské trhy se letos dařilo a které ne? A proč?“
-
-**Odpověď:**
-Evropa letos není jeden trh, rozdíly mezi zeměmi jsou obrovské. Nejlépe je na tom střední Evropa. Polský index WIG je od začátku roku na plus 34 procentech a maďarský BUX na plus 31, většinu z toho udělal už na jaře. Polsko táhnou hlavně banky, polské největší akcie v srpnu poprvé po devatenácti letech překonaly rekord. Na západě vede nizozemský index AEX s plus 19 procenty, a to díky jedné firmě, výrobci strojů na čipy ASML, který v něm má obrovskou váhu. Itálie a Španělsko přidaly 8 až 10 procent, hodně díky ropným firmám Eni a Repsol.
-
-Na druhé straně je Francie. Index CAC 40 je jako jediný velký západoevropský index letos v minusu, zhruba o 2 procenta. Velkou váhu v něm mají luxusní značky LVMH, Hermès nebo Kering, které letos ztratily kolem 40 procent. Francii navíc trápí politika a dluh, výnos jejích desetiletých dluhopisů se v říjnu dostal nad 5 procent, nejvýš od roku 2002. Pražská burza je od začátku roku asi 2 procenta v minusu.
-
-Pořád platí, co jsme si říkali minule: o výsledku rozhoduje složení indexu. Evropa má málo technologií a hodně bank, energetiky a průmyslu. Letos z toho nejvíc vydělaly energetické firmy. Evropské banky jsou naopak od začátku roku jen asi 4 procenta v plusu a za poslední měsíc ztratily kolem 8 procent, když část z nich zklamala výsledky.
-
-**Čísla do ruky:**
-- Tabulka v taháku. Energie: Repsol +93 %, Eni +68 %, TotalEnergies +54 % od začátku roku.
-- ASML +53 % od začátku roku (proto AEX +19 %). Luxus: LVMH −40 %, Hermès −39 %, Kering −41 %.
-- Francie: výnos desetiletého dluhopisu přes 5 % (nejvýš od roku 2002), HDP ve 3Q −0,1 %.
-- PX: historické maximum 2 820,74 bodu (4. 9.), 30. 10. 2 627,33 bodu, tedy −6,9 %. BUX: maximum 155 001 bodů (17. 9.), od té doby −6 %. WIG je jen 2,5 % pod maximem z 29. 10.
-- Euro Stoxx Banks: +4,2 % od začátku roku, za poslední měsíc −8,2 %.
-- DAX a WIG započítávají dividendy, ostatní indexy ne. Rozdíl dělá zhruba 2 až 3 procentní body ročně.
+Na druhé straně je Francie. Index CAC 40 je jako jediný velký západoevropský index letos v minusu, o 2 procenta. Velkou váhu v něm mají luxusní značky LVMH, Hermès a Kering, které ztratily kolem 40 procent. A Francii navíc trápí politika a dluh, výnos jejích desetiletých dluhopisů se v říjnu dostal nad 5 procent, nejvýš od roku 2002. Pražská burza je od začátku roku také asi 2 procenta v minusu.
 
 **Kdyby se doptala:** „Proč na tom Praha není lépe, když střední Evropa roste?“
 Pražský index ještě v září pokořil rekord, od té doby ztratil asi 7 procent. Tvoří ho pár velkých firem, hlavně ČEZ a banky, takže stačí, aby se nedařilo jim. U ČEZ navíc pořád visí otazník nad plánem vlády vykoupit menšinové akcionáře, termín ani cena nejsou jasné. [OVĚŘIT před natáčením: vývoj ČEZ, Komerční banky a Erste od začátku roku a od září.]
 
 ---
 
-## 5. Výsledková sezona za třetí čtvrtletí: co už víme a co čeká čtvrté
+## 3. Je Evropa teď levná?
 
-**Moderátorka se pravděpodobně zeptá:** „Teď běží výsledková sezona. Jak zatím evropské firmy dopadají a co čekat na konci roku?“
+**Poznámky:**
+- Cena k zisku na 12 měsíců dopředu: Stoxx 600 13,8 (desetiletý průměr 14,2; LSEG I/B/E/S k 29. 10.), S&P 500 18,7 (pětiletý 19,8, desetiletý 19,1; FactSet k 30. 10.; v březnu 21,2). Evropa je o 26 % levnější.
+- Americké sektory (FactSet): cyklické spotřební zboží 23,8, základní spotřeba 22,9, průmysl 22,8, finance 14,9, energetika 13,2. Levná odvětví jsou levná i v Americe.
+- Proč sleva: složení (banky, energie, suroviny, spotřební zboží; málo technologií), pomalejší růst a nižší ziskovost firem, rizika (energie, slabší ekonomika, Francie).
+- Evropské banky asi 10násobek zisků, americké 12,5 (BNP Paribas WM, červenec).
 
-**Odpověď:**
-Zatím solidně, ale bez ohňostroje. Z firem v evropském indexu Stoxx 600 už výsledky zveřejnila zhruba čtvrtina a odhady zisku překonalo 54 procent z nich, což je přesně dlouhodobý průměr. Zisky celého indexu by ve třetím čtvrtletí měly vyrůst meziročně skoro o 24 procent. To zní skvěle, ale většinu udělala energetika, které se díky drahé ropě zisky víc než zdvojnásobily. Bez energetiky je to kolem 10 procent, pořád slušný růst.
-
-Kdo zatím vyhrál? Ropné firmy. Shell měl upravený zisk 10,8 miliardy dolarů, zhruba dvakrát víc než loni, a zvýšil zpětný odkup akcií na 5 miliard. TotalEnergies i Eni byly výrazně nad odhady. Dál farmacie: Sanofi a AstraZeneca překonaly odhady a Novartis zvýšil výhled. Z technologií ASML s rekordními tržbami a SAP, který odhady také překonal. A příjemné překvapení je Adidas s rekordním ziskem a vyšším výhledem na celý rok.
-
-Kdo zklamal? Automobilky. Volkswagen měl provozní ztrátu skoro 6 miliard eur, analytici čekali kolem 2,6 miliardy, hlavně kvůli odpisu v Porsche. Mercedes kvůli Číně snížil výhled marže. Luxus: LVMH, Hermès i Kering měly tržby pod odhady. A část bank, třeba HSBC, Santander nebo britská NatWest, akcie po výsledcích ztratily 5 až 9 procent.
-
-Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují.
-
-**Čísla do ruky** (LSEG I/B/E/S k 29. 10. 2026, Stoxx 600):
-- Výsledky zveřejnilo 144 firem. Odhady zisku překonalo 54,2 % (průměr od roku 2012 je 54 %), v souhrnu byly zisky o 5 % nad odhady (dlouhodobý průměr 5,9 %). Tržby nad odhady mělo 61,1 % ze 180 firem.
-- Očekávaný růst zisků ve 3Q: +23,6 % (o týden dřív 21,9 %), bez energetiky +9,8 %. Energetika +139 % (33,6 mld. EUR proti 14,1 mld. EUR). Tržby +13,6 %, bez energetiky +6,2 %.
-- Sektory ve 3Q: suroviny +37,9 %, technologie +35,5 %, průmysl +7,4 %, cyklická spotřeba −1,3 %. Země: Francie +29,9 %, Itálie +15 %, Německo −3,4 %.
-- Výhled: 4Q 2026 +38,8 %, celý rok 2026 +21,3 %, 1Q 2027 +14,5 %, 2Q 2027 −4,4 %, 3Q 2027 +6,7 %.
-- Revize odhadů za týden do 29. 10.: 1 502, z toho 54 % nahoru. Poměr ceny k zisku na 12 měsíců dopředu 13,8 (desetiletý průměr 14,2).
-
-**Jednotlivé firmy** (zisk na akcii a tržby proti konsenzu podle Trading Economics, pokud není uvedeno jinak):
-
-| Firma | Den | Výsledek proti odhadu | Výhled a reakce akcií |
-|---|---|---|---|
-| ASML | 14. 10. | tržby 11,66 mld. EUR (rekord), čistý zisk 5,0 mld. EUR | 4Q tržby 14,2 až 15,2 mld. EUR, rok 2026 zvýšen na 44 až 45 mld. EUR |
-| SAP | 21. 10. | tržby 10,27 mld. EUR (odhad 10,07), zisk na akcii 1,89 EUR (1,81) | cloud k horní hranici výhledu |
-| Nokia | 22. 10. | zisk na akcii 0,09 EUR (0,07), tržby 5,15 mld. EUR (5,11) | |
-| LVMH | 12. 10. | tržby 18,50 mld. EUR (odhad 18,81), móda a kožené zboží −5 % | |
-| Hermès / Kering | 22. 10. | tržby 4,09 (4,17) / 3,35 (3,47) mld. EUR | |
-| L'Oréal | 22. 10. | tržby 11,56 mld. EUR (11,06) | akcie za měsíc +17,5 % |
-| Eni | 23. 10. | zisk na akcii 0,95 EUR (0,61) | |
-| Mercedes-Benz | 27. a 28. 10. | provozní zisk skupiny 1,77 mld. EUR (asi 1,6) | výhled marže aut snížen na 2 až 3 % (z 3 až 5 %), akcie −4,2 % |
-| Deutsche Bank / BNP / SocGen | 28. a 29. 10. | 0,94 (0,89) / 2,91 (2,93) / 2,35 (2,03) EUR na akcii | Deutsche Bank +4 % |
-| Santander / BBVA / HSBC | 27. až 29. 10. | Santander 0,25 (0,26), BBVA nižší zisk doma, HSBC pod odhady | −5,5 % / −2,7 % / −5,4 % |
-| BASF | 28. 10. | zisk na akcii 0,72 EUR (0,41) | |
-| Shell | 29. 10. | upravený zisk 10,81 mld. USD (asi 10,3) | zpětný odkup 5 mld. USD (dosud 3 mld.) |
-| TotalEnergies | 29. 10. | upravený čistý zisk 9,1 mld. USD (8,3), +127 % | odkup 2,5 mld. USD ve 4Q i v 1Q 2027 |
-| Volkswagen | 29. 10. | provozní ztráta 5,9 mld. EUR (čekalo se asi −2,6 mld.), odpis v Porsche | výhled marže do 1 % potvrzen |
-| Adidas | 29. 10. | zisk na akcii 4,06 EUR (3,34), tržby 7,25 mld. EUR (6,99) | výhled zvýšen, akcie +5,8 % |
-| Sanofi | 30. 10. | zisk na akcii 3,55 EUR (3,06), tržby 14,44 mld. EUR (13,85) | akcie +4,7 % |
-| AstraZeneca | 30. 10. | nad odhady | akcie +7 % |
-| NatWest | 30. 10. | bez zvýšení výhledu | akcie −9 % |
-
-**Tento týden:** 3. 11. Bayer (konsenzus: tržby 9,86 mld. EUR, zisk na akcii 0,55 EUR), 4. 11. BMW (tržby 31,68 mld. EUR), 5. 11. Rheinmetall (tržby 3,19 mld. EUR proti 2,78 mld. loni, zisk na akcii 6,99 EUR), Deutsche Telekom, DHL. 12. 11. Siemens, Allianz, Munich Re.
-
-**Kdyby se doptala:** „Na které výsledky se tento týden dívat?“
-Hned zítra reportuje Bayer a ve čtvrtek Rheinmetall, tedy jeden náš vítěz a jeden poražený. U Bayeru se čekají tržby kolem 9,9 miliardy eur, u Rheinmetallu kolem 3,2 miliardy, o 15 procent víc než loni. U Rheinmetallu bude klíčové, jestli potvrdí snížený výhled na letošek a jestli se zlepší peníze, které firmě skutečně přitékají. Ve středu přijde BMW, po Volkswagenu a Mercedesu další test automobilek.
-
-**Kdyby se doptala:** „Proč analytici čekají, že zisky v polovině příštího roku klesnou?“
-Opět kvůli ropě. Ve druhém čtvrtletí příštího roku se zisky budou srovnávat s letošním jarem, kdy válka vyhnala ropu přes sto dolarů. Pokud ropa zlevní, energetikům zisky meziročně spadnou a stáhnou dolů celý index. Analytici proto pro 2Q 2027 čekají pokles zisků Stoxx 600 o 4 procenta. Pro zbytek trhu to žádný varovný signál není.
-
----
-
-## 6. Je Evropa teď levná? Srovnání s Amerikou
-
-**Moderátorka se pravděpodobně zeptá:** „Často se říká, že Evropa je levná. Je to pravda? A jak si letos vede proti Americe?“
+**Moderátorka se pravděpodobně zeptá:** „Často se říká, že Evropa je levná. Je to pravda?“
 
 **Odpověď:**
-Proti Americe ano, proti vlastní historii ne. Evropský index Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které analytici čekají na příštích dvanáct měsíců. Americký S&P 500 za 18,7násobek. Evropa je tedy zhruba o čtvrtinu levnější. Jenže obě čísla jsou těsně pod svými desetiletými průměry, u Evropy 14,2, u Ameriky 19,1. Evropa tedy není ve výprodeji, je levná zhruba tak, jak bývá vždycky.
+Proti Americe ano, proti vlastní historii ne. Evropský index Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které analytici čekají na příštích dvanáct měsíců, americký S&P 500 za 18,7násobek. Evropa je tedy zhruba o čtvrtinu levnější. Jenže obě čísla jsou těsně pod svými desetiletými průměry, u Evropy 14,2, u Ameriky 19,1. Evropa tedy není ve výprodeji, je levná zhruba tak, jak bývá vždycky. A Amerika letos dokonce zlevnila, v březnu stála přes 21násobek, protože zisky jejím firmám rostou rychleji než ceny akcií.
 
-Zajímavé je, že Amerika letos zlevnila, přestože její akcie rostly. Ještě v březnu stála přes 21násobek zisků. Zisky amerických firem totiž rostou rychleji než ceny akcií. Ve třetím čtvrtletí vyrostly o 30 procent a 82 procent firem překonalo odhady. V Evropě je to 24 procent, bez energetiky 10, a odhady překonala zhruba polovina firem. To je hlavní důvod, proč Amerika letos zase vede. S&P 500 je od začátku roku na plus 11 procentech, Stoxx 600 na plus 9, a v korunách je to 17 proti 10 procentům. Loni přitom byly v místních měnách skoro stejně, oba indexy přidaly kolem 16 až 17 procent.
-
-Proč je Evropa levnější? Zaprvé kvůli složení. Evropa má hodně bank, energetiky, surovin a spotřebního zboží, a to jsou odvětví, která jsou levná i v Americe. Americký finanční sektor stojí kolem 15násobku zisků, energetika 13. Zadruhé kvůli růstu, americké firmy dlouhodobě rostou rychleji a jsou ziskovější. A zatřetí kvůli rizikům, která jsou letos dobře vidět: drahá energie, pomalejší ekonomika a politika, jako teď ve Francii. Sleva tedy není chyba trhu, je to cena za pomalejší růst. Pro investora to znamená, že v Evropě za každé euro zisku platí méně, ale zisky mu také rostou pomaleji.
-
-**Čísla do ruky:**
-- Poměr ceny k zisku na 12 měsíců dopředu: Stoxx 600 13,8 (desetiletý průměr 14,2; LSEG I/B/E/S k 29. 10.), S&P 500 18,7 (pětiletý průměr 19,8, desetiletý 19,1; FactSet k 30. 10.; 30. 9. 19,0; 6. 3. 21,2). Evropa je o 26 % levnější.
-- Americké sektory: cyklické spotřební zboží 23,8, základní spotřeba 22,9, průmysl 22,8, finance 14,9, energetika 13,2 (FactSet).
-- Zisky ve 3Q: S&P 500 +30,2 %, nad odhady 82 % firem (pětiletý průměr 78 %), sedm největších technologických firem +22,6 %, zbylých 493 firem +32,6 %, energetika +146 %. Výhled na 4Q +28,4 %. Stoxx 600 +23,6 %, bez energetiky +9,8 %, nad odhady 54,2 %, výhled na 4Q +38,8 %.
-- Výkon od začátku roku (k 30. 10.): S&P 500 +10,7 % (v eurech +16,5 %, v korunách +17,4 %), Nasdaq 100 +12,4 %, Stoxx 600 +9,1 % (v korunách +10,0 %), Euro Stoxx 50 +5,9 %.
-- Rok 2025 v místních měnách: S&P 500 +16,4 %, Stoxx 600 +16,8 %.
-- Před válkou (27. 2.): Stoxx 600 +6,9 % od začátku roku, S&P 500 +0,5 %.
+Proč je Evropa levnější? Zaprvé kvůli složení. Evropa má hodně bank, energetiky, surovin a spotřebního zboží, a to jsou odvětví, která jsou levná i v Americe. Americký finanční sektor stojí kolem 15násobku zisků, energetika 13. Zadruhé kvůli růstu, americké firmy dlouhodobě rostou rychleji a jsou ziskovější. A zatřetí kvůli rizikům, která jsou letos dobře vidět: drahá energie, pomalejší ekonomika a politika, jako teď ve Francii. Sleva tedy není chyba trhu, je to cena za pomalejší růst. A taky důvod, proč se Evropa vyplatí rozebrat po sektorech.
 
 **Kdyby se doptala:** „Takže se teď vyplatí víc Evropa?“
-Tak bych to neřekl, levnější neznamená automaticky lepší. Evropa a Amerika se navzájem doplňují. Evropě se daří, když táhnou banky, energetika a průmysl, Americe, když táhnou technologie. Letos jsme viděli obojí: do února vedla Evropa, od války zase Amerika. Kdo má v portfoliu jen jednu z nich, sází na jeden scénář.
+Tak bych to neřekl, levnější neznamená automaticky lepší. Evropa a Amerika se navzájem doplňují. Evropě se daří, když táhnou banky, energetika a průmysl, Americe, když táhnou technologie. Letos jsme viděli obojí: do února vedla Evropa, od války zase Amerika.
 
 ---
 
-## 7. Jak jsou na tom evropské banky a proti americkým
+## 4. Evropa po sektorech: kdo vydělává a kdo platí účet
 
-**Moderátorka se pravděpodobně zeptá:** „Evropské banky byly loni hvězdou trhu. Jak jsou na tom letos? A proti americkým?“
+**Poznámky:**
+
+| Sektor | ETF (ticker, ISIN) | od začátku roku | za měsíc | rok 2025 | největší firmy v ETF |
+|---|---|---:|---:|---:|---|
+| Energie | iShares STOXX Europe 600 Oil & Gas (EXH1, DE000A0H08M3) | +50,6 % | +7,9 % | +27,1 % | Shell 27 %, TotalEnergies 15 %, Siemens Energy 14 %, BP 12 %, Eni 6 % |
+| Technologie | iShares STOXX Europe 600 Technology (EXV3, DE000A0H08Q4) | +22,4 % | −1,6 % | +4,0 % | ASML 31 %, SAP 15 %, Infineon 9 %, RELX 7 % |
+| Zdravotnictví | iShares STOXX Europe 600 Health Care (EXV4, DE000A0Q4R36) | +11,1 % | +13,6 % | +7,2 % | Roche 16 %, Novartis 15 %, AstraZeneca 14 %, Novo Nordisk 7 % |
+| Banky | iShares STOXX Europe 600 Banks (EXV1, DE000A0F5UJ7) | +10,0 % | −11,1 % | +77,0 % | HSBC 14 %, Santander 9 %, BBVA 6 %, UniCredit 6 % |
+| Průmysl | iShares STOXX Europe 600 Industrial Goods & Services (EXH4, DE000A0H08J9) | +7,0 % | −3,6 % | +23,6 % | Siemens 10 %, Schneider 8 %, Rolls-Royce 7 %, ABB 6 % |
+| Obrana | WisdomTree Europe Defence (WDEF, IE0002Y8CX98) | +6,7 % | +4,4 % | (vznik 2025) | BAE 10 %, Thales 10 %, Rheinmetall 9 %, Saab 6 % |
+| Luxus (globální) | Amundi Global Luxury (GLUX, LU1681048630) | −6,8 % | +5,5 % | +1,5 % | Richemont 8 %, Ferrari 7 %, LVMH 7 %, Hermès 7 %; 39 % USA |
+| Osobní a domácí zboží | iShares STOXX Europe 600 Personal & Household Goods (EXH7, DE000A0H08N1) | −6,6 % | +6,1 % | +6,4 % | Unilever 15 %, BAT 14 %, Richemont 13 %, LVMH 13 %, L'Oréal 12 % |
+| Automobilky | iShares STOXX Europe 600 Automobiles & Parts (EXV5, DE000A0Q4R28) | −16,5 % | 0,0 % | −1,1 % | Ferrari 26 %, Michelin 15 %, Mercedes 14 %, BMW 12 %, VW 9 % |
+| **Celý trh** | iShares STOXX Europe 600 (EXSA, DE0002635307) | **+11,8 %** | +1,5 % | +20,4 % | |
+
+- Výnosy jsou v EUR včetně dividend, proto jsou vyšší než u cenových indexů (Stoxx 600 bez dividend +9,1 %). Data justETF bez uvedeného data, zhruba k 30. 10., ověřit.
+- Zisky ve 3Q podle sektorů (LSEG): energie +139 %, suroviny +37,9 %, technologie +35,5 %, průmysl +7,4 %, cyklická spotřeba −1,3 %.
+
+**Moderátorka se pravděpodobně zeptá:** „Pojďme pod povrch. Které evropské sektory letos vydělávají a které ne?“
 
 **Odpověď:**
-Letos přešlapují na místě, ale ne proto, že by se jim dařilo špatně. Loni index bank eurozóny vyrostl o 80 procent. Letos je od začátku roku jen asi o 4 procenta výš a za poslední měsíc ztratil zhruba 8 procent. Přitom zisky bank dál rostou. Vyšší sazby ECB jim zvedají příjmy z úroků a všechny velké banky eurozóny, které už reportovaly, měly zisk na akcii vyšší než před rokem. Jenže po takovém růstu už trh čeká hodně a stačí malé zklamání.
-
-Přesně to se stalo ve výsledkové sezoně. Deutsche Bank, Société Générale nebo Crédit Agricole odhady překonaly, ale Santander, HSBC nebo britská NatWest zklamaly a jejich akcie ztratily 5 až 9 procent. Rozdíly mezi bankami jsou velké. Nizozemská ING je letos na plus 18 procentech, Société Générale kvůli francouzským problémům na minus 11.
-
-Americké banky na tom letos nejsou lépe. JPMorgan je od začátku roku na plus 5 procentech, Goldman Sachs na plus 2, Bank of America a Wells Fargo dokonce na minus 9 a 10 procentech. Liší se hlavně ocenění. Evropské banky stojí zhruba za desetinásobek očekávaných zisků, americké za dvanáct až patnáct. Evropská centrální banka sama píše, že rozdíl je hlavně kvůli slabší evropské ekonomice, ne kvůli bankám samotným. Riziko vidím v tom, že kdyby drahá energie zpomalila ekonomiku víc, začnou firmy a domácnosti hůř splácet úvěry a bankám porostou ztráty.
-
-**Čísla do ruky:**
-- Euro Stoxx Banks: rok 2025 +80,3 % (z 146,04 na 263,27 bodu), 2026 +4,2 % (274,22 bodu k 30. 10.), za poslední měsíc −8,2 %. Pořád 44 % pod rekordem z roku 2007. Podle Reuters (20. 10.) index od začátku září ztratil 7 % a stojí asi za 10násobek zisků na rok dopředu.
-- Evropské banky od začátku roku (k 30. 10.): ING +17,7 %, HSBC +8,8 % (v GBp), BNP Paribas +6,0 %, BBVA +5,0 %, UniCredit +3,0 %, Santander +0,5 %, Intesa −0,5 %, Deutsche Bank −9,2 %, Société Générale −11,2 %. Commerzbank +5,7 % a Erste +4,6 % (k 2. 11.).
-- Americké banky od začátku roku (k 30. 10.): Citigroup +5,1 %, JPMorgan +4,6 %, Morgan Stanley +3,8 %, Goldman Sachs +1,8 %, Bank of America −8,7 %, Wells Fargo −10,5 %. Prostý průměr −0,7 %.
-- Ocenění: evropské banky asi 10 (Reuters, 20. 10.; BNP Paribas WM v červenci 10,4), americké banky 12,5 a cena k účetní hodnotě 1,65 (BNP Paribas WM, červenec), americký finanční sektor 14,9 (FactSet, 30. 10.).
-- Zisk na akcii ve 3Q proti loňsku: BNP 2,91 (2,61), Société Générale 2,35 (1,76), Deutsche Bank 0,94 (0,89), Santander 0,25 (0,22), BBVA 0,52 (0,42), ING 0,65 (0,60), Intesa 0,15 (0,13) EUR. Americký finanční sektor: zisky ve 3Q +5,5 % (FactSet).
-- ECB (Zpráva o finanční stabilitě, květen 2026): rozdíl v ocenění proti americkým bankám vychází hlavně ze slabší makroekonomiky eurozóny, ne ze slabších bank.
-
-**Kdyby se doptala:** „A středoevropské a české banky?“
-Středoevropské banky vydělávají na vyšších sazbách v regionu a právě banky letos táhnou polskou burzu, která je na plus 34 procentech. Rakouská Erste, která vlastní Českou spořitelnu, je letos na plus 5 procentech. [OVĚŘIT před natáčením: Komerční banka a Moneta od začátku roku.]
+Válka rozdělila Evropu na sektory, které vydělávají, a sektory, které platí účet. Nejlíp je na tom energetika, evropské ropné firmy jsou od začátku roku na plus 50 procentech. Dobře se daří technologiím, hlavně výrobcům čipů a strojů na ně, a farmacii. Banky po loňském skoku o 77 procent letos přidaly jen 10. Zbrojaři, loňská hvězda, jen 7. A na druhé straně jsou luxus a automobilky, kde velká jména ztratila třetinu až polovinu hodnoty. Pro srovnání, celý evropský trh je i s dividendami na plus 12 procentech. Projdu je postupně a u každého vezmu jedno známé jméno.
 
 ---
 
-## 8. Co se stalo s dubnovými vítězi a poraženými
+## 4.1 Energie: vítěz války
 
-**Moderátorka se pravděpodobně zeptá:** „Minule jste jako vítěze vybral ASML a jako poražené SAP a LVMH. Jak dopadli?“
+**Moderátorka se pravděpodobně zeptá:** „Začněme vítězi. Proč se tak daří energetice?“
 
 **Odpověď:**
-Každý jinak a je to docela dobrá lekce. ASML, výrobce strojů na výrobu čipů, byl vítěz a vítězem zůstal. Od začátku roku je na plus 53 procentech, od našeho rozhovoru přidal dalších 13. V říjnu ohlásil rekordní čtvrtletní tržby 11,7 miliardy eur a zvýšil výhled na celý rok. Jen v pátek ale ztratil 6 procent, když se po výsledcích Amazonu a Intelu vrátily obavy, jestli nejsou investice do umělé inteligence přehnané.
+Energetika je čistý vítěz války. Ropa Brent je od začátku roku dražší o 86 procent, z 61 na zhruba 110 dolarů. Evropské ropné firmy na tom vydělávají dvakrát: na dražší ropě i na rafinériích, protože válka narušila dodávky nafty a benzinu a marže rafinérií jsou rekordní. Zisky energetického sektoru ve třetím čtvrtletí vzrostly víc než na dvojnásobek. Shell měl upravený zisk skoro 11 miliard dolarů, dvakrát víc než loni, a zvýšil zpětný odkup akcií na 5 miliard. ETF na evropskou energetiku, ve kterém jsou Shell, TotalEnergies, BP nebo Eni, je od začátku roku na plus 51 procentech.
 
-SAP je největší překvapení. V dubnu byl od začátku roku na minus 28 procentech, protože se trh bál, že umělá inteligence nahradí podnikový software. Od té doby vyrostl o 41 procent a je zpátky zhruba na nule. Výsledky ukázaly, že zákazníci od SAP neodcházejí. Tržby poprvé přesáhly 10 miliard eur za čtvrtletí a nasmlouvané zakázky v cloudu vzrostly o 28 procent.
+Riziko je jasné: celý příběh stojí na válce. Kdyby přišla dohoda s Íránem, ropa může rychle zlevnit. Viděli jsme to v dubnu po příměří, kdy za jediný den spadla o 13 procent. A dnes ráno ropa ztrácí skoro 4 procenta, protože se mluví o diplomacii.
 
-LVMH naopak spadl ještě hlouběji, z minus 26 na minus 40 procent. Móda a kožené zboží, na kterých firma vydělává nejvíc, ve třetím čtvrtletí klesly o 5 procent, hlavně kvůli Číně. Poučení? Z poraženého se může stát vítěz, když se ukáže, že strach byl přehnaný. A akcie, která vypadá levně, může ještě zlevnit, když se byznys nezlepší.
+### Firma do hloubky: TotalEnergies
+
+**Odpověď:**
+TotalEnergies je francouzský ropný a plynárenský gigant. Kromě těžby má rafinerie, prodává zkapalněný plyn i elektřinu. Od začátku roku je na plus 54 procentech a je blízko historického maxima. Ve třetím čtvrtletí měl upravený zisk 9,1 miliardy dolarů, o 127 procent víc než před rokem a víc, než čekali analytici. Rafinerie a chemie vydělaly rekordních 3,6 miliardy. Firma vrací akcionářům peníze přes dividendy a zpětné odkupy, na odkupy dává dvě a půl miliardy dolarů za čtvrtletí.
+
+Druhá strana mince: zisk stojí na válce a válka Totalu zároveň část těžby na Blízkém východě odstřihla. A je zajímavé, že je to francouzská firma, tedy vítěz ze země, jejíž index je letos v minusu.
 
 **Čísla do ruky:**
-- ASML: 921,40 EUR (31. 12.), 1 249,80 EUR (22. 4.), 1 412,80 EUR (30. 10.). 3Q 2026: tržby 11,7 mld. EUR, čistý zisk 5,0 mld. EUR, výhled tržeb na rok 2026 zvýšen na 44 až 45 mld. EUR. 30. 10.: −6,1 %.
-- SAP: 208,35 EUR, 149,82 EUR, 211,25 EUR. 3Q 2026: tržby přes 10 mld. EUR, cloud +26 %, nasmlouvané zakázky v cloudu na příští rok 24,1 mld. EUR (+28 %).
-- LVMH: 645 EUR, 474,30 EUR, 387 EUR. 3Q 2026: tržby 18,5 mld. EUR, organicky +1 %, móda a kožené zboží −5 %.
-- V dubnovém scénáři bylo u ASML „+23,5 % od začátku roku“. Podle Trading Economics bylo k 22. 4. +35,6 %, proto teď mluv jen o dnešních číslech.
-
-**Kdyby se doptala:** „Je to problém jen LVMH, nebo celého luxusu?“
-Celého sektoru. Hermès je letos na minus 39 procentech a Kering, majitel Gucci, na minus 41. Luxus nejvíc závisí na čínském zákazníkovi a ten zatím utrácí méně.
+- ETF EXH1: +50,6 % od začátku roku, 2025 +27,1 %. Pozor, 14 % fondu tvoří Siemens Energy (+5,4 % od začátku roku).
+- Firmy od začátku roku: Repsol +93,0 %, Eni +68,1 %, TotalEnergies +53,7 %. Brent 60,85 USD (31. 12.), maximum 116,72 USD (23. 10., nejvýš od roku 2022), 113,43 USD (30. 10.), ráno 2. 11. kolem 109 USD.
+- 3Q: Shell upravený zisk 10,81 mld. USD (konsenzus asi 10,3; loni 5,43), zpětný odkup 5 mld. USD (dosud 3 mld.). Eni zisk na akcii 0,95 EUR (odhad 0,61). Zisky energetiky v Stoxx 600 +139 % (33,6 mld. EUR proti 14,1 mld.).
+- TotalEnergies: 55,59 EUR (31. 12.), 85,43 EUR (30. 10.), maximum 86,50 EUR (23. 10.). 3Q upravený čistý zisk 9,1 mld. USD (konsenzus 8,3), rafinerie a chemie 3,6 mld. USD, válka snížila těžbu asi o 125 tisíc barelů ropného ekvivalentu denně. Odkup 2,5 mld. USD ve 4Q i v 1Q 2027, čtvrtletní dividenda 0,90 EUR.
 
 ---
 
-## 9. Vítězové letoška: TotalEnergies a Bayer
+## 4.2 Technologie a čipy: Evropa má málo, ale dobré
 
-**Moderátorka se pravděpodobně zeptá:** „Kdo jsou letošní vítězové mezi evropskými akciemi?“
-
-**Úvod:** Vybral jsem dva a každý vyhrál z úplně jiného důvodu. Jeden díky válce, druhý díky soudu.
-
-### TotalEnergies: +53,7 % od začátku roku
+**Moderátorka se pravděpodobně zeptá:** „Technologie jsou v Evropě malé. Jak se jim letos daří?“
 
 **Odpověď:**
-TotalEnergies je francouzský ropný a plynárenský gigant. Kromě těžby má rafinerie, prodává zkapalněný plyn i elektřinu. Od začátku roku je na plus 54 procentech a je blízko historického maxima. Důvod je jednoduchý: válka s Íránem zdražila ropu z 61 na zhruba 110 dolarů za barel. Totalu ale nevydělává jen těžba. Válka narušila dodávky nafty a benzinu, takže rafinerie vydělávají rekordně. Ve třetím čtvrtletí měl upravený zisk 9,1 miliardy dolarů, o 127 procent víc než před rokem a víc, než čekali analytici. Firma navíc vrací akcionářům peníze přes dividendy a zpětný odkup akcií, jen na odkupy dává dvě a půl miliardy dolarů za čtvrtletí.
+Lépe, než by člověk čekal. ETF na evropské technologie je od začátku roku na plus 22 procentech, skoro dvakrát víc než celý trh. Jenže to není široký příběh, je to hlavně jedna firma. Skoro třetinu fondu tvoří ASML a ten je letos na plus 53 procentech. Druhý největší je SAP, který byl na jaře na minus 28 procentech kvůli strachu, že umělá inteligence nahradí podnikový software, a vrátil se zpátky na nulu. Zisky technologického sektoru ve třetím čtvrtletí rostou kolem 35 procent.
 
-Druhá strana mince: tenhle zisk stojí na válce. Kdyby se USA s Íránem dohodly, ropa může rychle zlevnit a s ní i zisky. Válka Totalu navíc část těžby na Blízkém východě odstřihla. Pro mě je to hezký příklad, že válka je pro Evropu jako celek daň, ale pro ropné firmy bonus. A je zajímavé, že je to francouzská firma, tedy vítěz ze země, jejíž index je letos v minusu.
+Konec října ale ukázal, jak je sektor citlivý na náladu kolem umělé inteligence. Po výsledcích Amazonu a Intelu ASML i Infineon za den ztratily kolem 6 procent. Celý evropský trh to odnesl jen lehce, protože technologií má málo, tenhle sektor ale naplno.
 
-**Čísla do ruky:**
-- Cena 55,59 EUR (31. 12.), 76,02 EUR (22. 4.), 85,43 EUR (30. 10.), historické maximum 86,50 EUR (23. 10.).
-- 3Q 2026 (29. 10.): upravený čistý zisk 9,1 mld. USD (+127 % meziročně, konsenzus 8,3 mld. USD), rafinerie a chemie rekordních 3,6 mld. USD.
-- Zpětný odkup akcií 2,5 mld. USD ve 4Q 2026 a 2,5 mld. USD v 1Q 2027, čtvrtletní dividenda 0,90 EUR na akcii.
-- Válka snížila těžbu Totalu ve 3Q zhruba o 125 tisíc barelů ropného ekvivalentu denně (ve 2Q o 210 tisíc).
-- Brent: 60,85 USD (31. 12.), maximum 116,72 USD (23. 10., nejvýš od roku 2022), 113,43 USD (30. 10.).
-
-### Bayer: +36,7 % od začátku roku
+### Firma do hloubky: ASML
 
 **Odpověď:**
-Bayer znáte z aspirinu, ale největší část tržeb mu přináší zemědělství, tedy osiva a přípravky na ochranu rostlin. Od začátku roku je na plus 37 procentech, od našeho dubnového rozhovoru přidal 26. Hlavní důvod je americký Nejvyšší soud. Bayer roky trápily desítky tisíc žalob kvůli přípravku Roundup, který získal koupí Monsanta v roce 2018. Žalobci tvrdili, že přípravek způsobuje rakovinu a že je firma nevarovala. Soud 25. června rozhodl poměrem sedm ku dvěma, že federální zákon o pesticidech takové žaloby kvůli chybějícímu varování blokuje. Akcie ten den vyskočily zhruba o 16 až 19 procent.
+ASML je nizozemská firma a jediný výrobce strojů, které kreslí nejmodernější čipy extrémním ultrafialovým světlem. Bez nich nevyrobí nejmodernější čipy ani TSMC, ani Samsung, ani Intel. V říjnu ohlásila rekordní čtvrtletní tržby 11,7 miliardy eur a čistý zisk 5 miliard. Na čtvrté čtvrtletí čeká tržby 14,2 až 15,2 miliardy eur, tedy zhruba o čtvrtinu víc, a výhled na celý rok zvýšila na 44 až 45 miliard. Zákazníci už podle firmy mluví o objednávkách na roky 2029 a 2030 a kapacity na roky 2027 a 2028 poptávku nepokryjí. Jen ve třetím čtvrtletí koupila zpět vlastní akcie za 4,1 miliardy eur.
 
-Druhá strana mince: rozsudek řeší jen část žalob, takže spor úplně nekončí. Bayer má dál vysoký dluh a akcie se pořád obchoduje hluboko pod cenou z doby před koupí Monsanta. Z tohohle příběhu si beru, že když akcie roky padá kvůli jednomu velkému riziku, stačí, aby se to riziko zmenšilo, a trh ji může rychle přecenit.
+Druhá strana mince: polovodiče jsou cyklické odvětví, akcie je po letošním růstu o 53 procent drahá a je přímo navázaná na investice do umělé inteligence. Kdyby velké technologické firmy začaly škrtat, ASML by to pocítila mezi prvními. To byl i důvod pátečního poklesu.
 
 **Čísla do ruky:**
-- Cena 37,01 EUR (31. 12.), 40,24 EUR (22. 4.), 50,58 EUR (30. 10.).
-- Leden 2026: soud přijal případ k projednání, akcie +6,4 %. 25. 6. 2026: rozsudek Monsanto v. Durnell 7 : 2 ve prospěch Bayeru, akcie +16 až 19 % (zdroje se liší).
-- Rezervy na spory kolem glyfosátu 7,6 mld. USD (k 30. 9. 2025, ověřit aktuální stav).
-- Výsledky za 3Q zveřejní 3. 11. před otevřením burzy, konsenzus tržeb 9,86 mld. EUR. Natáčíš den předtím.
-
-**Kdyby se doptala:** „Proč ne ASML, když roste nejvíc?“
-ASML jsme měli jako vítěze minule, a tak jsem chtěl ukázat jiné příběhy. Mezi dalšími letošními vítězi jsou Repsol s plus 93 procenty, Eni s plus 68, Deutsche Börse s plus 43 nebo Nokia s plus 39 procenty.
+- ETF EXV3: +22,4 % od začátku roku, za měsíc −1,6 %, 2025 +4,0 %. ASML 31 %, SAP 15 %, Infineon 9 %.
+- Od začátku roku: ASML +53,3 %, Infineon +34,0 %, Nokia +39,0 %, SAP +1,4 % (22. 4. −28,1 %, od té doby +41 %). Zisky technologií ve 3Q (LSEG) +35,5 %.
+- 30. 10.: ASML −6,1 %, Infineon −6,4 % po výsledcích Amazonu (−7 % po zavření kvůli investicím) a Intelu (−23 %).
+- ASML: 921,40 EUR (31. 12.), 1 249,80 EUR (22. 4.), 1 412,80 EUR (30. 10.). 3Q (14. 10.): tržby 11,66 mld. EUR, čistý zisk 5,0 mld. EUR, hrubá marže 57,5 %. Výhled 4Q 14,2 až 15,2 mld. EUR, rok 2026 44 až 45 mld. EUR (dříve 43 až 45). Zpětný odkup 4,1 mld. EUR ve 3Q, mezitímní dividenda 1,88 EUR.
+- SAP 3Q: tržby 10,27 mld. EUR (odhad 10,07), cloud +26 %, nasmlouvané zakázky v cloudu 24,1 mld. EUR (+28 %).
 
 ---
 
-## 10. Poražení letoška: Stellantis a Rheinmetall
+## 4.3 Zdravotnictví: nudné, ale letos funguje
 
-**Moderátorka se pravděpodobně zeptá:** „A kdo letos naopak nejvíc ztrácí?“
-
-**Úvod:** Vybral jsem dva příklady, které ukazují dvě slabá místa Evropy: automobilky a, možná překvapivě, zbrojaře.
-
-### Stellantis: −56,2 % od začátku roku
+**Moderátorka se pravděpodobně zeptá:** „A farmacie? Ta bývá spíš nudná.“
 
 **Odpověď:**
-Stellantis je automobilka za značkami Peugeot, Citroën, Fiat, Opel nebo Jeep. Patří k největším poraženým mezi velkými evropskými firmami, od začátku roku ztratil 56 procent a od našeho rozhovoru 43. Zlom přišel v únoru. Firma odepsala zhruba 22 miliard eur, protože couvá od elektroaut, do kterých investovala víc, než zákazníci kupují. Zrušila dividendu za letošek a akcie zažila nejhorší den v historii. Od té doby trh pochybuje, jestli se obrat podaří.
+Letos ne. ETF na evropské zdravotnictví je od začátku roku na plus 11 procentech a jen za poslední měsíc přidalo skoro 14. Pomohly hlavně výsledky. AstraZeneca překonala odhady a akcie za den vyrostla o 7 procent, Sanofi měl zisk na akcii o 16 procent nad odhadem a Novartis zvýšil výhled. Farmacie je navíc obranný sektor, lidé berou léky bez ohledu na to, kolik stojí ropa nebo co se děje s umělou inteligencí. Podle mě i proto se do ní investoři v nervózním říjnu vraceli. Ne všem se ale daří. Dánský Novo Nordisk, výrobce léků na hubnutí, je letos na minus 18 procentech.
 
-Není to ale jen Stellantis. Volkswagen, pod který patří i Škoda, je letos na minus 33 procentech a ve třetím čtvrtletí vykázal provozní ztrátu. BMW je na minus 38 procentech a Mercedes, který v říjnu snížil výhled, na minus 32. Evropské automobilky tlačí čínská konkurence, americká cla a drahý přechod na elektromobily.
+### Firma do hloubky: Bayer
 
-Druhá strana mince: po takovém pádu stačí pár dobrých zpráv a akcie může prudce vyrůst. Dokud ale firma neukáže, že zase vydělává hotovost, je to sázka na obrat, ne na čísla.
+**Odpověď:**
+Bayer znáte z aspirinu, ale největší část tržeb mu přináší zemědělství, tedy osiva a přípravky na ochranu rostlin. Od začátku roku je na plus 37 procentech, od našeho dubnového rozhovoru přidal 26. Hlavní důvod je americký Nejvyšší soud. Bayer roky trápily desítky tisíc žalob kvůli přípravku Roundup, který získal koupí Monsanta v roce 2018. Žalobci tvrdili, že přípravek způsobuje rakovinu a že je firma nevarovala. Soud 25. června rozhodl poměrem sedm ku dvěma, že federální zákon o pesticidech takové žaloby kvůli chybějícímu varování blokuje. Akcie ten den vyskočila zhruba o 16 až 19 procent. A hned zítra zveřejní výsledky za třetí čtvrtletí.
+
+Druhá strana mince: rozsudek řeší jen část žalob, takže spor úplně nekončí. Bayer má dál vysoký dluh a akcie se pořád obchoduje hluboko pod cenou z doby před koupí Monsanta. Je to ale hezký příklad, že když akcie roky padá kvůli jednomu velkému riziku, stačí, aby se to riziko zmenšilo, a trh ji může rychle přecenit.
 
 **Čísla do ruky:**
-- Cena (Milán) 9,46 EUR (31. 12.), 7,30 EUR (22. 4.), 4,14 EUR (30. 10.).
-- 6. 2. 2026: odpisy a náklady kolem 22 mld. EUR spojené s ústupem od elektromobilů, zrušená dividenda za rok 2026, nejhorší obchodní den v historii akcie (přes −20 %).
-- Další automobilky od začátku roku: BMW −37,9 %, VW (prioritní akcie) −32,8 %, Mercedes-Benz −32,3 %. Porsche AG +2,4 %, Ferrari +11,4 %.
+- ETF EXV4: +11,1 % od začátku roku, za měsíc +13,6 %, 2025 +7,2 %. Roche 16 %, Novartis 15 %, AstraZeneca 14 %, Novo Nordisk 7 %, Bayer 3 %.
+- 3Q: AstraZeneca nad odhady, akcie 30. 10. +7 %. Sanofi zisk na akcii 3,55 EUR (odhad 3,06), tržby 14,44 mld. EUR (13,85), akcie +4,7 %. Novartis nad odhady a zvýšený výhled (27. 10.). Novo Nordisk −18,2 % od začátku roku.
+- Bayer: 37,01 EUR (31. 12.), 40,24 EUR (22. 4.), 50,58 EUR (30. 10.). Leden: soud přijal případ, akcie +6,4 %. 25. 6.: Monsanto v. Durnell 7 : 2, akcie +16 až 19 % (zdroje se liší). Rezervy na spory 7,6 mld. USD (k 30. 9. 2025, ověřit).
+- Bayer 3Q zveřejní 3. 11. před otevřením burzy: konsenzus tržeb 9,86 mld. EUR (loni 9,66), zisk na akcii 0,55 EUR (Trading Economics).
 
-### Rheinmetall: −33,4 % od začátku roku
+---
+
+## 4.4 Banky: loňská hvězda letos přešlapuje
+
+**Moderátorka se pravděpodobně zeptá:** „Evropské banky byly loni hvězdou. Jak jsou na tom letos? A proti americkým?“
 
 **Odpověď:**
-Rheinmetall je největší německý zbrojař. Vyrábí munici, obrněná vozidla a protivzdušnou obranu. Minule jsme mluvili o tom, jak Evropa těží ze zbrojení, a tady je paradox. Výdaje na obranu rostou, a přesto je akcie letos na minus 33 procentech a od dubna na minus 27. Trh měl totiž očekávání nastavená extrémně vysoko. Už v březnu firma zklamala výhledem na letošek. V červnu Německo zastavilo zpožděný program fregat F126, na kterém měl Rheinmetall pracovat, a akcie ten den spadla o víc než 16 procent. V srpnu firma snížila výhled tržeb na 13,7 až 14,2 miliardy eur. A investoři se přesouvají od tanků a munice k dronům a protivzdušné obraně.
+Letos přešlapují na místě, ale ne proto, že by se jim dařilo špatně. ETF na evropské banky loni vyrostlo o 77 procent, letos je i s dividendami na plus 10 a za poslední měsíc ztratilo 11 procent. Přitom zisky bank dál rostou. Vyšší sazby ECB jim zvedají příjmy z úroků a všechny velké banky eurozóny, které už reportovaly, měly zisk na akcii vyšší než před rokem. Jenže po takovém růstu už trh čeká hodně a stačí malé zklamání. Santander, HSBC nebo britská NatWest ve výsledcích zklamaly a jejich akcie ztratily 5 až 9 procent.
+
+Americké banky na tom letos nejsou lépe. JPMorgan je od začátku roku na plus 5 procentech, Bank of America a Wells Fargo na minus 9 a 10. Liší se hlavně ocenění. Evropské banky stojí zhruba za desetinásobek očekávaných zisků, americké za dvanáct až patnáct. Evropská centrální banka sama píše, že rozdíl je hlavně kvůli slabší evropské ekonomice, ne kvůli bankám samotným. Riziko vidím v tom, že kdyby drahá energie zpomalila ekonomiku víc, firmy a domácnosti začnou hůř splácet úvěry.
+
+### Firma do hloubky: Erste Group
+
+**Odpověď:**
+Erste je rakouská banka, která vlastní Českou spořitelnu a Slovenskou sporiteľňu, takže typická středoevropská banka. Letos k tomu přibrala velkou polskou banku, dnes Erste Bank Polska, a právě Polsko jí zvedá zisky. Za první tři čtvrtletí vydělala čistých 3,1 miliardy eur, jen ve třetím čtvrtletí zhruba 1,1 miliardy, a znovu zvýšila výhled, letos chce vydělat přes 4 miliardy eur. Akcie je přesto od začátku roku jen o 5 procent výš a od zářijového rekordu ztratila asi 15 procent, spolu s celým bankovním sektorem.
+
+Druhá strana mince: Erste vydělává na vyšších sazbách ve střední Evropě. Kdyby centrální banky v regionu začaly sazby snižovat nebo by se zhoršilo splácení úvěrů, zisky mohou klesnout. A polskou banku musí teprve plně začlenit.
+
+**Čísla do ruky:**
+- ETF EXV1: +10,0 % od začátku roku (s dividendami), za měsíc −11,1 %, 2025 +77,0 %. HSBC 14 %, Santander 9 %, BBVA 6 %. Euro Stoxx Banks (cenový, jen eurozóna): 2025 +80,3 %, letos +4,2 %, pořád 44 % pod rekordem z roku 2007.
+- Evropské banky od začátku roku (k 30. 10.): ING +17,7 %, HSBC +8,8 %, BNP Paribas +6,0 %, BBVA +5,0 %, UniCredit +3,0 %, Santander +0,5 %, Intesa −0,5 %, Deutsche Bank −9,2 %, Société Générale −11,2 %.
+- Americké banky od začátku roku: Citigroup +5,1 %, JPMorgan +4,6 %, Morgan Stanley +3,8 %, Goldman Sachs +1,8 %, Bank of America −8,7 %, Wells Fargo −10,5 %, prostý průměr −0,7 %.
+- Zisk na akcii ve 3Q (loni): BNP 2,91 (2,61), SocGen 2,35 (1,76), Deutsche Bank 0,94 (0,89), Santander 0,25 (0,22), BBVA 0,52 (0,42), ING 0,65 (0,60), Intesa 0,15 (0,13) EUR. Americký finanční sektor 3Q +5,5 % (FactSet).
+- Ocenění: evropské banky asi 10 (Reuters 20. 10.; BNP Paribas WM v červenci 10,4), americké 12,5 a cena k účetní hodnotě 1,65 (BNP Paribas WM, červenec), americký finanční sektor 14,9 (FactSet 30. 10.). ECB (květen 2026): rozdíl hlavně kvůli slabší makroekonomice eurozóny.
+- Erste: 102,90 EUR (31. 12.), maximum 126,80 EUR (28. 9.), 107,60 EUR (2. 11.), tedy +4,6 % a −15 % od maxima. Čistý zisk 1. pololetí 1 975 mil. EUR, 9 měsíců 3 095 mil. EUR (3Q dopočet asi 1 120 mil. EUR), výhled 2026 přes 4 mld. EUR. Polská banka je bývalá Santander Bank Polska [OVĚŘIT název, podíl a datum převzetí].
+
+**Kdyby se doptala:** „A české banky?“
+Česká spořitelna je součást Erste, kterou jsme si ukázali. Komerční banka a Moneta [OVĚŘIT před natáčením vývoj od začátku roku]. Středoevropské banky obecně vydělávají na vyšších sazbách v regionu a právě banky letos táhnou polskou burzu, která je na plus 34 procentech.
+
+---
+
+## 4.5 Obrana: sektor dvou rychlostí
+
+**Moderátorka se pravděpodobně zeptá:** „Zbrojaři byli loni hitem. Co letos?“
+
+**Odpověď:**
+Letos se z nich stal sektor dvou rychlostí. ETF na evropskou obranu je od začátku roku jen na plus 7 procentech a za poslední rok skoro na nule. Uvnitř jsou ale velké rozdíly. Švédský Saab, který vyrábí stíhačky Gripen a protivzdušnou obranu, je na plus 26 procentech. Německý Rheinmetall, který dělá hlavně munici a obrněná vozidla, na minus 33. Investoři letos přesouvají peníze od klasické pozemní techniky k dronům a protivzdušné obraně. A hlavně: výdaje na obranu rostou, jak se čekalo, jenže akcie to měly v ceně už loni.
+
+### Firma do hloubky: Rheinmetall
+
+**Odpověď:**
+Rheinmetall je největší německý zbrojař a největší evropský výrobce munice. Minule jsme mluvili o tom, jak Evropa těží ze zbrojení, a tady je paradox. Výdaje na obranu rostou, a přesto je akcie letos na minus 33 procentech a od dubna na minus 27. Trh měl očekávání nastavená extrémně vysoko. Už v březnu firma zklamala výhledem na letošek. V červnu Německo zastavilo zpožděný program fregat F126, na kterém měl Rheinmetall pracovat, a akcie ten den spadla o víc než 16 procent. V srpnu firma snížila výhled tržeb na 13,7 až 14,2 miliardy eur. Ve čtvrtek zveřejní výsledky za třetí čtvrtletí, analytici čekají tržby kolem 3,2 miliardy eur, o 15 procent víc než loni.
 
 Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 miliard eur, a evropské vlády budou za obranu utrácet ještě roky. Byznys tedy funguje, přecenila se jen očekávání. Lekce je, že i dobrý příběh může být v ceně akcie už předem.
 
 **Čísla do ruky:**
-- Cena 1 561 EUR (31. 12.), 1 420,20 EUR (22. 4.), 1 040,20 EUR (30. 10.).
-- Březen 2026: výhled na rok 2026 pod očekáváním. Červen: zrušení programu fregat F126, akcie −16 % za den. Srpen: výhled tržeb snížen na 13,7 až 14,2 mld. EUR (z 14,0 až 14,5 mld. EUR).
-- Zakázky k 31. 12. 2025: rekordních 63,8 mld. EUR (+16,9 mld. EUR za rok).
-- Výsledky za 3Q zveřejní 5. 11., konsenzus tržeb 3,19 mld. EUR (loni 2,78 mld. EUR), zisku na akcii 6,99 EUR.
-- Jiní zbrojaři od začátku roku: Saab +25,6 %, Leonardo +5,3 %, Thales +2,6 %. Vyhrávají spíš výrobci letadel a protivzdušné obrany.
+- ETF WDEF: +6,7 % od začátku roku, za měsíc +4,4 %, za rok +1,6 % (vzniklo v roce 2025). BAE 10 %, Thales 10 %, Rheinmetall 9 %, Saab 6 %, Leonardo 5 %.
+- Od začátku roku: Saab +25,6 %, Leonardo +5,3 %, Thales +2,6 %, Airbus −3,0 %, Safran −7,3 %, Rheinmetall −33,4 %.
+- Rheinmetall: 1 561 EUR (31. 12.), 1 420,20 EUR (22. 4.), 1 040,20 EUR (30. 10.). Březen: výhled pod očekáváním. Červen: konec programu F126, akcie −16 % za den. Srpen: výhled tržeb 13,7 až 14,2 mld. EUR (z 14,0 až 14,5). Zakázky k 31. 12. 2025 rekordních 63,8 mld. EUR.
+- Výsledky 3Q 5. 11.: konsenzus tržeb 3,19 mld. EUR (loni 2,78 mld.), zisk na akcii 6,99 EUR (Trading Economics).
 
-**Kdyby se doptala:** „A co česká CSG?“
-CSG vstoupila na burzu v Amsterdamu v lednu za 25 eur za akcii a první den vyskočila zhruba o 30 procent. Na jaře se po výsledcích za loňský rok poprvé dostala pod upisovací cenu. [OVĚŘIT před natáčením: aktuální cena a změna od úpisu a od začátku obchodování.]
+**Kdyby se doptala:** „A česká CSG?“
+CSG vstoupila na burzu v Amsterdamu v lednu za 25 eur za akcii a první den vyskočila zhruba o 30 procent. Na jaře se po výsledcích za loňský rok poprvé dostala pod upisovací cenu. [OVĚŘIT před natáčením: aktuální cena a změna od úpisu.]
 
 ---
 
-## 11. Další okruhy, kdyby zbyl čas
+## 4.6 Luxus: čínský zákazník chybí
 
-### 11.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
-
-**Moderátorka se pravděpodobně zeptá:** „Ropa je zase kolem 110 dolarů. Co bude dál?“
+**Moderátorka se pravděpodobně zeptá:** „Luxus a Francie letos padají. Co se děje?“
 
 **Odpověď:**
-Rozhodující může být už tento týden. V úterý 3. listopadu jsou v Americe volby do Kongresu a prezident Trump opakovaně naznačil, že po nich může obnovit útoky na Írán. Zároveň běží jednání přes Katar, Pákistán nebo Saúdskou Arábii. Ropa Brent v říjnu zdražila o víc než 15 procent a 23. října byla nejdráž od roku 2022. Pro evropské akcie to má jasnou logiku. Dražší ropa znamená vyšší inflaci, vyšší sazby a slabší spotřebu, pomáhá jen energetickým firmám. Dohoda by naopak Evropě ulevila nejvíc ze všech. Viděli jsme to v dubnu po příměří i v létě, kdy evropské indexy vylezly na rekordy. Evropa se zatím brání tím, že během tří měsíců uvolní 42 milionů barelů ze strategických zásob.
+Luxus je letos jeden z velkých poražených. Velká evropská jména LVMH, Hermès a Kering ztratila od začátku roku kolem 40 procent. Globální ETF na luxus je jen na minus 7 procentech, ale to proto, že v něm jsou i americké hotely, výletní lodě nebo Ferrari, kterým se daří. Hlavní důvod je Čína. Čínský zákazník, který léta táhl růst luxusu, utrácí méně, a ve třetím čtvrtletí to bylo vidět u všech, LVMH, Hermès i Kering měly tržby pod odhady.
 
-### 11.2 ECB zvedá sazby a Lagardeová odchází
+Výjimky ale jsou. L'Oréal je letos na plus 19 procentech a po výsledcích nad odhady za měsíc přidal 17 procent. Kosmetika si za těžších časů vede líp než kabelky za desítky tisíc.
 
-**Moderátorka se pravděpodobně zeptá:** „ECB letos sazby zvedá. Co to znamená a co odchod Christine Lagardeové?“
-
-**Odpověď:**
-ECB je v nepříjemné situaci. Inflace je kvůli energiím skoro dvakrát nad cílem a ekonomika přitom roste pomalu. Letos proto dvakrát zvedla sazby, depozitní sazba je na 2,5 procenta a trh čeká další zvýšení v prosinci. Pro akcie to znamená dvě věci. Bankám vyšší sazby pomáhají, firmám s dluhy a domácnostem s hypotékou škodí. Navíc Christine Lagardeová oznámila, že z čela ECB odejde už 7. února, zhruba o devět měsíců dřív. Nejčastěji se mluví o Nizozemci Klaasi Knotovi, Španělovi Pablu Hernándezi de Cosovi, Němce Isabel Schnabelové a šéfovi Bundesbanky Joachimu Nagelovi. Kdo to bude, rozhodne i o tom, jak tvrdě bude ECB s inflací bojovat.
-
-### 11.3 Francie jako nová slabina eurozóny
-
-**Moderátorka se pravděpodobně zeptá:** „Proč se teď tolik mluví o Francii?“
+### Firma do hloubky: LVMH
 
 **Odpověď:**
-Francie je druhá největší ekonomika eurozóny a má problém s dluhem i s politikou. Parlament je roztříštěný, spor o rozpočet na příští rok se táhne od září a v říjnu se přidaly sociální nepokoje. Investoři proto po Francii chtějí za půjčku víc. Výnos desetiletých dluhopisů se dostal nad 5 procent, nejvýš od roku 2002. Ekonomika ve třetím čtvrtletí klesla o 0,1 procenta a index CAC 40 je letos v minusu. Pro celou eurozónu je to riziko, protože to oslabuje euro a zdražuje půjčky i jiným státům. Lagardeová minulý týden řekla, že ECB má nástroje, kdyby se trhy chovaly neodůvodněně.
+LVMH je největší luxusní skupina na světě: Louis Vuitton, Dior, Moët & Chandon, Hennessy, Tiffany nebo Sephora. Ve třetím čtvrtletí měla tržby 18,5 miliardy eur, organicky o 1 procento víc než loni, ale pod odhadem. Móda a kožené zboží, na kterých vydělává nejvíc, klesly o 5 procent, hlavně kvůli Asii. Situaci zachránila Sephora s růstem o 8 procent. Akcie je od začátku roku na minus 40 procentech a od našeho dubnového rozhovoru ztratila dalších 18.
 
-### 11.4 Co z toho plyne pro českého investora (měna)
-
-**Moderátorka se pravděpodobně zeptá:** „Co z toho všeho plyne pro české investory?“
-
-**Odpověď:**
-Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Když si český investor kupuje zahraniční akcie, vydělává nebo prodělává i na kurzu, a letos mu silnější dolar pomohl. Příští rok to může být naopak. Kdyby se válka uklidnila a euro posílilo, evropské akcie by mu v korunách mohly vydělat víc než americké, i kdyby v místních měnách rostly stejně.
-
-### 11.5 Výprodej technologií na konci října
-
-**Moderátorka se pravděpodobně zeptá:** „Minulý týden padaly technologické akcie. Dotkne se to Evropy?“
-
-**Odpověď:**
-Méně než Ameriky, a je to přesně ten argument z dubna, jen obráceně. Po výsledcích Amazonu, který ohlásil další velký nárůst investic, a Intelu, který zklamal výhledem, se vrátily obavy, jestli se investice do umělé inteligence vyplatí. Americký Nasdaq 100 za dva dny ztratil skoro 5 procent. Evropa má technologických firem málo, takže široký Stoxx 600 v pátek ztratil jen 0,4 procenta. Nejvíc to schytali evropští výrobci čipů a strojů na ně, ASML a Infineon kolem 6 procent. Co v dubnu Evropu brzdilo, ji teď chrání.
+Druhá strana mince: luxus prochází cyklickým útlumem, ne zánikem. Když se čínský zákazník vrátí, firmy jako LVMH mohou rychle růst a akcie je teď výrazně levnější než před rokem. Jenže kdy to bude, zatím nikdo neví, a jak jsme si říkali minule, levná akcie může ještě zlevnit.
 
 **Čísla do ruky:**
-- Nasdaq 100: 29 813 bodů (28. 10.), 28 385 bodů (30. 10.), −4,8 %. Za poslední měsíc −7,8 %.
-- 30. 10.: Stoxx 600 −0,4 %, Euro Stoxx 50 −1,2 %, ASML −6,1 %, Infineon −6,4 %.
+- ETF GLUX (globální): −6,8 % od začátku roku, 39 % fondu jsou americké firmy (Royal Caribbean, Tesla, Hilton, Marriott). ETF EXH7 (osobní a domácí zboží, i Unilever a tabák): −6,6 %. Čistě evropské luxusní ETF není, proto ukazuj hlavně akcie.
+- Od začátku roku: Kering −41,0 %, LVMH −40,0 %, Hermès −39,0 %, L'Oréal +19,2 %, Ferrari +11,4 %, Adidas −0,3 %.
+- 3Q tržby proti odhadu: LVMH 18,50 mld. EUR (18,81), Hermès 4,09 (4,17), Kering 3,35 (3,47), L'Oréal 11,56 (11,06). L'Oréal za měsíc +17,5 %.
+- LVMH: 645 EUR (31. 12.), 474,30 EUR (22. 4.), 387 EUR (30. 10.). 3Q organicky +1 %, móda a kožené zboží −5 %, Sephora a selektivní maloobchod +8 %.
 
 ---
 
-## 12. Závěr: na co se dívat do konce roku
+## 4.7 Automobilky: největší poražený
 
-**Moderátorka se pravděpodobně zeptá:** „Co bude pro evropské akcie do konce roku rozhodující?“
+**Moderátorka se pravděpodobně zeptá:** „A automobilky? Ty jsou pro Česko hodně důležité.“
 
 **Odpověď:**
-Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. Dokud je ropa nad sto dolary, bude to brzda pro ekonomiku i pro většinu akcií. Kdyby se USA s Íránem dohodly, může to být naopak Evropa, komu se uleví nejvíc. Proto budu sledovat hlavně tři věci: co Trump udělá s Íránem po úterních volbách, jestli ECB v prosinci zvedne sazby potřetí, a jestli se Francie dohodne na rozpočtu. A z firem hlavně to, jestli zisky mimo energetiku dál porostou. Evropa letos ukázala, že nemusí být jen chudší příbuzná Ameriky. Je ale mnohem citlivější na to, co se děje s energiemi.
+Automobilky jsou letos největší poražený mezi evropskými sektory. ETF na evropská auta je od začátku roku na minus 17 procentech, a to ho drží nad vodou Ferrari, které tvoří čtvrtinu fondu a roste. Velká jména jsou na tom hůř: Stellantis, tedy Peugeot, Citroën, Fiat nebo Opel, je na minus 56 procentech, BMW na minus 38, Volkswagen na minus 33 a Mercedes na minus 32. Důvody jsou tři: čínská konkurence, která evropským značkám bere zákazníky hlavně v Číně, americká cla a drahý přechod na elektromobily. Stellantis z něj v únoru couvl s odpisy kolem 22 miliard eur. Výsledky za třetí čtvrtletí to jen potvrdily, Mercedes snížil výhled marže a Volkswagen vykázal obří ztrátu.
 
-**Kalendář:**
-- 3. 11.: volby do Kongresu USA, pak možné rozhodnutí o Íránu.
-- Začátek listopadu: rychlý odhad inflace eurozóny za říjen [OVĚŘIT datum].
-- 3. 11. Bayer, 4. 11. BMW, 5. 11. Rheinmetall, Deutsche Telekom a DHL, 12. 11. Siemens a Allianz: výsledky za 3Q (data podle Trading Economics).
-- Prosinec: zasedání ECB a Fedu [OVĚŘIT data].
-- Francie: hlasování o rozpočtu na rok 2027.
-- 7. 2. 2027: odchod Christine Lagardeové z ECB.
+### Firma do hloubky: Volkswagen
+
+**Odpověď:**
+Volkswagen je největší evropská automobilka a patří pod ni i naše Škoda, dál Audi, Porsche, Seat nebo Cupra. Ve třetím čtvrtletí vykázal provozní ztrátu skoro 6 miliard eur, analytici přitom čekali ztrátu kolem 2,6 miliardy. Většinu udělaly jednorázové náklady kolem 7,8 miliardy, hlavně odpis v Porsche a restrukturalizace. Tržby klesly o 6 procent, celosvětové dodávky aut o 14 procent a v Číně skoro o 40 procent. Na celý rok čeká provozní marži nejvýš 1 procento. Akcie je od začátku roku na minus 33 procentech. Pro Česko je to důležité, koncern VW je pro náš průmysl klíčový zákazník.
+
+Druhá strana mince: bez jednorázových položek měl Volkswagen za devět měsíců marži kolem 3,8 procenta, takže hlavní byznys pořád vydělává. Pokud se podaří snížit náklady, může se to projevit v dalších letech. Zatím tomu ale trh nevěří.
+
+**Čísla do ruky:**
+- ETF EXV5: −16,5 % od začátku roku, 2025 −1,1 %. Ferrari 26 %, Michelin 15 %, Mercedes 14 %, BMW 12 %, VW 9 %, Stellantis 5 %.
+- Od začátku roku: Stellantis −56,2 %, BMW −37,9 %, VW (prioritní) −32,8 %, Mercedes-Benz −32,3 %, Porsche AG +2,4 %, Ferrari +11,4 %.
+- Stellantis 6. 2.: odpisy a náklady asi 22 mld. EUR kvůli ústupu od elektromobilů, zrušená dividenda za rok 2026, nejhorší den v historii akcie. Výsledky za 3Q ověřit.
+- Mercedes 27. 10.: výhled marže aut snížen na 2 až 3 % (z 3 až 5 %), dodávky v Číně za 9 měsíců −29 %, akcie −4,2 %. Renault výhled potvrdil, akcie +7 %. BMW výsledky 4. 11.
+- Volkswagen 3Q (29. 10.): provozní ztráta 5,9 mld. EUR (čekalo se asi −2,6 mld.), jednorázové položky asi 7,8 mld. EUR, tržby asi 75,3 mld. EUR (−6 %), dodávky −14 %, Čína asi −39 %, čistá ztráta asi 5,8 mld. EUR. Výhled marže do 1 % potvrzen, za 9 měsíců bez jednorázových položek asi 3,8 %. Akcie 103,55 EUR (31. 12.), 69,62 EUR (30. 10.).
+
+**Kdyby se doptala:** „A co Škoda?“
+Škoda patří k nejziskovějším značkám koncernu. [OVĚŘIT před natáčením: výsledky Škody za 9 měsíců 2026.] Pro Česko je ale důležitější celý koncern, protože čeští dodavatelé vyvážejí hlavně do jeho německých továren.
+
+---
+
+## 5. Závěr: výsledková sezona a co čekat ve 4. čtvrtletí
+
+**Poznámky:**
+- Stoxx 600 (LSEG I/B/E/S k 29. 10.): reportovalo 144 firem, odhady zisku překonalo 54,2 % (průměr od roku 2012 je 54 %), souhrnně o 5 % nad odhady. Zisky ve 3Q +23,6 %, bez energetiky +9,8 %. Tržby +13,6 %, bez energetiky +6,2 %. Země: Francie +29,9 %, Itálie +15 %, Německo −3,4 %.
+- Výhled Evropa: 4Q 2026 +38,8 %, celý rok 2026 +21,3 %, 1Q 2027 +14,5 %, 2Q 2027 −4,4 %, 3Q 2027 +6,7 %. Revize za týden: 54 % nahoru.
+- S&P 500 (FactSet k 30. 10.): reportovalo 60 % firem, nad odhady 82 % (pětiletý průměr 78 %), zisky ve 3Q +30,2 %, sedm největších technologických firem +22,6 %, zbylých 493 +32,6 %. Výhled 4Q +28,4 %. Negativní výhled na 4Q vydalo 19 firem, pozitivní 28.
+
+| Firma | výsledek proti odhadu | výhled a reakce akcií |
+|---|---|---|
+| ASML (14. 10.) | tržby 11,66 mld. EUR (rekord) | 4Q 14,2 až 15,2 mld. EUR, rok zvýšen |
+| SAP (21. 10.) | tržby 10,27 mld. EUR (10,07) | cloud k horní hranici výhledu |
+| LVMH / Hermès / Kering | tržby pod odhady | |
+| L'Oréal (22. 10.) | tržby 11,56 mld. EUR (11,06) | akcie za měsíc +17,5 % |
+| Eni (23. 10.) | zisk na akcii 0,95 EUR (0,61) | |
+| Mercedes (27. 10.) | provozní zisk 1,77 mld. EUR (asi 1,6) | výhled marže snížen, −4,2 % |
+| Deutsche Bank / SocGen / BNP | 0,94 (0,89) / 2,35 (2,03) / 2,91 (2,93) EUR | |
+| Santander / HSBC / NatWest | pod odhady | −5,5 % / −5,4 % / −9 % |
+| BASF (28. 10.) | zisk na akcii 0,72 EUR (0,41) | |
+| Shell (29. 10.) | upravený zisk 10,81 mld. USD (asi 10,3) | odkup 5 mld. USD |
+| TotalEnergies (29. 10.) | upravený čistý zisk 9,1 mld. USD (8,3) | |
+| Volkswagen (29. 10.) | provozní ztráta 5,9 mld. EUR (asi −2,6) | výhled potvrzen |
+| Adidas (29. 10.) | zisk na akcii 4,06 EUR (3,34) | výhled zvýšen, +5,8 % |
+| Sanofi (30. 10.) | zisk na akcii 3,55 EUR (3,06) | +4,7 % |
+| AstraZeneca (30. 10.) | nad odhady | +7 % |
+
+- Tento týden: 3. 11. Bayer, 4. 11. BMW, 5. 11. Rheinmetall, Deutsche Telekom, DHL. 12. 11. Siemens, Allianz, Munich Re.
+
+**Moderátorka se pravděpodobně zeptá:** „Na závěr: jak zatím dopadá výsledková sezona a co čekat na konci roku?“
+
+**Odpověď:**
+Zatím solidně, ale bez ohňostroje. Z firem v indexu Stoxx 600 už výsledky zveřejnila zhruba čtvrtina a odhady zisku překonalo 54 procent z nich, přesně dlouhodobý průměr. Zisky celého indexu by ve třetím čtvrtletí měly vyrůst skoro o 24 procent, většinu ale udělala energetika. Bez ní je to kolem 10 procent. Přesně to jsme viděli v sektorech: ropné firmy a farmacie nad odhady, ASML rekordní, a naopak automobilky, luxus a část bank zklamaly. Amerika je na tom líp, zisky jí rostou o 30 procent a odhady překonalo 82 procent firem.
+
+Na čtvrté čtvrtletí čekají analytici v Evropě růst zisků skoro o 39 procent. To je ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Ze stejného důvodu čekají v polovině příštího roku pokles, protože se bude srovnávat s válečným jarem. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují.
+
+**Kdyby se doptala:** „Na které výsledky se tento týden dívat?“
+Hned zítra reportuje Bayer a ve čtvrtek Rheinmetall, tedy jeden z vítězů a jeden z poražených, o kterých jsme mluvili. U Rheinmetallu bude klíčové, jestli potvrdí snížený výhled a jestli se zlepší peníze, které firmě skutečně přitékají. Ve středu přijde BMW, po Volkswagenu a Mercedesu další test automobilek.
+
+**Kdyby se doptala:** „A co bude pro Evropu do konce roku rozhodující?“
+Ropa. Pokud přijde dohoda s Íránem a ropa zlevní, nejvíc si oddechnou automobilky, chemie, spotřebitelé a celá ekonomika. ECB by nemusela dál zvedat sazby a Evropa by mohla část náskoku proti Americe získat zpátky. Energetika by naopak přišla o svůj letošní bonus. Kdyby se konflikt po amerických volbách rozhořel, platí opak. Proto je podle mě letos u Evropy důležitější vědět, v jakých sektorech jste, než jestli máte Evropu, nebo Ameriku.
 
 ---
 
 ## Grafy k přípravě
 
-1. **Stejný graf jako minule, prodloužený:** Bloomberg Comparative Returns se stejnými tickery (SPX, SX5E, NDX, CECEEUR), rozsah 01/02/2026 až 10/30/2026. Do grafu vyznač 28. 2. (začátek války) a 22. 4. (náš minulý rozhovor). Divák tak hned vidí, kde jsme skončili a co se dělo potom.
-2. **Totéž jen od minulého rozhovoru:** 04/22/2026 až 10/30/2026. Ukáže, že Evropa a Amerika jsou od dubna v místních měnách skoro stejně.
-3. **Sloupcový graf indexů od začátku roku** (tabulka z taháku, od Polska po Francii). Ve vzhledu Portu ho umí nakreslit subagent `portu-grafy`.
-4. **Ropa Brent proti Euro Stoxx 50 od začátku roku:** ukáže, že evropské akcie se pohybují zrcadlově k ropě.
-5. Volitelně: čtyři vybrané akcie od začátku roku přepočtené na 100.
+1. **Sektory od začátku roku** (sloupcový graf z tabulky ETF, od energetiky po automobilky, s čárou celého trhu +11,8 %). Hlavní graf rozhovoru, ve vzhledu Portu ho nakreslí subagent `portu-grafy`.
+2. **Evropa vs. Amerika od začátku roku** (Bloomberg Comparative Returns: SPX, SX5E, SXXP, případně CECEEUR, 31. 12. 2025 až 30. 10. 2026) se značkou 28. 2. (začátek války) a 22. 4. (minulý rozhovor).
+3. **Ropa Brent proti Stoxx 600** od začátku roku: evropské akcie se pohybují zrcadlově k ropě.
+4. Volitelně: ocenění Stoxx 600 vs. S&P 500 (13,8 vs. 18,7 a jejich průměry).
 
 ## Ověřit těsně před natáčením
 
-- Pondělní pohyb trhů a zprávy o Íránu ráno 2. 11., data ve scénáři jsou k pátku 30. 10.
-- Index CECE na Bloombergu (v TE není).
-- Přesné datum dubnového natáčení. Pokud to nebylo 22. 4., přepočítat sloupec „od minulého rozhovoru“.
-- TotalEnergies: upravený zisk 9,1 mld. USD ověřit v tiskové zprávě (jeden zdroj uvádí vykázaný zisk 7,5 mld. EUR).
-- SAP: čísla za 3Q v tiskové zprávě. LVMH: pokles módy a kožené zboží −5 % organicky.
-- Bayer: přesná velikost skoku 25. 6. (zdroje uvádějí 16 až 19 %), aktuální rezervy na spory a cena akcie před koupí Monsanta.
-- Rheinmetall: odstup od rekordu, výsledky 5. 11. (podle TE), co přesně se v červnu stalo s programem F126 (zastavení, nebo přesun zakázky k TKMS).
-- Stellantis: zda už vyšly výsledky za 3Q a jak na ně akcie reagovala.
+- Pondělní pohyb trhů a ropy, zprávy o Íránu (ráno Brent kolem 109 USD, −3,8 %).
+- Data justETF: výnosy na stránkách nemají datum, zkontrolovat, že jsou k 30. 10. (případně k 31. 10.).
+- Erste: název a historie polské banky (bývalá Santander Bank Polska?), čistý zisk za 3Q z tiskové zprávy (náš dopočet 1,12 mld. EUR).
+- Škoda: výsledky za 9 měsíců 2026. Komerční banka a Moneta od začátku roku. ČEZ a důvod poklesu PX od září.
 - CSG: aktuální cena proti upisovací ceně 25 EUR.
-- ČEZ, Komerční banka, Erste: vývoj od začátku roku a od září (proč PX zaostává).
-- Maďarsko: co stálo za jarním skokem BUX (jarní volby?). Bez ověření důvod neuváděj.
-- Inflace eurozóny za říjen (pokud vyjde před natáčením) a data prosincových zasedání ECB a Fedu.
-- Banky: Komerční banka a Moneta od začátku roku, aktuální ocenění evropských a amerických bank (údaj o amerických bankách 12,5 je z července).
-- Meziroční růst HDP USA za 3Q u BEA (náš propočet zhruba 2,1 %).
-- Výsledková sezona: konsenzus u ASML (zdroje se rozcházejí, zda tržby byly nad, nebo těsně pod odhadem; TE uvádí odhad 10,33 mld. EUR, který se zdá zastaralý), reakce akcií LVMH, Hermès a Kering v den výsledků, výsledky Stellantisu za 3Q. Nový souhrn LSEG I/B/E/S vychází obvykle v úterý.
+- Stellantis: výsledky za 3Q a reakce akcie.
+- Bayer: přesná velikost skoku 25. 6. a aktuální rezervy na spory. Výsledky 3. 11. vyjdou den po natáčení.
+- ASML: konsenzus tržeb za 3Q (zdroje se rozcházejí), proto ve vysílání neříkat, o kolik překonal odhad.
+- Maďarsko: co stálo za jarním skokem BUX. Bez ověření důvod neuváděj.
+- Ocenění amerických bank 12,5 je z července, aktuální je jen finanční sektor 14,9.
 
 ## Poznámky k podkladům
 
-1. **Video z dubna jsem neviděl.** YouTube z cloudového prostředí přepis neposkytne a blokaci jsem neobcházel. Scénář stavím na dubnovém Google Docu, otázky moderátorky jsou odhad. Když vložíš přepis (pod videem „…“, „Zobrazit přepis“), doplním, na co se skutečně ptala, a upravím otázky.
-2. **ASML v dubnu:** ve scénáři „23,5 % YTD“, podle Trading Economics k 22. 4. +35,6 % proti závěru roku 2025. Rozdíl může být jiným datem nebo výchozím bodem. Ve vysílání proto mluv jen o dnešních číslech.
-3. **HDP v dubnovém scénáři:** „eurozóna rostla o 0,2 % meziročně a USA o 0,5 %“. Evropské číslo bylo mezičtvrtletní, americké anualizované. Teď srovnávám stejné se stejným.
-4. **Bloomberg vs. Trading Economics:** dubnový graf počítal od 2. 1. (Euro Stoxx 50 +0,95 %), já od 31. 12. (+2,0 % k 22. 4.). Pro nový graf zvol stejný začátek jako minule, ať čísla v grafu sedí s tím, co divák viděl.
-5. **Chyby v datech TE, které jsem nepoužil:** tržní kapitalizace Stellantisu a VW (počítá jen část akcií), maximum indexu IBEX, seznam firem Euro Stoxx 50 (je zastaralý, obsahuje i firmy, které v indexu už nejsou), meziroční HDP USA 3,4 % (shodné s anualizovaným číslem, zřejmě chyba).
-6. **Výběr akcií:** dubnová jména jsem nechal na okruh 4. Náhradníci, kdybys chtěl vyměnit: vítězové Repsol +93 %, Eni +68 %, ASML +53 %, Deutsche Börse +43 %, Nokia +39 %, Infineon +34 %; poražení Kering −41 %, Adyen −40 %, LVMH −40 %, Hermès −39 %, BMW −38 %, EssilorLuxottica −32 %.
-7. **DAX a WIG** jsou výnosové indexy (s dividendami), ostatní cenové. Na závěrech to nic nemění.
+1. **Proč nová stavba:** moderátorka chtěla jednu myšlenku místo seznamu otázek. Teze je „Evropa po sektorech, válka ji rozdělila na vítěze a poražené“. Předchozí verze scénáře je v historii gitu (commit ff65f09).
+2. **ETF vs. indexy:** výnosy ETF jsou včetně dividend, indexy v tabulkách jsou cenové (kromě DAX a WIG). Celý trh srovnávej s ETF EXSA (+11,8 %), ne se Stoxx 600 (+9,1 %).
+3. **Složení ETF zkresluje:** energetické ETF má 14 % Siemens Energy, automobilové 26 % Ferrari, luxusní GLUX je globální (39 % USA) a EXH7 obsahuje i Unilever a tabák. Proto u luxusu a aut mluv hlavně o konkrétních akciích.
+4. **Volba firem:** u energie, technologií, zdravotnictví, obrany a luxusu jsem nechal ověřená jména z minulé verze. U bank jsem vybral Erste kvůli české a polské souvislosti, u aut Volkswagen kvůli Škodě (Stellantis zůstal jako příklad v textu).
+5. **V dubnovém scénáři** byla dvě nepřesná čísla (ASML +23,5 % a srovnání HDP), ve vysílání je neopakuj.
 
 ## Zdroje
 
-- Trading Economics (MCP): indexy, akcie, ropa Brent, kurzy EUR/USD a EUR/CZK, HDP, inflace, nezaměstnanost, sazby ECB a Fedu, denní zprávy 20. až 30. 10. 2026 („Eurozone GDP Growth Beats Expectations“, „ECB Holds Rates Amid Inflation and Growth Risks“, „European Stocks Fall on Friday“, „Brent Crude Approaches 4-Year High“).
-- Dubnový scénář autora: `examples/rozhovory-investicni-web/2026-04-evropske-akcie-scenar.md`.
-- ASML 3Q 2026: [SEC 6-K](https://www.sec.gov/Archives/edgar/data/0000937966/000162828026065813/pressreleasefinancialresul.htm), [StorageNewsletter](https://www.storagenewsletter.com/?p=306155)
-- SAP 3Q 2026: [SEC 6-K](https://www.sec.gov/Archives/edgar/data/0001000184/000110465926118617/tm2628113d1_ex99-1.htm), [FourWeekMBA](https://fourweekmba.com/ai-saps-q3-explained-24-1b-backlog-a-thinner-cloud-margin/)
-- LVMH 3Q 2026: [Luxury Tribune](https://www.luxurytribune.com/en/lvmh-fashion-and-leather-goods-sales-fall-in-the-third-quarter-of-2026)
-- TotalEnergies 3Q 2026: [OilPrice](https://oilprice.com/Latest-Energy-News/World-News/TotalEnergies-Profit-Doubles-as-War-Boosts-Refining-and-Trading.html), [OE Digital](https://www.oedigital.com/amp/news/543984-totalenergies-records-third-quarter-profit-jump-of-127), [Business Day](https://www.businessday.co.za/world/international-companies/2026-10-15-refining-margins-quadruples-for-totalenergies-as-lng-income-grows/)
-- Bayer: [Bayer, prohlášení k rozsudku](https://www.bayer.com/en/us/news-stories/us-supreme-court-ruling), [News Tribune](https://www.newstribune.com/news/2026/jun/26/supreme-court-scales-back-roundup-cancer-suits-in/), [MarketScreener](https://uk.marketscreener.com/news/bayer-shares-surge-as-supreme-court-agrees-to-hear-glyphosate-case-ce7e58dfdc81f025)
-- Stellantis: [Bloomberg](https://www.bloomberg.com/news/articles/2026-02-06/stellantis-to-take-charges-of-about-22-billion-on-ev-reset), [abcbourse](https://www.abcbourse.com/marches/stellantis-plonge-encore-de-pres-de-6-ce-lundi-l-action-a-perdu-60-en-2026_704435)
-- Rheinmetall: [Il Sole 24 Ore](https://en.ilsole24ore.com/art/rheinmetall-frankfurt-share-price-falls-f126-frigate-project-halted-pesera-to-take-stock-AIve01zD), [Börse Express](https://www.boerse-express.com/news/articles/rheinmetall-aktie-guidance-2026-gesenkt-cashflow-schwach-945206), [Bloomberg](https://www.bloomberg.com/news/videos/2026-03-11/rheinmetall-s-2026-outlook-falls-short-of-estimates-video), [Finanztrends](https://www.finanztrends.de/news/rheinmetall-aktie-auftragsrekord-trifft-kursverfall/)
-- CSG: [Seznam Zprávy](https://www.seznamzpravy.cz/clanek/ekonomika-finance-akcie-fondy-akcie-csg-poprve-spadly-pod-cenu-s-kterou-vstoupily-na-burzu-302793), [Echo24](https://www.echo24.cz/a/H378x/zpravy-ekonomika-akcie-csg-klesly-pod-upisovaci-hodnotu)
-- ČEZ: [oEnergetice](https://oenergetice.cz/akcie/zestatneni-cez-nabira-obrysy-vedeni-navrhlo-klicovy-krok-k-prevzeti), [e15](https://www.e15.cz/byznys/prumysl-a-energetika/vlada-vykoupi-minoritni-akcionare-a-ovladne-energeticky-gigant-cez-potvrdil-havlicek-1430978)
-- Polsko: [Notes from Poland](https://notesfrompoland.com/2026/08/04/polands-wig20-stock-market-index-hits-record-high/)
-- Francie: [Trading Economics, francouzské dluhopisy](https://tradingeconomics.com/france/government-bond-yield/news/595005)
-- ECB a Lagardeová: [Il Foglio](https://www.ilfoglio.it/economy/2026/10/29/news/lagarde-bids-farewell-to-the-ecb-ahead-of-schedule-im-leaving-on-7-february--412032), [OMFIF](https://www.omfif.org/2026/04/omfif-survey-finds-three-candidates-level-pegging-to-succeed-lagarde/)
-- Ocenění Evropa vs. USA a banky: [FactSet Earnings Insight, 30. 10. 2026](https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_103026.pdf), [BNP Paribas Wealth Management, bankovní sektor (červenec 2026)](https://wealthmanagement.bnpparibas/content/dam/wmpublicsite/global/pdfs/en/august-2026/20260731%20Equity%20Insights%20-%20Banking%20sector%20EN.pdf), [Reuters přes Investing.com, 20. 10.](https://www.investing.com/news/stock-market-news/europes-earnings-boom-widens-beyond-energy-and-ai-4959045), ECB Zpráva o finanční stabilitě (květen 2026), Trading Economics (ceny bankovních akcií)
-- Výsledková sezona: [Teleborsa / Borsa Italiana, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), Trading Economics (kalendář výsledků Euro Stoxx 50), [Shell, Newsquawk](https://www.newsquawk.com/headlines/shell-shel-ln-q3-2026-usd-adj-profit-1081bln-exp-1023bln-), [Shell, AJ Bell](https://www.ajbell.co.uk/news/articles/shell-raises-share-buyback-quarterly-earnings-beat-expectations), [Volkswagen, Analytics Insight](https://www.analyticsinsight.net/news/volkswagen-q3-operating-loss-hits-euro-59-billion-on-porsche-write-down), [Mercedes-Benz, ad hoc oznámení](https://group.mercedes-benz.com/investors/reports-news/ad-hoc/adhoc-release-453568.html), [Reuters přes Investing.com, 20. 10.](https://www.investing.com/news/stock-market-news/europes-earnings-boom-widens-beyond-energy-and-ai-4959045)
-- Zisky a ocenění Evropy: [Borsa Italiana / Teleborsa, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), [Kitco / Reuters, anketa strategů ze srpna](https://www.kitco.com/news/off-the-wire/2026-08-26/stoxx-600-seen-rising-modestly-year-end-poll-shows)
+- Trading Economics (MCP): indexy, akcie, ropa, kurzy, HDP, inflace, sazby, kalendář výsledků a konsenzy, zprávy 20. 10. až 2. 11. 2026.
+- Sektorová ETF: justETF, profily [EXH1](https://www.justetf.com/en/etf-profile.html?isin=DE000A0H08M3), [EXV3](https://www.justetf.com/en/etf-profile.html?isin=DE000A0H08Q4), [EXV4](https://www.justetf.com/en/etf-profile.html?isin=DE000A0Q4R36), [EXV1](https://www.justetf.com/en/etf-profile.html?isin=DE000A0F5UJ7), [EXH4](https://www.justetf.com/en/etf-profile.html?isin=DE000A0H08J9), [WDEF](https://www.justetf.com/en/etf-profile.html?isin=IE0002Y8CX98), [GLUX](https://www.justetf.com/en/etf-profile.html?isin=LU1681048630), [EXH7](https://www.justetf.com/en/etf-profile.html?isin=DE000A0H08N1), [EXV5](https://www.justetf.com/en/etf-profile.html?isin=DE000A0Q4R28), [EXSA](https://www.justetf.com/en/etf-profile.html?isin=DE0002635307).
+- Ocenění a výsledková sezona: [FactSet Earnings Insight, 30. 10. 2026](https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_103026.pdf), [Teleborsa / Borsa Italiana, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), [Reuters přes Investing.com, 20. 10.](https://www.investing.com/news/stock-market-news/europes-earnings-boom-widens-beyond-energy-and-ai-4959045), [BNP Paribas WM, bankovní sektor](https://wealthmanagement.bnpparibas/content/dam/wmpublicsite/global/pdfs/en/august-2026/20260731%20Equity%20Insights%20-%20Banking%20sector%20EN.pdf).
+- Energie: [Shell, Newsquawk](https://www.newsquawk.com/headlines/shell-shel-ln-q3-2026-usd-adj-profit-1081bln-exp-1023bln-), [Shell, AJ Bell](https://www.ajbell.co.uk/news/articles/shell-raises-share-buyback-quarterly-earnings-beat-expectations), [TotalEnergies, OilPrice](https://oilprice.com/Latest-Energy-News/World-News/TotalEnergies-Profit-Doubles-as-War-Boosts-Refining-and-Trading.html), [OE Digital](https://www.oedigital.com/amp/news/543984-totalenergies-records-third-quarter-profit-jump-of-127), [Business Day](https://www.businessday.co.za/world/international-companies/2026-10-15-refining-margins-quadruples-for-totalenergies-as-lng-income-grows/).
+- Technologie: [ASML, SEC 6-K](https://www.sec.gov/Archives/edgar/data/0000937966/000162828026065813/pressreleasefinancialresul.htm), [StorageNewsletter](https://www.storagenewsletter.com/?p=306155), [SAP, SEC 6-K](https://www.sec.gov/Archives/edgar/data/0001000184/000110465926118617/tm2628113d1_ex99-1.htm).
+- Zdravotnictví: [Bayer, prohlášení k rozsudku](https://www.bayer.com/en/us/news-stories/us-supreme-court-ruling), [News Tribune](https://www.newstribune.com/news/2026/jun/26/supreme-court-scales-back-roundup-cancer-suits-in/).
+- Banky: [Erste, devět měsíců 2026 (stock3)](https://stock3.com/news/pta-news-erste-group-bank-ag-erwirtschaftet-in-den-ersten-drei-quartalen-2026-einen-nettogewinn-von-eur-3-095-mio-17363512), [Erste, výhled (goldesel)](https://goldesel.de/aktien/news/erste-group-bank-aktie-bank-hebt-kredit-und-ertragsziele-nach-starkem-neunmonatsgeschaft-an), [Erste, pololetí (pressetext)](https://www.pressetext.com/news/erste-group-posts-net-profit-of-eur-1-975-million-in-the-first-six-months-of-2026.html).
+- Obrana: [Rheinmetall, Il Sole 24 Ore](https://en.ilsole24ore.com/art/rheinmetall-frankfurt-share-price-falls-f126-frigate-project-halted-pesera-to-take-stock-AIve01zD), [Börse Express](https://www.boerse-express.com/news/articles/rheinmetall-aktie-guidance-2026-gesenkt-cashflow-schwach-945206), [CSG, Seznam Zprávy](https://www.seznamzpravy.cz/clanek/ekonomika-finance-akcie-fondy-akcie-csg-poprve-spadly-pod-cenu-s-kterou-vstoupily-na-burzu-302793).
+- Luxus: [LVMH, Luxury Tribune](https://www.luxurytribune.com/en/lvmh-fashion-and-leather-goods-sales-fall-in-the-third-quarter-of-2026).
+- Automobilky: [Volkswagen, Analytics Insight](https://www.analyticsinsight.net/news/volkswagen-q3-operating-loss-hits-euro-59-billion-on-porsche-write-down), [Mercedes-Benz, ad hoc oznámení](https://group.mercedes-benz.com/investors/reports-news/ad-hoc/adhoc-release-453568.html), [Stellantis, Bloomberg](https://www.bloomberg.com/news/articles/2026-02-06/stellantis-to-take-charges-of-about-22-billion-on-ev-reset).
+- Země: [Polsko, Notes from Poland](https://notesfrompoland.com/2026/08/04/polands-wig20-stock-market-index-hits-record-high/), [Francie, Trading Economics](https://tradingeconomics.com/france/government-bond-yield/news/595005), [ČEZ, oEnergetice](https://oenergetice.cz/akcie/zestatneni-cez-nabira-obrysy-vedeni-navrhlo-klicovy-krok-k-prevzeti).

@@ -64,6 +64,8 @@ Proč je Evropa levnější? Zaprvé kvůli složení. Evropa má hodně bank, e
 
 Riziko je jasné: celý příběh stojí na válce. Kdyby přišla dohoda s Íránem, ropa může rychle zlevnit. Viděli jsme to v dubnu po příměří, kdy za jediný den spadla o 13 procent. A dnes ráno ropa ztrácí skoro 4 procenta, protože se mluví o diplomacii.
 
+Co dál? Pro energetiku rozhoduje ropa a ta teď visí na Íránu. Pokud se po amerických volbách obnoví útoky, ropa se může vrátit k letošnímu maximu kolem 117 dolarů a ropné firmy budou vydělávat dál. Pokud přijde dohoda, může spadnout tam, kde byla v srpnu, kolem 84 dolarů, a zisky se vrátí k normálu. Energetika tak v portfoliu letos fungovala jako protiváha: když drahá ropa bolela zbytek Evropy, ropné firmy na ní vydělávaly.
+
 **TotalEnergies**
 
 **Já:** TotalEnergies je francouzský ropný a plynárenský gigant. Kromě těžby má rafinerie, prodává zkapalněný plyn i elektřinu. Od začátku roku je na plus 54 procentech a je blízko historického maxima. Ve třetím čtvrtletí měl upravený zisk 9,1 miliardy dolarů, o 127 procent víc než před rokem a víc, než čekali analytici. Rafinerie a chemie vydělaly rekordních 3,6 miliardy. Firma vrací akcionářům peníze přes dividendy a zpětné odkupy, na odkupy dává dvě a půl miliardy dolarů za čtvrtletí.
@@ -80,6 +82,8 @@ Druhá strana mince: zisk stojí na válce a válka Totalu zároveň část tě�
 
 Konec října ale ukázal, jak je sektor citlivý na náladu kolem umělé inteligence. Po výsledcích Amazonu a Intelu ASML i Infineon za den ztratily kolem 6 procent. Celý evropský trh to odnesl jen lehce, protože technologií má málo, tenhle sektor ale naplno.
 
+Co dál? Klíčové je, jestli velké americké technologické firmy budou dál stavět datová centra pro umělou inteligenci. Zatím to vypadá, že ano. ASML čeká na čtvrté čtvrtletí o čtvrtinu vyšší tržby a zákazníci plánují nákupy až do roku 2030. Konec října ale ukázal, že stačí jedna zpráva o vyšších investicích bez jasné návratnosti a evropské čipy ztratí za den 6 procent. Je to letos jeden z nejlepších sektorů, ale zároveň jeden z nejrozkolísanějších.
+
 **ASML**
 
 **Já:** ASML je nizozemská firma a jediný výrobce strojů, které kreslí nejmodernější čipy extrémním ultrafialovým světlem. Bez nich nevyrobí nejmodernější čipy ani TSMC, ani Samsung, ani Intel. V říjnu ohlásila rekordní čtvrtletní tržby 11,7 miliardy eur a čistý zisk 5 miliard. Na čtvrté čtvrtletí čeká tržby 14,2 až 15,2 miliardy eur, tedy zhruba o čtvrtinu víc, a výhled na celý rok zvýšila na 44 až 45 miliard. Zákazníci už podle firmy mluví o objednávkách na roky 2029 a 2030 a kapacity na roky 2027 a 2028 poptávku nepokryjí. Jen ve třetím čtvrtletí koupila zpět vlastní akcie za 4,1 miliardy eur.
@@ -93,6 +97,8 @@ Druhá strana mince: polovodiče jsou cyklické odvětví, akcie je po letošní
 **Moderátorka:** „A farmacie? Ta bývá spíš nudná.“
 
 **Já:** Letos ne. ETF na evropské zdravotnictví je od začátku roku na plus 11 procentech a jen za poslední měsíc přidalo skoro 14. Pomohly hlavně výsledky. AstraZeneca překonala odhady a akcie za den vyrostla o 7 procent, Sanofi měl zisk na akcii o 16 procent nad odhadem a Novartis zvýšil výhled. Farmacie je navíc obranný sektor, lidé berou léky bez ohledu na to, kolik stojí ropa nebo co se děje s umělou inteligencí. Podle mě i proto se do ní investoři v nervózním říjnu vraceli. Ne všem se ale daří. Dánský Novo Nordisk, výrobce léků na hubnutí, je letos na minus 18 procentech.
+
+Co dál? Farmacie je zajímavá tím, že nezávisí na ropě ani na umělé inteligenci, takže se do ní investoři mohou schovávat, dokud bude na trzích nejistota. Rizika jsou spíš u jednotlivých firem: tlak americké politiky na nižší ceny léků, konec patentů u velkých léků nebo neúspěšné klinické studie. Proto se tu letos vedle sebe najde AstraZeneca nahoře a Novo Nordisk dole.
 
 **Bayer**
 
@@ -109,6 +115,8 @@ Druhá strana mince: rozsudek řeší jen část žalob, takže spor úplně nek
 **Já:** Letos přešlapují na místě, ale ne proto, že by se jim dařilo špatně. ETF na evropské banky loni vyrostlo o 77 procent, letos je i s dividendami na plus 10 a za poslední měsíc ztratilo 11 procent. Přitom zisky bank dál rostou. Vyšší sazby ECB jim zvedají příjmy z úroků a všechny velké banky eurozóny, které už reportovaly, měly zisk na akcii vyšší než před rokem. Jenže po takovém růstu už trh čeká hodně a stačí malé zklamání. Santander, HSBC nebo britská NatWest ve výsledcích zklamaly a jejich akcie ztratily 5 až 9 procent.
 
 Americké banky na tom letos nejsou lépe. JPMorgan je od začátku roku na plus 5 procentech, Bank of America a Wells Fargo na minus 9 a 10. Liší se hlavně ocenění. Evropské banky stojí zhruba za desetinásobek očekávaných zisků, americké za dvanáct až patnáct. Evropská centrální banka sama píše, že rozdíl je hlavně kvůli slabší evropské ekonomice, ne kvůli bankám samotným. Riziko vidím v tom, že kdyby drahá energie zpomalila ekonomiku víc, firmy a domácnosti začnou hůř splácet úvěry.
+
+Co dál? Bankám nahrává, že ECB podle trhu v prosinci pravděpodobně zvedne sazby potřetí, a to jim zvedne příjmy z úroků. Na druhé straně stojí úvěrová rizika, pokud by ekonomika kvůli energiím zpomalila víc, a Francie, kde vyšší úroky ze státních dluhopisů tlačí na tamní banky. Po loňském skoku už banky nejsou výprodej, ale proti americkým jsou pořád zhruba o pětinu až třetinu levnější.
 
 **Erste Group**
 
@@ -127,6 +135,8 @@ Druhá strana mince: Erste vydělává na vyšších sazbách ve střední Evrop
 **Moderátorka:** „Zbrojaři byli loni hitem. Co letos?“
 
 **Já:** Letos se z nich stal sektor dvou rychlostí. ETF na evropskou obranu je od začátku roku jen na plus 7 procentech a za poslední rok skoro na nule. Uvnitř jsou ale velké rozdíly. Švédský Saab, který vyrábí stíhačky Gripen a protivzdušnou obranu, je na plus 26 procentech. Německý Rheinmetall, který dělá hlavně munici a obrněná vozidla, na minus 33. Investoři letos přesouvají peníze od klasické pozemní techniky k dronům a protivzdušné obraně. A hlavně: výdaje na obranu rostou, jak se čekalo, jenže akcie to měly v ceně už loni.
+
+Co dál? Peníze na obranu v Evropě poputují ještě roky, členové NATO se loni dohodli, že na obranu budou dávat výrazně víc než dosud. Otázka tedy není, jestli zbrojaři budou mít zakázky, ale kolik z toho už je v ceně akcií a kdo na tom vydělá nejvíc. Trh teď sází na drony, protivzdušnou obranu a letectví. A pozor na Ukrajinu: případné příměří by sektoru krátkodobě mohlo ublížit, i když výdaje na obranu by pokračovaly.
 
 **Rheinmetall**
 
@@ -148,6 +158,8 @@ Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 mil
 
 Výjimky ale jsou. L'Oréal je letos na plus 19 procentech a po výsledcích nad odhady za měsíc přidal 17 procent. Kosmetika si za těžších časů vede líp než kabelky za desítky tisíc.
 
+Co dál? Všechno teď visí na Číně. Až se čínský zákazník vrátí, luxusní značky mohou rychle růst, protože mají vysoké marže a silné značky, za které lidé zaplatí. Zatím to ale v číslech nevidím, ve třetím čtvrtletí Asie dál klesala. Do té doby bude podle mě luxus spíš čekárnou než tahounem a vyhrávat budou dostupnější segmenty, jako kosmetika.
+
 **LVMH**
 
 **Já:** LVMH je největší luxusní skupina na světě: Louis Vuitton, Dior, Moët & Chandon, Hennessy, Tiffany nebo Sephora. Ve třetím čtvrtletí měla tržby 18,5 miliardy eur, organicky o 1 procento víc než loni, ale pod odhadem. Móda a kožené zboží, na kterých vydělává nejvíc, klesly o 5 procent, hlavně kvůli Asii. Situaci zachránila Sephora s růstem o 8 procent. Akcie je od začátku roku na minus 40 procentech a od našeho dubnového rozhovoru ztratila dalších 18.
@@ -161,6 +173,8 @@ Druhá strana mince: luxus prochází cyklickým útlumem, ne zánikem. Když se
 **Moderátorka:** „A automobilky? Ty jsou pro Česko hodně důležité.“
 
 **Já:** Automobilky jsou letos největší poražený mezi evropskými sektory. ETF na evropská auta je od začátku roku na minus 17 procentech, a to ho drží nad vodou Ferrari, které tvoří čtvrtinu fondu a roste. Velká jména jsou na tom hůř: Stellantis, tedy Peugeot, Citroën, Fiat nebo Opel, je na minus 56 procentech, BMW na minus 38, Volkswagen na minus 33 a Mercedes na minus 32. Důvody jsou tři: čínská konkurence, která evropským značkám bere zákazníky hlavně v Číně, americká cla a drahý přechod na elektromobily. Stellantis z něj v únoru couvl s odpisy kolem 22 miliard eur. Výsledky za třetí čtvrtletí to jen potvrdily, Mercedes snížil výhled marže a Volkswagen vykázal obří ztrátu.
+
+Co dál? Krátkodobě moc světla nevidím. Automobilky letos škrtají náklady, odepisují investice a snižují výhledy a čínská konkurence nikam nezmizí. Pomoct by mohla levnější energie, kdyby přišla dohoda s Íránem, nebo úleva od amerických cel. Akcie jsou ale po pádu levné, takže stačí pár dobrých zpráv a mohou se odrazit. Hned ve středu ukáže výsledky BMW.
 
 **Volkswagen**
 

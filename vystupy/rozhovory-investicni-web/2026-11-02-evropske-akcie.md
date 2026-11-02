@@ -29,6 +29,8 @@
 
 **Makro:** ropa Brent z 60,85 na 113,43 USD za barel (+86 %, 22. 4. stála 101,91 USD), EUR/USD z 1,174 na 1,116 (−5,0 %, nejslabší euro od května 2025), HDP eurozóny ve 3Q +0,4 % mezičtvrtletně a +1,3 % meziročně, USA +3,4 % anualizovaně, inflace eurozóny v září 3,8 %, depozitní sazba ECB 2,50 % (letos dvakrát nahoru), Fed 3,75 až 4,00 % (v září nahoru).
 
+**Výsledková sezona 3Q** (LSEG k 29. 10., Stoxx 600): reportovalo 144 firem, odhady překonalo 54,2 % (průměr 54 %), růst zisků +23,6 %, bez energetiky +9,8 %, výhled na 4Q +38,8 %. Tento týden Bayer (3. 11.), BMW (4. 11.), Rheinmetall (5. 11.).
+
 **Vítězové a poražení** (ceny v EUR, závěr 30. 10.):
 
 | Akcie | od začátku roku | od 22. 4. | cena |
@@ -145,7 +147,60 @@ Pražský index ještě v září pokořil rekord, od té doby ztratil asi 7 pro
 
 ---
 
-## 5. Co se stalo s dubnovými vítězi a poraženými
+## 5. Výsledková sezona za třetí čtvrtletí: co už víme a co čeká čtvrté
+
+**Moderátorka se pravděpodobně zeptá:** „Teď běží výsledková sezona. Jak zatím evropské firmy dopadají a co čekat na konci roku?“
+
+**Odpověď:**
+Zatím solidně, ale bez ohňostroje. Z firem v evropském indexu Stoxx 600 už výsledky zveřejnila zhruba čtvrtina a odhady zisku překonalo 54 procent z nich, což je přesně dlouhodobý průměr. Zisky celého indexu by ve třetím čtvrtletí měly vyrůst meziročně skoro o 24 procent. To zní skvěle, ale většinu udělala energetika, které se díky drahé ropě zisky víc než zdvojnásobily. Bez energetiky je to kolem 10 procent, pořád slušný růst.
+
+Kdo zatím vyhrál? Ropné firmy. Shell měl upravený zisk 10,8 miliardy dolarů, zhruba dvakrát víc než loni, a zvýšil zpětný odkup akcií na 5 miliard. TotalEnergies i Eni byly výrazně nad odhady. Dál farmacie: Sanofi a AstraZeneca překonaly odhady a Novartis zvýšil výhled. Z technologií ASML s rekordními tržbami a SAP, který odhady také překonal. A příjemné překvapení je Adidas s rekordním ziskem a vyšším výhledem na celý rok.
+
+Kdo zklamal? Automobilky. Volkswagen měl provozní ztrátu skoro 6 miliard eur, analytici čekali kolem 2,6 miliardy, hlavně kvůli odpisu v Porsche. Mercedes kvůli Číně snížil výhled marže. Luxus: LVMH, Hermès i Kering měly tržby pod odhady. A část bank, třeba HSBC, Santander nebo britská NatWest, akcie po výsledcích ztratily 5 až 9 procent.
+
+Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují, a evropské akcie se přitom obchodují zhruba za 14násobek očekávaných zisků, pod desetiletým průměrem.
+
+**Čísla do ruky** (LSEG I/B/E/S k 29. 10. 2026, Stoxx 600):
+- Výsledky zveřejnilo 144 firem. Odhady zisku překonalo 54,2 % (průměr od roku 2012 je 54 %), v souhrnu byly zisky o 5 % nad odhady (dlouhodobý průměr 5,9 %). Tržby nad odhady mělo 61,1 % ze 180 firem.
+- Očekávaný růst zisků ve 3Q: +23,6 % (o týden dřív 21,9 %), bez energetiky +9,8 %. Energetika +139 % (33,6 mld. EUR proti 14,1 mld. EUR). Tržby +13,6 %, bez energetiky +6,2 %.
+- Sektory ve 3Q: suroviny +37,9 %, technologie +35,5 %, průmysl +7,4 %, cyklická spotřeba −1,3 %. Země: Francie +29,9 %, Itálie +15 %, Německo −3,4 %.
+- Výhled: 4Q 2026 +38,8 %, celý rok 2026 +21,3 %, 1Q 2027 +14,5 %, 2Q 2027 −4,4 %, 3Q 2027 +6,7 %.
+- Revize odhadů za týden do 29. 10.: 1 502, z toho 54 % nahoru. Poměr ceny k zisku na 12 měsíců dopředu 13,8 (desetiletý průměr 14,2).
+
+**Jednotlivé firmy** (zisk na akcii a tržby proti konsenzu podle Trading Economics, pokud není uvedeno jinak):
+
+| Firma | Den | Výsledek proti odhadu | Výhled a reakce akcií |
+|---|---|---|---|
+| ASML | 14. 10. | tržby 11,66 mld. EUR (rekord), čistý zisk 5,0 mld. EUR | 4Q tržby 14,2 až 15,2 mld. EUR, rok 2026 zvýšen na 44 až 45 mld. EUR |
+| SAP | 21. 10. | tržby 10,27 mld. EUR (odhad 10,07), zisk na akcii 1,89 EUR (1,81) | cloud k horní hranici výhledu |
+| Nokia | 22. 10. | zisk na akcii 0,09 EUR (0,07), tržby 5,15 mld. EUR (5,11) | |
+| LVMH | 12. 10. | tržby 18,50 mld. EUR (odhad 18,81), móda a kožené zboží −5 % | |
+| Hermès / Kering | 22. 10. | tržby 4,09 (4,17) / 3,35 (3,47) mld. EUR | |
+| L'Oréal | 22. 10. | tržby 11,56 mld. EUR (11,06) | akcie za měsíc +17,5 % |
+| Eni | 23. 10. | zisk na akcii 0,95 EUR (0,61) | |
+| Mercedes-Benz | 27. a 28. 10. | provozní zisk skupiny 1,77 mld. EUR (asi 1,6) | výhled marže aut snížen na 2 až 3 % (z 3 až 5 %), akcie −4,2 % |
+| Deutsche Bank / BNP / SocGen | 28. a 29. 10. | 0,94 (0,89) / 2,91 (2,93) / 2,35 (2,03) EUR na akcii | Deutsche Bank +4 % |
+| Santander / BBVA / HSBC | 27. až 29. 10. | Santander 0,25 (0,26), BBVA nižší zisk doma, HSBC pod odhady | −5,5 % / −2,7 % / −5,4 % |
+| BASF | 28. 10. | zisk na akcii 0,72 EUR (0,41) | |
+| Shell | 29. 10. | upravený zisk 10,81 mld. USD (asi 10,3) | zpětný odkup 5 mld. USD (dosud 3 mld.) |
+| TotalEnergies | 29. 10. | upravený čistý zisk 9,1 mld. USD (8,3), +127 % | odkup 2,5 mld. USD ve 4Q i v 1Q 2027 |
+| Volkswagen | 29. 10. | provozní ztráta 5,9 mld. EUR (čekalo se asi −2,6 mld.), odpis v Porsche | výhled marže do 1 % potvrzen |
+| Adidas | 29. 10. | zisk na akcii 4,06 EUR (3,34), tržby 7,25 mld. EUR (6,99) | výhled zvýšen, akcie +5,8 % |
+| Sanofi | 30. 10. | zisk na akcii 3,55 EUR (3,06), tržby 14,44 mld. EUR (13,85) | akcie +4,7 % |
+| AstraZeneca | 30. 10. | nad odhady | akcie +7 % |
+| NatWest | 30. 10. | bez zvýšení výhledu | akcie −9 % |
+
+**Tento týden:** 3. 11. Bayer (konsenzus: tržby 9,86 mld. EUR, zisk na akcii 0,55 EUR), 4. 11. BMW (tržby 31,68 mld. EUR), 5. 11. Rheinmetall (tržby 3,19 mld. EUR proti 2,78 mld. loni, zisk na akcii 6,99 EUR), Deutsche Telekom, DHL. 12. 11. Siemens, Allianz, Munich Re.
+
+**Kdyby se doptala:** „Na které výsledky se tento týden dívat?“
+Hned zítra reportuje Bayer a ve čtvrtek Rheinmetall, tedy jeden náš vítěz a jeden poražený. U Bayeru se čekají tržby kolem 9,9 miliardy eur, u Rheinmetallu kolem 3,2 miliardy, o 15 procent víc než loni. U Rheinmetallu bude klíčové, jestli potvrdí snížený výhled na letošek a jestli se zlepší peníze, které firmě skutečně přitékají. Ve středu přijde BMW, po Volkswagenu a Mercedesu další test automobilek.
+
+**Kdyby se doptala:** „Proč analytici čekají, že zisky v polovině příštího roku klesnou?“
+Opět kvůli ropě. Ve druhém čtvrtletí příštího roku se zisky budou srovnávat s letošním jarem, kdy válka vyhnala ropu přes sto dolarů. Pokud ropa zlevní, energetikům zisky meziročně spadnou a stáhnou dolů celý index. Analytici proto pro 2Q 2027 čekají pokles zisků Stoxx 600 o 4 procenta. Pro zbytek trhu to žádný varovný signál není.
+
+---
+
+## 6. Co se stalo s dubnovými vítězi a poraženými
 
 **Moderátorka se pravděpodobně zeptá:** „Minule jste jako vítěze vybral ASML a jako poražené SAP a LVMH. Jak dopadli?“
 
@@ -167,7 +222,7 @@ Celého sektoru. Hermès je letos na minus 39 procentech a Kering, majitel Gucci
 
 ---
 
-## 6. Vítězové letoška: TotalEnergies a Bayer
+## 7. Vítězové letoška: TotalEnergies a Bayer
 
 **Moderátorka se pravděpodobně zeptá:** „Kdo jsou letošní vítězové mezi evropskými akciemi?“
 
@@ -198,13 +253,14 @@ Druhá strana mince: rozsudek řeší jen část žalob, takže spor úplně nek
 - Cena 37,01 EUR (31. 12.), 40,24 EUR (22. 4.), 50,58 EUR (30. 10.).
 - Leden 2026: soud přijal případ k projednání, akcie +6,4 %. 25. 6. 2026: rozsudek Monsanto v. Durnell 7 : 2 ve prospěch Bayeru, akcie +16 až 19 % (zdroje se liší).
 - Rezervy na spory kolem glyfosátu 7,6 mld. USD (k 30. 9. 2025, ověřit aktuální stav).
+- Výsledky za 3Q zveřejní 3. 11. před otevřením burzy, konsenzus tržeb 9,86 mld. EUR. Natáčíš den předtím.
 
 **Kdyby se doptala:** „Proč ne ASML, když roste nejvíc?“
 ASML jsme měli jako vítěze minule, a tak jsem chtěl ukázat jiné příběhy. Mezi dalšími letošními vítězi jsou Repsol s plus 93 procenty, Eni s plus 68, Deutsche Börse s plus 43 nebo Nokia s plus 39 procenty.
 
 ---
 
-## 7. Poražení letoška: Stellantis a Rheinmetall
+## 8. Poražení letoška: Stellantis a Rheinmetall
 
 **Moderátorka se pravděpodobně zeptá:** „A kdo letos naopak nejvíc ztrácí?“
 
@@ -235,6 +291,7 @@ Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 mil
 - Cena 1 561 EUR (31. 12.), 1 420,20 EUR (22. 4.), 1 040,20 EUR (30. 10.).
 - Březen 2026: výhled na rok 2026 pod očekáváním. Červen: zrušení programu fregat F126, akcie −16 % za den. Srpen: výhled tržeb snížen na 13,7 až 14,2 mld. EUR (z 14,0 až 14,5 mld. EUR).
 - Zakázky k 31. 12. 2025: rekordních 63,8 mld. EUR (+16,9 mld. EUR za rok).
+- Výsledky za 3Q zveřejní 5. 11., konsenzus tržeb 3,19 mld. EUR (loni 2,78 mld. EUR), zisku na akcii 6,99 EUR.
 - Jiní zbrojaři od začátku roku: Saab +25,6 %, Leonardo +5,3 %, Thales +2,6 %. Vyhrávají spíš výrobci letadel a protivzdušné obrany.
 
 **Kdyby se doptala:** „A co česká CSG?“
@@ -242,37 +299,37 @@ CSG vstoupila na burzu v Amsterdamu v lednu za 25 eur za akcii a první den vysk
 
 ---
 
-## 8. Další okruhy, kdyby zbyl čas
+## 9. Další okruhy, kdyby zbyl čas
 
-### 8.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
+### 9.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
 
 **Moderátorka se pravděpodobně zeptá:** „Ropa je zase kolem 110 dolarů. Co bude dál?“
 
 **Odpověď:**
 Rozhodující může být už tento týden. V úterý 3. listopadu jsou v Americe volby do Kongresu a prezident Trump opakovaně naznačil, že po nich může obnovit útoky na Írán. Zároveň běží jednání přes Katar, Pákistán nebo Saúdskou Arábii. Ropa Brent v říjnu zdražila o víc než 15 procent a 23. října byla nejdráž od roku 2022. Pro evropské akcie to má jasnou logiku. Dražší ropa znamená vyšší inflaci, vyšší sazby a slabší spotřebu, pomáhá jen energetickým firmám. Dohoda by naopak Evropě ulevila nejvíc ze všech. Viděli jsme to v dubnu po příměří i v létě, kdy evropské indexy vylezly na rekordy. Evropa se zatím brání tím, že během tří měsíců uvolní 42 milionů barelů ze strategických zásob.
 
-### 8.2 ECB zvedá sazby a Lagardeová odchází
+### 9.2 ECB zvedá sazby a Lagardeová odchází
 
 **Moderátorka se pravděpodobně zeptá:** „ECB letos sazby zvedá. Co to znamená a co odchod Christine Lagardeové?“
 
 **Odpověď:**
 ECB je v nepříjemné situaci. Inflace je kvůli energiím skoro dvakrát nad cílem a ekonomika přitom roste pomalu. Letos proto dvakrát zvedla sazby, depozitní sazba je na 2,5 procenta a trh čeká další zvýšení v prosinci. Pro akcie to znamená dvě věci. Bankám vyšší sazby pomáhají, firmám s dluhy a domácnostem s hypotékou škodí. Navíc Christine Lagardeová oznámila, že z čela ECB odejde už 7. února, zhruba o devět měsíců dřív. Nejčastěji se mluví o Nizozemci Klaasi Knotovi, Španělovi Pablu Hernándezi de Cosovi, Němce Isabel Schnabelové a šéfovi Bundesbanky Joachimu Nagelovi. Kdo to bude, rozhodne i o tom, jak tvrdě bude ECB s inflací bojovat.
 
-### 8.3 Francie jako nová slabina eurozóny
+### 9.3 Francie jako nová slabina eurozóny
 
 **Moderátorka se pravděpodobně zeptá:** „Proč se teď tolik mluví o Francii?“
 
 **Odpověď:**
 Francie je druhá největší ekonomika eurozóny a má problém s dluhem i s politikou. Parlament je roztříštěný, spor o rozpočet na příští rok se táhne od září a v říjnu se přidaly sociální nepokoje. Investoři proto po Francii chtějí za půjčku víc. Výnos desetiletých dluhopisů se dostal nad 5 procent, nejvýš od roku 2002. Ekonomika ve třetím čtvrtletí klesla o 0,1 procenta a index CAC 40 je letos v minusu. Pro celou eurozónu je to riziko, protože to oslabuje euro a zdražuje půjčky i jiným státům. Lagardeová minulý týden řekla, že ECB má nástroje, kdyby se trhy chovaly neodůvodněně.
 
-### 8.4 Co z toho plyne pro českého investora
+### 9.4 Co z toho plyne pro českého investora
 
 **Moderátorka se pravděpodobně zeptá:** „Je Evropa teď levná? A co z toho plyne pro české investory?“
 
 **Odpověď:**
-Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. V srpnu se Stoxx 600 obchodoval zhruba za 14,6násobek zisků, které se čekají na příštích dvanáct měsíců, asi o čtvrtinu levněji než americké akcie. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. Zisky evropských firem letos rostou slušně. Ve třetím čtvrtletí čekají analytici u Stoxx 600 růst kolem 24 procent, i bez energetiky skoro 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
+Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které se čekají na příštích dvanáct měsíců, pod svým desetiletým průměrem. V srpnu to bylo asi o čtvrtinu méně než u amerických akcií. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. A zisky evropských firem letos rostou, i bez energetiky zhruba o 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
 
-### 8.5 Výprodej technologií na konci října
+### 9.5 Výprodej technologií na konci října
 
 **Moderátorka se pravděpodobně zeptá:** „Minulý týden padaly technologické akcie. Dotkne se to Evropy?“
 
@@ -285,7 +342,7 @@ Méně než Ameriky, a je to přesně ten argument z dubna, jen obráceně. Po v
 
 ---
 
-## 9. Závěr: na co se dívat do konce roku
+## 10. Závěr: na co se dívat do konce roku
 
 **Moderátorka se pravděpodobně zeptá:** „Co bude pro evropské akcie do konce roku rozhodující?“
 
@@ -295,7 +352,7 @@ Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. 
 **Kalendář:**
 - 3. 11.: volby do Kongresu USA, pak možné rozhodnutí o Íránu.
 - Začátek listopadu: rychlý odhad inflace eurozóny za říjen [OVĚŘIT datum].
-- Listopad: výsledky Rheinmetallu a dalších firem za 3Q [OVĚŘIT data].
+- 3. 11. Bayer, 4. 11. BMW, 5. 11. Rheinmetall, Deutsche Telekom a DHL, 12. 11. Siemens a Allianz: výsledky za 3Q (data podle Trading Economics).
 - Prosinec: zasedání ECB a Fedu [OVĚŘIT data].
 - Francie: hlasování o rozpočtu na rok 2027.
 - 7. 2. 2027: odchod Christine Lagardeové z ECB.
@@ -318,13 +375,14 @@ Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. 
 - TotalEnergies: upravený zisk 9,1 mld. USD ověřit v tiskové zprávě (jeden zdroj uvádí vykázaný zisk 7,5 mld. EUR).
 - SAP: čísla za 3Q v tiskové zprávě. LVMH: pokles módy a kožené zboží −5 % organicky.
 - Bayer: přesná velikost skoku 25. 6. (zdroje uvádějí 16 až 19 %), aktuální rezervy na spory a cena akcie před koupí Monsanta.
-- Rheinmetall: odstup od rekordu, datum výsledků za 3Q, co přesně se v červnu stalo s programem F126 (zastavení, nebo přesun zakázky k TKMS).
+- Rheinmetall: odstup od rekordu, výsledky 5. 11. (podle TE), co přesně se v červnu stalo s programem F126 (zastavení, nebo přesun zakázky k TKMS).
 - Stellantis: zda už vyšly výsledky za 3Q a jak na ně akcie reagovala.
 - CSG: aktuální cena proti upisovací ceně 25 EUR.
 - ČEZ, Komerční banka, Erste: vývoj od začátku roku a od září (proč PX zaostává).
 - Maďarsko: co stálo za jarním skokem BUX (jarní volby?). Bez ověření důvod neuváděj.
 - Inflace eurozóny za říjen (pokud vyjde před natáčením) a data prosincových zasedání ECB a Fedu.
 - Meziroční růst HDP USA za 3Q u BEA (náš propočet zhruba 2,1 %).
+- Výsledková sezona: konsenzus u ASML (zdroje se rozcházejí, zda tržby byly nad, nebo těsně pod odhadem; TE uvádí odhad 10,33 mld. EUR, který se zdá zastaralý), reakce akcií LVMH, Hermès a Kering v den výsledků, výsledky Stellantisu za 3Q. Nový souhrn LSEG I/B/E/S vychází obvykle v úterý.
 
 ## Poznámky k podkladům
 
@@ -352,4 +410,5 @@ Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. 
 - Polsko: [Notes from Poland](https://notesfrompoland.com/2026/08/04/polands-wig20-stock-market-index-hits-record-high/)
 - Francie: [Trading Economics, francouzské dluhopisy](https://tradingeconomics.com/france/government-bond-yield/news/595005)
 - ECB a Lagardeová: [Il Foglio](https://www.ilfoglio.it/economy/2026/10/29/news/lagarde-bids-farewell-to-the-ecb-ahead-of-schedule-im-leaving-on-7-february--412032), [OMFIF](https://www.omfif.org/2026/04/omfif-survey-finds-three-candidates-level-pegging-to-succeed-lagarde/)
+- Výsledková sezona: [Teleborsa / Borsa Italiana, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), Trading Economics (kalendář výsledků Euro Stoxx 50), [Shell, Newsquawk](https://www.newsquawk.com/headlines/shell-shel-ln-q3-2026-usd-adj-profit-1081bln-exp-1023bln-), [Shell, AJ Bell](https://www.ajbell.co.uk/news/articles/shell-raises-share-buyback-quarterly-earnings-beat-expectations), [Volkswagen, Analytics Insight](https://www.analyticsinsight.net/news/volkswagen-q3-operating-loss-hits-euro-59-billion-on-porsche-write-down), [Mercedes-Benz, ad hoc oznámení](https://group.mercedes-benz.com/investors/reports-news/ad-hoc/adhoc-release-453568.html), [Reuters přes Investing.com, 20. 10.](https://www.investing.com/news/stock-market-news/europes-earnings-boom-widens-beyond-energy-and-ai-4959045)
 - Zisky a ocenění Evropy: [Borsa Italiana / Teleborsa, LSEG I/B/E/S k 29. 10.](https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/stoxx-600-utili-attesi-in-crescita-del-236-nel-terzo-trimestre-al-98-senza-l-energia-269_2026-10-30_TLB.html?lang=it), [Kitco / Reuters, anketa strategů ze srpna](https://www.kitco.com/news/off-the-wire/2026-08-26/stoxx-600-seen-rising-modestly-year-end-poll-shows)

@@ -70,7 +70,29 @@ Pořád platí, co jsme si říkali minule: o výsledku rozhoduje složení inde
 
 ---
 
-## 5. Co se stalo s dubnovými vítězi a poraženými
+## 5. Výsledková sezona za třetí čtvrtletí: co už víme a co čeká čtvrté
+
+**Moderátorka:** „Teď běží výsledková sezona. Jak zatím evropské firmy dopadají a co čekat na konci roku?“
+
+**Já:** Zatím solidně, ale bez ohňostroje. Z firem v evropském indexu Stoxx 600 už výsledky zveřejnila zhruba čtvrtina a odhady zisku překonalo 54 procent z nich, což je přesně dlouhodobý průměr. Zisky celého indexu by ve třetím čtvrtletí měly vyrůst meziročně skoro o 24 procent. To zní skvěle, ale většinu udělala energetika, které se díky drahé ropě zisky víc než zdvojnásobily. Bez energetiky je to kolem 10 procent, pořád slušný růst.
+
+Kdo zatím vyhrál? Ropné firmy. Shell měl upravený zisk 10,8 miliardy dolarů, zhruba dvakrát víc než loni, a zvýšil zpětný odkup akcií na 5 miliard. TotalEnergies i Eni byly výrazně nad odhady. Dál farmacie: Sanofi a AstraZeneca překonaly odhady a Novartis zvýšil výhled. Z technologií ASML s rekordními tržbami a SAP, který odhady také překonal. A příjemné překvapení je Adidas s rekordním ziskem a vyšším výhledem na celý rok.
+
+Kdo zklamal? Automobilky. Volkswagen měl provozní ztrátu skoro 6 miliard eur, analytici čekali kolem 2,6 miliardy, hlavně kvůli odpisu v Porsche. Mercedes kvůli Číně snížil výhled marže. Luxus: LVMH, Hermès i Kering měly tržby pod odhady. A část bank, třeba HSBC, Santander nebo britská NatWest, akcie po výsledcích ztratily 5 až 9 procent.
+
+Na čtvrté čtvrtletí čekají analytici růst zisků Stoxx 600 skoro o 39 procent. Je to ale hlavně efekt srovnání, loni v posledním čtvrtletí stála ropa zhruba 60 až 65 dolarů, letos přes sto. Pro mě je důležitější, že analytici víc odhadů zvedají, než snižují, a evropské akcie se přitom obchodují zhruba za 14násobek očekávaných zisků, pod desetiletým průměrem.
+
+*Kdyby se doptala:* „Na které výsledky se tento týden dívat?“
+
+**Já:** Hned zítra reportuje Bayer a ve čtvrtek Rheinmetall, tedy jeden náš vítěz a jeden poražený. U Bayeru se čekají tržby kolem 9,9 miliardy eur, u Rheinmetallu kolem 3,2 miliardy, o 15 procent víc než loni. U Rheinmetallu bude klíčové, jestli potvrdí snížený výhled na letošek a jestli se zlepší peníze, které firmě skutečně přitékají. Ve středu přijde BMW, po Volkswagenu a Mercedesu další test automobilek.
+
+*Kdyby se doptala:* „Proč analytici čekají, že zisky v polovině příštího roku klesnou?“
+
+**Já:** Opět kvůli ropě. Ve druhém čtvrtletí příštího roku se zisky budou srovnávat s letošním jarem, kdy válka vyhnala ropu přes sto dolarů. Pokud ropa zlevní, energetikům zisky meziročně spadnou a stáhnou dolů celý index. Analytici proto pro 2Q 2027 čekají pokles zisků Stoxx 600 o 4 procenta. Pro zbytek trhu to žádný varovný signál není.
+
+---
+
+## 6. Co se stalo s dubnovými vítězi a poraženými
 
 **Moderátorka:** „Minule jste jako vítěze vybral ASML a jako poražené SAP a LVMH. Jak dopadli?“
 
@@ -86,7 +108,7 @@ LVMH naopak spadl ještě hlouběji, z minus 26 na minus 40 procent. Móda a ko�
 
 ---
 
-## 6. Vítězové letoška: TotalEnergies a Bayer
+## 7. Vítězové letoška: TotalEnergies a Bayer
 
 **Moderátorka:** „Kdo jsou letošní vítězové mezi evropskými akciemi?“
 
@@ -110,7 +132,7 @@ Druhá strana mince: rozsudek řeší jen část žalob, takže spor úplně nek
 
 ---
 
-## 7. Poražení letoška: Stellantis a Rheinmetall
+## 8. Poražení letoška: Stellantis a Rheinmetall
 
 **Moderátorka:** „A kdo letos naopak nejvíc ztrácí?“
 
@@ -136,33 +158,33 @@ Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 mil
 
 ---
 
-## 8. Další okruhy, kdyby zbyl čas
+## 9. Další okruhy, kdyby zbyl čas
 
-### 8.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
+### 9.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
 
 **Moderátorka:** „Ropa je zase kolem 110 dolarů. Co bude dál?“
 
 **Já:** Rozhodující může být už tento týden. V úterý 3. listopadu jsou v Americe volby do Kongresu a prezident Trump opakovaně naznačil, že po nich může obnovit útoky na Írán. Zároveň běží jednání přes Katar, Pákistán nebo Saúdskou Arábii. Ropa Brent v říjnu zdražila o víc než 15 procent a 23. října byla nejdráž od roku 2022. Pro evropské akcie to má jasnou logiku. Dražší ropa znamená vyšší inflaci, vyšší sazby a slabší spotřebu, pomáhá jen energetickým firmám. Dohoda by naopak Evropě ulevila nejvíc ze všech. Viděli jsme to v dubnu po příměří i v létě, kdy evropské indexy vylezly na rekordy. Evropa se zatím brání tím, že během tří měsíců uvolní 42 milionů barelů ze strategických zásob.
 
-### 8.2 ECB zvedá sazby a Lagardeová odchází
+### 9.2 ECB zvedá sazby a Lagardeová odchází
 
 **Moderátorka:** „ECB letos sazby zvedá. Co to znamená a co odchod Christine Lagardeové?“
 
 **Já:** ECB je v nepříjemné situaci. Inflace je kvůli energiím skoro dvakrát nad cílem a ekonomika přitom roste pomalu. Letos proto dvakrát zvedla sazby, depozitní sazba je na 2,5 procenta a trh čeká další zvýšení v prosinci. Pro akcie to znamená dvě věci. Bankám vyšší sazby pomáhají, firmám s dluhy a domácnostem s hypotékou škodí. Navíc Christine Lagardeová oznámila, že z čela ECB odejde už 7. února, zhruba o devět měsíců dřív. Nejčastěji se mluví o Nizozemci Klaasi Knotovi, Španělovi Pablu Hernándezi de Cosovi, Němce Isabel Schnabelové a šéfovi Bundesbanky Joachimu Nagelovi. Kdo to bude, rozhodne i o tom, jak tvrdě bude ECB s inflací bojovat.
 
-### 8.3 Francie jako nová slabina eurozóny
+### 9.3 Francie jako nová slabina eurozóny
 
 **Moderátorka:** „Proč se teď tolik mluví o Francii?“
 
 **Já:** Francie je druhá největší ekonomika eurozóny a má problém s dluhem i s politikou. Parlament je roztříštěný, spor o rozpočet na příští rok se táhne od září a v říjnu se přidaly sociální nepokoje. Investoři proto po Francii chtějí za půjčku víc. Výnos desetiletých dluhopisů se dostal nad 5 procent, nejvýš od roku 2002. Ekonomika ve třetím čtvrtletí klesla o 0,1 procenta a index CAC 40 je letos v minusu. Pro celou eurozónu je to riziko, protože to oslabuje euro a zdražuje půjčky i jiným státům. Lagardeová minulý týden řekla, že ECB má nástroje, kdyby se trhy chovaly neodůvodněně.
 
-### 8.4 Co z toho plyne pro českého investora
+### 9.4 Co z toho plyne pro českého investora
 
 **Moderátorka:** „Je Evropa teď levná? A co z toho plyne pro české investory?“
 
-**Já:** Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. V srpnu se Stoxx 600 obchodoval zhruba za 14,6násobek zisků, které se čekají na příštích dvanáct měsíců, asi o čtvrtinu levněji než americké akcie. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. Zisky evropských firem letos rostou slušně. Ve třetím čtvrtletí čekají analytici u Stoxx 600 růst kolem 24 procent, i bez energetiky skoro 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
+**Já:** Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. Stoxx 600 se teď obchoduje zhruba za 13,8násobek zisků, které se čekají na příštích dvanáct měsíců, pod svým desetiletým průměrem. V srpnu to bylo asi o čtvrtinu méně než u amerických akcií. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. A zisky evropských firem letos rostou, i bez energetiky zhruba o 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
 
-### 8.5 Výprodej technologií na konci října
+### 9.5 Výprodej technologií na konci října
 
 **Moderátorka:** „Minulý týden padaly technologické akcie. Dotkne se to Evropy?“
 
@@ -170,7 +192,7 @@ Druhá strana mince: zakázky má firma rekordní, na konci loňska přes 63 mil
 
 ---
 
-## 9. Závěr: na co se dívat do konce roku
+## 10. Závěr: na co se dívat do konce roku
 
 **Moderátorka:** „Co bude pro evropské akcie do konce roku rozhodující?“
 

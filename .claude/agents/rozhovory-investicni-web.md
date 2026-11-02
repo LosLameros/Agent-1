@@ -48,12 +48,13 @@ Pořadí okruhů je vodítko, autor ho může změnit. Moderátorka může kdyko
 2. **Úvodní navázání „Když jsme se tu naposled bavili…“:** kde byl trh minule (čísla a hlavní příběh z minulého scénáře), co se od té doby stalo (2 až 3 zlomové události) a kde je trh dnes. Musí to znít jako pokračování seriálu, ne jako nové téma.
 3. **Hlavní téma minulého rozhovoru, jak se vyvíjelo od té doby** (povinný okruh). Pokud minulý rozhovor stál na konkrétní události (v dubnu 2026 válka s Íránem a krize na Blízkém východě), věnuj jí samostatný okruh: kde byl trh před událostí, propad, zlomové dny (např. příměří) s pohyby indexů a ropy za den, celkový vývoj od začátku události v Evropě vs. USA (i v eurech), dopad na ekonomiku, kdo vydělal a kdo prodělal, co bude dál.
 4. **Jak si vede ekonomika a proč** (u Evropy vždy srovnání s USA): růst HDP, inflace, sazby centrálních bank, nálada firem a spotřebitelů, měna. Příčiny, ne jen čísla.
-5. **Jak se dařilo indexům:** tabulka od začátku roku a od minulého rozhovoru, kdo rostl a kdo ne a proč. Vysvětluj přes **složení indexů** (které sektory a firmy v nich váží) a přes zlomové události. Vždy přidej pohled českého investora (měna).
-6. **Co se stalo s minulými vítězi a poraženými:** krátce každá akcie z minulého rozhovoru, číslo tehdy a dnes a jedna věta proč. Z toho jedno poučení pro diváka.
-7. **Vítězové a poražení** (počet podle zadání, výchozí 2 + 2), kapitola 5.
-8. **Další okruhy, kdyby zbyl čas:** 3 až 5 aktuálních témat, kapitola 6.
-9. **Závěr: na co se dívat do konce roku** (konkrétní data a události) a jedna věta pro diváka bez investičního doporučení.
-10. **Grafy k přípravě**, **Ověřit těsně před natáčením**, **Poznámky k podkladům**, **Zdroje**.
+5. **Výsledková sezona** (povinný okruh, když natáčení spadá do sezony: zhruba polovina ledna až února, dubna až května, července až srpna, října až listopadu). Souhrn za Stoxx 600 z týdenní zprávy LSEG I/B/E/S (kolik firem reportovalo, podíl překonaných odhadů proti dlouhodobému průměru 54 %, růst zisků s energetikou a bez ní, sektory, země, výhled na další čtvrtletí a celý rok, revize odhadů, ocenění; nejrychleji ji najdeš přes Teleborsa / Borsa Italiana (italsky) nebo Reuters). Pak tabulka známých jmen, která už reportovala: výsledek proti konsenzu, výhled a reakce akcií (`mcp__Trading_Economics__get_earnings` s `index: sx5e:ind` a s `country`, doplň webem). Odliš, kdo vyhrál a kdo zklamal a proč, vysvětli efekt srovnávací základny (např. ropa) a vyjmenuj výsledky, které vyjdou do týdne po natáčení, hlavně u akcií ze scénáře. Konsenzus z TE kontroluj, u některých firem bývá zastaralý.
+6. **Jak se dařilo indexům:** tabulka od začátku roku a od minulého rozhovoru, kdo rostl a kdo ne a proč. Vysvětluj přes **složení indexů** (které sektory a firmy v nich váží) a přes zlomové události. Vždy přidej pohled českého investora (měna).
+7. **Co se stalo s minulými vítězi a poraženými:** krátce každá akcie z minulého rozhovoru, číslo tehdy a dnes a jedna věta proč. Z toho jedno poučení pro diváka.
+8. **Vítězové a poražení** (počet podle zadání, výchozí 2 + 2), kapitola 5.
+9. **Další okruhy, kdyby zbyl čas:** 3 až 5 aktuálních témat, kapitola 6.
+10. **Závěr: na co se dívat do konce roku** (konkrétní data a události) a jedna věta pro diváka bez investičního doporučení.
+11. **Grafy k přípravě**, **Ověřit těsně před natáčením**, **Poznámky k podkladům**, **Zdroje**.
 
 U každého okruhu použij tento blok:
 

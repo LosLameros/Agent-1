@@ -1,6 +1,6 @@
 # Rozhovor pro Investiční web: Evropské akcie (natáčení 2. 11. 2026)
 
-> **Data platí k závěru obchodování v pátek 30. 10. 2026** (Trading Economics), pražský PX k 29. 10. 2026.
+> **Data platí k závěru obchodování v pátek 30. 10. 2026** (Trading Economics), ropa a zprávy o Íránu k ránu 2. 11. 2026.
 > **Minulý rozhovor:** konec dubna 2026, video „Evropské akcie: Kdo je zatím vítěz a kdo poražený íránské války?“. Jako den minulého rozhovoru počítám **22. 4. 2026**, poslední den v grafu z dubnového scénáře.
 > „Od začátku roku“ = proti závěru 31. 12. 2025.
 
@@ -19,7 +19,7 @@
 | FTSE 100 (Británie) | +8,0 % | +2,4 % |
 | WIG (Polsko) | +34,5 % | +18,8 % |
 | BUX (Maďarsko) | +30,8 % | +6,6 % |
-| PX (Praha, k 29. 10.) | −1,4 % | +0,3 % |
+| PX (Praha) | −2,2 % | −0,5 % |
 | Euro Stoxx Banks (banky eurozóny) | +4,2 % | +4,7 % |
 | S&P 500 (USA) | +10,7 % | +6,2 % |
 | Nasdaq 100 (USA, technologie) | +12,4 % | +5,4 % |
@@ -38,9 +38,10 @@
 | Stellantis | −56,2 % | −43,3 % | 4,14 |
 | Rheinmetall | −33,4 % | −26,8 % | 1 040,20 |
 
-**Tři věty, které musí zaznít:**
+**Čtyři věty, které musí zaznít:**
 1. „Od našeho posledního rozhovoru vydělala Evropa v místních měnách skoro stejně jako Amerika. Rozdíl letos dělá hlavně silnější dolar a technologie.“
 2. „Evropa není jeden trh. Polsko a Maďarsko jsou přes 30 procent v plusu, Francie a Praha v minusu.“
+4. „Před válkou s Íránem vedla Evropa nad Amerikou o 6 procentních bodů. Válka jí celý náskok vzala.“
 3. „Válka s Íránem je pro Evropu jako celek daň, pro ropné firmy bonus.“
 
 ---
@@ -52,7 +53,7 @@
 **Odpověď:**
 Když jsme se tu naposled bavili o evropských akciích, bylo to koncem dubna, necelé dva měsíce po začátku války s Íránem. Tehdy jsme si ukazovali, že evropské a hlavně středoevropské akcie do konce února Ameriku porážely. Pak je ale válka srazila víc, protože Evropa ropu a plyn dováží. Euro Stoxx 50 byl tehdy od začátku roku jen lehce v plusu, americký S&P 500 zhruba na plus čtyřech procentech a barel ropy Brent stál kolem sto dolarů.
 
-Od té doby se stalo hodně. V létě napětí polevilo a evropské indexy v srpnu vylezly na historická maxima. Evropská centrální banka mezitím dvakrát zvedla sazby, protože inflace vyskočila skoro na čtyři procenta. A v říjnu se napětí kolem Íránu vrátilo, ropa je na 113 dolarech a technologie zažily výprodej.
+Od té doby se stalo hodně. V létě napětí polevilo a evropské indexy v srpnu vylezly na historická maxima. Evropská centrální banka mezitím dvakrát zvedla sazby, protože inflace vyskočila skoro na čtyři procenta. A v říjnu se napětí kolem Íránu vrátilo, ropa je kolem 110 dolarů a technologie zažily výprodej.
 
 Dnes je široký evropský index Stoxx 600 od začátku roku zhruba na plus devíti procentech, americký S&P 500 na plus jedenácti. Od našeho posledního rozhovoru jsou na tom ale skoro stejně, oba přidaly kolem pěti až šesti procent. Velký rozdíl vidí až český investor. Dolar letos posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti.
 
@@ -68,7 +69,35 @@ V korunách ano, v místních měnách jen o kousek. A některé evropské trhy,
 
 ---
 
-## 2. Jak si vede evropská ekonomika a proč
+## 2. Jak se Evropě daří za krize na Blízkém východě
+
+**Moderátorka se pravděpodobně zeptá:** „Minule jsme řešili, jak válka s Íránem dopadá na Evropu. Jak se jí za krize na Blízkém východě daří teď?“
+
+**Odpověď:**
+Evropa válku zvládla, ale přišla kvůli ní o celý náskok, který měla na začátku roku. Než válka 28. února začala, byl evropský index Stoxx 600 od začátku roku na plus sedmi procentech a americký S&P 500 prakticky na nule. Pak přišel šok. Za první měsíc spadly evropské akcie zhruba o 9 až 10 procent, americké o 8, a ropa vyletěla ze 73 na přes 100 dolarů za barel.
+
+Zajímavé je, jak citlivě Evropa reaguje oběma směry. Když 8. dubna přišlo příměří, ropa za jediný den zlevnila o 13 procent a Euro Stoxx 50 vyskočil o 5 procent, americký trh jen o dvě a půl. V srpnu, kdy ropa stála kolem 84 dolarů, vylezly evropské akcie na historická maxima. A teď v říjnu, když se ropa vrátila nad 110 dolarů, zase ztrácejí. Evropské akcie se letos pohybují skoro zrcadlově k ceně ropy.
+
+Celkově je Stoxx 600 od začátku války jen o 2 procenta výš a Euro Stoxx 50 zhruba na nule. Americký S&P 500 za stejnou dobu přidal 10 procent, v eurech skoro 17. Důvod je pořád stejný: Evropa ropu a plyn dováží, Amerika je vyváží. Pro Evropu je drahá energie daň, která jde z kapes firem a domácností ven.
+
+**Čísla do ruky:**
+- Před válkou (27. 2.): Stoxx 600 +6,9 % od začátku roku, S&P 500 +0,5 %, Brent 72,87 USD.
+- Dno koncem března: Stoxx 600 −9,2 % a Euro Stoxx 50 −10,3 % proti 27. 2. (27. 3.), S&P 500 −7,8 % (30. 3.), Brent 107,39 USD (30. 3.).
+- Příměří 8. 4.: Brent −13,3 % za den (ze 109,27 na 94,75 USD), Euro Stoxx 50 +5,0 %, Stoxx 600 +3,9 %, S&P 500 +2,5 %.
+- 7. 8.: Brent 83,55 USD, Stoxx 600 660,25 bodu (+4,2 % proti 27. 2.), maximum 663,41 bodu během dne.
+- Od 27. 2. do 30. 10.: Stoxx 600 +2,0 %, Euro Stoxx 50 −0,1 %, DAX +2,1 %, PX −0,9 %, WIG +24,4 %, S&P 500 +10,2 % (v eurech +16,7 %), Nasdaq 100 +13,7 %, Brent +55,7 %, euro k dolaru −5,5 %.
+- Ekonomika: HDP eurozóny v 1Q 0,0 %, inflace z 1,9 % v únoru na 3,8 % v září, ECB dvakrát zvedla sazby.
+- Dnes ráno (2. 11.): Brent kolem 109 USD (−3,8 %). Podle zpráv chce Trump dát po úterních volbách ještě čas diplomacii, Katar a Írán jednají třetí den, OPEC+ nechal těžbu do prosince beze změny.
+
+**Kdyby se doptala:** „Kdo na válce vydělal a kdo prodělal?“
+Vydělaly energetické firmy. TotalEnergies je od začátku roku na plus 54 procentech, Eni na plus 68 a Repsol na plus 93. Prodělali hlavně spotřebitelé a firmy, které energii potřebují nebo prodávají zboží domácnostem, protože jim vyšší ceny a sazby berou peníze. A v těžké pozici je i ECB, která musí zvedat sazby, přestože ekonomika roste pomalu.
+
+**Kdyby se doptala:** „A co bude dál?“
+Hodně se rozhodne tento týden. Po úterních volbách do Kongresu se Trump rozhodne mezi diplomacií a obnovením útoků. Dohoda by Evropě ulevila nejvíc ze všech, viděli jsme to v dubnu i v létě. Další eskalace by ji naopak zasáhla nejvíc. Evropské akcie teď proto hodně závisejí na tom, co se stane s ropou.
+
+---
+
+## 3. Jak si vede evropská ekonomika a proč
 
 **Moderátorka se pravděpodobně zeptá:** „Jak je na tom evropská ekonomika? Pořád zaostává za Amerikou?“
 
@@ -92,14 +121,14 @@ Zatím to čísla neukazují. Třetí čtvrtletí dopadlo lépe, než se čekalo
 
 ---
 
-## 3. Jak se dařilo evropským indexům: kdo rostl a kdo ne
+## 4. Jak se dařilo evropským indexům: kdo rostl a kdo ne
 
 **Moderátorka se pravděpodobně zeptá:** „Které evropské trhy se letos dařilo a které ne? A proč?“
 
 **Odpověď:**
 Evropa letos není jeden trh, rozdíly mezi zeměmi jsou obrovské. Nejlépe je na tom střední Evropa. Polský index WIG je od začátku roku na plus 34 procentech a maďarský BUX na plus 31, většinu z toho udělal už na jaře. Polsko táhnou hlavně banky, polské největší akcie v srpnu poprvé po devatenácti letech překonaly rekord. Na západě vede nizozemský index AEX s plus 19 procenty, a to díky jedné firmě, výrobci strojů na čipy ASML, který v něm má obrovskou váhu. Itálie a Španělsko přidaly 8 až 10 procent, hodně díky ropným firmám Eni a Repsol.
 
-Na druhé straně je Francie. Index CAC 40 je jako jediný velký západoevropský index letos v minusu, zhruba o 2 procenta. Velkou váhu v něm mají luxusní značky LVMH, Hermès nebo Kering, které letos ztratily kolem 40 procent. Francii navíc trápí politika a dluh, výnos jejích desetiletých dluhopisů se v říjnu dostal nad 5 procent, nejvýš od roku 2002. Pražská burza je od začátku roku zhruba na nule.
+Na druhé straně je Francie. Index CAC 40 je jako jediný velký západoevropský index letos v minusu, zhruba o 2 procenta. Velkou váhu v něm mají luxusní značky LVMH, Hermès nebo Kering, které letos ztratily kolem 40 procent. Francii navíc trápí politika a dluh, výnos jejích desetiletých dluhopisů se v říjnu dostal nad 5 procent, nejvýš od roku 2002. Pražská burza je od začátku roku asi 2 procenta v minusu.
 
 Pořád platí, co jsme si říkali minule: o výsledku rozhoduje složení indexu. Evropa má málo technologií a hodně bank, energetiky a průmyslu. Letos z toho nejvíc vydělaly energetické firmy. Evropské banky jsou naopak od začátku roku jen asi 4 procenta v plusu a za poslední měsíc ztratily kolem 8 procent, když část z nich zklamala výsledky.
 
@@ -107,16 +136,16 @@ Pořád platí, co jsme si říkali minule: o výsledku rozhoduje složení inde
 - Tabulka v taháku. Energie: Repsol +93 %, Eni +68 %, TotalEnergies +54 % od začátku roku.
 - ASML +53 % od začátku roku (proto AEX +19 %). Luxus: LVMH −40 %, Hermès −39 %, Kering −41 %.
 - Francie: výnos desetiletého dluhopisu přes 5 % (nejvýš od roku 2002), HDP ve 3Q −0,1 %.
-- PX: historické maximum 2 820,74 bodu (4. 9.), od té doby −6 %. BUX: maximum 155 001 bodů (17. 9.), od té doby −6 %. WIG je jen 2,5 % pod maximem z 29. 10.
+- PX: historické maximum 2 820,74 bodu (4. 9.), 30. 10. 2 627,33 bodu, tedy −6,9 %. BUX: maximum 155 001 bodů (17. 9.), od té doby −6 %. WIG je jen 2,5 % pod maximem z 29. 10.
 - Euro Stoxx Banks: +4,2 % od začátku roku, za poslední měsíc −8,2 %.
 - DAX a WIG započítávají dividendy, ostatní indexy ne. Rozdíl dělá zhruba 2 až 3 procentní body ročně.
 
 **Kdyby se doptala:** „Proč na tom Praha není lépe, když střední Evropa roste?“
-Pražský index ještě v září pokořil rekord, od té doby ztratil asi 6 procent. Tvoří ho pár velkých firem, hlavně ČEZ a banky, takže stačí, aby se nedařilo jim. U ČEZ navíc pořád visí otazník nad plánem vlády vykoupit menšinové akcionáře, termín ani cena nejsou jasné. [OVĚŘIT před natáčením: vývoj ČEZ, Komerční banky a Erste od začátku roku a od září.]
+Pražský index ještě v září pokořil rekord, od té doby ztratil asi 7 procent. Tvoří ho pár velkých firem, hlavně ČEZ a banky, takže stačí, aby se nedařilo jim. U ČEZ navíc pořád visí otazník nad plánem vlády vykoupit menšinové akcionáře, termín ani cena nejsou jasné. [OVĚŘIT před natáčením: vývoj ČEZ, Komerční banky a Erste od začátku roku a od září.]
 
 ---
 
-## 4. Co se stalo s dubnovými vítězi a poraženými
+## 5. Co se stalo s dubnovými vítězi a poraženými
 
 **Moderátorka se pravděpodobně zeptá:** „Minule jste jako vítěze vybral ASML a jako poražené SAP a LVMH. Jak dopadli?“
 
@@ -138,7 +167,7 @@ Celého sektoru. Hermès je letos na minus 39 procentech a Kering, majitel Gucci
 
 ---
 
-## 5. Vítězové letoška: TotalEnergies a Bayer
+## 6. Vítězové letoška: TotalEnergies a Bayer
 
 **Moderátorka se pravděpodobně zeptá:** „Kdo jsou letošní vítězové mezi evropskými akciemi?“
 
@@ -147,7 +176,7 @@ Celého sektoru. Hermès je letos na minus 39 procentech a Kering, majitel Gucci
 ### TotalEnergies: +53,7 % od začátku roku
 
 **Odpověď:**
-TotalEnergies je francouzský ropný a plynárenský gigant. Kromě těžby má rafinerie, prodává zkapalněný plyn i elektřinu. Od začátku roku je na plus 54 procentech a je blízko historického maxima. Důvod je jednoduchý: válka s Íránem zdražila ropu z 61 na 113 dolarů za barel. Totalu ale nevydělává jen těžba. Válka narušila dodávky nafty a benzinu, takže rafinerie vydělávají rekordně. Ve třetím čtvrtletí měl upravený zisk 9,1 miliardy dolarů, o 127 procent víc než před rokem a víc, než čekali analytici. Firma navíc vrací akcionářům peníze přes dividendy a zpětný odkup akcií, jen na odkupy dává dvě a půl miliardy dolarů za čtvrtletí.
+TotalEnergies je francouzský ropný a plynárenský gigant. Kromě těžby má rafinerie, prodává zkapalněný plyn i elektřinu. Od začátku roku je na plus 54 procentech a je blízko historického maxima. Důvod je jednoduchý: válka s Íránem zdražila ropu z 61 na zhruba 110 dolarů za barel. Totalu ale nevydělává jen těžba. Válka narušila dodávky nafty a benzinu, takže rafinerie vydělávají rekordně. Ve třetím čtvrtletí měl upravený zisk 9,1 miliardy dolarů, o 127 procent víc než před rokem a víc, než čekali analytici. Firma navíc vrací akcionářům peníze přes dividendy a zpětný odkup akcií, jen na odkupy dává dvě a půl miliardy dolarů za čtvrtletí.
 
 Druhá strana mince: tenhle zisk stojí na válce. Kdyby se USA s Íránem dohodly, ropa může rychle zlevnit a s ní i zisky. Válka Totalu navíc část těžby na Blízkém východě odstřihla. Pro mě je to hezký příklad, že válka je pro Evropu jako celek daň, ale pro ropné firmy bonus. A je zajímavé, že je to francouzská firma, tedy vítěz ze země, jejíž index je letos v minusu.
 
@@ -175,7 +204,7 @@ ASML jsme měli jako vítěze minule, a tak jsem chtěl ukázat jiné příběhy
 
 ---
 
-## 6. Poražení letoška: Stellantis a Rheinmetall
+## 7. Poražení letoška: Stellantis a Rheinmetall
 
 **Moderátorka se pravděpodobně zeptá:** „A kdo letos naopak nejvíc ztrácí?“
 
@@ -213,37 +242,37 @@ CSG vstoupila na burzu v Amsterdamu v lednu za 25 eur za akcii a první den vysk
 
 ---
 
-## 7. Další okruhy, kdyby zbyl čas
+## 8. Další okruhy, kdyby zbyl čas
 
-### 7.1 Írán, ropa a americké volby
+### 8.1 Írán, ropa a americké volby (jen pokud to nezaznělo v okruhu 2)
 
-**Moderátorka se pravděpodobně zeptá:** „Ropa je zase nad 110 dolary. Co bude dál?“
+**Moderátorka se pravděpodobně zeptá:** „Ropa je zase kolem 110 dolarů. Co bude dál?“
 
 **Odpověď:**
 Rozhodující může být už tento týden. V úterý 3. listopadu jsou v Americe volby do Kongresu a prezident Trump opakovaně naznačil, že po nich může obnovit útoky na Írán. Zároveň běží jednání přes Katar, Pákistán nebo Saúdskou Arábii. Ropa Brent v říjnu zdražila o víc než 15 procent a 23. října byla nejdráž od roku 2022. Pro evropské akcie to má jasnou logiku. Dražší ropa znamená vyšší inflaci, vyšší sazby a slabší spotřebu, pomáhá jen energetickým firmám. Dohoda by naopak Evropě ulevila nejvíc ze všech. Viděli jsme to v dubnu po příměří i v létě, kdy evropské indexy vylezly na rekordy. Evropa se zatím brání tím, že během tří měsíců uvolní 42 milionů barelů ze strategických zásob.
 
-### 7.2 ECB zvedá sazby a Lagardeová odchází
+### 8.2 ECB zvedá sazby a Lagardeová odchází
 
 **Moderátorka se pravděpodobně zeptá:** „ECB letos sazby zvedá. Co to znamená a co odchod Christine Lagardeové?“
 
 **Odpověď:**
 ECB je v nepříjemné situaci. Inflace je kvůli energiím skoro dvakrát nad cílem a ekonomika přitom roste pomalu. Letos proto dvakrát zvedla sazby, depozitní sazba je na 2,5 procenta a trh čeká další zvýšení v prosinci. Pro akcie to znamená dvě věci. Bankám vyšší sazby pomáhají, firmám s dluhy a domácnostem s hypotékou škodí. Navíc Christine Lagardeová oznámila, že z čela ECB odejde už 7. února, zhruba o devět měsíců dřív. Nejčastěji se mluví o Nizozemci Klaasi Knotovi, Španělovi Pablu Hernándezi de Cosovi, Němce Isabel Schnabelové a šéfovi Bundesbanky Joachimu Nagelovi. Kdo to bude, rozhodne i o tom, jak tvrdě bude ECB s inflací bojovat.
 
-### 7.3 Francie jako nová slabina eurozóny
+### 8.3 Francie jako nová slabina eurozóny
 
 **Moderátorka se pravděpodobně zeptá:** „Proč se teď tolik mluví o Francii?“
 
 **Odpověď:**
 Francie je druhá největší ekonomika eurozóny a má problém s dluhem i s politikou. Parlament je roztříštěný, spor o rozpočet na příští rok se táhne od září a v říjnu se přidaly sociální nepokoje. Investoři proto po Francii chtějí za půjčku víc. Výnos desetiletých dluhopisů se dostal nad 5 procent, nejvýš od roku 2002. Ekonomika ve třetím čtvrtletí klesla o 0,1 procenta a index CAC 40 je letos v minusu. Pro celou eurozónu je to riziko, protože to oslabuje euro a zdražuje půjčky i jiným státům. Lagardeová minulý týden řekla, že ECB má nástroje, kdyby se trhy chovaly neodůvodněně.
 
-### 7.4 Co z toho plyne pro českého investora
+### 8.4 Co z toho plyne pro českého investora
 
 **Moderátorka se pravděpodobně zeptá:** „Je Evropa teď levná? A co z toho plyne pro české investory?“
 
 **Odpověď:**
 Pro českého investora letos hrála velkou roli měna. Koruna je k euru zhruba stabilní, ale dolar posílil, takže americké akcie mu v korunách vydělaly přes 17 procent a evropské kolem deseti. Euro je nejslabší od května 2025, hlavně kvůli energiím a Francii. Evropské akcie jsou přitom pořád levnější než americké. V srpnu se Stoxx 600 obchodoval zhruba za 14,6násobek zisků, které se čekají na příštích dvanáct měsíců, asi o čtvrtinu levněji než americké akcie. Levnější ale neznamená automaticky lepší, část slevy je za to, že Evropa má méně rychle rostoucích technologických firem. Zisky evropských firem letos rostou slušně. Ve třetím čtvrtletí čekají analytici u Stoxx 600 růst kolem 24 procent, i bez energetiky skoro 10 procent. Pro mě z toho plyne hlavně to, že Evropa a Amerika se v portfoliu doplňují, protože se jim daří v jiných situacích.
 
-### 7.5 Výprodej technologií na konci října
+### 8.5 Výprodej technologií na konci října
 
 **Moderátorka se pravděpodobně zeptá:** „Minulý týden padaly technologické akcie. Dotkne se to Evropy?“
 
@@ -256,7 +285,7 @@ Méně než Ameriky, a je to přesně ten argument z dubna, jen obráceně. Po v
 
 ---
 
-## 8. Závěr: na co se dívat do konce roku
+## 9. Závěr: na co se dívat do konce roku
 
 **Moderátorka se pravděpodobně zeptá:** „Co bude pro evropské akcie do konce roku rozhodující?“
 
@@ -284,7 +313,7 @@ Pro Evropu je letos rozhodující cena energie, víc než pro kohokoli jiného. 
 ## Ověřit těsně před natáčením
 
 - Pondělní pohyb trhů a zprávy o Íránu ráno 2. 11., data ve scénáři jsou k pátku 30. 10.
-- PX za 30. 10. (Trading Economics ho měl jen k 29. 10.) a index CECE na Bloombergu (v TE není).
+- Index CECE na Bloombergu (v TE není).
 - Přesné datum dubnového natáčení. Pokud to nebylo 22. 4., přepočítat sloupec „od minulého rozhovoru“.
 - TotalEnergies: upravený zisk 9,1 mld. USD ověřit v tiskové zprávě (jeden zdroj uvádí vykázaný zisk 7,5 mld. EUR).
 - SAP: čísla za 3Q v tiskové zprávě. LVMH: pokles módy a kožené zboží −5 % organicky.

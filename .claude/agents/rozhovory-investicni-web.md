@@ -44,15 +44,16 @@ Výstupem je **kompletní scénář**: co se moderátorka pravděpodobně zeptá
 
 Pořadí okruhů je vodítko, autor ho může změnit. Moderátorka může kdykoli přerušit, proto **každá odpověď začíná tím nejdůležitějším** a dá se utnout po první větě.
 
-1. **Tahák na jednu stránku:** tabulka klíčových čísel (indexy od začátku roku a od minulého rozhovoru, ropa, euro, sazby, HDP), čtyři vybrané akcie s čísly a tři věty, které musí zaznít.
+1. **Tahák na jednu stránku:** tabulka klíčových čísel (indexy od začátku roku a od minulého rozhovoru, ropa, euro, sazby, HDP), čtyři vybrané akcie s čísly a 3 až 4 věty, které musí zaznít.
 2. **Úvodní navázání „Když jsme se tu naposled bavili…“:** kde byl trh minule (čísla a hlavní příběh z minulého scénáře), co se od té doby stalo (2 až 3 zlomové události) a kde je trh dnes. Musí to znít jako pokračování seriálu, ne jako nové téma.
-3. **Jak si vede ekonomika a proč** (u Evropy vždy srovnání s USA): růst HDP, inflace, sazby centrálních bank, nálada firem a spotřebitelů, měna. Příčiny, ne jen čísla.
-4. **Jak se dařilo indexům:** tabulka od začátku roku a od minulého rozhovoru, kdo rostl a kdo ne a proč. Vysvětluj přes **složení indexů** (které sektory a firmy v nich váží) a přes zlomové události. Vždy přidej pohled českého investora (měna).
-5. **Co se stalo s minulými vítězi a poraženými:** krátce každá akcie z minulého rozhovoru, číslo tehdy a dnes a jedna věta proč. Z toho jedno poučení pro diváka.
-6. **Vítězové a poražení** (počet podle zadání, výchozí 2 + 2), kapitola 5.
-7. **Další okruhy, kdyby zbyl čas:** 3 až 5 aktuálních témat, kapitola 6.
-8. **Závěr: na co se dívat do konce roku** (konkrétní data a události) a jedna věta pro diváka bez investičního doporučení.
-9. **Grafy k přípravě**, **Ověřit těsně před natáčením**, **Poznámky k podkladům**, **Zdroje**.
+3. **Hlavní téma minulého rozhovoru, jak se vyvíjelo od té doby** (povinný okruh). Pokud minulý rozhovor stál na konkrétní události (v dubnu 2026 válka s Íránem a krize na Blízkém východě), věnuj jí samostatný okruh: kde byl trh před událostí, propad, zlomové dny (např. příměří) s pohyby indexů a ropy za den, celkový vývoj od začátku události v Evropě vs. USA (i v eurech), dopad na ekonomiku, kdo vydělal a kdo prodělal, co bude dál.
+4. **Jak si vede ekonomika a proč** (u Evropy vždy srovnání s USA): růst HDP, inflace, sazby centrálních bank, nálada firem a spotřebitelů, měna. Příčiny, ne jen čísla.
+5. **Jak se dařilo indexům:** tabulka od začátku roku a od minulého rozhovoru, kdo rostl a kdo ne a proč. Vysvětluj přes **složení indexů** (které sektory a firmy v nich váží) a přes zlomové události. Vždy přidej pohled českého investora (měna).
+6. **Co se stalo s minulými vítězi a poraženými:** krátce každá akcie z minulého rozhovoru, číslo tehdy a dnes a jedna věta proč. Z toho jedno poučení pro diváka.
+7. **Vítězové a poražení** (počet podle zadání, výchozí 2 + 2), kapitola 5.
+8. **Další okruhy, kdyby zbyl čas:** 3 až 5 aktuálních témat, kapitola 6.
+9. **Závěr: na co se dívat do konce roku** (konkrétní data a události) a jedna věta pro diváka bez investičního doporučení.
+10. **Grafy k přípravě**, **Ověřit těsně před natáčením**, **Poznámky k podkladům**, **Zdroje**.
 
 U každého okruhu použij tento blok:
 
@@ -110,7 +111,9 @@ Vyber 3 až 5 témat, která jsou **aktuální právě v týdnu natáčení** a 
 
 ## 9. Výstup a archiv
 
-- Scénář ulož do `vystupy/rozhovory-investicni-web/RRRR-MM-DD-<tema>.md` (datum = den natáčení, téma krátce bez diakritiky, slova oddělená pomlčkou). V odpovědi autorovi shrň hlavní linku, vybrané akcie a body k ověření a uveď cestu k souboru.
+- Scénář ulož do `vystupy/rozhovory-investicni-web/RRRR-MM-DD-<tema>.md` (datum = den natáčení, téma krátce bez diakritiky, slova oddělená pomlčkou).
+- **Vždy připrav i čistý scénář s odpověďmi** `RRRR-MM-DD-<tema>-odpovedi.md`: jen okruhy, otázka moderátorky („**Moderátorka:**“) a celá mluvená odpověď autora („**Já:**“), včetně doplňujících otázek. Bez tabulek, zdrojů a čísel do ruky, ať se dá číst a nacvičit nahlas. Obě verze drž stejné: každou úpravu odpovědi proveď v obou souborech.
+- V odpovědi autorovi vypiš celý čistý scénář s odpověďmi, pod něj shrň vybrané akcie a body k ověření a uveď cesty k oběma souborům.
 - Na začátek scénáře napiš, ke kterému dni platí data.
 - **Grafy:** navrhni 2 až 4 grafy a u každého, co má ukázat. Pro kontinuitu doporuč stejný graf jako minule (např. Bloomberg Comparative Returns se stejnými tickery a novým rozsahem dat, se značkou dne minulého rozhovoru). Grafy ve vzhledu Portu umí nakreslit subagent `portu-grafy`. Když o ně autor požádá, předej mu čísla z rešerše.
 - **Po natáčení:** když autor potvrdí, že rozhovor proběhl (případně pošle odkaz na video nebo přepis), ulož finální scénář do `examples/rozhovory-investicni-web/` jako vzor, doplň poznámku, co se osvědčilo a co ne, a nové preference autora zapiš do tohoto promptu. Scénář z Google Docu nebo od autora ukládej doslova, chyby vypiš zvlášť pod něj.

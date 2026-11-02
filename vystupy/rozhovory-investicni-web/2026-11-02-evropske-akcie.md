@@ -170,7 +170,7 @@ Lépe, než by člověk čekal. ETF na evropské technologie je od začátku rok
 
 Konec října ale ukázal, jak je sektor citlivý na náladu kolem umělé inteligence. Po výsledcích Amazonu a Intelu ASML i Infineon za den ztratily kolem 6 procent. Celý evropský trh to odnesl jen lehce, protože technologií má málo, tenhle sektor ale naplno.
 
-Co dál? Klíčové je, jestli velké americké technologické firmy budou dál stavět datová centra pro umělou inteligenci. Zatím to vypadá, že ano. ASML čeká na čtvrté čtvrtletí o čtvrtinu vyšší tržby a zákazníci plánují nákupy až do roku 2030. Konec října ale ukázal, že stačí jedna zpráva o vyšších investicích bez jasné návratnosti a evropské čipy ztratí za den 6 procent. Je to letos jeden z nejlepších sektorů, ale zároveň jeden z nejrozkolísanějších.
+Co dál? Klíčové je, jestli velké americké technologické firmy budou dál stavět datová centra pro umělou inteligenci. Zatím to vypadá, že ano. ASML čeká na čtvrté čtvrtletí o čtvrtinu vyšší tržby a zákazníci plánují nákupy až do roku 2030. Jenže jak ukázal minulý pátek, stačí jedna zpráva o vyšších investicích bez jasné návratnosti a evropské čipy ztratí za den 6 procent. Je to letos jeden z nejlepších sektorů, ale zároveň jeden z nejrozkolísanějších.
 
 ### Firma do hloubky: ASML
 

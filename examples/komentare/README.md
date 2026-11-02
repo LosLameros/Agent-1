@@ -16,5 +16,6 @@ Texty jsou uložené **doslova**. Slouží k tomu, aby agent poznal, na jaké ty
 | `2026-10-upis-doornite.md` | sada otázek k výsledku úpisu, schválená po připomínkách autora | Úpis DOORNITE na trhu Start: výsledek, poptávka podle cen, cena v pásmu, ocenění a dluh |
 | `2026-10-vysledky-meta-tesla-3q.md` | **hlavní vzor pro komentář k výsledkům**, finální verze autora | Meta a Tesla 3Q 2026: 333 a 281 slov, tři odstavce, různé začátky odstavců, poučení z úprav |
 | `2026-10-vysledky-microsoft-1q-fy27.md` | komentář k výsledkům, schválený autorem (výhled doplněn později) | Microsoft 1Q FY27: Azure +48 %, závěr se dvěma scénáři pro akcie, navázání na minulé čtvrtletí |
+| `2026-11-vysledky-apple-4q-fy26.md` | komentář k výsledkům, finální verze autora | Apple 4Q FY26: kratší věty, méně čárek, občasný burzovní výraz, riziko dotažené k dopadu na akcie |
 
 Nové hotové komentáře ukládá agent do `vystupy/komentare/`. Když uživatel potvrdí, že text odešel do redakce v dané podobě, přesuň nebo zkopíruj jeho finální verzi sem, aby archiv vzorů rostl.

@@ -2,7 +2,7 @@
 
 - **Typ:** komentář ke čtvrtletním výsledkům (typ D)
 - **Datum:** 28. 10. 2026, po zveřejnění výsledků, před konferenčním hovorem
-- **Stav:** schváleno autorem („Super, ulož si to do vzorů“). Věta s výhledem z konferenčního hovoru zůstala jako značka [DOPLNIT], protože výhled v době psaní ještě nezazněl. Ukazuje, jak napsat komentář hned po zveřejnění a výhled doplnit později.
+- **Stav:** schváleno autorem („Super, ulož si to do vzorů“). Výhled z konferenčního hovoru v době psaní ještě nezazněl, komentář je proto napsaný bez něj a je hotový tak, jak je (autor žádné značky k doplnění nechce).
 - **Délka:** 342 slov bez výhledu, tři odstavce.
 - **Doplňuje hlavní vzor** `2026-10-vysledky-meta-tesla-3q.md`.
 
@@ -12,7 +12,7 @@ Microsoft v prvním čtvrtletí fiskálního roku 2027, které odpovídá kalend
 
 Hlavním důvodem růstu akcií zhruba o 5 % po skončení obchodování je Azure. Tržby cloudové platformy vzrostly o 48 % na 33,2 mld. USD, víc než vedením slibovaných 44 až 45 % a rychleji než o 43 % v minulém čtvrtletí. Azure tak sám přinesl téměř tři čtvrtiny meziročního přírůstku tržeb celé firmy. Nasmlouvané a dosud nevyfakturované zakázky navíc vzrostly o 73 % na 677 mld. USD, poptávka po výpočetním výkonu je tedy podložená smlouvami na roky dopředu. Akciím pomohly i kapitálové výdaje, tedy hlavně investice do datových center pro umělou inteligenci. Dosáhly 39,4 mld. USD a byly nižší, než trh čekal (45,9 mld. USD). I tak tvoří 43 % tržeb proti 25 % před rokem. Volné peněžní toky, tedy hotovost, která firmě zbude po provozu a investicích, proto zůstaly kladné ve výši 18,6 mld. USD.
 
-Microsoft tak potvrdil, že letní zrychlení Azure nebylo jednorázové a že umělá inteligence se v tržbách projevuje rychleji, než trh čekal. Otevřenou otázkou zůstává, jestli jsou nižší investice skutečná úspora, nebo jen posun do dalších čtvrtletí. [DOPLNIT po konferenčním hovoru: výhled kapitálových výdajů a růstu Azure na další čtvrtletí.] Trh teď bude sledovat hlavně, jestli Azure udrží tempo kolem 45 %. Pokud ano a investice nebudou růst rychleji než tržby, může akciím dál pomáhat i rostoucí objem nasmlouvaných zakázek. Pokud by se ale růst Azure zpomalil dřív, než se nové datové kapacity zaplatí, mohly by se rychle vrátit obavy, že Microsoft za umělou inteligenci utrácí víc, než mu vynáší.
+Microsoft tak potvrdil, že letní zrychlení Azure nebylo jednorázové a že umělá inteligence se v tržbách projevuje rychleji, než trh čekal. Otevřenou otázkou zůstává, jestli jsou nižší investice skutečná úspora, nebo jen posun do dalších čtvrtletí. Trh teď bude sledovat hlavně, jestli Azure udrží tempo kolem 45 %. Pokud ano a investice nebudou růst rychleji než tržby, může akciím dál pomáhat i rostoucí objem nasmlouvaných zakázek. Pokud by se ale růst Azure zpomalil dřív, než se nové datové kapacity zaplatí, mohly by se rychle vrátit obavy, že Microsoft za umělou inteligenci utrácí víc, než mu vynáší.
 
 ## Co je na tomhle vzoru důležité
 

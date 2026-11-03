@@ -251,3 +251,31 @@ Vyřazeno: 8, 9, 14. Varianta na 20 minut (13 slajdů): plyn (6) sloučit s ropo
 - WOOD PX ETF: https://finex.cz/vsechny-ceske-akcie-v-jedinem-fondu-kde-jej-koupite-a-kolik-skutecne-zaplatite/, https://cc.cz/prazskou-burzu-koupite-za-tisic-korun-nove-etf-je-levne-ale-hacek-v-diverzifikaci-pretrvava/
 - Akcie po volbách do Kongresu: https://www.usbank.com/investing/financial-perspectives/market-news/stock-market-performance-after-midterm-elections.html, https://www.bny.com/content/dam/im/im-na/articles/pdf/how-do-midterm-elections-impact-markets-over-time.pdf
 - Repozitář: `vystupy/ctvrtletni-zpravy/2026-Q3.md`, `vystupy/komentare/2026-10-28-vysledky-microsoft-1q-fy27.md`, `examples/portfolia/slozeni-portfolii.md`
+
+---
+
+## Dohoda s uživatelem (3. 11. 2026) a finální verze
+
+Pokyny uživatele k návrhu výše:
+- Výkonnost našich portfolií na slajdy nepatří. Prezentace je pro externího zákazníka a uživatel vystupuje za WOOD & Company.
+- Výsledky AMD, výši investic Alphabetu a náklady PX ETF neřešit. Výsledkovou sezónu a pokles technologií popsat obecně a vysvětlit proč, bez konkrétních čísel.
+- Ostatní navržené změny schváleny.
+- Nejvýš 10 slajdů, uspořádaných chronologicky. Na konci shrnutí situace na trzích a možné scénáře vývoje.
+- Zatím jednoduchý vzhled původní prezentace, firemní šablonu dodá uživatel.
+
+Finální struktura (`Ekonomika a trhy - listopad 2026.pptx`):
+
+| # | Slajd | Z původní prezentace |
+|---|---|---|
+| 1 | Ekonomika a trhy, listopad 2026 | 1 |
+| 2 | Co se stalo od začátku října (časová osa a osnova) | nový, nahrazuje 6 |
+| 3 | Technologie dolů, Praha v plusu (1M a 3M, místní měna a CZK) | 2 + 3 + 4 + 5 |
+| 4 | Ropa: rekord, pak naděje na dohodu (Brent 2026, Hormuz, plyn) | 7 + 10 (8 a 9 vyřazeny) |
+| 5 | Sazby: pauza, ne konec zvyšování (Fed, ECB, ČNB) | nový, z 6 |
+| 6 | Zisky rostou, trh trestá sázky na AI (bez čísel) | 13 + 15 + nový (14 vyřazen) |
+| 7 | Dluhopisy tlumily pokles akcií (výnosy 10Y, Francie) | 11 + 12 + 16 |
+| 8 | Shrnutí: kde jsou trhy teď | 17 |
+| 9 | Možné scénáře vývoje (lepší / základní / horší, co sledovat) | nový |
+| 10 | Co z toho plyne pro investory (diverzifikace, portfolia, WOOD PX ETF) | nový |
+
+Data grafů: `data/vykonnost-trhu.csv`, `data/kurzy-czk.csv`, `data/brent-2026.csv`, `data/vynosy-10y.csv` (Trading Economics). Skript, který prezentaci sestaví z původního souboru: `data/sestav-prezentaci.py`.

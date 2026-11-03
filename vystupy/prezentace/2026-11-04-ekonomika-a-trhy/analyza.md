@@ -279,3 +279,20 @@ Finální struktura (`Ekonomika a trhy - listopad 2026.pptx`):
 | 10 | Co z toho plyne pro investory (diverzifikace, portfolia, WOOD PX ETF) | nový |
 
 Data grafů: `data/vykonnost-trhu.csv`, `data/kurzy-czk.csv`, `data/brent-2026.csv`, `data/vynosy-10y.csv` (Trading Economics). Skript, který prezentaci sestaví z původního souboru: `data/sestav-prezentaci.py`.
+
+## Druhé kolo připomínek (3. 11. 2026) a verze v šabloně WOOD & Company
+
+Soubor `Ekonomika a trhy - listopad 2026 (WOOD).pptx` (šablona `podklady/prezentace/sablona-wood-company.pptx`), mluvený text a čísla v záloze jsou v `pomocny-material.md`.
+
+| # | Slajd | Změna proti první verzi |
+|---|---|---|
+| 2 | Co se stalo od začátku října | místo ČNB 17. 11. Nvidia, konec výsledkové sezóny (82 % firem nad odhady) |
+| 3 | USA rostou navzdory poklesu technologií | nadpis bez Prahy, přidána výkonnost od začátku roku |
+| 4 | Naděje na dohodu stáhly ropu ke 100 USD | Hormuz podle objemů (Kpler: konec září asi 80 % normálu), Trump a úder 3. 11., ropa +42 % proti předválečné ceně, bez ceny z 23. 10. |
+| 6 | Zisky rostou, trh trestá sázky na AI | čísla z FactSetu (60 % firem, 82 % nad odhady, zisky +30 %), volný cash flow tech gigantů |
+| 7 | Dluhopisy tlumily pokles akcií | proč výnosy rostly a proč klesly, bez Česka, „hraje do karet konzervativním portfoliím“ |
+| 8 | Shrnutí | dluhopisy: výnosy klesají z nejvyšších úrovní od roku 2007 |
+| 9 | Výhled: pokles technologií je dočasný | místo tabulky scénářů pozitivní výhled pro pasivní investory a „Co bude důležité“ |
+| 10 | Co z toho plyne pro investory | přepsáno podle připomínek: technologie dlouhodobě, krátké krize, Praha jako diverzifikace s koncentrací |
+
+Oprava: v první verzi stálo „Hormuz je téměř zavřený“ (podle počtu lodí). Podle objemů to neplatí.

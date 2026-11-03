@@ -4,7 +4,7 @@
 
 **Zadání poradce:** požádat o manželův e-mail (ověřím, jestli tam kód je, a případně ho nastavím) a u druhého dotazu se zeptat na částku a horizont.
 
-**Poučení z úprav poradce:** dvě otázky ke klientce napsal celou větou místo odrážek; závěr „Děkuji a s pozdravem“; „určitě rád pomohu“.
+**Poučení z úprav poradce:** dvě otázky ke klientce napsal celou větou místo odrážek; vyškrtl uvozovací „K prvnímu dotazu:“ / „K druhému dotazu:“ (každý dotaz má vlastní odstavec, to stačí); závěr „Děkuji a s pozdravem“; „určitě rád pomohu“.
 
 ## Dotaz klientky
 
@@ -18,8 +18,8 @@
 
 Dobrý den, paní [klientka],
 děkuji, daří se mi dobře, a doufám, že i Vám.
-K prvnímu dotazu: rád to ověřím. Pošlete mi prosím e-mail, se kterým se manžel na Portu registroval. Podívám se, jestli se u jeho účtu referenční kód správně propsal. Pokud ne, nastavím ho. Jen pro jistotu dodávám, že bezplatné období pro Vás oba začíná až ve chvíli, kdy manžel na svůj účet zainvestuje alespoň 500 Kč. Pokud tedy zatím nic nevložil, je v pořádku, že slevu ještě nevidíte.
-K druhému dotazu: s naplánováním investice Vám určitě rád pomohu. Abych mohl připravit vhodný návrh, potřeboval bych vědět jakou částku přibližně plánujete zainvestovat a na jak dlouho můžete tyto peníze postrádat, případně kdy a na co byste je mohli potřebovat.
+Rád to ověřím. Pošlete mi prosím e-mail, se kterým se manžel na Portu registroval. Podívám se, jestli se u jeho účtu referenční kód správně propsal. Pokud ne, nastavím ho. Jen pro jistotu dodávám, že bezplatné období pro Vás oba začíná až ve chvíli, kdy manžel na svůj účet zainvestuje alespoň 500 Kč. Pokud tedy zatím nic nevložil, je v pořádku, že slevu ještě nevidíte.
+S naplánováním investice Vám určitě rád pomohu. Abych mohl připravit vhodný návrh, potřeboval bych vědět jakou částku přibližně plánujete zainvestovat a na jak dlouho můžete tyto peníze postrádat, případně kdy a na co byste je mohli potřebovat.
 Podle toho Vám navrhnu, do čeho a jak postupně peníze zainvestovat.
 Děkuji a s pozdravem
 

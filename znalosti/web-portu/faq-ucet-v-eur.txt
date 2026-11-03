@@ -1,0 +1,55 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/ucet-v-eur
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Investování v eurech
+
+Jak fungují eurové investice?
+Jaký je poplatek u investic vedených v eurech?
+Jak můžu založit eurovou investici?
+Jaká je minimální výše vkladu na eurovou investici?
+Na jaký účet mám zaslat eurový vklad?
+Jak je to u eurových investic s měnovým zajištěním?
+Liší se složení Portfolia od Portu v eurové a v korunové variantě?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Jak fungují eurové investice?
+ODPOVĚĎ: Investice vedené v eurech fungují obdobně jako korunové investice, jen s tím rozdílem, že vklady a výběry probíhají v eurech.
+
+V eurové variantě jsou k dispozici tyto produkty:
+
+- Portfolio od Portu
+
+- Portfolio podle vás
+
+- Investiční rezerva
+
+- Realitní fond
+
+Portfolia od Portu v eurech mají jiné složení než korunové.
+
+OTÁZKA: Jaký je poplatek u investic vedených v eurech?
+ODPOVĚĎ: Poplatky jsou stejné jako u korunových investic. Pro Portfolia je jednotná základní sazba poplatku ve výši 1 % p.a. Výše této sazby se snižuje s tím, jak roste objem prostředků, který v těchto produktech máte – a to jak na korunových, tak eurových investicích dohromady. Poplatek za produkt Investiční rezerva je 0,25 % p.a.
+
+OTÁZKA: Jak můžu založit eurovou investici?
+ODPOVĚĎ: Při zakládání investice změňte v pokročilém nastavení měnu pro vklady na eura. U Investiční rezervy nebo realitního fondu zvolíte eurovou variantu.
+
+OTÁZKA: Jaká je minimální výše vkladu na eurovou investici?
+ODPOVĚĎ: Minimální výše každého jednotlivé vkladu, který budete zasílat, je 20 EUR. Menší částky nemusí být zainvestovány. Výjimkou je realitní fond, kde je minimální investice 4 eura. Nezapomeňte u každého vkladu uvést správný variabilní symbol vaší Portu investice.
+
+OTÁZKA: Na jaký účet mám zaslat eurový vklad?
+ODPOVĚĎ: Vklady na eurové investice zasílejte na eurový bankovní účet Portu u Fio banky. Ten má jiné číslo než účet korunový. Jeho číslo naleznete při zadávání vkladu v aplikaci Portu anebo v tomto dokumentu.
+
+OTÁZKA: Jak je to u eurových investic s měnovým zajištěním?
+ODPOVĚĎ: U Portfolií vedených v korunách Portu zajišťuje měnové riziko české koruny, pokud si to žádá tržní situace. Tohle riziko u investic vedených v eurech odpadá, a proto není u portfolií prováděno měnové zajištění ani není dostupné v rámci nastavení Portfolií podle vás. V případě investování do instrumentů obchodovaných v USD není kurzové riziko EUR/USD zajišťováno ani Portu tuto možnost nenabízí.
+
+OTÁZKA: Liší se složení Portfolia od Portu v eurové a v korunové variantě?
+ODPOVĚĎ: Vzhledem k jiné základní měně, ve které probíhá investování, se může složení Portfolia od Portu mírně odlišovat. Ze strategického pohledu se však u obou variant jedná o globálně diverzifikovaná balancovaná portfolia.

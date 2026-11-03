@@ -1,0 +1,55 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/bezpecnost
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Bezpečnost
+
+Proč potřebujete informace a dokumenty zadávané při registraci?
+Jsou mé osobní údaje zadané při registraci v bezpečí?
+Kdo stojí za Portu?
+Poskytuje Portu investiční poradenství?
+Jak si ověřím, že komunikuji skutečně s Portu?
+Můžu přijít o všechny své peníze?
+Jaká jsou rizika investování v Portu?
+Co se stane s mými penězi, pokud Portu zkrachuje?
+Za jakých okolností se na investory vztahuje ochrana garančního fondu obchodníků s cennými papíry?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Proč potřebujete informace a dokumenty zadávané při registraci?
+ODPOVĚĎ: Stejně jako jakákoliv jiná finanční instituce (banka), i my spadáme pod regulaci ČNB, a s ohledem na předpisy zákona č. 253/2008 Sb., o některých opatřeních proti legalizaci výnosů z trestné činnosti a financování terorismu (tzv. zákon o praní špinavých peněz), nesmíme zprostředkovávat transakce anonymním uživatelům. Proto je nezbytné pro uzavření smlouvy a využívání finančních služeb poskytnout nezbytné údaje pro ověření totožnosti klienta.
+
+OTÁZKA: Jsou mé osobní údaje zadané při registraci v bezpečí?
+ODPOVĚĎ: Ochrana osobních údajů je pro nás velmi důležitá, a proto ve všech procesech dbáme na platné zákony. Ve všech krocích postupujeme v souladu se zákonem č. 110/2019 Sb., o zpracování osobních údajů a obecným nařízením o ochraně osobních údajů (GDPR).
+
+OTÁZKA: Kdo stojí za Portu?
+ODPOVĚĎ: Portu vzniklo ve WOOD & Company, přední středoevropské investiční skupině. WOOD & Company je největším obchodníkem na pražské burze a má přes 35 let zkušeností. Provozovatel Portu, společnost WOOD Retail Investments, stejně jako WOOD & Company podléhá dohledu České národní banky a držitelem široké licence k poskytování investičních služeb.
+
+OTÁZKA: Poskytuje Portu investiční poradenství?
+ODPOVĚĎ: Investiční poradenství může být na Portu poskytováno ve dvou různých formách. Jednak je poradenství součástí produktu Portfolií od Portu, kde v případě, že nemáte zapnuté automatické schvalování změn, můžete dostávat návrhy na úpravy složení portfolia či aktivaci měnového zajištění. Veškerá rozhodnutí však zůstávají ve vašich rukou – žádné změny se neprovedou bez vašeho souhlasu. Toto poradenství je automatizované a nezahrnuje osobní kontakt s poradcem Portu.
+
+Kromě toho Portu nabízí také investiční poradenství v podobě online konzultací se zkušenými odborníky v oblasti investic a finančních trhů. Ti vám dokáží pomoci například s nastavením vhodné investiční strategie, analýzou vašeho portfolia (i mimo Portu) nebo řízením rizik bez emocí. Zodpoví také veškeré vaše dotazy k vašim investicím a řízení financí. Vše vám srozumitelně vysvětlí, abyste se mohli následně sami kvalifikovaně rozhodnout. Služba je poskytována formou videohovoru ve vámi domluveném čase.
+
+OTÁZKA: Jak si ověřím, že komunikuji skutečně s Portu?
+ODPOVĚĎ: Bezpečnost je pro nás na prvním místě. Proto nabízíme také ověření přes mobilní aplikaci, díky kterému si můžete snadno potvrdit, že komunikujete skutečně s Portu, například když si nejste jistí pravostí hovoru.
+
+OTÁZKA: Můžu přijít o všechny své peníze?
+ODPOVĚĎ: Šance, že byste přišli o všechny své peníze, je v podstatě nulová. Existuje ale riziko, že ztratíte určitou část svého majetku. Investování na trzích je relativně rizikové. Avšak v Portu se samozřejmě budeme snažit ztráty co nejvíce minimalizovat a maximalizovat zisk. Krátkodobé propady v cenách aktiv jsou normální, obzvlášť v období krize. V tom případě doporučujeme peníze nevybírat a počkat až hodnota opět poroste nahoru. Aktuální situaci pro vás vždy velmi bedlivě sledujeme a o aktuálním vývoji na trzích vás pravidelně informujeme v našem Magazínu. Více též v článku Proč nemá cenu zabývat se načasováním investice.
+
+OTÁZKA: Jaká jsou rizika investování v Portu?
+ODPOVĚĎ: Rizik v investování je několik, ale v Portu se maximálně snažíme většinu z nich eliminovat nebo alespoň snížit. Hlavním způsobem snižování rizika je diverzifikace. Tím, že nakupujeme globální ETF s širokou škálou podkladových aktiv, snižujeme mnoho rizik spojených s investováním. Pokud si to tržní situace žádá, korigujeme také měnové riziko za pomoci derivátů, a to konkrétně forwardů a swapů. Přesto je v každém portfoliu jistá míra rizika. Více o tom, proč je riziko dobré a jak je chápáno ve světě financí, najdete v našem Magazínu.
+
+OTÁZKA: Co se stane s mými penězi, pokud Portu zkrachuje?
+ODPOVĚĎ: Přestože je tato varianta velice nepravděpodobná, kvůli zázemí celé skupiny WOOD & Company, chápeme, že vás tato varianta zajímá. Jelikož jsou vaše peníze drženy na zvláštních účtech nebo investovány do likvidních aktiv, nehrozí v žádném případě možnost, že byste o své peníze přišli. V případě problémů budete mít na výběr, zda si převedete cenné papíry jinam, nebo vám bude jejich aktuální tržní hodnota vyplacena na váš bankovní účet.
+
+Portu, jako obchodník s cennými papíry, je před úpadkem chráněn tím, že na rozdíl od komerčních bank nenakládá s klientským majetkem, který je místo toho držen na zvláštních účtech oddělených od majetku společnosti. Více o bezpečnosti klientských prostředků.
+
+OTÁZKA: Za jakých okolností se na investory vztahuje ochrana garančního fondu obchodníků s cennými papíry?
+ODPOVĚĎ: Garanční fond chrání klienty před cíleným zpronevěřováním jejich prostředků obchodníky s cennými papíry. V případě, že by firma WOOD Retail Investments ze skupiny WOOD & Company nebyla schopna dostát svým závazkům ani vám vaše cenné papíry vydat, vyplatí vám Garanční fond náhradu do výše 90 % z objemu investic, v maximální výši 20 tisíc EUR.

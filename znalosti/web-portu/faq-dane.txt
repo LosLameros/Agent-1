@@ -1,0 +1,59 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/dane
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Daně
+
+Jaké daňové konsekvence má obchodování s cennými papíry?
+Kde najdu daňové podklady?
+Na koho se můžu obrátit pokud potřebuju daňové poradenství?
+Daňově optimalizovaná rebalance a daňové dopady
+Jak se pomocí tzv. časového testu vyhnout dani při prodeji cenných papírů?
+Jak funguje časový test, pokud investuji pravidelně?
+Prodává Portu vždy ty nejstarší cenné papíry jako první?
+Lze prodat jen tu část investice, u které byl splněn časový test?
+Co když mám instrument ve více investicích současně?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Jaké daňové konsekvence má obchodování s cennými papíry?
+ODPOVĚĎ: Příjmy z prodeje cenných papírů, které nejsou zahrnuty do obchodního majetku, daní fyzické osoby (čeští daňoví rezidenti) dle zákona o dani z příjmů sazbou 15 %, resp. 23 %. Kromě příjmů z prodeje cenných papírů může vaše portfolio generovat také příjmy i v podobě dividend nebo úroků plynoucích z držení cenných papírů, které jsou však v některých případech již zdaněny u zdroje. Za předpokladu splnění určitých podmínek mohou být příjmy z prodeje anebo držby kapitálového majetku od daně osvobozeny.
+
+Portu vám na začátku kalendářního roku vždy připraví podklady pro roční daňové přiznání. Kromě toho si můžete přečíst náš článek v Magazínu, kde problematiku daní v oblasti investic detailně popisujeme.
+
+OTÁZKA: Kde najdu daňové podklady?
+ODPOVĚĎ: Veškeré daňové podklady můžete naleznout po přihlášení do svého účtu v sekci Výpisy a potvrzení nebo v sekci Daňový přehled. Informace o jejich vydání vám bude zaslána elektronicky.
+
+Daňový výpis za uplynulý kalendářní rok generujeme vždy na přelomu ledna a února. O jejich vygenerování vás vždy informujeme e‑mailem.
+
+OTÁZKA: Na koho se můžu obrátit pokud potřebuju daňové poradenství?
+ODPOVĚĎ: Daňové poradenství Portu v rámci svých služeb neposkytuje. V našem Magazínu jsme ve spolupráci s daňovým oddělením připravili detailní návod, jak tuto oblast řešit. V případě dalších nejasností se obraťte na vašeho daňového poradce.
+
+OTÁZKA: Daňově optimalizovaná rebalance a daňové dopady
+ODPOVĚĎ: Daňově optimalizovaná rebalance je proces, při kterém Portu při rebalancování portfolia zohledňuje časový test, aby se minimalizoval příjem z prodeje cenných papírů a tím i daňová povinnost. Cílem je vyhnout se daňové povinnosti tím, že se prodávají pouze investice, které jsou v portfoliu déle než tři roky.
+
+Pokud během automatické rebalance dojde k překročení nastavených limitů (tzv. driftů) a je potřeba obnovit cílové rozložení portfolia, běžně bychom prodávali nadhodnocené instrumenty a nakupovali podhodnocené. Naše daňově optimalizovaná rebalance však zajišťuje, že prodáváme pouze ty cenné papíry, které splňují časový test. Pokud žádný takový cenný papír k dispozici není, prodej v rámci automatické rebalance neproběhne a kontrola driftů proběhne znovu za další měsíc. Více o daňově optimalizované rebalanci se dozvíte v článku na našem Magazínu. Danění investic se věnujeme i v obsáhlém a pravidelně aktualizovaném článku na našem Magazínu.
+
+OTÁZKA: Jak se pomocí tzv. časového testu vyhnout dani při prodeji cenných papírů?
+ODPOVĚĎ: Při prodeji cenných papírů je standardně potřeba příjem z prodeje ponížený o výdaje (nákupní cena) zdanit. Existuje ale několik osvobození a jedním z nich je právě časový test. Pokud prodáváte kusy cenných papírů, které jste předtím alespoň 3 roky drželi, je příjem z jejich prodeje od daně osvobozen (platí pro české daňové rezidenty). Pokud prodáte investici z níž některé kusy cenných papírů časový test splnily a jiné ne, pak zdaníte příjem z prodeje jen těch kusů, které časový test nesplnily. Portu vám v ročním daňovém výpisu vše přehledně spočítá a připraví do přehledné tabulky.
+
+Více o danění investic na Portu případně popisujeme v článku na našem Magazínu.
+
+OTÁZKA: Jak funguje časový test, pokud investuji pravidelně?
+ODPOVĚĎ: Časový test běží pro každý jednotlivý nakoupený kus cenného papíru zvlášť. Pokud investujete pravidelně, při každém nákupu se spustí samostatný časový test pro nově nakoupené kusy. Časový test u dříve nakoupených kusů se nepřerušuje.Až po provedení prodeje, v rámci svého daňového přiznání, můžete sami rozhodnout, s jakými nakoupenými kusy napárujete své prodeje. V Portu využíváme účetní metodu FIFO, při které párujeme prodeje s nejstaršími nákupy.
+
+OTÁZKA: Prodává Portu vždy ty nejstarší cenné papíry jako první?
+ODPOVĚĎ: Z technického pohledu nezáleží na tom, jaké konkrétní kusy Portu prodá na burze. Párování nákupů a prodejů probíhá až následně v rámci účetnictví pro daňové účely. Vy jako daňový poplatník se můžete sami rozhodnout, jak si nákupy a prodeje napárujete. V Portu vám s tím pomáháme a využíváme účetní metodu FIFO, při které párujeme prodeje s nejstaršími nákupy. Je to nejčastěji využívaná metoda a dobře vám umožní využít časového testu. Pokud byste chtěli využít jinou metodu, doporučujeme se poradit se svým daňovým poradcem.
+
+OTÁZKA: Lze prodat jen tu část investice, u které byl splněn časový test?
+ODPOVĚĎ: U Portfolií, ať už těch od Portu nebo sestavených vámi, a Investiční rezervy lze zadat pouze pokyn k výběru konkrétní částky, nikoliv na vámi vybrané kusy jednotlivých instrumentů. Při výběru dojde k prodeji poměrné části všech instrumentů, aby po provedení prodeje zůstalo rozložení portfolia co nejblíže svému cílovému. Bohužel tedy není možné zadat pokyn na prodej pouze těch kusů, které splnily časový test. Do budoucna ale plánujeme takovou možnost přidat.
+
+OTÁZKA: Co když mám instrument ve více investicích současně?
+ODPOVĚĎ: Z daňového pohledu je jedno, v kolika investicích nebo na jakých účtech (Klasický, DIP) máte daný cenný papír obsažený. Na vaše cenné papíry u Portu je pohlíženo jako na celek. Ať už tedy vybíráte peníze z jakékoliv své investice, napárujeme pro vás do daňového výpisu prodeje cenných papírů s těmi nejstaršími nakoupenými kusy stejných instrumentů napříč všemi investicemi a účty u Portu. Využijeme účetní metodu FIFO. Díky tomu můžete využít časový test i tehdy, když například vybíráte peníze z novějšího portfolia, ačkoliv máte ještě druhé, starší, kde jste dělali nákupy dříve.

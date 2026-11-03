@@ -1,0 +1,85 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/poplatky
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Poplatky
+
+Jaké poplatky si Portu účtuje?
+Jak na Portu počítáte poplatky?
+Jak si můžu u Portu snížit poplatek?
+Můžu na Portu investovat úplně zdarma?
+Účtuje si Portu nějaké skryté poplatky?
+Jak se počítá celková hodnota?
+Účtujete si Portu nějaké poplatky za nákup a prodej v rámci Portfolií?
+Co dostávám za poplatek Portu?
+Kde můžu vidět poplatky, které jsem zaplatil?
+Co je to TER?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Jaké poplatky si Portu účtuje?
+ODPOVĚĎ: Za Portfolia od Portu a Portfolia podle vás platíte jen jeden transparentní poplatek, který vám snižujeme podle toho, kolik peněz máte dohromady v portfoliích zainvestováno. Základní poplatek je 1 % ročně, po 500 000 Kč v portfoliích klesá na 0,8 %, s 1 milionem Kč na 0,6 % a po 5 milionech Kč na 0,4 % ročně.
+
+U Dětských účtů je poplatek jen 0,25 % ročně, účty Portu < 26 mají všechny poplatky snížené na polovinu. Výhodněji investujete také v rámci Důchodového účtu (DIP), a to za 0,3 % ročně.
+
+Poplatek v Investiční rezervě je 0,25 % ročně. V Brokerage zaplatíte z každého pokynu 0,4–0,2 % podle toho, kolik peněz máte zainvestováno v portfoliích, vždy ale nejméně 39 Kč. Za úschovu cenných papírů zaplatíte 0,05 % ročně a pokud využijete směnu měn, účtujeme si 0,4 % ze směněné částky.
+
+Za nákup, prodej ani držení fondů u nás žádné poplatky neplatíte. 
+
+Přehledněji najdete poplatky rozepsané v našem Sazebníku.
+
+OTÁZKA: Jak na Portu počítáte poplatky?
+ODPOVĚĎ: Sazbu poplatků u většiny investic uvádíme v procentech ročně, poplatky účtujeme měsíčně, ale počítáme je jako součet denních poplatků. Zní vám to složitě? Tak čtěte dál.
+
+Pro Portfolia od Portu, Portfolia podle vás a Investiční rezervu počítáme poplatek denně, tedy z toho, kolik máte na konci každého dne zainvestováno. Odborně řečeno z denního stavu investice. Účtujeme ho ale měsíčně, to znamená, že denní poplatky na konci měsíce sečteme a výsledný měsíční poplatek si vezmeme z hotovostní složky vaší investice  – vy se o nic starat nemusíte.
+
+A protože sazbu poplatků uvádíme v procentech ročně, denní poplatek vám počítáme jako 1/365 z vaší aktuální sazby, v přestupném roce jako 1/366. Pokud máte například 1. dubna nepřestupného roku v portfoliích 50 000 Kč a základní sazbu 1 % ročně, váš denní poplatek bude 1/365 % z 50 000, tedy 1 ÷ 100 ÷ 365 × 50 000 = 1,37 Kč.
+
+OTÁZKA: Jak si můžu u Portu snížit poplatek?
+ODPOVĚĎ: Poplatek si u nás můžete snížit dvěma způsoby, které se dají kombinovat: podle úrovně účtu a podle doby, na kterou plánujete investovat.
+
+Sleva za úroveň účtu 
+Úroveň vašeho účtu závisí na tom, kolik peněz máte v Portfoliích od Portu a Portfoliích podle vás na klasickém účtu nebo Portu < 26 – tedy ne na zvýhodněném důchodovém nebo dětském účtu. Platí, že čím více peněz v portfoliích, tím vyšší úroveň a nižší roční poplatek. Na základní bronzové úrovni platíte 1 % ročně, na stříbrné úrovni od 500 tisíc Kč máte sazbu 0,8 %, na zlaté úrovni od 1 milionu Kč je poplatek 0,6 % a na platinové od 5 milionů Kč se dostanete na 0,4 % ročně.
+
+Na vyšší úroveň vás posuneme automaticky hned, jak vaše investice překročí potřebnou hodnotu. S každou další úrovní navíc získáte nové výhody jako nižší poplatky v Brokerage nebo investiční konzultace zdarma.
+
+Sleva pro dlouhodobé investice
+U Portfolií od Portu a Portfolií podle vás si můžete nastavit, za jak dlouho plánujete investici vybrat. Říkáme tomu fixované období. Při fixaci na 5 let získáte slevu 20 %, na 7 let 25 %, na 10 let 30 % a na 15 let 40 %. Nižší poplatek vám vydrží až do konce zvoleného období. Když budete peníze z investice potřebovat dřív, není to problém – jen doplatíte to, co vám do té doby sleva na poplatcích ušetřila.
+
+OTÁZKA: Můžu na Portu investovat úplně zdarma?
+ODPOVĚĎ: Investovat bez poplatku můžete do Portfolií od Portu, Portfolií podle vás a Investiční rezervy – stačí, když k nám přivedete další klientky a klienty. Pozvěte je ze svého profilu přes Dárky a výhody / Pozvat přátele. Jakmile se kdokoliv zaregistruje přes váš odkaz nebo s vaším referenčním kódem a investuje alespoň 500 Kč, získáte oba 3 měsíce investování zdarma.
+
+Měsíce se vám sčítají a jejich počet není nijak omezený – čím více přátel pozvete, tím déle můžete bez poplatku investovat. Na nákup jednotlivých akcií a ETF přes naši Brokerage se investování zdarma nevztahuje. Naopak do realitního, blockchainového a obranného fondu u nás investujete bez poplatků vždy, jejich vnitřní poplatky vám ale vypnout neumíme.
+
+OTÁZKA: Účtuje si Portu nějaké skryté poplatky?
+ODPOVĚĎ: Ne. Transparentnost je jednou z našich hlavních hodnot — klientům otevřeně říkáme, do čeho investují a co za to zaplatí. Žádné skryté poplatky vám proto nikdy nenaúčtujeme.
+
+OTÁZKA: Jak se počítá celková hodnota?
+ODPOVĚĎ: Celková hodnota je nejlepším možným odhadem, jaké má vaše portfolio hodnotu. Cenné papíry oceňujeme závěrečnou cenou předchozího dne. Poté používáme aktuální kurz z ČNB pro určení měnového kurzu, jelikož je část portfolia v zahraničních měnách. Přesnou hodnotu vašeho portfolia vám jsme schopni sdělit pouze při výběru peněz, kdy vám vše prodáme za aktuální tržní cenu a připíšeme vám částku, která vám právoplatně náleží. Ta může být jak vyšší, tak nižší než náš odhad.
+
+OTÁZKA: Účtujete si Portu nějaké poplatky za nákup a prodej v rámci Portfolií?
+ODPOVĚĎ: Ne. Tyto náklady jsou započteny do pravidelného měsíčního poplatku.
+
+OTÁZKA: Co dostávám za poplatek Portu?
+ODPOVĚĎ: Za poplatek získáváte mnoho výhod. Kromě toho, že je Portu nejjednodušší cesta, jak inteligentně investovat, tak vám účet u Portu usnadní investiční rozhodnutí a pomůže dosáhnout vyšších výnosů díky následujícím unikátním vlastnostem:
+Lepší diverzifikace – Každý fond má své nedostatky. Portu však staví vyvážená portfolia nebo nabízí takové nástroje, které jsou samy o sobě složeny z několika různých cenných papírů sledujících odlišné druhy aktiv. Touto investicí tím pádem získáte expozici jak na velké růstové akcie s vysokou tržní cenou, tak na drobné akcie prodávající se za nízkou cenu nebo na akcie rozvojových trhů. Přímý nákup takových cenných papírů, jejich správa a řádné balancování by byl pro jednotlivce velmi náročný úkol.
+Rebalancing – V průběhu času se situace na trzích vyvíjí a tím se mění i vaše portfolio. Portu však strukturu jednotlivých portfolií sestavených na míru pravidelně kontroluje a může navrhnout úpravu tak, aby splňovalo předem daná kritéria, která nejlépe odpovídají vašemu individuálnímu rizikovému profilu. Smyslem úprav složení vašeho portfolia je vždy snaha maximalizovat výnosy a současně ochránit investici před výraznými propady. Pokud by vás zajímalo o rebalancingu víc, přečtěte si článek v Magazínu.
+Frakční nákupy – Díky investování skrze Portu si můžete být jisti, že ať investujete jakkoliv velkou částku, vaše portfolio bude vždy ideálně diverzifikováno. Nákupní cena cenných papírů se může pohybovat i v řádu tisícikorun, což znemožňuje investováním malé částky dosáhnout ideální diverzifikace, jelikož by investice nepokryla nákup všech potřebných aktiv v ideálním poměru. Portu vám však dokáže koupit i frakce – zlomky jednotlivých cenných papírů a tím zajistit, že jakákoliv investovaná částka začne být ihned zhodnocována.
+Lepší přístup k penězům – vaše peníze jsou vždy dostupné a vy je můžete kdykoliv vybrat. Pokud nastane neočekávaná událost a vy budete peníze potřebovat, mohou být na vašem běžném účtu zpravidla do 2 až 4 pracovních dnů.
+
+OTÁZKA: Kde můžu vidět poplatky, které jsem zaplatil?
+ODPOVĚĎ: Poté, co se přihlásíte do svého účtu, v sekci Transakční historie najdete přehled všech transakcí, včetně zaúčtovaných poplatků. Pokud chcete vidět pouze zaúčtované poplatky, můžete si je vyfiltrovat v horní části stránky.
+
+OTÁZKA: Co je to TER?
+ODPOVĚĎ: U každého ETF nebo fondu uvádíme ukazatel celkové nákladovosti fondu, neboli Total expense ratio (TER). Ukazatel podává informaci o vnitřních nákladech spojených s fungováním fondu za poslední rok. Jedná se o poměr celkových ročních provozních nákladů fondu k průměrné hodnotě jeho majetku. Ukazatel se udává v procentech.
+
+TER klientům není účtován zvlášť, je započten v hodnotě podílového listu nebo v ceně ETF. TER tak ve svém důsledku snižuje výnosy klientům. Čím vyšší je nákladovost fondu, tím méně majetku připadá na každý podílový list, nebo v případě ETF, tím nižší je hodnota ceny na burze – ke klientům se tedy nedostane vše, co fond vydělá.
+
+Obecně lze říci, že fondy s velkým majetkem pod svojí správou mohou lepším rozložením fixních nákladů dosáhnout nižšího ukazatele TER, než je tomu v případě fondů malých. Pasivně řízené fondy, jako například ETF, mají obecně nižší TER, než je tomu v případě aktivně řízených, jelikož odpadají náklady na portfolio manažery a aktivní řízení.

@@ -1,0 +1,137 @@
+ZDROJ: https://magazin.portu.cz/portu-vse-co-potrebujete-vedet-o-danich/
+NAČTENO: 2026-11-03
+
+Portu - vše, co potřebujete vědět o daních
+Martin Luňáček
+05.01.2025
+
+Investuji s Portu, musím vyplňovat daňové přiznání? Jak se daní příjmy z dividend nebo prodaných investičních nástrojů? Pokud si kladete podobné dotazy, je následující článek přímo pro vás. Shrnuje všechny potřebné informace, vysvětlí, kdy jste od daní osvobozeni a pomůže vám úspěšně proplout mezi nástrahami daňových povinností.
+– Původní článek z 16.12.2020 byl aktualizován 07.01.2025.
+
+Jaké jsou sazby daní pro příjmy z prodeje cenných papírů?
+
+Pro fyzické osoby, české daňové rezidenty, jejichž držené cenné papíry nejsou zahrnuty do obchodního majetku, jsou příjmy z prodeje cenných papírů dle zákona o dani z příjmů zdaňovány platnou sazbou, která činí pro rok 2024 15 %, resp. 23 %.
+
+Vyšší sazbou (23 %) se daní jen základ daně převyšující 36násobek průměrné mzdy (do roku 2023 to byl 48násobek), což pro zdaňovací období 2025 činí 1 676 052 Kč. Tento limit vychází z nařízení vlády a každý rok se mění. Do limitu se započítávají dílčí základy daně podle § 6 – § 10 zákona o daních z příjmů – tedy mimo jiné také mzda, zisky ze samostatně výdělečné činnosti nebo příjem z nájmu snížený o související výdaje. Zjednodušeně a neodborně řečeno, všechny tyto příjmy včetně příjmů z prodeje cenných papírů ponížené o související uplatnitelné výdaje se sečtou dohromady. Poté se na základ daně do limitu 1 676 052 Kč uplatní nižší sazba daně (15 %) a na základ daně nad limit sazba vyšší (23 %).
+
+POZOR, v určitých případech však příjmy z prodeje cenných papírů danit nemusíte – podívejte se na kapitolu Osvobození od daně z příjmu.
+
+Co je to základ daně a jak se vypočte, aneb z čeho se daň platí?
+
+Základem daně rozumíme souhrn vašich příjmů snížených o náklady s nimi spojenými (pokud existují). Celkový základ daně z příjmu je tedy součtem jednotlivých dílčích základů (např. ze zaměstnání, samostatně výdělečné činnosti, příjem z nájmu, investic atd.). Na tento celkový základ daně se pak patřičné daňové sazby uplatňují.
+
+U investic se do dílčího základu daně zahrnují veškeré příjmy z úplatného převodu (prodeje) cenných papírů ponížené o náklady přímo související s jejich pořízením a držbou. Proti výnosům z prodeje cenných papírů (prodejní cena*počet kusů) proto v daňovém přiznání vždy započítejte výdaje na jejich nákup (nákupní cenu*počet kusů – bližší popis níže) a veškeré ostatní související výdaje (například poplatky za nákup/prodej).
+
+Přiřazení nákladů souvisejících s příjmem z prodeje cenných papírů
+
+Od příjmů z prodeje cenných papírů je v daňovém přiznání potřeba odečíst výdaje na jejich pořízení a související poplatky – kde však tyto náklady zjistíte? Pro přiřazení nákladů existují obecně dvě možné metody. Portu ve svých podkladech používá účetní metodu FIFO (first in first out), při které se prodávané kusy párují postupně s nejstaršími nakoupenými kusy a pro každý prodaný cenný papír se stanovuje přesná cena jeho nákupu. Portu tuto metodu používá právě kvůli její maximální přehlednosti a transparentní možnosti posoudit tříletý časový test daňového osvobození (viz. sekce Osvobození od daní z příjmu).
+
+Alternativní variantou je pak použití metody váženého aritmetického průměru. Při této metodě se průběžně s každým nákupem počítá vážený aritmetický průměr nákupní ceny, kterou se v případě prodeje jednotlivé kusy oceňují. Chceme-li však posoudit splnění tříletého časového testu, je potřeba prodávaný kus napárovat přímo s datem jeho pořízení a metoda FIFO v tomto ohledu poskytuje větší přehlednost. Při sestavování daňového přiznání je pak potřeba, aby byl každý v používání metod konzistentní a vzájemně je nekombinoval.
+
+Daně z kapitálového příjmu
+
+Kromě příjmů z prodeje cenných papírů mohou vaše investice generovat příjmy i v podobě dividend nebo úroků plynoucích z držení cenných papírů – často zahraničních. Tyto příjmy, plynou-li ze zahraničí, se nejprve daní sazbou danou lokální legislativou v zemi zdroje příjmu a limitovanou smluvním vztahem České republiky s touto zemí – tzv. Smlouvou o zamezení dvojího zdanění. Zpravidla jsou tyto daně zaplaceny formou srážkové daně ve státě zdroje příjmu (výplaty).  Například pro příjmy z cenných papírů z USA nebo Německa se jedná o shodnou sazbu – 15 %. V realitě tomu ale může být někdy jinak, viz níže.
+
+Na váš účet Portu jsou zahraniční dividendy zpravidla připisovány v čisté výši (tedy již po odečtení srážkové daně v zahraničí). V daňových podkladech, které vám Portu každý rok připraví, však najdete jak čistou, tak hrubou (nezdaněnou) hodnotu dividendy včetně sazby srážková daně, která byla použita.
+
+V případě tuzemských dividend, tedy dividend vyplacených společnostmi obchodovaných na pražské burze (ČEZ, Moneta a další), jsou dividendy zpravidla připsány v čisté výši, tj. již zdaněny srážkovou daní 15 %. Proto se kapitálový výnos z českých akcií neuvádí do daňového přiznání.
+
+Kam dividendy uvést v přiznání?
+
+Do daňového přiznání pak uveďte veškeré příjmy z dividend v hrubé výši. Zahraniční dividendy lze zahrnout buď do přílohy č. 3, kde se vyplňuje list za každou jednotlivou zemi příjmu, nebo je vyčlenit do samostatného základu daně a uvést je v příloze č. 4, kam se uvádějí souhrnně za všechny země. Vyčlenění zahraničních dividend do samostatného základu může být výhodné pro poplatníky, na jejichž příjmy by se vztahovala vyšší sazba daně 23 % (tj. pro ty, jejichž základ daně převýší  36násobek průměrné mzdy). Vyčleněním do samostatného základu se na zahraniční dividendový příjem aplikuje sazba 15 %.
+
+Zápočet již zaplacené daně v zahraničí
+
+Umožňuje-li to smlouva o zamezení dvojího zdanění, můžete si také započíst již zaplacenou srážkovou daň v zahraničí (ale pouze do výše daňové povinnosti v ČR – tedy v případě zahrnutí maximálně 15 %). Snížíte tím daňovou povinnost v České republice, a pokud je již zaplacená daň v zahraničí shodná nebo dokonce větší než daň, kterou byste měli zaplatit v ČR (aktuálně 15 %), nevzniká vám v ČR dokonce žádná další daňová povinnost.
+
+Občas se stane, že dividendy z ETF přijdou v hrubé výši (například ty z Německa). Srážkovou daň si ve státě zdroje nestrhnou, ačkoliv by dle mezinárodních smluv mohli. To Portu bohužel nedokáže ovlivnit. Vždy vám však dá vědět, jaká daň byla u konkrétní dividendy stržena. Pokud žádná srážková daň stržena nebyla, je potřeba dle českých zákonů odvést daň v ČR (dle aktuální sazby 15 %) a proti této povinnosti tedy pochopitelně žádnou již zaplacenou daň započíst nemůžete.
+Pokud by naopak došlo ke stržení vyšší srážkové daně než dle smluv o zamezení dvojího zdanění, je možné si požádat daňový úřad dané země o refundaci.
+
+Některé země – jako například USA – mohou po klientech požadovat podepsaný formulář potvrzující jejich daňové rezidentství tak, aby došlo k uplatnění správné daňové sazby. Pro USA se tento formulář jmenuje W-8BEN a je-li potřeba, budete vyzváni k jeho podpisu. Pokud by takové prohlášení americká daňová autorita neměla, uplatnila by na dividendy zvýšenou srážkovou sazbu ve výši 30 %.
+
+U Portu se tento formulář vyžaduje jen u klientů, kteří investují do amerických akcií. Ti, co si zakládají například jen portfolia na míru nebo Investiční rezervu jej vyplňovat nemusí.
+
+Danění příjmů z měnového zajištění
+
+Příjem z měnového zajištění (měnové forwardy a swapy) je považován za ostatní příjem dle § 10. Od realizovaných zisků z instrumentů měnového zajištění (považovány za příjmy) lze odečíst ztráty (považovány za výdaje) a výslednou hodnotu, je-li kladná, je třeba vykázat v daňovém přiznání jako dílčí základ daně dle § 10 v Příloze č. 2 s označením druhu příjmů „F – jiné ostatní příjmy“.
+
+Jelikož se na Portu obchoduje většina instrumentů v cizích měnách, je pro jejich nákup potřeba směnit koruny do eur či do dolarů. Tato směna měn do daňového přiznání nevstupuje, protože při směně měny za účelem nákupu cenných papírů nevzniká z pohledu daňové legislativy zisk či ztráta.
+
+Danění připsaných úroků v rámci Investiční rezervy
+
+Úroky z části Investiční rezervy, která je držena v úročené hotovosti, jsou připisovány v hrubé výši. Stejně jako dividendy jsou tyto úroky považovány za příjmy z kapitálového majetku a spadají tak do § 8 Zákona o daních z příjmů a daní se tak standardně 15 % (resp. 23 %). Za určité situace ale mohou být připsané úroky od daně osvobozeny, viz. část Osvobození od daně z příjmů.
+
+Danění podílových listů realitního fondu WOOD Realitní OPF
+
+Prodejem podílových listů realitního fondu vám vzniká příjem z prodeje cenných papírů. Jelikož jsou podílové listy standardním cenným papírem, lze uplatnit jak hodnotový, tak i časový test (viz. sekce článku Osvobození od daně z příjmu). Zisk, který nelze osvobodit od daně z příjmu je nutné uvést v daňovém přiznání. Bližší informace naleznete ve svém daňovém výpisu za uplynulý rok.
+
+Jak přepočtu do korun příjem v cizí měně?
+
+Výše některých vašich zahraničních příjmů (například z dividend) může být na výpisech uvedena v cizích měnách. V daňovém shrnutí je pro převod použit denní devizový kurz ČNB (ke dni provedení příslušné transakce) a částky jsou vyčísleny v korunové hodnotě. Kromě metody denních kurzů lze použít i jednotný kurz stanovovaný podle § 38 odst. 1 zákona č. 586/1992 Sb., o daních z příjmů. Tento kurz stanovuje jednou ročně (vždy na začátku ledna) Finanční správa ČR a zveřejňuje jej na svých webových stránkách. Použité metody však nelze kombinovat.
+
+Osvobození od daně z příjmu a povinnost podat přiznání
+
+Za předpokladu splnění určitých podmínek se můžete díky osvobození a limitům vyhnout podávání daňového přiznání
+
+Zajímat nás budou zejména 3 věci – hodnotový test 100 000 kč, časový test 3 roky a limit 20 tisíc pro ostatní příjmy dle § 7 – § 10 zákona o dani z příjmů. Rozebereme si je postupně:
+
+1. V případě, že celkové příjmy z prodeje cenných papírů za zdaňovací období nepřesáhnou 100 000 Kč, je splněn tzv. hodnotový testu (dle § 4 odst. 1 písm. t), a veškeré příjmy z prodeje jsou od daně osvobozeny (a není je tím pádem potřeba uvádět do daňového přiznání).
+
+Důležité je však poznamenat, že zmíněná částka se vztahuje k celkové výši příjmů z prodeje cenných papírů – tedy nejen z Portu – a to v úhrnné hrubé výši nesnížené o náklady (neposuzuje se tedy vygenerovaný zisk, ale celkový příjem z prodeje).
+
+Pokud je částka 100 000 Kč překročena, zdaňují se veškeré příjmy z prodeje cenných papírů s výjimkou těch, které jsou od daně z příjmů osvobozeny (například splněním tzv. časového testu, popsaným níže). Pro účely určení osvobození příjmů z prodeje se nejprve zvažuje limit 100 000 Kč jako hrubé příjmy a až následně osvobození na základě časového testu. Není možné ale testy kombinovat naopak – jinak řečeno nemůžeme nejprve vyloučit osvobozený příjem na základě testu časového a až zbylý příjem posuzovat z hlediska testu hodnotového (100 000 Kč).
+
+2. Tzv. časový test nám říká, že pokud uplynou mezi nákupem a prodejem daného kusu cenného papírů alespoň 3 roky, je takový příjem z prodeje osvobozen od daně. Platí přitom, že tento časový test běží pro každý jednotlivý kus zvlášť. Proto pokud investujete pravidelně, tak dochází ke splnění časového testu u jednotlivých cenných papírů postupně, vždy 3 roky poté, co jste je nakoupili.
+
+Příjmy z prodeje osvobozené na základě časového testu se do daňového přiznání nemusí uvádět. Bližší informace můžete nalézt v § 4 odst. 1 písm. u) zákona č. 586/1992 Sb., o dani z příjmů.
+
+Časový a hodnotový test platí také pro frakční podíly cenných papírů držených u Portu.
+
+3. Dalším důležitým limitem, který je potřeba sledovat pro posouzení, zda musíte sami podávat daňové přiznání je limit 20 tisíc týkající se jiných příjmů dle § 7 – § 10 (od 1. 1. 2027 dojde ke zvýšení limitu na 40 000 Kč).  Do skupiny těchto příjmů spadají například dividendy, které vám Portu připsalo, příjmy z měnového zajištění nebo připsané úroky z úročené hotovosti Investiční rezervy (dále pak ale také třeba příjmy z nájmu nebo samostatné činnosti). Pokud součet těchto vašich příjmů za daný rok nepřesáhne 20 000 Kč (a současně splňujete další podmínky shrnuté níže), nevzniká vám povinnost podat daňové přiznání, respektive roční zúčtování daně za vás může udělat zaměstnavatel. Současně ale platí, že pokud už sami daňové přiznání podáváte, pak tam tyto příjmy z § 7 – § 10 zahrnout musíte, bez ohledu na jejich výši. Zjednodušeně řečeno, pokud přiznání podáváte a přišla vám například dividenda ze zahraniční akcie či ETF ve výši 100 Kč, musíte ji tam uvést.
+
+Za jakých podmínek tedy nemusíte podávat daňové přiznání (tedy může za vás zaměstnavatel provést roční zúčtování daně)?
+
+Máte jen příjmy ze závislé činnosti (pouze od jednoho zaměstnavatele, a nebo postupně od více zaměstnavatelů při podepsaném prohlášení k dani)
+Nemáte žádné příjmy z prodeje cenných papírů, které by nebyly osvobozeny na základě hodnotového nebo časového testu.
+Vaše ostatní příjmy dle § 7 – § 10 (dividendy, úroky, měnové zajištění atd.) nepřesahují 20 tisíc Kč (od 1. 1. 2027 dojde ke zvýšení limitu na 40 000 Kč).
+
+Splňujete-li tyto body, roční zúčtování daně za vás může udělat zaměstnavatel a vy se žádným daňovým přiznáním nemusíte zabývat. Pokud ale některý z výše popsaných bodů nesplňujete, budete muset daňové přiznání podat sami (či se svým daňovým poradcem) a své neosvobozené příjmy do něj uvést.
+
+ 
+
+Specifika danění českých dluhopisů
+
+Pokud máte kromě portfolií a strategií na Portu.cz nakoupený například nějaký z dluhopisů na opPORTUnity (např. Prague Real Estate nebo KKIG), možná vás zajímá, jak funguje danění v takovém případě. Je to jednoduché a vy nic řešit nemusíte. Každý vyplácený úrok je již automaticky zdaněn 15% srážkovou daní a do daňového přiznání se již tento úrok nezahrnuje. Úrok se ani nepočítá do limitu 20 000 Kč, který se používá pro posouzení nutnosti podat daňové přiznání při souběhu příjmu ze zaměstnání a zbylých příjmů. Zkrátka můžete tento příjem pro účely daňového přiznání zcela ignorovat.
+
+Oznámení o osvobozených příjmech
+
+Jediným případem, kdy je potřeba ohlásit i osvobozený příjem, je situace, kdy tento příjem fyzické osoby přesáhne v jednom roce 5 milionů korun.  V tomto případě je potřeba jej oznámit finančnímu úřadu do konce lhůty pro podání daňového přiznání za příslušné zdaňovací období.
+
+Daňové přiznání
+
+Portu sice daňové poradenství neposkytuje, ale snaží se svým klientům v této oblasti poskytovat maximální součinnost. Pro účely podání daňového přiznání vám vždy na začátku kalendářního roku Portu připraví potřebné podklady pro podání daňového přiznání (mj. seznam všech provedených transakcí, připsaných dividend a odečtených poplatků). Tyto podklady naleznete po přihlášení do aplikace Portu v sekci Výpisy a potvrzení, kde je můžete stáhnout jako PDF nebo CSV.
+
+V případě, že byste měli jakékoliv dotazy, můžete se vždy obrátit na Portu jak prostřednictvím online chatu, telefonicky nebo mailem na info@portu.cz, rádi vám pomůžeme.
+
+Martin Luňáček
+
+Martin se podílí na strategickém řízení Portu a má na starost zejména produktový vývoj. Spolu se svým týmem pracuje na vylepšování Portu od provádění tržních analýz, návrzích konceptů až po spuštění a představení nových funkcionalit a produktů. Jako člen investiční komise Portu se také podílí na nastavení a řízení investičních portfolií. Je držitelem mezinárodní certifikace EFA (European Financial Advisor) pro odborníky na finančním trhu poskytující finanční a investiční poradenství.
+
+Všechny články od autora
+Článek není investičním doporučením
+Historická výnosnost není nikdy zárukou budoucích výnosů
+Investice na kapitálových trzích jsou vždy rizikové
+Portu negarantuje dosažení výnosů z investice na kapitálových trzích
+Nejste si jistí, jaký rizikový profil je pro vás vhodný nebo zda je pro vás vhodné například tématické investování? Vyplňte si náš investiční dotazník a my vám poradíme.
+Nejčtenější články
+WOOD PX ETF dostupné na Portu: do nejvýznamnějších českých firem můžete investovat už od stokoruny
+Jak začít investovat? Nemusíte být expert ani milionář
+Co je ETF? Kompletní průvodce investováním pro začátečníky
+Portu spouští brokerage. Zkušenějším investorům umožní obchodovat napřímo a v reálném čase
+Jak rozložit větší pravidelnou investici? Příklady z praxe
+Aktivní vs. pasivní investování: Co je dlouhodobě úspěšnější?
+Novinky ze světa financí
+
+Vždy jednou týdně v pátek zasíláme pravidelné shrnutí z finančních trhů a ekonomiky. Žádný spam, slibujeme.
+
+Přihlásit k odběru

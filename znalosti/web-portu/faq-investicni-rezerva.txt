@@ -1,0 +1,95 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/investicni-rezerva
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Investiční rezerva
+
+Co je to Investiční rezerva?
+Komu je Investiční rezerva určena?
+Jaké je složení Investiční rezervy?
+Jak se liší Opatrná investiční rezerva a Odvážná investiční rezerva?
+Je možné investovat do Investiční rezervy v eurech?
+Jak se liší Investiční rezerva od spořicího účtu?
+Může hodnota Investiční rezervy poklesnout?
+Jak se mi připíší úroky za úročenou hotovost?
+Jak daním výnosy z Investiční rezervy?
+Jak si Investiční rezervu založím?
+Jak si můžu peníze z Investiční rezervy vybrat?
+Jaký je poplatek za správu peněz v Investiční rezervě?
+Je Investiční rezerva rebalancována a měnově zajištěna?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Co je to Investiční rezerva?
+ODPOVĚĎ: Investiční rezerva je nejkonzervativnější způsob, jak na Portu investovat. Pomáhá chránit peníze před znehodnocením s minimálním rizikem a kombinuje úročenou hotovost s investičními instrumenty. Vybrat si můžete ze tří variant: opatrné, odvážné a eurové. 
+
+Opatrná a odvážná se liší poměrem hotovosti a investic, zatímco eurová varianta je vhodná pro uložení volných eur bez kolísání hodnoty.
+
+OTÁZKA: Komu je Investiční rezerva určena?
+ODPOVĚĎ: Investiční rezerva je vhodné místo pro peníze, které neplánujete investovat dlouhodobě, ale zároveň je nechcete nechat ležet na bankovním účtu napospas inflaci. Kromě ochrany peněz před znehodnocením se Investiční rezerva hodí například k vybudování finančního polštáře pro neočekávané výdaje nebo k investování s krátkodobým cílem. Pomůže vám také, když čekáte na vhodnou investiční příležitosti a své prostředky chcete do té doby alespoň mírně zhodnotit.
+
+OTÁZKA: Jaké je složení Investiční rezervy?
+ODPOVĚĎ: Složení Investiční rezervy jsme nastavili tak, aby chránilo peníze před znehodnocením a současně minimalizovalo riziko kolísání hodnoty. K tomu využívá dvě složky.
+
+První složku tvoří úročená hotovost. Tato složka produktu je srovnatelná se spořicím účtem. Jejím cílem je přinášet pozitivní zhodnocení sazbou, která se odvíjí od hlavní úrokové sazby ČNB, říká se jí také dvoutýdenní repo sazba. Přesná výše naší sazby závisí na tom, jak se nám podaří dohodnout s obchodní protistranou. Portu se vždy snaží vyjednat co nejvýhodnější sazbu a průběžně jedná s několika protistranami, u kterých může hotovost úročit.
+
+Druhá složka je investiční. Tu tvoří diverzifikované investice jako jsou ETF na globální akcie, duhopisy nebo zlato. Jejím cílem je dosahovat dlouhodobějšího zhodnocení vložených peněz. Hodnota těchto investičních instrumentů může v čase růst i klesat, a nelze proto zaručit, že bude výnos z Investiční rezervy pouze kladný.
+
+Poměr jednotlivých složek Investiční rezervy se liší pro opatrnou a odvážnou variantu a v čase se může měnit. Více v otázce Jak se liší Opatrná a Odvážná investiční rezerva?
+
+OTÁZKA: Jak se liší Opatrná investiční rezerva a Odvážná investiční rezerva?
+ODPOVĚĎ: Opatrná investiční rezerva a Odvážná investiční rezerva se liší poměrem hotovosti a investic.
+
+Opatrná investiční rezerva má jako hlavní cíl co nejvíce snížit kolísání hodnoty a vyhnout se propadům. Investiční složku do ní zařazujeme jen v příznivé tržní situaci, a to v menší míře. Zejména v dobách vysokách úrokových sazeb může opatrnou rezervu tvořit ze 100 % úročená hotovost. Doporučený investiční horizont je od 6 měsíců.
+
+Odvážná investiční rezerva má za cíl při co nejmenším kolísání přinášet o něco vyšší zhodnocení než její opatrná varianta. Investiční složku do ní proto zařazujeme vždy nejméně z 15 % a zejména v dobách nízkých úrokových sazeb je její poměr vyšší. Doporučený investiční horizont je od 1 do 2 let.
+
+Konkrétní složení opatrné i odvážné investiční rezervy závisí na aktuální výši úrokových sazeb a situaci na finančních trzích, takže se může v čase měnit. Limity podílů investiční a hotovostní složky najdete v její investiční strategii.
+
+OTÁZKA: Je možné investovat do Investiční rezervy v eurech?
+ODPOVĚĎ: Ano, Investiční rezerva existuje také v eurové variantě. Úročení hotovostní složky u eurové rezervy je vázáno na vkladovou facility sazbu ECB. Aktuální výši úročení naleznete na stránce Investiční rezervy.
+
+OTÁZKA: Jak se liší Investiční rezerva od spořicího účtu?
+ODPOVĚĎ: Složka Investiční rezervy tvořená úročenou hotovostí je srovnatelná se spořicím účtem. Tuto hotovost úročíme nejlepší sazbou, jakou se nám podaří na trhu vyjednat –⁠ oproti bankám u nás dostanete sazbu pouze o něco málo pod aktuální základní sazbou České národní banky. Z hlediska bezpečnosti je stejně jako na spořicím účtu tento vklad pojištěn do 100 000 eur.
+
+Druhá složka Investiční rezervy je investiční. Tvoří jí diverzifikované investice do ETF, jejichž cílem je dosahovat dlouhodobého zhodnocení vložených peněz. Hodnota těchto investic může v čase růst i klesat a nelze proto zaručit, že bude výnos z rezervy pouze kladný. Není však třeba bát se větších výkyvů hodnoty – modelace historických dat ukazuje, že s 95% pravděpodobností nepřekročí roční pokles v případě negativního tržního vývoje 2,30 %. Opatrnější investiční rezerva může navíc v dobách kolísavých trhů tuto složku zcela vynechat.
+
+OTÁZKA: Může hodnota Investiční rezervy poklesnout?
+ODPOVĚĎ: Zatímco hodnota úročené hotovosti klesnout nemůže, investiční složka není bez rizika a ceny investičních instrumentů mohou v čase růst i klesat. Pokud tedy Investiční rezerva zahrnuje investiční složku, nelze zaručit, že její hodnota bude kontinuálně pouze růst. Výkyvy hodnoty lze však očekávat výrazně nižší než například u Portfolia od Portu s rizikovým stupněm 1. Maximální očekávaný pokles je u Odvážnější varianty 1 % a u Opatrnější pak jen 0,3 %.
+
+OTÁZKA: Jak se mi připíší úroky za úročenou hotovost?
+ODPOVĚĎ: Úroky se připisují v hrubé výši měsíčně (zpravidla první den následujícího měsíce za měsíc předchozí) a zůstávají součástí úročené hotovosti, kde se dále úročí. Úroky připsané za úročenou hotovost se daní dle zákona o dani z příjmu standardně 15 % (resp. 23 %).
+
+OTÁZKA: Jak daním výnosy z Investiční rezervy?
+ODPOVĚĎ: Úroky za úročenou hotovost jsou připisovány v hrubé výši a dle Zákona o daních z příjmů se jakožto příjmy spadající pod § 8 daní standardně sazbou 15 % (resp. 23 %). Za určité situace ale mohou být připsané úroky od daně osvobozeny. V případě, že součet vašich příjmů z § 7 – § 10 Zákona (kam spadají kromě úroků také dividendy nebo např. příjmy z nájmu či samostatně výdělečné činnosti) nepřesáhne za zdaňovací období 20 000 Kč, není potřeba daňové přiznání sestavovat. Pokud už jej ale sestavujete, úroky je potřeba tam zahrnout bez ohledu na jejich výši.
+
+Pro ETF instrumenty v Investiční rezervě platí stejná pravidla jako u ostatních služeb Portu. Při jejich prodeji jsou příjmy z prodeje cenných papírů dle Zákona o daních z příjmů zdaňovány platnou sazbou (15 %, resp. 23 %). Příjmy z prodeje cenných papírů jsou od daně osvobozeny, pokud za zdaňovací období nepřesáhnou 100 000 Kč nebo pokud jste dané cenné papíry drželi déle než 3 roky. V případě výběru nebo převodu prostředků z Investiční rezervy se za prodej cenných papírů považuje pouze prodej ETF instrumentů (tedy cca 15 % hodnoty), výběr úročené hotovosti za prodej cenných papírů považován není.
+
+Více o danění se dočtete u nás v magazínu.
+
+OTÁZKA: Jak si Investiční rezervu založím?
+ODPOVĚĎ: Pokud jste již na Portu registrovaní, Investiční rezervu si můžete založit jednoduše na stránce Souhrn kliknutím na tlačítko Založit Investiční rezervu. Při zakládání si můžete vybrat, zda zvolíte Opatrnější nebo Odvážnější variantu.
+
+Pokud ještě na Portu účet nemáte, nejprve je třeba projít standardní registrací, tedy včetně založení vašeho prvního portfolia na míru pro dlouhodobé investice. Není nutné, abyste do něj investovali, jedná se však o nutný krok potřebný k dokončení registrace. Až bude váš účet aktivní, Investiční rezervu si založíte jednoduše přes tlačítko Založit Investiční rezervu na stránce Souhrn.
+
+OTÁZKA: Jak si můžu peníze z Investiční rezervy vybrat?
+ODPOVĚĎ: Pokyn k výběru peněz z vaší Investiční rezervy můžete zadat na stránce Převody. Při následujícím pracovním dni dojde k prodeji vašich investičních nástrojů. Peníze budete mít na svém bankovním účtu zpravidla do 2 až 4 pracovních dní.
+
+Peníze uložené v Investiční rezervě můžete snadno přesunout na jiné investice pomocí jednorázového převodu. Alternativně můžete využít i pravidelných převodů, kde máte možnost nastavit frekvenci a částku, a poté se o nic dalšího nemusíte starat.
+
+OTÁZKA: Jaký je poplatek za správu peněz v Investiční rezervě?
+ODPOVĚĎ: Za zhodnocování peněz ve vaší Investiční rezervě si účtujeme snížený poplatek 0,25 %. Žádné další poplatky (např. vstupní nebo výstupní) účtovány nejsou.
+
+Na Investiční rezervu se vztahuje program Pozvi přátele, se kterým můžete investovat 3 měsíce zdarma za každého, komu pošlete svůj referenční kód a stane se klientem Portu. Slevy pro dlouhodobé investory však na tuto investici využít nelze.
+
+OTÁZKA: Je Investiční rezerva rebalancována a měnově zajištěna?
+ODPOVĚĎ: Investiční rezerva je automaticky rebalancována, váhy všech složek jsou tak udržovány na jejich optimální úrovni. Díky tomu je možné držet riziko na požadované úrovni.
+
+Jelikož má v Investiční rezervě většinové zastoupení hotovost a ostatní investiční instrumenty nelze kvůli skladbě podkladových aktiv měnově zajistit (s výjimkou zlata), není u tohoto produktu měnové zajištění relevantní.

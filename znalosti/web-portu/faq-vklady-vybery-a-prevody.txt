@@ -1,0 +1,121 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/vklady-vybery-a-prevody
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Vklady, výběry a převody
+
+Jak můžu vložit peníze?
+Jak můžu vybrat peníze?
+Kdy a jak probíhají obchody?
+Jaká je minimální částka vkladu?
+Jak Portu nakládá s novými vklady a hotovostí?
+Jaká jsou pravidla práce s hotovostní složkou u investic?
+Můžu posílat peníze z jiného účtu, než uvedeného během registrace?
+Můžu peníze vybrat na jiný účet než uvedený během registrace?
+Mohou na můj investiční účet vkládat prostředky i jiné osoby?
+Kdy se mé peníze připíšou na Portu a budou zainvestované?
+Jak rozliším, do které investice peníze půjdou?
+Jakým kurzem dojde při konverzi ke směně měny?
+Jak probíhá výběr a převod peněz?
+Za jak dlouho budu mít vybrané peníze na svém účtu?
+Můžu vybrat jen část investice?
+Můžu peníze vybrat i před dosažením investičního horizontu?
+Jsou mé peníze v portfoliu uzamčené?
+Kam se připíšou peníze zaslané bez variabilního symbolu?
+Jak funguje Peněženka na Portu?
+Jak můžu zrušit investici a jak dlouho trvá než dojde k jejímu zrušení?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Jak můžu vložit peníze?
+ODPOVĚĎ: Po úspěšné registraci je možné začít investovat – vložit jakoukoliv částku, minimálně však 500 Kč. Částka může být vložena jednorázově nebo si můžete zvolit možnost pravidelného měsíčního vkladu, ale první vklad musí být proveden z vašeho účtu uvedeného při registraci. Ve svém uživatelském rozhraní kliknete na tlačítko „Vložit peníze“, kde získáte údaje pro zaslání platby.
+
+OTÁZKA: Jak můžu vybrat peníze?
+ODPOVĚĎ: Vaše peníze jsou vám kdykoliv k dispozici. Pro úspěšný výběr stačí přejít na stránku Peníze a kliknout na „Jednorázové převody“, zvolit Portu investici, ze které budete peníze čerpat a určit částku, kterou chcete vybrat. Nicméně je nutné počítat s tím, že uvedená celková hodnota je pouze orientační a maximální možná částka, kterou bude možno vybrat, se od uvedené hodnoty může lišit, viz „Jak se počítá celková hodnota?“
+
+OTÁZKA: Kdy a jak probíhají obchody?
+ODPOVĚĎ: Každý pracovní den, pokud jsou burzy otevřené, probíhají všechny nákupní a prodejní operace a také převody prostředků mezi investicemi. Zainvestovány jsou všechny vklady, které jsou vloženy a připsány do investic nejpozději v 8:00 ráno daného dne. U pozdějších vkladů již zainvestování nelze garantovat a je možné, že bude takový vklad zpracován při následujícím pracovním dni. Provedené transakce se zobrazí v průběhu dne ve vašem účtu – v sekci Transakční historie a změny uvidíte také na detailu dané investice.
+
+Výjimky z denního obchodování
+
+Ačkoli Portu funguje v denním režimu obchodování, mohou nastat situace, kdy se v daný den obchody neprovedou. Nejčastějším důvodem jsou zavřené burzy z důvodu státních svátků v jednotlivých zemích. V takových případech se Portu vždy snaží provést obchody co nejdříve, jakmile je to možné.
+
+Zavřené burzy (státní svátky)
+Pokud je burza, na které se daný instrument obchoduje, v konkrétní den zavřená, nemůže dojít k jeho nákupu ani prodeji. Portu obchoduje na burzách v New Yorku, Londýně, Frankfurtu a Praze, přičemž státní svátky se v jednotlivých zemích liší. To znamená, že například při svátku v Německu neproběhnou obchody instrumentů obchodovaných ve Frankfurtu, zatímco na pražské burze může obchodování probíhat standardně.
+
+Portfolia s instrumenty z více burz
+U portfolií, která obsahují instrumenty obchodované na více burzách, může dojít ke specifické situaci. Pokud je v daný den alespoň jedna z relevantních burz zavřená, obchodování u celého portfolia se neprovede. Tím se předchází situaci, kdy by docházelo k nákupu některých instrumentů za prostředky z jiných, které v daný den není možné prodat. Obchody proto proběhnou až v nejbližší den, kdy budou současně otevřeny všechny příslušné burzy.
+
+OTÁZKA: Jaká je minimální částka vkladu?
+ODPOVĚĎ: Minimální částka vkladu je 500 Kč pro všechny služby Portu. Výjimka je pouze Realitní WOOD OPF, kde je minimální částka pro zainvestování již od 100 Kč.
+
+OTÁZKA: Jak Portu nakládá s novými vklady a hotovostí?
+ODPOVĚĎ: Nakládání s hotovostí (ať už v českých korunách nebo cizí měně) je dáno jasnými pravidly. Hotovostní složka je nedílnou součástí portfolií, která slouží především k provádění operativních úprav portfolia.
+
+Určitá velikost hotovosti je v portfoliích udržována například za účelem potřeby dokoupit některé instrumenty nebo strhnout poplatek za správu bez nutnosti prodávat instrumenty (což by mohlo mít nežádoucí daňové dopady), ale i k pokrytí případných ztrát z instrumentů měnového zajištění.
+
+V případě vložení nových peněz se částka nejprve připočte k hotovosti, odkud je následně zainvestována.
+
+Ne vždy však musí dojít k zainvestování celé nově vložené hotovosti, jelikož Portu je nastaveno tak, aby optimalizovalo náklady a zároveň dělalo to, co je pro investora nejlepší. Pokud je například vložená částka v porovnání s celkovou velikostí portfolia malá, může investiční algoritmus vyhodnotit, že je lepší celou částku nebo její část ponechat v hotovostní složce.
+
+OTÁZKA: Jaká jsou pravidla práce s hotovostní složkou u investic?
+ODPOVĚĎ: Součástí investičních produktů Portfolia od Portu, Portfolia podle vás a Investiční rezerva je také hotovostní složka. Ta plní zejména transakční úlohu a umožňuje strhávat poplatky. Hotovostní složka má nastavenou cílovou váhu a její reálné zastoupení může v čase kolísat. Systém toto kolísání vyrovnává. V případě zaslání vkladu se peníze připíší do hotovostní složky a následně dojde k zainvestování té části hotovosti, která přesahuje cílovou váhu. Hotovost může růst i v případě, že nezašlete žádný vklad – například, když vám přijde nějaká dividenda nebo se připíše úrok. Dividendy se systém snaží zainvestovat primárně do instrumentů ve stejné měně (je-li jejich aktuální váha pod cílovou), aby byla omezena měnová konverze. Není-li to možné, dojde po přesáhnutí výše cizoměnové hotovosti 1 % celkového zastoupení k její konverzi do výchozí měny investice a dále se s ní pracuje, jako se zbytkem hotovosti. Pokud by váha hotovosti přesáhla cílovou o 2 procentní body, dojde k jejímu částečnému zainvestování, aby bylo cílové zastoupení obnoveno.
+
+Pokud by naopak zastoupení hotovosti pokleslo o více jak 75 % oproti svému cílovému zastoupení (tedy například na méně než 0,5 % při cílové váze 2 %), dojde v rámci Obchodního dne k částečnému odprodeji instrumentů, aby bylo opět cílové zastoupení obnoveno. Systém také vždy přihlíží k zadaným pokynům na výběr a případně nerealizované ztrátě z měnového zajištění. Tyto dvě položky pro účely výpočtů od skutečné výše hotovosti odečítá a až následně posuzuje, zda je potřeba něco zainvestovat nebo naopak odprodat.
+
+OTÁZKA: Můžu posílat peníze z jiného účtu, než uvedeného během registrace?
+ODPOVĚĎ: První platba musí být poslána z bankovního účtu uvedeného při registraci nebo z bankovního účtu, který před provedením první platby přidáte v aplikaci Portu. To kvůli dokončení ověření vaší identity. Následné platby pak můžete posílat i z jiných účtů vedených na vaše jméno, které předem registrujete v aplikaci Portu, v sekci Bankovní účty, kterou naleznete v menu vašeho účtu.
+
+OTÁZKA: Můžu peníze vybrat na jiný účet než uvedený během registrace?
+ODPOVĚĎ: Ano, ale musí jít o účet vedený na vaše jméno a musí být nejdříve ověřen. Účet je ověřen poté, co jej vložíte do aplikace a poté, co z tohoto účtu obdržíme příchozí platbu.
+
+OTÁZKA: Mohou na můj investiční účet vkládat prostředky i jiné osoby?
+ODPOVĚĎ: Na váš investiční účet kromě vás mohou prostředky vkládat i vaše Osoby blízké – podle obchodních podmínek se jedná „fyzickou osobu, která je příbuzná se Zákazníkem v řadě přímé (předek a potomek Zákazníka), a dále sourozenec, strýc, teta, synovec, neteř, manžel a partner podle zákona č. 115/2006 Sb., o registrovaném partnerství. Má se za to, že Osobami blízkými jsou i osoby sešvagřené nebo osoby, které spolu trvale žijí.” Pro každou Osobu blízkou platí limit 25 tisíc korun ročně v rámci kterého může posílat prostředky na váš účet bez omezení. Tento limit neplatí pro ověřené klienty Portu. Po ověření mohou vkládat prostředky bez omezení. Tato pravidla stanovuje legislativa z důvodu zamezení praní špinavých peněz. Vklady od osob blízkých, které jsou zasílány přímo na Důchodový účet DIP, si blízká osoba nemůže odečíst z daňového základu.
+
+OTÁZKA: Kdy se mé peníze připíšou na Portu a budou zainvestované?
+ODPOVĚĎ: Peníze v aplikaci Portu uvidíte pár minut poté, co se připíšou na náš bankovní účet u Fio. Mezibankovní převod je pak buď okamžitý, využíváte-li okamžité platby, anebo může trvat i několik hodin –⁠ to v Portu ovlivnit nedokážeme. Více o převodech si přečtěte zde. Pokud peníze ani po několika hodinách v Portu nevidíte, je možné, že přípsání vkladu vyžaduje manuální zásah –⁠ například byla platba zaslána z neregistrovaného účtu nebo nedokážeme identifikovat odesílatele. V takovém případě vás budeme kontaktovat.
+
+K zainvestování peněz pak dojde během nejbližšího pracovního dne. Nákup instrumentů probíhá na burzách v průběhu dopoledne a odpoledne a večer již vidíte všechny nakoupené instrumenty v detailu vaší investice a všechny provedené obchody v sekci Transakční historie.
+
+OTÁZKA: Jak rozliším, do které investice peníze půjdou?
+ODPOVĚĎ: Každé investici na Portu (Portfoliu od Portu, Portfoliu podle vás, Investiční rezervě, Realitnímu WOOD OPF) náleží unikátní variabilní symbol. Ten prosím uvádějte při zadávání převodů a trvalých příkazů. Peníze se pak automaticky připíší do dané Portu investice.
+
+OTÁZKA: Jakým kurzem dojde při konverzi ke směně měny?
+ODPOVĚĎ: Směnu měn provádíme za nejlepší možný kurz dostupný na mezibankovním trhu. Za tuto směnu neúčtujeme žádný poplatek. Tuto službu Portu poskytuje WOOD & Company Financial Services, a.s., a zákazníci Portu tak benefitují z měnových kurzů, které jsou pro retailové investory obvykle nedosažitelné.
+
+OTÁZKA: Jak probíhá výběr a převod peněz?
+ODPOVĚĎ: Pokynem k výběru peněz nebo jejich převodu do jiné Portu investice dojde k prodeji části nebo všech vašich investičních nástrojů ze zvolené investice za tržní cenu dosažitelnou v daný moment obchodu. Během pracovního dne jsou zpracovány všechny pokyny na výběr, které jsou zadané nejpozději v 8:00 daného dne.
+
+Prodej je realizován vždy v souladu s pravidly stanovenými ve Strategii provádění pokynů za nejlepších podmínek. Během prodeje jsou nejprve prodávány instrumenty, jejichž váha je větší, než by podle cíle měla být. Následně jsou rovnoměrně odprodávány všechny instrumenty tak, aby měl zbytek investice optimální strukturu. Není možné vybrat jen peníze z hotovostní složky.
+
+OTÁZKA: Za jak dlouho budu mít vybrané peníze na svém účtu?
+ODPOVĚĎ: Po zadání výběru se nejpozději během nejbližšího pracovního dne prodají investiční nástroje a hned jakmile obdržíme peníze za prodej, pošleme vám je na bankovní účet. Celý proces trvá zpravidla 2-4 pracovní dny.
+
+OTÁZKA: Můžu vybrat jen část investice?
+ODPOVĚĎ: Ano, lze vybrat část portfolia nebo jej celé zrušit. Při výběru části portfolia zadáte přesnou částku, kterou si přejete zaslat a Portu prodá instrumenty tak, aby potřebné peníze prodejem získalo. Zbylé portfolio navíc nechá tak, aby mělo optimální strukturu.
+
+OTÁZKA: Můžu peníze vybrat i před dosažením investičního horizontu?
+ODPOVĚĎ: Portu vás limitovat nebude. Mějte, prosím, však na paměti, že předčasným výběrem prostředků nemusíte dosáhnout svých investičních cílů. U investování se vyplatí držet se plánu. Prodej cenných papírů může také mít daňové dopady. Pokud například uplyne mezi nákupem a prodejem doba alespoň 3 roky, je splněn tzv. časový test a příjmy budou od daně osvobozeny. O daních si můžete přečíst zde.
+
+OTÁZKA: Jsou mé peníze v portfoliu uzamčené?
+ODPOVĚĎ: Ne. Investování je ze své podstaty dlouhodobá záležitost, avšak s Portu můžete vaše peníze vybrat kdykoliv chcete – jsou to přece vaše peníze. Aby vám bylo možné zaslat hotovost na účet, je potřeba prodat jednotlivé cenné papíry – nezapomínejte prosím, že při prodeji cenných papírů mohou vznikat daňové povinnosti. Přestože žádná minimální investiční doba neexistuje, Portu svým klientům doporučuje investovat peníze ideálně na 5 let a více.
+
+OTÁZKA: Kam se připíšou peníze zaslané bez variabilního symbolu?
+ODPOVĚĎ: Vklad zaslaný bez variabilního symbolu se automaticky připíše do Peněženky Portu. Tam budou peníze připravené k vložení do jakékoliv vaší investice na Portu nebo pro investice na Portu Gallery nebo OpPORTUnity.
+
+OTÁZKA: Jak funguje Peněženka na Portu?
+ODPOVĚĎ: Peněženka umožňuje připravit si v Portu peníze na budoucí investice. Je sdílená pro platformy Portu, Portu Gallery a OpPORTUnity. Peněženka může mít korunové a eurové zůstatky. Vkládat do ní můžete koruny a eura zasláním peněz na patřičný korunový nebo eurový účet Portu a uvedením variabilního symbolu Peněženky. Variabilní symbol je stejný pro korunovou i eurovou peněženku a naleznete jej na stránce s vkladem peněz.
+
+Jakmile budete mít peníze v peněžence, můžete je převést do jednotlivých vašich investic na Portu nebo provést investice na Portu Gallery nebo OpPORTUnity. Vše zadáte buď na stránce s Vklady nebo také na stránce s Převody a výběry.
+
+Výběr z Peněženky můžete provést jen na ověřený bankovní účet, tedy na ten, ze kterého jste již dříve zaslali do Portu nějaký vklad.
+
+OTÁZKA: Jak můžu zrušit investici a jak dlouho trvá než dojde k jejímu zrušení?
+ODPOVĚĎ: Peníze z investice vám budou odeslány na váš účet zpravidla do 2-4 pracovních dnů, jelikož musí dojít k odprodání všech investičních nástrojů. Samotná investice se může na vašem Portu účtu zobrazovat déle – tj. dokud nedojde k vypořádání veškerých transakcí a splnění všech reportingových povinností, o které se stará Portu za vás.

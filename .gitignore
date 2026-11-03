@@ -10,3 +10,6 @@ __pycache__/
 
 # komerční písmo ZFP akademie (Fedra Sans Pro) – licencované, do repozitáře nepatří
 podklady/zfpa-pismo/
+# Odpovědi na dotazy klientů (klientská data)
+vystupy/dotazy-klientu/*
+!vystupy/dotazy-klientu/.gitkeep

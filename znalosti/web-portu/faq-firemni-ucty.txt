@@ -1,0 +1,53 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/firemni-ucty
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Firemní účty
+
+Kdo může založit firemní účet?
+Jak probíhá založení firemního účtu?
+Co potřebuji k založení firemního účtu?
+Co je LEI a proč ho potřebuji?
+Mohou mít k firemnímu účtu přístup i další osoby?
+Do čeho můžu v rámci firemního účtu investovat?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Kdo může založit firemní účet?
+ODPOVĚĎ: Firemní účet si mohou plně online založit české i slovenské společnosti s ručením omezeným (s. r. o.). V ostatních případech může být třeba některé dokumenty doplnit v písemné podobě. Vám ale stačí založit registraci online a v případě, že by bylo potřeba cokoliv doplnit, bychom vás kontaktovali. Založení firemního účtu s vámi případně rádi projdeme individuálně, stačí se nám ozvat e‑mailem na info@portu.cz nebo zavolat na +420 222 096 666.
+
+Firemní účet není možné založit pro společenství vlastníků jednotek (SVJ) ani pro vysoké školy a další školy.
+
+OTÁZKA: Jak probíhá založení firemního účtu?
+ODPOVĚĎ: Firemní účet může založit osoba oprávněná jednat za společnost, například jednatel nebo člen představenstva, případně osoba pověřená plnou mocí. Ta si nejprve založí svůj osobní účet na Portu. Poté v pravém horním menu v přehledu účtů zvolí možnost „Vytvořit další účet“ a vybere Firemní účet.
+
+Registrace firemního účtu je jednoduchá a ve většině případů probíhá kompletně online. Nejprve vyplníte investiční dotazník za společnost, poté doplníte firemní údaje, například IČO, LEI, sídlo nebo předmět podnikání. Součástí registrace je také ověření společnosti, všech členů statutárního orgánu a skutečných majitelů. Po úspěšném dokončení registrace už jen založíte první investici a po kontrole z naší strany můžete začít zhodnocovat volné firemní prostředky.
+
+OTÁZKA: Co potřebuji k založení firemního účtu?
+ODPOVĚĎ: K založení firemního účtu budete potřebovat IČO společnosti, platný LEI (Legal Entity Identifier) a několik základních informací o firmě.
+
+V průběhu registrace budete vyzváni také k doplnění údajů o všech členech statutárního orgánu a údajů o všech skutečných majitelích společnosti. Oba tyto údaje musí odpovídat údajům v obchodním rejstříku a evidenci skutečných majitelů, při registraci vás proto prosíme o důkladnou kontrolu. Proces registrace tím výrazně urychlíte.
+
+Ve většině případů celý proces probíhá online.
+
+OTÁZKA: Co je LEI a proč ho potřebuji?
+ODPOVĚĎ: LEI (Legal Entity Identifier) je mezinárodní identifikační kód právnických osob. Je nezbytný pro obchodování s cennými papíry, a proto jej potřebuje každá společnost, která chce investovat.
+
+Pokud vaše společnost LEI zatím nemá, musíte si jej před založením firemního účtu vyřídit. V České republice LEI přiděluje Centrální depozitář cenných papírů (CDCP), a to zpravidla do 2 pracovních dnů po podání žádosti o nový LEI. Žádost o přidělení LEI a další informace najdete na stránkách CDCP.
+
+Po celou dobu investování musí být LEI aktivní. Pokud jeho platnost vyprší a nebude obnovena, nebude možné na firemním účtu zadávat další obchody. Platnost kódu hlídáme za vás, a kdyby vypršela, dáme vám vědět.
+
+OTÁZKA: Mohou mít k firemnímu účtu přístup i další osoby?
+ODPOVĚĎ: Ano. K firemnímu účtu můžete přidat i další oprávněné osoby, které budou mít přístup podle nastavených oprávnění. Každá z těchto osob však musí mít založený vlastní účet na Portu. Pokud potřebujete více uživatelských přístupů, rádi vám s jejich nastavením pomůžeme.
+
+Žádost o přidělení dispozičních práv nám stačí poslat e-mailem na info@portu.cz. V textu prosím uveďte název a IČO vaší společnosti, e-mailovou adresu osoby, které chcete dispoziční práva přidat a informaci, zda mají být přidělena plná práva, nebo jen náhledová.
+
+OTÁZKA: Do čeho můžu v rámci firemního účtu investovat?
+ODPOVĚĎ: V rámci firemního účtu můžete investovat do Portfolií od Portu, Portfolia podle vás, Investiční rezervy nebo Realitního fondu WOOD OPF. V rámci Portfolia podle vás není z důvodu reportingu možné investovat do jednotlivých akcií konkrétních společností, při sestavování portfolia ale můžete vybírat z široké nabídky ETF a tematických balíčků. Investovat lze také přímo v eurech, takže se vyhnete zbytečné konverzi do korun.

@@ -1,0 +1,501 @@
+ZDROJ: https://www.portu.cz/o-nas/investicni-metodika
+NAČTENO: 2026-11-03
+
+Bílá kniha Portu
+Investiční metodika
+Investiční metodika ESG
+1. Úvod
+
+Portu je zde od toho, aby pomohlo lidem nakládat s jejich penězi. Jednoduchým, automatizovaným způsobem umožňuje klientům zhodnotit své peníze na kapitálových trzích využitím dlouhodobé hybridní investiční strategie. Tato Bílá kniha Portu shrnuje použité postupy a metody v následujících oblastech:
+
+Vyhodnocení klientského profilu a doporučení vhodného portfolia
+Investiční strategie Portu a výběr instrumentů
+Skladba klientských portfolií
+Následná správa klientských portfolií
+
+Kromě této Bílé knihy publikuje Portu sérii edukativních článků na svém Magazínu, ve kterých se jednotlivým tématům dále věnuje, populárně-naučnou formou je představuje široké veřejnosti a doplňuje další poznatky a aktuální informace.
+
+Portu poskytuje služby online správy majetku na základě Smlouvy o obhospodařování portfolia. Provozovatelem Portu a správcem majetku klientů je WOOD Retail Investments, společnost regulovaná a dohlížená Českou národní bankou a dalšími institucemi.
+
+2. Základní principy investování s Portu – Portfolia od Portu
+
+Základním principem Portu je hybridní přístup k investování. Investiční myšlenka Portu je založena na pasivním přístupu, ale za ryze pasivní formu nelze Portu považovat. Nad rámec klasického pasivního přístupu, který je ve své podstatě založený na investování do široce diverzifikovaného portfolia nízkonákladových instrumentů a následného dlouhodobého držení bez provádění jakýchkoliv změn či úprav, zapojuje Portu do správy portfolií lidský faktor – tým portfolio manažerů, jejichž úkolem je na strategické úrovni rozhodovat o podobě portfolií a vyhodnocovat, zda současné tržní trendy a situace nevyžadují jejich úpravu.
+
+Zapojení lidského faktoru vnímáme v Portu jako zcela zásadní a žádoucí – a to především kvůli aktuální tržní situaci, která je mnohdy v přímém kontrastu k teoretickým předpokladům a poznatkům, na nichž je moderní investiční teorie postavena. Současně je Portu služba umožňující českým korunovým investorům investovat na zahraničních trzích, což s sebou nese jistá rizika – například měnová. Úskalí, při kterých bychom se neradi spoléhali jen na pasivní investiční formu, vidíme několik. Proto věříme, že přítomnost týmu investičních expertů v celém investičním procesu a jejich dozor nad portfolii přinese pro koncového investora samá pozitiva.
+
+Portu však u klientských portfolií nikdy nebude s klientskými penězi spekulovat či provádět krátkodobé změny (nákupy a prodeje) v portfoliích. Věříme, že z dlouhodobého úhlu pohledu je efektivnější balancované investování bez snahy aktivně portfolia řídit (například formou vybírání jednotlivých titulů – tzv. stockpicking). Podle mnohých výzkumů (Bogle, 2009; Malkiel, 2012) se aktivním portfolio manažerům v delším období nedaří dosahovat lepších výsledků než indexu, se kterým se porovnávají. Takovým indexem je často například index S&P 500, který je brán i jako věrohodný obraz vývoje celého amerického akciového trhu. Nižší výkonnost může být dána nejen špatně zvolenou investiční strategií aktivního manažera, přílišným riskováním, špatným načasováním, ale i samotnou mechanikou aktivní správy, tedy tím, že je třeba činit mnoho obchodů, jejichž náklady snižují výnos portfolia.
+
+Mezi další základní principy Portu patří individualizace portfolií. Záleží nám na tom, abychom každému klientovi nabídli takovou investici, která nejlépe odpovídá jeho rizikovému profilu, tedy rizikovému apetitu a schopnosti nést riziko. Klientovi je nejprve na základě investičního dotazníku vyhodnocen jeho profil z několika různých aspektů. Na základě těchto zjištění je mu doporučena určitá míra rizika. V rámci daného rizika následně sestavujeme portfolia tak, abychom se co nejvíc přiblížili efektivní hranici portfolií. Tedy tvoříme taková portfolia, která při dané míře rizika mají největší očekávaný výnos.
+
+Navíc klademe velký důraz na volbu kvalitních instrumentů. Vybíráme takové investiční instrumenty, které jsou emitované společnostmi s dobrou reputací, jsou nízkonákladové a mají co nejvyšší likviditu, tedy možnost jejich prodeje a nákupu (ať už zpět vydavateli či na burzu).
+
+Obchodování na účet klienta provádí Portu za nejlepších možných podmínek v rámci pravidel a politiky Best Execution Policy (víc viz podkapitola 6.1 Obchodování).
+
+Zavazujeme se také k tomu, že Portu nebude přijímat žádné provize a pobídky od vydavatelů investičních instrumentů za to, že jejich cenné papíry zařadíme do klientských portfolií. A pokud přijme jakoukoliv pobídku, tak ji vždy připíše v plné výši na účet klienta. Stejně tak je tomu s přijatými úroky, dividendami a dalšími platbami souvisejícími s portfoliem klienta.
+
+3. Vyhodnocení rizikového profilu klienta
+
+Portu sestavuje široké pole portfolií – vhodné pro různé investory a situace. Vyhodnocení individuálního investičního profilu pomůže Portu zajistit výběr toho nejvhodnějšího portfolia na základě investičních cílů, finanční situace i preferencí individuálního klienta. Správná alokace aktiv přispívá k tomu, aby investor dosáhl svých investičních cílů.
+
+3.1. Investiční dotazník
+
+Účelem investičního dotazníku je detailně porozumět všem aspektům profilu klienta. V dotazníku je zařazena komplexní série behaviorálních otázek, které zkoumají postoj klienta k riziku z různých hledisek. Tyto otázky mají důležitý vliv na volbu doporučeného portfolia.
+
+Investiční dotazník zkoumá profil klienta ve třech základních oblastech – riziková kapacita, rizikový apetit a časový horizont.
+
+3.1.1. Riziková kapacita
+
+Riziková kapacita klienta je vyhodnocena zejména na základě informací ohledně jeho finanční situace (příjmu, bohatství atd.), znalostech v oblasti investování a praktických zkušenostech s investováním. Tyto informace mohou být obecně získány položením objektivních dotazů ohledně finanční a znalostní situace klienta. Klient například vyplní, jaká je výše jeho příjmů či jaké investice v minulosti prováděl.
+
+3.1.2. Rizikový apetit
+
+Klientský rizikový apetit nám poskytuje informaci ohledně míry volatility portfolia, která je pro klienta přijatelná a kterou chce nést za účelem zhodnocení portfolia. Detaily ohledně rizikového apetitu mohou být získány položením dotazů týkajících se vnímání rizika jako takového a chování v určitých situacích. Klient je tak například dotázán, jak by se zachoval v případě významného propadu hodnoty portfolia. Na základě vyhodnocení rizikového apetitu jsou klienti zařazeni do jedné z pěti skupin (A–E):
+
+Skupina A – lidé, kteří chtějí jen velmi málo riskovat, jsou spíše rizikově averzní a jejich hlavním cílem je ochrana prostředků před ztrátou hodnoty.
+Skupina B – lidé, jejichž prioritou je minimalizace rizika, ale chtějí své prostředky mírně zhodnotit.
+Skupina C – lidé, kteří chtějí nést přiměřené riziko a dosahovat odpovídajícímu výnosu. Nejsou ani příliš rizikově averzní, ale ani nevykazují velký sklon k riziku.
+Skupina D – lidé, kteří cílí na potenciálně vyšší výnos i za cenu zvýšeného rizika. Jsou si vědomi možných krátkodobých propadů a jsou připraveni krátkodobé ztráty nést.
+Skupina E – lidé, kteří vyhledávají velmi výrazné zhodnocení a jsou ochotni velmi riskovat.
+3.1.3. Časový horizont
+
+Časový horizont klient explicitně deklaruje při vyplňování investičního dotazníku jako dobu, za jakou plánuje investované peníze vybrat zpět. Obecně platí, že čím delší čas, tím si může klient dovolit investovat do agresivnějších portfolií a naopak.
+
+3.2. Výběr otázek pro investiční dotazník
+
+Otázky zařazené do dotazníku byly vybrány podle následujících kritérií:
+
+Zajistit, že získané informace budou dostatečné k identifikaci nejoptimálnějšího portfolia pro každého klienta.
+Zajistit, že získané informace budou dostatečné pro účely splnění všech legislativních požadavků, kterým investování v České republice podléhá.
+Limitovat počet otázek, aby byla udržena jednoduchost a uživatelská přívětivost.
+Použít jednoduché a přímočaré formulace otázek, aby nebyla potřeba žádná asistence při vyplňování a klient všemu jasně rozuměl.
+Zajistit, že odpovědi budou konzistentní v průběhu vyplňování dotazníku. Kontrolní mechanismy varují klienta, pokud se jeho odpovědi navzájem neshodují či si odporují.
+Možnostmi odpovědí pokrýt všechny možnosti, které by u klienta mohly nastat.
+3.3. Validace odpovědí
+
+S klienty se snažíme vybrat nejvhodnější portfolio odpovídající přesně jejich situaci, a proto klademe velký důraz na správné vyplnění dotazníku. Jsme si vědomi toho, že i jedna nekonzistentní odpověď může skladbu portfolia znatelně ovlivnit. Součástí dotazníku jsou tak i kontrolní dotazy testující konzistentnost klientských odpovědí. Mechanismus může jednak vyzvat klienta k přehodnocení odpovědí, ale i iniciovat potřebu klienta nás kontaktovat například telefonicky za účelem prodiskutování jednotlivých odpovědí. Klient však nikdy nebude z naší strany naváděn k tomu, aby odpovídal vědomě nesprávně, a to ani prostřednictvím mechanismu, ani telefonicky.
+
+3.4. Hodnocení odpovědí a metodika výpočtu skóre
+
+Výstupem investičního dotazníku je dvojí ohodnocení klienta – z pohledu rizikové kapacity a rizikového apetitu – a informace o časovém horizontu investice. Každému klientovi je na základě jeho odpovědí určena riziková kapacita a skupina rizikového apetitu.
+
+Tyto výsledky jsou stanoveny na základě přiřazení vážených bodových hodnot jednotlivým odpovědím v dotazníku. Za každou odpověď v jednotlivých částech se klientovi připočte či odečte určitá bodová hodnota. Odpovědím, které implikují vyšší rizikovou kapacitu či vyšší rizikový apetit, je přiřazeno ekvivalentně vyšší bodové ohodnocení a naopak.
+
+3.5. Metodika vyhodnocení doporučeného Portfolia od Portu
+
+Každému klientovi je na základě výsledků investičního dotazníku vybráno doporučené Portfolio od Portu a současně je mu umožněno – v rámci předem stanovených limitů (vhodnost) – provést mírné změny vybraného portfolia podle osobních preferencí. Při stanovování doporučeného Portfolia od Portu jsou zohledněny výsledky klienta ve všech třech oblastech (riziková kapacita, rizikový apetit, časový horizont). Za účelem zamezení manipulace výsledku Portu nezveřejňuje přesné bodové ohodnocení odpovědí, jejich váhu, ani konkrétní algoritmus výpočtu doporučení.
+
+Limity, ve kterých může klient provádět změny, jsou determinovány především na základě vyhodnocení rizikové kapacity – tu vnímáme jako kritickou pro umožnění klientům investovat do agresivnějších portfolií. Není přípustné, aby například nezkušený investor mohl jen díky dlouhému investičnímu horizontu a vysokému sklonu k riziku investovat i do velmi agresivních portfolií.
+
+Obecně pak platí, že klient vždy může své portfolio neomezeně upravovat směrem ke konzervativnějšímu (méně rizikovému). Úprava doporučeného portfolia na víc agresivní je umožněna jen v určité omezené míře. V určitých případech nemusí být klientovi (na základě jeho rizikové kapacity) změna k agresivnějšímu portfoliu vůbec umožněna.
+
+Dotazník a jeho vyhodnocení jsou navrženy tak, aby klientovi byla po vyplnění zobrazena všechna portfolia, která jsou pro něj vhodná. Doporučené portfolio je jen jedním z těchto portfolií – to, které podle údajů v dotazníku považujeme za nejoptimálnější. Každého klienta ovšem determinuje mnoho faktorů a žádný dotazník je nedokáže zachytit všechny. Proto je klientovi většinou ponechána omezená možnost volby portfolia; vždy však v rámci vhodných portfolií. Důležitost drobných změn z vůle klienta vnímáme zejména proto, že škála portfolií Portu je velice široká (násobně širší než tradiční tří až čtyřstupňová) a test vhodnosti dokáže obvykle splnit hned několik z nich.
+
+4. Portfolia od Portu – investiční metodika
+
+V rámci Portfolií od Portu investujeme především do akcií a dluhopisů. Podle rizikového profilu portfolia můžeme zahrnout i investice do dalších tříd finančních aktiv, jako jsou nemovitosti nebo komodity, v našem případě konkrétně zlato. O složení a případných změnách struktury Portfolií od Portu rozhoduje investiční komise podle investiční metodiky. U Portfolií od Portu – obhospodařování pak tyto změny provádíme v rámci obhospodařování portfolia automaticky. U Portfolií od Portu – poradenství + přijímání a předávání pokynů změny doporučujeme v rámci investičního poradenství a o jejich přijetí rozhoduje klient sám.
+
+4.1. Alokační rozložení jednotlivých portfolií
+
+Na základě ekonomické teorie a historických statistik lze říci, že s růstem očekávaného výnosu portfolia roste i jeho riziko. Platí i opačná relace, tj. při snížení podstupovaného rizika portfolia klesá i jeho očekávaný výnos. Nejrizikovější složka portfolia je zastoupena akciemi, které se v porovnání s dluhopisovými instrumenty vyznačují výrazně vyšším očekávaným výnosem, avšak za cenu vyšší podstoupené volatility. Dluhopisy jsou tradičně vnímány jako konzervativní třída aktiv se stabilně nabíhajícím úrokovým výnosem, jehož výše je ovlivňována zejména kreditním rizikem emitenta a aktuálními úrokovými sazbami. I dluhopisy však nesou tržní riziko spojené s rizikem změny úrokových sazeb a s kreditním rizikem emitenta. Portfolia s nízkým a středním stupněm rizika zahrnují také investice do nemovitostního sektoru a komodit. Nemovitostní sektor poskytuje zajímavou diverzifikační složku k ostatním třídám aktiv, neboť přináší stabilní výnos v podobě příjmu z nájmu. Ceny nemovitostí navíc dlouhodobě rostou a příliš nekolísají. Komoditní složka reprezentovaná zlatem si pak klade za cíl vnést do portfolií další úroveň diverzifikace a celkově snížit míru kolísání hodnoty portfolií.
+
+V rámci Portfolií od Portu má příznivý efekt nízká až negativní korelace výnosů těchto hlavních tříd aktiv.
+
+Portu pracuje s deseti rizikovými profily a deseti odpovídajícími modelovými portfolii. Rizikový profil konkrétního portfolia je dán poměrem jednotlivých tříd finančních aktiv – primárně poměrem akcií a dluhopisů. Portfolia 1 až 10 jsou seřazena od relativně nízkého rizika a výnosu (1) až po relativně vyšší riziko a výnos (10). Podíl rizikovějších složek tak roste napříč rizikovými profily a některé instrumenty mohou být z portfolia vyřazeny kvůli jejich příliš nízkému zastoupení.
+
+U portfolia 1 má nejvyšší zastoupení složka dluhopisová. Pro dosažení širší diverzifikace a vyvážení rizikových a výnosových charakteristik je portfolio doplněno také o menší podíl akciové složky a o expozici na nemovitostní sektor a komodity. Na druhém konci stupnice – u portfolia 10 – je zastoupena výhradně složka akciová, zatímco dluhopisy, nemovitostní sektor a komodity nejsou v portfoliu zahrnuty vůbec. Podíl rizikovější – akciové – složky tak mezi jednotlivými rizikovými profily roste na úkor složek konzervativnějších – dluhopisů, nemovitostního sektoru a komoditní složky, tedy zlata.
+
+4.2. Funkce Chytré snižování rizika
+
+Při úpravě portfolia má klient možnost zapnout funkci Chytré snižování rizika, která zajistí postupné snižování rizikovosti portfolia společně s blížícím se koncem investičního horizontu. Tato funkce má za cíl pomoci klientům dosáhnout investičního cíle tím, že kontroluje rozložení investice mezi jednotlivé třídy aktiv a přizpůsobuje ho, aby bylo optimální vzhledem k plánovanému datu výběru a rizikovému profilu klienta.
+
+Rozložení aktiv v portfoliu determinuje potenciální růst hodnoty investice, ale zároveň i to, do jaké míry jeho hodnota kolísá. S ohledem na investiční horizont je tedy vhodné vždy vyvažovat výnosový potenciál a investiční riziko. Optimálního poměru pro každé období lze dosáhnout postupnou úpravou složení portfolia v průběhu času.
+
+Pro delší investiční horizonty je možné volit větší zastoupení akciové složky díky jejímu vyššímu ziskovému potenciálu. Ten je však spojen s vyšším podstupovaným rizikem, a proto je vhodné společně s blížícím se datem výběru navyšovat zastoupení konzervativnějších instrumentů, jako jsou dluhopisy nebo komodity. Navýšení zastoupení méně rizikových instrumentů má za cíl omezit větší případné propady hodnoty portfolia ke konci investičního horizontu – tedy před momentem plánovaného výběru.
+
+Funkce Chytré snižování rizika pro daný investiční horizont a individuální rizikový profil každého investora automatizovaně připraví plán postupného snižování rizikovosti portfolia v průběhu času. Po dobu investování bude chytrý algoritmus Portu kontrolovat rizikovost portfolia a postupně sám přepínat portfolio do nižších rizikových stupňů.
+
+Mechanismus, který určuje, jak se s blížícím se časem plánovaného výběru prostředků mění optimální složení portfolia, se nazývá sestupná křivka (z anglického glide path). Při sestavování sestupné křivky vychází Portu z akademických poznatků i „best practice“ renomovaných světových správců aktiv a jimi nabízených „Target Date“ investičních produktů. Tyto poznatky Portu propojilo s individuálními rizikovými profily klientů, aby vytvořilo víc než 30 různých sestupných cest, které budou co nejlépe odpovídat různým typům investorů a jejich horizontům.
+
+Je-li Chytré snižování rizika zapnuté, nemůže investor sám upravovat rizikový profil – o to se stará Portu. Funkci však lze kdykoliv vypnout a rizikovost portfolia upravovat opět manuálně.
+
+Funkce Chytré snižování rizika a daně
+
+Snižování rizikového profilu portfolia může být spojeno s prodejem části investičních instrumentů. Prodeje pak mohou mít daňové dopady (víc v kapitole 6.8. Daně). Povinnosti danit se snaží Portu zabránit tak, že po snížení rizikového profilu nedojde k překoupení instrumentů jednorázově, ale čeká se na splnění časového testu. Po tuto dobu jsou zaslané vklady chytře rozmisťovány mezi instrumenty tak, aby se rozložení portfolia postupně přibližovalo nové cílové struktuře. Tím je možné minimalizovat objem prodejů při přechodu mezi rizikovými stupni. Kromě toho dochází při zapnutí Chytrého snižování rizika k poslední úpravě rizikovosti portfolia 3 roky před plánovaným výběrem.
+
+4.3. Investiční nástroje
+
+Při výběru typu investičních nástrojů dbá Portu na to, aby byly peníze klientů zainvestovány s co nejnižšími náklady, aby byla zajištěna dostatečná likvidita jejich portfolia a současně dosažena expozice klienta na požadované sektory a trhy. Takové požadavky nejlépe naplňují instrumenty zvané Exchange Traded Funds (ETF), které byly proto vybrány jako primární investiční prostředek. Pokud z důvodu neexistence či nevhodnosti ETF nelze dosáhnout požadované expozice skrze ETF, může být expozice dosažena skrze vhodný podílový fond.
+
+4.3.1. ETF
+
+Portu investuje především skrze Exchange Traded Funds (ETF). ETF jsou burzovně obchodované fondy, které se snaží kopírovat vývoj určitého indexu, skupiny aktiv nebo jiné investiční strategie. ETF mohou k dosažení požadované expozice využívat fyzickou nebo syntetickou replikaci. Při fyzické replikaci fond investuje přímo do podkladových aktiv, například akcií nebo dluhopisů. Při syntetické replikaci je expozice na podkladová aktiva dosažena prostřednictvím derivátů. ETF je typ fondu, který na rozdíl od podílových fondů vydává své akcie. Majitel akcií (ETF) pak tedy vlastní podkladová aktiva nepřímo.
+
+Využívání ETF má své výhody především v jejich nízkonákladovosti a schopnosti diverzifikovat celé klientské portfolio. ETF umožňují získat expozici na konkrétní trh (například akcie či dluhopisy pro daný region či sektor) a díky investování do většího počtu jednotlivých cenných papírů mohou přispívat k široké diverzifikaci portfolia.
+
+Při výběru jednotlivých ETF nabízených skrze Portu zohledňujeme zejména následující faktory:
+
+likvidita na finančních trzích – usilujeme o zařazení takových ETF, jejichž likvidita na burzách je vysoká, přičemž jedním z jejich ukazatelů je průměrný objem denních obchodů. Vyšší likvidita přispívá k efektivnímu provádění obchodů a zpravidla souvisí s nižším spreadem mezi nákupní a prodejní cenou, a tedy s nižšími transakčními náklady při obchodování,
+velikost ETF – tedy objem peněz, který dané ETF spravuje,
+vnitřní nákladovost ETF – za jednotlivými ETF stojí konkrétní emitent, který si účtuje poplatky za provoz tohoto ETF. Preferujeme takové ETF, jejichž vnitřní nákladovost je nízká,
+reputace emitenta ETF – zohledňujeme též to, kdo je emitentem konkrétního ETF,
+měnová struktura podkladových aktiv – důvodem je možnost transparentního zajištění měnového rizika do české koruny,
+replikační strategie – zohledňujeme, zda je expozice dosahováno pomocí přímých nákupů podkladových aktiv anebo například za pomoci derivátů,
+tracking error – neboli schopnost instrumentu dobře kopírovat vývoj sledovaného indexu,
+
+dále pak faktory jako jsou: daňový domicil, nakládání s příjmem, soulad s regulatorikou, délku existence, možnost půjčovat držená aktiva a nakládání s případnými výnosy z těchto zápůjček.
+
+Existuje-li na konkrétní typ aktiva (region, druh expozice atd.) víc ETF od různých emitentů, finální volba konkrétního ETF je výsledkem optimalizace výše uvedených faktorů.
+
+4.3.2. Podílové fondy
+
+V případě, kdy není možné požadované expozice na konkrétní trh nebo aktivum dosáhnout skrze ETF – ať už z důvodu jejich neexistence, či nesplnění některých z požadovaných kritérii – provádí Portu investice skrze podílový fond. Při výběru jednotlivých fondů využívá Portu stejných kritérií jako pro volbu ETF.
+
+4.4. Třídy a podtřídy aktiv
+
+Portfolia od Portu sestavujeme z několika tříd finančních aktiv. Primární zastoupení mají akcie a dluhopisy a dle stupně rizika mohou být zahrnuty také nemovitostní sektor a komodity. Třídy akcií a dluhopisů se dále dělí na podtřídy, které reprezentují konkrétní sektor či geografický region, a tudíž vykazují rozdílné charakteristiky. Zastoupení jednotlivých tříd a podtříd aktiv v portfoliu se mění společně s jeho rizikovým stupněm. Portfolia s vyšším rizikovým stupněm jsou složena primárně z více rizikových tříd aktiv, u portfolií s nízkým rizikovým stupněm naopak dominují konzervativnější třídy aktiv. Pokud je zastoupení dané třídy či podtřídy aktiv v portfoliu nízké, posuzujeme, zda její zařazení přináší vzhledem k jejímu vlivu na výnosově-rizikový profil portfolia odpovídající přínos. Při tomto posouzení zohledňujeme také náklady spojené s jejím zařazením. Na základě tohoto posouzení může být daná třída či podtřída aktiv z portfolia vyřazena a finanční prostředky alokovány do jiných složek portfolia. Portfolia s rozdílným rizikovým stupněm tedy mohou zahrnovat rozdílný počet tříd a podtříd aktiv. Rizikovější portfolia tak například nemusí obsahovat konzervativní vládní dluhopisy, a naopak konzervativnější portfolia nemusí obsahovat všechny podtřídy akciové složky kvůli jejich velké kolísavosti. Obsažené třídy či podtřídy aktiv jsou pak v portfoliu zastoupeny alespoň jedním investičním nástrojem tak, aby bylo dosaženo požadované expozice.
+
+4.4.1. Akciová složka
+
+Cílem akciové složky Portfolií od Portu je dosáhnout široce diverzifikované globální expozice na akciové trhy. Záměrem tedy není přímo kopírovat určitý akciový index, avšak alokace akciové složky je koncipována tak, aby přibližně odpovídala významu hlavních regionů na globálních akciových trzích.
+
+Největší zastoupení tak má akciový trh USA, reprezentovaný S&P 500 indexem, vytvářejícímu expozici na 500 amerických společností s velkou tržní kapitalizací. V Evropě jsou akcie reprezentovány MSCI EMU indexem, zastupujícím více než 200 akcií společností ze zemí Evropské monetární unie. Dle stupně rizika portfolia má pak třetí největší zastoupení buď Japonsko reprezentované indexem MSCI Japan, nebo globální akcie malých společností reprezentované indexem MSCI World Small Cap. Portfolia se středním a vyšším stupněm rizika doplňují investice do rozvíjejících se trhů a zhruba třetina nejrizikovějších portfolií zahrnuje také asijské akcie reprezentované indexem MSCI Asia. Výsledkem tak je opravdu široce diverzifikované akciové portfolio dávající expozici na rozhodující část globálního akciového trhu.
+
+Americké akcie
+
+Spojené státy americké reprezentují největší ekonomiku světa a současně největší a nejvíce rozvinutý akciový trh. Vyznačuje se vysokou likviditou, širokou diverzifikací napříč sektory a významným zastoupením velkých a inovativních společností.
+
+Evropské akcie
+
+Evropa patří mezi hlavní ekonomické regiony světa a představuje významnou součást globálního akciového trhu. Evropské akcie se na rozdíl od amerických akcií nacházejí napříč jednotlivými státy, což přispívá k vyšší míře vnitřní geografické diverzifikace. Evropský akciový trh zároveň nabízí expozici na společnosti z různých odvětví.
+
+Japonské akcie
+
+Japonské akcie jsou do portfolia zařazeny, jelikož Japonsko patří mezi významné ekonomiky a akciové trhy světa. Jedná se o vyspělý trh s významným zastoupením společností z technologického a automobilového průmyslu a dalších odvětví.
+
+Globální akcie malých společností
+
+Akcie společností s malou tržní kapitalizací představují specifický segment akciového trhu. Tyto společnosti bývají zpravidla rizikovější a volatilnější než akcie velkých společností, zároveň však mohou nabízet vyšší růstový potenciál.
+
+Globální akcie rozvojových zemí
+
+Investice do společností na rozvojových trzích mají vyšší růstový potenciál, avšak jsou také víc rizikové. Hodnota akcií těchto společností bývá často kolísavá a vyvíjí se často nezávisle na vyspělém světe. Poskytují tak dobrou diverzifikaci. Mezi nejvýznamnější rozvojové trhy patří samozřejmě Čína, Taiwan či Indie, najdeme zde ale také některé státy jižní Ameriky, Afriky nebo dálného východu.
+
+Asijské akcie rozvojových zemí
+
+Asijské státy patří v rámci rozvojových trhů mezi ty dominantní, a proto mají v portfoliích také své místo. Spolu s Čínou, Taiwanem a Jižní Koreou zde najdeme také další země, které přes svou vyšší rizikovost nabízejí zajímavý růstový potenciál a vhodně doplňují vyspělé Japonsko.
+
+4.4.2. Dluhopisová složka
+
+Podobně jako v případě akcií má i dluhopisová složka cíl dosáhnout široké, globální diverzifikace portfolia s cílem minimalizovat jedinečné riziko koncových emitentů dluhopisů. Toho je dosaženo investicemi do dluhopisových ETF, díky kterým lze dosáhnout široké expozice na dluhopisy různých regionů, typů emitentů, různé úvěrové kvality a durace. Z pohledu regionální expozice mají v alokaci dluhopisové složky významné zastoupení dluhopisy emitentů z USA, což je dáno velikostí tamní ekonomiky a celkovou hloubkou amerického dluhopisového trhu. Státní dluhopisy jsou do portfolií zařazovány s ohledem na jejich charakteristiky, zejména úvěrovou kvalitu, duraci a výnosový profil. Součástí dluhopisové složky mohou být také korporátní dluhopisy s investičním stupněm, zejména dluhopisy emitentů z USA a Evropy. Dluhopisová složka je u některých rizikovostních profilů doplněna dluhopisy s vysokým výnosem (tzv. high-yield dluhopisy) a dluhopisy rozvíjejících se trhů. Expozice na rozvíjející se trhy je široce diverzifikovaná a zaměřuje se zejména na státní dluhopisy denominované v USD, které vydávají země spadající do kategorie rozvíjejících se trhů. Součástí dluhopisové složky mohou být také globální inflačně vázané dluhopisy, jejichž hodnota a výnosové charakteristiky jsou navázány na vývoj inflace v zemích, ve kterých jsou dluhopisy vydávány.
+
+Evropské korporátní dluhopisy investičního stupně
+
+Evropské korporátní dluhopisy jsou vydávané jednotlivými společnostmi k financování svého provozu nebo rozvoje. Jedná se o dluhopisy s nadprůměrnou kvalitou, které jsou vhodné k obchodování vzhledem k nízkému riziku nedodržení závazku a současně vyšším potenciálem zhodnocení.
+
+Americké korporátní dluhopisy investičního stupně
+
+Americké korporátní dluhopisy jsou dluhopisy obchodované v dolarech, které vydávají jednotlivé společnosti k financování svého provozu. Do portfolií jsou vybrány dluhopisy investičního stupně – tedy vysoce kvalitní dluhopisy s nadprůměrným ratingem. Existuje tedy pouze malé riziko nedodržení závazku a současně tyto dluhopisy nabízejí zajímavé zhodnocení, které je větší než například u dluhopisů státních.
+
+Globální High Yield dluhopisy
+
+Globální High Yield bondy nabízejí v porovnání s jinými dluhopisy vysoké výnosy. Existuje zde ale také vyšší riziko částečného nebo úplného nesplacení ze strany dlužníka. Jedná se totiž o dluhopisy nižší kvality, než mají dluhopisy investičního stupně. Spojením stovek různých dluhopisů dohromady je však možné riziko minimalizovat – i v případě nějakého nesplaceného dluhopisu by byl dopad na vaše celkové portfolio zanedbatelný.
+
+Dluhopisy z rozvíjejících se trhů
+
+Tyto dluhopisy jsou vydávány vládami tzv. rozvíjejících se států. Jedná se o rizikovější dluhopisy než u emitentů z rozvinutých ekonomik, díky čemuž však nabízejí vyšší zhodnocení.
+
+Globální inflačně vázané dluhopisy
+
+U těchto dluhopisů se nominální hodnota jistiny průběžně upravuje v závislosti na vývoji inflace. Díky této konstrukci mohou inflačně vázané dluhopisy pomáhat chránit reálnou hodnotu investice před negativním dopadem růstu cenové hladiny. Jedná se o dluhopisy vydané vládami rozvinutých zemí vyznačující se vysokou úvěrovou kvalitou.
+
+Americké státní dluhopisy
+
+Americké státní dluhopisy jsou považovány za dluhopisy s vysokou úvěrovou kvalitou, neboť kreditní riziko spojené se skutečností, že emitent (americká vláda) nebude schopen dostát svým závazkům, je velmi nízké. Americké státní dluhopisy jsou v jednotlivých portfoliích zastoupeny s různou durací v závislosti na daném rizikovém profilu.
+
+4.4.3. Komodity
+
+Komodita je zboží, které má stejnou kvalitu nehledě na dodavatele. Například auta nejsou komodita, jelikož každé auto má jiné vlastnosti, ale např. ropa či zlato jsou homogenní produkty, které se mohou obchodovat za jednotnou cenu. Komodity se dělí do čtyř hlavních kategorií: energie (ropa, zemní plyn), kovy (zlato, měď, stříbro), zemědělské produkty (kukuřice, oves, pšenice), maso a dobytek. Mnohé komodity (jako například zlato) představují dobrou formu diverzifikace portfolia, jelikož je vývoj jejich ceny slabě korelovaný s vývojem cen jiných tříd aktiv (například akcií). Komodity jsou zahrnovány do Portfolií od Portu s nízkým až středním stupněm rizika.
+
+4.4.4. Nemovitostní sektor
+
+Realitní sektor přináší další diverzifikaci celkového portfolia, neboť jeho vývoj nemusí být totožný s vývojem jiných tříd aktiv, jako jsou akcie nebo dluhopisy. Investice do realitního sektoru umožňuje podílet se na vývoji hodnoty společností působících v oblasti nemovitostí. Expozice na nemovitostní sektor je v portfoliích prováděna prostřednictvím nemovitostního ETF, které investuje do akcií realitních společností a REITs (Real Estate Investment Trusts) na vyspělých trzích.
+
+4.4.5. Hotovost
+
+Malá část Portfolií od Portu je tvořena hotovostí, což má své opodstatnění. Zaprvé slouží hotovost jako operativní položka, se kterou lze provádět drobné úkony s portfoliem – například rebalanci či strhávání poplatku za využívání produktu. Pokud by byla veškerá hotovost zainvestována, bylo by pro tyto úkony vždy potřeba odprodat některé instrumenty z portfolia. Takový prodej by mohl mít daňové dopady. Snahou Portu vždy bude tyto daňové dopady minimalizovat jen na ty opravdu nezbytně nutné.
+
+Zadruhé, u účtů vedených v českých korunách u kterých je aktuálně využíváno měnového zajištění, může být část portfolia držena v hotovosti za účelem pokrytí případných ztrát instrumentů měnového zajištění (swapů a forwardů), opět bez nutnosti prodeje ostatních částí portfolia. Hotovost v portfoliu může být použita také jako potřebný kolaterál derivátových obchodů (měnový swap, forward), kterými Portu v případě potřeby zajišťuje měnové riziko. Takový kolaterál mohou v určitých případech požadovat protistrany, se kterými Portu derivátové obchody uzavírá.
+
+Dalším důvodem držení hotovosti je snaha minimalizovat transakční náklady – například při připsání dividend a úroků. Vzhledem k povaze instrumentů, které vkládáme do Portfolií od Portu, se může stát, že určitému klientovi bude připsána dividenda v řádu jen několika desítek haléřů či korun. Okamžitá reinvestice takto malých částek by představovala zvýšené transakční náklady, kterým se chce Portu vyhnout, aby mohlo udržet celkový poplatek za využívání produktu nízko. Současně je však nastavena hranice, po jejímž překročení dojde k zainvestování hotovosti tak, aby bylo opět dosaženo optimálního rozložení portfolia.
+
+Jaká jsou pravidla práce s hotovostní složkou u investic?
+
+Součástí investičních produktů Portfolia a Investiční rezerva je také hotovostní složka. Ta plní zejména transakční úlohu a slouží například k účtování poplatků. Hotovostní složka má nastavenou cílovou váhu a její skutečné zastoupení může v čase kolísat. Systém tyto odchylky průběžně vyrovnává. V případě zaslání vkladu se peníze nejprve připíší do hotovostní složky. Následně se zainvestuje ta část hotovosti, která přesahuje její cílovou váhu. Hotovost může růst i bez nového vkladu – například díky připsaným dividendám nebo úrokům. Ty se zpracovávají stejně jako běžný vklad a nakládá se s nimi jako s ostatní hotovostí v investici. Měnová konverze se provádí pouze tehdy, když je potřeba pro provedení transakce, například při nákupu, výběru nebo při dorovnání záporného zůstatku. Pokud váha hotovosti přesáhne cílovou váhu o 2 procentní body, dojde k jejímu částečnému zainvestování, aby se cílové zastoupení obnovilo.
+
+Pokud by naopak zastoupení hotovosti pokleslo o víc než 75 % oproti svému cílovému zastoupení (tedy například na méně než 0,5 % při cílové váze 2 %), dojde nejpozději během následujícího pracovního dne k částečnému odprodeji instrumentů, aby bylo opět cílové zastoupení obnoveno. Systém také vždy přihlíží k zadaným pokynům na výběr a případně nerealizované ztrátě z měnového zajištění. Tyto dvě položky pro účely výpočtů od skutečné výše hotovosti odečítá a až následně posuzuje, zda je potřeba něco zainvestovat nebo naopak odprodat.
+
+5. Rizika
+
+Žádné investování na kapitálových trzích není bez rizika. Existuje riziko, že v případě propadu trhů ztratíte značnou část investovaného majetku. Snahou Portu je vždy v rámci dané míry rizika dosahovat maximálního zisku. Ovšem existují tržní rizika, které Portu kontrolovat nemůže. Krátkodobé nárůsty a propady v cenách aktiv jsou zcela normální. Předchozí vývoj není zárukou vývoje budoucího.
+
+5.1. Jedinečné riziko
+
+Základním principem alokace klientských portfolií je jejich široká diverzifikace. Ta znamená, že výsledná expozice portfolia na koncového emitenta (vydavatele) jednotlivé akcie či jednotlivého dluhopisu je malá a takových koncových emitentů je v portfoliu zprostředkovaně zastoupeno velké množství. Je tak minimalizováno jedinečné riziko emitenta, neboť v případě negativních událostí specificky zasahujících konkrétní společnost (špatné hospodářské výsledky atd.) bude vliv poklesu tržní ceny jejích akcií či dluhopisů v kontextu široce diverzifikovaného portfolia minimalizován.
+
+Široké diverzifikace je dosaženo jednak investováním do různých tříd a podtříd finančních aktiv, investováním do různých geografických oblastí, různě vyvinutých trhů, ale i využíváním ETF, které již ze své podstaty představují značnou míru diverzifikace.
+
+5.2. Tržní riziko
+
+Minimalizace jedinečného rizika však neznamená, že portfolia nenesou tržní riziko související s vývojem dluhopisových a akciových trhů. Naopak, široká diverzifikace portfolia si v tomto pojetí klade za cíl přiblížit se vývoji akciových a dluhopisových trhů jako celku. V hybridním investičním modelu Portu, který je založen na fixním alokačním rozložení, je tak vývoj globálního trhu akcií a dluhopisů rozhodujícím faktorem a tržní riziko je rozhodujícím, neoddělitelným aspektem investice. V závislosti na vývoji trhů akcií a dluhopisů tak hodnota portfolia může růst, ale i klesat.
+
+5.3. Měnové riziko
+
+Základní měnou, ve které je měřena výkonnost klientského portfolia na Portu účtu vedeného v českých korunách, je CZK. Vzhledem k absenci vhodných investičních instrumentů typu ETF denominovaných v CZK je značná část klientských portfolií alokována do instrumentů denominovaných v EUR a USD. V prostředí plovoucích měnových kurzů pak investice podléhá měnovému riziku zhodnocování domácí měny, které může snižovat celkovou výkonnost portfolia.
+
+Jedním z významných aspektů investiční strategie Portu je proto zajištění měnového rizika (víc viz podkapitola 6.2 Zajištění měnového rizika (hedging) u účtů vedených v českých korunách). Měnové riziko se týká také Portu účtů vedených v EUR, a to v případě, kdy je část portfolia alokována do instrumentů denominovaných v USD. Portu u eurových účtů kurzové riziko EURUSD nezajišťuje, proto je část portfolia, která je zainvestována do instrumentů obchodovaných v USD, vystavena riziku výkyvu kurzu EURUSD.
+
+6. Správa Portfolií od Portu
+
+Kromě ohodnocení klientského rizikového profilu a doporučení Portfolia od Portu zajišťuje Portu i ostatní služby spojené s komplexní správou portfolia. Jedná se především o provedení veškerých nákupů a prodejů na účet klienta, zajištění kurzového rizika v případě, že si to tržní situace vyžaduje (pouze u účtů vedených v korunách), zpracování příchozích dividend a úroků, pravidelný monitoring trhu, vyhodnocování stavu portfolia a jeho rebalanci.
+
+6.1. Obchodování
+6.1.1. Best Execution Policy
+(otevře se v nové kartě)
+
+Při obchodování dodržuje Portu přísná pravidla Best Execution Policy
+(otevře se v nové kartě)
+. To především znamená, že vynaloží maximální úsilí k dosažení těch nejlepších cenových i jiných podmínek nákupu a prodeje instrumentů pro klienty.
+
+Při každém obchodu jsou vždy vyhodnoceny následující kritéria:
+
+cena
+náklady
+rychlost vypořádání
+kredibilita protistrany
+objem
+
+Následně je obchod proveden tak, aby klient získal ty nejlepší podmínky vzhledem ke zmíněným kritériím.
+
+6.2. Zajištění měnového rizika (hedging) u účtů vedených v českých korunách
+
+Protože jsou Portfolia od Portu tvořena investicemi v jiné měně než v českých korunách, je korunový investor vystaven měnovému riziku. Potřeba zajištovat měnové riziko je z obecného hlediska silně odvislá od tržní situace a aktuálních kurzových trendů. V obdobích kdy se očekává posilování domácí měny hrozí, že výnosy z podkladových aktiv portfolia budou po přepočtu do české koruny degradovány o případnou kurzovou ztrátu. Naopak v situaci, kdy se očekává oslabování koruny vůči zahraničním měnám, ve kterých je investice držena, dává smysl od provádění zajišťovacích operací upustit. Investiční komise Portu neustále sleduje situaci a uvažuje očekávané přínosy a náklady hedgingu pro koncového klienta, podle nichž o zajišťování a jeho rozsahu rozhoduje. Konkrétní rozsah zajištění stanovuje investiční komise na základě náklado-výnosového porovnání i analýz a predikcí očekávaného vývoje české koruny.
+
+V období posilující koruny je situace následující: pokud by Portu měnové riziko nezajišťovalo, významným faktorem ovlivňujícím výkonnost portfolia by se mohl stát vývoj české koruny proti hlavním cizím měnám. Riziko negativního vlivu oslabení cizích měn na výslednou výkonnost portfolia v české koruně by pak bylo, zejména v případě cizoměnových dluhopisových ETF, nepřiměřeně vysoké. Z tohoto důvodu může být u vybraných rizikových profilů měnové riziko zajišťováno do CZK. Zajištěné portfolio tak ponese náklady spojené se zajišťujícími obchody na devizových trzích, měnové zajištění však omezuje vliv vývoje kurzu EUR a USD vůči koruně na výkonnost portfolia. Výkonnost zajištěných portfolií je tak ve větší míře ovlivňována vývojem globálních akciových a dluhopisových trhů než vývojem kurzu české koruny vůči hlavním světovým měnám. Zajištění přitom nemusí být uplatněno na celé portfolio a může se vztahovat pouze na vybrané měnové expozice. Konkrétní rozsah a způsob měnového zajištění stanovuje investiční komise s ohledem na charakter portfolia, jeho rizikový profil a náklady a přínosy zajištění. Aktuální nastavení měnového zajištění konkrétního portfolia je uvedeno na jeho detailu a v jeho nastavení. O případných změnách měnového zajištění Portfolií od Portu informujeme klienty prostřednictvím e-mailu.
+
+Hlavními operacemi, které Portu používá pro zajištění měnového rizika, jsou měnové swapy a forwardy. Jedná se o kontrakty zajišťující určitý měnový kurz ke konkrétnímu datu v budoucnu. Tyto instrumenty se stávají součástí klientských portfolií po boku ostatních aktiv. Stejně jako ostatní investiční nástroje pak generují výnosy, ale mohou být i ztrátové.
+
+Princip zajištění funguje následovně: v případě posilování domácí měny je relativně nižší dosažený výnos ETF denominovaných v cizích měnách kompenzován ziskem ze zajišťovacího instrumentu. V případě oslabování domácí měny na něm však zajištěné portfolio nebude profitovat. Kurzové zajištění tak odstiňuje portfolio od jakéhokoliv vlivu výkyvů měnového kurzu.
+
+V případě držení cizoměnové investice po dobu delší, než je splatnost zajišťovacího instrumentu tohoto instrumentu, proběhne jeho roll-over na další období. Požadovanou hodnotu zajištění upravuje Portu pomocí forwardových operací, kterými může v případě nárůstu hodnoty ETF danou část dodatečně zajistit, či v případě poklesu část pozice uzavřít operací opačnou. Portu nepřistupuje k zajišťování měnového rizika EURCZK respektive USDCZK u instrumentů, jejichž měnová struktura podkladových aktiv je rozmanitá, expozice vůči euru nebo dolaru není dominantní a instrument není vnitřně zajištěn do měny, ve které se obchoduje. Zajištění by v takovém případě investora vystavilo situaci, kdy by byl tzv. „přezajištěn“ vůči měně obchodování ETF a současně by měl měnovou expozici mezi měnou obchodování ETF a podkladovými aktivy – a to není žádoucí. Nemožnost měnového zajištění se týká jen vybraných instrumentů především s expozicí například na rozvojové trhy a jiné exotické destinace. Jsme toho názoru, že pro korunového investora je lepší držet tyto instrumenty bez zajištění do koruny. U Portu účtů vedených v eurech odpadá měnové riziko české koruny a měnové zajištění EURCZK a USDCZK tak není třeba. Část portfolií u eurových účtů však může obsahovat investice do instrumentů denominovaných v USD. V takovém případě Portu možnost zajištění měnového rizika EURUSD nenabízí.
+
+6.3. Rebalance
+
+Klientská portfolia jsou složena z několika tříd finančních aktiv rozdílného charakteru (víc viz podkapitola 4.4. Třídy a podtřídy aktiv). Poměr jednotlivých tříd aktiv v portfoliu je stanoven tak, aby odpovídal předem stanoveným parametrům – především maximální míře rizika, kterou může klient nést. V důsledku změn cen na světových trzích se však proporcionální zastoupení jednotlivých tříd aktiv v klientských portfoliích mění, což může následně vést k nárůstu rizikovosti celého portfolia. V dlouhém období mají totiž rizikovější akcie tendenci růst na hodnotě rychleji než konzervativnější dluhopisy. Akciová složka portfolia se začne v poměru k dluhopisové zvětšovat a klienty tak může vystavit riziku neúměrnému jejich profilu.
+
+Jednou měsíčně Portu vyhodnocuje aktuální váhy jednotlivých instrumentů v portfoliích a potřebu jejich rebalancování. Pokud hodnota určitého instrumentu překročí stanovený limit možné odchylky (tzv. drift) od optimálního zastoupení v portfoliu, je provedena tzv. rebalance – navrácení portfolia k původnímu rozložení jednotlivých instrumentů, a tedy i požadované míře rizika.
+
+6.3.1. Rebalanční spouštěč
+
+Rebalance je spuštěna pokud se váha určité složky portfolia odchýlí od její cílové váhy o více než stanovenou hranici. V případě Portfolií od Portu je touto hranicí odchylka 10 % od požadované váhy dané složky. Tato relativní odchylka současné váhy dané složky portfolia od váhy cílové se nazývá drift.
+
+Portu při volbě rebalanční strategie srovnává přínosy s náklady a na základě analýz aplikuje strategii, která se prokazuje jako nejvýhodnější. Portfolio je v pravidelném intervalu kontrolováno, avšak k rebalanci dojde jen v případě, že je překročen stanovený drift, tedy jen pokud se struktura portfolia odchýlí od svého cíle příliš; v opačném případě rebalance neproběhne. V Portu dochází ke kontrole stavu portfolia každý měsíc a limitní hranice spouštějící rebalanci je stanovena na překročení hranice driftu 10 %. Rebalance je navíc daňově optimalizovaná, k odprodeji dojde pouze u instrumentů, které prošly tzv. časovým testem.
+
+6.3.2. Způsoby provedení rebalance
+
+V závislosti na okolnostech může být rebalance provedena několika způsoby.
+
+Rebalance vkladem/výběrem
+
+Díky využití frakcí může Portu rebalancovat i s velmi malými peněžními toky, a proto tento způsob rebalance nastane vždy, když jsou do portfolia vloženy nějaké peníze, je proveden výběr nebo dojde k obdržení dividendy. Tento druh rebalance je velmi žádoucí, jelikož výrazně snižuje potřebu provádět rebalanci formou prodeje instrumentů, která může mít daňové dopady. Každý vklad do Portu je rozmístěn mezi třídy aktiv tak, aby snížil drift. Napřed jsou nakupována ta aktiva, která mají největší záporný drift, aby se navýšila jejich váha v portfoliu a obnovilo požadované rozložení. Podobně výběry jsou prováděny tak, aby po jejich provedení zůstaly váhy složek zbylého portfolia co nejblíže požadovaným. Nejprve jsou prodávány ty instrumenty, jejichž váha je větší, než by podle cíle měla být. Následně jsou rovnoměrně odprodávány všechny instrumenty, aby zbylé portfolio mělo optimální strukturu.
+
+Rebalance nákupem/prodejem
+
+Pokud nedošlo k žádnému vkladu nebo výběru, je portfolio rebalancováno prodeji a nákupy instrumentů z portfolia. Je prodána část aktiv, jejichž váha je větší než cílová a utržená suma se použije k nákupu těch aktiv, které je potřeba dokoupit, aby byl drift co nejmenší. Rebalancované portfolio bude mít strukturu odpovídající té cílové.
+
+Portfolia od Portu jsou rebalancována automaticky, pokud má klient tuto funknci zapnutou, a Portu si za rebalanční transakce neúčtuje žádné dodatečné poplatky. Potřebné realokace klientských portfolií jsou agregovány s nově investovanými penězi do velkých objednávek, aby byly náklady na nákup a prodej cenných papírů minimalizovány.
+
+6.4. Dividendy
+
+Do Portfolií od Portu mohou být zařazovány i instrumenty, které vyplácejí dividendy. Jedná se především o akciové ETF, jejichž součástí jsou přímo dividendové akcie. V případě příchozí dividendy z jakéhokoliv instrumentu připíše Portu danou částku klientovi na jeho účet ve formě hotovosti. Dle pravidel pro nakládání s hotovostí je následně daná dividenda buď zainvestována či ponechána jako hotovostní složka. V případě, že klient vlastní víc než jedno portfolio, je mu dividenda připsána do hotovostní složky toho portfolia, z jehož držení dividenda plyne.
+
+6.5. Oceňování portfolií
+
+Všechny investice jsou oceňovány alespoň jednou denně a jejich hodnota je klientům zobrazována po přihlášení do jejich účtu. Pro oceňování instrumentů je používána závěrečná cena předchozího obchodního dne (closing price). U účtů vedených v českých korunách jsou pro přepočet hodnoty cizoměnových instrumentů do českých korun použity kurzy devizového trhu vyhlašované Českou národní bankou (ČNB) – tzv. fixing. Zde je důležité podotknout, že kurzy devizového trhu ČNB slouží pro neobchodní účely. Pro ocenění swapových a forwardových pozic se používá rozdíl mezi smluveným kurzem pro koncové vypořádání a aktuálním forwardovým kurzem ke stejnému tenoru. Aktuální devizové kurzy se mění každým okamžikem a stejně tak se mění i cena jednotlivých instrumentů. Zobrazovaná hodnota portfolia má tedy pouze informační charakter a může se od aktuální hodnoty portfolia lišit.
+
+6.6. Výpočet poplatku
+
+Poplatek za využívání produktu Portfolia od Portu je klientům účtován měsíčně a je primárně strháván z hotovostní složky portfolia. Vypočítá se jako součet denních poplatků za uplynulý měsíc. Denní poplatky jsou vypočteny jako procentní část celkového majetku pod správou (AUM).
+
+6.7. Metody výpočtu výnosů
+
+Pro každého investora je důležité mít možnost sledovat vývoj svého portfolia. K výpočtu výnosu investovaných peněz lze obecně použít několik metod, z nichž každá nabízí trochu jiný pohled na výnos portfolia. Jednou je možné například lépe posoudit schopnosti portfolio manažera, jinou zase spíše schopnost investora načasovat své investice. Portu zobrazuje svým klientům výnos jejich investice vypočtený několika metodami.
+
+Následující text blíže představí jednotlivé metody, způsoby výpočtu i interpretaci výsledku.
+
+6.7.1. Metoda časově váženého výnosu (TWR)
+
+Časově vážený výnos je nejrozšířenější způsob výpočtu výnosu v oblasti investování a je standardně používán například podílovými fondy. Dokáže totiž očistit celkový výnos investice o vlivy průběžných pohybů peněz. Výsledek tak není ovlivněn načasováním jednotlivých vkladů a výběrů nebo jejich výší, a lze dobře použít pro srovnání výnosnosti několika různých investic na stejném časovém období. Kromě toho lze časově vážený výnos využít pro posouzení úspěšnosti portfolia manažera.
+
+Časově vážený výnos se stanoví na základě komplexního výpočtu, kdy se celé sledované období rozdělí na mnoho „podobdobí“ a za každé takové podobdobí je vypočten jednoduchý výnos. Jednotlivá podobdobí mohou být dlouhá například den nebo může být sledované období rozděleno každým provedeným vkladem či výběrem. Do výpočtu výnosu za celé období pak vstupují výnosy jednotlivých podobdobí stejnou vahou. Časově vážený výnos je tak v podstatě vyjádřením složené míry růstu portfolia a je spočítán jako geometrický průměr výnosů jednotlivých podobdobí:
+
+𝑟
+𝑡
+𝑇
+⁢
+𝑊
+⁢
+𝑅
+=
+[
+(
+1
++
+𝑟
+1
+)
+⁢
+(
+1
++
+𝑟
+2
+)
+.
+.
+.
+(
+1
++
+𝑟
+𝑁
+)
+]
+−
+1
+
+kde 
+𝑟
+𝑡
+𝑇
+⁢
+𝑊
+⁢
+𝑅
+ je časově vážený výnos (anglicky time-weighted return, zkráceně TWR) pro časové období t a toto časové období se skládá z N počtu podobdobí. Ke stejnému výsledku se lze dopočítat také tzv. Modifikovanou Dietzovou metodou.
+
+6.7.2. Metoda peněžně váženého výnosu (MWR)
+
+Metoda peněžně váženého výnosu počítá s finančními toky tak, aby přesně vyjádřila, jak úspěšné bylo sledované období pro samotného investora. Kromě vlastní výkonnosti jednotlivých investičních instrumentů bere totiž tento typ výnosu v potaz jak se investorovi jednotlivými vklady či výběry dařilo časovat trh. Peněžně vážený výnos se dívá, v jaké části sledovaného období došlo k finančnímu toku, a především jaká byla relativní výše dodatečného finančního toku vůči zbytku investované částky. Výnosům v období kdy v portfoliu bylo zainvestováno více peněz je přisouzena větší váha a výnosnost v těchto obdobích ovlivní výsledek víc než období, kdy bylo zainvestováno méně.
+
+Mezi metody peněžně váženého výnosu řadíme metodu vnitřního výnosového procenta IRR (zkratka anglického internal rate of return). Tato metoda je dále uzpůsobena tak, aby bylo možné spočítat výnosové procento i pro peněžní toky nerovnoměrně rozložené v čase. Pro kalkulaci je třeba znát denní stav investice v průběhu času a použít software nebo třeba funkci XIRR v aplikaci Microsoft Excel. Peněžně vážený výnos je tedy z matematického hlediska sazba „r“ v následujícím vzorci:
+
+𝑉
+1
+=
+∑
+𝑖
+=
+1
+𝑛
+[
+𝐶
+⁢
+𝐹
+𝑖
+⁡
+(
+1
++
+𝑟
+)
+𝑤
+𝑖
+]
++
+𝑉
+0
+⁢
+(
+1
++
+𝑟
+)
+
+𝑉
+1
+ je hodnota investice na konci sledovaného období
+
+𝑉
+0
+ je hodnota investice na začátku sledovaného období
+
+𝑤
+𝑖
+=
+(
+𝐶
+⁢
+𝐷
+−
+𝐷
+𝑖
+)
+𝐶
+⁢
+𝐷
+
+𝐷
+𝑖
+ je počet kalendářních dní od začátku sledovaného období do peněžního toku 
+𝐶
+⁢
+𝐹
+𝑖
+
+𝐶
+⁢
+𝐹
+𝑖
+ je i-tý peněžní tok
+
+Protože peněžně vážený výnos reflektuje časování trhu a tedy to, kdy investor vkládá či vybírá peníze, není dobrým ukazatelem pro posouzení úspěšnosti portfolio manažera, který tyto finanční toky neovlivní. Stejně tak není dobré používat tento typ výnosu pro porovnání výkonnosti více investic navzájem. Pro oba tyto účely je vhodné použít výnos časově vážený.
+
+6.7.3. Jednoduchý výnos
+
+Portu nedoporučuje používat metodu jednoduchého výnosu pro posuzování výkonnosti investice kvůli jejímu velmi zjednodušenému výpočtu a často nesprávným výsledným hodnotám. Jednoduchý výnos se spočítá jako podíl aktuálního absolutního výnosu investice (tj. peněžního zisku nebo ztráty) k celkovým čistým vkladům (vklady minus výběry). Jednoduchý výnos je dobrým ukazatelem, pokud investor vloží jen jednorázový počáteční vklad, nikoli však v případě průběžných peněžních toků. Výsledek získaný touto metodou totiž nedokáže průběžné vklady správně vyhodnotit a ukazuje výnos, kterého by bylo dosaženo při vkladu všech peněz na počátku sledovaného období. V případě, že investor provádí pravidelné vklady, či peníze vybírá, stává se výnos vypočtený touto metodou irelevantní, a je proto nutné pro vyhodnocení úspěšnosti investic použít výnos peněžně či časově vážený.
+
+6.8. Daně
+
+Níže uvedené informace slouží pro fyzické osoby, které jsou českými daňovými rezidenty s cennými papíry nezahrnutými do obchodního majetku.
+
+Příjmy z převodu (prodeje) cenných papírů jsou dle zákona o daních z příjmu zdaňovány sazbou 15 %. Portu svým klientům poskytne seznam všech provedených transakcí 1x ročně pro účely podání daňového přiznání. K daňovým přiznáním se vztahují dva důležité body:
+
+Od daně se osvobozují příjmy z úplatného převodu cenného papíru (prodeje), přesáhne-li doba mezi nabytím (nákupem) a převodem (prodejem) dobu 3 let. Osvobozený příjem se nedává do daňového přiznání a není dále zdaňován. Bližší informace je možné najít v § 4 odst. 1 písm. w) zákona č. 586/1992 Sb., o dani z příjmů.
+Nepřesáhnou-li příjmy z úplatného převodu (prodeje) cenných papírů za zdaňovací období částku 100 000 Kč (pozor, jedná se o hodnotu celkových příjmů bez ponížení o náklady na pořízení), jsou tyto příjmy osvobozeny od daně dle § 4 odst. 1 písm. v) zákona č. 586/1992 Sb., o dani z příjmů.
+
+Pozn.: Pro správné určení osvobození příjmů z prodeje cenných papírů se nejprve zvažuje limit 100 000 Kč za zdaňovací období. Je-li limit překročen, mohou být příjmy dále osvobozeny dle časového testu 3 let, jak je uvedeno výše.
+
+Dividendy a úroky, které Portu připisuje, mohou být zdaňovány v zahraničí formou srážkové daně, stává se však, že některé dividendy Portu obdrží v hrubé výši, aniž by došlo ke stržení daně. Proto je nutné příjmy z dividend a úroků zahrnout v hrubé výši (tj. nesnížené o daně zaplacené v zahraničí) mezi své příjmy ke zdanění a zdanit českou sazbou. V určitých případech je možné využít zápočet daně zaplacené v zahraničí v souladu se smlouvami o zamezení dvojího zdanění. V takovém případě se daň sníží o daň zaplacenou v zahraničí, ale pouze do výše sazby daně dle smlouvy o zamezení dvojího zdanění.
+
+6.9. Odprodej portfolií a výběr hotovosti
+
+Klienti mohou zadat pokyn na odprodej části nebo celého portfolia kdykoliv. V případě zadání požadavku na odprodej dojde nejpozději během následujícího pracovního dne k prodání instrumentů v požadované hodnotě či prodání celého portfolia za aktuální tržní cenu. Prodej instrumentů vždy podléhá Best Execution Policy 
+(otevře se v nové kartě)
+. Následně je klientovi zaslána částka v hotovosti na stanovený účet. Portu hotovost odešle na účet klienta zpravidla nejpozději do 10 pracovních dnů od zadání požadavku.
+
+Důležité je podotknout, že hodnota portfolia zobrazovaná uvnitř aplikace Portu je založena na ocenění, které probíhá jednou denně závěrečnou cenou instrumentů předchozího dne, a proto má pouze orientační charakter. Přesná částka, kterou Portu zašle klientovi na účet, vždy závisí na aktuálních tržních podmínkách v okamžiku prodeje. Tržní cena se na rozdíl od ceny používané pro ocenění portfolia mění každým okamžikem a Portu nemůže žádnou zobrazovanou cenu garantovat. Přehled všech proběhlých transakcí včetně zobchodovaného objemu a finální ceny je k dispozici po přihlášení do webové aplikace v sekci Historie transakcí.
+
+7. Disclaimer
+
+Informace obsažené v tomto dokumentu nepředstavují nabídku k nákupu či prodeji investičních nástrojů nebo investiční doporučení. Služby jsou poskytovány pouze investorům, kteří jsou klienty společnosti WOOD Retail Investments a. s. („společnost“), na základě písemně uzavřené smlouvy, přičemž klienti jsou povinni se se zněním smlouvy seznámit a uvážit, zda služby a produkty poskytované jim společností na základě smlouvy jsou pro ně vhodné.
+
+Kurzy, ceny, výnosy, zhodnocení, výkonnost či jiné parametry dosažené jednotlivými investičními nástroji v minulosti nemohou v žádném případě sloužit jako indikátor nebo záruka budoucích kurzů, cen, výnosů, zhodnocení, výkonnosti či jiných parametrů takovýchto nebo obdobných investičních nástrojů. Klienti společnosti mohou zaznamenat odlišné výsledky, než které jsou uvedeny v tomto dokumentu. S investicí je spojeno riziko kolísání hodnoty, které se nezobrazuje ve zde uvedených hypotetických příkladech. Uvedené výsledky výkonů nereprezentují výsledky skutečného obchodování s aktivy klientů, ale byly dosaženy pomocí aplikace, která pracuje s modelem založeném na zpětné rekonstrukci.
+
+Obsah
+Úvod
+Základní principy investování s Portu
+Vyhodnocení rizikového profilu klienta
+Portfolia od Portu – investiční metodika
+Rizika
+Správa Portfolií od Portu
+Disclaimer

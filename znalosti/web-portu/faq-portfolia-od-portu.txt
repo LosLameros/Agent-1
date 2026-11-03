@@ -1,0 +1,133 @@
+ZDROJ: https://www.portu.cz/o-nas/faq/portfolia-od-portu
+NAČTENO: 2026-11-03
+
+Portu
+Časté dotazy
+Portfolia od Portu
+
+Do čeho investuji?
+Co jsou to ETF – podrobněji
+Podle čeho Portu vybírá jednotlivá ETF?
+Můžu si vybrat portfolio, které mi nebylo doporučené?
+Jak pracují ETF s příjmem dividend?
+Můžu ovlivnit skladbu Portfolia od Portu a některé cenné papíry vyměnit?
+Proč musím vyplnit dobu, na kterou plánuji investovat?
+Co je to rebalance?
+Jak často probíhá rebalance?
+Co je to měnové zajištění?
+Kdy má měnové zajištění smysl?
+Co představuje nerealizovaný zisk/ztráta u měnového zajištění?
+Jak funguje funkce Chytré snižování rizika?
+Jak si funkci Chytré snižování rizika zapnu/vypnu?
+Kdy a pro koho se Chytré snižování rizika hodí?
+Pro jaké Portu investice je funkce Chytré snižování rizika dostupná?
+Je Chytré snižování rizika nějak zvlášť zpoplatněno?
+Jaké daňové konsekvence má funkce Chytré snižování rizika?
+Co je to společensky odpovědné investování?
+Proč investovat odpovědně?
+Jak se liší Odpovědná portfolia od klasických Portfolií od Portu?
+Jak si založím Odpovědné portfolio?
+ČNB
+dohled
+350 000+
+klientů
+77 miliard Kč
+ve správě
+
+===== OTÁZKY A ODPOVĚDI (rozbalené akordeony) =====
+
+OTÁZKA: Do čeho investuji?
+ODPOVĚĎ: Portfolia od Portu jsou složena primárně z burzovně obchodovaných fondů (ETF). Jedná se o likvidní cenné papíry, které sledují bazický index, komodity, dluhopisy nebo i koš aktiv jako například indexový fond. Na rozdíl od podílových fondů jsou ETF obchodovány stejně jako například akcie na burze a jejich cena se tedy vyvíjí podle vývoje na trhu. Vy jako investor na Portu pak vlastníte přímo jednotlivá ETF nebo jejich frakce.
+
+OTÁZKA: Co jsou to ETF – podrobněji
+ODPOVĚĎ: Burzovně obchodované fondy neboli ETF (Exchange traded funds) jsou cenné papíry emitované zpravidla velkými investičními společnostmi (BlackRock, Invesco, Vanguard, ...), které sledují konkrétní bazický index nebo jiný koš aktiv, a celý tento cenný papír se sám o sobě obchoduje na burze. Nákup ETF znamená investici do všech jednotlivých aktiv, která náleží k danému indexu nebo koši. Manažeři ETF se nesnaží předehnat trh aktivním výběrem jednotlivých akcií, ale naopak daný trh kopírovat sestavením ETF v takové struktuře, jako je konstruovaný sledovaný index. Tím je eliminován lidský faktor v podobě rizika chybného výběru jednotlivé akcie správcem portfolia nebo fondu, která může výrazně ztratit na hodnotě. Více o ETF čtěte zde.
+
+OTÁZKA: Podle čeho Portu vybírá jednotlivá ETF?
+ODPOVĚĎ: Při výběru aktiv, do kterých budeme investovat, zvažujeme velké množství ukazatelů, jako jsou poplatky, nákladovost (TER), likvidita. V rámci Portfolií od Portu také sestavujeme portfolio tak, aby bylo dostatečně diverzifikované. Hodnotíme měnu aktiva a měnu aktiv podkladových. Všechny tyto proměnné vyhodnotí tým expertů, který pak uzpůsobí jednotlivá portfolia tak, aby měla co nejvyšší výnosnost při dané rizikovosti.
+
+OTÁZKA: Můžu si vybrat portfolio, které mi nebylo doporučené?
+ODPOVĚĎ: Portu vám na základě dotazníku doporučí portfolio, které bude nejvíce odpovídat vašim cílům a potřebám. Změny jsou sice možné, ale měli byste mít vždy na paměti, že tím zasahujete do investiční strategie, a pravděpodobnost, že dosáhnete svých cílů, může klesnout.
+
+OTÁZKA: Jak pracují ETF s příjmem dividend?
+ODPOVĚĎ: Akcie (případně dluhopisy) obsažené v ETF mohou vyplácet dividendy (respektive úroky v případě dluhopisů). Dle typu ETF jsou tyto příjmy pak buď dále vypláceny investorům formou dividendy nebo jsou uvnitř ETF reinvestovány zpět.
+
+Dividendové neboli distribuční ETF vyplácejí dividendy z držených akcií investorům. Všechny obdržené dividendy jsou poměrově přerozděleny mezi držitele ETF. Zpravidla ETF obdržené dividendy shromažďují dohromady od více společností a vyplácejí je na pravidelné bázi, měsíčně, čtvrtletně, pololetně nebo ročně. Vyplacené dividendy jsou pak v Portu připisovány do hotovostní složky dané investice v měně, ve které je Portu obdrží. Tuto cizoměnovou hotovost se pak systém při nejbližším Obchodním dni snaží zpětně zainvestovat primárně do podvážených instrumentů ve stejné měně. Pokud ale celková výše hotovosti v dané investici nedosahuje cílového zastoupení, může systém obdržené dividendy ponechat nějaký čas v hotovosti.
+
+Reinvestiční neboli akumulační ETF dividendy (případně úroky) koncovým investorům nevyplácí, ale uvnitř sebe je rovnou reinvestují do akcií či dluhopisů, které drží. Zisk z dividend se tak projeví růstem ceny daného ETF právě o výši obdržených dividend.
+
+Do našich portfolií volíme pouze reinvestiční (akumulační) ETF.
+
+Více o dividendových a reinvestičních ETF si přečtete u nás v Magazínu.
+
+OTÁZKA: Můžu ovlivnit skladbu Portfolia od Portu a některé cenné papíry vyměnit?
+ODPOVĚĎ: V Portu jsme toho názoru, že jednou z hlavních příčin nízké výkonnosti investic je vliv lidských emocí na výběr jednotlivých aktiv. Portfolia od Portu jsou pečlivě složena tak, aby jejich rizikovost odpovídala vašim potřebám a možnostem. Individuální zásah do struktury doporučeného portfolia je sice možný, investor se tím však odkloní od investiční strategie stanovené Portu a z dané investice se tímto krokem stane Portfolio podle vás.
+
+Takový krok byste měli udělat pouze v případě, že máte dostatečné znalosti a zkušenosti, věříte si a máte jasnou vizi. Portfolio podle vás může být vhodným doplňkem k hlavní investici v podobě Portfolia od Portu.
+
+OTÁZKA: Proč musím vyplnit dobu, na kterou plánuji investovat?
+ODPOVĚĎ: Doba, za jakou plánujete peníze vybrat zpět, velmi ovlivňuje volbu nejvhodnější investiční strategie, a je proto zásadní pro poskytnutí správného doporučení. Pokud například plánujete vybrat peníze zpět po dvou letech, je vhodnější investovat do více konzervativního portfolia, než pokud investujete na 10 let. V krátkém období se může stát, že velmi agresivní portfolia budou ztrátová vlivem krátkodobých propadů. V dlouhém období si naopak můžete dovolit investovat i do agresivnějších portfolií, přestože jste relativně konzervativní investor.
+
+OTÁZKA: Co je to rebalance?
+ODPOVĚĎ: Rebalance je návrat vašeho portfolia k původnímu rozložení jednotlivých tříd aktiv. Klientská portfolia jsou složena z několika cenných papírů rozdílného charakteru (akciové, dluhopisové aj.). Poměr jednotlivých cenných papírů v portfoliu (jejich alokace) je stanoven na základě modelu řízení rizika tak, aby odpovídal předem stanoveným parametrům – především maximální míře rizika, kterou může klient nést. Vlivem vývoje cen jednotlivých instrumentů v průběhu času se však vaše portfolio může odchýlit od původní alokace, což může vést k nárůstu rizika ve vašem portfoliu. Pokud jsou překročeny stanovené limity, je vaše portfolio rebalancováno, aby bylo navráceno do předem stanoveného rozložení. Více o rebalanci se dozvíte v článku na Magazínu.
+
+Naše rebalance je daňově optimalizovaná. Při automatické rebalanci dbáme na to, aby prodeje cenných papírů probíhaly s ohledem na splnění časového testu (tj. držené déle než 3 roky) a nevytvářely vám daňovou povinnost. Více o daňově optimalizované rebalanci se dozvíte v článku na Magazínu.
+
+OTÁZKA: Jak často probíhá rebalance?
+ODPOVĚĎ: Mechanismus Portu je nastaven tak, aby konstantně vyhodnocoval, zda vaše portfolio odpovídá předem stanoveným parametrům. Pokud se od parametrů vychýlí o více než jsou nastavené limity, bude proveden rebalancing neboli úprava alokace vašich prostředků. Pokud se například změní charakter některých aktiv (akciové trhy začnou příliš kolísat) a celé portfolio se tak pro vás stane příliš rizikovým, dojde k realokaci vašich prostředků do méně rizikových skupin aktiv (dluhopisy, fondy peněžního trhu atp.) tak, aby byla míra rizika, kterou jste společně s Portu zvolili, zachována.
+
+V průměru očekáváme, že k rebalancingu klientských portfolií bude docházet jednou měsíčně. Směrodatný však vždy bude aktuální stav vašeho portfolia – pokud bude potřeba provést úpravu častěji, Portu ji provede. Agregujeme nově investované peníze spolu s potřebou realokace všech klientských portfolií současně do velkých objednávek, abychom minimalizovali náklady za nákup a prodej cenných papírů.
+
+OTÁZKA: Co je to měnové zajištění?
+ODPOVĚĎ: Měnové zajištění minimalizuje vliv výkyvů měnových kurzů na výnos vaší investice. Část vaší investice se skládá z instrumentů v cizích měnách, jejichž výnos může být po přepočtení do českých korun ovlivněn změnami měnových kurzů. Posilování české koruny (například z 26 korun za euro na 25) má negativní vliv na výnos zahraničních investic – tedy jej snižuje – jelikož po přepočtení výnosu na koruny dostanete za jedno euro (nebo dolar) méně korun. Naopak oslabování české koruny má vliv na výnos pozitivní.
+
+Vliv měnového kurzu na výnos zahraniční investice se minimalizuje pomocí instrumentů měnového zajištění – swapů a forwardů. Jedná se o termínované operace, které po určitou dobu fixují měnový kurz. Při sjednávání termínované operace se stanoví délka období, po které se bude kurz fixovat, a budoucí hodnota směnného kurzu. Měnové zajištění tak po určité období ochrání investici proti posilování domácí měny, avšak – vzhledem k tomu, že je kurz fixován – zamezí i profitovat na znehodnocování domácí měny. Dále jsou s měnovým zajištěním spojeny i náklady. Jako náklad se označuje rozdíl mezi měnovým kurzem v den sjednání kontraktu a budoucím dohodnutým kurzem pro den splatnosti. Tento náklad se projeví jako snížení výnosu v řádu desetin procent.
+
+OTÁZKA: Kdy má měnové zajištění smysl?
+ODPOVĚĎ: Zajišťovat investici proti výkyvům měnových kurzů má smysl jen při splnění dvou následujících podmínek. Zaprvé se musí všeobecně očekávat posilování domácí měny investorů (CZK) oproti měnám, ve kterých investují (EUR, USD). Zadruhé, očekávané zisky z otevření zajišťovacího kontraktu musí převýšit jeho náklady. Tržní situaci pravidelně vyhodnocuje investiční komise, která rozhoduje, zda by Portfolia od Portu měla být měnově zajištěna, či nikoliv.
+
+V případě, že investiční komise přijme rozhodnutí o změně v měnovém zajištění, budete o tom informováni a sami se rozhodnete, zda chcete doporučení přijmout, či nikoliv.
+
+OTÁZKA: Co představuje nerealizovaný zisk/ztráta u měnového zajištění?
+ODPOVĚĎ: Aby bylo možné klientům zobrazovat aktuální hodnotu portfolia průběžně, pracuje se u měnového zajištění s takzvaným nerealizovaným ziskem/ztrátou. Přestože k realizaci zajišťovacího kontraktu dojde až po předem dohodnuté době, je i průběžně možné stanovit, jaký je aktuální zisk z daného instrumentu – i když zatím nerealizovaný. K výpočtu nerealizovaného zisku/ztráty ke každému dni stačí odečíst aktuální měnový kurz od budoucího dohodnutého a výsledek vynásobit zajištěným objemem (velikostí investice).
+
+OTÁZKA: Jak funguje funkce Chytré snižování rizika?
+ODPOVĚĎ: Tato funkce zajistí, že rizikovost vašeho Portfolia od Portu bude klesat společně s blížícím se koncem investičního horizontu, který si nastavíte. Cílem je postupně snižovat kolísavost hodnoty portfolia, a zamezit tak větším ztrátám v momentu plánovaného výběru. Pro investora se tak zvýší pravděpodobnost, že dosáhne svého investičního cíle. Přečtěte si více o tom, jak funguje Chytré snižování rizika.
+
+OTÁZKA: Jak si funkci Chytré snižování rizika zapnu/vypnu?
+ODPOVĚĎ: Funkci lze zapnout při zakládání nového Porfolia od Portu. U již založených portfolií si můžete tuto funkci dodatečně zapnout/vypnout na stránce nastavení portfolia.
+
+OTÁZKA: Kdy a pro koho se Chytré snižování rizika hodí?
+ODPOVĚĎ: Funkce je vhodná pro investory, kteří chtějí snížit kolísavost hodnoty svého Portfolia od Portu v době před plánovaným výběrem peněz a tím minimalizovat riziko špatného načasování výběru. Oproti zachování vyššího stupně rizika po celou dobu investování může tato funkce snížit celkový potenciální výnos, minimalizuje však riziko většího propadu v době před plánovaným výběrem. Ve výsledku tak dojde ke zvýšení pravděpodobnosti, že investor dosáhne svého investičního cíle.
+
+Funkce nemusí být vhodná pro ty, kteří investují jen tak nebo nemají v plánu peníze vybírat v určitém předem stanoveném časovém momentu.
+
+OTÁZKA: Pro jaké Portu investice je funkce Chytré snižování rizika dostupná?
+ODPOVĚĎ: Tato funkce je dostupná pouze pro Portfolia od Portu. Pro Portfolia podle vás Chytré snižování rizika dostupné není, jelikož o jejich složení a změnách v čase rozhoduje sám investor bez jakéhokoli zásahu ze strany Portu. Stejně tak tuto funkci nelze využít u Investiční rezervy.
+
+OTÁZKA: Je Chytré snižování rizika nějak zvlášť zpoplatněno?
+ODPOVĚĎ: Není. Za zapnutí funkce Chytré snižování rizika se neplatí žádný dodatečný poplatek.
+
+OTÁZKA: Jaké daňové konsekvence má funkce Chytré snižování rizika?
+ODPOVĚĎ: Snižování rizikového profilu může být spojeno s prodejem části investičních instrumentů v portfoliu. Příjmy z prodejů cenných papírů se u fyzických osob standardně daní 15 %, respektive 23 %. Platí však několik výjimek, kdy se danit nemusí – například pokud příjmy za zdaňovací období nepřesáhnou 100 tisíc korun nebo jsou cenné papíry drženy déle než 3 roky. Vše přehledně shrnujeme v článku na našem Magazínu.
+
+Při zapnutí funkce dojde k nastavení rizikovosti vašeho portfolia na úroveň odpovídající vašemu profilu a investičnímu horizontu. Povinnosti danit se však dále snažíme zabránit tak, že při postupném snižování rizikovosti dochází k prodeji pouze těch cenných papírů, které mají již splněný časový test. K poslední úpravě rizikovosti portfolia dochází 3 roky před plánovaným výběrem.
+
+K přeprodeji instrumentů bez ohledu na časový test může dojít v případě, že Chytré snižování rizika zapnete v průběhu investování, kdy aktuální složení investice je jiné, než výchozí pro začátek chytrého snižování rizika.
+
+OTÁZKA: Co je to společensky odpovědné investování?
+ODPOVĚĎ: Odpovědné investování je nadstavbou investování klasického – nenahrazuje tradiční investiční principy, ale doplňuje a rozšiřuje je o aspekty udržitelnosti. Společensky odpovědné investování se kromě finančních výsledků zaměřuje na to, jaký mají společnosti, do kterých investuji dopad na životní prostředí a na naši společnost. Tento typ investování se zaměřuje na firmy, které jsou nejlépe připraveny na to čelit výzvám v oblasti environmentální i sociální a které zároveň usilují o snížení negativních dopadů svého fungování na okolní svět. Více o tomto tématu se můžete dozvědět u nás v magazínu.
+
+OTÁZKA: Proč investovat odpovědně?
+ODPOVĚĎ: Díky odpovědným portfoliím mohou investoři zhodnocovat peníze v souladu se svými hodnotami – investicí do firem, které se chovají ohleduplně vůči přírodě a společnosti. Investování dle principů ESG je také pro každého, kdo připouští, že například klimatická změna nebo s ní související regulace budou negativně ovlivňovat fungování firem. Odpovědné investování totiž umožňuje směřovat kapitál do společností, které jsou odolnější čelit globálním výzvám a jejichž finanční výkonnost není tolik ohrožena.
+
+OTÁZKA: Jak se liší Odpovědná portfolia od klasických Portfolií od Portu?
+ODPOVĚĎ: Odpovědná portfolia jsou stejně jako naše klasická Portfolia od Portu postavena na principu dlouhodobého pasivního investování a široké diverzifikaci s cílem dosahovat co nejlepšího poměru výnos–riziko. Odpovědná portfolia jsou dostupná v 10 rizikových profilech, které se co do parametrů výnosnosti a rizikovosti přibližují tradičním Portfoliím od Portu.
+
+Odpovědná portfolia navíc berou ohled na aspekty udržitelnosti, jako například ESG rating, který udává, jak si firma vede v oblasti životního prostředí, v sociální problematice, a jak je efektivně řízena. Dále jsou z Odpovědných portfolií vyřazeny společnosti z kontroverzních sektorů a je kladen důraz na snížení uhlíkové intenzity.
+
+Pro posouzení míry udržitelnosti využíváme zavedené klasifikace udržitelnosti jako SFDR a portfolia skládáme dle principů společensky odpovědného investování (SRI). O konkrétních kritériích, které využíváme k posouzení a výběru instrumentů si můžete přečíst v naší investiční metodice k odpovědnému investování.
+
+OTÁZKA: Jak si založím Odpovědné portfolio?
+ODPOVĚĎ: Odpovědné portfolio si můžete založit jak při registraci, tak jako stávající klient. Na stránce nastavení portfolia stačí zvolit odpovědnou variantu. Na Portu můžete mít samozřejmě více investic a můžete si tak ke klasickému Portfoliu od Portu založit také to společensky odpovědné.
+
+Mezi odpovědnou a tradiční variantou Portfolia od Portu můžete přepínat u již zainvestovaného portfolia, vzhledem k rozdílnému složení instrumentů však dojde k překoupení vaší investice. To může být spojeno s daňovými dopady, na což vás ale před potvrzením změny upozorníme.

@@ -180,6 +180,10 @@ Fakta o fungování Portu, interní postupy a postoje poradce, které nejsou na 
 - Měnové zajištění: profily 1–3 zajišťujeme, profily 4–10 ne; klient si ho může v nastavení portfolia sám zapnout nebo vypnout (`slozeni-portfolii.md`).
 - Tabulka „1. Aktuální složení portfolií 1-10“ je aktuální. Datum v jejím nadpisu („Od cca 26. 10. 2023 do DD. MM. 2025“) a poznámka „Portfolio 1–3 dále NE od 7. 3. 2025“ neplatí (poradce; stejnou tabulku poslal znovu 3. 11. 2026). Profil 9 je asi z 88 % akciový (10 % dluhopisy, 2 % hotovost), profil 10 z 98 %.
 
+- **Pravidelný příjem z dividend (cash flow) jen přes Brokerage** (poradce, 3. 11. 2026). V Portfoliu od Portu i v Portfoliu podle vás jdou dividendy do hotovostní složky portfolia a systém je znovu zainvestuje. V Brokerage chodí dividendy do Peněženky a klient si je pošle na účet. Inspirací pro sestavení je tematický balíček „Dividendoví lídři“ z Portfolia podle vás (k 3. 11. 2026: 39 % globální dividendové akcie, 22 % dividendové akcie rozvíjejících se trhů, 10 % finanční sektor USA, 7 % energetika, 7 % necyklické spotřební zboží, 7 % private equity, 6 % ČEZ, 2 % hotovost; +8,62 % ročně za 5 let). Poradce ho uvádí jen jako jednu z možností. Jednodušší cesta je jedno globální dividendové ETF. Poradce nabízí pomoc se sestavením.
+  - Výnos balíčku (8,62 % ročně) je **celkové zhodnocení včetně znovu investovaných dividend**, ne dividendový výnos. Klientovi to vždy napiš, jinak si ho splete s příjmem.
+  - Pro výplatu dividend musí být instrument **distribuční**. Vanguard FTSE All-World High Dividend Yield: **VHYD LN = distribuční (USD), VHYA LN = akumulační** (podle stránky Vanguardu, 3. 11. 2026). Web Portu má u VHYA popisek „Globální dividendové akcie (div.)“, který to plete. Akumulační verze jsou podle mě i některé sektorové složky balíčku (finanční sektor USA, energetika, necyklické spotřební zboží), ty by v Brokerage dividendy nevyplácely. Před nákupem ověř u každého instrumentu.
+
 *(Další poznatky doplní zadavatel z historie konverzací v Claude Projects.)*
 
 # 9. SEBEKONTROLA PŘED ODEVZDÁNÍM

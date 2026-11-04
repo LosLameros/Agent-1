@@ -219,3 +219,9 @@
 - Co nám AI ušetří: DCF model firmy za pár minut · Dopad jiného růstu nebo sazby · ETF: složení, regiony, měny · Překryv nového ETF s portfoliem · Chování portfolia v minulosti.
 - Na co si dát pozor: DCF stojí na předpokladech · Není to cílová cena ani tip · Minulost nezaručuje budoucnost.
 - V poznámkách: plné disclaimery k řečení nahlas a prompty pro DCF a porovnání ETF. Poplatky na slajdu záměrně nejsou.
+
+## Verze 4 (4. 11. 2026): podněty šéfa
+
+- **Slajd 8 Rentgen:** prompt na slajdu nahrazen jednodušší verzí na nadvážení: „Tady je seznam mých investic a částek. Čeho mám nejvíc podle typu aktiv a podle konkrétních akcií, i když je držím přes fondy? Co mám oproti světovému akciovému trhu nadváženo, tedy čeho mám víc než trh?“ Podrobnější prompt (tři ETF a Nvidia) je v poznámkách pro živou ukázku.
+- **Slajd 14 Předěl 02 Jak to děláme my:** podtitul „AI nám šetří hodiny práce. / Její výstupy ale čteme kriticky, s léty zkušeností s analýzou.“ V poznámkách k tomu mluvený bod.
+- **Slajd 18 Q&A:** v poznámkách odpověď na „Nahradí AI poradce?“ se stejným sdělením.

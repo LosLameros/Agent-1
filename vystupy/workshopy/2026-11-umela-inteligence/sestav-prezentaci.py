@@ -338,7 +338,7 @@ s = S[7]
 fill(s, 3, ['3 · PORTFOLIO'])
 fill(s, 4, ['Rentgen vašeho portfolia'])
 fill(s, 5, ['Tři různé fondy můžou být třikrát totéž. AI to odhalí za minutu.',
-            'Prompt: „Mám ETF na MSCI World, S&P 500 a Nasdaq 100 a k tomu akcie Nvidie. Jak je moje portfolio rozložené podle regionů, sektorů a měn? Kolik mám celkem v 10 největších firmách? Kde se fondy překrývají?“',
+            'Prompt: „Tady je seznam mých investic a částek. Čeho mám nejvíc podle typu aktiv a podle konkrétních akcií, i když je držím přes fondy? Co mám oproti světovému akciovému trhu nadváženo, tedy čeho mám víc než trh?“',
             'Tip: místo „Je moje portfolio dobré?“ se ptejte „Kde je moje portfolio nejvíc zranitelné?“'])
 geom(s, 5, y=3.3, h=2.9)
 geom(s, 3, y=1.17); geom(s, 4, y=1.65)
@@ -346,7 +346,9 @@ s5 = sh(s, 5).text_frame.paragraphs
 for p in s5[1:]:
     p.space_before = Pt(10)
 fill(s, 7, [['40 ', '%'], 'tvoří 10 největších firem v indexu S&P 500', 'Kdo má tři „různé“ fondy, má často třikrát totéž.'])
-notes(s, '30vteřinová ukázka: „Je moje portfolio dobré?“ (AI pochválí) vs. „Kde je moje portfolio nejvíc zranitelné?“ (užitečná odpověď). '
+notes(s, 'Prompt na slajdu je jednoduchá verze na nadvážení (podnět šéfa). Nadváženo = mám toho víc, než kolik to tvoří v celém trhu. '
+         'Podrobnější verze pro živou ukázku: „Mám ETF na MSCI World, S&P 500 a Nasdaq 100 a k tomu akcie Nvidie. Jak je moje portfolio rozložené podle regionů, sektorů a měn? Kolik mám celkem v 10 největších firmách? Kde se fondy překrývají?“ '
+         '30vteřinová ukázka: „Je moje portfolio dobré?“ (AI pochválí) vs. „Kde je moje portfolio nejvíc zranitelné?“ (užitečná odpověď). '
          'Číslo 40 % ověřit těsně před workshopem (podíl 10 největších firem v S&P 500). Rentgen hodnotí fakta, ne poradce. '
          'Doplňující dotaz (podnět kolegy): „Co se změní v rozložení mého portfolia, když přidám ETF X?“ Ptát se na regiony, sektory a měny, ne na výnos ani náklady. '
          'Přechod: „A teď si z toho necháme postavit vlastní přehled.“')
@@ -461,8 +463,9 @@ notes(s, 'Nejdřív anketa: „Které akcie AI podle vás jmenuje?“ Pak odhale
 
 # ---------- Předěl 02 ----------
 s = S[13]
-fill(s, 4, ['02', 'Jak to děláme my', 'Jak se na firmy díváme my dva. Naživo, na skutečné firmě.'])
-notes(s, 'Druhá část: náš osobní postup, ne oficiální postup Portu.')
+fill(s, 4, ['02', 'Jak to děláme my', 'AI nám šetří hodiny práce.', 'Její výstupy ale čteme kriticky, s léty zkušeností s analýzou.'])
+notes(s, 'Druhá část: náš osobní postup, ne oficiální postup Portu. Zdůraznit (podnět šéfa): analýze se věnujeme roky, proto umíme výstupy AI kriticky posoudit, '
+         'poznat vymyšlené číslo nebo slabý argument. AI je rychlý pomocník, úsudek a rozhodnutí zůstávají na člověku se zkušenostmi.')
 
 # ---------- 12 Jak to děláme my ----------
 s = S[14]
@@ -554,7 +557,8 @@ for sid, q in zip((8, 12, 16, 20), ('Která AI je na investice nejlepší?', 'Po
     fill(s, sid, [q])
 notes(s, 'Odpověď na otázku o účtu: „V USA už ano: ChatGPT umí číst bankovní účty a u brokera Robinhood můžete napojit AI agenta, který obchoduje. '
          'V Česku zatím ne, a my bychom AI peníze do ruky zatím nedávali.“ '
-         'Placená verze: na většinu ukázaných věcí stačí verze zdarma, placená má víc dotazů a silnější modely.')
+         'Placená verze: na většinu ukázaných věcí stačí verze zdarma, placená má víc dotazů a silnější modely. '
+         'Nahradí AI poradce? „AI je skvělý pomocník, ale kriticky posoudit její výstup a dát ho do souvislostí vaší situace umí člověk s letitou zkušeností s analýzou.“')
 
 # ---------- 16, 17 ----------
 notes(S[18], 'Jedna věta: „Za investiční rozhodnutí odpovídáte vy. Rádi vám s ním pomůžeme. Ozvěte se, když budete chtít výstup z AI probrat s člověkem.“')

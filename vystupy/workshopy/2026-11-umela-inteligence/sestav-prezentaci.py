@@ -5,7 +5,7 @@ Postup (skill pptx):
    v ppt/presentation.xml nechat pořadí 2, 23, 15, 19, 13, 14, 20, 24, 40, 56, 35, 57, 22, 58, 25, 36, 44, 45, 48, 52,
    spustit clean.py a zabalit jako stage3.pptx.
 2. python3 -I sestav-prezentaci.py stage3.pptx "AI jako váš investiční asistent - workshop.pptx"
-   (fotky řečníků ve složce foto/ ze staré prezentace, slajd 2).
+   (fotky řečníků ve složce foto/ ze staré prezentace, slajd 2; ilustrace slajdů 6 a 10 ve složce img/, zdroj v obrazky/).
 """
 import copy, sys
 from pptx import Presentation
@@ -16,6 +16,7 @@ from pptx.oxml.ns import qn
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 FOTO = 'foto/'
+IMG = 'img/'
 FOOTER = 'AI jako váš investiční asistent  ·  listopad 2026'
 
 prs = Presentation(SRC)
@@ -180,7 +181,7 @@ def pills():
 s = S[0]
 fill(s, 3, ['WEBINÁŘ · INVESTIČNÍ KONZULTACE'])
 fill(s, 4, ['AI jako váš investiční asistent'])
-fill(s, 5, ['Co za vás zvládne a jak se jí ptát. Ukážeme naživo.'])
+fill(s, 5, ['Co za vás zvládne a jak se jí ptát.'])
 fill(s, 7, ['Marek Pokorný', 'Investiční konzultant a analytik'])
 fill(s, 9, ['Marek Malina', 'Investiční konzultant a analytik'])
 geom(s, 7, w=2.45)
@@ -296,7 +297,8 @@ text_image(S[5], '1 · DOKUMENTY', 'Přečte za vás 80 stran za minutu',
             'Nástroj: Claude nebo ChatGPT',
             'Bonus: NotebookLM z dokumentu udělá krátký podcast'],
            'Živá ukázka na anglickém dokumentu k fondu (KID nebo měsíční přehled). Jedno číslo ze shrnutí ukázat přímo v dokumentu (tip 4 v praxi). '
-           'Vpravo vložit záložní screenshot shrnutí. Češtinu podcastu v NotebookLM ověřit.')
+           'Obrázek vpravo je ilustrace (přepis hovoru Applu → české shrnutí). Při živé ukázce použít skutečný přepis z webu firmy pro investory. Češtinu podcastu v NotebookLM ověřit.')
+sh(S[5], 19).insert_picture(IMG + 'dokumenty.png')
 
 # ---------- 7 Projekt ----------
 s = S[6]
@@ -417,7 +419,8 @@ text_image(S[9], '5 · ZPRÁVY', 'Zprávy z anglických webů česky za 2 minuty
            'Prompt: „Proč akcie X minulý týden klesly o 8 %? Odpověz česky a uveď zdroje.“',
            ['Nástroj: Perplexity nebo Google Finance s AI',
             'Každé tvrzení má odkaz, který si můžete ověřit'],
-           'Vpravo vložit záložní screenshot odpovědi se zdroji. Pokud tlačí čas, projít rychle.')
+           'Obrázek vpravo je ilustrativní ukázka (akcie X je smyšlená). Při živé ukázce se zeptat na skutečnou akcii. Pokud tlačí čas, projít rychle.')
+sh(S[9], 19).insert_picture(IMG + 'zpravy.png')
 
 # ---------- 10 Témata ----------
 s = S[10]

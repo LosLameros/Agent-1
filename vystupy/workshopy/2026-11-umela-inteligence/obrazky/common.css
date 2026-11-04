@@ -1,0 +1,11 @@
+@font-face { font-family: RS; src: url('file:///home/user/Agent-1/nastroje/fonty/RethinkSans.ttf'); font-weight: 400; }
+@font-face { font-family: RS; src: url('file:///home/user/Agent-1/nastroje/fonty/RethinkSans-Medium.ttf'); font-weight: 500; }
+@font-face { font-family: RS; src: url('file:///home/user/Agent-1/nastroje/fonty/RethinkSans-SemiBold.ttf'); font-weight: 600; }
+@font-face { font-family: RS; src: url('file:///home/user/Agent-1/nastroje/fonty/RethinkSans-Bold.ttf'); font-weight: 700; }
+* { box-sizing: border-box; margin: 0; }
+html, body { width: 1112px; height: 1138px; }
+body { font-family: RS, sans-serif; color: #252525; position: relative; overflow: hidden;
+  background: linear-gradient(160deg, #ECEBF8 0%, #F3F5FA 55%, #E6F6EC 100%); }
+.card { position: absolute; background: #fff; border-radius: 28px; box-shadow: 0 18px 48px rgba(28,15,60,.12); }
+.bar { height: 14px; border-radius: 7px; background: #E4E2F2; margin: 12px 0; }
+.chip { display: inline-block; padding: 8px 18px; border-radius: 999px; font-size: 20px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }

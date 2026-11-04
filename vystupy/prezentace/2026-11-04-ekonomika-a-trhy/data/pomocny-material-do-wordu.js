@@ -1,292 +1,138 @@
-// Pomocný materiál k prezentaci Ekonomika a trhy – listopad 2026 (Word)
+// Pomocný materiál k prezentaci Aktuální vývoj na trzích – listopad 2026 (Word), mluvená řeč
 const fs = require("fs");
-const {
-  Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, LevelFormat,
-  Footer, PageNumber, BorderStyle,
-} = require("docx");
+const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, Footer, PageNumber, BorderStyle } = require("docx");
 
 const OUT = process.argv[2];
 const GREEN = "0F3738", RED = "EE4F46", GRAY = "5F6B6B";
 
 const slides = [
-  {
-    n: 1, title: "Ekonomika a trhy", min: "0,5 min",
-    msg: "Úvod",
-    say: [
-      "Dobrý den, děkuji za pozvání. Za WOOD & Company vás dnes provedu tím, co se na finančních trzích stalo za poslední měsíc a co to znamená pro investice vašich klientů.",
-      "Uplynulé týdny byly hodně rušné. Ropa byla nejdražší za čtyři roky, technologické akcie prošly výprodejem, centrální banky řešily, jestli dál zvyšovat sazby, a v USA se právě volilo do Kongresu. Projdeme si, co se stalo, proč se to stalo a co z toho plyne pro dlouhodobého investora.",
-      "Zabere to zhruba dvacet minut a na konci rád odpovím na vaše dotazy.",
-    ],
-    reserve: [],
-  },
-  {
-    n: 2, title: "Co se stalo od začátku října", min: "2 min",
-    msg: "Měsíc rekordů, výprodeje technologií a nadějí na mír",
-    say: [
-      "Začnu časovou osou, protože za poslední měsíc se toho stalo opravdu hodně a jednotlivé události na sebe navazují.",
-      "Šestého října byly americké akcie na historickém maximu. Index S&P 500 i technologický Nasdaq zapsaly rekord a nálada na trzích byla velmi dobrá.",
-      "Zároveň ale dál zdražovala ropa. Dvacátého třetího října byla ropa Brent nejdražší za čtyři roky, protože trh se bál, že Spojené státy znovu zaútočí na Írán a omezí se dodávky z Perského zálivu.",
-      "Na konci října zasedaly centrální banky. Americký Fed i Evropská centrální banka nechaly sazby beze změny, daly ale najevo, že zvyšování sazeb nemusí být u konce.",
-      "Ve stejných dnech zveřejnili výsledky technologičtí giganti. Čísla měli dobrá, přesto jejich akcie výrazně zlevnily. Trh je potrestal hlavně za to, kolik peněz utrácejí za umělou inteligenci. Za chvíli vysvětlím proč.",
-      "Druhého listopadu se objevila naděje na dohodu mezi USA a Íránem a ropa za jediný den výrazně zlevnila. Hned následující den, třetího listopadu, ale USA znovu udeřily na Írán. Ve stejný den se ve Spojených státech volilo do Kongresu.",
-      "Poslední bod je ještě před námi. Sedmnáctého listopadu zveřejní výsledky Nvidia, největší výrobce čipů pro umělou inteligenci, a tím výsledková sezóna za třetí čtvrtletí v podstatě skončí. Zatím je velmi silná: 82 procent firem překonalo odhady analytiků.",
-      "Dnes tedy projdeme, jak se dařilo trhům, co se děje s energiemi a se sazbami, jak dopadly výsledky firem a proč klesaly technologie, co se stalo s dluhopisy, a na konci se podíváme na výhled.",
-    ],
-    reserve: [
-      "S&P 500: historické maximum 7 844,67 bodu 6. 10. 2026 (Trading Economics).",
-      "Brent: 116,72 USD 23. 10. 2026, nejvýš za čtyři roky (Trading Economics).",
-      "Nvidia zveřejní výsledky 17. 11. kolem 22:20 SEČ, konferenční hovor ve 23:00 SEČ (oznámení Nvidie).",
-      "Výsledková sezóna k 30. 10.: výsledky má 60 % firem z S&P 500, 82 % z nich nad odhady zisků (FactSet).",
-    ],
-  },
-  {
-    n: 3, title: "USA rostou navzdory poklesu technologií", min: "2,5 min",
-    msg: "Výprodej zasáhl technologie a AI infrastrukturu, široký americký trh drží",
-    say: [
-      "Na tomto slajdu je výkonnost hlavních akciových indexů za poslední měsíc, za tři měsíce a od začátku roku. Šedý sloupec je výnos v místní měně, červený výnos v korunách, tedy to, co skutečně vidí český investor.",
-      "Za poslední měsíc je hlavní příběh jasný. Výprodej zasáhl technologie a firmy napojené na infrastrukturu pro umělou inteligenci, tedy výrobce čipů, pamětí a datových center. Technologický index Nasdaq 100 ztratil zhruba 9 procent a dostal se do takzvané technické korekce, tedy víc než 10 procent pod svůj rekord. Podobně ztratilo Japonsko, kde je hodně firem napojených na výrobu čipů.",
-      "Důležité ale je, že široký americký trh drží. Index S&P 500 ztratil jen kolem 2 procent a Dow Jones, ve kterém je technologií méně, za měsíc dokonce mírně přidal. Pražská burza byla za měsíc také v plusu, protože technologické firmy v ní téměř nejsou.",
-      "Za tři měsíce a hlavně od začátku roku je obrázek pořád dobrý. Americké akcie jsou letos v korunách zhruba o 16 procent výš, Nasdaq 100 o 17 procent a japonské akcie dokonce o víc než 30 procent. Evropa přidala kolem 7 procent. Pražská burza je od začátku roku mírně v minusu.",
-      "Pro korunového investora hraje roli i kurz. Za poslední měsíc se koruna vůči dolaru skoro nepohnula, takže výnos v korunách je prakticky stejný jako v dolarech. Od začátku roku ale dolar vůči koruně posílil zhruba o 6 procent, a to výnos amerických akcií v korunách výrazně zvýšilo.",
-    ],
-    reserve: [
-      "Měsíc (2. 10.–2. 11.), místní měna / CZK: S&P 500 −2,4 / −2,2 %; Dow Jones +1,6 / +1,8 %; Nasdaq 100 −9,2 / −9,0 %; Euro Stoxx 50 −1,0 / −1,4 %; Nikkei 225 −7,7 / −7,5 %; PX +0,8 %.",
-      "3 měsíce (31. 7.–2. 11.): S&P 500 +0,7 / +4,2 %; Dow Jones −0,9 / +2,5 %; Nasdaq 100 −1,0 / +2,5 %; Euro Stoxx 50 −2,8 / −2,4 %; Nikkei 225 −2,0 / +1,1 %; PX −2,6 %.",
-      "Od začátku roku (31. 12. 2025–2. 11. 2026): S&P 500 +10,2 / +16,4 %; Dow Jones +8,2 / +14,3 %; Nasdaq 100 +10,8 / +17,1 %; Euro Stoxx 50 +6,7 / +7,4 %; Nikkei 225 +25,3 / +31,4 %; PX −1,9 %.",
-      "USD/CZK: 20,58 (31. 12. 2025) → 21,74 (2. 11. 2026), +5,7 %. Zdroj: Trading Economics, zavírací ceny.",
-    ],
-  },
-  {
-    n: 4, title: "Naděje na dohodu stáhly ropu ke 100 USD", min: "3 min",
-    msg: "Ropa je ale pořád o 42 % dražší než před válkou",
-    say: [
-      "Teď k ropě, která je pro inflaci a sazby asi nejdůležitější proměnnou.",
-      "Graf ukazuje cenu ropy Brent od začátku roku. Na konci února, těsně před začátkem války s Íránem, stál barel 73 dolarů. Pak cena prudce vyskočila a od té doby se drží vysoko. Tento týden ropa zlevnila zhruba ke 100 dolarům, protože se objevila naděje na dohodu.",
-      "Jak je to s Hormuzským průlivem, kterým za normálních okolností odtéká velká část ropy z Perského zálivu? Průliv není zavřený, ale ani volný. Tankery plují s doprovodem amerického námořnictva a Írán na lodě dál útočí. Podle dat společnosti Kpler teklo průlivem na konci září asi 80 procent předválečného objemu ropy a paliv. Samotná ropa už byla zhruba na normální úrovni, paliv, tedy nafty, benzinu nebo leteckého paliva, ale jen asi pětina. Svět se navíc naučil průliv obcházet: asi 40 procent ropy z Perského zálivu dnes jde ropovody mimo Hormuz, před válkou to bylo 17 procent.",
-      "Trh přitom reaguje na každé slovo z Washingtonu a Teheránu, protože prezident Trump střídá hrozby s nabídkami jednání. V pondělí druhého listopadu íránský nejvyšší vůdce povolil vládě jednat o ukončení konfliktu a Trump řekl, že Írán chce dohodu. Ropa za jediný den zlevnila o 7,6 procenta. V noci na úterý ale USA znovu udeřily na íránský ostrov Kešm v Hormuzském průlivu. Podle amerického ministra energetiky útok toky ropy neovlivnil a ropa se drží kolem 103 dolarů.",
-      "I po tomto poklesu je ale ropa o 42 procent dražší než před válkou. Týká se to i plynu. Evropský plyn minulý týden poprvé od roku 2022 překonal 100 eur za megawatthodinu a zásobníky jsou před zimou naplněné výrazně méně než obvykle.",
-      "Co to znamená? Drahé energie drží inflaci nahoře. V Evropě se dražší energie do cen pro domácnosti a firmy promítne hlavně v příštím roce, až dodavatelé přecení své ceníky.",
-    ],
-    reserve: [
-      "Brent: 72,87 USD (27. 2., před válkou) → 116,72 USD (23. 10., maximum) → 104,77 USD (2. 11., −7,6 % za den) → kolem 103,4 USD (3. 11. odpoledne); od začátku roku zhruba +70 % (Trading Economics).",
-      "Hormuz, Kpler podle CNBC (týdenní průměr k 28. 9. 2026): ropa 13,5 mil. barelů denně, tedy předválečná úroveň; paliva 0,68 mil. proti 3,6 mil. (19 %); celkem 14,2 mil. proti zhruba 17 mil. (asi 80 %). Mimo Hormuz jde asi 40 % ropy z Perského zálivu, před válkou 17 %.",
-      "Za říjen spolehlivá čísla o objemech nejsou. Počty lodí z AIS (IMF PortWatch) jsou velmi nízké, ale nezachytí lodě s vypnutým vysílačem. Američtí představitelé uvádějí přes 10 mil. barelů denně, nezávislí analytici jsou opatrnější. Stav průlivu „omezený“ (hormuz.now, 3. 11.).",
-      "Plyn TTF: minulý týden nad 100 EUR/MWh, 3. 11. kolem 91 EUR/MWh (+24 % za měsíc). Zásobníky EU 74,6 %, Německo 61 % proti cíli 70 % (2. 11., Trading Economics).",
-    ],
-  },
-  {
-    n: 5, title: "Sazby: pauza, ne konec zvyšování", min: "2 min",
-    msg: "Fed i ECB v říjnu čekaly, trh počítá s dalším zvýšením",
-    say: [
-      "Drahé energie nás přivádějí k centrálním bankám.",
-      "Americký Fed v září poprvé po třech letech zvýšil sazby. Na konci října je nechal beze změny v pásmu 3,75 až 4 procenta. Dva členové bankovní rady ale chtěli sazby zvýšit už teď a trh počítá s tím, že Fed přitlačí na prosincovém zasedání devátého prosince. Důvod je jednoduchý: americká ekonomika roste rychle a inflace drží nahoře.",
-      "Evropská centrální banka nechala depozitní sazbu na 2,5 procenta. Šéfka ECB Christine Lagardeová ale přiznala, že se o zvýšení jednalo, a trh s ním dál počítá. Lagardeová navíc oznámila, že z čela banky odejde předčasně, takže ECB čeká změna ve vedení.",
-      "Česká národní banka drží sazby na 3,75 procenta a rozhoduje už tento čtvrtek pátého listopadu. Analytici čekají zvýšení na 4 procenta. Celková inflace byla v září 2,5 procenta, tedy nedaleko cíle, rychle ale zdražují hlavně služby, a to centrální banku znepokojuje.",
-      "Pro klienty to znamená, že sazby spíš ještě porostou, než že by klesaly. Pro konzervativní investory je to dobrá zpráva, protože dostanou vyšší úrok z vkladů a z nových dluhopisů. Pro drahé akcie je to naopak tlak, protože vyšší sazby snižují jejich atraktivitu.",
-    ],
-    reserve: [
-      "Fed 28. 10.: 3,75–4,00 %, hlasování 10:2 (Cook a Hammack pro zvýšení) [ověřit ve statementu Fedu]. Trh přikládá zvýšení 9. 12. asi 75% pravděpodobnost (CME FedWatch podle Trading Economics, 2. 11.). HDP USA ve 3Q +3,4 % anualizovaně, ceny PCE v září +0,5 % za měsíc.",
-      "ECB 29. 10.: depozitní sazba 2,50 %; trh čeká 2,73 % v prosinci a 3,23 % koncem roku 2027 (Trading Economics, 29. 10.).",
-      "ČNB: 3,75 %, rozhodnutí 5. 11. ve 14:30, analytici čekají 4,00 % (ČTK). Inflace v září 2,5 %, jádrová přes 3 %, služby přes 4 %.",
-    ],
-  },
-  {
-    n: 6, title: "Zisky rostou, trh trestá sázky na AI", min: "2,5 min",
-    msg: "Výsledková sezóna 3Q: 82 % firem nad odhady, zisky +30 %",
-    say: [
-      "Teď k výsledkové sezóně a k tomu, proč klesaly technologie, i když firmy vydělávají.",
-      "Začnu výsledky. Do třicátého října zveřejnilo výsledky za třetí čtvrtletí 60 procent firem z indexu S&P 500 a 82 procent z nich překonalo odhady analytiků. Dlouhodobý průměr je přitom 78 procent, takže jde o nadprůměrně dobrou sezónu. Zisky firem rostou meziročně zhruba o 30 procent a je to už třetí čtvrtletí v řadě, kdy rostou o víc než 25 procent.",
-      "Má to ale háček. Firmy překonávají odhady o méně než dřív. Trh je proto vybíravější a co nesplní velmi vysoká očekávání, to potrestá.",
-      "Přesně to se stalo technologickým gigantům. Firmy jako Alphabet, Amazon, Meta nebo Microsoft utrácejí za umělou inteligenci a datová centra ještě víc, než trh čekal. Vidět je to na volném cash flow, tedy na penězích, které firmě zbudou po zaplacení provozu a investic. Alphabet, Amazon i Meta jsou kvůli investicím v minusu a Microsoftu volný cash flow meziročně klesl o víc než čtvrtinu.",
-      "Investoři se proto ptají, kdy a jestli se jim tyto obří investice vrátí. Část firem si na ně navíc začíná půjčovat nebo vydávat nové akcie. Po velkém růstu technologií pak stačilo málo a přišel výprodej. Ten se přelil i do Asie, hlavně k výrobcům čipů a pamětí v Japonsku, Koreji a na Tchaj-wanu.",
-      "Je ale důležité říct, co to znamená. Nejde o krach firem, jejich tržby i zisky dál rostou. Trh jen přeceňuje očekávání, která byla velmi vysoká. A zbytek trhu, tedy firmy mimo technologie, přitom držel.",
-    ],
-    reserve: [
-      "FactSet 30. 10. 2026: výsledky má 60 % firem; 82 % nad odhady zisků (5letý průměr 78 %, 10letý 77 %); o kolik firmy odhady překonaly: o 1,9 % (5letý průměr 7,5 %), nejméně od 4Q 2022; růst zisků 30,2 %, tržeb 13,4 %.",
-      "Volný cash flow 3Q 2026: Meta −2,1 mld. USD (před rokem +10,6); Alphabet kolem −9 mld. USD [sekundární zdroje, ověřit]; Amazon −42,4 mld. USD za posledních 12 měsíců (před rokem +14,8); Microsoft +18,6 mld. USD proti 25,7 (−28 %, bez finančních leasingů).",
-      "Reakce akcií: Alphabet 29. 10. −12,6 %, Intel 30. 10. −28,6 %, Amazon 30. 10. −1,4 %; za měsíc Korea (KOSPI) −18,6 %, Tchaj-wan −12,9 % (Trading Economics).",
-    ],
-  },
-  {
-    n: 7, title: "Dluhopisy tlumily pokles akcií", min: "2 min",
-    msg: "Výnosy klesají z nejvyšších úrovní od roku 2007",
-    say: [
-      "Dobrou zprávou posledního měsíce jsou dluhopisy.",
-      "Dluhopisy byly letos dlouho otloukánkem. Jejich výnosy rostly ze tří hlavních důvodů. Za prvé drahá ropa zvedla inflační očekávání. Za druhé centrální banky začaly zvyšovat sazby. A za třetí trh znervózňují vysoké deficity, hlavně ve Spojených státech, kde veřejný dluh v srpnu překonal 40 bilionů dolarů. Když výnosy rostou, cena dluhopisů, které už investoři drží, klesá.",
-      "V říjnu se to otočilo. Když se prodávaly technologie, investoři hledali bezpečí a nakupovali státní dluhopisy. Výnos desetiletého amerického dluhopisu klesl z 5,31 procenta, což bylo nejvíc od roku 2007, na 4,96 procenta. Klesly i výnosy v Německu a v Itálii. Pro majitele dluhopisů to znamená, že jejich dluhopisy zdražily.",
-      "Výjimkou je Francie. Tam výnosy naopak mírně vzrostly a příplatek, který Francie platí navíc proti Německu, je nejvyšší od roku 2012. Ratingová agentura Fitch na konci října zhoršila výhled francouzského ratingu. Dobrá zpráva je, že se francouzské problémy zatím nepřelévají do Itálie ani do Německa.",
-      "Celé to hraje do karet konzervativním portfoliím. Dluhopisy znovu fungují jako polštář, který tlumí výkyvy akcií, a zároveň nesou slušný příjem.",
-    ],
-    reserve: [
-      "10leté výnosy k 3. 11. proti stavu před měsícem: USA 4,96 % (−36 bb), Německo 3,32 % (−17 bb), Itálie 4,46 % (−18 bb), Francie 4,94 % (+7 bb); bb = setina procentního bodu (Trading Economics).",
-      "Maximum USA 5,31 % 5. 10. 2026. Rozdíl Francie–Německo 162 bb, začátkem října 127 bb.",
-      "Fitch zhoršil výhled francouzského ratingu na negativní (konec října); HDP Francie ve 3Q −0,1 %; prezidentské volby na jaře 2027. Dluh USA překonal 40 bilionů USD 18. 8. 2026.",
-    ],
-  },
-  {
-    n: 8, title: "Shrnutí: kde jsou trhy teď", min: "2 min",
-    msg: "Krátkodobě nervózní trhy, firmy ale dál vydělávají",
-    say: [
-      "Než se podíváme dopředu, shrnu, kde trhy teď jsou. Krátkodobě jsou nervózní, firmy ale dál vydělávají.",
-      "Energie: ropa zlevnila zhruba ke 100 dolarům, pořád je ale výrazně dražší než před válkou. Spor mezi USA a Íránem kolísá mezi jednáním a údery a trh bude dál citlivě reagovat na každou zprávu.",
-      "Inflace a sazby: drahé energie drží inflaci nahoře, a centrální banky proto spíš ještě zvýší sazby, než aby je snižovaly.",
-      "Akcie: zisky firem rostou kolem 30 procent. Trh ale trestá drahé sázky na umělou inteligenci. Zbytek trhu drží.",
-      "Dluhopisy: výnosy klesají z nejvyšších úrovní od roku 2007. Dluhopisy díky tomu zdražují a pořád nesou slušný příjem.",
-      "Evropa: hlavním rizikem jsou drahé energie a Francie.",
-      "A nakonec volby v USA. Výsledky přinesou krátkodobý šum na trzích. Historie je ale uklidňující: od roku 1950 byl index S&P 500 rok po volbách do Kongresu vždy výš. Záruka do budoucna to samozřejmě není.",
-    ],
-    note: "Ráno doplnit výsledek voleb (Sněmovna a Senát). Před volbami byli favority pro Sněmovnu demokraté, Senát byl nejistý. Rozdělený Kongres obvykle znamená méně nových výdajů, což bývá pro dluhopisy spíš dobrá zpráva.",
-    reserve: [
-      "S&P 500 byl rok po volbách do Kongresu výš ve všech případech od roku 1950, průměrně o 12–18 % podle zdroje (U.S. Bank, BNY, Deutsche Bank).",
-    ],
-  },
-  {
-    n: 9, title: "Výhled: pokles technologií je dočasný", min: "3 min",
-    msg: "Pro pasivního investora rozhodují zisky firem, ne denní zprávy",
-    say: [
-      "Teď k výhledu. Pro pasivního investora, který drží celý trh dlouhodobě, nerozhodují denní zprávy, ale zisky firem. A ty vypadají dobře.",
-      "Pokles technologií považujeme za dočasný. Hlavním důvodem je cloud, tedy pronájem výpočetního výkonu a služeb přes internet, na kterém stojí i umělá inteligence. Ten zrychluje. Cloudová služba Microsoftu Azure roste o 48 procent, Amazon Web Services o 39 procent a obě firmy mají zakázky nasmlouvané na roky dopředu. Investice do umělé inteligence se tedy už začínají vracet v tržbách. Trh jen chce vidět, že tržby porostou rychleji než náklady.",
-      "Druhým důvodem je růst zisků. Zisky amerických firem rostou kolem 30 procent a analytici čekají podobné tempo i ve čtvrtém čtvrtletí.",
-      "Za třetí akcie nejsou drahé. Poměr ceny akcií k očekávaným ziskům je pod průměrem posledních deseti let, protože zisky rostly rychleji než ceny.",
-      "Za čtvrté dluhopisy znovu nesou slušný výnos a tlumí výkyvy akcií.",
-      "A konečně pasivní investor drží celý trh. Nemusí hádat, která firma vyhraje, ani trefovat správný okamžik pro nákup nebo prodej.",
-      "Co bude v příštích měsících důležité? Za prvé Hormuz: dohoda s Íránem by energie rychle zlevnila, nové útoky by je naopak zdražily. Za druhé proinflační rizika, protože dražší energie se v Evropě propíšou do cen hlavně v příštím roce. Za třetí riziko vyšších sazeb, protože Fed, ECB i ČNB mohou ještě přitlačit. A za čtvrté Francie, jejíž dluhopisy jsou rizikem výprodeje evropských aktiv, tedy akcií, dluhopisů i eura.",
-    ],
-    reserve: [
-      "Azure +48 % (33,2 mld. USD), nasmlouvané zakázky Microsoftu 677 mld. USD (+73 %).",
-      "AWS +39 % (46,0 mld. USD), nasmlouvané zakázky 578 mld. USD, víc než dvojnásobek; vedení čeká v letech 2027 a 2028 růst přes 40 %.",
-      "FactSet 30. 10.: očekávaný růst zisků ve 4Q 2026 +28,4 %, za celý rok 2026 +32,9 %; forward P/E 18,7 (5letý průměr 19,8, 10letý 19,1).",
-    ],
-  },
-  {
-    n: 10, title: "Co z toho plyne pro investory", min: "3 min",
-    msg: "Investovat dál, široce rozloženě a s rozmyslem",
-    say: [
-      "Na závěr to nejdůležitější: co z toho plyne pro vaše klienty.",
-      "Poslední měsíc ukázal, že diverzifikace se vyplatila. Technologický Nasdaq 100 ztratil 9 procent, pražská burza přitom byla v plusu a dluhopisy zdražily. Kdo měl peníze rozložené do různých regionů a tříd aktiv, pokles skoro necítil.",
-      "Kdo naopak vsadil všechno na technologie, nemá teď v portfoliu hezký pohled. Dlouhodobě ale technologiím věříme. Důvody jsem ukázal ve výhledu: rychle rostoucí cloud, silné zisky a rozumné ocenění.",
-      "Časovat trh je těžké vždycky, ale dnes, kdy trhy hýbou Trumpova prohlášení, cena ropy a geopolitika, obzvlášť. Šestého října byl rekord a o měsíc později korekce technologií. Odhadnout takový zvrat předem se nedaří ani profesionálům.",
-      "Výkyvy k investování patří a poslední krize byly krátké. Když letos začala válka s Íránem, index S&P 500 do konce března spadl zhruba o 8 procent. Za dva týdny ode dna byl ale zpět nad předválečnou úrovní. Kdo tehdy prodal, přišel o návrat trhu.",
-      "S čím tedy pracovat? Základem jsou naše široce diverzifikovaná ETF portfolia. Máme konzervativní, vyvážené, dynamické a další varianty podle toho, jaké riziko je klient ochotný nést a na jak dlouho investuje.",
-      "Druhá myšlenka: nebát se diverzifikovat i mimo světové trhy, například do Prahy přes WOOD PX ETF. Je v korunách, takže klient nenese měnové riziko. Jde o firmy, které klienti znají z každodenního života. A pražská burza má za sebou silný výkon: index PX za posledních pět let vzrostl skoro o 100 procent, a to bez dividend. Navíc se pohybuje jinak než světové technologie, jak ukázal poslední měsíc.",
-      "Je ale potřeba myslet na koncentraci. Česká burza je malá a stojí na několika velkých firmách. Proto PX ETF patří do portfolia jako doplněk v přiměřené váze, ne jako náhrada široce rozloženého světového portfolia.",
-      "Shrnuto: investovat dál, široce rozloženě a s rozmyslem. Děkuji za pozornost a rád odpovím na vaše dotazy.",
-    ],
-    note: "Na slajdu je upozornění: nejde o investiční doporučení, hodnota investice může kolísat a minulá výkonnost není zárukou budoucích výnosů.",
-    reserve: [
-      "S&P 500: 6 878,88 (27. 2.) → 6 343,72 (30. 3., −7,8 %) → 6 967,38 (14. 4.) (Trading Economics).",
-      "PX: 1 329,42 (2. 11. 2021) → 2 636,01 (2. 11. 2026), +98 % bez dividend; od začátku roku 2026 −1,9 %, za 3 měsíce −2,6 % (Trading Economics).",
-      "WOOD PX ETF: na pražské burze od 7. 9. 2026, sleduje index PX (drží 10 největších firem), v korunách, dividendy reinvestuje; ČEZ a finanční firmy tvoří téměř 90 % indexu (Finex, CzechCrunch).",
-    ],
-  },
+  { n: 1, title: "Aktuální vývoj na trzích", min: "0,5 min", say: [
+    "Dobrý den, děkuji za pozvání. Jsem z WOOD & Company a dnes bych vás rád provedl tím, co se na trzích dělo za poslední měsíc a co to znamená pro vaše klienty.",
+    "Musím říct, že to byl hodně rušný měsíc. Ropa byla nejdražší za čtyři roky, technologické akcie prošly pořádným výprodejem, centrální banky řešily, jestli ještě zvedat sazby, a v Americe se volilo do Kongresu. Projdeme si, co se stalo, proč se to stalo a hlavně co si z toho má odnést dlouhodobý investor.",
+    "Zabere nám to zhruba dvacet minut a na konci rád odpovím na vaše otázky.",
+  ]},
+  { n: 2, title: "Co se stalo od začátku října", min: "2 min", say: [
+    "Začnu časovou osou, protože se toho za ten měsíc stalo opravdu hodně a jedno navazuje na druhé.",
+    "Na začátku října byla nálada skvělá. Šestého října byly americké akcie na historickém maximu, rekord zapsal jak index S&P 500, tak technologický Nasdaq.",
+    "Zároveň ale pořád zdražovala ropa. Kolem 23. října byla nejdražší za čtyři roky, protože se trh bál, že Amerika znovu zaútočí na Írán a dodávky z Perského zálivu se ještě víc omezí.",
+    "Na konci října pak zasedaly centrální banky. Americký Fed i Evropská centrální banka nechaly sazby, kde byly, ale daly jasně najevo, že se zvyšováním možná ještě neskončily.",
+    "Ve stejných dnech zveřejnili výsledky technologičtí giganti. A tady je zajímavé, že čísla měli dobrá, a přesto jejich akcie výrazně zlevnily. Trh je potrestal hlavně za to, kolik peněz utrácejí za umělou inteligenci. K tomu se ještě dostanu.",
+    "Na začátku listopadu se objevila naděje na dohodu s Íránem a ropa za jediný den výrazně zlevnila. Hned další den ale Amerika na Írán znovu udeřila. Ve stejný den se v USA volilo do Kongresu a demokraté získali většinu v obou komorách. I k tomu se ještě vrátím.",
+    "A poslední bod je teprve před námi. Sedmnáctého listopadu zveřejní výsledky Nvidia, tedy největší výrobce čipů pro umělou inteligenci, a tím výsledková sezóna v podstatě skončí. Zatím je mimochodem hodně silná, 82 procent firem překonalo odhady analytiků.",
+    "Dnes se tedy podíváme na to, jak se dařilo trhům, co se děje s ropou a se sazbami, proč padaly technologie a co se stalo s dluhopisy. Na konci si řekneme, co čekáme dál.",
+  ]},
+  { n: 3, title: "USA rostou navzdory poklesu technologií", min: "2,5 min", say: [
+    "Teď se pojďme podívat na čísla. Na slajdu vidíte, jak si vedly hlavní akciové indexy za poslední měsíc, za tři měsíce a od začátku roku. Šedý sloupec je výnos v místní měně, červený výnos v korunách, tedy to, co reálně vidí český investor.",
+    "Za poslední měsíc je příběh docela jasný. Výprodej zasáhl hlavně technologie a firmy, které stojí za infrastrukturou pro umělou inteligenci, tedy výrobce čipů, pamětí a datových center. Technologický Nasdaq 100 ztratil skoro 9 procent a je víc než 10 procent pod rekordem, tedy v takzvané technické korekci. Podobně dopadlo Japonsko, kde je hodně firem napojených na čipy.",
+    "Důležité ale je, že zbytek amerického trhu drží. S&P 500 ztratil jen kolem 2 procent a Dow Jones, kde je technologií méně, dokonce mírně přidal. V plusu byla i pražská burza, protože technologie v ní skoro nejsou.",
+    "Když se podíváme na delší období, obrázek je pořád dobrý. Od začátku roku jsou americké akcie v korunách zhruba o 16 procent výš a japonské dokonce o víc než 30 procent. Evropa přidala kolem 7 procent, jen Praha je letos mírně v minusu.",
+    "A ještě poznámka ke kurzu, protože ten u nás hraje roli. Za poslední měsíc se koruna vůči dolaru skoro nehnula, takže výnos v korunách je prakticky stejný jako v dolarech. Od začátku roku ale dolar posílil zhruba o 6 procent, a to korunovým investorům výnos z amerických akcií pěkně zvedlo.",
+  ]},
+  { n: 4, title: "Naděje na dohodu stáhly ropu ke 100 USD", min: "3 min", say: [
+    "A teď k ropě, protože ta je pro inflaci a sazby asi nejdůležitější.",
+    "Na grafu vidíte cenu ropy Brent od začátku roku. Na konci února, těsně před válkou s Íránem, stál barel kolem 73 dolarů. Pak cena vystřelila a od té doby se drží vysoko. Tento týden ropa zlevnila zhruba ke 100 dolarům, protože se objevila naděje na dohodu.",
+    "Často dostávám otázku, jestli je Hormuzský průliv zavřený. Odpověď je, že zavřený není, ale volný taky ne. Tankery plují s doprovodem amerického námořnictva a Írán na ně pořád útočí. Podle dat společnosti Kpler teklo průlivem na konci září zhruba 80 procent toho, co před válkou. Samotná ropa se vrátila skoro na normál, ale paliv, tedy nafty, benzinu nebo leteckého paliva, proudí jen asi pětina. A svět se mezitím naučil průliv obcházet, zhruba 40 procent ropy z Perského zálivu dnes jde ropovody jinudy.",
+    "Trh přitom reaguje na každé slovo z Washingtonu a z Teheránu, protože Trump střídá hrozby s nabídkami jednání. V pondělí íránský nejvyšší vůdce povolil vládě vyjednávat, Trump řekl, že Írán chce dohodu, a ropa za jediný den zlevnila o víc než 7 procent. V noci na úterý ale Amerika znovu udeřila na íránský ostrov Kešm. Americký ministr energetiky pak uklidňoval, že to toky ropy neovlivnilo, a ropa se drží kolem 103 dolarů.",
+    "I tak je ale pořád o 42 procent dražší než před válkou. A týká se to i plynu. Ten v Evropě minulý týden poprvé od roku 2022 překonal 100 eur za megawatthodinu a zásobníky jsou před zimou plné méně než obvykle.",
+    "Co si z toho vzít? Drahé energie drží inflaci nahoře. A v Evropě se do cen pro domácnosti a firmy promítnou hlavně v příštím roce, až dodavatelé přecení své ceníky.",
+  ]},
+  { n: 5, title: "Sazby: pauza, ne konec zvyšování", min: "2 min", say: [
+    "Drahé energie nás přivádějí k centrálním bankám.",
+    "Začnu Amerikou. Fed v září poprvé po třech letech zvedl sazby a na konci října je nechal beze změny, v pásmu 3,75 až 4 procenta. Dva členové bankovní rady ale chtěli zvyšovat už teď a trh počítá s tím, že Fed v prosinci přitlačí. Důvod je jednoduchý: americká ekonomika roste rychle a inflace neklesá.",
+    "V Evropě je situace podobná. Evropská centrální banka nechala sazbu na 2,5 procenta, ale šéfka ECB Christine Lagardeová přiznala, že se o zvýšení mluvilo, takže trh s ním dál počítá. Navíc oznámila, že z čela banky odejde předčasně, takže ECB čeká i změna ve vedení.",
+    "Co se týče ČNB, ta rozhoduje hned zítra a analytici čekají zvýšení ze 3,75 na 4 procenta. Inflace byla v září 2,5 procenta, tedy vlastně nedaleko cíle. Centrální banku ale trápí hlavně služby, které zdražují rychle.",
+    "Pro klienty to znamená, že sazby spíš ještě porostou, než že by klesaly. Konzervativní investory to může potěšit, protože dostanou vyšší úrok z vkladů a z nových dluhopisů. Pro drahé akcie je to naopak spíš tlak.",
+  ]},
+  { n: 6, title: "Zisky rostou, trh trestá sázky na AI", min: "2,5 min", say: [
+    "Teď se dostávám k tomu, co asi zajímá nejvíc, tedy proč klesaly technologie, když firmy vydělávají.",
+    "Nejdřív k výsledkům. Do konce října zveřejnilo výsledky 60 procent firem z indexu S&P 500 a 82 procent z nich překonalo odhady analytiků. Normálně to bývá kolem 78 procent, takže je to nadprůměrná sezóna. Zisky rostou meziročně zhruba o 30 procent a je to už třetí čtvrtletí v řadě, kdy rostou o víc než 25 procent.",
+    "Má to ale háček. Firmy sice odhady překonávají, ale o méně než dřív. Trh je proto vybíravější a co nesplní hodně vysoká očekávání, to potrestá.",
+    "A přesně to se stalo technologickým gigantům. Alphabet, Amazon, Meta i Microsoft utrácejí za umělou inteligenci a datová centra ještě víc, než trh čekal. Nejlíp je to vidět na volném cash flow, tedy na penězích, které firmě zbudou, když zaplatí provoz a investice. Alphabet, Amazon i Meta se kvůli investicím dostaly do minusu a Microsoftu volný cash flow klesl o víc než čtvrtinu.",
+    "Investoři se tak logicky ptají, kdy a jestli se jim tyhle obří investice vrátí. Navíc si na ně část firem začíná půjčovat nebo vydávat nové akcie. A když technologie předtím tolik vyrostly, stačilo málo a přišel výprodej, který se přelil i do Asie, hlavně k výrobcům čipů v Japonsku, Koreji a na Tchaj-wanu.",
+    "Chci ale zdůraznit jednu věc. Nejde o žádný krach firem, jejich tržby i zisky dál rostou. Trh jen přeceňuje očekávání, která byla hodně vysoko. A zbytek trhu přitom držel.",
+  ]},
+  { n: 7, title: "Dluhopisy tlumily pokles akcií", min: "2 min", say: [
+    "Teď jedna dobrá zpráva, a to jsou dluhopisy.",
+    "Ty byly letos dlouho otloukánkem. Jejich výnosy rostly, a to hlavně ze tří důvodů. Drahá ropa zvedla obavy z inflace, centrální banky začaly zvedat sazby a trh navíc znervózňují vysoké deficity, hlavně v Americe, kde dluh v srpnu překonal 40 bilionů dolarů. A když výnosy rostou, dluhopisy, které už lidé drží, ztrácejí na ceně.",
+    "V říjnu se to ale otočilo. Když se prodávaly technologie, investoři hledali bezpečí a kupovali státní dluhopisy. Výnos desetiletého amerického dluhopisu klesl z 5,31 procenta, což bylo nejvíc od roku 2007, na necelých 5 procent. Klesly i výnosy v Německu a v Itálii. Pro majitele dluhopisů to znamená, že jejich dluhopisy zdražily.",
+    "Výjimkou je Francie. Tam výnosy naopak mírně vzrostly a Francie si dnes ve srovnání s Německem půjčuje nejdráž od roku 2012. Na konci října jí navíc ratingová agentura Fitch zhoršila výhled. Dobrá zpráva je, že se to zatím nepřelévá do Itálie ani do Německa.",
+    "A co z toho plyne? Že to hraje do karet konzervativním portfoliím. Dluhopisy zase fungují jako polštář, který tlumí výkyvy akcií, a k tomu nesou slušný příjem.",
+  ]},
+  { n: 8, title: "Shrnutí: kde jsou trhy teď", min: "3 min", say: [
+    "Než se podíváme dopředu, pojďme si to krátce shrnout. Trhy jsou krátkodobě nervózní, ale firmy dál vydělávají.",
+    "Ropa zlevnila zhruba ke 100 dolarům, pořád je ale výrazně dražší než před válkou a spor Ameriky s Íránem se houpe mezi jednáním a údery. Drahé energie drží inflaci nahoře, a proto centrální banky spíš ještě zvýší sazby. U akcií zisky rostou kolem 30 procent, trh ale trestá drahé sázky na umělou inteligenci, zatímco zbytek trhu drží. Výnosy dluhopisů klesají z nejvyšších úrovní od roku 2007, takže dluhopisy zdražují a pořád nesou slušný příjem. A v Evropě jsou hlavním rizikem drahé energie a Francie.",
+    "A teď k americkým volbám, které už jsou sečtené. Pro republikány to byl debakl. Demokraté získali většinu v obou komorách Kongresu a vyhrávali i v nejkonzervativnějších baštách. Symbolem je Texas, kde demokrat poprvé od roku 1988 vyhrál křeslo v Senátu a demokratka porazila i dlouholetého guvernéra Grega Abbotta. V Kansasu budou mít demokratického senátora poprvé po 94 letech.",
+    "Rozhodla hlavně ekonomika. Pro 39 procent voličů to bylo nejdůležitější téma a skoro 70 procent Američanů hodnotí špatně, jak Trump bojuje s drahotou. Lidé ji nejvíc cítí u benzinu a jeho zdražení si spojují s válkou v Íránu.",
+    "Co to znamená? Trump má na zbytek mandátu hodně svázané ruce a prezident s Kongresem se budou dva roky navzájem blokovat. Demokraté chtějí rušit Trumpova cla a obnovit dotace na zdravotní péči, jejich zákony ale může Trump vetovat. Dohodnout se dá spíš u cen léků, bydlení nebo datových center pro umělou inteligenci. Hlavně ale přichází éra vyšetřování a bez demokratů neprojde rozpočet, takže hrozí další uzavření vlády.",
+    "Trhy to přesto vzaly v klidu. Výsledek se čekal, byl v cenách a akciím se po volbách dařilo. Víc než Washington teď trhem hýbe umělá inteligence. Po prudkém výprodeji, kdy Nasdaq 100 za tři dny odepsal přes 6 procent, znovu přilákala kupce.",
+    "Pro dlouhodobé investory jsou tak volby spíš krátkodobý šum. Od roku 1950 byl index S&P 500 rok po volbách do Kongresu vždycky výš. O směru trhu budou rozhodovat hlavně zisky firem a cena ropy, se kterou hýbou jednání s Íránem.",
+  ]},
+  { n: 9, title: "Výhled: pokles technologií je dočasný", min: "3 min", say: [
+    "A teď to podstatné, tedy co čekáme dál. Pro pasivního investora, který drží celý trh dlouhodobě, nerozhodují denní zprávy, ale zisky firem. A ty vypadají dobře.",
+    "Pokles technologií proto bereme jako dočasný. Hlavním důvodem je cloud, tedy pronájem výpočetního výkonu a služeb přes internet, na kterém stojí i umělá inteligence. A ten zrychluje. Cloud Microsoftu roste o 48 procent, Amazonu o 39 procent a obě firmy mají zakázky nasmlouvané na roky dopředu. Investice do umělé inteligence se tedy už začínají vracet v tržbách, trh jen chce vidět, že tržby porostou rychleji než náklady.",
+    "Druhým důvodem jsou zisky. Rostou kolem 30 procent a analytici čekají podobné tempo i ve čtvrtém čtvrtletí.",
+    "Zatřetí, akcie nejsou drahé. Když porovnáte cenu akcií s tím, kolik mají firmy vydělat, jsme pod průměrem posledních deseti let. Zisky totiž rostly rychleji než ceny.",
+    "Začtvrté, dluhopisy zase nesou slušný výnos a tlumí výkyvy akcií.",
+    "A nakonec, pasivní investor drží celý trh. Nemusí hádat, která firma vyhraje, ani trefovat správný okamžik, kdy nakoupit nebo prodat.",
+    "Na co si ale dát pozor? Zaprvé Hormuz. Dohoda s Íránem by energie rychle zlevnila, nové útoky by je naopak zdražily. Zadruhé inflace, protože dražší energie se v Evropě propíšou do cen hlavně v příštím roce. Zatřetí sazby, protože Fed, ECB i ČNB můžou ještě přitlačit. A začtvrté Francie, jejíž dluhopisy můžou spustit výprodej evropských aktiv, tedy akcií, dluhopisů i eura.",
+  ]},
+  { n: 10, title: "Co z toho plyne pro investory", min: "3 min", say: [
+    "Na závěr to nejdůležitější, tedy co z toho plyne pro vaše klienty.",
+    "Poslední měsíc ukázal, že se diverzifikace vyplácí. Když padaly technologie, pražská burza byla v plusu a dluhopisy zdražily. Kdo měl peníze rozložené do různých regionů a tříd aktiv, pokles skoro necítil.",
+    "Kdo naopak nedávno vsadil všechno na technologie, nemá teď v portfoliu zrovna hezký pohled. Dlouhodobě ale technologiím věříme a důvody jsem ukazoval před chvílí: rychle rostoucí cloud, silné zisky a rozumné ocenění.",
+    "Časovat trh je těžké vždycky, ale dnes, kdy trhy hýbou Trumpova prohlášení, ropa a geopolitika, obzvlášť. Šestého října byl rekord a o měsíc později korekce. Tohle dopředu neodhadnou ani profesionálové.",
+    "Výkyvy k investování prostě patří. Dobrá zpráva je, že poslední krize byly krátké. Když letos začala válka s Íránem, americké akcie do konce března spadly zhruba o 8 procent. Za dva týdny ode dna už ale byly zpátky nad předválečnou úrovní. Kdo tehdy prodal, o tenhle návrat přišel.",
+    "S čím tedy pracovat? Základem jsou naše široce diverzifikovaná ETF portfolia. Máme konzervativní, vyvážené, dynamické a další varianty podle toho, kolik rizika je klient ochotný nést a na jak dlouho investuje.",
+    "A druhá věc: nebát se diverzifikovat i mimo světové trhy, třeba do Prahy přes WOOD PX ETF. Je v korunách, takže klient nemá měnové riziko, a jde o firmy, které zná z běžného života. Pražská burza má navíc za sebou silné roky, index PX za posledních pět let vyrostl skoro o 100 procent, a to ještě bez dividend. A jak ukázal poslední měsíc, pohybuje se jinak než světové technologie.",
+    "Jen je potřeba myslet na koncentraci. Česká burza je malá a stojí na pár velkých firmách, takže PX ETF patří do portfolia jako doplněk v rozumné váze, ne jako náhrada světového portfolia.",
+    "Kdybych to měl shrnout jednou větou: investovat dál, široce rozloženě a s rozmyslem. Jen pro pořádek dodám, že nejde o investiční doporučení. Děkuji za pozornost a rád odpovím na vaše otázky.",
+  ]},
 ];
 
-const check = [
-  "Výsledek voleb do Kongresu a reakce trhů (slajd 8).",
-  "Írán: nové údery, nebo posun v jednání; ranní cena ropy Brent a plynu (slajd 4).",
-  "Hlasování Fedu 10:2 (Cook a Hammack) ve statementu Fedu (slajd 5).",
-  "Volný cash flow Alphabetu za 3Q, kolem −9 mld. USD, je jen ze sekundárních zdrojů (slajd 6). Kdyby nesedělo, upravit i bod „Alphabet, Amazon a Meta jsou v minusu“.",
-];
-
-const sources = [
-  "Trading Economics: indexy, kurzy, výnosy dluhopisů, ropa Brent, plyn TTF a zprávy k pohybům, data k 2.–3. 11. 2026",
-  "FactSet, S&P 500 Earnings Season Update, 30. 10. 2026",
-  "Kpler podle CNBC (30. 9. 2026) a hormuz.now: toky ropy přes Hormuz",
-  "Nvidia: oznámení termínu výsledků za 3Q fiskálního roku 2027",
-  "Výsledky Microsoftu, Mety, Amazonu a Alphabetu za 3Q 2026",
-  "ČTK: odhady analytiků k zasedání ČNB",
-  "Finex, CzechCrunch: WOOD PX ETF",
-  "U.S. Bank, BNY: akcie po volbách do Kongresu",
-];
-
-// ------------------------------------------------------------- stavba dokumentu
-const body = (t) => new Paragraph({ children: [new TextRun(t)], spacing: { after: 140, line: 300 } });
 const children = [];
-
-children.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun("Ekonomika a trhy – listopad 2026")] }));
-children.push(new Paragraph({
-  spacing: { after: 120 },
-  children: [new TextRun({ text: "Pomocný materiál k prezentaci, 4. 11. 2026", color: RED, bold: true, size: 26 })],
-}));
-children.push(new Paragraph({
-  spacing: { after: 240 },
+children.push(new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun("Aktuální vývoj na trzích – listopad 2026")] }));
+children.push(new Paragraph({ spacing: { after: 120 },
+  children: [new TextRun({ text: "Pomocný materiál k prezentaci, 4. 11. 2026", color: RED, bold: true, size: 26 })] }));
+children.push(new Paragraph({ spacing: { after: 240 },
   border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: RED, space: 6 } },
-  children: [new TextRun({
-    text: "Ke každému slajdu je souvislý text, co říct, a pod ním menším písmem čísla v záloze pro případ dotazu. Celkem zhruba 22 minut. Data k 2.–3. 11. 2026.",
-    color: GRAY, size: 20,
-  })],
-}));
+  children: [new TextRun({ text: "Text ke každému slajdu je psaný tak, aby se dal číst nahlas. Celkem zhruba 24 minut.", color: GRAY, size: 20 })] }));
 
 slides.forEach((s, i) => {
-  children.push(new Paragraph({
-    heading: HeadingLevel.HEADING_1,
-    pageBreakBefore: i > 0,
-    children: [
-      new TextRun({ text: `Slajd ${s.n}  `, color: RED }),
-      new TextRun(s.title),
-    ],
-  }));
-  children.push(new Paragraph({
-    spacing: { after: 200 },
-    children: [
-      new TextRun({ text: s.msg, italics: true, color: RED }),
-      new TextRun({ text: `   ·   zhruba ${s.min}`, color: GRAY, size: 20 }),
-    ],
-  }));
-  children.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun("Co říct")] }));
-  s.say.forEach((t) => children.push(body(t)));
-  if (s.note) {
-    children.push(new Paragraph({
-      spacing: { before: 60, after: 160 },
-      shading: { fill: "FDECEB", type: "clear", color: "auto" },
-      children: [new TextRun({ text: "Poznámka: ", bold: true, color: RED }), new TextRun(s.note)],
-    }));
-  }
-  if (s.reserve.length) {
-    children.push(new Paragraph({ heading: HeadingLevel.HEADING_3, children: [new TextRun("Čísla v záloze")] }));
-    s.reserve.forEach((t) => children.push(new Paragraph({
-      numbering: { reference: "bullets", level: 0 },
-      spacing: { after: 60 },
-      children: [new TextRun({ text: t, size: 18, color: GRAY })],
-    })));
-  }
+  children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: i > 0,
+    children: [new TextRun({ text: `Slajd ${s.n}  `, color: RED }), new TextRun(s.title)] }));
+  children.push(new Paragraph({ spacing: { after: 200 },
+    children: [new TextRun({ text: `zhruba ${s.min}`, color: GRAY, size: 20, italics: true })] }));
+  s.say.forEach((t) => children.push(new Paragraph({ spacing: { after: 160, line: 320 }, children: [new TextRun({ text: t, size: 24 })] })));
 });
-
-children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: true, children: [new TextRun("Ověřit ráno před prezentací")] }));
-check.forEach((t) => children.push(new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 80 }, children: [new TextRun(t)] })));
-children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun("Zdroje")] }));
-sources.forEach((t) => children.push(new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 60 }, children: [new TextRun({ text: t, size: 20 })] })));
 
 const doc = new Document({
   creator: "WOOD & Company",
-  title: "Ekonomika a trhy – pomocný materiál",
+  title: "Aktuální vývoj na trzích – pomocný materiál",
   styles: {
     default: { document: { run: { font: "Arial", size: 22 } } },
     paragraphStyles: [
       { id: "Title", name: "Title", basedOn: "Normal", next: "Normal",
         run: { font: "Arial", size: 44, bold: true, color: GREEN }, paragraph: { spacing: { before: 0, after: 120 }, keepNext: true } },
       { id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true,
-        run: { font: "Arial", size: 32, bold: true, color: GREEN }, paragraph: { spacing: { before: 120, after: 80 }, keepNext: true, outlineLevel: 0 } },
-      { id: "Heading2", name: "Heading 2", basedOn: "Normal", next: "Normal", quickFormat: true,
-        run: { font: "Arial", size: 24, bold: true, color: GREEN }, paragraph: { spacing: { before: 120, after: 100 }, keepNext: true, outlineLevel: 1 } },
-      { id: "Heading3", name: "Heading 3", basedOn: "Normal", next: "Normal", quickFormat: true,
-        run: { font: "Arial", size: 20, bold: true, color: GRAY }, paragraph: { spacing: { before: 200, after: 80 }, keepNext: true, outlineLevel: 2 } },
+        run: { font: "Arial", size: 32, bold: true, color: GREEN }, paragraph: { spacing: { before: 120, after: 60 }, keepNext: true, outlineLevel: 0 } },
     ],
-  },
-  numbering: {
-    config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "•", alignment: AlignmentType.LEFT,
-      style: { paragraph: { indent: { left: 360, hanging: 260 } } } }] }],
   },
   sections: [{
     properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: 1300, bottom: 1300, left: 1300, right: 1300 } } },
-    footers: {
-      default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [
-        new TextRun({ text: "Ekonomika a trhy – pomocný materiál   ·   strana ", color: GRAY, size: 16 }),
-        new TextRun({ children: [PageNumber.CURRENT], color: GRAY, size: 16 }),
-      ] })] }),
-    },
+    footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [
+      new TextRun({ text: "Aktuální vývoj na trzích – pomocný materiál   ·   strana ", color: GRAY, size: 16 }),
+      new TextRun({ children: [PageNumber.CURRENT], color: GRAY, size: 16 }),
+    ] })] }) },
     children,
   }],
 });
 
-Packer.toBuffer(doc).then((b) => { fs.writeFileSync(OUT, b); console.log("uloženo", OUT); });
+Packer.toBuffer(doc).then((b) => {
+  fs.writeFileSync(OUT, b);
+  // stejný text i jako Markdown
+  const md = ["# Aktuální vývoj na trzích – pomocný materiál (4. 11. 2026)", "",
+    "Text ke každému slajdu je psaný tak, aby se dal číst nahlas. Celkem zhruba 24 minut.", ""];
+  slides.forEach((s) => { md.push(`## Slajd ${s.n}: ${s.title} (zhruba ${s.min})`, ""); s.say.forEach((t) => md.push(t, "")); });
+  fs.writeFileSync(process.argv[3], md.join("\n"));
+  console.log("uloženo", OUT);
+});

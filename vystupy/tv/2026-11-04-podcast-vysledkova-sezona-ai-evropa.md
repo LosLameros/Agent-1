@@ -236,6 +236,49 @@ Investice čtyř hyperscalerů za rok 2026 činí zhruba **730 mld. USD**: Micro
 
 ---
 
+### 4e. Jak funguje byznys neocloudů a proč je rizikový
+
+**Co říct:**
+Neocloud je pronajímatel AI čipů. Na dluh nakoupí GPU od Nvidie a jejich výkon pronajme velkému zákazníkovi na několik let dopředu. Dluh mu banka dá hlavně díky té smlouvě. Provozně to vypadá skvěle. Čistý zisk ale sežerou odpisy čipů a úroky. Celý model stojí na tom, že čipy vydělají dost, než zastarají.
+
+**Jak byznys funguje, krok po kroku:**
+1. **Peníze:** akcie, úvěry zajištěné samotnými GPU, konvertibilní dluhopisy a často i investice od Nvidie.
+2. **Nákup:** GPU a síťové prvky (většina investice), k tomu elektřina a místo v datacentru. Budovy si neocloudy často jen pronajímají.
+3. **Smlouva:** dlouhodobý kontrakt s velkým zákazníkem (Microsoft, OpenAI, Meta) na 2–5 let. Zákazník platí i za kapacitu, kterou nevyužije. Tahle smlouva je to, na co banka půjčuje.
+4. **Tržby:** cena za hodinu GPU × počet GPU × vytížení.
+5. **Náklady:** hlavně odpisy čipů, pak úroky, elektřina, nájem datacentra a lidé.
+
+**Ilustrační příklad (zaokrouhlená, vymyšlená čísla, ne data konkrétní firmy):**
+- Cluster za **1 mld. USD**, z toho 700 mil. na dluh s úrokem 9 %.
+- Tržby **400 mil. ročně**, provozní náklady 120 mil., tedy **EBITDA 280 mil.** To je marže 70 %, která vypadá skvěle.
+- Odpisy při životnosti 6 let: **167 mil.** Úroky: **63 mil.** Zisk před zdaněním: **~50 mil.** Je to tenký polštář.
+- **Když čipy zastarají za 4 roky** místo 6, odpisy vzrostou na 250 mil. a firma je ve **ztrátě −33 mil.**
+- **Když po skončení smlouvy klesne cena za hodinu GPU o 30 %**, tržby spadnou na 280 mil. a EBITDA na 160 mil. Ta nepokryje ani odpisy.
+- Pointa: **marže EBITDA 70 % a přitom ztráta.** Proto se u neocloudů nedívat na EBITDA, ale na odpisy a úroky.
+
+**Proč je to rizikové:**
+1. **Málo zákazníků.** Microsoft tvořil v roce 2024 kolem 60 % tržeb CoreWeave. Když jeden zákazník odejde, firma přijde o velkou část byznysu.
+2. **Řetěz cizích peněz.** Velkým zákazníkem je i OpenAI, která je sama ztrátová a financovaná investory. Neocloud si tedy půjčuje proti smlouvě se zákazníkem, který žije z kapitálu jiných.
+3. **Rychlé stárnutí čipů.** Nvidia vydává novou generaci každý rok. Starší čipy zlevňují. Ceny pronájmu GPU H100 spadly mezi lety 2023 a 2025 zhruba z 8 na 2 USD za hodinu (orientační čísla). Úvěr přitom běží dál.
+4. **Nesoulad smluv a dluhu.** Smlouva na 3 roky, úvěr na 5 let a čip, jehož ekonomická životnost je nejistá. Kdo zaplatí poslední dva roky?
+5. **Sazby.** Dluh je drahý a často pohyblivý. Fed letos zvyšuje a desetiletý výnos je kolem 4,9 %. Úroky u CoreWeave ve 2Q 2026 spolkly zhruba celou čistou ztrátu (podle sekundárních zdrojů).
+6. **Neocloud je pojistný ventil hyperscalerů.** Microsoft si u něj pronajme kapacitu, kterou sám nestihne postavit. Když poptávka spadne, škrtne nejdřív externí kapacitu, ne vlastní datacentra. Hyperscalery navíc vyvíjejí vlastní čipy.
+7. **Kruhová poptávka.** Nvidia neocloudům prodává čipy, investuje do nich a v roce 2025 se zavázala CoreWeavu odkoupit nevyužitou kapacitu (6,3 mld. USD). Část poptávky tak vytváří sám dodavatel.
+8. **Realizace.** Elektřina, stavby a zpoždění. Za pozdní dodání kapacity hrozí pokuty nebo ztráta zákazníka.
+
+**Proč neocloudy vůbec existují (argument druhé strany):** jsou rychlejší než hyperscalery a specializované na AI. Od Nvidie dostávají přednostně čipy. Hyperscalerům nabízejí kapacitu bez dluhu v rozvaze. Backlogy jsou obří: CoreWeave měl k červnu 2026 ~104 mld. USD a za první týdny 3Q přibylo dalších 25 mld.
+
+**Co sledovat (CoreWeave hlásí 12. 11.):** podíl největších zákazníků, ceny za hodinu GPU, vytížení, délku smluv vs. splatnost dluhu, poměr úroků k provoznímu zisku a jakou životnost čipů používají v odpisech.
+
+**Shrnutí k zapamatování:**
+- Neocloud = **pronajímatel GPU na dluh**, dluh stojí na **smlouvě s velkým zákazníkem**.
+- **EBITDA marže ~70 %, a přesto ztráta:** rozhodují **odpisy a úroky**.
+- Klíčová otázka: **vydělá čip dost, než zastará?** Rok životnosti navíc nebo méně mění zisk ve ztrátu.
+- Rizika: **málo zákazníků, OpenAI na cizích penězích, rok co rok nová generace čipů, drahý dluh, první na řadě při škrtech.**
+- CoreWeave: backlog ~104 mld., akcie letos **−25 %**, meziročně **−54 %**.
+
+---
+
 ## Hlášky a pointy do debaty
 
 - „Nejlepší AI hedge letošního roku? Ropa.“ (energetika +49 %)
@@ -248,6 +291,7 @@ Investice čtyř hyperscalerů za rok 2026 činí zhruba **730 mld. USD**: Micro
 - „Mag 7 poprvé od roku 2022 rostou pomaleji než zbytek indexu.“
 - „Microsoft je jediný, kdo AI platí z výplaty. Ostatní už ji platí kartou.“
 - „Hyperscaler je aerolinka, neocloud leasingovka a Nvidia Boeing. Když se přestane létat, padá první leasingovka.“
+- „Marže 70 % a přesto ztráta: u neocloudu rozhoduje, jestli čip vydělá dřív, než zastará.“
 
 ## Na co se můžou analytici zeptat (a co odpovědět)
 

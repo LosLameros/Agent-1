@@ -189,6 +189,8 @@ Fakta o fungování Portu, interní postupy a postoje poradce, které nejsou na 
 - **Referenční kód (Pozvi přátele):** když klientka nevidí slevu po doporučení, poradce si vyžádá e-mail, se kterým se nový klient registroval, ověří, jestli se kód propsal, a případně ho nastaví. Bezplatné období (90 dní pro oba) začíná až poté, co nový klient zainvestuje alespoň 500 Kč (nápověda `slevove-programy`). Vzor: `examples/dotazy-klientu/2026-11-03-referencni-kod-a-vyssi-castka.md`.
 - **Žádost o naplánování vyšší investice:** v první odpovědi se jen zeptej na částku a na to, na jak dlouho může klient peníze postrádat (kdy a na co je může potřebovat). Návrh portfolia až potom (agent `navrh-portfolia`).
 
+- **Zlato** (poradce, 9. 11. 2026): v dlouhodobém portfoliu (10 a více let) jen jako diverzifikační doplněk, zhruba 5 %, nejvýš 10 % celého portfolia. Akciím dlouhodobě věříme víc. Stejný podíl platí i pro nové pravidelné vklady (z 9 000 Kč měsíčně tedy 450–900 Kč). Doporučuje pravidelné měsíční nákupy (rozložení nákupů v čase), ne jednorázový nákup. Na Portu přes ETC na fyzické zlato (iShares Physical Gold ETC) v Portfoliu podle vás. Poplatek je stejný jako u ostatních portfolií, objem se počítá do úrovně účtu, nákup a prodej se zvlášť neplatí. Portfolia od Portu 1–6 už zlato obsahují (4,5–7,5 %), profily 7–10 ne. Vývoj ceny zlata vždy ověř v Trading Economics: historické maximum nebylo v říjnu 2025, ale 29. 1. 2026 (5 608 USD za unci).
+
 *(Další poznatky doplní zadavatel z historie konverzací v Claude Projects.)*
 
 # 9. SEBEKONTROLA PŘED ODEVZDÁNÍM

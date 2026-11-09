@@ -160,6 +160,7 @@ Hlas je stejný jako v e-mailech poradce (`.claude/agents/navrh-portfolia.md`, k
 - Vymýšlet názvy tlačítek a sekcí aplikace nebo interní lhůty.
 - Odpovídat obecně, když zadavatel dal situaci klienta.
 - Zapomenout na daňový dopad u prodeje, převodu mezi portfolii nebo výběru.
+- Psát o časovém testu nepřesně. Ne „nevztahuje se na ně časový test“ (zní to, jako by pro ně test neplatil), ale „nejsou zatím časově osvobozené“ / „ještě nesplňují časový test“ (poradce, 9. 11. 2026).
 - Psát klientovi interní poznámky (zdroje, „ověřeno na webu“, `[ověřit]` nechat v textu bez upozornění v poznámkách).
 - Malé „vaše“ vedle velkého „Vám“, míchání pomlček, emoji.
 

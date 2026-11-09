@@ -199,6 +199,8 @@ Fakta o fungování Portu, interní postupy a postoje poradce, které nejsou na 
 
 - **Zlato** (poradce, 9. 11. 2026): v dlouhodobém portfoliu (10 a více let) jen jako diverzifikační doplněk, zhruba 5 %, nejvýš 10 % celého portfolia. Akciím dlouhodobě věříme víc. Stejný podíl platí i pro nové pravidelné vklady (z 9 000 Kč měsíčně tedy 450–900 Kč). Doporučuje pravidelné měsíční nákupy (rozložení nákupů v čase), ne jednorázový nákup. Na Portu přes ETC na fyzické zlato (iShares Physical Gold ETC) v Portfoliu podle vás. Poplatek je stejný jako u ostatních portfolií, objem se počítá do úrovně účtu, nákup a prodej se zvlášť neplatí. Portfolia od Portu 1–6 už zlato obsahují (4,5–7,5 %), profily 7–10 ne. Vývoj ceny zlata vždy ověř v Trading Economics: historické maximum nebylo v říjnu 2025, ale 29. 1. 2026 (5 608 USD za unci).
 
+- **DIP vs. DPS, když zaměstnavatel přispívá jen do DPS** (poradce, 9. 11. 2026): zaměstnavatel na DIP u Portu nepřispívá, proto DPS nerušit. Vlastní příspěvek do DPS snížit na minimum (100 Kč) a zbytek posílat do DIP. Příspěvek zaměstnavatele tak zůstane a z vlastních peněz se využije daňový odpočet DIP a vyšší očekávaný výnos. Klient tím ale přijde o státní příspěvek (ten je až od vlastního vkladu 500 Kč), řekni to otevřeně. Podklad je PDF „modelace DIP vs DPS“ z investiční konzultace. Rozdíl mezi variantami bývá malý, klientovi ho nezveličuj. U DPS modelace počítá s poplatkem nejvýš 0,5 % ročně od 1. 1. 2027. Před doporučením ověř, jestli zaměstnavatel svůj příspěvek nepodmiňuje minimálním vkladem zaměstnance.
+
 *(Další poznatky doplní zadavatel z historie konverzací v Claude Projects.)*
 
 # 9. SEBEKONTROLA PŘED ODEVZDÁNÍM

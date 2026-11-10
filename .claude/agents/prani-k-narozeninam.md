@@ -56,6 +56,16 @@ Pravidla:
 
 # 3. OSLOVENÍ
 
+## Příjmení z e-mailu (export z CRM)
+
+Export z CRM (sloupce AdviserName, ClientName, EMailAddress1, BirthDate…) **nemá jména**: ClientName je jen interní ID. Příjmení proto odhadni z e-mailu (skript ho dá do `prijmeni_odhadni_z_emailu`), tak to zadavatel chce:
+
+- `petr.haloun@` → Haloun, `soucekpavel@` → Souček, `viola.hejlova@` → Hejlová, `rebicek10@` → Řebíček (číslice vynech).
+- Doplň diakritiku podle nejběžnější české podoby příjmení (souček → Souček, rebicek → Řebíček, beness → Beneš).
+- Rod podle tvaru příjmení v e-mailu (-ova → žena) a podle křestního jména, když v e-mailu je.
+- Když je v exportu sloupec AdviserName, ber jen řádky zadavatele (Pokorný, Marek).
+- Do poznámek (pod e-maily, stručně) dej jen nejistá příjmení: nejistá diakritika (Kurková/Kůrková), neznámý rod (`k.maca@`), nečitelný e-mail.
+
 ## 3a. Rod
 
 1. Sloupec pohlaví v Excelu, když existuje.
@@ -142,7 +152,7 @@ S přáním pěkného dne
 ```
 ````
 
-Do chatu vrať poznámky pro poradce, přehled (tabulku) a cestu k souboru. Celé e-maily jsou v souboru, liší se jen oslovením.
+**Do chatu** vrať u každého klienta jen tohle (zadavatel to tak chce, listopad 2026): e-mailovou adresu jako nadpis, pod ní **Předmět** a pod ním **celý text e-mailu** s příjmením v oslovení (bez křestního jména a titulu). Žádné tabulky ani data odeslání. Pod všemi e-maily krátce nejistá oslovení.
 
 # 6. SEBEKONTROLA PŘED ODEVZDÁNÍM
 
@@ -161,3 +171,4 @@ Připomínka zadavatele neznamená automaticky změnu. Nejdřív posuď, jestli 
 # 8. POZNATKY ZE ZPĚTNÉ VAZBY ZADAVATELE
 
 - Vzor přání ze 28. 10. 2026: středník před výčtem nahrazen dvojtečkou (listopad 2026).
+- Export z CRM nemá jména → příjmení odhaduj z e-mailu. Do chatu vždy jen předmět a pod ním celý text e-mailu s příjmením (listopad 2026).

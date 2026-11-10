@@ -47,6 +47,7 @@ SLOUPCE = {
                                                                     "datumnarodenia", "dennarozeni"},
     "pohlavi": lambda h: h in {"pohlavi", "rod", "gender", "sex", "oslovení", "osloveni", "pohlavie"},
     "titul": lambda h: h in {"titul", "titulpred", "title", "tituly"},
+    "poradce": lambda h: h in {"poradce", "advisername", "adviser", "advisor", "advisorname", "konzultant"},
 }
 
 
@@ -61,7 +62,8 @@ def najdi_hlavicku(radky):
                 if klic not in mapa and test(h):
                     mapa[klic] = j
                     break
-        if "email" in mapa and ("prijmeni" in mapa or "cele_jmeno" in mapa or "jmeno" in mapa):
+        if "email" in mapa and ("prijmeni" in mapa or "cele_jmeno" in mapa or "jmeno" in mapa
+                                or "datum_narozeni" in mapa):
             return i, mapa
     return None, {}
 
@@ -151,7 +153,10 @@ def main():
                 "cele_jmeno": bunka("cele_jmeno"),
                 "email": bunka("email").lower(),
                 "pohlavi_ze_souboru": bunka("pohlavi"),
+                "poradce": bunka("poradce"),
             }
+            if not (k["jmeno"] or k["prijmeni"] or k["cele_jmeno"]):
+                k["prijmeni_odhadni_z_emailu"] = k["email"].split("@")[0]
             kdo = " ".join(x for x in [k["jmeno"], k["prijmeni"]] if x) or k["cele_jmeno"] or k["email"]
             prijmeni = k["prijmeni"] or (k["cele_jmeno"].split()[-1] if k["cele_jmeno"] else "")
             p = norm(k["pohlavi_ze_souboru"])

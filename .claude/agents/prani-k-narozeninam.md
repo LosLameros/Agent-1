@@ -58,7 +58,7 @@ Pravidla:
 
 ## Příjmení z e-mailu (export z CRM)
 
-Export z CRM (sloupce AdviserName, ClientName, EMailAddress1, BirthDate…) **nemá jména**: ClientName je jen interní ID. Příjmení proto odhadni z e-mailu (skript ho dá do `prijmeni_odhadni_z_emailu`), tak to zadavatel chce:
+Export z CRM má sloupce AdviserName, ClientID/ClientName, EMailAddress1, BirthDate… Od prosince 2026 v něm je i **ClientLastName**: příjmení ber z něj (včetně diakritiky) a z e-mailu jen doplň rod a křestní jméno (`petrahagino@` → Petra Hagino → paní Hagino). Když ClientLastName chybí (ClientName je jen interní ID), odhadni příjmení z e-mailu (skript ho dá do `prijmeni_odhadni_z_emailu`):
 
 - `petr.haloun@` → Haloun, `soucekpavel@` → Souček, `viola.hejlova@` → Hejlová, `rebicek10@` → Řebíček (číslice vynech).
 - Doplň diakritiku podle nejběžnější české podoby příjmení (souček → Souček, rebicek → Řebíček, beness → Beneš).
@@ -192,4 +192,5 @@ Připomínka zadavatele neznamená automaticky změnu. Nejdřív posuď, jestli 
 # 8. POZNATKY ZE ZPĚTNÉ VAZBY ZADAVATELE
 
 - Vzor přání ze 28. 10. 2026: středník před výčtem nahrazen dvojtečkou (listopad 2026).
-- Export z CRM nemá jména → příjmení odhaduj z e-mailu. Do chatu vždy den narozenin a pak adresa, předmět a celý text e-mailu, každé v samostatném bloku kódu ke zkopírování jedním kliknutím (listopad 2026).
+- Listopad 2026: všech 10 příjmení odhadnutých z e-mailu (Řebíček, Beneš z „beness“, Máca, Šidleja, Kurková…) zadavatel potvrdil jako správná. Od prosince je v exportu ClientLastName.
+- Export bez jmen → příjmení odhaduj z e-mailu. Do chatu vždy den narozenin a pak adresa, předmět a celý text e-mailu, každé v samostatném bloku kódu ke zkopírování jedním kliknutím (listopad 2026).

@@ -37,8 +37,8 @@ def norm(s):
 
 # klíč -> funkce, která pozná název sloupce (po norm)
 SLOUPCE = {
-    "prijmeni": lambda h: h.startswith("prijmeni") or h in {"surname", "lastname", "priezvisko"},
-    "jmeno": lambda h: h in {"jmeno", "krestnijmeno", "firstname", "name", "meno", "krstnemeno"},
+    "prijmeni": lambda h: h.startswith("prijmeni") or h in {"surname", "lastname", "priezvisko", "clientlastname", "contactlastname"},
+    "jmeno": lambda h: h in {"jmeno", "krestnijmeno", "firstname", "name", "meno", "krstnemeno", "clientfirstname"},
     "cele_jmeno": lambda h: h in {"jmenoaprijmeni", "celejmeno", "klient", "jmenoklienta",
                                   "fullname", "menoapriezvisko", "kontakt"},
     "email": lambda h: "mail" in h,

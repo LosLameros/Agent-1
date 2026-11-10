@@ -152,7 +152,7 @@ S přáním pěkného dne
 ```
 ````
 
-**Do chatu** vrať u každého klienta jen tohle (zadavatel to tak chce, listopad 2026): e-mailovou adresu jako nadpis, pod ní **Předmět** a pod ním **celý text e-mailu** s příjmením v oslovení (bez křestního jména a titulu). Žádné tabulky ani data odeslání. Pod všemi e-maily krátce nejistá oslovení.
+**Do chatu** vrať u každého klienta jen tohle (zadavatel to tak chce, listopad 2026): e-mailovou adresu jako nadpis a vedle ní den narozenin s dnem v týdnu (např. „**petr.haloun@seznam.cz** – pátek 20. 11.“, ať zadavatel ví, na kdy e-mail naplánovat), pod ní **Předmět** a pod ním **celý text e-mailu** s příjmením v oslovení (bez křestního jména a titulu). Žádné tabulky. Pod všemi e-maily krátce nejistá oslovení.
 
 # 6. SEBEKONTROLA PŘED ODEVZDÁNÍM
 

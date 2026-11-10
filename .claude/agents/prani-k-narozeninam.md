@@ -93,10 +93,10 @@ Nikdy „pan Novák“ ani „pane Novák“. Postup podle zakončení příjmen
 | ostatní tvrdé souhlásky (-b, -d, -l, -m, -n, -p, -r, -s, -t, -v, -z) | -e | Holub → Holube, Zeman → Zemane, Soukup → Soukupe, Pospíšil → Pospíšile, Doležal → Doležale, Dostál → Dostále, Mráz → Mráze, Kos → Kose |
 | výjimka | -i | **Král → Králi** |
 | měkké souhlásky (-š, -ž, -č, -ř, -ť, -ď, -ň, -j, -c) | -i | Beneš → Beneši, Bartoš → Bartoši, Kříž → Kříži, Kolář → Koláři, Bednář → Bednáři |
-| -e, -ě, -i, -o, -u, -ů, -y | beze změny | pane Rossi, pane Hoang |
+| -e, -ě, -i, -o, -u, -ů, -y | beze změny | pane Rossi |
 
 - Jestli e vypadává, poznáš z 2. pádu: „bez pana Marka“ → pane Marku, „bez pana Havla“ → pane Havle.
-- **Cizí příjmení** (Smith, Müller, Nguyen, Kowalski): když si nejsi jistý, nech 1. pád („pane Nguyen“) a označ v poznámkách „ověř oslovení“. Kowalski, Wiśniewski jako přídavná jména → beze změny.
+- **Cizí příjmení zakončená souhláskou skloňuj podle českých pravidel** (zadavatel to tak chce): Tran → pane Trane, Nguyen → pane Nguyene, Smith → pane Smithi, Müller → pane Müllere. Kowalski, Wiśniewski jako přídavná jména → beze změny. Když si nejsi jistý, označ v poznámkách „ověř oslovení“.
 - **Dvojitá příjmení** skloňuj obě části (pane Novák-Dvořák → pane Nováku-Dvořáku) a označ k ověření.
 - Každé oslovení, u kterého si nejsi jistý (-l, -s, -ec, cizí jméno, neobvyklé příjmení), dej do poznámek. Raději jedno upozornění navíc než špatně vyskloňované jméno v přání.
 
@@ -194,3 +194,4 @@ Připomínka zadavatele neznamená automaticky změnu. Nejdřív posuď, jestli 
 - Vzor přání ze 28. 10. 2026: středník před výčtem nahrazen dvojtečkou (listopad 2026).
 - Listopad 2026: všech 10 příjmení odhadnutých z e-mailu (Řebíček, Beneš z „beness“, Máca, Šidleja, Kurková…) zadavatel potvrdil jako správná. Od prosince je v exportu ClientLastName.
 - Export bez jmen → příjmení odhaduj z e-mailu. Do chatu vždy den narozenin a pak adresa, předmět a celý text e-mailu, každé v samostatném bloku kódu ke zkopírování jedním kliknutím (listopad 2026).
+- Prosinec 2026: cizí příjmení skloňovat, „pane Trane“, ne „pane Tran“.

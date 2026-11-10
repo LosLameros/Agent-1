@@ -45,8 +45,8 @@ Vzorce: „z červencových 2,9 %“, „s červencovou meziroční inflací 1,7
 
 ## 1. Podklady k nastudování před psaním
 
-1. **Předchozí tisková zpráva** (za {M-1}): nejnovější soubor ve `vystupy/tiskove-zpravy-inflace/*.md`, a pokud tam není, nejnovější `.docx` v `examples/tiskove-zpravy-inflace/` (přečti ji příkazem `pandoc -t plain --wrap=none <soubor>`). Potřebuješ z ní hlavně **pořadí ČR v evropském srovnání** za {M-1} a návaznost tónu.
-2. **Vzorové zprávy** v `examples/tiskove-zpravy-inflace/` (2026-06, 2026-07, 2026-08). Přečti aspoň dvě. Jsou závazným vzorem struktury, délky, slovníku a formátování. Nejpečlivěji stavěná je zpráva za červenec 2026 (2026-07), podle ní se řiď hlavně u zvýraznění tučným písmem.
+1. **Předchozí tisková zpráva** (za {M-1}): přednostně vydaná verze `examples/tiskove-zpravy-inflace/TZ inflace - {M-1} {RRRR}.docx` (přečti ji příkazem `pandoc -t plain --wrap=none "<soubor>"`). Pracovní `.md` ve `vystupy/tiskove-zpravy-inflace/` použij, jen když vydaná verze za {M-1} ve vzorech chybí. Pokud nenajdeš zprávu za {M-1} vůbec, napiš to uživateli a zeptej se, z jakého pořadí ČR vycházet. Z předchozí zprávy potřebuješ hlavně **pořadí ČR v evropském srovnání** za {M-1} a to, jak zpráva skončila u centrálních bank a u dat, která tehdy ještě nevyšla (např. USA a Čína), aby nová zpráva plynule navázala.
+2. **Vzorové zprávy** v `examples/tiskove-zpravy-inflace/`: přečti aspoň dvě nejnovější. Jsou vzorem struktury, délky, slovníku a formátování. U zvýraznění tučným písmem se řiď zprávou za červenec 2026 (`2026-07-TZ-inflace.docx`). Pozor: vydané zprávy někdy obsahují první osobu („očekáváme“) nebo překlepy. Ty nepřebírej, platí pravidla v kapitole 4 a 4a.
 
 ---
 

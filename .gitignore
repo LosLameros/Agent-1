@@ -10,3 +10,8 @@ __pycache__/
 
 # komerční písmo ZFP akademie (Fedra Sans Pro) – licencované, do repozitáře nepatří
 podklady/zfpa-pismo/
+# Přání k narozeninám (seznamy klientů a hotové e-maily)
+podklady/narozeniny/*
+!podklady/narozeniny/README.md
+vystupy/narozeniny/*
+!vystupy/narozeniny/.gitkeep

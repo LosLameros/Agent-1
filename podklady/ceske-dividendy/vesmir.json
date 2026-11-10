@@ -1,0 +1,262 @@
+[
+ {
+  "nazev": "COLTCZ",
+  "isin": "CZ0009008942",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "ČEZ",
+  "isin": "CZ0005112300",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "DOOSAN ŠKODA POWER",
+  "isin": "CZ1008000310",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "ERSTE GROUP BANK",
+  "isin": "AT0000652011",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "GEVORKYAN",
+  "isin": "SK1000025322",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "KARO LEATHER",
+  "isin": "CZ0009008819",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "KOFOLA ČS",
+  "isin": "CZ0009000121",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "KOMERČNÍ BANKA",
+  "isin": "CZ0008019106",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "MONETA MONEY BANK",
+  "isin": "CZ0008040318",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "PRIMOCO UAV",
+  "isin": "CZ0005135970",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "TMR",
+  "isin": "SK1120010287",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "VIG",
+  "isin": "AT0000908504",
+  "trh": "Prime"
+ },
+ {
+  "nazev": "E4U",
+  "isin": "CZ0005123620",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "ENERGOAQUA",
+  "isin": "CS0008419750",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "FOOTSHOP",
+  "isin": "CZ0009011474",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "PHILIP MORRIS ČR",
+  "isin": "CS0008418869",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "PHOTON ENERGY",
+  "isin": "NL0010391108",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "RMS MEZZANINE",
+  "isin": "CS0008416251",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "SAB FINANCE",
+  "isin": "CZ0009009940",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "TOMA",
+  "isin": "CZ0005088559",
+  "trh": "Standard"
+ },
+ {
+  "nazev": "ANDRITZ",
+  "isin": "AT0000730007",
+  "trh": "Free"
+ },
+ {
+  "nazev": "ATS",
+  "isin": "AT0000969985",
+  "trh": "Free"
+ },
+ {
+  "nazev": "BORUSSIA DORTMUND",
+  "isin": "DE0005493092",
+  "trh": "Free"
+ },
+ {
+  "nazev": "CPI EUROPE",
+  "isin": "AT0000A21KS2",
+  "trh": "Free"
+ },
+ {
+  "nazev": "CSG",
+  "isin": "NL0015073TS8",
+  "trh": "Free"
+ },
+ {
+  "nazev": "CTP",
+  "isin": "NL00150006R6",
+  "trh": "Free"
+ },
+ {
+  "nazev": "DEUTSCHE BANK",
+  "isin": "DE0005140008",
+  "trh": "Free"
+ },
+ {
+  "nazev": "DEUTSCHE TELEKOM",
+  "isin": "DE0005557508",
+  "trh": "Free"
+ },
+ {
+  "nazev": "E.ON",
+  "isin": "DE000ENAG999",
+  "trh": "Free"
+ },
+ {
+  "nazev": "FACC",
+  "isin": "AT00000FACC2",
+  "trh": "Free"
+ },
+ {
+  "nazev": "GEN DIGITAL",
+  "isin": "US6687711084",
+  "trh": "Free"
+ },
+ {
+  "nazev": "HEINEKEN",
+  "isin": "NL0000009165",
+  "trh": "Free"
+ },
+ {
+  "nazev": "JUVENTUS F.C.",
+  "isin": "IT0005572778",
+  "trh": "Free"
+ },
+ {
+  "nazev": "KGHM POLSKA-MIEDZ",
+  "isin": "PLKGHM000017",
+  "trh": "Free"
+ },
+ {
+  "nazev": "MOL",
+  "isin": "HU0000153937",
+  "trh": "Free"
+ },
+ {
+  "nazev": "NOKIA",
+  "isin": "FI0009000681",
+  "trh": "Free"
+ },
+ {
+  "nazev": "OMV",
+  "isin": "AT0000743059",
+  "trh": "Free"
+ },
+ {
+  "nazev": "ORLEN",
+  "isin": "PLPKN0000018",
+  "trh": "Free"
+ },
+ {
+  "nazev": "OTP BANK",
+  "isin": "HU0000061726",
+  "trh": "Free"
+ },
+ {
+  "nazev": "PKO BANK POLSKI",
+  "isin": "PLPKO0000016",
+  "trh": "Free"
+ },
+ {
+  "nazev": "RBI",
+  "isin": "AT0000606306",
+  "trh": "Free"
+ },
+ {
+  "nazev": "RWE",
+  "isin": "DE0007037129",
+  "trh": "Free"
+ },
+ {
+  "nazev": "SHELL",
+  "isin": "GB00BP6MXD84",
+  "trh": "Free"
+ },
+ {
+  "nazev": "SKANSKA",
+  "isin": "SE0000113250",
+  "trh": "Free"
+ },
+ {
+  "nazev": "UNILEVER",
+  "isin": "GB00BVZK7T90",
+  "trh": "Free"
+ },
+ {
+  "nazev": "UNIQA INS",
+  "isin": "AT0000821103",
+  "trh": "Free"
+ },
+ {
+  "nazev": "VERBUND",
+  "isin": "AT0000746409",
+  "trh": "Free"
+ },
+ {
+  "nazev": "VOESTALPINE",
+  "isin": "AT0000937503",
+  "trh": "Free"
+ },
+ {
+  "nazev": "VOLKSWAGEN",
+  "isin": "DE0007664039",
+  "trh": "Free"
+ },
+ {
+  "nazev": "VOLVO",
+  "isin": "SE0000115446",
+  "trh": "Free"
+ },
+ {
+  "nazev": "WAG PAYMENT",
+  "isin": "GB00BLGXWY71",
+  "trh": "Free"
+ },
+ {
+  "nazev": "WIENERBERGER",
+  "isin": "AT0000831706",
+  "trh": "Free"
+ }
+]

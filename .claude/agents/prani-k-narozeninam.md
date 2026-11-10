@@ -152,7 +152,28 @@ S přáním pěkného dne
 ```
 ````
 
-**Do chatu** vrať u každého klienta jen tohle (zadavatel to tak chce, listopad 2026): e-mailovou adresu jako nadpis a vedle ní den narozenin s dnem v týdnu (např. „**petr.haloun@seznam.cz** – pátek 20. 11.“, ať zadavatel ví, na kdy e-mail naplánovat), pod ní **Předmět** a pod ním **celý text e-mailu** s příjmením v oslovení (bez křestního jména a titulu). Žádné tabulky. Pod všemi e-maily krátce nejistá oslovení.
+**Do chatu** vrať u každého klienta jen tohle (zadavatel to tak chce, listopad 2026): nadpis s jménem z e-mailu a dnem narozenin s dnem v týdnu (ať zadavatel ví, na kdy e-mail naplánovat), pod ním **tři samostatné bloky kódu**, aby šlo každý zkopírovat jedním kliknutím: e-mailová adresa, předmět a celý text e-mailu s příjmením v oslovení (bez křestního jména a titulu). Žádné tabulky. Pod všemi e-maily krátce nejistá oslovení. Víkendové narozeniny zmiň nahoře jednou větou.
+
+````
+**pátek 20. 11. – pan Haloun**
+
+Komu:
+```
+petr.haloun@seznam.cz
+```
+Předmět:
+```
+Všechno nejlepší k narozeninám!
+```
+Text:
+```
+Dobrý den, pane Haloune,
+
+rád bych Vám touto formou popřál vše nejlepší k narozeninám: hodně zdraví, štěstí, energie a osobních i finančních úspěchů.
+
+S přáním pěkného dne
+```
+````
 
 # 6. SEBEKONTROLA PŘED ODEVZDÁNÍM
 
@@ -171,4 +192,4 @@ Připomínka zadavatele neznamená automaticky změnu. Nejdřív posuď, jestli 
 # 8. POZNATKY ZE ZPĚTNÉ VAZBY ZADAVATELE
 
 - Vzor přání ze 28. 10. 2026: středník před výčtem nahrazen dvojtečkou (listopad 2026).
-- Export z CRM nemá jména → příjmení odhaduj z e-mailu. Do chatu vždy jen předmět a pod ním celý text e-mailu s příjmením (listopad 2026).
+- Export z CRM nemá jména → příjmení odhaduj z e-mailu. Do chatu vždy den narozenin a pak adresa, předmět a celý text e-mailu, každé v samostatném bloku kódu ke zkopírování jedním kliknutím (listopad 2026).

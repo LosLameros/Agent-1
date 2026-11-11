@@ -484,6 +484,11 @@ def main(vstup, vystup):
     # ve výpisu níže jako podklad pro revizi a e-mail.
     if "Daně" in wb.sheetnames:
         wb.remove(wb["Daně"])
+    # Bez složek nebo překryvů by listy zůstaly prázdné, klientovi je proto nedáváme.
+    if not d.get("prekryvy") and not d.get("tematicke_bloky"):
+        wb.remove(prekryvy)
+    if not slozky and all(p["mena"].upper() == "CZK" for p in pozice):
+        wb.remove(detail)
     wb.save(vystup)
 
     # ---------- Kontrolní výpis pro textovou část revize ----------

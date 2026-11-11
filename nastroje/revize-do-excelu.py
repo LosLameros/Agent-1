@@ -233,7 +233,7 @@ def main(vstup, vystup):
         if s.get("id"):
             adresa_slozky[s["id"]] = f"Detail!E{r}"
     poznamky(detail, 5 + len(slozky) + 1,
-             ["Žlutě = instrument, který máte i v jiném portfoliu (viz list Překryvy)."]
+             ["Žlutě = instrument nebo portfolio, jehož expozici máte i jinde (viz list Překryvy)."]
              + d.get("poznamky_detail", []), 7)
     sirky(detail, [22, 40, 12, 20, 18, 20, 14])
     detail.freeze_panes = "A5"

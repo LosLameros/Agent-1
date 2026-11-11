@@ -112,6 +112,10 @@ Zvýrazni instrumenty, které se objevují ve více portfoliích (**překryvy / 
 - Dvojí expozice uvnitř jednoho portfolia (např. přímý Bitcoin + Bitcoin ETP).
 - **Tematická koncentrace** — když se jedno téma prolíná napříč vším (ve vzoru obrana/zbrojení: přímé akcie, fond, tematická ETF), sestav samostatný blok se součtem.
 
+**Když složení portfolií chybí** (zadavatel poslal jen přehled portfolií), Excel má přesto všechny tři listy (potvrzeno zadavatelem):
+- **Detail:** jeden řádek za každou položku Přehledu. U Portfolií podle vás a Portfolií od Portu je jako instrument „celé portfolio – složení nedodáno“, hodnota celého portfolia a zastoupení 100 %. Fondy a přímé akcie mají jako instrument svůj vlastní název.
+- **Překryvy:** skupiny podobných portfolií podle názvu se štítkem „(podobná expozice podle názvu)“, např. globální akcie, české akcie, obrana, krypto. Řádky v Detailu mají `prekryv: true`. V `revize.md` a v e-mailu uveď, že jde o odhad podle názvů, který upřesní screeny složení.
+
 Pořadí řádků: od největší hodnoty v CZK. Překryvy s watchlistem a podobné, ale neidentické motivy (např. tech/AI napříč portfolii) do Excelu nepiš. Uveď je v `revize.md` a v e-mailu, pokud jsou pro klienta užitečné.
 
 # 5. SESTAVENÍ EXCELU (vždy přes nástroj, ne ručně)

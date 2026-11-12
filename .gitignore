@@ -10,3 +10,8 @@ __pycache__/
 
 # komerční písmo ZFP akademie (Fedra Sans Pro) – licencované, do repozitáře nepatří
 podklady/zfpa-pismo/
+
+# Osobní portfolio (soukromá data agenta moje-portfolio)
+podklady/moje-portfolio/
+vystupy/moje-portfolio/*
+!vystupy/moje-portfolio/.gitkeep

@@ -351,7 +351,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
                rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
                jazyk="cs", hlavicka=None, vypln=None, prvni_mesic=None,
-               tloustka_cary=3.5, podnadpis=None, vrchol=False):
+               tloustka_cary=3.5, podnadpis=None, vrchol=False, hladina=None):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -366,6 +366,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     tloustka_cary – v px (výchozí 3,5); u hustých denních řad za více let 2,5, aby se čára neslévala
     hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
     vypln        – jemný přechod pod čarou první řady; None = u jediné řady ano, u více řad ne
+    hladina      – (hodnota, popisek): vodorovná přerušovaná čára s popiskem nad ní vpravo (např. upisovací cena IPO)
     vrchol       – u jediné řady vyznačit maximum: bod, nad ním tučně hodnota a pod ní šedě datum
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
@@ -389,6 +390,10 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
             _vypln(ax, xs, hodnoty, barvy[i], osa_y[0])
         if popisky_konec:
             konce.append([h for h in hodnoty if h is not None][-1])
+    if hladina:
+        ax.axhline(hladina[0], color=ANOTACE_CARA, linewidth=1.8 * 72 / DPI, linestyle=(0, (5, 4)), zorder=2)
+        ax.annotate(hladina[1], (rozsah_x[1] if rozsah_x else x[-1], hladina[0]), xytext=(0, 9 / PT),
+                    textcoords="offset points", ha="right", va="bottom", fontsize=PISMO_OSA, color=TEXT_SEDY)
     popisky = []
     jedna = len(rady) == 1
     if jedna and (popisky_konec or vrchol):

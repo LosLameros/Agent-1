@@ -25,6 +25,7 @@ Vychází z analýzy 8 unikátních vydání (#443–#451, ~1300 slov/vydání).
 - **Opener:** úderný nadpis odstavce, ideálně 2–3 slova, **maximálně 4 slova**, ideálně vtipný (hříčka, otázka, narážka) a musí okamžitě shrnout celý odstavec.
 - **Věty:** krátké, aktivní rod (trpný rod prakticky nepoužívat), vzorec fakt/číslo → kontext/příčina → důsledek nebo odlehčený komentář.
 - **Čísla:** vysoká hustota (cca 1 číslo na 2 věty), vždy v kontextu srovnání (meziročně, „nejvíce od...“, vs. konkurence), ne holá čísla.
+- **Zlidštění (podle autorových úprav):** žádné věty o zdroji v textu (zdroj patří do odkazu), žádné metodické výhrady na konci, jedno zaokrouhlené číslo místo dvou, neopakovat podmět, méně dramatu a přívlastků, hovorový tón tam, kde to téma snese. Podrobně viz agent, sekce „Jak autor texty zkracuje a zlidšťuje“.
 - **Tón:** věcný, mírně ironický/vtipný, nikdy bulvární ani vulgární. Žádná přímá investiční doporučení („kupte/prodejte“), žádné emoji, žádný žargon bez vysvětlení v téže větě, žádné dlouhé souvětí.
 
 ## Články pro Portu Magazín

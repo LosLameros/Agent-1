@@ -54,6 +54,19 @@ Opener je úderný nadpis na začátku odstavce (a zároveň zdroj titulku celé
 - **Lehká ironie/sarkasmus** je vítaná (zejména u politiky, regulace, geopolitiky), ale nikdy vulgární a nikdy na úkor srozumitelnosti faktu.
 - **Vykřičník šetři** — použij ho jen v punchy nadpisu nebo u sign-offu, ne uvnitř běžných vět.
 
+## Jak autor texty zkracuje a zlidšťuje (poučení z jeho úprav, vydání #466)
+
+Autor po nás odstavce typicky zkracuje o 1–2 věty a dělá je lidštějšími. Piš rovnou tak:
+
+- **Žádné věty o zdroji v textu.** Věty typu „Vyplývá to z dokumentů pro investory, které viděly WSJ a Bloomberg“ škrtá — zdroj patří do odkazu na slově, ne do samostatné věty. Výhrady ke zdroji napiš uživateli mimo odstavec.
+- **Žádné metodické výhrady na konci.** Dovětky typu „obě firmy ale tržby nepočítají stejně“ škrtá. Pokud je výhrada důležitá, řekni ji uživateli zvlášť.
+- **Jedno číslo místo dvou.** Místo „propadly až o 23 % a den zakončily zhruba 17 % v minusu“ píše jedno zaokrouhlené číslo („propadly o 20 %“). Místo jednorázového minima během dne („krátce až na 10,35 eura“) popíše současný stav kulatým číslem („Nyní se obchodují pod 10 eur.“). Číslo ale musí sedět s realitou — když zjednodušení posouvá fakt, upozorni na to.
+- **Neopakuj podmět.** Druhé „Anthropic“ nebo „Jensen Huang“ ve stejném odstavci nahradí obecným označením („vývojář umělé inteligence“) nebo jen příjmením.
+- **Jedna srovnávací pointa stačí.** Závěrečnou větu, která přidává další sadu čísel (např. STOXX 600 +4,7 % vs. S&P 500 −0,4 % za čtvrtletí), škrtá, když odstavec už má hlavní sdělení.
+- **Méně dramatu, méně přívlastků.** „nejvíc vyděsilo“ → „znepokojilo“, „běžnou munici“ → „munici“.
+- **Lidský, hovorový tón tam, kde to téma snese** („Jensen Huang je ale pěkný proutník“, „odepsaly už 30 %“). Odstavec, který přímo navazuje na předchozí o stejném příběhu, může začít bez samostatného openeru, souvislou větou.
+- Dvě krátké věty o stejné věci klidně spojí do jedné („…před vstupem na burzu, kde nabídne…“), pokud to čtení zplynulí.
+
 ## Co se v newsletteru nikdy neobjevuje
 
 - Emoji.

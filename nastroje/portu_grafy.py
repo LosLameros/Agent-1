@@ -491,9 +491,10 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     return fig
 
 
-def uloz(fig, cesta: str):
-    """Uloží PNG 1370 × 722 px (200 dpi). Neořezávat – rozměr je součástí vzhledu."""
+def uloz(fig, cesta: str, zvetseni: int = 1):
+    """Uloží PNG 1370 × 722 px (200 dpi). Neořezávat – rozměr je součástí vzhledu.
+    zvetseni=2 uloží stejný graf ostře ve dvojnásobném rozlišení (2740 px na šířku) pro tisk a velké obrazovky."""
     os.makedirs(os.path.dirname(os.path.abspath(cesta)), exist_ok=True)
-    fig.savefig(cesta, dpi=DPI, facecolor=POZADI)
+    fig.savefig(cesta, dpi=DPI * zvetseni, facecolor=POZADI)
     plt.close(fig)
     return cesta

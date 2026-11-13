@@ -1,6 +1,7 @@
 """Akcie Take-Two Interactive (TTWO), vydavatele GTA VI – týdenní uzavírací ceny za posledních 10 let, USD.
 
-Data: Yahoo Finance (TTWO, Nasdaq), týdenní uzavírací ceny, týden označený pátkem; poslední týden k 12. 11. 2026.
+Data: Trading Economics (TTWO:US), týdenní uzavírací ceny (poslední obchodní den týdne), od 11. 11. 2016 do 12. 11. 2026
+(stejné období jako předloha). Uloženo ostře ve dvojnásobném rozlišení (2740 px na šířku).
 Vzor nového designu grafů Portu (examples/grafy/vzor-take-two.png): velký nadpis, šedý podnadpis s tučnou první
 větou a čísly, jemná fialová výplň pod čarou, vyznačené maximum a poslední hodnota s datem.
 Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-11-13-take-two.py
@@ -29,11 +30,11 @@ fig = pg.spojnicovy(
     datumy, {"Akcie Take-Two (USD)": ceny},
     osa_y=(0, 300, 50), jednotka="", format_x="%Y", rozsah_x=(datumy[0], datumy[-1]),
     popisky_konec=True, vrchol=True, mista_konec=1, jednotka_konec="$", tloustka_cary=2.5,
-    zdroj="Graf: Portu, zdroj: Yahoo Finance",
+    zdroj="Graf: Portu, zdroj: Trading Economics",
     nadpis="Akcie Take-Two Interactive, vydavatele GTA VI",
     podnadpis=("Týdenní uzavírací ceny v USD za akcii.",
                f"Za posledních 10 let cena akcie vzrostla o {pg.cislo(rust, 1, '%')} (ze {pg.cislo(ceny[0], 1, '$')} "
                f"na {pg.cislo(ceny[-1], 1, '$')}). Od maxima {pg.cislo(ceny[i_max], 1, '$')} z {d.day}.\u00a0{d.month}.\u00a0"
                f"{d.year} je teď níže o {pg.cislo(od_max, 1, '%')}."),
 )
-pg.uloz(fig, ZAKLAD + ".png")
+pg.uloz(fig, ZAKLAD + ".png", zvetseni=2)

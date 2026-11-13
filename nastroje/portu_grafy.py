@@ -55,7 +55,8 @@ PISMO_OSA = 22 / PT        # ≈ 7,9 pt – popisky os a kategorií
 PISMO_HODNOTA = 21.5 / PT  # ≈ 7,7 pt – hodnoty u sloupců
 PISMO_LEGENDA = 24.5 / PT  # ≈ 8,8 pt – legenda
 PISMO_ZDROJ = 21.5 / PT    # ≈ 7,7 pt – „Graf: Portu, zdroj: …“
-PISMO_NADPIS = 36 / PT     # ≈ 13 pt – jen u varianty s nadpisem v obrázku
+PISMO_NADPIS = 40 / PT     # ≈ 14,4 pt – jen u varianty s nadpisem v obrázku
+PISMO_PODNADPIS = 22 / PT  # ≈ 7,9 pt – šedý popis pod nadpisem (první věta tučně)
 
 GRAF_LEVA, GRAF_PRAVA = 91, 1358   # okraje kreslicí plochy
 POPISKY_Y_PRAVA = 71               # popisky osy y zarovnané vpravo k tomuto x
@@ -72,6 +73,7 @@ _PISMO = os.path.join(_ADRESAR, "fonty", "RethinkSans.ttf")
 font_manager.fontManager.addfont(_PISMO)
 _RODINA = font_manager.FontProperties(fname=_PISMO).get_name()
 _TUCNE = font_manager.FontProperties(fname=os.path.join(_ADRESAR, "fonty", "RethinkSans-Bold.ttf"))
+_REGULAR = font_manager.FontProperties(fname=_PISMO)
 _STREDNI = font_manager.FontProperties(fname=os.path.join(_ADRESAR, "fonty", "RethinkSans-Medium.ttf"))
 plt.rcParams.update({
     "font.family": _RODINA,
@@ -90,7 +92,9 @@ MESICE = {
 # --- Formát čísel -------------------------------------------------------------
 def cislo(hodnota: float, mista: int = 1, jednotka: str = "") -> str:
     """Český formát: desetinná čárka, pravé minus, mezera před %, tisíce s mezerou."""
-    text = f"{abs(hodnota):,.{mista}f}".replace(",", NBSP).replace(".", ",")
+    from decimal import ROUND_HALF_UP, Decimal
+    zaokr = Decimal(repr(abs(hodnota))).quantize(Decimal(1).scaleb(-mista), ROUND_HALF_UP)  # 226,95 → 227,0
+    text = f"{zaokr:,.{mista}f}".replace(",", NBSP).replace(".", ",")
     if hodnota < 0 and float(text.replace(NBSP, "").replace(",", ".")) != 0:
         text = MINUS + text
     if jednotka == "%":
@@ -108,14 +112,41 @@ def _fy(px_shora: float) -> float:
     return 1 - px_shora / VYSKA_PX
 
 
-PODNADPIS_PX = 36  # výška řádku s podnadpisem pod nadpisem
+PODNADPIS_RADEK_PX = 31  # výška jednoho řádku podnadpisu
+
+
+def _sirka_textu(text: str, px: float, font) -> float:
+    """Šířka textu v px bez vykreslení (pro zalamování podnadpisu)."""
+    from matplotlib.textpath import TextPath
+    return TextPath((0, 0), text, size=px, prop=font).get_extents().width if text.strip() else 0.0
+
+
+def _zalom_podnadpis(podnadpis, sirka_px: float):
+    """Podnadpis = text, nebo (tučný úvod, pokračování). Vrátí řádky jako seznamy (slovo, font)."""
+    casti = [(podnadpis[0], _TUCNE), (podnadpis[1], _REGULAR)] if isinstance(podnadpis, tuple) else [(podnadpis, _REGULAR)]
+    slova = [(w, f) for text, f in casti for w in text.split(" ") if w]  # nezlomitelná mezera slova nedělí
+    px = PISMO_PODNADPIS * PT
+    mezera = _sirka_textu("a a", px, _REGULAR) - _sirka_textu("aa", px, _REGULAR)
+    radky, radek, x = [], [], 0.0
+    for w, f in slova:
+        s = _sirka_textu(w, px, f)
+        if radek and x + mezera + s > sirka_px:
+            radky.append(radek)
+            radek, x = [], 0.0
+        x += (mezera if radek else 0) + s
+        radek.append((w, f))
+    if radek:
+        radky.append(radek)
+    return radky, mezera
 
 
 def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = None, navic: int = 0,
-            podnadpis: str | None = None):
+            podnadpis=None):
     """navic = další výška hlavičky pod nadpisem (např. pro velké číslo, viz _hlavicka_cislo).
-    podnadpis = jednotka/upřesnění pod nadpisem fialově („v % HDP“, „Čtvrtletní údaje v miliardách USD“)."""
-    posun = (70 if nadpis else 0) + (PODNADPIS_PX if podnadpis else 0) + navic
+    podnadpis = šedý popis pod nadpisem, sám se zalomí na víc řádků. Buď text („Čtvrtletní údaje v mld. USD“),
+    nebo (tučný úvod, pokračování) – vzor: („Týdenní uzavírací ceny v USD za akcii.“, „Za posledních 10 let…“)."""
+    radky_pod, mezera = _zalom_podnadpis(podnadpis, GRAF_PRAVA - (GRAF_LEVA - 80)) if (nadpis and podnadpis) else ([], 0)
+    posun = (70 if nadpis else 0) + (len(radky_pod) * PODNADPIS_RADEK_PX + 14 if radky_pod else 0) + navic
     vyska = VYSKA_PX + posun
     fig = plt.figure(figsize=(SIRKA_PX / DPI, vyska / DPI), dpi=DPI, facecolor=POZADI)
 
@@ -131,10 +162,13 @@ def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = 
     ax.set_axisbelow(True)
     fig._portu = {"fy": fy, "vyska": vyska}
     if nadpis:
-        if podnadpis:
-            fig.text(_fx(GRAF_LEVA - 80), 1 - 76 / vyska, podnadpis, fontsize=PISMO_LEGENDA, color=FIALOVA,
-                     fontproperties=_STREDNI, va="center")
-        fig.text(_fx(GRAF_LEVA - 80), 1 - 30 / vyska, nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
+        for k, radek in enumerate(radky_pod):
+            x = GRAF_LEVA - 80
+            for w, f in radek:
+                fig.text(_fx(x), 1 - (78 + k * PODNADPIS_RADEK_PX) / vyska, w, fontsize=PISMO_PODNADPIS,
+                         color=TEXT_TMAVY if f is _TUCNE else TEXT_SEDY, fontproperties=f, va="center_baseline")
+                x += _sirka_textu(w, PISMO_PODNADPIS * PT, f) + mezera
+        fig.text(_fx(GRAF_LEVA - 80), 1 - 32 / vyska, nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
                  ha="left", va="center")
     return fig, ax
 
@@ -160,8 +194,8 @@ def _hlavicka_cislo(fig, hodnota, zmena, popis, barva_zmeny=None):
     fig.text(x, 1 - 160 / vyska, popis, fontsize=PISMO_LEGENDA, color=FIALOVA, ha="left", va="center_baseline")
 
 
-def _vypln(ax, xs, hodnoty, barva, dolni):
-    """Barevný přechod pod čarou: u čáry 35 % krytí, dole do bílé."""
+def _vypln(ax, xs, hodnoty, barva, dolni, kryti=(0.18, 0.02)):
+    """Jemný barevný přechod pod čarou: nahoře 18 % krytí barvy řady, dole skoro do bílé."""
     import numpy as np
     from matplotlib.colors import to_rgb
     from matplotlib.patches import Polygon
@@ -172,7 +206,7 @@ def _vypln(ax, xs, hodnoty, barva, dolni):
     r, g, b = to_rgb(barva)
     prechod = np.zeros((256, 1, 4))
     prechod[:, 0, 0], prechod[:, 0, 1], prechod[:, 0, 2] = r, g, b
-    prechod[:, 0, 3] = np.linspace(0.35, 0.0, 256)
+    prechod[:, 0, 3] = np.linspace(kryti[0], kryti[1], 256)
     obr = ax.imshow(prechod, aspect="auto", extent=[xn[0], xn[-1], dolni, max(hodnoty)], origin="upper", zorder=1)
     obr.set_clip_path(tvar)
 
@@ -316,8 +350,8 @@ def vodorovny(kategorie, hodnoty, osa_x, jednotka="%", mista=1, mista_osa=0, zdr
 def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barvy=None,
                format_x="%m/%Y", interval_mesicu=6, interval_let=1, anotace=None, nadpis=None,
                rozsah_x=None, schody=(), popisky_konec=False, mista_konec=None, jednotka_konec=None,
-               jazyk="cs", hlavicka=None, vypln=False, prvni_mesic=None,
-               tloustka_cary=3.5, podnadpis=None):
+               jazyk="cs", hlavicka=None, vypln=None, prvni_mesic=None,
+               tloustka_cary=3.5, podnadpis=None, vrchol=False):
     """Časové řady (styl „Ropa WTI a Brent“, „Forward P/E“).
 
     x            – seznam datumů (datetime/date) společný všem řadám
@@ -328,10 +362,11 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
                    'mesic' pro zkratky měsíců („lis 25“, slovensky „nov 25“) u řad za poslední rok (interval_mesicu=1)
     jazyk        – 'cs' nebo 'sk' (zkratky měsíců na ose x)
     prvni_mesic  – u format_x='%m/%Y' měsíc, od kterého se popisky počítají (1 → 01/2024, 07/2024 …)
-    podnadpis    – řádek pod nadpisem fialově (jednotka, frekvence dat), jen spolu s nadpisem
+    podnadpis    – šedý popis pod nadpisem, text nebo (tučný úvod, pokračování); zalomí se sám, jen spolu s nadpisem
     tloustka_cary – v px (výchozí 3,5); u hustých denních řad za více let 2,5, aby se čára neslévala
     hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
-    vypln        – barevný přechod pod čarou první řady (jen na výslovné přání, Portu ho jinak nepoužívá)
+    vypln        – jemný přechod pod čarou první řady; None = u jediné řady ano, u více řad ne
+    vrchol       – u jediné řady vyznačit maximum: bod, nad ním tučně hodnota a pod ní šedě datum
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
     schody       – názvy řad kreslených schodovitě (sazby centrálních bank platné do další změny)
@@ -350,10 +385,43 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         xs, hodnoty = data if isinstance(data, tuple) else (x, data)
         ax.plot(xs, hodnoty, color=barvy[i], linewidth=tloustka_cary / PT, solid_joinstyle="round",
                 drawstyle="steps-post" if nazev in schody else "default", zorder=3 + len(rady) - i)
-        if vypln and i == 0:
+        if (vypln if vypln is not None else len(rady) == 1) and i == 0:
             _vypln(ax, xs, hodnoty, barvy[i], osa_y[0])
         if popisky_konec:
             konce.append([h for h in hodnoty if h is not None][-1])
+    popisky = []
+    jedna = len(rady) == 1
+    if jedna and (popisky_konec or vrchol):
+        # nový vzhled: bod na čáře, tučně hodnota v barvě řady a pod ní šedě datum
+        xs, hodnoty = next(iter(rady.values())) if isinstance(next(iter(rady.values())), tuple) else (x, next(iter(rady.values())))
+        dvojice = [(d, h) for d, h in zip(xs, hodnoty) if h is not None]
+        mista = 1 if mista_konec is None else mista_konec
+        jed = jednotka if jednotka_konec is None else jednotka_konec
+
+        def datum(d):
+            return f"{d.day}. {d.month}. {d.year}"
+
+        body = []
+        if vrchol:
+            body.append((max(dvojice, key=lambda t: t[1]), "nad"))
+        if popisky_konec:
+            body.append((dvojice[-1], "vpravo"))
+        for (d, h), kde in body:
+            ax.plot([d], [h], marker="o", markersize=9 / PT, color=barvy[0], zorder=10, clip_on=False)
+            if kde == "nad":
+                popisky.append(ax.annotate(cislo(h, mista, jed), (d, h), xytext=(0, 40 / PT), textcoords="offset points",
+                               ha="center", va="baseline", fontsize=PISMO_HODNOTA * 1.1, color=barvy[0],
+                               fontproperties=_TUCNE, annotation_clip=False))
+                ax.annotate(datum(d), (d, h), xytext=(0, 18 / PT), textcoords="offset points", ha="center",
+                            va="baseline", fontsize=PISMO_HODNOTA * 0.9, color=TEXT_SEDY, annotation_clip=False)
+            else:
+                popisky.append(ax.annotate(cislo(h, mista, jed), (d, h), xytext=(14 / PT, 6 / PT),
+                               textcoords="offset points", ha="left", va="baseline", fontsize=PISMO_HODNOTA * 1.1,
+                               color=barvy[0], fontproperties=_TUCNE, annotation_clip=False))
+                popisky.append(ax.annotate(datum(d), (d, h), xytext=(14 / PT, -20 / PT), textcoords="offset points",
+                               ha="left", va="baseline", fontsize=PISMO_HODNOTA * 0.9, color=TEXT_SEDY,
+                               annotation_clip=False))
+        konce = []
     if konce:
         # popisky blízkých hodnot od sebe odsuň, aby se nepřekrývaly (min. 26 px)
         mezera = 26 / (GRAF_DOLNI_1RADEK - GRAF_HORNI) * (osa_y[1] - osa_y[0])
@@ -363,7 +431,6 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
             if pozice[b] - pozice[a] < mezera:
                 pozice[b] = pozice[a] + mezera
         posun = (sum(pozice.values()) - sum(konce)) / len(konce)  # vyrovnej kolem skutečných hodnot
-        popisky = []
         for k, h in enumerate(konce):
             if mista_konec is None:  # 1 desetinné místo, u sazeb typu 3,75 % dvě
                 mista = 2 if round(h, 1) != h and round(h, 2) == h else 1
@@ -411,7 +478,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     fig.canvas.draw()
     leva = max(GRAF_LEVA, max(t.get_window_extent(renderer).width for t in ax.get_yticklabels()) + 31)
     rezerva = 0
-    if konce:
+    if popisky_konec and popisky:
         rezerva = max(85, max(t.get_window_extent(renderer).width for t in popisky) + 22)
     pos = ax.get_position()
     ax.set_position([_fx(leva), pos.y0, _fx(GRAF_PRAVA - rezerva - leva), pos.height])

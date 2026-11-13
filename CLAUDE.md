@@ -21,7 +21,7 @@ Repozitář slouží ke psaní newsletterů pro Portu (česko-slovenská investi
 Vychází z analýzy 8 unikátních vydání (#443–#451, ~1300 slov/vydání). Kompletní pravidla viz system prompt agenta; shrnutí:
 
 - **Formát:** na prvním řádku `Návrhy na nadpis: xxx // xxx // xxx // xxx` (čtyři kandidáti na název vydání), pak `#číslo - opener`, pak odstavec s týdenním shrnutím trhů (nálada týdne jednou větou → konkrétní % pohyby indexů), pak 12–20 samostatných zpráv, sekce „Co nového v Portu?“ na konci, sign-off „Hezký víkend!“.
-- **Zprávy:** jedno téma = právě jeden odstavec (nikdy nerozdělovat ani neslučovat). Každý odstavec **max. 700 znaků včetně mezer** (medián v archivu je 554, 92 % odstavců je pod 700).
+- **Zprávy:** jedno téma = právě jeden odstavec (nikdy nerozdělovat ani neslučovat). Každý odstavec má při pohledu na počítači **maximálně 6 řádků, ideálně 5** (v Google dokumentu to odpovídá zhruba 600, resp. 500 znakům včetně mezer). 700 znaků je absolutní strop, ne cíl.
 - **Opener:** úderný nadpis odstavce, ideálně 2–3 slova, **maximálně 4 slova**, ideálně vtipný (hříčka, otázka, narážka) a musí okamžitě shrnout celý odstavec.
 - **Věty:** krátké, aktivní rod (trpný rod prakticky nepoužívat), vzorec fakt/číslo → kontext/příčina → důsledek nebo odlehčený komentář.
 - **Čísla:** vysoká hustota (cca 1 číslo na 2 věty), vždy v kontextu srovnání (meziročně, „nejvíce od...“, vs. konkurence), ne holá čísla.

@@ -27,7 +27,7 @@ Pokud ti chybí konkrétní čísla nebo kontext k tématu, které chce uživate
    - **Jedno téma = právě jeden odstavec.** Téma nikdy nerozdělíš do dvou a více odstavců, ani když k němu máš hodně materiálu — v takovém případě vyber jen ta nejsilnější fakta a zbytek vynech. Stejně tak nikdy neslučuj dvě nesouvisející témata do jednoho odstavce.
    - **Opener** (nadpis zprávy): tučný, na stejném řádku jako začátek textu. Pravidla viz „Opener“ níže.
    - Tělo: 3–6 krátkých vět. Vzorec: **fakt/číslo → kontext nebo příčina → důsledek nebo odlehčený komentář na konci.**
-   - **Tvrdý limit: každý odstavec (opener + tělo dohromady) má maximálně 700 znaků včetně mezer.** Tohle je nepřekročitelné — po dopsání si délku každého odstavce zkontroluj a delší zkrať. Cílový průměr je kolem 550 znaků.
+   - **Délka: každý odstavec (opener + tělo dohromady) má při pohledu na počítači maximálně 6 řádků, ideálně 5.** V Google dokumentu to odpovídá zhruba 600, resp. 500 znakům včetně mezer. 700 znaků je absolutní strop, ne cíl. Po dopsání si délku každého odstavce spočítej a delší zkrať.
    - Témata míchej: makro (Fed, ECB, ČNB, inflace, HDP, sazby), konkrétní akcie/firmy, geopolitika, občas odlehčené/kuriózní téma.
 4. **„Co nového v Portu?“** — sekce na konci (1–3 odstavce), vlastní produktové novinky, akce, eventy, nábor. Firemní hlas v 1. osobě množného čísla („jsme spustili“, „nabízíme“).
 5. **Sign-off:** „Hezký víkend!“ (varianta „Hezký prodloužený víkend!“ o dlouhém víkendu).
@@ -72,6 +72,6 @@ Než výstup odevzdáš, projdi si tenhle kontrolní seznam:
 
 1. Je na prvním řádku `Návrhy na nadpis: xxx // xxx // xxx // xxx` se čtyřmi navzájem odlišnými kandidáty?
 2. Má **každý** opener maximálně 4 slova (ideálně 2–3)?
-3. Má **každý** odstavec maximálně 700 znaků včetně mezer? Spočítej si to, neodhaduj.
+3. Vejde se **každý** odstavec na počítači do 6 řádků, ideálně 5 (zhruba 600, resp. 500 znaků včetně mezer)? Spočítej si to, neodhaduj.
 4. Odpovídá každému tématu právě jeden odstavec — žádné téma rozdělené na dva, žádné dva různé příběhy v jednom?
 5. Neobjevuje se nikde trpný rod, emoji ani přímé investiční doporučení?

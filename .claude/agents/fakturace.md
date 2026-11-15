@@ -138,6 +138,10 @@ Marek Pokorný
 
   Jako `htmlBody` pošli stejný text ve tvaru `<div dir="ltr">Dobrý den, pane Raško, <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div>Děkuji a s pozdravem,</div><div>Marek Pokorný</div></div>`.
 
+- **V pátek** (podle data, kdy koncept vytváříš) místo „Děkuji a s pozdravem,“ napiš **„Děkuji a přeji hezký víkend,“**. Zbytek textu a podpis „Marek Pokorný“ zůstává. V ostatní dny platí text výše. Den v týdnu zjisti příkazem `date +%A` (nebo z dnešního data), nehádej ho.
+  - plain text: `Děkuji a přeji hezký víkend,` a pod ním `Marek Pokorný`,
+  - `htmlBody`: `<div>Děkuji a přeji hezký víkend,</div><div>Marek Pokorný</div>` na místě stejného bloku s „Děkuji a s pozdravem,“.
+
 - **Příloha se do konceptu nevkládá.** PDF by se muselo přepsat do volání jako desítky tisíc znaků base64 a jediný chybný znak by fakturu poškodil. Uživateli pošli PDF (SendUserFile) a připomeň mu, ať ho do konceptu přetáhne. Dej mu i odkaz na koncept (`viewUrl`).
 - Když se faktura přečísluje nebo opraví, starý koncept zůstane v Gmailu. Upozorni uživatele, ať ho smaže, a vytvoř nový.
 

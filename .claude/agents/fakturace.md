@@ -132,11 +132,11 @@ Dobrý den, pane Raško,
 
 v příloze zasílám fakturu k dodanému zboží.
 
-Díky a s pozdravem,
-Pokorný
+Děkuji a s pozdravem,
+Marek Pokorný
 ```
 
-  Jako `htmlBody` pošli stejný text ve tvaru `<div dir="ltr">Dobrý den, pane Raško, <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div>Díky a s pozdravem,</div><div>Pokorný</div></div>`.
+  Jako `htmlBody` pošli stejný text ve tvaru `<div dir="ltr">Dobrý den, pane Raško, <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div>Děkuji a s pozdravem,</div><div>Marek Pokorný</div></div>`.
 
 - **Příloha se do konceptu nevkládá.** PDF by se muselo přepsat do volání jako desítky tisíc znaků base64 a jediný chybný znak by fakturu poškodil. Uživateli pošli PDF (SendUserFile) a připomeň mu, ať ho do konceptu přetáhne. Dej mu i odkaz na koncept (`viewUrl`).
 - Když se faktura přečísluje nebo opraví, starý koncept zůstane v Gmailu. Upozorni uživatele, ať ho smaže, a vytvoř nový.

@@ -7,4 +7,4 @@ Vystav fakturu podle `.claude/agents/fakturace.md` (sekce „Rychlé zadání“
 
 $ARGUMENTS
 
-Odběratele, přesné texty položek, splatnost a číslo faktury doplň z `fakturace/`. Zadané ceny jsou bez DPH. PDF vygeneruj přes `python3 nastroje/faktura.py vystupy/faktury/<číslo>.json`, zapiš fakturu do `fakturace/vydane-faktury.md` a pošli mi PDF. Odpověz souhrnem: číslo, odběratel, celkem k úhradě, splatnost a „K ověření“. Doptej se jen tehdy, když bez odpovědi nejde fakturu správně vystavit.
+Odběratele, přesné texty položek, splatnost a číslo faktury doplň z `fakturace/`. Zadané ceny jsou bez DPH. PDF vygeneruj přes `python3 nastroje/faktura.py vystupy/faktury/<číslo>.json`, zapiš fakturu do `fakturace/vydane-faktury.md` i do Google Sheetu „Příjmy, platby, faktury“, list „Příjmy <rok>“ (sekce „Zápis do sheetu Příjmy“ v agentovi), a pošli mi PDF. Odpověz souhrnem: číslo, odběratel, celkem k úhradě, splatnost a „K ověření“. Doptej se jen tehdy, když bez odpovědi nejde fakturu správně vystavit.

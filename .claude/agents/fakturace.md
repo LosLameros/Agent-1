@@ -90,10 +90,27 @@ Z takového zadání vyrob PDF **bez doptávání**, kdykoli to jde. Zbytek dopl
 
 4. Zapiš fakturu do `vydane-faktury.md` (stav `vytvořeno`). Nového odběratele přidej do `zakaznici.md`, novou položku nebo změněnou cenu do `cenik.md`.
 
+4b. **Vždy, automaticky a bez ptaní** zapiš fakturu do Google Sheetu (viz „Zápis do sheetu Příjmy“ níže). Pokud tento agent nemá nástroje Google Sheets, udělá to hlavní session hned po něm.
+
 5. Odpověz stručně:
    - cestu k PDF,
    - **číslo faktury**, odběratele, celkem k úhradě, splatnost,
    - řádek „K ověření“: všechno, co jsi doplnil sám a mohlo by být špatně, hlavně číslo faktury. Evidence není kompletní, takže pokud už uživatel mezitím vystavil jinou fakturu ve FakturaOnline, číslo by se zdvojilo. Dál sem patří cena odlišná od ceníku a nejistý převod zkratky na položku.
+
+## Zápis do sheetu Příjmy
+
+Každou vytvořenou fakturu zapiš do Google Sheetu **„Příjmy, platby, faktury“** (ID `1FoZFAEpGHQ_fNmgLU3lj3y0p6TvdNQ3ECRlYitUKbuk`) na list **„Příjmy <rok>“** (pro rok 2026 je to „Příjmy 2026“).
+
+- Ve sloupci A jsou řádky s čísly faktur už připravené (`FAKTURA-26061`, `FAKTURA-26062`, …). Najdi řádek s číslem faktury. V roce 2026 je faktura 260NN na řádku NN+2, ale vždy si to ověř přečtením sloupce A. Když řádek chybí, přidej ho na konec tabulky ve stejném tvaru.
+- Vyplň jen **B:D**:
+  - **B Částka:** celková částka s DPH v Kč, jako číslo (např. `34182.5`).
+  - **C Zákazník:** krátký název, který už ve sheetu používáš: JETI, VenPor, MyJaTech, HPH, Attack HK, STRANKA, Owl, Strozatech, Hannants (H.G. Hannant Ltd) a Super hobby (PJB Hobby).
+  - **D Vystavení:** datum vystavení jako pořadové číslo dne pro Sheets (dny od 30. 12. 1899, např. 16. 11. 2026 = `46342`). Buňka má formát `d.m.`.
+- **E DPH** a **F Bez DPH** jsou vzorce (`=B-F`, `=B/1,21`), ty **nikdy nepřepisuj**.
+- **Zahraniční faktury (EU/EXPORT, bez DPH):** do B patří částka přepočtená na Kč kurzem ČNB ke dni vystavení. Když kurz nejde zjistit, zeptej se uživatele. Do E a F místo vzorců napiš `/`, stejně jako u starších faktur Hannants a Super hobby.
+- Když už je v řádku jiná faktura (jiná částka nebo zákazník), nic nepřepisuj a nahlas to uživateli. Číslo faktury by se zdvojilo.
+- Při opravě nebo přečíslování faktury oprav i řádek ve sheetu. Zrušené číslo vrať do prázdného stavu (B:D prázdné, vzorce nech).
+- Po zápisu řádek přečti a do odpovědi napiš, že je faktura ve sheetu.
 
 ## Opravy
 

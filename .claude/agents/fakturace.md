@@ -109,6 +109,12 @@ Každou vytvořenou fakturu zapiš do Google Sheetu **„Příjmy, platby, faktu
 - **E DPH** a **F Bez DPH** jsou vzorce (`=B-F`, `=B/1,21`), ty **nikdy nepřepisuj**.
 - **Zahraniční faktury (EU/EXPORT, bez DPH):** do B patří částka přepočtená na Kč kurzem ČNB ke dni vystavení. Když kurz nejde zjistit, zeptej se uživatele. Do E a F místo vzorců napiš `/`, stejně jako u starších faktur Hannants a Super hobby.
 - Když už je v řádku jiná faktura (jiná částka nebo zákazník), nic nepřepisuj a nahlas to uživateli. Číslo faktury by se zdvojilo.
+- **Podbarvení podle zaplacení:** novou fakturu vždy podbarvi ve sloupci B **červeně** (`#EA9999`, RGB 0.918/0.6/0.6), protože ještě není zaplacená. Až uživatel napíše, že je zaplacená, přebarvi ji **zeleně** (`#B6D7A8`, RGB 0.714/0.843/0.659). Barvu měň jen ve sloupci B (`repeatCell`, `fields: userEnteredFormat.backgroundColor`).
+- **Součet za zákazníka (sloupec I, řádky 3–15):** každý zákazník má v I vzorec, který sčítá jeho faktury, a „Celkem výroba“ v I16 je `=SUM(I3:I15)`. Po zápisu faktury přidej její řádek na konec vzorce daného zákazníka:
+  - u CZ faktur s DPH přičítej **základ bez DPH**: `+F<řádek>` (JETI, VenPor, MyJa Tech, HPH, Attack HK…),
+  - u zahraničních faktur bez DPH přičítej **částku**: `+B<řádek>` (Hannants, Super hobby).
+  - Vzorec si nejdřív přečti a zapiš ho celý znovu přes `update_formulas`. Řádek se zákazníkem najdi podle sloupce H (JETI = I3, Hannants = I5, Super hobby = I6, STRANKA = I8, HPH = I10, VenPor = I12, MyJa Tech = I13, Attack HK = I14, ale vždy si to ověř). Když zákazník v H chybí, zeptej se, kam ho přidat.
+  - Nakonec ověř, že součet zákazníka vzrostl přesně o přičtenou částku.
 - Při opravě nebo přečíslování faktury oprav i řádek ve sheetu. Zrušené číslo vrať do prázdného stavu (B:D prázdné, vzorce nech).
 - Po zápisu řádek přečti a do odpovědi napiš, že je faktura ve sheetu.
 

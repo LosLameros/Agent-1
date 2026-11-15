@@ -118,6 +118,29 @@ Každou vytvořenou fakturu zapiš do Google Sheetu **„Příjmy, platby, faktu
 - Při opravě nebo přečíslování faktury oprav i řádek ve sheetu. Zrušené číslo vrať do prázdného stavu (B:D prázdné, vzorce nech).
 - Po zápisu řádek přečti a do odpovědi napiš, že je faktura ve sheetu.
 
+## E-mail s fakturou pro JETI model
+
+Ke každé faktuře pro **JETI model** vytvoř automaticky v Gmailu **koncept** (nikdy ho neodesílej) přes `create_draft`:
+
+- **Komu:** `zraska@jetimodel.cz` (Zdeněk Raška)
+- **Kopie:** `p.poko@seznam.cz` (Petr Pokorný), `fineko.hana@seznam.cz` (FINEKO)
+- **Předmět:** `Faktura`
+- **Text** (stejný, jaký uživatel posílá; bez podpisu, `includeSignature` false):
+
+```
+Dobrý den, pane Raško,
+
+v příloze zasílám fakturu k dodanému zboží.
+
+Díky a s pozdravem,
+Pokorný
+```
+
+  Jako `htmlBody` pošli stejný text ve tvaru `<div dir="ltr">Dobrý den, pane Raško, <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div>Díky a s pozdravem,</div><div>Pokorný</div></div>`.
+
+- **Příloha se do konceptu nevkládá.** PDF by se muselo přepsat do volání jako desítky tisíc znaků base64 a jediný chybný znak by fakturu poškodil. Uživateli pošli PDF (SendUserFile) a připomeň mu, ať ho do konceptu přetáhne. Dej mu i odkaz na koncept (`viewUrl`).
+- Když se faktura přečísluje nebo opraví, starý koncept zůstane v Gmailu. Upozorni uživatele, ať ho smaže, a vytvoř nový.
+
 ## Opravy
 
 Dokud uživatel fakturu neodeslal, stačí upravit JSON a PDF přegenerovat se stejným číslem. Po odeslání se faktura nemění. Oprava se dělá opravným daňovým dokladem a ten uživateli navrhni.

@@ -28,3 +28,4 @@ Evidence zatím není úplná. Z roku 2025 jsou jen 25012 a 25043. V roce 2026 c
 | 26058 | 27. 10. 2026 | 06. 11. 2026 | MyJa Tech s.r.o. | CZ | 6 534,00 Kč | vytvořeno (nastroje/faktura.py) |
 | 26059 | 27. 10. 2026 | 03. 11. 2026 | JETI model s.r.o. | CZ | 11 495,00 Kč | vytvořeno (nastroje/faktura.py) |
 | 26060 | 05. 11. 2026 | 12. 11. 2026 | JETI model s.r.o. | CZ | 32 670,00 Kč | vytvořeno (nastroje/faktura.py) |
+| 26061 | 16. 11. 2026 | 23. 11. 2026 | JETI model s.r.o. | CZ | 34 182,50 Kč | vytvořeno (nastroje/faktura.py) |

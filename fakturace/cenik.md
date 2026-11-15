@@ -17,7 +17,9 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
 | Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |
 | Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26060 |
-| Tlačítko univerzál | 10,00 | JETI model s.r.o. | 26060 |
+| Tlačítko univerzál | 10,00 | JETI model s.r.o. | 26061 |
+| Koncovka pitot | 47,00 | JETI model s.r.o. | 26061 |
+| Trubka pitot | 18,00 | JETI model s.r.o. | 26061 |
 | Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26053 |
 | Klíč V-2 | 32,00 | JETI model s.r.o. | 26059 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |

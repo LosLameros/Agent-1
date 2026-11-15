@@ -1,0 +1,37 @@
+{
+  "cislo": "26061",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-11-16",
+  "duzp": "2026-11-16",
+  "splatnost_dni": 7,
+  "odberatel": {
+    "nazev": "JETI model s.r.o.",
+    "adresa": [
+      "Lomená 1530",
+      "74258 Příbor",
+      "Česká republika"
+    ],
+    "ico": "26825147",
+    "dic": "CZ26825147"
+  },
+  "polozky": [
+    {
+      "pocet": 1200,
+      "jednotka": "ks",
+      "popis": "Tlačítko univerzál",
+      "cena": "10.00"
+    },
+    {
+      "pocet": 250,
+      "jednotka": "ks",
+      "popis": "Koncovka pitot",
+      "cena": "47.00"
+    },
+    {
+      "pocet": 250,
+      "jednotka": "ks",
+      "popis": "Trubka pitot",
+      "cena": "18.00"
+    }
+  ]
+}

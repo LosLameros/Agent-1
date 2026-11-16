@@ -27,7 +27,7 @@ Newsletter má **maximálně 13 odstavců**, takže do dokumentu patří jen opr
 - výsledky a zásadní zprávy velkých firem (Big Tech, Nvidia, velké IPO, megafúze) a českých titulů (ČEZ, KB, Moneta, CSG, Colt…)
 - AI boom a jeho financování, geopolitika s dopadem na trhy, regulace, daně a novinky pro drobné investory (DIP apod.)
 
-**Nepiš o událostech, které teprve proběhnou před pátečním vydáním** (výsledky firem, IPO, zasedání centrálních bank, makrodata, volby). V pátek se píše o tom, jak dopadly, takže odstavec typu „zítra zveřejní výsledky“ nedává smysl. Napiš ho až poté, co událost proběhne. Místo odstavce dej na **začátek karty** jednovětou poznámku na samostatný řádek (mezi poznámkami i za nimi prázdný řádek), např. „V pátek doplnit výsledky Nvidie (zveřejní je v úterý 17. 11. po zavření burzy).“, pokud tam taková poznámka ještě není. Až událost proběhne, napiš odstavec na konec karty. Poznámku nemaž, to udělá redakce. Výjimkou jsou jen věci, které se do pátku nerozhodnou a samy o sobě jsou zprávou (např. ohlášení budoucího IPO s novými parametry, které do pátku nezačne).
+**Nepiš o událostech, které teprve proběhnou před pátečním vydáním** (výsledky firem, IPO, zasedání centrálních bank, makrodata, volby). V pátek se píše o tom, jak dopadly, takže odstavec typu „zítra zveřejní výsledky“ nedává smysl. Napiš ho až poté, co událost proběhne. Místo odstavce dej na **začátek karty pod nadpis a šedý řádek** jednovětou poznámku na samostatný řádek (mezi poznámkami i za nimi prázdný řádek), např. „V pátek doplnit výsledky Nvidie (zveřejní je v úterý 17. 11. po zavření burzy).“, pokud tam taková poznámka ještě není. Až událost proběhne, napiš odstavec na konec karty. Poznámku nemaž, to udělá redakce. Výjimkou jsou jen věci, které se do pátku nerozhodnou a samy o sobě jsou zprávou (např. ohlášení budoucího IPO s novými parametry, které do pátku nezačne).
 
 Hlídej i pokračování velkých příběhů z minulých vydání (např. skandál a nástupnictví v Nvidii). Zásadní zvrat, jako možný návrat odvolaného šéfa, je samostatný tip, i když se o firmě už psalo. Projdi i články, které vzniknou přes víkend.
 
@@ -43,7 +43,8 @@ Pravidla:
 
 ## Formát zápisu
 
-- Na konec karty jen připiš hotové odstavce, oddělené prázdným řádkem. **Žádný nadpis („Tipy na témata“ apod.), žádný řádek s datem nebo časem, žádné shrnutí nad odstavcem.**
+- Na začátku karty je tučný nadpis **„Tipy na témata (Claude)“** a pod ním šedý kurzívový řádek „Aktualizuje se automaticky 4× denně (8:30, 11:30, 14:30 a 17:30). Odstavce jsou rovnou připravené do newsletteru.“ Pokud chybí, doplň je.
+- Hotové odstavce připisuj na konec karty a odděluj je prázdným řádkem. Žádný řádek s datem nebo časem ani shrnutí nad odstavcem.
 - U ranního souhrnu (z XTB) je formát `Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
 - **Kvalita odstavce je hlavní.** Musí být poutavý, stručný a výstižný, aby z něj bylo cítit, že ho psal člověk. Občas vtip, metafora nebo humor, ale ne moc.
 - **Odstavec piš jako člověk, ne jako AI.** Řiď se agentem `.claude/agents/portu-newsletter-writer.md` (i sekcí „Jak autor texty zkracuje a zlidšťuje“) a předtím si přečti pár odstavců z posledních karet, které psali lidé:
@@ -52,7 +53,8 @@ Pravidla:
   - Tučný opener o 2–4 slovech, vtipný (hříčka, narážka).
   - Obyčejná slovesa, krátké věty, žádné nabubřelé obraty („o poznání skromnější“, „klíčový milník“).
   - Lidský humor tam, kde to téma snese, zhruba v každém třetím až čtvrtém odstavci, ne všude. Typicky jako hovorová pointa nebo glosa: „Jensen Huang je ale pěkný proutník“, „Pro dlouhodobé investory je to jen malý předvánoční Black Friday“, „Kdyby Marvell počkal do čtvrtka, dočkal by se velké slevy“, „Kdo si myslel, že telenovela skončila rezignací, spletl se.“
-  - **Délky střídej.** Za posledních 10 vydání (146 odstavců) mají odstavce 290–690 znaků, medián zhruba 500, nejčastěji 400–600. Piš tedy různě dlouhé odstavce zhruba mezi 300 a 600 znaky. Nikdy víc než 6 řádků na počítači (max. 600 znaků).
+  - **Délka: na počítači minimálně 4,5 a maximálně 5,5 řádku**, tedy zhruba 450–550 znaků včetně mezer. V tomto rozmezí délky střídej. Kratší odstavec rozšiř o další konkrétní fakt nebo souvislost, ne o vatu.
+  - **Vytuč to nejdůležitější**, jako v předchozích newsletterech: kromě openeru 2–4 klíčová fakta (hlavní čísla, jména, klíčové sdělení), aby čtenář pochopil zprávu i jen z tučného textu.
 - Písmo Rethink Sans (weight 400), netučné, kromě nadpisu sekce a openeru odstavce.
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.
 - **Nic jiného v dokumentu neměň ani nemaž.**

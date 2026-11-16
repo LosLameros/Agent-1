@@ -27,6 +27,8 @@ Newsletter má **maximálně 13 odstavců**, takže do dokumentu patří jen opr
 - výsledky a zásadní zprávy velkých firem (Big Tech, Nvidia, velké IPO, megafúze) a českých titulů (ČEZ, KB, Moneta, CSG, Colt…)
 - AI boom a jeho financování, geopolitika s dopadem na trhy, regulace, daně a novinky pro drobné investory (DIP apod.)
 
+Hlídej i pokračování velkých příběhů z minulých vydání (např. skandál a nástupnictví v Nvidii). Zásadní zvrat, jako možný návrat odvolaného šéfa, je samostatný tip, i když se o firmě už psalo. Projdi i články, které vzniknou přes víkend.
+
 Nevybírej drobné firemní zprávy, analytické cílové ceny ani spekulace bez potvrzení.
 
 Pravidla:

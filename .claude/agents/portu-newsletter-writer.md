@@ -58,6 +58,7 @@ Opener je úderný nadpis na začátku odstavce (a zároveň zdroj titulku celé
 
 Autor po nás odstavce typicky zkracuje o 1–2 věty a dělá je lidštějšími. Piš rovnou tak:
 
+- **Nikdy „podle Bloombergu / FT / Reuters…“ a odkaz na sloveso.** Zdroj se v textu vůbec nejmenuje. Proklik patří na jedno sloveso přímo v odstavci (např. „přiznal“, „slíbila“, „odepsal“).
 - **Žádné věty o zdroji v textu.** Věty typu „Vyplývá to z dokumentů pro investory, které viděly WSJ a Bloomberg“ škrtá — zdroj patří do odkazu na slově, ne do samostatné věty. Výhrady ke zdroji napiš uživateli mimo odstavec.
 - **Žádné metodické výhrady na konci.** Dovětky typu „obě firmy ale tržby nepočítají stejně“ škrtá. Pokud je výhrada důležitá, řekni ji uživateli zvlášť.
 - **Jedno číslo místo dvou.** Místo „propadly až o 23 % a den zakončily zhruba 17 % v minusu“ píše jedno zaokrouhlené číslo („propadly o 20 %“). Místo jednorázového minima během dne („krátce až na 10,35 eura“) popíše současný stav kulatým číslem („Nyní se obchodují pod 10 eur.“). Číslo ale musí sedět s realitou — když zjednodušení posouvá fakt, upozorni na to.

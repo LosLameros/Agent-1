@@ -43,18 +43,17 @@ Pravidla:
 
 - Na konec karty jednou přidej tučný řádek **„Tipy na témata (Claude)“**, pokud tam ještě není. Pod něj piš tipy.
 - U ranního souhrnu (z XTB) je formát `Po 16. 11., ráno · Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
-- Každý tip je jeden odstavec: `Po 16. 11., ráno · ` a pak 1–2 české věty, max. cca 250 znaků, s klíčovým číslem. Den v týdnu piš zkratkou, část dne „ráno / odpoledne / večer“.
-- Celý text tipu za tečkou s mezerou je **hypertextový odkaz** na zdrojový článek. Odkazuj na nejlepší dostupný původní zdroj z výše uvedených. Nikdy neodkazuj na konkurenční brokery a investiční platformy (XTB, Trading 212, eToro, Revolut, Fio apod.).
-- **Pod každý tip (kromě ranního přehledu trhů) rovnou napiš hotový odstavec do newsletteru** jako samostatný odstavec hned pod řádek s odkazem. Piš ho přesně podle pravidel agenta `.claude/agents/portu-newsletter-writer.md`, včetně sekce „Jak autor texty zkracuje a zlidšťuje“:
-  - tučný, vtipný opener o 2–4 slovech,
-  - poutavě a lidsky, s čísly v kontextu,
-  - na počítači max. 6 řádků, ideálně 5 (zhruba 500, max. 600 znaků včetně mezer),
-  - bez vět o zdroji a bez výhrad na konci.
-  - **Ať to nezní jako AI.** Předtím si přečti pár odstavců z posledních karet dokumentu, které psali lidé, a piš jako oni:
-    - obyčejná slovesa a krátké věty, žádné nabubřelé obraty („o poznání skromnější“, „klíčový“, „zásadní milník“),
-    - občas hovorová nebo vtipná pointa na konci („Kdo si myslel, že telenovela skončila rezignací, spletl se.“), ale ne v každém odstavci.
-  - **Délky odstavců střídej.** Některý ať má 2–3 řádky (cca 250–300 znaků), jiný 4–5. Nikdy víc než 6 řádků (max. 600 znaků).
-  Odstavec nemá odkaz, ten je na řádku s tipem nad ním.
+- **Každá zpráva má dva řádky:**
+  1. šedý řádek s časem, např. `Po 16. 11., odpoledne` (den zkratkou, část dne „ráno / odpoledne / večer“),
+  2. pod ním rovnou **hotový odstavec do newsletteru**.
+  Žádný zvláštní řádek se shrnutím už nepiš.
+- **Odstavec piš jako člověk, ne jako AI.** Řiď se agentem `.claude/agents/portu-newsletter-writer.md` (i sekcí „Jak autor texty zkracuje a zlidšťuje“) a předtím si přečti pár odstavců z posledních karet, které psali lidé:
+  - **Nikdy nepiš „podle Bloombergu / FT / Reuters / CNBC“ ani jiné věty o zdroji.** Fakt prostě napiš a zdroj schovej do odkazu.
+  - **Odkaz dej přímo do textu na sloveso** (např. „slíbila“, „odepsal“, „řeší“), stejně jako to dělají kolegové. Žádné odkazy na celé věty.
+  - Tučný opener o 2–4 slovech, vtipný (hříčka, narážka).
+  - Obyčejná slovesa, krátké věty, žádné nabubřelé obraty („o poznání skromnější“, „klíčový milník“).
+  - Lidský humor tam, kde to téma snese, zhruba v každém třetím až čtvrtém odstavci, ne všude. Typicky jako hovorová pointa nebo glosa: „Jensen Huang je ale pěkný proutník“, „Pro dlouhodobé investory je to jen malý předvánoční Black Friday“, „Kdyby Marvell počkal do čtvrtka, dočkal by se velké slevy“, „Kdo si myslel, že telenovela skončila rezignací, spletl se.“
+  - **Délky střídej.** Za posledních 10 vydání (146 odstavců) mají odstavce 290–690 znaků, medián zhruba 500, nejčastěji 400–600. Piš tedy různě dlouhé odstavce zhruba mezi 300 a 600 znaky. Nikdy víc než 6 řádků na počítači (max. 600 znaků).
 - Písmo Rethink Sans (weight 400), netučné, kromě nadpisu sekce a openeru odstavce.
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.
 - **Nic jiného v dokumentu neměň ani nemaž.**

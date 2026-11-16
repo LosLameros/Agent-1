@@ -27,6 +27,8 @@ Newsletter má **maximálně 13 odstavců**, takže do dokumentu patří jen opr
 - výsledky a zásadní zprávy velkých firem (Big Tech, Nvidia, velké IPO, megafúze) a českých titulů (ČEZ, KB, Moneta, CSG, Colt…)
 - AI boom a jeho financování, geopolitika s dopadem na trhy, regulace, daně a novinky pro drobné investory (DIP apod.)
 
+**Nepiš o událostech, které teprve proběhnou před pátečním vydáním** (výsledky firem, IPO, zasedání centrálních bank, makrodata, volby). V pátek se píše o tom, jak dopadly, takže odstavec typu „zítra zveřejní výsledky“ nedává smysl. Napiš ho až poté, co událost proběhne. Výjimkou jsou jen věci, které se do pátku nerozhodnou a samy o sobě jsou zprávou (např. ohlášení budoucího IPO s novými parametry, které do pátku nezačne).
+
 Hlídej i pokračování velkých příběhů z minulých vydání (např. skandál a nástupnictví v Nvidii). Zásadní zvrat, jako možný návrat odvolaného šéfa, je samostatný tip, i když se o firmě už psalo. Projdi i články, které vzniknou přes víkend.
 
 Nevybírej drobné firemní zprávy, analytické cílové ceny ani spekulace bez potvrzení.
@@ -41,12 +43,9 @@ Pravidla:
 
 ## Formát zápisu
 
-- Na konec karty jednou přidej tučný řádek **„Tipy na témata (Claude)“**, pokud tam ještě není. Pod něj piš tipy.
-- U ranního souhrnu (z XTB) je formát `Po 16. 11., ráno · Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
-- **Každá zpráva má dva řádky:**
-  1. šedý řádek s časem, např. `Po 16. 11., odpoledne` (den zkratkou, část dne „ráno / odpoledne / večer“),
-  2. pod ním rovnou **hotový odstavec do newsletteru**.
-  Žádný zvláštní řádek se shrnutím už nepiš.
+- Na konec karty jen připiš hotové odstavce, oddělené prázdným řádkem. **Žádný nadpis („Tipy na témata“ apod.), žádný řádek s datem nebo časem, žádné shrnutí nad odstavcem.**
+- U ranního souhrnu (z XTB) je formát `Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
+- **Kvalita odstavce je hlavní.** Musí být poutavý, stručný a výstižný, aby z něj bylo cítit, že ho psal člověk. Občas vtip, metafora nebo humor, ale ne moc.
 - **Odstavec piš jako člověk, ne jako AI.** Řiď se agentem `.claude/agents/portu-newsletter-writer.md` (i sekcí „Jak autor texty zkracuje a zlidšťuje“) a předtím si přečti pár odstavců z posledních karet, které psali lidé:
   - **Nikdy nepiš „podle Bloombergu / FT / Reuters / CNBC“ ani jiné věty o zdroji.** Fakt prostě napiš a zdroj schovej do odkazu.
   - **Odkaz dej přímo do textu na sloveso** (např. „slíbila“, „odepsal“, „řeší“), stejně jako to dělají kolegové. Žádné odkazy na celé věty.
@@ -58,4 +57,6 @@ Pravidla:
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.
 - **Nic jiného v dokumentu neměň ani nemaž.**
 
-Na konci běhu odpověz v chatu jedním řádkem: kolik tipů jsi přidal a o čem byly, nebo „nic nového“.
+Protože odstavce nemají žádné označení, duplicity a limit kontroluj podle obsahu celé karty: každý odstavec v kartě (od kolegů i tvůj) je jedno téma.
+
+Na konci běhu odpověz v chatu jedním řádkem: kolik odstavců jsi přidal a o čem byly, nebo „nic nového“.

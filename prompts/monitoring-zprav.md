@@ -45,7 +45,13 @@ Pravidla:
 - U ranního souhrnu (z XTB) je formát `Po 16. 11., ráno · Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
 - Každý tip je jeden odstavec: `Po 16. 11., ráno · ` a pak 1–2 české věty, max. cca 250 znaků, s klíčovým číslem. Den v týdnu piš zkratkou, část dne „ráno / odpoledne / večer“.
 - Celý text tipu za tečkou s mezerou je **hypertextový odkaz** na zdrojový článek. Odkazuj na nejlepší dostupný původní zdroj z výše uvedených. Nikdy neodkazuj na konkurenční brokery a investiční platformy (XTB, Trading 212, eToro, Revolut, Fio apod.).
-- Písmo Rethink Sans (weight 400), netučné.
+- **Pod každý tip (kromě ranního přehledu trhů) rovnou napiš hotový odstavec do newsletteru** jako samostatný odstavec hned pod řádek s odkazem. Piš ho přesně podle pravidel agenta `.claude/agents/portu-newsletter-writer.md`, včetně sekce „Jak autor texty zkracuje a zlidšťuje“:
+  - tučný, vtipný opener o 2–4 slovech,
+  - poutavě a lidsky, s čísly v kontextu,
+  - na počítači max. 6 řádků, ideálně 5 (zhruba 500, max. 600 znaků včetně mezer),
+  - bez vět o zdroji a bez výhrad na konci.
+  Odstavec nemá odkaz, ten je na řádku s tipem nad ním.
+- Písmo Rethink Sans (weight 400), netučné, kromě nadpisu sekce a openeru odstavce.
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.
 - **Nic jiného v dokumentu neměň ani nemaž.**
 

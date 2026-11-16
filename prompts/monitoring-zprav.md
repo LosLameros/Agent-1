@@ -16,7 +16,7 @@ Projdi tyto zdroje a vyber zprávy od posledního vydání newsletteru, tedy od 
 - **Yahoo Finance, HN, E15:** stránky jdou stáhnout přímo (`curl` nebo WebFetch).
 - **Patria, Seznam Zprávy:** při stahování následuj přesměrování (`curl -L`). Plné články Patrie bývají za placenou zdí, perex ale stačí.
 - **Bloomberg, CNBC:** přímo nejdou otevřít (403), hledej je přes WebSearch s `allowed_domains`.
-- **XTB, Ranní shrnutí (důležité, každý den):** seznam článků je na https://www.xtb.com/cz/trzni-analyzy/zpravy-z-trhu. Každý den najdi dnešní „Ranní shrnutí“, přečti ho celé a zapiš **vždy** jeden souhrnný tip: titulek plus stručně všechna témata, která shrnutí pokrývá (indexy, měny, komodity, firmy, makrodata, události dne), a odkaz přímo na článek. Tento tip se zapisuje i tehdy, když se témata překrývají s tím, co v kartě už je, a nepočítá se do limitů níže. Zapisuje ho první běh dne, ve kterém už je shrnutí venku (obvykle 8:30, jinak 11:30). Pokud tip s dnešním Ranním shrnutím v kartě už je, znovu ho nepiš.
+- **XTB, Ranní shrnutí (důležité, každý den):** seznam článků je na https://www.xtb.com/cz/trzni-analyzy/zpravy-z-trhu. Každý den najdi dnešní „Ranní shrnutí“, přečti ho celé a zapiš **vždy** jeden souhrnný tip se všemi tématy, která shrnutí pokrývá (indexy, měny, komodity, firmy, makrodata, události dne). **XTB je konkurence: nikdy na ni neodkazuj a v dokumentu ji nejmenuj.** Shrnutí ti slouží jen jako seznam témat. Ke každému tématu dohledej původní zdroj (CNBC, Yahoo Finance, Bloomberg, Reuters, Patria, HN, E15, Seznam Zprávy, případně oficiální zdroj jako ČSÚ nebo Fed) a odkaz dej na něj. Pokud pro téma původní zdroj nenajdeš, téma vynech. Tento tip se zapisuje i tehdy, když se témata překrývají s tím, co v kartě už je, a nepočítá se do limitů níže. Zapisuje ho první běh dne, ve kterém už je shrnutí venku (obvykle 8:30, jinak 11:30). Pokud tip s dnešním Ranním shrnutím v kartě už je, znovu ho nepiš.
 
 ## Co vybírat
 
@@ -40,9 +40,9 @@ Pravidla:
 ## Formát zápisu
 
 - Na konec karty jednou přidej tučný řádek **„Tipy na témata (Claude)“**, pokud tam ještě není. Pod něj piš tipy.
-- U Ranního shrnutí XTB je formát `Po 16. 11., ráno · Ranní shrnutí XTB: <titulek>. <témata oddělená středníkem>`, odkaz na celý text za tečkou s mezerou; může mít až cca 500 znaků.
+- U ranního souhrnu (z XTB) je formát `Po 16. 11., ráno · Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
 - Každý tip je jeden odstavec: `Po 16. 11., ráno · ` a pak 1–2 české věty, max. cca 250 znaků, s klíčovým číslem. Den v týdnu piš zkratkou, část dne „ráno / odpoledne / večer“.
-- Celý text tipu za tečkou s mezerou je **hypertextový odkaz** na zdrojový článek. Odkazuj na nejlepší dostupný původní zdroj z výše uvedených.
+- Celý text tipu za tečkou s mezerou je **hypertextový odkaz** na zdrojový článek. Odkazuj na nejlepší dostupný původní zdroj z výše uvedených. Nikdy neodkazuj na konkurenční brokery a investiční platformy (XTB, Trading 212, eToro, Revolut, Fio apod.).
 - Písmo Rethink Sans (weight 400), netučné.
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.
 - **Nic jiného v dokumentu neměň ani nemaž.**

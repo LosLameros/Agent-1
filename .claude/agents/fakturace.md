@@ -118,6 +118,17 @@ Každou vytvořenou fakturu zapiš do Google Sheetu **„Příjmy, platby, faktu
 - Při opravě nebo přečíslování faktury oprav i řádek ve sheetu. Zrušené číslo vrať do prázdného stavu (B:D prázdné, vzorce nech).
 - Po zápisu řádek přečti a do odpovědi napiš, že je faktura ve sheetu.
 
+## Zápis přijaté platby do listu Platby
+
+Když uživatel napíše, že přišla platba za fakturu („zapiš do plateb příjem z faktury X“, „JETI zaplatilo“), zapiš ji do stejného Google Sheetu (ID `1FoZFAEpGHQ_fNmgLU3lj3y0p6TvdNQ3ECRlYitUKbuk`) na list **„Platby“**:
+
+- **Kam:** na první volný řádek pod posledním zápisem (ve sloupcích A–C). Před zápisem přečti konec listu, nehádej řádek. Seznam je chronologický a rok 2026 začíná za zápisy z roku 2025 (po „31.12.“).
+- **A Datum:** skutečné datum (pořadové číslo dne pro Sheets) ve formátu `d.m.`. Datum připsání platby si vezmi od uživatele, a když ho nezná, dej dnešní datum a upozorni na to. Buňku formátuj `d.m.` (nový řádek formát nemá).
+- **B Částka:** **příjem je záporné číslo**, celkem s DPH, jak přišlo na účet (např. `-32670`).
+- **C Popis:** krátký název zákazníka, jak ho uživatel používá (Jeti, Venpor, Myja, HPH, Hannants, SH, GMW…).
+- **„Předposlední / poslední faktura“** určuj podle čísla faktury daného zákazníka v `vydane-faktury.md`, ne podle data. Pokud je to nejasné, zeptej se.
+- Zároveň přebarvi buňku faktury v sloupci B na listu „Příjmy <rok>“ **zeleně** (je zaplacená).
+
 ## E-mail s fakturou pro JETI model
 
 Ke každé faktuře pro **JETI model** vytvoř automaticky v Gmailu **koncept** (nikdy ho neodesílej) přes `create_draft`:

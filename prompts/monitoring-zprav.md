@@ -50,6 +50,10 @@ Pravidla:
   - poutavě a lidsky, s čísly v kontextu,
   - na počítači max. 6 řádků, ideálně 5 (zhruba 500, max. 600 znaků včetně mezer),
   - bez vět o zdroji a bez výhrad na konci.
+  - **Ať to nezní jako AI.** Předtím si přečti pár odstavců z posledních karet dokumentu, které psali lidé, a piš jako oni:
+    - obyčejná slovesa a krátké věty, žádné nabubřelé obraty („o poznání skromnější“, „klíčový“, „zásadní milník“),
+    - občas hovorová nebo vtipná pointa na konci („Kdo si myslel, že telenovela skončila rezignací, spletl se.“), ale ne v každém odstavci.
+  - **Délky odstavců střídej.** Některý ať má 2–3 řádky (cca 250–300 znaků), jiný 4–5. Nikdy víc než 6 řádků (max. 600 znaků).
   Odstavec nemá odkaz, ten je na řádku s tipem nad ním.
 - Písmo Rethink Sans (weight 400), netučné, kromě nadpisu sekce a openeru odstavce.
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.

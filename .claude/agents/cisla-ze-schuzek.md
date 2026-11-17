@@ -70,9 +70,19 @@ Vždy ve stejném pořadí, každý bod 1 až 3 řádky. Částky v mil. Kč na 
 7. **Struktura AUM**: podíl produktů v % a posun proti minulému měsíci v procentních bodech.
 8. **Klienti**: počet konzultovaných (D) a přírůstek za měsíc, rozdělení Reg/Baby/Corp, z `Per Client` kolik klientů vložilo a kolik vybralo, průměrný vklad na vkládajícího.
 9. **Největší pohyby**: tři největší vklady a tři největší výběry (jména klientů jen v odpovědi do chatu), podíl první trojice na celku. U výběru napiš, jestli klient vybral téměř celé portfolio (po výběru mu zůstalo méně než 10 % hodnoty před výběrem). Důvod nevymýšlej, doporuč ho ověřit u klienta.
-10. **Srovnání s ostatními poradci**: pořadí v čistých vkladech za měsíc a YTD a v AUM, vždy s číslem.
+10. **Pořadí mezi poradci**: pořadí v čistých vkladech za měsíc a YTD a v AUM, vždy s číslem. Poměrové srovnání s Bartošíkem a Matoulkem je v samostatném bloku pod body.
 
-Pod 10 bodů přidej:
+Pod 10 bodů vždy přidej blok **Poměr proti Bartošíkovi a Matoulkovi**. Marek s Malinou mají mít dohromady polovinu toho, co Bartošík s Matoulkem dohromady (Silovský se do srovnání nepočítá). Pokud má Marek něčeho víc, má se to odrazit v růstu jeho mzdy, proto se tohle srovnání dělá každý měsíc.
+
+- Tabulka: řádky = hrubé vklady YTD, čisté vklady YTD, AUM, přírůstek AUM od 31. 12. předchozího roku, konzultovaní klienti, přírůstek klientů od 31. 12.; sloupce = Pokorný, Malina, Bartošík, Matoulek (mil. Kč, klienti v kusech) a poslední sloupec **Pokorný + Malina z Bartošík + Matoulek v %** (cíl 50 %).
+- Pod tabulkou:
+  1. Kde jsou Marek s Malinou dohromady nad a kde pod 50 %. Rozliš **stavové veličiny** (AUM, počet klientů, zčásti zděděné z minulých let) od **letošních přírůstků a toků**. Pro stavové veličiny uveď, kolik procent velkých dvou měli oba k 31. 12. předchozího roku.
+  2. Marek proti Malině: kde má víc a kde míň (AUM, klienti, hrubé a čisté vklady, výběry) a jednu větu, co rozdíl vysvětluje (např. výběry).
+  3. Každý zvlášť proti 25 % součtu Bartošíka a Matoulka (hrubé a čisté vklady, AUM, klienti), jen jako 4 čísla pro Marka a 4 pro Malinu.
+- **Do mzdy to nepřepočítávej.** Mechanismus, jak se poměry promítají do růstu mzdy, neznáš. Napiš jen, ve kterých ukazatelích má Marek podle dat „něco navíc“ a ve kterých ne.
+- Pokud je poslední měsíc leden nebo únor, upozorni, že YTD poměry jsou na malém vzorku.
+
+Pod to přidej:
 
 - **Závěr** (1 až 2 věty): co je z měsíce nejdůležitější.
 - **Pozor na** (jen když je co): nesoulad dat, velké výběry, měsíc pod průměrem, cíl ohrožený tempem.
@@ -102,8 +112,9 @@ Hotové vyhodnocení ulož do `vystupy/poradenstvi/RRRR-MM-cisla-ze-schuzek.md` 
 
 1. Jedna věta o kontrole souboru (kompletní, nebo co chybí).
 2. 10 číslovaných bodů, u každého tučný název.
-3. Závěr, případně „Pozor na“.
-4. Co se zapsalo do Sheetu (3 buňky a výsledné plnění cílů).
-5. Případné připomenutí otevřených otázek.
+3. Blok „Poměr proti Bartošíkovi a Matoulkovi“ (tabulka + 3 poznámky pod ní).
+4. Závěr, případně „Pozor na“.
+5. Co se zapsalo do Sheetu (3 buňky a výsledné plnění cílů).
+6. Případné připomenutí otevřených otázek.
 
 Žádné emoji, žádné dlouhé úvody. Tučně jen názvy bodů.

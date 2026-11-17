@@ -10,7 +10,7 @@
 
 Nvidia ve třetím čtvrtletí fiskálního roku 2027, tedy od srpna do října, zvýšila tržby meziročně o 103 % na 115,8 mld. USD. Konsenzus 109,1 mld. USD tak překonala o 6 % a vlastní výhled ještě výrazněji. Datová centra přinesla 107,6 mld. USD, o 110 % víc než před rokem. Nvidia zároveň začala dodávat novou generaci čipů Vera Rubin, kterou už nasazují hyperscaleři jako Google Cloud, Microsoft Azure nebo Oracle. Upravený zisk na akcii 2,68 USD byl o 9 % nad odhadem 2,47 USD. Hrubá marže 74,9 % překonala i horní hranici výhledu. V létě přitom trh řešil, jestli Nvidia zvládne promítnout dražší paměti do cen. Zatím se jí to daří.
 
-Ještě silnější je výhled. Na čtvrté čtvrtletí Nvidia čeká tržby 130 mld. USD, zhruba o 4 % víc, než trh odhadoval. Čtvrtletí má ale o týden víc, takže číslo trochu nadsazuje. Čínu Nvidia do výhledu opět nezapočítala. Slabším místem je marže. Ta má klesnout na 71 až 72 %, což při plánovaných tržbách znamená zhruba o 4 mld. USD méně hrubého zisku. Nvidia za čtvrtletí navíc vrátila akcionářům 28,1 mld. USD a na zpětné odkupy akcií schválila dalších 150 mld. USD.
+Akcie po skončení obchodování posilují zhruba o 3,5 %, hlavně díky výhledu. Na čtvrté čtvrtletí Nvidia čeká tržby 130 mld. USD, zhruba o 4 % víc, než trh odhadoval. Čtvrtletí má ale o týden víc, takže číslo trochu nadsazuje. Čínu Nvidia do výhledu opět nezapočítala. Větší růst akcií brzdí marže. Ta má klesnout na 71 až 72 %, což při plánovaných tržbách znamená zhruba o 4 mld. USD méně hrubého zisku. Nvidia za čtvrtletí navíc vrátila akcionářům 28,1 mld. USD a na zpětné odkupy akcií schválila dalších 150 mld. USD.
 
 Výsledky přitom přicházejí v těžké chvíli. Jensen Huang minulý týden po osobním skandálu odešel z čela firmy a vedení dočasně převzala finanční ředitelka Colette Kress. Akcie od konce října odepsaly zhruba 29 %. K nervozitě kolem celého AI byznysu se přidaly obavy z odchodu zakladatele. Čísla ukazují, že poptávka po čipech nepolevuje a firma nestojí jen na jednom člověku. Klíčové bude, kdo Nvidii povede dlouhodobě a jestli marže nebudou klesat dál. Pokud představenstvo rychle najde přesvědčivého nástupce a poptávka vydrží, může se akcie vrátit k říjnovým úrovním. Pokud by se ale nejistota ve vedení táhla a marže dál klesaly, mohla by akcie zůstat pod tlakem i přes rekordní tržby.
 
@@ -18,7 +18,7 @@ Výsledky přitom přicházejí v těžké chvíli. Jensen Huang minulý týden 
 
 **Pouze pro autora, neposílat do redakce:**
 
-**Co v textu chybí:** pohyb akcií po zavření trhu (v době psaní nebyl k dispozici). Výhled z hovoru nad rámec tiskové zprávy.
+**Co v textu chybí:** výhled z hovoru nad rámec tiskové zprávy. Pohyb akcií po zavření trhu (+3,5 %) od autora.
 
 **Body k ověření:**
 - Odhad trhu na 4Q 124,8 mld. USD mám jen z jedné předběžné zprávy (zdroj yfinance). Pokud máš konsenzus z Bloombergu, upravit „zhruba o 4 %“.

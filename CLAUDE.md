@@ -44,6 +44,11 @@ Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze 
 - **Cíl 2026:** 60 mil. Kč nových vkladů a 330 mil. Kč AUM.
 - **Pracovní předpoklad:** dokud se to nevyjasní, počítáme 60 mil. jako **čisté vklady** (vklady − výběry, v měsíčním Excelu konzultantů sloupce AJ − AM v listu Overview).
 - **Otevřené – zeptat se vedoucího:** jsou těch 60 mil. čisté, nebo hrubé vklady? Při dalším hovoru o číslech ze schůzek to Markovi připomeň a po odpovědi tuhle poznámku uprav.
+- **Otevřené – zeptat se vedoucího:** o kolik musí Marek cíl překročit, aby se obchodní odměny násobily 1,2?
+- **Evidence bonusu:** Google Sheet „KPI moje“ (https://docs.google.com/spreadsheets/d/1RJBGVo_Jjz_4kxNMXbTvib9BmmqyaJm7fVgSQFCQnf4), list KPI. Konkrétní částky (plat) čti vždy z tabulky, do repozitáře je nezapisuj.
+  - Model 50/50 (B2:C13): celkový bonus = plat × koeficient od majitele (pro 2026 očekávaný 1,8, může se změnit) → půlka „analytik“, půlka „hybrid“. Obchodní odměny (zvlášť) = 3 × hybridní půlka; při plnění nad cíl × 1,2. Celkem = celkový bonus + obchodní odměny (max. s × 1,2).
+  - Aktuál vs. cíl (E2:H4): nové vklady (čisté) a AUM, ručně přepisované z měsíčního Excelu konzultantů.
+  - Varianta „Full-time konzultace“ (B15:C26): stejný výpočet, ale obchodní odměny = 3 × celý bonus (bez dělení na analytika).
 
 ## Poznámka
 

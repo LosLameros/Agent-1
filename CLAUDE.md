@@ -39,6 +39,12 @@ Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze 
 - Před odesláním čtvrtletní zprávy i každé navržené úpravy (i jen jedné věty) ji zkontroluj podle odborné revize v kapitole 8a promptu `.claude/agents/Čtvrtletní zprávy.md`.
 - Připomínka nebo dotaz od uživatele **neznamená automaticky požadavek na změnu**. Uživatel chce kritický názor a samostatný postoj: nejdřív posuď, zda má připomínka pravdu, a obhaj nebo uprav své řešení podle faktů. Měň jen to, co je opravdu potřeba, a když nesouhlasíš, řekni proč.
 
+## Poradenství — cíle a otevřené otázky (Marek Pokorný)
+
+- **Cíl 2026:** 60 mil. Kč nových vkladů a 330 mil. Kč AUM.
+- **Pracovní předpoklad:** dokud se to nevyjasní, počítáme 60 mil. jako **čisté vklady** (vklady − výběry, v měsíčním Excelu konzultantů sloupce AJ − AM v listu Overview).
+- **Otevřené – zeptat se vedoucího:** jsou těch 60 mil. čisté, nebo hrubé vklady? Při dalším hovoru o číslech ze schůzek to Markovi připomeň a po odpovědi tuhle poznámku uprav.
+
 ## Poznámka
 
 Newsletter vždy píšeme v češtině.

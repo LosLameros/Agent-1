@@ -12,7 +12,7 @@ Nvidia ve třetím čtvrtletí fiskálního roku 2027, tedy od srpna do října,
 
 Akcie po skončení obchodování posilují zhruba o 3,5 %, hlavně díky výhledu. Na čtvrté čtvrtletí Nvidia čeká tržby 130 mld. USD, zhruba o 4 % víc, než trh odhadoval. Čtvrtletí má ale o týden víc, takže číslo trochu nadsazuje. Čínu Nvidia do výhledu opět nezapočítala. Větší růst akcií brzdí marže. Ta má klesnout na 71 až 72 %, což při plánovaných tržbách znamená zhruba o 4 mld. USD méně hrubého zisku. Nvidia za čtvrtletí navíc vrátila akcionářům 28,1 mld. USD a na zpětné odkupy akcií schválila dalších 150 mld. USD.
 
-Výsledky přitom přicházejí v těžké chvíli. Jensen Huang minulý týden po osobním skandálu odešel z čela firmy a vedení dočasně převzala finanční ředitelka Colette Kress. Akcie od konce října odepsaly zhruba 29 %. Většinu z toho ještě před jeho odchodem kvůli nervozitě kolem celého AI sektoru, odchod zakladatele pak pokles prohloubil. Čísla ukazují, že poptávka po čipech nepolevuje a firma nestojí jen na jednom člověku. Klíčové bude, kdo Nvidii povede dlouhodobě a jestli marže nebudou klesat dál. Pokud představenstvo rychle najde přesvědčivého nástupce a poptávka vydrží, může se akcie vrátit k říjnovým úrovním. Pokud by se ale nejistota ve vedení táhla a marže dál klesaly, mohla by akcie zůstat pod tlakem i přes rekordní tržby.
+Výsledky přitom přicházejí v těžké chvíli. Jensen Huang minulý týden po osobním skandálu odešel z čela firmy a vedení dočasně převzala finanční ředitelka Colette Kress. Akcie během listopadu odepsaly 24 % a od svých maxim na začátku října jsou níže o 35 %. Velkou část poklesu ještě před jeho odchodem způsobila nervozita kolem celého AI sektoru, odchod zakladatele ho pak prohloubil. Čísla ukazují, že poptávka po čipech nepolevuje a firma nestojí jen na jednom člověku. Klíčové bude, kdo Nvidii povede dlouhodobě a jestli marže nebudou klesat dál. Pokud představenstvo rychle najde přesvědčivého nástupce a poptávka vydrží, může se akcie vrátit k říjnovým úrovním. Pokud by se ale nejistota ve vedení táhla a marže dál klesaly, mohla by akcie zůstat pod tlakem i přes rekordní tržby.
 
 ---
 
@@ -28,7 +28,7 @@ Výsledky přitom přicházejí v těžké chvíli. Jensen Huang minulý týden 
 **Dopočty:**
 - Tržby 115,84 mld. USD proti konsenzu 109,1 (+6,2 %) a středu vlastního výhledu 108 (+7,3 %). Upravený zisk na akcii 2,68 proti 2,47 USD (+8,5 %). Hrubá marže (non-GAAP) 74,9 % proti výhledu 73,5 až 74,5 %.
 - Výhled 4Q: 130 mld. USD ±3 % (čtvrtletí o týden delší), marže 71 až 72 %; při 130 mld. USD je rozdíl mezi 74,9 % a 71,5 % zhruba 4,4 mld. USD hrubého zisku.
-- Akcie: 27. 10. 217,94 USD, 11. 11. 173,73 USD, 17. 11. 154,87 USD (−28,9 % od 27. 10., −10,9 % od 11. 11.; Trading Economics).
+- Akcie (Trading Economics): maximum 6. 10. 239,24 USD, 30. 10. 204,64 USD, 11. 11. 173,73 USD, 17. 11. 154,87 USD. Listopad −24,3 %, od 6. 10. −35,3 %; 30. 10. až 11. 11. (před odchodem Huanga) −15,1 %, 11. až 17. 11. −10,9 %.
 
 **Vypuštěno, lze doplnit:** dohoda o koupi Hugging Face; rozšíření spolupráce s Anthropicem a s Metou (agent Muse); okrajové segmenty (Edge Computing 8,2 mld. USD, +42 %); představenstvo zřídilo výbor pro národní bezpečnost a exportní kontroly.
 

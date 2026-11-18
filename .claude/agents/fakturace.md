@@ -152,7 +152,9 @@ v příloze zasílám fakturu k dodanému zboží.
 `htmlBody` ve tvaru: `<div dir="ltr"><oslovení> <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div><závěr></div><div><podpis></div></div>`.
 
 - **Ostatní zákazníci:** e-mail, oslovení a závěr zatím neznáme. Při první faktuře se zeptej, nebo najdi předchozí odeslané e-maily v Gmailu (`in:sent`, adresát zákazníka). Údaje pak přidej do tabulky výše.
-- **V pátek** (podle data, kdy koncept vytváříš) napiš u **JETI** místo „Děkuji a s pozdravem,“ závěr **„Děkuji a přeji hezký víkend,“**. Zbytek textu a podpis zůstává. Den v týdnu zjisti příkazem `date +%A`, nehádej ho. Pro VenPor tuto výjimku uživatel nezadal, tam se pátek neřeší (zeptej se, jestli ji chce i tam).
+- **V pátek** (podle data, kdy koncept vytváříš) napiš u **JETI i VenPoru** místo závěru z tabulky (JETI „Děkuji a s pozdravem,“, VenPor „Díky a s pozdravem,“) závěr **„Děkuji a přeji hezký víkend,“**. Podpis zůstává podle zákazníka (JETI „Marek Pokorný“, VenPor „Pokorný“) a zbytek textu se nemění. Den v týdnu zjisti příkazem `date +%A`, nehádej ho.
+  - plain text: `Děkuji a přeji hezký víkend,` a pod ním podpis,
+  - `htmlBody`: `<div>Děkuji a přeji hezký víkend,</div><div><podpis></div>` na místě stejného bloku se závěrem z tabulky.
 - **Příloha se vkládá přímo do konceptu.** V `attachments` dej `content` ve tvaru `sha256:<SHA-256 PDF>:<absolutní cesta k PDF>` (hash spočítej přes `sha256sum`, cesta je `/home/user/Agent-1/vystupy/faktury/Faktura_<číslo>.pdf`), `filename` `Faktura_<číslo>.pdf` a `mimeType` `application/pdf`. Soubor nikdy nepřepisuj do base64 ručně. **PDF nesmí být po výpočtu hashe přegenerované**, jinak hash nesedí. Ověř, že příloha v konceptu je: `list_drafts` s dotazem `in:draft to:<adresa> filename:Faktura_<číslo>.pdf`.
 - **Úprava konceptu (`update_draft`) přílohu smaže.** Když je potřeba koncept změnit, vytvoř nový koncept se stejnou přílohou a starý nech uživateli smazat.
 - Uživateli pošli i PDF (SendUserFile) a odkaz na koncept (`viewUrl`).

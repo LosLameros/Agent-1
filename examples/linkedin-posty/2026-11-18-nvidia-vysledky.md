@@ -10,7 +10,7 @@ Nvidia v uplynulém čtvrtletí utržila 115,8 miliardy dolarů, víc než dvojn
 
 Pod rekordem ale přibyla i rizika. Nvidia se zavázala odebrat od dodavatelů komponenty za 390 miliard dolarů, téměř osmkrát víc než před rokem. Když poptávka vydrží, má zajištěné dodávky. Když zpomalí, zůstanou jí obří závazky. Výhled marže navíc klesá a představenstvo nechalo prověřit, jestli Huang nebyl cílem čínské rozvědky.
 
-Byznys zatím drží i bez šéfa. O dalším směru akcií ale víc než čísla rozhodne to, kdo firmu povede.
+Byznys zatím drží i bez šéfa. Huang by se rád vrátil, představenstvo to ale odmítá a nástupce hledá jinde. O dalším směru akcií tak víc než čísla rozhodne to, kdo firmu povede.
 
 ## Co autor změnil oproti návrhu agenta
 
@@ -19,4 +19,5 @@ Byznys zatím drží i bez šéfa. O dalším směru akcií ale víc než čísl
 - „pět dní předtím“ → „před pěti dny“: vztaženo k datu zveřejnění postu.
 - „přibyla rizika“ → „přibyla i rizika“.
 - Řádek s odkazem na článek vypustil z textu (odkaz jde mimo text postu).
+- Do závěru doplnil spor o vedení (Huang by se rád vrátil, představenstvo to odmítá): konkrétní fakt z článku, který podpírá závěrečnou pointu. Agent má podobné „živé“ napětí z článku vytáhnout sám.
 - Jinak návrh převzal beze změny: krátký post (cca 880 znaků) s kontrastem v úvodu, rozkladem čísel, rizikem vysvětleným přes mechanismus a věcným závěrem byl pro tento typ obsahu správně.

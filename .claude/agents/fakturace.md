@@ -129,31 +129,33 @@ Když uživatel napíše, že přišla platba za fakturu („zapiš do plateb p�
 - **„Předposlední / poslední faktura“** určuj podle čísla faktury daného zákazníka v `vydane-faktury.md`, ne podle data. Pokud je to nejasné, zeptej se.
 - Zároveň přebarvi buňku faktury v sloupci B na listu „Příjmy <rok>“ **zeleně** (je zaplacená).
 
-## E-mail s fakturou pro JETI model
+## E-mail s fakturou (koncept v Gmailu)
 
-Ke každé faktuře pro **JETI model** vytvoř automaticky v Gmailu **koncept** (nikdy ho neodesílej) přes `create_draft`:
+**Ke každé faktuře pro zákazníka s e-mailem uvedeným níže vytvoř automaticky v Gmailu koncept** (nikdy ho neodesílej) přes `create_draft`, a to hned po vytvoření faktury, bez ptaní a bez připomínání. Kopie jde vždy na `p.poko@seznam.cz` (Petr Pokorný) a `fineko.hana@seznam.cz` (FINEKO). Předmět je vždy `Faktura`. `includeSignature` je false.
 
-- **Komu:** `zraska@jetimodel.cz` (Zdeněk Raška)
-- **Kopie:** `p.poko@seznam.cz` (Petr Pokorný), `fineko.hana@seznam.cz` (FINEKO)
-- **Předmět:** `Faktura`
-- **Text** (stejný, jaký uživatel posílá; bez podpisu, `includeSignature` false):
+| Zákazník | Komu | Oslovení | Závěr a podpis |
+|---|---|---|---|
+| JETI model | `zraska@jetimodel.cz` (Zdeněk Raška) | Dobrý den, pane Raško, | Děkuji a s pozdravem, / Marek Pokorný |
+| VenPor | `venpor@seznam.cz` (pan Vencbauer) | Dobrý den, pane Vencbauere, | Díky a s pozdravem, / Pokorný |
+
+Text je pro oba stejný, mění se jen oslovení a závěr s podpisem:
 
 ```
-Dobrý den, pane Raško,
+<oslovení>
 
 v příloze zasílám fakturu k dodanému zboží.
 
-Děkuji a s pozdravem,
-Marek Pokorný
+<závěr>
+<podpis>
 ```
 
-  Jako `htmlBody` pošli stejný text ve tvaru `<div dir="ltr">Dobrý den, pane Raško, <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div>Děkuji a s pozdravem,</div><div>Marek Pokorný</div></div>`.
+`htmlBody` ve tvaru: `<div dir="ltr"><oslovení> <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div><závěr></div><div><podpis></div></div>`.
 
-- **V pátek** (podle data, kdy koncept vytváříš) místo „Děkuji a s pozdravem,“ napiš **„Děkuji a přeji hezký víkend,“**. Zbytek textu a podpis „Marek Pokorný“ zůstává. V ostatní dny platí text výše. Den v týdnu zjisti příkazem `date +%A` (nebo z dnešního data), nehádej ho.
-  - plain text: `Děkuji a přeji hezký víkend,` a pod ním `Marek Pokorný`,
-  - `htmlBody`: `<div>Děkuji a přeji hezký víkend,</div><div>Marek Pokorný</div>` na místě stejného bloku s „Děkuji a s pozdravem,“.
-
-- **Příloha se do konceptu nevkládá.** PDF by se muselo přepsat do volání jako desítky tisíc znaků base64 a jediný chybný znak by fakturu poškodil. Uživateli pošli PDF (SendUserFile) a připomeň mu, ať ho do konceptu přetáhne. Dej mu i odkaz na koncept (`viewUrl`).
+- **Ostatní zákazníci:** e-mail, oslovení a závěr zatím neznáme. Při první faktuře se zeptej, nebo najdi předchozí odeslané e-maily v Gmailu (`in:sent`, adresát zákazníka). Údaje pak přidej do tabulky výše.
+- **V pátek** (podle data, kdy koncept vytváříš) napiš u **JETI** místo „Děkuji a s pozdravem,“ závěr **„Děkuji a přeji hezký víkend,“**. Zbytek textu a podpis zůstává. Den v týdnu zjisti příkazem `date +%A`, nehádej ho. Pro VenPor tuto výjimku uživatel nezadal, tam se pátek neřeší (zeptej se, jestli ji chce i tam).
+- **Příloha se vkládá přímo do konceptu.** V `attachments` dej `content` ve tvaru `sha256:<SHA-256 PDF>:<absolutní cesta k PDF>` (hash spočítej přes `sha256sum`, cesta je `/home/user/Agent-1/vystupy/faktury/Faktura_<číslo>.pdf`), `filename` `Faktura_<číslo>.pdf` a `mimeType` `application/pdf`. Soubor nikdy nepřepisuj do base64 ručně. **PDF nesmí být po výpočtu hashe přegenerované**, jinak hash nesedí. Ověř, že příloha v konceptu je: `list_drafts` s dotazem `in:draft to:<adresa> filename:Faktura_<číslo>.pdf`.
+- **Úprava konceptu (`update_draft`) přílohu smaže.** Když je potřeba koncept změnit, vytvoř nový koncept se stejnou přílohou a starý nech uživateli smazat.
+- Uživateli pošli i PDF (SendUserFile) a odkaz na koncept (`viewUrl`).
 - Když se faktura přečísluje nebo opraví, starý koncept zůstane v Gmailu. Upozorni uživatele, ať ho smaže, a vytvoř nový.
 
 ## Opravy

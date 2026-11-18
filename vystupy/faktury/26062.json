@@ -1,0 +1,26 @@
+{
+  "cislo": "26062",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-11-19",
+  "duzp": "2026-11-19",
+  "splatnost_dni": 30,
+  "odberatel": {
+    "nazev": "VenPor s.r.o.",
+    "adresa": [
+      "Na Hlavaticích 521, Chotěboř",
+      "58301 Chotěboř",
+      "Česká republika"
+    ],
+    "ico": "03321169",
+    "dic": "CZ03321169",
+    "kontakt": "venpor@seznam.cz https://venpor.cz"
+  },
+  "polozky": [
+    {
+      "pocet": 300,
+      "jednotka": "ks",
+      "popis": "IGBT-22022022-P010",
+      "cena": "41.00"
+    }
+  ]
+}

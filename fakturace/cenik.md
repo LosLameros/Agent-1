@@ -24,6 +24,7 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | Klíč V-2 | 32,00 | JETI model s.r.o. | 26059 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |
 | OSIČKA 4022 261 45581-A | 85,00 | VenPor s.r.o. | 26055 |
+| IGBT-22022022-P010 | 41,00 | VenPor s.r.o. | 26062 |
 | Osa L40 | 80,00 | STRANKA s.r.o. | 26046 |
 | Osa L45 | 74,00 | STRANKA s.r.o. | 26046 |
 | Osa L75 | 73,00 | STRANKA s.r.o. | 26046 |

@@ -12,57 +12,57 @@ Nvidia zveřejnila první výsledky bez Jensena Huanga. Tržby i výhled překon
 
 ## Článek
 
-Tržby Nvidie se za rok zdvojnásobily. Ve třetím čtvrtletí fiskálního roku 2027, tedy od srpna do října, firma utržila 115,8 mld. USD. To je o 103 % víc než před rokem a zhruba o 6 % víc, než čekali analytici. Akcie po zveřejnění výsledků posilovaly v obchodování po zavření burzy o 3,5 až 5 %.
+Ve třetím čtvrtletí fiskálního roku 2027, tedy od srpna do října, utržila Nvidia 115,8 mld. USD. Tržby se jí tak za rok víc než zdvojnásobily a analytiky, kteří čekali zhruba 109 mld. USD, firma překonala o 6 %. Akcie po zveřejnění výsledků posilovaly v obchodování po zavření burzy o 3,5 až 5 %.
 
-Výsledky přišly v napjaté době. Před pěti dny odstoupil zakladatel a dlouholetý šéf Jensen Huang a čísla poprvé představovala dočasná ředitelka Colette Kress. Akcie za listopad odepsaly 24 % a od říjnového maxima jsou o 35 % níž. Velkou část poklesu ještě před jeho odchodem způsobila nervozita kolem celého AI sektoru, odchod zakladatele ho pak prohloubil.
+Na takové číslo se přitom čekalo s nervozitou. Jen pět dní předtím odstoupil zakladatel a dlouholetý šéf Jensen Huang a výsledky poprvé představovala dočasná ředitelka Colette Kress. Akcie za listopad odepsaly 24 % a od říjnového maxima jsou o 35 % níž. Velkou část poklesu ještě před Huangovým odchodem způsobila nervozita kolem celého AI sektoru, jeho odchod ji pak prohloubil.
 
 ### Datová centra táhnou dál
 
-Rozhodují datová centra. Nvidia na nich vydělala 107,6 mld. USD, meziročně o 110 % a proti minulému čtvrtletí o 21 % víc. Jde o výkonné počítače, na kterých se učí a běží umělá inteligence. Tvoří už 93 % všech tržeb firmy.
+Hlavní slovo mají datová centra, tedy výkonné počítače, na kterých se učí a běží umělá inteligence. Nvidia na nich vydělala 107,6 mld. USD, meziročně o 110 % a proti minulému čtvrtletí o 21 % víc. Z celkových tržeb firmy tvoří už 93 %.
 
-Růst má dva zdroje. Prvním je nová generace čipů Vera Rubin, jejíž výrobu Nvidia podle vedení rozjela nejrychleji ve své historii. Druhým je změna v tom, kdo čipy kupuje.
+Za růstem stojí dvě věci. Tou první je nová generace čipů Vera Rubin, jejíž výrobu Nvidia podle vedení rozjela nejrychleji ve své historii. Tou druhou je změna v tom, kdo čipy kupuje.
 
-Graf to ukazuje názorně. Hyperscaleři, tedy největší cloudoví hráči jako Microsoft, Google nebo Amazon, utratili u Nvidie 60,1 mld. USD, o 71 % víc než před rokem. Ostatní zákazníci, tedy menší cloudoví poskytovatelé, průmysl a firmy, utratili 47,5 mld. USD. Jejich nákupy se za rok téměř ztrojnásobily a tvoří už 44 % tržeb z datových center.
+Když se podíváte na rozdělení zákazníků, je ta změna vidět na první pohled. Hyperscaleři, tedy největší cloudoví hráči jako Microsoft, Google nebo Amazon, utratili u Nvidie 60,1 mld. USD, o 71 % víc než před rokem. Ostatní zákazníci, tedy menší cloudoví poskytovatelé, průmysl a firmy, za čipy dali 47,5 mld. USD. Jejich nákupy se za rok téměř ztrojnásobily a tvoří už 44 % tržeb z datových center.
 
-Velkou roli hrají neocloudy. Jsou to menší firmy jako CoreWeave nebo Nebius, které nakupují čipy a jejich výkon pronajímají dalším. Pro Nvidii je to dobrá zpráva. Méně závisí na hrstce gigantů, kteří si navíc stále častěji navrhují vlastní čipy.
+Velkou roli v tom hrají takzvané neocloudy, menší firmy jako CoreWeave nebo Nebius, které čipy nakupují a jejich výkon pronajímají dalším. Pro Nvidii je to dobrá zpráva, protože méně závisí na hrstce gigantů. Ti si navíc stále častěji navrhují vlastní čipy.
 
 ### Silný výhled, slabší marže
 
-Vedení výhled dalo, a silný. Na čtvrté čtvrtletí čeká tržby 130 mld. USD, zatímco trh odhadoval zhruba 125 mld. USD. Po odchodu Huanga přitom část investorů pochybovala, jestli firma výhled vůbec zveřejní. Čtvrtletí má ale o týden víc, takže číslo mírně nadsazuje.
+Část investorů pochybovala, jestli firma po odchodu Huanga vůbec dá výhled. Vedení ho nakonec dalo a nad očekáváním: na čtvrté čtvrtletí čeká tržby 130 mld. USD, zatímco trh odhadoval zhruba 125 mld. USD. Toto čtvrtletí má ale o týden víc, takže číslo mírně nadsazuje.
 
-Ziskovost předčila odhady. Upravený zisk na akcii 2,68 USD byl o 9 % nad očekáváním analytiků. Hrubá marže, tedy kolik firmě zůstane z každého dolaru tržeb po zaplacení výroby, činila 74,8 % a překonala i horní hranici vlastního výhledu. Ještě v létě přitom trh řešil, jestli Nvidia zvládne promítnout dražší paměti do cen, a zatím se jí to daří.
+Lépe, než se čekalo, dopadla i ziskovost. Upravený zisk na akcii 2,68 USD byl o 9 % nad očekáváním analytiků. Hrubá marže, tedy kolik firmě zůstane z každého dolaru tržeb po zaplacení výroby, činila 74,8 % a překonala i horní hranici vlastního výhledu. Ještě v létě přitom trh řešil, jestli Nvidia zvládne promítnout dražší paměti do cen. Zatím se jí to daří.
 
-Slabší je jen výhled marže. Ve čtvrtém čtvrtletí má hrubá marže klesnout na 71 až 72 %, což při plánovaných tržbách znamená zhruba o 4 mld. USD méně hrubého zisku. Už mírný pokles proti minulému čtvrtletí firma vysvětlila náběhem výroby čipů Vera Rubin, nová generace bývá zpočátku dražší na výrobu.
+Jediné číslo, které jde špatným směrem, je výhled marže. Ve čtvrtém čtvrtletí má klesnout na 71 až 72 %, což při plánovaných tržbách znamená zhruba o 4 mld. USD méně hrubého zisku. Už mírný pokles proti minulému čtvrtletí firma vysvětlila náběhem výroby čipů Vera Rubin, protože nová generace bývá zpočátku dražší na výrobu.
 
-Čína se vrací do čísel. Zákazníci se sídlem v Číně včetně Hongkongu tvořili 11,1 mld. USD, tedy zhruba 10 % tržeb. Před rokem to byly 3 mld. USD. Čipy pro datová centra z toho ale byly jen za 2,4 mld. USD a ve výhledu na čtvrté čtvrtletí s nimi Nvidia nepočítá vůbec.
+Zajímavě se vyvíjí Čína. Zákazníci se sídlem v Číně včetně Hongkongu tvořili 11,1 mld. USD, tedy zhruba 10 % tržeb, zatímco před rokem to byly 3 mld. USD. Čipy pro datová centra z toho ale byly jen za 2,4 mld. USD a ve výhledu na čtvrté čtvrtletí s nimi Nvidia nepočítá vůbec.
 
 ### Závazky za 390 miliard
 
-Nákupní závazky vzrostly téměř osmkrát. Jde o smlouvy, ve kterých se Nvidia zavázala v budoucnu odebrat komponenty od dodavatelů. Za rok vzrostly z 50 na 390 mld. USD, hlavně kvůli víceletým nákupům pamětí. Funguje to podobně jako restaurace, která si na roky dopředu objedná suroviny za pevnou cenu.
+O tom, jak moc Nvidia věří dalšímu růstu, svědčí její nákupní závazky. Jde o smlouvy, ve kterých se zavázala v budoucnu odebrat komponenty od dodavatelů. Za rok vzrostly téměř osmkrát, z 50 na 390 mld. USD, hlavně kvůli víceletým nákupům pamětí. Funguje to podobně jako restaurace, která si na roky dopředu objedná suroviny za pevnou cenu.
 
-Výhoda a riziko jdou ruku v ruce. Pokud boom umělé inteligence vydrží, má Nvidia zajištěné dodávky v době, kdy jsou paměti nedostatkové. Kdyby ale poptávka zpomalila, zůstanou jí obří závazky, které bude muset zaplatit.
+Pokud boom umělé inteligence vydrží, je to pro Nvidii obrovská výhoda, protože bude mít zajištěné dodávky v době, kdy jsou paměti nedostatkové. Kdyby ale poptávka zpomalila, zůstanou jí obří závazky, které bude muset zaplatit.
 
-Firma zároveň vrací peníze akcionářům. Jen za třetí čtvrtletí jim na zpětných odkupech a dividendách vrátila 28,1 mld. USD. V září navíc schválila dalších 150 mld. USD na zpětné odkupy bez časového omezení a celkem jí na ně zbývá 227 mld. USD, které chce využít zhruba do ledna 2028. Při zpětném odkupu firma kupuje vlastní akcie z trhu, takže na každou zbývající akcii připadne větší díl zisku.
+Akcionářům firma zároveň vrací stále víc peněz. Jen za třetí čtvrtletí jim na zpětných odkupech a dividendách poslala 28,1 mld. USD. V září navíc schválila dalších 150 mld. USD na zpětné odkupy bez časového omezení a celkem jí na ně zbývá 227 mld. USD, které chce využít zhruba do ledna 2028. Při zpětném odkupu firma kupuje vlastní akcie z trhu, takže na každou zbývající akcii připadne větší díl zisku.
 
 ### Kdo povede Nvidii
 
-Představenstvo řeklo jasné ne. Jeho předseda Harvey Jones na hovoru s analytiky uvedl, že Huanga do čela vracet nechce a nového šéfa hledá s pomocí personální agentury. Okolnosti odchodu ani probíhající vyšetřování nekomentoval.
+Předseda představenstva Harvey Jones hned na hovoru s analytiky jasně řekl, že Huanga do čela vracet nechtějí a nového šéfa hledají s pomocí personální agentury. Okolnosti odchodu ani probíhající vyšetřování nekomentoval.
 
-Huang by se přitom vrátil. Ve veřejném dopise napsal, že by mu bylo ctí vyhovět výzvám zaměstnanců, investorů i zákazníků, pokud o tom představenstvo rozhodne. Oficiálně odešel dobrovolně, jeho ochota vrátit se ale naznačuje, že odchod nebyl jen jeho rozhodnutím. Míček je teď na straně představenstva.
+Huang by se přitom vrátil rád. Ve veřejném dopise napsal, že by mu bylo ctí vyhovět výzvám zaměstnanců, investorů i zákazníků, pokud o tom představenstvo rozhodne. Oficiálně odešel dobrovolně, jeho ochota vrátit se ale naznačuje, že odchod nebyl jen jeho rozhodnutím. Míček je teď na straně představenstva.
 
-Nástupce to nebude mít snadné. Huang řídil firmu velmi plochou strukturou, přímo se mu zodpovídalo zhruba 60 lidí a klíčová rozhodnutí se sbíhala u něj. Nvidia přitom neměla předsedu představenstva ani zveřejněný plán nástupnictví, takže trh zatím neví, kdo jeho roli převezme.
+Ať už firmu povede kdokoli, snadné to mít nebude. Huang řídil Nvidii velmi plochou strukturou, přímo se mu zodpovídalo zhruba 60 lidí a klíčová rozhodnutí se sbíhala u něj. Firma přitom neměla předsedu představenstva ani zveřejněný plán nástupnictví, takže trh zatím neví, kdo jeho roli převezme.
 
-Nejcitlivější je vyšetřování. Žena, se kterou měl Huang podle zpráv poměr, zastávala vysokou pozici v singapurské firmě Megaspeed. Jde o neocloud, který z datových center v jihovýchodní Asii pronajímá výpočetní výkon čipů Nvidie. Patřil k velkým zákazníkům Nvidie v regionu a americké úřady ho vyšetřují kvůli podezření z pašování čipů do Číny.
+Ještě citlivější je vyšetřování. Žena, se kterou měl Huang podle zpráv poměr, zastávala vysokou pozici v singapurské firmě Megaspeed. Jde o neocloud, který z datových center v jihovýchodní Asii pronajímá výpočetní výkon čipů Nvidie. Patřil k jejím velkým zákazníkům v regionu a americké úřady ho vyšetřují kvůli podezření z pašování čipů do Číny.
 
-Představenstvo proto jedná opatrně. Nechalo prověřit, zda Huang nebyl cílem čínské zpravodajské služby, a zřídilo nový výbor pro národní bezpečnost a kontrolu vývozu. Pro firmu, jejíž obchod stojí na vývozních licencích, je to velmi citlivé téma. Pokud by se podezření potvrdila, mohla by to být pro Nvidii velká komplikace, i kdyby se Huang do čela vrátil.
+Představenstvo proto nechalo prověřit, zda Huang nebyl cílem čínské zpravodajské služby, a zřídilo nový výbor pro národní bezpečnost a kontrolu vývozu. Pro firmu, jejíž obchod stojí na vývozních licencích, je to velmi citlivé téma. Pokud by se podezření potvrdila, mohla by to být pro Nvidii velká komplikace, i kdyby se Huang do čela vrátil.
 
 ### Co to znamená pro investory
 
-Byznys zatím drží i bez zakladatele. Poptávka po čipech nepolevuje a čísla předčila očekávání ve všech hlavních ukazatelích. Rizika ale přibyla: nejisté vedení, vyšetřování, obří závazky a klesající marže.
+Byznys tedy zatím drží i bez zakladatele, poptávka po čipech nepolevuje a čísla předčila očekávání ve všech hlavních ukazatelích. Rizika ale přibyla: nejisté vedení, vyšetřování, obří závazky a klesající marže.
 
-Jedna firma dokáže hýbat celým trhem. Nvidia má tržní hodnotu kolem 3,8 bil. USD a patří k největším firmám amerických i světových indexů. Její výkyvy proto pocítí i investoři, kteří ji přímo nedrží.
+Nvidia má tržní hodnotu kolem 3,8 bil. USD a patří k největším firmám amerických i světových indexů. Její výkyvy proto pocítí i investoři, kteří ji přímo nedrží.
 
-Pomáhá rozložení peněz. Kdo nechce, aby jeho úspory stály a padaly s osudem jedné firmy, řeší to obvykle rozložením do stovek firem a různých regionů, například přes portfolia rozdělená podle rizikového profilu. U amerických akcií navíc hraje roli i kurz dolaru vůči koruně.
+Kdo nechce, aby jeho úspory stály a padaly s osudem jedné firmy, řeší to obvykle rozložením peněz do stovek firem a různých regionů, například přes portfolia rozdělená podle rizikového profilu. U amerických akcií navíc hraje roli i kurz dolaru vůči koruně.
 
 Nvidia ukázala, že boom umělé inteligence zatím pokračuje. O dalším směru akcie ale víc než čísla rozhodne to, kdo firmu povede. Pokud představenstvo rychle najde přesvědčivého nástupce a poptávka vydrží, může se nálada kolem akcií rychle obrátit k lepšímu. Pokud by se ale nejistota ve vedení táhla a marže dál klesaly, mohou akcie zůstat pod tlakem i přes rekordní tržby.
 

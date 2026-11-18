@@ -55,7 +55,7 @@ Než začneš psát, dohledej si aktuální data. Platí:
 
 ## KROK 3 – STYLISTICKÁ A SROZUMITELNOSTNÍ PRAVIDLA
 
-- **Krátký otvírák.** První věta odstavce má maximálně 8 slov.
+- **Různorodé začátky odstavců.** Odstavce nesmí začínat pořád stejným vzorcem. Krátká úderná první věta je v pořádku občas, ne u každého odstavce, jinak text působí jako od AI (autorova připomínka u článku o výsledcích Nvidie). Střídej začátek číslem, souvislostí s předchozím odstavcem, vedlejší větou, otázkou nebo delší větou s hlavní myšlenkou. Čtenář, který čte jen první věty odstavců, ale musí dál sledovat kostru článku.
 - **Aktivní slovesa.** Žádný trpný rod („bylo oznámeno" → „firma oznámila").
 - **Žádné řetězení infinitivů** („snažit se začít investovat").
 - **Průměrná délka věty do 20 slov.** Střídej krátké a delší věty.
@@ -135,7 +135,7 @@ Odevzdej v tomto pořadí:
 
 **Styl**
 
-- [ ] Začíná každý odstavec větou do 8 slov?
+- [ ] Začínají odstavce různě, ne pořád krátkou úderně stavěnou větou?
 - [ ] Není v textu trpný rod ani zakázaný obrat?
 - [ ] Nezní žádná věta jako z AI?
 

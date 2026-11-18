@@ -16,7 +16,7 @@ Ve třetím čtvrtletí fiskálního roku 2027, tedy od srpna do října, utrži
 
 Na takové číslo se přitom čekalo s nervozitou. Jen pět dní předtím odstoupil zakladatel a dlouholetý šéf Jensen Huang a výsledky poprvé představovala dočasná ředitelka Colette Kress. Akcie za listopad odepsaly 24 % a od říjnového maxima jsou o 35 % níž. Velkou část poklesu ještě před Huangovým odchodem způsobila nervozita kolem celého AI sektoru, jeho odchod ji pak prohloubil.
 
-### Datová centra táhnou dál
+### Datová centra drží tempo
 
 Hlavní slovo mají datová centra, tedy výkonné počítače, na kterých se učí a běží umělá inteligence. Nvidia na nich vydělala 107,6 mld. USD, meziročně o 110 % a proti minulému čtvrtletí o 21 % víc. Z celkových tržeb firmy tvoří už 93 %.
 

@@ -15,7 +15,7 @@ Projdi tyto zdroje a vyber zprávy od posledního vydání newsletteru, tedy od 
 
 - **Yahoo Finance, HN, E15:** stránky jdou stáhnout přímo (`curl` nebo WebFetch).
 - **Patria, Seznam Zprávy:** při stahování následuj přesměrování (`curl -L`). Plné články Patrie bývají za placenou zdí, perex ale stačí.
-- **Bloomberg, CNBC:** přímo nejdou otevřít (403), hledej je přes WebSearch s `allowed_domains`.
+- **Bloomberg, CNBC:** přímo nejdou otevřít (403), hledej je přes WebSearch s `allowed_domains`. V každém běhu odpoledne a večer (14:30, 17:30) projdi i CNBC „Stocks making the biggest moves“ za daný den a hledej velké pohyby akcií velkých firem (např. pád AMD o 8 % po short reportu Hunterbrooku).
 - **XTB, Ranní shrnutí (důležité, každý den):** seznam článků je na https://www.xtb.com/cz/trzni-analyzy/zpravy-z-trhu. Každý den najdi dnešní „Ranní shrnutí“, přečti ho celé a zapiš **vždy** jeden souhrnný tip se všemi tématy, která shrnutí pokrývá (indexy, měny, komodity, firmy, makrodata, události dne). **XTB je konkurence: nikdy na ni neodkazuj a v dokumentu ji nejmenuj.** Shrnutí ti slouží jen jako seznam témat. Ke každému tématu dohledej původní zdroj (CNBC, Yahoo Finance, Bloomberg, Reuters, Patria, HN, E15, Seznam Zprávy, případně oficiální zdroj jako ČSÚ nebo Fed) a odkaz dej na něj. Pokud pro téma původní zdroj nenajdeš, téma vynech. Tento tip se zapisuje i tehdy, když se témata překrývají s tím, co v kartě už je, a nepočítá se do limitů níže. Zapisuje ho první běh dne, ve kterém už je shrnutí venku (obvykle 8:30, jinak 11:30). Pokud tip s dnešním Ranním shrnutím v kartě už je, znovu ho nepiš.
 
 ## Co vybírat

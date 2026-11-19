@@ -35,11 +35,23 @@ Nevybírej drobné firemní zprávy, analytické cílové ceny ani spekulace bez
 
 Pravidla:
 
-- **Max. 3 nové tipy za jeden běh.** Častěji 0–2. Když nic důležitého nového není, nepiš nic.
-- **Celkem max. 20 tipů na kartu (týden), bez tipů z Ranního shrnutí XTB.** Když už jich tam tolik je, přidej nový jen tehdy, když je důležitější než většina stávajících.
+- **Max. 3 nové tipy za jeden běh.** Častěji 0–2. Když nic důležitého nového není, nepiš nic. Výjimka: v pátečním běhu v 8:30 se do limitu nepočítají odstavce k poznámkám „V pátek (ráno) doplnit…“ – napiš všechny, které už jde napsat.
+- **Celkem max. 25 tipů na kartu (týden), bez tipů z Ranního shrnutí XTB.** Když už jich tam tolik je, přidej nový jen tehdy, když je důležitější než většina stávajících.
 - **Žádné duplicity.** Před zápisem porovnej téma se vším, co v kartě už je: s odstavci kolegů, jejich odkazy i s dřívějšími tipy. Shoda tématu stačí, i když je jiný zdroj nebo jiná formulace. Pokud téma dostalo zásadní nový vývoj (např. IPO má stanovenou cenu), smíš přidat nový tip, ale napiš v něm, co je nového.
 - **Jen ověřená fakta.** Klíčové číslo ověř aspoň ve druhém zdroji, pokud to jde. Nic si nedomýšlej. Když si nejsi jistý, tip nepiš.
 - U zpráv o Anthropicu buď čistě věcný, protože jde o firmu, která tě vyvinula.
+
+## Páteční aktualizace (běh v pátek v 8:30)
+
+Příběhy se během týdne vyvíjejí (např. IPO Anthropicu: nejdřív rozpětí ceny, pak konečná cena, pak první den obchodování; návrat Huanga do Nvidie, který představenstvo nakonec vyloučilo). Proto v pátek ráno, před vydáním newsletteru:
+
+1. Projdi **všechny odstavce pod nadpisem „Tipy na témata (Claude)“**, které vznikly z monitoringu, i ty, které už kolegové upravili.
+2. U každého ověř, jestli fakta a čísla pořád platí. Hledej nový vývoj od chvíle, kdy odstavec vznikl.
+3. Co už neplatí, oprav: nová čísla, konečný výsledek, změněný vývoj. Úpravy kolegů (formulace, opener, zkrácení) zachovej a měň jen zastaralá fakta. Pokud se příběh otočil natolik, že odstavec nedává smysl, přepiš ho celý. Pravidla délky, tučného písma a odkazů platí i pro upravený text, a když nová fakta pocházejí z jiného zdroje, změň i odkaz.
+4. Neaktualizuj „Ranní přehledy trhů“ (jsou to denní snímky) ani poznámky a texty kolegů nad nadpisem.
+5. Pak napiš odstavce ke všem poznámkám „V pátek (ráno) doplnit…“ (viz výjimka z limitu výše).
+
+V odpovědi na konci běhu vyjmenuj i to, které odstavce jsi aktualizoval a co se v nich změnilo.
 
 ## Formát zápisu
 
@@ -57,7 +69,7 @@ Pravidla:
   - **Vytuč to nejdůležitější**, jako v předchozích newsletterech: kromě openeru 2–4 klíčová fakta (hlavní čísla, jména, klíčové sdělení), aby čtenář pochopil zprávu i jen z tučného textu.
 - Písmo Rethink Sans (weight 400), netučné, kromě nadpisu sekce a openeru odstavce.
 - Vkládej přes `insertText` s `endOfSegmentLocation` (`tabId` karty), pak nastav styl a odkaz podle indexů. Použij `requiredRevisionId` z posledního `read_doc`.
-- **Nic jiného v dokumentu neměň ani nemaž.**
+- **Nic jiného v dokumentu neměň ani nemaž.** Jedinou výjimkou je páteční aktualizace odstavců z monitoringu (viz výše).
 
 Protože odstavce nemají žádné označení, duplicity a limit kontroluj podle obsahu celé karty: každý odstavec v kartě (od kolegů i tvůj) je jedno téma.
 

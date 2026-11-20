@@ -12,6 +12,8 @@ Automatická úloha běží 4× denně (8:30, 11:30, 14:30 a 17:30 pražského �
 4. **Pokud není:** pokračuj normálně podle pravidel níže.
 5. Pozastavení platí jen pro tuto kartu. Až další pátek ve 20:00 vznikne nová karta, začíná se znovu (hledá se zpráva až po tomto čase, takže stará zpráva monitoring znovu nezastaví).
 6. **Pokud se Slack nepodaří přečíst** (konektor nenaběhl, chyba), nepiš do dokumentu nic a v odpovědi to napiš, aby se nepřepsal už zkontrolovaný text.
+7. **Znovu zkontroluj Slack těsně před každým zápisem do dokumentu** (před každým voláním `update_doc`, ne jen na začátku běhu). Běh trvá i několik minut a newsletter může odejít na kontrolu uprostřed něj. Nejdřív si v klidu připrav všechny požadavky, pak přečti #newsletter a teprve když odeslání pořád nevidíš, hned zapiš. Jakmile ho uvidíš, nezapisuj nic a skonči stejně jako v bodě 3.
+8. **Pátek 11:00–16:00 je okno, kdy se newsletter obvykle odesílá.** V běhu, který v tomto okně probíhá (11:30, 14:30), buď s kontrolou z bodu 7 obzvlášť důsledný, a pokud je už newsletter odeslaný, v dokumentu nic neměň.
 
 ## Kam psát
 

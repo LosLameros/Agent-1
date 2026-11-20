@@ -300,6 +300,16 @@ Když zadavatel pošle screeny investic klienta u jiného poskytovatele (banka, 
 - **Srovnávej jen to, co je srovnatelné** („nesrovnávej jablka s hrušky“). Tematický fond (např. umělá inteligence) srovnávej jen s ETF **stejného zaměření**, ne s obecnými technologiemi nebo indexy. Akciový fond srovnávej s Portfoliem od Portu, ne s jednotlivými ETF.
 - **E-mail klientovi:** nepiš ke jménu fondu zkratky správce ani v závorkách. U zisku napiš, co znamená („máte ho v zisku 28 %“, tedy od nákupu). U slova „zaostává“ vždy uveď za čím (např. za Portfoliem od Portu) a s čísly. Na konec e-mailu nepiš podpis, kontakt, výkonnostní ani daňový disclaimer, to je v patičce zadavatele.
 
+**Tón a struktura e-mailu o cizích fondech (podle verze, kterou zadavatel nakonec odeslal):**
+- **Začátek:** krátké oslovení a jedna věta navazující na klienta („díky za zaslání“). Žádný úvod typu „prošel jsem Vaše fondy… dohromady zhruba X Kč“ a žádné „shrnutí posílám níže“. Rovnou následují fondy. Předmět nepiš, e-mail je odpověď na zprávu klienta.
+- **Pro každý fond:** nadpis s názvem a hodnotou, odstavec (zaměření, zisk od nákupu, výkonnost za delší dobu, poplatky, alternativa), věta, co výkonnost obsahuje (po poplatcích, kterých), a tabulka. Tabulky a čísla zůstávají beze změny.
+- **Doporučení „Co doporučuji“ piš osobně a kratce**, v řeči poradce: „Za mě dává smysl prodej a přesun v obou případech.“ Neposkytuj klientovi výběr mezi více portfolii. Zvol jedno a zdůvodni ho. U akciového fondu, který se přesouvá do Portfolia od Portu, je to **dynamické portfolio**, ne volba mezi Růstovým, Vyváženým a Konzervativním.
+- **Investice do Portfolia od Portu rozlož do týdenních vkladů** po dobu zhruba 4 až 5 měsíců, pokud je na trhu nervozita nebo volatilita (uveď to jako důvod). Platí pravidlo z kap. 6f o pravidelných vkladech.
+- **Tematický fond** nahrazuj jen ETF stejného zaměření a řekni, kde ho klient koupí: „v rámci Portfolia podle vás nebo v Brokerage“. Nenabízej k němu Portfolio od Portu jako druhou možnost.
+- **Daně** jen jedním odstavcem: oba fondy dohromady přesahují limit 100 000 Kč a prodej se dá rozdělit do dvou let (jeden fond letos, druhý v lednu), daň závisí na délce držení. Bez slibu „ověřím to s Vámi“. Ponech rozhodnutí na klientovi („Prodej můžete rozdělit do dvou let“).
+- **Závěr:** nenabízej provedení, nepiš „pokud budete souhlasit, projdu s Vámi prodej“. Požádej o názor a pozdrav jednou větou: „Budu rád za Váš pohled a přeji hezký víkend.“ Den v týdnu přizpůsob odeslání.
+- **Kontrola před odevzdáním:** pravopis (v odeslané verzi zadavatel opravoval překlepy typu „na na“, „můžete rozdělil“), shoda oslovení se jménem klienta a že věta „fond je v zisku“ říká, od kdy.
+
 Výstup: samostatný soubor `analyza-fondu.md` ve výstupní složce (zaměření, poplatky, výkonnost, tabulka alternativ, roční náklady, závěr, výhrady) a v e-mailu klientovi shrnutí s tabulkami. Pokud klient fondy po prodeji nahradí, připomeň v revizi limit 100 000 Kč za rok a rozložení prodejů do více let.
 
 # 7. VÝSTUP

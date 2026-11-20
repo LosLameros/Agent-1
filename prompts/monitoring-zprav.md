@@ -2,6 +2,17 @@
 
 Automatická úloha běží 4× denně (8:30, 11:30, 14:30 a 17:30 pražského času). Do Google dokumentu „Newsletter Portu v2“ připisuje tipy na zprávy, o kterých by se v pátečním newsletteru dalo psát.
 
+## Nejdřív zkontroluj Slack: newsletter už není odeslaný na kontrolu?
+
+**Hned na začátku každého běhu**, před čímkoli jiným (před procházením zdrojů i před čtením dokumentu), zjisti, jestli už newsletter pro tuto kartu odešel redakci ke kontrole. Od té chvíle se text nesmí měnit, takže monitoring i přepisování trhu končí.
+
+1. Přečti Slack kanál **#newsletter** (ID `C02T5M4AJPN`, `slack_read_channel`, `oldest` = poslední pátek 20:00 pražského času, tedy chvíle, kdy vznikla aktuální karta).
+2. Newsletter je odeslaný na kontrolu, pokud v kanálu od té chvíle existuje zpráva od **Lukáše Rašky** (`U040MK6TFB9`) nebo od **uživatele, který úlohu zadal** (Slack účet `U048VFC90F7`), která obsahuje odkaz na dokument `11dCllxM5wgdFW6etivphnbV-7blr2JpL9-4NHvoME3w`. Takhle to dělají: píšou „Dnešní NL“, vloží odkaz na dokument a označí kolegy, kteří newsletter kontrolují. Rozhoduje obsah (odkaz na dokument od těchto dvou lidí), ne přesná formulace. Zprávy jiných lidí (např. texty do newsletteru od kolegů) se nepočítají.
+3. **Pokud je odeslaný:** nic nepiš, nic nemaž, nic neaktualizuj (ani ranní přehled trhů, ani páteční aktualizaci) a do dokumentu vůbec nesahej. Odpověz jedním řádkem: „newsletter už je odeslaný na kontrolu, monitoring pozastaven“.
+4. **Pokud není:** pokračuj normálně podle pravidel níže.
+5. Pozastavení platí jen pro tuto kartu. Až další pátek ve 20:00 vznikne nová karta, začíná se znovu (hledá se zpráva až po tomto čase, takže stará zpráva monitoring znovu nezastaví).
+6. **Pokud se Slack nepodaří přečíst** (konektor nenaběhl, chyba), nepiš do dokumentu nic a v odpovědi to napiš, aby se nepřepsal už zkontrolovaný text.
+
 ## Kam psát
 
 - Dokument: `11dCllxM5wgdFW6etivphnbV-7blr2JpL9-4NHvoME3w` (Google Docs `read_doc` / `update_doc`).

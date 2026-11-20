@@ -295,6 +295,11 @@ Když zadavatel pošle screeny investic klienta u jiného poskytovatele (banka, 
    - Vyber 3–5 nejbližších alternativ podle zaměření (např. S&P 500 místo aktivního amerického fondu, ETF na umělou inteligenci místo aktivního AI fondu) a ukaž tabulku TER, 1 rok, 3 roky p.a., 5 let p.a. spolu s původním fondem.
    - ETF na Portu jsou v USD/EUR, korunové třídy fondů v CZK s jinými daty. Srovnání proto označ jako orientační.
 
+**Pravidla srovnání (potvrzeno zadavatelem):**
+- **Cílem je přesun klienta do Portfolií od Portu**, ze kterých Portu bere roční poplatek. Aktivní fond proto vždy srovnávej s **Portfoliem od Portu**: Konzervativní, Vyvážené, Růstové. Výkonnost najdeš na `https://www.portu.cz/lepsi-vynosy`. Stránka se vykreslí až v prohlížeči (Playwright), data jdou z `https://app.portu.cz/api/v1/staticdata/portfolio-performance/CZK`. Tabulka „Průměrná čistá roční výkonnost“ má 10 let, 5 let, 3 roky a 1 rok po poplatku Portu 1 % ročně a datum, ke kterému platí. Do srovnání dej všechna tři portfolia, nejblíže akciovému fondu je Růstové.
+- **Srovnávej jen to, co je srovnatelné** („nesrovnávej jablka s hrušky“). Tematický fond (např. umělá inteligence) srovnávej jen s ETF **stejného zaměření**, ne s obecnými technologiemi nebo indexy. Akciový fond srovnávej s Portfoliem od Portu, ne s jednotlivými ETF.
+- **E-mail klientovi:** nepiš ke jménu fondu zkratky správce ani v závorkách. U zisku napiš, co znamená („máte ho v zisku 28 %“, tedy od nákupu). U slova „zaostává“ vždy uveď za čím (např. za Portfoliem od Portu) a s čísly. Na konec e-mailu nepiš podpis, kontakt, výkonnostní ani daňový disclaimer, to je v patičce zadavatele.
+
 Výstup: samostatný soubor `analyza-fondu.md` ve výstupní složce (zaměření, poplatky, výkonnost, tabulka alternativ, roční náklady, závěr, výhrady) a v e-mailu klientovi shrnutí s tabulkami. Pokud klient fondy po prodeji nahradí, připomeň v revizi limit 100 000 Kč za rok a rozložení prodejů do více let.
 
 # 7. VÝSTUP

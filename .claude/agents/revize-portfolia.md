@@ -279,6 +279,24 @@ Počet týdenních vkladů: 4 měsíce = 16 vkladů, obecně zhruba 4 vklady za 
 
 Když e-mail uvádí výnosy, na jeho konec patří řádek: „Historické výnosy nejsou zárukou budoucích výnosů a cílový výnos není zaručený.“
 
+## 6g. Fondy a instrumenty od cizího poskytovatele (postup potvrzený zadavatelem)
+
+Když zadavatel pošle screeny investic klienta u jiného poskytovatele (banka, fondová společnost, broker), udělej u každého fondu nebo ETF vždy tyto tři věci:
+
+1. **Výkonnost za posledních 10 let, nebo od založení, pokud existuje kratší dobu.** Uveď 1 rok, 3 roky p.a., 5 let p.a. a 10 let p.a. (nebo od založení p.a. a celkem) a datum dat. Zdroje:
+   - PorovnejFondy.cz (výkonnost, TER, pořadí v kategorii),
+   - měsíční přehledy Amundi KB (`https://www.amundi-kb.cz/cz/download/pdf/detail/fund/<ISIN>`, PDF s tabulkou „Výkon p.a.“; stáhni a převeď přes `pdftotext`),
+   - historie hodnoty podílu na eic.eu (`https://eic.eu/cz/fond/<kód>/nav?navl-p=<strana>`), z ní spočti výkonnost od založení: (aktuální hodnota ÷ první hodnota)^(1 ÷ počet let) − 1.
+   Nikdy nedomýšlej čísla. Co nenajdeš, označ „neuvedeno“.
+2. **Poplatky:** TER (průběžné náklady), vstupní poplatek, poplatek při odkupu a případný výkonnostní poplatek. Zdroje: ceník fondů banky (např. KB), PorovnejFondy.cz, comdirect, dokument KID. Údaj, který pochází jen z třetí strany, takto označ. Přepočti TER na roční náklady v Kč při dnešní hodnotě pozice.
+3. **Levnější alternativa na Portu s lepší nebo srovnatelnou výkonností.** Prohledej celou nabídku Portu (stovky instrumentů), ne jen známé tituly:
+   - Seznam instrumentů je na `https://www.portu.cz/strategie/seznam-instrumentu` a načítá se přes API (v prohlížeči se vykreslí až po načtení). Stáhni ho přímo: `POST https://app.portu.cz/api/v1/expert/filtered-instruments` s tělem `{"Locale":"cs","Page":1,"PageSize":1000,"Product":1,"Tags":[]}` a hlavičkami `Content-Type: application/json`, `Origin: https://www.portu.cz`. `Product` 1 je Portfolio podle vás (zhruba 380 instrumentů), `Product` 5 Brokerage (zhruba 389). API není veřejně zdokumentované a může se změnit. Když neodpoví, otevři stránku přes Playwright (Chromium je v prostředí) a zachyť požadavek.
+   - Položky mají `TER` (zlomek, 0.0035 = 0.35 %), `MonthlyReturns` (klíče „3“, „12“, „36“, „60“ jsou kumulativní výnosy za tolik měsíců jako zlomek) a `StandardDeviation`. Roční výnos spočti jako (1 + kumulativní)^(1 ÷ roky) − 1. Typ je v `PrimaryAssetClassCode` (ETF, Equity, Cryptocurrency).
+   - Vyber 3–5 nejbližších alternativ podle zaměření (např. S&P 500 místo aktivního amerického fondu, ETF na umělou inteligenci místo aktivního AI fondu) a ukaž tabulku TER, 1 rok, 3 roky p.a., 5 let p.a. spolu s původním fondem.
+   - ETF na Portu jsou v USD/EUR, korunové třídy fondů v CZK s jinými daty. Srovnání proto označ jako orientační.
+
+Výstup: samostatný soubor `analyza-fondu.md` ve výstupní složce (zaměření, poplatky, výkonnost, tabulka alternativ, roční náklady, závěr, výhrady) a v e-mailu klientovi shrnutí s tabulkami. Pokud klient fondy po prodeji nahradí, připomeň v revizi limit 100 000 Kč za rok a rozložení prodejů do více let.
+
 # 7. VÝSTUP
 
 Vrať (a ulož jako `revize.md` ve výstupní složce, kap. 0) v tomto pořadí.

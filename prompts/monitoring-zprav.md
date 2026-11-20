@@ -27,7 +27,7 @@ Newsletter má **maximálně 13 odstavců**, takže do dokumentu patří jen opr
 - výsledky a zásadní zprávy velkých firem (Big Tech, Nvidia, velké IPO, megafúze) a českých titulů (ČEZ, KB, Moneta, CSG, Colt…)
 - AI boom a jeho financování, geopolitika s dopadem na trhy, regulace, daně a novinky pro drobné investory (DIP apod.)
 
-**Nepiš o událostech, které teprve proběhnou před pátečním vydáním** (výsledky firem, IPO, zasedání centrálních bank, makrodata, volby). V pátek se píše o tom, jak dopadly, takže odstavec typu „zítra zveřejní výsledky“ nedává smysl. Napiš ho až poté, co událost proběhne: **ráno následujícího dne (běh v 8:30), až se reakce trhu trochu usadí**, ne až v pátek. Např. výsledky Nvidie zveřejněné v úterý večer patří do odstavce ve středu ráno. Do té doby dej na **začátek karty pod nadpis a šedý řádek** jednovětou poznámku na samostatný řádek (mezi poznámkami i za nimi prázdný řádek), např. „Ve středu ráno doplnit výsledky Nvidie (zveřejní je v úterý 17. 11. po zavření burzy).“, pokud tam taková poznámka ještě není. Až nastane čas, napiš odstavec na konec karty. Poznámku nemaž, to udělá redakce. Výjimkou jsou jen věci, které se do pátku nerozhodnou a samy o sobě jsou zprávou (např. ohlášení budoucího IPO s novými parametry, které do pátku nezačne).
+**Nepiš o událostech, které teprve proběhnou před pátečním vydáním** (výsledky firem, IPO, zasedání centrálních bank, makrodata, volby). V pátek se píše o tom, jak dopadly, takže odstavec typu „zítra zveřejní výsledky“ nedává smysl. Napiš ho až poté, co událost proběhne: **ráno následujícího dne (běh v 8:30), až se reakce trhu trochu usadí**, ne až v pátek. Např. výsledky Nvidie zveřejněné v úterý večer patří do odstavce ve středu ráno. Do té doby dej na **začátek karty pod nadpis a šedý řádek** jednovětou poznámku na samostatný řádek (mezi poznámkami i za nimi prázdný řádek), např. „Ve středu ráno doplnit výsledky Nvidie (zveřejní je v úterý 17. 11. po zavření burzy).“, pokud tam taková poznámka ještě není. Až nastane čas, napiš odstavec na konec karty a **poznámku hned smaž** (i s prázdným řádkem za ní), aby v kartě nezůstávaly vyřízené připomínky. Výjimkou jsou jen věci, které se do pátku nerozhodnou a samy o sobě jsou zprávou (např. ohlášení budoucího IPO s novými parametry, které do pátku nezačne).
 
 Hlídej i pokračování velkých příběhů z minulých vydání (např. skandál a nástupnictví v Nvidii). Zásadní zvrat, jako možný návrat odvolaného šéfa, je samostatný tip, i když se o firmě už psalo. Projdi i články, které vzniknou přes víkend.
 
@@ -49,7 +49,7 @@ Příběhy se během týdne vyvíjejí (např. IPO Anthropicu: nejdřív rozpět
 2. U každého ověř, jestli fakta a čísla pořád platí. Hledej nový vývoj od chvíle, kdy odstavec vznikl.
 3. Co už neplatí, oprav: nová čísla, konečný výsledek, změněný vývoj. Úpravy kolegů (formulace, opener, zkrácení) zachovej a měň jen zastaralá fakta. Pokud se příběh otočil natolik, že odstavec nedává smysl, přepiš ho celý. Pravidla délky, tučného písma a odkazů platí i pro upravený text, a když nová fakta pocházejí z jiného zdroje, změň i odkaz.
 4. Neaktualizuj „Ranní přehledy trhů“ (jsou to denní snímky) ani poznámky a texty kolegů nad nadpisem.
-5. Pak napiš odstavce ke všem poznámkám „V pátek (ráno) doplnit…“ (viz výjimka z limitu výše).
+5. Pak napiš odstavce ke všem poznámkám „V pátek (ráno) doplnit…“ (viz výjimka z limitu výše) a vyřízené poznámky smaž.
 
 V odpovědi na konci běhu vyjmenuj i to, které odstavce jsi aktualizoval a co se v nich změnilo.
 

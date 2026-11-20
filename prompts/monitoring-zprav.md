@@ -66,6 +66,15 @@ Příběhy se během týdne vyvíjejí (např. IPO Anthropicu: nejdřív rozpět
 
 V odpovědi na konci běhu vyjmenuj i to, které odstavce jsi aktualizoval a co se v nich změnilo.
 
+## Šetři tokeny
+
+Úloha běží několikrát denně v dlouhé relaci, takže zbytečná práce se rychle sečte. Kvalitu odstavců to nesnižuje, jde jen o zbytečné opakování:
+
+1. **WebSearch dělej v režimu `standard`.** Režim `extended` jen když standardní výsledek vyjde prázdný nebo zastaralý, nebo když ověřuješ klíčové číslo důležité zprávy. Na běh stačí zhruba 3–5 hledání. Nehledej znovu, co už je v kartě.
+2. **O víkendu (sobota, neděle) dělej jen běh v 8:30.** Běhy v 11:30, 14:30 a 17:30 skonči hned po kontrole dne jednou větou „víkend, běh přeskočen“ a nic nehledej. Víkendový běh v 8:30 zapíše ranní přehled trhů a případně jednu opravdu zásadní zprávu.
+3. **Nevypisuj hotové požadavky do terminálu před zápisem.** Skript (Python) ať vypíše jen potřebné indexy a délky (kde odstavec začíná a končí, kolik má znaků). Požadavky pro `update_doc` pak napiš jednou rovnou do volání. Celé JSON s textem odstavců nikdy netiskni na obrazovku zvlášť.
+4. **Ranní shrnutí XTB čti přímo přes WebFetch** (seznam článků a pak jeden článek). Pomocného agenta (`web-fetch`) používej jen tehdy, když WebFetch není dostupný.
+
 ## Formát zápisu
 
 - Na začátku karty je tučný nadpis **„Tipy na témata (Claude)“** a pod ním šedý kurzívový řádek „Aktualizuje se automaticky 4× denně (8:30, 11:30, 14:30 a 17:30). Odstavce jsou rovnou připravené do newsletteru.“ Pokud chybí, doplň je.

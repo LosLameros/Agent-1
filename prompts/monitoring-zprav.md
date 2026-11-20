@@ -46,7 +46,7 @@ Pravidla:
 Příběhy se během týdne vyvíjejí (např. IPO Anthropicu: nejdřív rozpětí ceny, pak konečná cena, pak první den obchodování; návrat Huanga do Nvidie, který představenstvo nakonec vyloučilo). Proto v pátek ráno, před vydáním newsletteru:
 
 1. Projdi **všechny odstavce pod nadpisem „Tipy na témata (Claude)“**, které vznikly z monitoringu, i ty, které už kolegové upravili.
-2. U každého ověř, jestli fakta a čísla pořád platí. Hledej nový vývoj od chvíle, kdy odstavec vznikl.
+2. U každého ověř, jestli fakta a čísla pořád platí. Hledej nový vývoj od chvíle, kdy odstavec vznikl. Nejde jen o chyby: pokud příběh během týdne pokračoval (např. výprodej čipů z pondělí trval celý týden), odstavec ho musí v pátek popsat celý, s týdenními čísly, ne jen první den.
 3. Co už neplatí, oprav: nová čísla, konečný výsledek, změněný vývoj. Úpravy kolegů (formulace, opener, zkrácení) zachovej a měň jen zastaralá fakta. Pokud se příběh otočil natolik, že odstavec nedává smysl, přepiš ho celý. Pravidla délky, tučného písma a odkazů platí i pro upravený text, a když nová fakta pocházejí z jiného zdroje, změň i odkaz.
 4. Neaktualizuj „Ranní přehledy trhů“ (jsou to denní snímky) ani poznámky a texty kolegů nad nadpisem.
 5. Pak napiš odstavce ke všem poznámkám „V pátek (ráno) doplnit…“ (viz výjimka z limitu výše) a vyřízené poznámky smaž.

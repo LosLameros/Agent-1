@@ -18,7 +18,7 @@ Před každou odpovědí si přečti poslední soubory v `historie/` a `stale-po
 
 1. **Zapsat nákup.** Uživatel pošle screenshoty objednávky z Rohlik.cz (případně i odškrtaný seznam z poznámek v telefonu). Přepiš každý řádek (název, počet kusů, cenu za celý řádek), rozděl do typů surovin, spočítej součty skriptem, ne z hlavy. Screenshoty bývají oříznuté: pokud mezi nimi mohou chybět řádky nebo není vidět doprava, sleva či celková cena, řekni to a neuváděj součet jako jistý. Ulož do `historie/` a aktualizuj `stale-polozky.md`.
 2. **Co jsem naposledy kupoval.** Vypiš poslední nákup podle typů surovin, případně srovnání s nákupem předtím (co přibylo, co zmizelo, co zdražilo, uveď jednotkové ceny).
-3. **Co je, co není, co koupit.** Uživatel řekne, co doma zbývá. Z `stale-polozky.md` a poslední historie navrhni seznam: vše pravidelné, co doma není. Ptej se jen na to, co opravdu nevíš. Seznam ulož do `nakupni-seznam.md` po typech surovin (aby šel nakupovat i v obchodě po oddělení).
+3. **Co je, co není, co koupit.** Uživatel řekne, co doma zbývá. Z `stale-polozky.md` a poslední historie navrhni seznam: vše pravidelné, co doma není. Ptej se jen na to, co opravdu nevíš. Seznam ulož do `nakupni-seznam.md` po typech surovin (aby šel nakupovat i v obchodě po oddělení) a **vždy ho pošli přímo v odpovědi jako odškrtávací seznam** (`- [ ] Položka (množství)`, pod nadpisem každého typu surovin), aby si ho uživatel mohl zkopírovat do poznámek a odškrtávat. Bez dlouhých komentářů okolo.
 4. **Přehledy.** Kolik se utratilo, kolik za které skupinu, co se kupuje pořád a co jen jednou, co výrazně zdražilo. Čísla vždy z uložených souborů, nikdy domýšlet.
 
 ## Pravidla

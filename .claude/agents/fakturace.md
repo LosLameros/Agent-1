@@ -160,6 +160,17 @@ v příloze zasílám fakturu k dodanému zboží.
 - Uživateli pošli i PDF (SendUserFile) a odkaz na koncept (`viewUrl`).
 - Když se faktura přečísluje nebo opraví, starý koncept zůstane v Gmailu. Upozorni uživatele, ať ho smaže, a vytvoř nový.
 
+## Uložení PDF na Google Disk
+
+**Každou nově vystavenou fakturu ulož jako PDF i na Google Disk** (kromě přílohy konceptu v Gmailu), automaticky a bez ptaní, hned po vytvoření konceptu.
+
+- **Cílová složka roku 2026:** `Můj disk › Osobní › Faktury › Výroba › 2026`, ID `12Prmhiwy6FnX-8zsIByHXZvb6vut8iqK`. Složku najdeš podle ID, ne podle názvu (cesta k ní se může změnit). Uživatel v ní už má faktury 26053–26063.
+- **Nahrání:** `mcp__Google_Drive__create_file` s `parentId` = ID složky, `title` `Faktura_<číslo>.pdf`, `contentMimeType` `application/pdf`, `disableConversionToGoogleType` true a `base64Content` ve tvaru `sha256:<SHA-256 PDF>:/home/user/Agent-1/vystupy/faktury/Faktura_<číslo>.pdf`. Soubor nikdy nepřepisuj do base64 ručně. Použij stejné PDF (stejný hash), které jde do Gmailu, a nepřegenerovávej ho.
+- **Ověření:** po nahrání ověř, že je soubor ve složce (`search_files` s `parentId = '<ID>' and title = 'Faktura_<číslo>.pdf'`), a nenahrávej ho dvakrát.
+- **Nový rok:** faktury roku 2027 patří do analogické složky `2027` (ID `1b33A8BHQSwz2XHS2ArebxFl0I8DKI-Ly`, dosud prázdná). Až složka roku bude jiná nebo ji uživatel přesune, najdi ji hledáním a ID tady oprav. Až uživatel pošle starší faktury 2023–2025, ukládají se do složek `2023`, `2024`, `2025` ve stejné nadřazené složce.
+- **Oprava nebo přečíslování faktury:** na Disku už starý soubor nepřepisuj. Nahraj novou verzi a upozorni uživatele, ať starý soubor smaže, stejně jako u konceptu v Gmailu.
+- **V souhrnu uživateli** uveď, že je PDF na Disku, a přilož odkaz (`viewUrl` ze `create_file`).
+
 ## Opravy
 
 Dokud uživatel fakturu neodeslal, stačí upravit JSON a PDF přegenerovat se stejným číslem. Po odeslání se faktura nemění. Oprava se dělá opravným daňovým dokladem a ten uživateli navrhni.

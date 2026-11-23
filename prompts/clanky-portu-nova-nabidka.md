@@ -117,7 +117,7 @@ Pravidlo „maximálně jedna zmínka produktu“ z typu 1 tady neplatí: produk
 
 ## VÝSTUP
 
-1. Upozornění na začátku, pokud je novinka zatím interní návrh nebo chybí údaje ([DOPLNIT] / [OVĚŘIT]).
+1. Žádné upozornění na začátku textu článku (např. „návrh k internímu schválení“). Že je novinka zatím interní návrh nebo že chybí údaje ([DOPLNIT] / [OVĚŘIT]), napiš do poznámek pro autora a do odpovědi, ne do článku.
 2. 3 návrhy titulku.
 3. Perex.
 4. Hotový článek s mezititulky a tabulkami, včetně standardního bloku upozornění.
@@ -128,6 +128,8 @@ Pravidlo „maximálně jedna zmínka produktu“ z typu 1 tady neplatí: produk
    - návrh 1 grafu (typicky váhy novinky vedle vah srovnávací nabídky; kreslí agent portu-grafy).
 
 Text odevzdej jako běžný text, ne v bloku kódu.
+
+Při ukládání do Google Docs dej mezi odstavce mezeru (zhruba 12 pt pod odstavcem, u odrážek 4 pt), aby byl text přehledný.
 
 ## SEBEKONTROLA PŘED ODEVZDÁNÍM
 

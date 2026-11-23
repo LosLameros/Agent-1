@@ -1,7 +1,5 @@
 # České dividendy: nová strategie v Portfoliu podle vás (článek pro Portu Magazín, typ 2 – nová nabídka)
 
-> Návrh k internímu schválení. Platí, jen pokud je strategie schválená ke spuštění. Místa označená [DOPLNIT] a [OVĚŘIT] musí před publikací vyplnit nebo potvrdit člověk. Čísla jsou k 10. 11. 2026 (ceny, váhy indexu PX) a před publikací je potřeba je obnovit.
-
 ## Návrhy titulku
 
 1. Nově v Portfoliu podle vás: České dividendy

@@ -37,7 +37,7 @@ Projdi a výsledek napiš do poznámek pro poradce pod text. Nerozhoduj za něj.
 
 # 2. STYL
 
-- **Klient ve třetí osobě, poradce v 1. osobě jednotného čísla, minulý čas.** „Klient projevil zájem…“, „Doporučil jsem…“ (ne „doporučili jsme“, schůzku vede poradce sám), „Klientovi bylo představeno…“. Žádné „Vy“ a žádné množné číslo, dokud poradce výslovně nepíše za tým.
+- **Klient ve třetí osobě, poradce v 1. osobě jednotného čísla, minulý čas.** „Klient projevil zájem…“, „Doporučil jsem…“ (ne „doporučili jsme“, schůzku vede poradce sám), „Klientovi bylo představeno…“. Žádné „Vy“ a žádné množné číslo. Poradce (zadavatel) doporučuje vždy sám, tým ani firma nikdy.
 - **Krátké věty.** Jedna myšlenka, jedna věta. Žádná souvětí o třech slovesech doporučení.
 - **Pořadí:** (1) co klient chtěl, horizont a objem → (2) co už má → (3) co se doporučilo, v jakém poměru → (4) proč to odpovídá jeho cíli a riziku → (5) jak bylo doporučení předáno. Věty o rizicích patří za bod 4.
 - **Délka:** 4 až 8 vět, jeden odstavec. Delší, jen když poradce dodá víc důvodů.

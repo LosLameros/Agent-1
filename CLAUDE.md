@@ -19,7 +19,7 @@ Repozitář slouží ke psaní newsletterů pro Portu (česko-slovenská investi
 
 ## Poradenství
 
-Subagenti pro práci s klienty investičního poradce. Klientská data (podklady i výstupy) jsou v `.gitignore`. Související agenti `navrh-portfolia` (e-mail s návrhem investice) a `revize-portfolia` (revize portfolií) jsou popsaní výše ve „Struktuře“.
+Subagenti pro práci s klienty investičního poradce. **Doporučení dělá poradce vždy sám**, takže ve všech textech pro klienta i do prohlášení piš v 1. osobě jednotného čísla („doporučuji“, „doporučil jsem“), nikdy v množném („doporučujeme“, „doporučili jsme“). Klientská data (podklady i výstupy) jsou v `.gitignore`. Související agenti `navrh-portfolia` (e-mail s návrhem investice) a `revize-portfolia` (revize portfolií) jsou popsaní výše ve „Struktuře“.
 
 - `.claude/agents/prohlaseni-o-vhodnosti.md` — subagent `prohlaseni-o-vhodnosti`, z hrubých poznámek poradce napíše zdůvodnění do prohlášení o vhodnosti investičního doporučení (3. osoba, minulý čas, krátké věty, 4 až 8 vět) a před psaním zkontroluje součty podílů, rozpor mezi horizontem a rizikem, soulad s tím, co klient už má, a e-mailem klientovi i přítomnost věty o rizicích. Vzor (zadání doslova + finální verze) je v `examples/prohlaseni-o-vhodnosti/README.md`, hotové texty (na požádání) ukládá do `vystupy/prohlaseni-o-vhodnosti/`.
 

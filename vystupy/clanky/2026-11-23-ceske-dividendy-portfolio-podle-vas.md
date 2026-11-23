@@ -71,7 +71,9 @@ Balíček hlídají námi stanovené diverzifikační limity. Jedna firma má ne
 
 ### Kolik balíček vyplácí
 
-Při letošním dividendovém výnosu 5,3 % před zdaněním a 4,5 % po zdanění vezměme investici 100 000 Kč. Balíček by z ní vyplatil zhruba **5 300 Kč před zdaněním a 4 500 Kč po zdanění**. Stejné firmy ve vahách WOOD PX ETF by po zdanění vynesly asi 3 400 Kč, fond je ale nevyplácí a znovu investuje.
+Dividendový výnos balíčku je letos 5,3 % před zdaněním. Po zdanění je to 4,5 %. Výnos říká, kolik procent z ceny akcií firmy letos vyplatily. To je víc než u WOOD PX ETF: stejné firmy ve vahách fondu vynášejí 4,0 % před zdaněním a 3,4 % po zdanění.
+
+Vezměme investici 100 000 Kč. Při letošních dividendách by balíček vyplatil zhruba **5 300 Kč před zdaněním a 4 500 Kč po zdanění**. Fond s tím samým složením by po zdanění vynesl asi 3 400 Kč, jenomže dividendy ve fondu zůstávají a znovu se investují.
 
 Výplaty nechodí rovnoměrně. Nejvíc peněz přijde v květnu od Komerční banky, Monety a Vienna Insurance Group. V červenci platí Philip Morris ČR a Colt, v srpnu ČEZ, Kofola a Doosan a v dubnu Erste. Zbytek roku nepřijde nic.
 

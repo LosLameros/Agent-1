@@ -57,7 +57,7 @@ Přidanou hodnotou balíčku je právě toto rozdělení. Vychází z něj aktu�
 Vybírali jsme z celé pražské burzy, a to nejen z firem v hlavním indexu PX. Zahraniční firmy bez vazby na Česko jsme vynechali. Analyzovali jsme tři věci:
 1. **Vyplácí firma dividendu pravidelně?** Musela ji vyplatit v posledním roce a alespoň ve třech z posledních pěti let.
 1. **Dají se její akcie snadno koupit a prodat?** Některé menší firmy sice dividendu vyplácejí, ale mají velmi nízkou likviditu.
-1. **Je dividenda dost vysoká?** Firma má vyplácet alespoň polovinu toho, co v průměru vyplácejí firmy na pražské burze.
+1. **Není dividenda jen symbolická?** Je to jen dolní hranice: dividenda vyjádřená jako podíl z ceny akcie musí být alespoň poloviční oproti průměru firem v indexu PX.
 
 Osm firem splnilo všechny tři otázky. Výjimkou je Erste.
 

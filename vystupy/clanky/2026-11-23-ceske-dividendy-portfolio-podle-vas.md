@@ -18,7 +18,7 @@ Důležité byly i odhady dividend na příští roky. Použili jsme je při ses
 
 V balíčku proto najdete dva druhy firem. Komerční banka, Moneta nebo Philip Morris ČR vyplácejí vysoké dividendy už dnes. Erste a Vienna Insurance Group vyplácejí méně, jejich dividenda ale v posledních letech rostla v průměru o víc než 8 % ročně. **Balíček tak kombinuje příjem z dividend s firmami zaměřenými na budoucí růst.**
 
-Vysoká dividenda totiž sama nestačí. Například Philip Morris ČR rozděluje akcionářům celý zisk, jeho dividenda ale klesá: v roce 2023 to bylo 1 310 Kč na akcii, letos 1 100 Kč. Firma, které roste zisk, může dividendu časem zvyšovat a obvykle s ní roste i cena akcie.
+Vysoká dividenda totiž sama nestačí. Například Philip Morris ČR rozděluje akcionářům celý zisk, jeho dividenda ale klesá: v roce 2023 to bylo 1 310 Kč na akcii, letos 1 100 Kč. Firma, které roste zisk, může dividendu časem zvyšovat a obvykle s ní roste i cena akcie. Philip Morris ČR si přesto v balíčku své místo zaslouží: patří k firmám s nejvyšší dividendou a vyplácí ji každý rok od roku 2000, jeho váha je ale omezená na 10 %.
 
 ### Co je v balíčku
 

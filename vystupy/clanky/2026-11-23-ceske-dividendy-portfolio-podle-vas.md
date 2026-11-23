@@ -103,9 +103,8 @@ Obě investice vedou do českých firem. Liší se hlavně tím, co se děje s d
 ## Poznámky pro autora
 
 **Na co si dát pozor v číslech**
-- **Tabulka složení.** V článku jsou váhy ze sloupce Final (včetně 2 % hotovosti), jak je potvrdil autor. V dokumentu s podklady byl v prvním obrázku starší sloupec Původní návrh (ČEZ 14 %, VIG 12 %, Colt 11 %, bez hotovosti).
-- **Odlišnost od ETF.** Dokument uváděl 31 %. S finálními váhami a složením fondu z wood.cz vychází zhruba 28 %, v článku je proto „zhruba 28 %“. Podmínky návrhu (má se lišit alespoň o 30 % a další) jsem na přání autora z článku vypustil.
-- **Banky a pojišťovny ve fondu.** Starší podklad uváděl 68 % podle indexu PX. Podle wood.cz je to 65,1 %, v článku je všude 65 %. V balíčku vychází 52 %. Dividenda po zdanění vychází i s váhami z wood.cz: 4,5 % balíček, 3,4 % fond.
+
+- **Čísla ve srovnání s fondem.** Počítáno z finálních vah (včetně 2 % hotovosti) a složení fondu z wood.cz. Od fondu se balíček liší zhruba o 28 %, banky a pojišťovny tvoří 52 % balíčku a 65 % fondu, dividenda po zdanění vychází 4,5 % proti 3,4 %.
 - **Hranice výnosu u třetí otázky.** V podkladech je jednou 2,2 % a v datech vychází polovina průměru indexu PX na 2,0 %. Číslo jsem do článku nepsal, je tam „alespoň polovina průměru“.
 - **Složení fondu z wood.cz** nemá uvedené datum. Použil jsem datum, kdy jsem ho stáhl, 23. 11. 2026.
 - **Měsíce výplat:** Erste platila 24. 4. 2026, ostatní měsíce jsou z podkladů (květen, červenec, srpen).

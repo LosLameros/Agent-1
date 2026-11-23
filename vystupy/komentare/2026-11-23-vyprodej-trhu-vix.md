@@ -7,7 +7,7 @@
 
 ## Co lze čekat dál? Je dnešní růst začátek obratu, nebo jen nakupování za levno?
 
-Minulý týden byl pro akcie nejhorší od dubna loňského roku. Index S&P 500 za týden ztratil 8,6 % a v pátek se dostal víc než 10 % pod říjnový rekord, tedy do takzvané korekce. Technologický Nasdaq odepsal za týden 10 % a smazal celý letošní zisk. Sešlo se toho hodně najednou. Investoři vybírali zisky z akcií spojených s umělou inteligencí po vstupu Anthropicu na burzu, Nvidii srážel odchod zakladatele a hlavně zatím nepotvrzené zprávy o čínské špionce, pašování čipů do Číny a vyšetřování jejího účetnictví. K tomu přibyly obavy, že Fed kvůli inflaci bude muset dál zvyšovat sazby. Když index S&P 500 propadl pod svůj dlouhodobý průměr za posledních 200 dní, přidali se k prodejům i automatické obchodní systémy, které se tímto signálem řídí.
+Americký index S&P 500 minulý týden ztratil 8,6 %, procentně nejvíc od začátku dubna loňského roku. V pátek se dostal víc než 10 % pod říjnový rekord, tedy do takzvané korekce. Technologický Nasdaq odepsal za týden 10 % a smazal celý letošní zisk. Sešlo se toho hodně najednou. Investoři vybírali zisky z akcií spojených s umělou inteligencí po vstupu Anthropicu na burzu, Nvidii srážel odchod zakladatele a hlavně zatím nepotvrzené zprávy o čínské špionce, pašování čipů do Číny a vyšetřování jejího účetnictví. K tomu přibyly obavy, že Fed kvůli inflaci bude muset dál zvyšovat sazby. Když index S&P 500 propadl pod svůj dlouhodobý průměr za posledních 200 dní, přidali se k prodejům i automatické obchodní systémy, které se tímto signálem řídí.
 
 Dnešní růst o necelé procento v Evropě a náznak silného otevření v USA zatím nic znamenat nemusí. Po sedmi poklesových dnech v řadě bývá odraz běžný, ale o obratu trendu vypovídá málokdy. Akcie Nvidie dnes před otevřením trhu přidávají kolem 9 %. U firmy, která rekordně roste a jejíž pokles stál hlavně na nepotvrzených spekulacích, se po tak hlubokém propadu a s nižším oceněním odraz dal čekat, i když může být jen krátkodobý. Rozhodne až to, jak dopadnou data o inflaci a prosincové zasedání Fedu, a jestli se uklidní situace kolem Nvidie. Levnější akcie ještě neznamenají dno. Kdo investuje dlouhodobě, pro toho je ale podobná korekce spíš příležitostí rozložit nákupy do několika částí v čase než důvodem k panice. Prodat ve strachu na dně bývá častější chyba než koupit o pár procent dřív.
 
@@ -24,6 +24,8 @@ Vysoký VIX ale historicky netrvá dlouho. V dubnu 2025 vystoupal přes 50 bodů
 **Pohyb Nvidie před otevřením (+9 %):** od autora.
 
 **Co v textu chybí:** pohyb amerických akcií dnes (trh otevírá v 15:30 SEČ). „Náznak silného otevření“ vychází z indikací kolem +2,7 až 2,9 % pro S&P 500 (futures) v 10:30 SEČ; před odesláním ověřit.
+
+**Srovnání týdenních poklesů S&P 500 (Trading Economics, zavírací ceny pátek na pátek):** týden do 20. 11. 2026 −8,61 % (−651 bodů); týden do 4. 4. 2025 −9,08 % (−507 bodů); od té doby žádný týden s větším procentním poklesem. V bodech byl minulý týden větší než duben 2025, protože index je výš; proto text srovnává procenta.
 
 **Data (Trading Economics):**
 - S&P 500: 13. 11. 7 561,67; 19. 11. 7 175,83; 20. 11. 6 910,39 (−3,7 % za den, −8,6 % za týden). Říjnový rekord 7 844,67 (6. 10. 2026, maximum TE), pokles o 11,9 %.

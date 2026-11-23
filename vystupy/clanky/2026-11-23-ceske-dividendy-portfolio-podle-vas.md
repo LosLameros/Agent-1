@@ -41,7 +41,7 @@ Balíček tvoří devět firem. Pro srovnání uvádíme, kolik mají stejné fi
 
 Balíček drží i 2 % hotovosti. Je to stejné jako u ostatních Portfolií podle vás. Hotovost slouží na peněžní operace a na automatickou rebalanci, tedy průběžné vracení vah k původnímu rozdělení.
 
-Firmy se s ETF z velké části překrývají. Velkých firem, které vyplácejí dividendy, je na pražské burze jen pár. Liší se ale to, kolik peněz do které firmy jde: **zhruba 29 % peněz je v balíčku rozděleno jinak než ve fondu**. Banky a pojišťovny tvoří 55 % balíčku, ve fondu 65 %.
+Firmy se s ETF z velké části překrývají. Velkých firem, které vyplácejí dividendy, je na pražské burze jen pár. Liší se ale to, kolik peněz do které firmy jde: **zhruba 29 % portfolia je rozloženo jinak než ve fondu**. Banky a pojišťovny tvoří 55 % balíčku, ve fondu 65 %.
 
 Proč se váhy liší? WOOD PX ETF dělí peníze podle velikosti firem v indexu PX: čím větší firma, tím větší váha, ať vyplácí dividendu vysokou, nebo nízkou. Balíček dělí peníze podle dividend a očekávaného růstu.
 
@@ -66,7 +66,7 @@ Balíček hlídají limity. Jedna firma má nejvýš 20 %, u málo obchodovanýc
 
 Před schválením jsme si navíc stanovili tři podmínky:
 1. **Dividenda po zdanění je alespoň o 1 procentní bod vyšší než ve fondu.** Balíček vychází na 4,5 %, stejné firmy ve vahách fondu na 3,4 %.
-1. **Balíček se od fondu znatelně liší.** Cílem bylo rozdělit jinak alespoň zhruba 30 % peněz, aby byl vidět přínos balíčku. Vychází to zhruba na 29 %.
+1. **Balíček se od fondu znatelně liší.** Cílem bylo rozložit jinak alespoň zhruba 30 % portfolia, aby byl vidět přínos balíčku. Vychází to zhruba na 29 %.
 1. **Banky a pojišťovny tvoří nejvýš 55 %.** Ve fondu mají 65 % a nechceme stejnou závislost na jednom oboru. V balíčku vychází přesně 55 %.
 
 ### Kolik balíček vyplácí

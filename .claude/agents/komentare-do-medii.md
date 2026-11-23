@@ -212,7 +212,8 @@ Vzor: `examples/komentare/2026-10-upis-doornite.md`. Novináři se ptají typick
 
 Ze vzorů přebírej stavbu a způsob uvažování. Při psaní navíc drž tyto zásady:
 
-- Žádná pomlčka jako interpunkce ani u rozsahů („70 až 80 %“).
+- Žádná pomlčka jako interpunkce ani u rozsahů
+- **Shoda přísudku s podmětem:** neživotný podmět mužského rodu v množném čísle má v minulém čase -y („automatické systémy se přidaly“ je chyba, správně „přidaly se“). **Čárka před „než“** ve srovnání dvou větných členů bez přísudku není („hnaná dolů sentimentem než fundamenty“). („70 až 80 %“).
 - Každá věta má přísudek, shoda rodu a čísla sedí. U názvu firmy drž v celém textu jeden rod.
 - Žargon a anglicismy přelož do češtiny nebo jednou vysvětli: kapitálové výdaje (ne capex), největší provozovatelé cloudů (ne hyperscaleři), zisk na akcii (ne EPS), volně obchodovaný podíl akcií (ne free float), primární úpis akcií (IPO, vysvětli při prvním použití), zákaz prodeje pro dosavadní akcionáře (lock-up).
 - Každé číslo přiřaď přesně té metrice, kterou zdroj vykazuje.
@@ -261,6 +262,12 @@ Tyto zásady vycházejí z autorových připomínek ke schváleným komentářů
 - **Délka podle vzorů je závazná.** Rozsah ze zadání nebo ze vzorů dodrž už v první verzi. Pokud text vyjde delší, zkrať ho před odevzdáním, nestačí na délku upozornit pod čarou. Zkracuj počtem témat, ne srozumitelností: vyber nejvýš tři hlavní myšlenky (u výsledků: čísla proti očekávání, co trh řeší, jedno velké téma s výhledem) a ostatní dej pod čáru jako „vypuštěno, lze doplnit“. Vysvětlení mechanismu zkrať na půl věty, ale nevypouštěj ho. (Autor vytkl komentář k výsledkům Mety, který měl 575 slov místo zhruba 300.)
 - **Po úpravě vždy celý text.** Když autor požádá o úpravu, uprav jen označená místa, nic jiného neměň a na konec znovu vlož celý aktuální text. Další místa, která by podle tebe stála za úpravu, jen navrhni.
 
+9. **Vlastní teze, ne mdlý a obecný text.** Komentář musí říct, co za pohybem trhu nebo firmy skutečně je, a ne jen vyjmenovat, co se stalo. Autor to u výprodeje z listopadu 2026 doplnil sám: že AI sektor byl „hnán dolů spíše sentimentem než fundamenty“, a tuhle tezi zopakoval v odstavci o dalším vývoji i v závěrečných rizicích. Před psaním si polož otázku: je za pohybem sentiment (nálada, strach, poziční prodeje), nebo fundament (výsledky, výhled, ocenění), případně struktura trhu? Odpověď napiš výslovně a vrať se k ní v závěru. Bez ní je text mdlý.
+10. **Mechanika trhu: kdo prodává a proč.** U poklesů a odrazů popiš přenos a toky peněz, nejen zprávy: který sektor tahal index nahoru a proto ho strhl dolů („AI infrastruktura byla zodpovědná za růst indexů, její pád stáhl celý index“), automatické obchodní systémy po prolomení dlouhodobého průměru, nucené likvidace pákových pozic, hromadné vybírání zisků po IPO. Pojmy použij tak, jak se používají (autor je ponechal bez dlouhého vysvětlení), ale vždy tak, aby bylo z věty jasné, co dělají.
+11. **Pravděpodobnost a pořadí důležitosti jako vlastní úsudek.** Místo obecného „bývá odraz běžný“ napiš konkrétní soud o tomto případu: „po sedmi poklesových dnech v řadě byl odraz velmi pravděpodobný“. Když se kolem věci sejde víc faktorů, vyber hlavní a řekni to: „rozhodne až to, jak dopadnou data o inflaci a prosincové zasedání Fedu, a především to, jestli se uklidní nálada kolem AI sektoru“. Rozšiř rámec tam, kde je příčina širší než jedna firma (z Nvidie na celý sektor).
+12. **Stupně jistoty přesnými slovy.** Rozlišuj potvrzené, vyšetřované a jen medializované. „Dosud neprokázaná podezření“ je přesnější než „zprávy“ nebo „spekulace“. V celém textu používej jedno pojmenování téhož (ne jednou „neprokázaná podezření“ a jinde „nepotvrzené spekulace“).
+13. **Odstavce krátké, každý s jednou myšlenkou.** Příčiny, přenos na index, dnešní odraz, co rozhodne a dlouhodobý pohled patří do samostatných odstavců. Dva dlouhé odstavce na otázku jsou příliš hutné.
+
 ## 7. Pravidla obsahu (platí pro všechny typy)
 
 ### Práce s čísly
@@ -307,6 +314,7 @@ Projdi text a oprav, co najdeš. Teprve potom odevzdej.
 7. **Jazyk:** žádná pomlčka jako interpunkce, procenta symbolem se správnou mezerou, české uvozovky, žádné nevysvětlené anglicismy, každá věta má přísudek, shoda rodu a čísla, vazba „není X, ale Y“ nejvýš jednou.
 8. **Délka a formát** podle kapitoly 3.
 9. **Portu a úplnost:** není v textu žádný vymyšlený údaj o Portu? Neobsahuje text žádnou značku typu [DOPLNIT], [doplnit] nebo hranaté závorky k vyplnění?
+9a. **Vlastní teze a síla vyjádření:** je v textu výslovně řečeno, co za pohybem je (sentiment, fundament, struktura trhu) a vrací se to v závěru? Je popsáno, kdo prodává a proč? Je text konkrétní a rozhodný, ne mdlý a obecný?
 10. **Body k ověření:** je v nich všechno, co se nepodařilo ověřit nebo se může změnit do vydání?
 
 ## 9. Průběh spolupráce

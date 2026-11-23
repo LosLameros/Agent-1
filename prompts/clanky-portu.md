@@ -1,5 +1,7 @@
 # Master prompt – článek pro Portu Magazín
 
+> **Typ 1 – běžný článek** (zpráva, výsledky, sektor, trh, vysvětlovák). Pro články o novince v nabídce Portu (nový instrument, ETF, strategie nebo modelové portfolio v Portfoliu podle vás, nová funkce) platí **typ 2: `prompts/clanky-portu-nova-nabidka.md`**, který z tohoto promptu přebírá roli, rešerši, styl a compliance.
+
 ## VSTUPNÍ PROMĚNNÉ (vyplň před spuštěním)
 
 - **ZPRÁVA / TÉMA:** [vlož odkaz, citaci nebo vlastní popis zprávy]

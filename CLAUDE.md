@@ -15,7 +15,9 @@ Repozitář slouží ke psaní newsletterů pro Portu (česko-slovenská investi
 - `.claude/agents/navrh-portfolia.md` — subagent `navrh-portfolia`, píše e-mail klientovi s návrhem, kolik a do čeho zainvestovat. Poradce mu řekne, co klient má, o čem se bavili, kolik a do čeho investovat; agent zkontroluje součty, přepočítá pravidelné vklady, upozorní na rozpor s horizontem nebo rizikem a napíše e-mail ve stylu dřívějších e-mailů poradce z `examples/navrhy-portfolia/` (4 anonymizované vzory, uložené doslova, i s chybami, které agent nemá opakovat). Výstupem je jen text e-mailu, žádný Excel. Hotové e-maily ukládá do `vystupy/navrhy-portfolia/` (v `.gitignore`).
 - `.claude/agents/grafy-ctvrtletni-zpravy.md` — subagent `grafy-ctvrtletni-zpravy`, převádí dva úvodní grafy čtvrtletní zprávy (Zhodnocení vybraných tříd aktiv, Portfolia od Portu v roce) ze starého vzhledu do nového (písmo Rethink Sans, fialová #4840BA a zelená #06B33F). Čísla přepíše do `podklady/RRRR-Qn/grafy-data.json` a vykreslí je skriptem `nastroje/grafy-ctvrtletni-zpravy.js`. Přílohy z chatu nevidí: předej mu cestu k obrázkům starých grafů. Umí i polskou a slovenskou verzi (výstupy ve `vystupy/grafy-pl/` a `vystupy/grafy-sk/`, pravidla v kapitole 4 jeho promptu; slovenský graf tříd aktiv je bez legendy) a překlad textů doplňkových grafů nástrojem `nastroje/preklad-textu-grafu.js` (kapitola 5).
 - `.claude/agents/Portu grafy.md` — subagent `portu-grafy`, kreslí grafy libovolného typu a tématu v jednotném vzhledu Portu: oficiální barvy fialová `#4840BB` + zelená `#00AA3C` (https://guidelines.portu.cz/barvy/), písmo Rethink Sans, legenda vlevo dole, zdroj vpravo dole, bez nadpisu a loga v obrázku. Vzorem vzhledu jsou dva grafy inflace v `examples/grafy/`. Kreslí přes modul `nastroje/portu_grafy.py` (písmo v `nastroje/fonty/`), výstupy (PNG + CSV + skript) ukládá do `vystupy/grafy/`.
-- `prompts/clanky-portu.md` — master prompt pro články do Portu Magazínu (vstupní proměnné, rešerše, struktura, styl, produktové napojení, compliance, sebekontrola).
+- `prompts/clanky-portu.md` — master prompt pro články do Portu Magazínu, typ 1 – běžný článek (vstupní proměnné, rešerše, struktura, styl, produktové napojení, compliance, sebekontrola).
+- `prompts/clanky-portu-nova-nabidka.md` — prompt pro články typu 2 o novince v nabídce Portu (nový instrument, sada ETF, strategie nebo modelové portfolio v Portfoliu podle vás, nová funkce): rozbor, jak o novinkách psal Portu Magazín v letech 2019–2026, struktura podle druhu novinky, povinné tabulky (složení, srovnání se stávající nabídkou, odhady), compliance a výstup. Vzor: `vystupy/clanky/2026-11-23-ceske-dividendy-portfolio-podle-vas.md`.
+- `.claude/agents/clanky-portu.md` — subagent `clanky-portu`, píše články do Portu Magazínu: určí typ (1 běžný / 2 nová nabídka), načte příslušný prompt a dodržuje připomínky autora k dřívějším návrhům.
 
 ## Styl newsletteru Portu
 
@@ -30,7 +32,7 @@ Vychází z analýzy 8 unikátních vydání (#443–#451, ~1300 slov/vydání).
 
 ## Články pro Portu Magazín
 
-Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze souboru `prompts/clanky-portu.md`.
+Při psaní článků pro Portu Magazín vždy dodržuj strukturu a pravidla ze souboru `prompts/clanky-portu.md`. Články o novince v nabídce Portu (nový instrument, ETF, strategie nebo modelové portfolio v Portfoliu podle vás, nová funkce) jsou druhý typ článku a píšou se podle `prompts/clanky-portu-nova-nabidka.md`.
 
 ## Spolupráce
 

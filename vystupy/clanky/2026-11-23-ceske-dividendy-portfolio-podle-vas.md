@@ -62,7 +62,7 @@ Na závěr platí limity. Jedna firma má nejvýš 20 % a u akcií, se kterými 
 
 ### Kolik strategie vyplácí
 
-Dividendový výnos je vyšší než u ETF. Podle letošních dividend by ze 100 000 Kč vyplatila **zhruba 5 300 Kč hrubého, po dani 4 500 Kč**. To je čistý výnos 4,5 % proti 3,4 % u stejných firem ve vahách WOOD PX ETF. Na příští rok odhadujeme 4,2 % proti 3,7 %: Komerční banka sníží dividendu a ETF víc pocítí návrat Erste k vyšším výplatám.
+Dividendový výnos je vyšší než u ETF. Podle letošních dividend by strategie ze 100 000 Kč vyplatila **zhruba 5 300 Kč hrubého, po dani 4 500 Kč**. To je čistý výnos 4,5 % proti 3,4 % u stejných firem ve vahách WOOD PX ETF. Na příští rok odhadujeme 4,2 % proti 3,7 %: Komerční banka sníží dividendu a v ETF má větší váhu Erste, která se k vyšším výplatám vrací.
 
 Peníze nechodí rovnoměrně. Firmy vyplácejí dividendy mezi dubnem a srpnem [OVĚŘIT: podle metodiky květen, červenec a srpen], zbytek roku nepřijde nic. Takhle vypadá náš odhad čistého výnosu jednotlivých firem pro další roky:
 

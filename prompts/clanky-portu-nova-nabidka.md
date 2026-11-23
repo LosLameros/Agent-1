@@ -1,20 +1,20 @@
 # Prompt – článek pro Portu Magazín, typ 2: nová nabídka
 
-Druhý typ článku pro Portu Magazín. Použij ho, když článek oznamuje **novinku v nabídce Portu**: nový instrument (akcie, ETF), sadu nových instrumentů, novou strategii nebo modelové portfolio v Portfoliu podle vás, případně novou funkci produktu.
+Druhý typ článku pro Portu Magazín. Použij ho, když článek oznamuje **novinku v nabídce Portu**: nový instrument (akcie, ETF), sadu nových instrumentů, nový tematický balíček (modelové portfolio) v Portfoliu podle vás, případně novou funkci produktu.
 
 Pro běžné články o trzích, firmách a ekonomice (typ 1) platí `prompts/clanky-portu.md`. Z něj tento prompt přebírá **roli (ROLE A KONTEXT), rešerši (KROK 1), stylistická pravidla (KROK 3) a compliance (KROK 5)**. Liší se struktura, práce s produktem, povinné tabulky a výstup.
 
-Vzorový výstup: `vystupy/clanky/2026-11-23-ceske-dividendy-portfolio-podle-vas.md` (strategie České dividendy, srovnání s WOOD PX ETF).
+Vzorový výstup: `vystupy/clanky/2026-11-23-ceske-dividendy-portfolio-podle-vas.md` (tematický balíček České dividendy, srovnání s WOOD PX ETF).
 
 ## VSTUPNÍ PROMĚNNÉ (vyplň před spuštěním)
 
-- **NOVINKA:** [co přibylo – název instrumentu, strategie nebo funkce]
-- **DRUH:** [nový instrument / sada instrumentů / nová strategie nebo modelové portfolio / nová funkce]
+- **NOVINKA:** [co přibylo – název instrumentu, tematického balíčku nebo funkce]
+- **DRUH:** [nový instrument / sada instrumentů / nový tematický balíček / nová funkce]
 - **STAV:** [schváleno ke spuštění k datu X / interní návrh]. Dokud není schváleno, článek nepíše „nově najdete“ ani „spouštíme“ a celý výstup je označený jako návrh ke schválení.
 - **DATUM SPUŠTĚNÍ:** [datum]
 - **KDE V APLIKACI:** [produkt a postup – Portfolio podle vás, Brokerage režim, DIP…]
 - **MINIMÁLNÍ INVESTICE A POPLATKY:** [částka, poplatek produktu, TER instrumentu, akce s datem konce]
-- **SROVNÁVACÍ NABÍDKA:** [co podobného už Portu nabízí a s čím čtenář novinku srovná – např. WOOD PX ETF, Portfolio od Portu, jiná strategie]
+- **SROVNÁVACÍ NABÍDKA:** [co podobného už Portu nabízí a s čím čtenář novinku srovná – např. WOOD PX ETF, Portfolio od Portu, jiný tematický balíček]
 - **PODKLADY:** [metodika, interní tabulka, tisková zpráva, Q&A]
 - **CO NEPSAT:** [interní informace z podkladů, které do článku nepatří]
 - **DEADLINE DAT:** [datum, ke kterému platí všechna čísla]
@@ -34,13 +34,22 @@ Rozbor 12 článků: spuštění strategií (2019), Světová špička a Odpově
 
 **Co dřív chybělo a teď to chceme:**
 
-- **Tabulky.** Žádný z článků neměl tabulku: složení strategií bylo v textu nebo na obrázku, TER a tickery chyběly. U strategie a modelového portfolia je tabulka složení povinná (viz KROK 3).
+- **Tabulky.** Žádný z článků neměl tabulku: složení strategií bylo v textu nebo na obrázku, TER a tickery chyběly. U tematického balíčku je tabulka složení povinná (viz KROK 3).
 - **Srovnání s existující nabídkou.** Čtenář se ptá „čím je to jiné než to, co už máte?“. Starší články to řešily jednou větou nebo vůbec.
 - **Rizika v textu, ne jen v patičce.** Většina článků spoléhala na standardní blok. Dobrým vzorem je článek o CSG (únor 2026): konkrétní riziko a věta, že sektorová sázka má být jen doplňkem širšího portfolia.
 - **Kde a za kolik.** Minimální investice a poplatky byly zmíněné jen v části článků. Patří do každého.
 - **Kontrola čísel.** Ve starších článcích nesedí součty vah (98 %), počty („187 nových“ v titulku, „téměř 200“ v textu) a jsou tam překlepy v názvech firem. Součty a názvy vždy přepočítej a zkontroluj.
 
 **Čemu se vyhnout:** marketingovým superlativům ze starších textů („revoluční“, „ideální řešení“), výzvám s vykřičníkem („Vyzkoušejte … ještě dnes!“) a obecným frázím („může oslovit investory“, „zajímavý doplněk“) bez konkrétního důvodu.
+
+## TERMINOLOGIE PORTU
+
+- Modelová portfolia v Portfoliu podle vás se na webu i v aplikaci jmenují **tematické balíčky** („Nechte se inspirovat tematickým investováním … S tematickými balíčky nemusíte trávit hodiny analyzováním jednotlivých akcií“). V článku piš „tematický balíček“ nebo krátce „balíček“, **nikdy „strategie“**. „Strategie“ je starý název produktu (do roku 2025).
+- Produkty: Portfolio podle vás (dřív Strategie a Portu Crypto), Portfolio od Portu (dřív portfolia na míru).
+
+## KOMU NOVINKA SLOUŽÍ
+
+Hned v úvodu napiš, pro koho novinka je a proč vedle stávající nabídky dává smysl. Příklad z tematického balíčku České dividendy: je pro klienty, kteří hledají **pasivní příjem z dividend**. WOOD PX ETF je akumulační, takže dividendy nevyplácí, ale znovu investuje; balíček je vyplácí. Zároveň v něm nejsou jen firmy s nejvyšší dividendou, ale i firmy zaměřené na budoucí růst, a balíček obojí kombinuje.
 
 ## KROK 0 – MYŠLENKOVÁ PŘÍPRAVA
 
@@ -62,11 +71,11 @@ Platí KROK 1 z `prompts/clanky-portu.md`. Navíc:
 
 ## KROK 2 – STRUKTURA ČLÁNKU
 
-1. **Titulek** – 3 varianty. Aspoň jedna v rámci „Nově v/na …: …“ nebo „Rozšiřujeme nabídku …: …“. Žádné procento výnosu v titulku.
+1. **Titulek** – 3 varianty. Alespoň jedna v rámci „Nově v/na …: …“ nebo „Rozšiřujeme nabídku …: …“. Žádné procento výnosu v titulku.
 2. **Perex (2–3 věty)** – co přibylo, kde to je a v čem je hlavní rozdíl proti stávající nabídce.
 3. **Úvod bez mezititulku** – novinka, datum, produkt, 2–3 nejdůležitější fakta (největší pozice, nákladovost, minimum). Druhý odstavec: proč novinka vznikla a jak navazuje na stávající nabídku.
 4. **Tělo (3–6 sekcí s mezititulky)**, podle druhu novinky:
-   - **Strategie / modelové portfolio:** Co ve strategii je (tabulka složení) → Jak jsme vybírali (filtry jako číslovaný seznam otázek) → Jak jsme určili váhy (a proč ne jinak) → Co čtenář dostane (výnos, příjem, příklad na 100 000 Kč, odhady jako tabulka) → Srovnání se stávající nabídkou (srovnávací tabulka) → Na co myslet (rizika).
+   - **Tematický balíček:** Pro koho je a čím se liší (hned v úvodu) → Podle čeho jsme firmy vybírali a rozdělili peníze → Co v balíčku je (tabulka složení) → Co čtenář dostane (příklad na 100 000 Kč ze skutečných letošních čísel, kdy a jak peníze chodí, daně) → Srovnání se stávající nabídkou (srovnávací tabulka) → Na co myslet (rizika) → Jak balíček najdete.
    - **Jeden instrument:** Co to je a co sleduje → Složení a parametry (tabulka) → Čím se liší od podobných instrumentů v nabídce → Rizika.
    - **Sada instrumentů:** krátký úvod, pak pro každý instrument mezititulek s tématem a 1–2 odstavci (co sleduje, proč může dávat smysl, hlavní riziko). Na konci přehledová tabulka.
    - **Nová funkce:** co se mění → jak to funguje (postup krok za krokem) → kolik to stojí → co když nechci nic měnit.
@@ -86,9 +95,9 @@ Platí KROK 1 z `prompts/clanky-portu.md`. Navíc:
 
 Tabulky jsou v tomto typu článku hlavní nosič informací. Pod každou tabulkou kurzívou zdroj a datum.
 
-1. **Složení** (u strategie a modelového portfolia povinně): Firma / instrument | Váha | Váha ve srovnávací nabídce | Proč má takovou váhu (jedna srozumitelná věta). Poslední řádek hotovost. Součet 100 %.
+1. **Složení** (u tematického balíčku povinně): Firma / instrument | Váha | Váha ve srovnávací nabídce | Proč má takovou váhu (jedna srozumitelná věta). Poslední řádek hotovost. Součet 100 %.
 2. **Srovnání se stávající nabídkou** (povinně, pokud existuje podobný produkt): řádky podle toho, co čtenáře zajímá – co se děje s výnosem (vyplácí / reinvestuje), počet titulů, jak se určují váhy, největší sektor, měna a měnové riziko, výnos, zdanění, náklady, kde se dá koupit.
-3. **Odhady a výhled** (jen když jsou v podkladech): vždy nadepsat a pod tabulkou výslovně „odhad, ne údaj firem ani slib výnosu“.
+3. **Žádné tabulky odhadů a výhledů** (budoucí dividendy, výnosy na další roky). Článek stojí na skutečných číslech. Odhady z podkladů patří nanejvýš do poznámek pro autora.
 4. **Parametry instrumentu** (u ETF): název, co sleduje, nákladovost (TER), akumulační / distribuční, měna, počet titulů, největší pozice.
 
 Pod tabulkou vždy jeden až dva odstavce, které z ní vytáhnou to podstatné. Tabulka nesmí být jediné místo, kde je hlavní pointa.
@@ -98,7 +107,9 @@ Pod tabulkou vždy jeden až dva odstavce, které z ní vytáhnou to podstatné.
 Platí KROK 3 z `prompts/clanky-portu.md` (otvírák odstavce do 8 slov, aktivní rod, odstavec max. 4 věty, vysvětlit pojmy, české formátování čísel, zakázané obraty). Navíc:
 
 - **Piš přirozeně, bez příkras.** Žádné metafory a efektní otvíráky, žádné „představujeme vám“. Věcně, jako když kolega vysvětluje klientovi, co je nového.
-- **Nevysvětluj přehnaně.** Pojem vysvětli jednou krátce a jdi dál. Čtenář Portu není začátečník ve všem.
+- **Portu jazykem pro běžného klienta.** Článek se má číst příjemně a pochopit ho má i klient, který o investování ví málo. Odborných pojmů co nejméně: kde jde napsat běžné slovo, napiš ho („akcie se snadno koupí a prodají“ místo „likvidita“, „kolik firma vyplatí z ceny akcie“ místo „dividendový výnos“, „stát strhne daň při výplatě“ místo „srážková daň“). Pojem, bez kterého to nejde (akumulační fond, index PX), vysvětli dobře hned při prvním použití, jednou krátkou větou, a dál ho nevysvětluj.
+- **Nic spekulativního.** Žádné odhady budoucích dividend, výnosů ani cen, žádné „mělo by“, „očekáváme“. Piš o tom, co platí dnes a co firmy skutečně vyplatily.
+- **„Alespoň“, ne „aspoň“** (autorova úprava).
 - **Tučně jen klíčové informace** – hlavní čísla a rozdíly, ne celé věty.
 - **„My“ za Portu, vykání čtenáři.**
 - **Žádné vykřičníky, emoji ani superlativy** („nejlepší“, „unikátní“, „revoluční“).
@@ -109,9 +120,9 @@ Pravidlo „maximálně jedna zmínka produktu“ z typu 1 tady neplatí: produk
 
 - Popisuj, neprodávej. Novinku vysvětli tak, aby se čtenář mohl rozhodnout sám, včetně toho, komu nedává smysl.
 - Žádné „kupte“, „ideální řešení“, „teď je ten správný čas“.
-- **Žádné historické výnosy nové strategie** zpětně dopočítané s dnešními vahami. Není to výkonnost, kterou by kdo reálně dosáhl.
+- **Žádné historické výnosy nového balíčku** zpětně dopočítané s dnešními vahami. Není to výkonnost, kterou by kdo reálně dosáhl.
 - Odhady budoucích dividend a výnosů výslovně označ jako odhad, s datem a zdrojem.
-- U strategie z jednoho trhu nebo sektoru zmiň riziko koncentrace, u cizích měn měnové riziko, u dividend zdanění.
+- U balíčku z jednoho trhu nebo sektoru zmiň riziko koncentrace, u cizích měn měnové riziko, u dividend zdanění.
 - Interní informace z podkladů (varianty návrhu, kapacity, provozní detaily, jména kolegů, rušené produkty, komentáře nadřízených) do článku nikdy nepiš.
 - Platí KROK 5 z `prompts/clanky-portu.md`.
 
@@ -137,7 +148,7 @@ Při ukládání do Google Docs dej mezi odstavce mezeru (zhruba 12 pt pod odsta
 - [ ] Dávají váhy v tabulce dohromady 100 % a sedí každé číslo v textu s tabulkou?
 - [ ] Je ve srovnávací tabulce to, co čtenáře opravdu zajímá (výnos, zdanění, náklady, riziko)?
 - [ ] Je každý odhad označený jako odhad, s datem a zdrojem?
-- [ ] Nejsou v článku historické výnosy strategie ani slib výnosu?
+- [ ] Nejsou v článku historické výnosy balíčku, odhady budoucích výnosů ani slib výnosu?
 - [ ] Jsou rizika v textu, ne jen v patičce?
 - [ ] Nejsou v článku interní informace z podkladů?
 - [ ] Je uvedeno, kde novinku najdu a za kolik (nebo [DOPLNIT])?

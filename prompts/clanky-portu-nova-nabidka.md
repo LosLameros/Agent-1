@@ -106,8 +106,8 @@ Platí KROK 1 z `prompts/clanky-portu.md`. Navíc:
 
 Tabulky jsou v tomto typu článku hlavní nosič informací. Pod každou tabulkou kurzívou zdroj a datum.
 
-1. **Složení** (u tematického balíčku povinně): Firma / instrument | Váha | Váha ve srovnávací nabídce | Proč má takovou váhu (jedna srozumitelná věta). Poslední řádek hotovost. Součet 100 %.
-2. **Srovnání se stávající nabídkou** (povinně, pokud existuje podobný produkt): řádky podle toho, co čtenáře zajímá – co se děje s výnosem (vyplácí / reinvestuje), počet titulů, jak se určují váhy, největší sektor, měna a měnové riziko, výnos, zdanění, náklady, kde se dá koupit.
+1. **Složení** (u tematického balíčku povinně): Firma / instrument | Váha v balíčku | Váha ve srovnávací nabídce. **Bez sloupce „Proč tam je“.** Důvod rozdílů vah vysvětli pod tabulkou souvislým textem: podle čeho dělí váhy srovnávací nabídka (např. WOOD PX ETF podle velikosti firem) a podle čeho nový balíček, kam jde víc a kam méně peněz než ve srovnávací nabídce a v čem je přidaná hodnota (např. vyšší dividenda, menší závislost na bankách). Pod tabulkou jen krátká poznámka o zdroji a datu vah. Hotovost, pokud je v produktu, vysvětli v textu, ne v tabulce.
+2. **Srovnání se stávající nabídkou** (povinně, pokud existuje podobný produkt): řádky podle toho, co čtenáře zajímá – co se děje s výnosem (vyplácí / reinvestuje), pro koho to je, počet titulů, jak se určují váhy, největší sektor, měna a měnové riziko, výnos. Řádek o nákladech jen tehdy, když jsou známé (jinak řádek vynech, nepiš [DOPLNIT]). Pod tabulku nepiš vysvětlující odstavec o překryvu s fondem, tabulka mluví sama.
 3. **Žádné tabulky odhadů a výhledů** (budoucí dividendy, výnosy na další roky). Článek stojí na skutečných číslech. Odhady z podkladů patří nanejvýš do poznámek pro autora.
 4. **Parametry instrumentu** (u ETF): název, co sleduje, nákladovost (TER), akumulační / distribuční, měna, počet titulů, největší pozice.
 

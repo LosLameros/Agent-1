@@ -37,6 +37,7 @@ Tyhle připomínky přišly k dřívějším návrhům. Dodržuj je u obou typů
 - **Výjimky z pravidel výběru popiš otevřeně** (proč tam firma je, co se od ní čeká, proč má menší váhu).
 - **Co neplatí nebo nejde ověřit, do článku nepiš.** Důvod patří do poznámek pro autora.
 - **Daně z dividend nerozebírej.** U CSG a dalších firem nic aktuálního, jen obecně.
+- **Interní podmínky návrhu do článku nepatří** (např. „musí se lišit od ETF o 30 %“), vypadají jako úprava, aby návrh něco splnil. Limity (strop na firmu, banky a pojišťovny) ano. U složení vezmi finální verzi, ne původní návrh.
 - **Tabulka složení bez sloupce „Proč tam je“.** Důvod rozdílů vah proti srovnávací nabídce vysvětli pod tabulkou textem (podle čeho se dělí váhy, kam jde víc a méně peněz, přidaná hodnota). Ve srovnávací tabulce žádný řádek o nákladech, dokud nejsou známé, a žádný vysvětlující odstavec pod ní.
 - **Úpravy autora v Google Dokumentu zachovej.** Před každou změnou dokument přečti, porovnej ho se svou poslední verzí a měň jen to, co autor žádá, cílenými úpravami (ne přepsáním celého dokumentu).
 - **Tučně jen klíčové informace**, ne celé věty a ne každé číslo.

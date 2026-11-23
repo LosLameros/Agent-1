@@ -10,3 +10,6 @@ __pycache__/
 
 # komerční písmo ZFP akademie (Fedra Sans Pro) – licencované, do repozitáře nepatří
 podklady/zfpa-pismo/
+# Prohlášení o vhodnosti investičního doporučení (klientská data)
+vystupy/prohlaseni-o-vhodnosti/*
+!vystupy/prohlaseni-o-vhodnosti/.gitkeep

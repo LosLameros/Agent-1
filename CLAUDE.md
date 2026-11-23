@@ -17,6 +17,12 @@ Repozitář slouží ke psaní newsletterů pro Portu (česko-slovenská investi
 - `.claude/agents/Portu grafy.md` — subagent `portu-grafy`, kreslí grafy libovolného typu a tématu v jednotném vzhledu Portu: oficiální barvy fialová `#4840BB` + zelená `#00AA3C` (https://guidelines.portu.cz/barvy/), písmo Rethink Sans, legenda vlevo dole, zdroj vpravo dole, bez nadpisu a loga v obrázku. Vzorem vzhledu jsou dva grafy inflace v `examples/grafy/`. Kreslí přes modul `nastroje/portu_grafy.py` (písmo v `nastroje/fonty/`), výstupy (PNG + CSV + skript) ukládá do `vystupy/grafy/`.
 - `prompts/clanky-portu.md` — master prompt pro články do Portu Magazínu (vstupní proměnné, rešerše, struktura, styl, produktové napojení, compliance, sebekontrola).
 
+## Poradenství
+
+Subagenti pro práci s klienty investičního poradce. Klientská data (podklady i výstupy) jsou v `.gitignore`. Související agenti `navrh-portfolia` (e-mail s návrhem investice) a `revize-portfolia` (revize portfolií) jsou popsaní výše ve „Struktuře“.
+
+- `.claude/agents/prohlaseni-o-vhodnosti.md` — subagent `prohlaseni-o-vhodnosti`, z hrubých poznámek poradce napíše zdůvodnění do prohlášení o vhodnosti investičního doporučení (3. osoba, minulý čas, krátké věty, 4 až 8 vět) a před psaním zkontroluje součty podílů, rozpor mezi horizontem a rizikem, soulad s tím, co klient už má, a e-mailem klientovi i přítomnost věty o rizicích. Vzor (zadání doslova + finální verze) je v `examples/prohlaseni-o-vhodnosti/README.md`, hotové texty (na požádání) ukládá do `vystupy/prohlaseni-o-vhodnosti/`.
+
 ## Styl newsletteru Portu
 
 Vychází z analýzy 8 unikátních vydání (#443–#451, ~1300 slov/vydání). Kompletní pravidla viz system prompt agenta; shrnutí:

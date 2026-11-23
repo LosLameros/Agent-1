@@ -10,7 +10,7 @@ Anonymizovaný vzor jednoho zdůvodnění do prohlášení o vhodnosti. Uloženo
 
 **Finální verze:**
 
-> Klient projevil zájem o investování částky 1,4 mil. Kč s investičním horizontem 2 roky. Klient již má 2 mil. Kč investovaných v Portfoliu od Portu s rizikovým profilem 4. Jako alternativu ke globálně orientované investici, která je citlivá na tržní výkyvy, jsme proto pro částku 1,4 mil. Kč doporučili otevřené podílové fondy: WOOD realitní OPF (70 %) a WOOD Korporátní dluhopisy (30 %). Toto složení odpovídá nižšímu riziku a krátkodobému investičnímu cíli klienta. Navržené rozdělení investice bylo klientovi představeno v e-mailu.
+> Klient projevil zájem o investování částky 1,4 mil. Kč s investičním horizontem 2 roky. Klient již pro tento krátkodobý účel má založené Portfolio od Portu s rizikovým profilem 4. Jako alternativu ke globálně orientované investici, která je citlivá na tržní výkyvy, jsme proto pro částku 1,4 mil. Kč doporučili otevřené podílové fondy: WOOD realitní OPF (70 %) a WOOD Korporátní dluhopisy (30 %). Toto složení odpovídá nižšímu riziku a krátkodobému investičnímu cíli klienta. Navržené rozdělení investice bylo klientovi představeno v e-mailu.
 
 **Co se ve vzoru změnilo a proč:**
 - „2 letý“ → „2 roky“, „1,4 mil.“ bez „Kč“ → „1,4 mil. Kč“.
@@ -18,3 +18,4 @@ Anonymizovaný vzor jednoho zdůvodnění do prohlášení o vhodnosti. Uloženo
 - Souvětí s dvakrát „doporučeny“ rozdělené na krátké věty, jedno sloveso „doporučili“.
 - „Předem navržený poměr bude představen v mailu“ → minulý čas: prohlášení se píše k doporučení, které už zaznělo.
 - Zkratka „mail“ → „e-mail“.
+- Věta o existujícím portfoliu upravena podle poradce: klient má Portfolio 4 založené už pro tento krátkodobý účel (částka 2 mil. Kč se v textu neuvádí).

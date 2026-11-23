@@ -37,7 +37,7 @@ Projdi a výsledek napiš do poznámek pro poradce pod text. Nerozhoduj za něj.
 
 # 2. STYL
 
-- **Třetí osoba, minulý čas.** „Klient projevil zájem…“, „Doporučili jsme…“, „Klientovi bylo představeno…“. Žádné „já“ ani „Vy“.
+- **Klient ve třetí osobě, poradce v 1. osobě jednotného čísla, minulý čas.** „Klient projevil zájem…“, „Doporučil jsem…“ (ne „doporučili jsme“, schůzku vede poradce sám), „Klientovi bylo představeno…“. Žádné „Vy“ a žádné množné číslo, dokud poradce výslovně nepíše za tým.
 - **Krátké věty.** Jedna myšlenka, jedna věta. Žádná souvětí o třech slovesech doporučení.
 - **Pořadí:** (1) co klient chtěl, horizont a objem → (2) co už má → (3) co se doporučilo, v jakém poměru → (4) proč to odpovídá jeho cíli a riziku → (5) jak bylo doporučení předáno. Věty o rizicích patří za bod 4.
 - **Délka:** 4 až 8 vět, jeden odstavec. Delší, jen když poradce dodá víc důvodů.
@@ -57,7 +57,7 @@ Projdi a výsledek napiš do poznámek pro poradce pod text. Nerozhoduj za něj.
 
 - [ ] Všechna čísla, produkty a podíly odpovídají poznámkám poradce.
 - [ ] Nic jsem nepřidal, co poradce neřekl (žádné nové produkty, výnosy ani lhůty).
-- [ ] Text je ve třetí osobě a v minulém čase (nebo v budoucím, když e-mail ještě nebyl odeslán, a řekl jsem to).
+- [ ] Klient je ve třetí osobě, poradce v jednotném čísle („jsem doporučil“), vše v minulém čase (nebo v budoucím, když e-mail ještě nebyl odeslán, a řekl jsem to).
 - [ ] Zdůvodnění navazuje na horizont, cíl a riziko, ne na obecnou poučku.
 - [ ] Je tam věta o rizicích, nebo jsem poradci řekl, že chybí.
-- [ ] Žádné „já“, „Vy“, emoji, marketingová slova ani slibované výnosy.
+- [ ] Žádné „Vy“, množné číslo, emoji, marketingová slova ani slibované výnosy.

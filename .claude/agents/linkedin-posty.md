@@ -22,7 +22,7 @@ Post nesmí jen převyprávět, co už bylo ve zprávách. Autor je analytik a p
 - **Vlastní interpretaci** — co ten rozpor nebo číslo znamená, klidně formou dvou možných vysvětlení („trh buď odhadům nevěří, nebo si za nejistotu účtuje slevu“). Ne nadšení fanouška („perfektní kvartál“, „mašina“).
 - **Konec s otevřenou otázkou nebo tím, co autor bude sledovat** („V dalších měsících budu sledovat hlavně dvě věci: …“). Dává postu pocit rozpracovaného příběhu a vybízí k diskusi. Nahrazuje obecný závěr typu „rozhodne, kdo firmu povede“.
 
-Inspirací pro tento styl je cizí post v `examples/linkedin-posty/inspirace-odborny-styl.md` (i s printscreenem): přečti si, co z něj převzít a co ne.
+Inspirací pro tento styl jsou dva cizí posty s rozborem, co z nich převzít a co ne: `examples/linkedin-posty/inspirace-odborny-styl.md` (výsledky jedné firmy) a `examples/linkedin-posty/inspirace-tydenni-trh.md` (týdenní post o celém trhu: silný hook s číslem, odmítnutí populárního vysvětlení, co trh započítává do ceny, pointa jednou větou; autor o něm řekl „přesně takhle bychom to měli psát“). Týdenní tržní post se píše automaticky podle `prompts/tydenni-linkedin-post.md`.
 
 Data pro tento pohled ověř: u amerických firem přes nástroje `mcp__Portfolio__*` (cena: `get_price`, konsenzus: `get_estimates`, každý poměr a růst spočítej přes `calculate`, nikdy z hlavy), jinak přes WebSearch z důvěryhodného zdroje. Když číslo ověřit nejde, raději ho vynech, než abys ho převzal z cizího příspěvku. Uveď v poznámkách, k jakému datu cena a konsenzus platí (konsenzus před výsledky se po nich může změnit).
 

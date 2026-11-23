@@ -47,6 +47,17 @@ Rozbor 12 článků: spuštění strategií (2019), Světová špička a Odpově
 - Modelová portfolia v Portfoliu podle vás se na webu i v aplikaci jmenují **tematické balíčky** („Nechte se inspirovat tematickým investováním … S tematickými balíčky nemusíte trávit hodiny analyzováním jednotlivých akcií“). V článku piš „tematický balíček“ nebo krátce „balíček“, **nikdy „strategie“**. „Strategie“ je starý název produktu (do roku 2025).
 - Produkty: Portfolio podle vás (dřív Strategie a Portu Crypto), Portfolio od Portu (dřív portfolia na míru).
 
+## PODKLAD A ČÍSLA
+
+- **Dohodnutý podklad je závazný.** Pokud autor dodá dokument odsouhlasený s nadřízeným, článek musí obsahovat všechny jeho podstatné informace a popsat je podrobně: postup výběru, podmínky, výsledné složení, zvažované varianty včetně důvodů, proč nebyly vybrány. Po napsání projdi podklad bod po bodu a v odpovědi napiš, jestli nějaká informace chybí. Obrázky v Google Dokumentu (tabulky složení) stáhni přes `export?format=zip` a přečti, text z `read_file_content` je neobsahuje.
+- **Složení srovnávacího ETF bere agent z wood.cz** (`https://www.wood.cz/produkty/wood-px-etf/`), ne z vah indexu PX, a podle něj přepočítá text i tabulky (váhy ve fondu, podíl bank a pojišťoven, odlišnost od fondu, výnos). Čísla z podkladu, která vycházela z indexu PX, přepočítej a rozdíly napiš do poznámek pro autora.
+- **Odhady budoucích dividend a výnosů se v článku nepíšou jako čísla ani tabulky.** Pokud ale při sestavování novinky hrály roli, napiš to výslovně a obecně („Při sestavování hrály roli i odhady dividend na příští roky. Opírají se o výhled firem a odhady analytiků. Jsou to jen odhady.“).
+- **Výjimky z pravidel výběru popiš otevřeně.** Když firma v novince je, ačkoli nesplňuje jedno z pravidel (např. Erste: letos vyplatila zhruba 0,6 %, protože peníze použila na koupi polské banky), napiš proč, co se od ní čeká a proč má menší váhu.
+- **Neověřitelná tvrzení z podkladu do článku nepiš** (např. že je firma „nejvíc nadvážená“, když čísla říkají jinak). Důvod patří do poznámek pro autora.
+- **Datum spuštění „dnes“ piš jako „od dnešního dne“.** Termíny výplat dividend ověř (např. Erste platí v dubnu) a piš je tak, jak skutečně jsou.
+- **Daně z dividend a srážkovou daň v článku nerozebírej.** Klienti dostávají každý rok daňové podklady. Čísla „před zdaněním“ a „po zdanění“ uvést lze.
+- **U firem s probíhajícími výsledky nepiš nic aktuálního**, jen obecně (např. u CSG, že dividendu zatím nevyplatila).
+
 ## KOMU NOVINKA SLOUŽÍ
 
 Hned v úvodu napiš, pro koho novinka je a proč vedle stávající nabídky dává smysl. Příklad z tematického balíčku České dividendy: je pro klienty, kteří hledají **pasivní příjem z dividend**. WOOD PX ETF je akumulační, takže dividendy nevyplácí, ale znovu investuje; balíček je vyplácí. Zároveň v něm nejsou jen firmy s nejvyšší dividendou, ale i firmy zaměřené na budoucí růst, a balíček obojí kombinuje.
@@ -75,7 +86,7 @@ Platí KROK 1 z `prompts/clanky-portu.md`. Navíc:
 2. **Perex (2–3 věty)** – co přibylo, kde to je a v čem je hlavní rozdíl proti stávající nabídce.
 3. **Úvod bez mezititulku** – novinka, datum, produkt, 2–3 nejdůležitější fakta (největší pozice, nákladovost, minimum). Druhý odstavec: proč novinka vznikla a jak navazuje na stávající nabídku.
 4. **Tělo (3–6 sekcí s mezititulky)**, podle druhu novinky:
-   - **Tematický balíček:** Pro koho je a čím se liší (hned v úvodu) → Podle čeho jsme firmy vybírali a rozdělili peníze → Co v balíčku je (tabulka složení) → Co čtenář dostane (příklad na 100 000 Kč ze skutečných letošních čísel, kdy a jak peníze chodí, daně) → Srovnání se stávající nabídkou (srovnávací tabulka) → Na co myslet (rizika) → Jak balíček najdete.
+   - **Tematický balíček:** Pro koho je a čím se liší (hned v úvodu) → Dividendy i budoucí růst (z čeho se skládá váha, že hrály roli odhady) → Co je v balíčku (tabulka složení) → Jak jsme firmy vybírali (otázky, výjimky) → Jak jsme rozdělili peníze (limity a podmínky návrhu s výsledky) → Co čtenář dostane (příklad na 100 000 Kč ze skutečných letošních čísel, kdy chodí peníze) → Srovnání se stávající nabídkou (srovnávací tabulka) → Jaké další možnosti jsme zvažovali (varianty z podkladu a důvody, proč nebyly vybrány) → Na co myslet (rizika) → Jak balíček najdete.
    - **Jeden instrument:** Co to je a co sleduje → Složení a parametry (tabulka) → Čím se liší od podobných instrumentů v nabídce → Rizika.
    - **Sada instrumentů:** krátký úvod, pak pro každý instrument mezititulek s tématem a 1–2 odstavci (co sleduje, proč může dávat smysl, hlavní riziko). Na konci přehledová tabulka.
    - **Nová funkce:** co se mění → jak to funguje (postup krok za krokem) → kolik to stojí → co když nechci nic měnit.

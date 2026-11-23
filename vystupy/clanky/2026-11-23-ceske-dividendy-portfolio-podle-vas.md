@@ -12,59 +12,78 @@ V Portfoliu podle vás nově najdete tematický balíček České dividendy. Je 
 
 ## Článek
 
-V Portfoliu podle vás přibyl nový tematický balíček. Jmenuje se České dividendy a tvoří ho devět firem z pražské burzy, které pravidelně vyplácejí dividendy, tedy část svého zisku akcionářům. Největší váhu v něm mají **Komerční banka, Moneta a ČEZ**. Balíček najdete v aplikaci od [DOPLNIT: datum spuštění].
+V Portfoliu podle vás přibyl nový tematický balíček. Jmenuje se České dividendy a od dnešního dne ho najdete v aplikaci. Tvoří ho devět firem z pražské burzy, které pravidelně vyplácejí dividendy, tedy část svého zisku akcionářům. Největší váhu v něm mají **Komerční banka, Moneta a ČEZ**.
 
-České firmy u nás najdete i ve WOOD PX ETF. Je to ale takzvaný akumulační fond: dividendy, které od firem dostane, nevyplácí, ale znovu je investuje. Kdo chce peníze hlavně dlouhodobě zhodnocovat, tomu to vyhovuje. Kdo od českých akcií čeká **pasivní příjem z dividend**, pro toho je tematický balíček České dividendy, protože dividendy z něj vám přijdou na peněženku v Portu.
+České firmy nabízí i WOOD PX ETF. Je to takzvaný akumulační fond: dividendy, které od firem dostane, nevyplácí, ale znovu je investuje. Kdo chce peníze hlavně dlouhodobě zhodnocovat, tomu to vyhovuje. Kdo od českých akcií čeká **pasivní příjem z dividend**, pro toho je tematický balíček České dividendy, protože dividendy z něj budou chodit na peněženku v Portu.
 
 ### Dividendy i budoucí růst
 
-Balíček nevybírá firmy jen podle výše dividendy. Při rozdělování peněz jsme stejnou váhu dali dvěma věcem: kolik firma vyplácí a jak spolehlivě, a jak může do budoucna růst.
+Balíček nevybírá firmy jen podle výše dividendy. Peníze mezi firmy jsme rozdělili podle dvou stejně důležitých věcí.
 
-Proto v balíčku najdete dva druhy firem. Komerční banka, Moneta nebo Philip Morris ČR vyplácejí vysoké dividendy už dnes. Erste a Vienna Insurance Group vyplácejí méně, jejich dividenda ale v posledních letech rostla v průměru o víc než 8 % ročně. **Balíček tak kombinuje příjem z dividend s firmami zaměřenými na budoucí růst.**
+První polovina je **výše a spolehlivost dividendy**. Sledovali jsme, kolik firma vyplatila letos, kolik podle odhadu vyplatí příští rok, kolik let z posledních deseti platila, jestli dividendu snižovala, jakou část zisku rozděluje a jestli dividenda roste. Spolehlivým firmám jsme váhu zvýšili, nespolehlivým snížili.
+
+Druhá polovina je **celkový očekávaný výnos**. Je to dividenda plus očekávaný růst, který odhadujeme podle dividendové politiky a výhledu zisku každé firmy. Vycházíme z toho, že když firma rozděluje stabilní část zisku, cena její akcie obvykle roste podobně jako dividenda.
+
+Důležité byly i odhady dividend na příští roky. Použili jsme je při sestavování balíčku. Opírají se o výhled samotných firem a o odhady analytiků na trhu. Jsou to jen odhady, žádná jistota.
+
+V balíčku proto najdete dva druhy firem. Komerční banka, Moneta nebo Philip Morris ČR vyplácejí vysoké dividendy už dnes. Erste a Vienna Insurance Group vyplácejí méně, jejich dividenda ale v posledních letech rostla v průměru o víc než 8 % ročně. **Balíček tak kombinuje příjem z dividend s firmami zaměřenými na budoucí růst.**
 
 Vysoká dividenda totiž sama nestačí. Philip Morris ČR rozděluje akcionářům celý zisk, jeho dividenda ale klesá: v roce 2023 to bylo 1 310 Kč na akcii, letos 1 100 Kč. Firma, které roste zisk, může dividendu časem zvyšovat a obvykle s ní roste i cena akcie.
 
-### Co v balíčku je
+### Co je v balíčku
 
-Balíček tvoří devět firem a malá část hotovosti. Pro srovnání uvádíme, kolik mají stejné firmy ve WOOD PX ETF.
+Balíček tvoří devět firem. Pro srovnání uvádíme, kolik mají stejné firmy ve WOOD PX ETF.
 
 | Firma | Váha v balíčku | Váha ve WOOD PX ETF | Proč tam je |
 |---|---|---|---|
-| Komerční banka | 20 % | 18,0 % | Nejvyšší dividenda mezi velkými firmami. Víc než 20 % nemá v balíčku žádná firma. |
-| Moneta Money Bank | 18 % | 13,5 % | Vysoká dividenda, kterou v posledních letech zvyšuje. |
-| ČEZ | 17 % | 20,4 % | Dividendu vyplácí bez přerušení přes 25 let, její výše ale kolísá s cenou elektřiny. |
-| Philip Morris ČR | 10 % | 2,3 % | Vysoká dividenda. S akciemi se obchoduje málo, proto nemá víc. |
-| Vienna Insurance Group | 9 % | 16,4 % | Dnes nižší dividenda, která ale dlouhodobě spolehlivě roste. |
-| Colt CZ Group | 9 % | 3,6 % | Dividendu vyplácí každý rok od vstupu na burzu. |
+| Komerční banka | 20 % | 17,8 % | Nejvyšší dividenda mezi velkými firmami. Víc než 20 % nemá v balíčku žádná firma. |
+| Moneta Money Bank | 18 % | 13,5 % | Druhá nejvyšší dividenda, kterou v posledních letech zvyšuje. |
+| ČEZ | 14 % | 20,0 % | Dividendu vyplácí bez přerušení přes 25 let, její výše ale kolísá s cenou elektřiny a dnes je nízká. |
+| Vienna Insurance Group | 12 % | 13,8 % | Spolehlivý plátce, jehož dividenda dlouhodobě roste. Dnes vyplácí méně a v Praze se s ní obchoduje málo. |
+| Colt CZ Group | 11 % | 4,7 % | Dividendu vyplácí každý rok od vstupu na burzu. |
+| Philip Morris ČR | 10 % | 2,7 % | Vysoká dividenda. S akciemi se obchoduje málo, proto nemá víc. |
 | Kofola ČeskoSlovensko | 5 % | 0,8 % | Dividendu vyplácí každý rok od vstupu na burzu. S akciemi se obchoduje málo. |
-| Erste Group | 5 % | 20,0 % | Letos vyplatila méně než obvykle, dlouhodobě ale dividendu zvyšuje. |
-| Doosan Škoda Power | 5 % | 0,9 % | Na burze je teprve od roku 2025, proto má nejvýš 5 %. |
-| CSG | 0 % | 3,9 % | Dividendu zatím nevyplatila. |
-| Hotovost | 2 % | 0 % | Rezerva pro nákupy a výplaty. |
+| Erste Group | 5 % | 20,0 % | Letos vyplatila málo, protože peníze použila na koupi polské banky. Od příštího roku má vyplácet výrazně víc. |
+| Doosan Škoda Power | 5 % | 1,0 % | Na burze je teprve od roku 2025, proto má nejvýš 5 %. Zhruba polovina letošní dividendy byla mimořádná. |
+| CSG | 0 % | 5,0 % | Dividendu zatím nevyplatila. |
 
-*Váhy WOOD PX ETF jsou odvozené z indexu PX, hlavního ukazatele pražské burzy, k 10. 11. 2026. Aktuální složení fondu najdete na wood.cz.*
+*Váhy WOOD PX ETF podle wood.cz k 23. 11. 2026. Zbytek fondu, 0,7 %, tvoří hotovost.*
 
-Firmy se s ETF z velké části překrývají. Velkých firem, které vyplácejí dividendy, je na pražské burze jen pár. Liší se ale to, kolik peněz do které firmy jde: **zhruba 30 % peněz je v balíčku rozděleno jinak než v ETF**. Banky a pojišťovny tvoří 52 % balíčku, v ETF 68 %.
+Balíček drží i 2 % hotovosti. Je to stejné jako u ostatních Portfolií podle vás. Hotovost slouží na peněžní operace a hlavně na automatické vyvažování, tedy průběžné vracení vah k původnímu rozdělení.
+
+Firmy se s ETF z velké části překrývají. Velkých firem, které vyplácejí dividendy, je na pražské burze jen pár. Liší se ale to, kolik peněz do které firmy jde: **zhruba 29 % peněz je v balíčku rozděleno jinak než ve fondu**. Banky a pojišťovny tvoří 55 % balíčku, ve fondu 65 %.
 
 ### Jak jsme firmy vybírali
 
-Na pražské burze je zhruba padesát akcií. Zahraniční firmy bez vazby na Česko, třeba Shell nebo Volkswagen, jsme vynechali. U ostatních jsme se ptali na tři věci:
+Vybírali jsme z celé pražské burzy. Nejen z firem v hlavním indexu PX. Zahraniční firmy bez vazby na Česko, třeba Shell nebo Volkswagen, jsme vynechali. U ostatních jsme se ptali na tři věci:
 
-1. **Vyplácí firma dividendu pravidelně?** Musela ji vyplatit letos a alespoň ve třech z posledních pěti let.
+1. **Vyplácí firma dividendu pravidelně?** Musela ji vyplatit v posledním roce a alespoň ve třech z posledních pěti let.
 2. **Dají se její akcie snadno koupit a prodat?** Některé menší firmy, třeba E4U, SAB Finance nebo Toma, dividendu vyplácejí, ale obchoduje se s nimi jen málo.
-3. **Je dividenda dost vysoká?** Firma musí za rok vyplatit alespoň zhruba 2,2 % z ceny akcie, tedy asi polovinu toho, co v průměru vyplácejí největší pražské firmy.
+3. **Je dividenda dost vysoká?** Firma má vyplácet alespoň polovinu toho, co v průměru vyplácejí firmy na pražské burze.
 
-Výběrem prošlo devět firem. Aby balíček nestál na jedné z nich, má každá nejvýš 20 %. Banky a pojišťovny mají dohromady nejvýš 55 %. Nižší strop mají firmy, se kterými se obchoduje méně, a firmy, které vyplácejí dividendu teprve krátce.
+Osm firem splnilo všechny tři otázky. Výjimkou je Erste.
+
+Erste letos vyplatila zhruba 0,6 %. To je méně než polovina průměru, protože peníze použila na koupi polské banky. Od příštího roku má vyplácet výrazně víc a patří k firmám s nejvyšším očekávaným růstem. Na dividendy Komerční banky nebo Moneta ale podle našeho očekávání nedosáhne, proto má v balíčku jen 5 %.
+
+### Jak jsme rozdělili peníze
+
+Balíček hlídají limity. Jedna firma má nejvýš 20 %, u málo obchodovaných akcií méně. Firmy s dividendovou historií kratší než tři roky mají nejvýš 5 %. Banky a pojišťovny dohromady nejvýš 55 %.
+
+Před schválením jsme si navíc stanovili tři podmínky:
+
+1. **Dividenda po zdanění je alespoň o 1 procentní bod vyšší než ve fondu.** Balíček vychází na 4,5 %, stejné firmy ve vahách fondu na 3,4 %.
+2. **Balíček se od fondu znatelně liší.** Cílem bylo rozdělit jinak alespoň zhruba 30 % peněz, aby byl vidět přínos balíčku. Vychází to zhruba na 29 %.
+3. **Banky a pojišťovny tvoří nejvýš 55 %.** Ve fondu mají 65 % a nechceme stejnou závislost na jednom oboru. V balíčku vychází přesně 55 %.
 
 ### Kolik balíček vyplácí
 
-Vezměme investici 100 000 Kč. Podle letošních dividend by z ní balíček vyplatil zhruba **5 300 Kč před daní a 4 500 Kč po dani**. Stejné firmy ve vahách WOOD PX ETF by po dani vynesly asi 3 400 Kč, fond je ale nevyplácí a znovu investuje.
+Vezměme investici 100 000 Kč. Podle letošních dividend by z ní balíček vyplatil zhruba **5 300 Kč před zdaněním a 4 500 Kč po zdanění**. Stejné firmy ve vahách WOOD PX ETF by po zdanění vynesly asi 3 400 Kč, fond je ale nevyplácí a znovu investuje.
 
-Výplaty nechodí rovnoměrně. Firmy vyplácejí dividendy hlavně na jaře a v létě, zbytek roku nepřijde nic. Výše se navíc rok od roku mění. V roce 2020 ČNB bankám výplaty dividend omezila a balíček by vyplatil zhruba polovinu obvyklé částky.
+Výplaty nechodí rovnoměrně. Chodí v několika splátkách mezi dubnem a srpnem: Erste platí v dubnu, Komerční banka, Moneta a Vienna Insurance Group v květnu, Philip Morris ČR a Colt v červenci a ČEZ, Kofola a Doosan v srpnu. Zbytek roku nepřijde nic.
+
+Výše dividend se navíc mění. V roce 2020 ČNB bankám výplaty dividend omezila a balíček by vyplatil výrazně méně.
 
 Dividenda není peníz navíc. Když ji firma vyplatí, cena její akcie zhruba o tuto částku klesne. Výsledek investice proto tvoří dividendy i to, jak se mění cena akcií, a ta může jít nahoru i dolů.
-
-Z dividend se platí daň. U českých firem ji stát strhne hned při výplatě, a to 15 %. U rakouských firem Erste a Vienna Insurance Group je to 27,5 % a část si můžete nechat vrátit. U WOOD PX ETF zůstávají dividendy ve fondu, takže z nich průběžně daň neplatíte.
 
 ### Balíček, nebo ETF?
 
@@ -72,16 +91,49 @@ Obě investice vedou do českých firem. Liší se hlavně tím, co se děje s d
 
 | | Tematický balíček České dividendy | WOOD PX ETF |
 |---|---|---|
-| Dividendy | Přijdou vám na peněženku | Fond je znovu investuje |
+| Dividendy | Chodí vám na peněženku | Fond je znovu investuje |
 | Pro koho | Pro ty, kdo chtějí pravidelný příjem z dividend | Pro ty, kdo chtějí dlouhodobě zhodnocovat peníze bez výplat |
 | Počet firem | 9 | 10 |
 | Podle čeho se dělí peníze | Výše a spolehlivost dividendy a budoucí růst firmy | Velikost firmy |
-| Banky a pojišťovny | 52 % | 68 % |
-| Letošní dividendy po dani, v % z investice | 4,5 % | 3,4 % (zůstávají ve fondu) |
-| Daň z dividend | Strhává se při každé výplatě | Průběžně ji neplatíte |
+| Banky a pojišťovny | 55 % | 65 % |
+| Letošní dividendy po zdanění, v % z investice | 4,5 % | 3,4 % (zůstávají ve fondu) |
 | Náklady | [DOPLNIT] | 0,20 % ročně + [DOPLNIT] |
 
-Balíček a ETF můžete mít i vedle sebe. Komerční banku, Monetu a ČEZ pak ale budete mít v obou: v balíčku tvoří 55 %, v ETF 52 %.
+Balíček a ETF můžete mít i vedle sebe. Komerční banku, Monetu a ČEZ pak ale budete mít v obou: v balíčku tvoří 52 %, ve fondu 51 %.
+
+### Jaké další možnosti jsme zvažovali
+
+Kromě vybraného složení jsme počítali ještě dvě varianty.
+
+**Varianta A: čistě dividendová.** Vybírala by firmy stejně a váhu by určovala jen výše dividendy po zdanění, tedy kolik vám přijde na peněženku. Brali bychom letošní dividendu i odhad na příští rok a spolehlivým plátcům bychom váhu zvýšili. Limity by byly podobné, jen banky a pojišťovny by mohly mít dohromady nejvýš 50 %. Tuhle variantu jsme nevybrali:
+
+- Brala ohled jen na výši dividendy, ne na to, jestli firma a cena její akcie porostou.
+- Neobsahovala by Erste, protože letos kvůli koupi polské banky vyplatila málo. Od příštího roku má přitom vyplácet výrazně víc a patří k firmám s nejvyšším očekávaným růstem.
+- Vybrané složení vyplácí skoro stejně, 4,5 % proti 4,7 % po zdanění, a navíc počítá s růstem hodnoty akcií.
+
+**Varianta B: větší důraz na cílové ceny analytiků.** Cílová cena je cena, na kterou podle analytika akcie dosáhne za dvanáct měsíců. Celkový výnos jsme v této variantě počítali jako dividendu po zdanění plus potenciál podle cílových cen, napůl s očekávaným růstem dividendy. Váhy by vyšly takto:
+
+| Firma | Varianta B | Vybrané složení | WOOD PX ETF |
+|---|---|---|---|
+| Komerční banka | 20 % | 20 % | 17,8 % |
+| Moneta Money Bank | 19 % | 18 % | 13,5 % |
+| Philip Morris ČR | 17 % | 10 % | 2,7 % |
+| Colt CZ Group | 15 % | 11 % | 4,7 % |
+| ČEZ | 6 % | 14 % | 20,0 % |
+| Vienna Insurance Group | 8 % | 12 % | 13,8 % |
+| Kofola ČeskoSlovensko | 5 % | 5 % | 0,8 % |
+| Doosan Škoda Power | 5 % | 5 % | 1,0 % |
+| Erste Group | 5 % | 5 % | 20,0 % |
+| CSG | 0 % | 0 % | 5,0 % |
+
+*Váhy WOOD PX ETF podle wood.cz k 23. 11. 2026.*
+
+Ani tuhle variantu jsme nevybrali:
+
+- Pražské akcie mají slabé pokrytí analytiky. Cílové ceny u nich sleduje obvykle jen několik analytiků, takže jedna změna odhadu výrazně pohne celým průměrem.
+- Na dvanáctiměsíční cílové ceny se nedá spolehnout. Často se mění a balíček by kvůli nim musel častěji měnit váhy, hlavně u akcií, se kterými se obchoduje málo.
+- ČEZ by měl jen 6 %, a bez stropů pro jednotlivé firmy dokonce méně než Doosan, přestože je stabilní plátce dividend a jediná energetická firma v balíčku. Nízká cílová cena souvisí hlavně s nejistotou kolem plánu státu na plné ovládnutí firmy.
+- Philip Morris ČR by měl 17 %, skoro jako banky, přestože mu dividenda i zisk klesají a výhled není ideální.
 
 ### Na co myslet
 
@@ -92,11 +144,11 @@ Balíček a ETF můžete mít i vedle sebe. Komerční banku, Monetu a ČEZ pak 
 - **Jedna burza.** Balíček tvoří devět firem z jedné země. Když se české ekonomice nedaří, je to vidět na celém balíčku.
 - **Kurz eura.** Erste a Vienna Insurance Group vyplácejí dividendu v eurech, v korunách proto záleží i na kurzu.
 
-Složení balíčku budeme pravidelně kontrolovat. CSG se do něj může dostat, až začne vyplácet dividendu.
+Složení balíčku budeme pravidelně kontrolovat. Firma, která začne vyplácet dividendu, se do něj může časem dostat.
 
 ### Jak balíček najdete
 
-Balíček najdete v Portfoliu podle vás. V aplikaci je mezi tematickými balíčky. [DOPLNIT: postup v aplikaci] Investovat můžete od [DOPLNIT] Kč, jednorázově i pravidelně. [DOPLNIT: poplatek] Pokud už máte WOOD PX ETF nebo jednotlivé české akcie, nic prodávat nemusíte.
+Balíček najdete v Portfoliu podle vás. Je mezi tematickými balíčky. [DOPLNIT: postup v aplikaci] Investovat můžete od [DOPLNIT] Kč, jednorázově i pravidelně. [DOPLNIT: poplatek] Pokud už máte WOOD PX ETF nebo jednotlivé české akcie, nic prodávat nemusíte.
 
 ### Na co si dát po přečtení tohoto článku pozor?
 
@@ -108,26 +160,22 @@ Balíček najdete v Portfoliu podle vás. V aplikaci je mezi tematickými balí�
 
 ## Poznámky pro autora
 
-**Co doplnit a ověřit před publikací**
+**Co doplnit před publikací**
 
-- Datum spuštění, postup v aplikaci, minimální investice a poplatek balíčku.
-- Jak přesně chodí výplata dividend (automaticky na peněženku, nebo volitelně) a co přesně tvoří 2 % hotovosti.
-- Srážková daň 15 % platí, jen když plátce zná skutečného vlastníka. Podle metodiky hrozí u hromadných účtů bez dokumentace 35 %.
-- Řádek o dani u WOOD PX ETF (fond dividendy nevyplácí, investor z nich průběžně daň neplatí).
-- Aktuální složení WOOD PX ETF z wood.cz. Váhy v podkladu jsou odvozené z indexu PX a liší se od složení na wood.cz z 22. 9. 2026 (např. VIG 16,4 % proti 13,8 %).
-- Ceny, dividendy, kurz EUR/CZK a výsledky CSG k datu publikace.
+- Postup v aplikaci, minimální investice a poplatek balíčku.
 
-**Rozpory v podkladech**
+**Na co si dát pozor v číslech**
 
-- **Erste a třetí podmínka.** Letos vyplatila 0,75 EUR, tedy zhruba 0,6 % z ceny akcie, a podmínkou „alespoň 2,2 %“ by neprošla. V balíčku přesto je. Je potřeba upřesnit pravidlo (např. podle odhadu na příští rok), jinak článek tvrdí něco, co neplatí.
-- **Hranice 2,2 %.** V datech je průměrná výplata firem z indexu PX 4,04 %, polovina tedy 2,0 %. Podklad i metodika uvádějí 2,2 %.
-- **Colt „nejvíc nadvážený proti ETF“.** Neplatí: Philip Morris ČR je nad ETF o 7,7 procentního bodu, Colt o 5,4.
-- **Měsíce výplat.** Podklad uvádí duben až srpen, metodika květen, červenec a srpen. V článku je proto obecně „hlavně na jaře a v létě“.
+- **Tabulka složení.** Dohodnuté váhy z dokumentu dávají dohromady 100 % bez hotovosti. V článku je navíc uvedeno 2 % hotovosti jako u ostatních Portfolií podle vás. Je potřeba potvrdit, jestli jsou váhy v tabulce podíly akcií, nebo celého balíčku.
+- **Odlišnost od ETF.** Dokument uvádí 31 %. S aktuálním složením fondu z wood.cz vychází zhruba 28,5 %, v článku je proto „zhruba 29 %“ a cíl 30 % je popsaný jako cíl.
+- **Banky a pojišťovny ve fondu.** Dokument uvádí 68 % podle indexu PX. Podle wood.cz je to 65,1 %, v článku je 65 %. Dividenda po zdanění vychází i s váhami z wood.cz stejně: 4,5 % balíček, 3,4 % fond.
+- **Hranice výnosu u třetí otázky.** V podkladech je jednou 2,2 % a v datech vychází polovina průměru indexu PX na 2,0 %. Číslo jsem do článku nepsal, je tam „alespoň polovina průměru“.
+- **Složení fondu z wood.cz** nemá uvedené datum. Použil jsem datum, kdy jsem ho stáhl, 23. 11. 2026.
+- **Měsíce výplat:** Erste platila 24. 4. 2026, ostatní měsíce jsou z podkladů (květen, červenec, srpen).
 
 **Vědomě vynecháno**
 
-- Odhady dividend na roky 2027–2030 a odhad výplaty na příští rok. Jsou to odhady, článek má stát na skutečných letošních číslech.
-- Interní informace z podkladu (zrušení Pražské špičky, kapacita balíčku, varianty návrhu, jména kolegů) a cílové ceny analytiků.
-- Historické výnosy balíčku. Váhy jsou zvolené s dnešní znalostí, zpětný výpočet by nebyl výkonnost, kterou by kdo reálně dosáhl.
+- Tabulka odhadů dividend na roky 2027–2030 a tabulka cílových cen analytiků. V článku je jen to, že odhady při sestavování hrály roli.
+- Interní informace z podkladu (zrušení Pražské špičky, kapacita balíčku, jména kolegů) a historické výnosy balíčku, které by byly zpětným výpočtem s dnešními vahami.
 
 **Graf (volitelný):** sloupcový graf vah balíčku vedle vah WOOD PX ETF, firmy seřazené podle váhy v balíčku, dvě barvy Portu. Kreslit agentem portu-grafy.

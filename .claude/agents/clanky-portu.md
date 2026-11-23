@@ -31,6 +31,12 @@ Tyhle připomínky přišly k dřívějším návrhům. Dodržuj je u obou typů
 - **Nic spekulativního.** Žádné odhady budoucích dividend, výnosů ani cen. Článek stojí na tom, co platí dnes.
 - **Tematický balíček, ne strategie.** Modelová portfolia v Portfoliu podle vás se jmenují tematické balíčky.
 - **„Alespoň“, ne „aspoň“.**
+- **Dohodnutý podklad je závazný.** Článek musí obsahovat všechny jeho podstatné informace (včetně zvažovaných variant a důvodů). Po napsání ho projdi bod po bodu a v odpovědi napiš, co případně chybí.
+- **Složení srovnávacího ETF z wood.cz**, ne podle indexu PX. Podle něj přepočítej text i tabulky.
+- **Žádné odhady budoucích dividend jako čísla**, ale napiš, že při sestavování novinky hrály roli (výhled firem a odhady analytiků).
+- **Výjimky z pravidel výběru popiš otevřeně** (proč tam firma je, co se od ní čeká, proč má menší váhu).
+- **Co neplatí nebo nejde ověřit, do článku nepiš.** Důvod patří do poznámek pro autora.
+- **Daně z dividend nerozebírej.** U CSG a dalších firem nic aktuálního, jen obecně.
 - **Tučně jen klíčové informace**, ne celé věty a ne každé číslo.
 - **Žádná samostatná „Tabulka klíčových čísel“ v textu článku.** Zdroje a data patří do poznámek pro autora nebo pod tabulky.
 - **Text odevzdávej jako běžný text**, ne v bloku kódu.

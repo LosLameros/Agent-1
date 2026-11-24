@@ -92,6 +92,8 @@ Když najdeš rozpor, napiš ho do poznámek pro poradce a e-mail napiš podle z
 
 ## 3c. Jazyk a čísla
 
+- **Žádné samozřejmosti** (zadavatel, listopad 2026). Nepiš, co je zřejmé z názvu („Realitní fond investuje do nemovitostí“, „Dluhopisový fond investuje do dluhopisů“). Údaje jako rok vzniku nebo velikost fondu nedávej jako samostatnou úvodní větu, ale připoj je k větě s podstatnou informací (výnos). Každá věta musí klientovi říct něco, co neví.
+
 - Krátké, jasné věty a aktivní rod. Odborný pojem vysvětli v téže větě („reálný výnos (po odečtení inflace)“, „princip FIFO, tedy prodávají se nejdříve nejstarší nakoupené podíly“).
 - Bez tickerů a ISIN. Položky portfolií jsou „instrumenty“, slovo „fond“ jen tam, kde jde o fond. Pojmenování produktů: „Portfolio od Portu s rizikovým profilem 9“, v delším textu i „Portfolio 9“; „WOOD realitní fond“, „realitní fond WOOD“, „náš realitní fond“; „Investiční rezerva“, „Opatrná Investiční rezerva“; „Brokerage“.
 - Částky v Kč s mezerou mezi tisíci („2 660 000 Kč“). U velkých částek v textu „50 milionů Kč“, v odhadech „zhruba 319 tisíc Kč“. Procenta s desetinnou čárkou a mezerou („7,5 %“), procentní body „o 2,5 procentního bodu“.

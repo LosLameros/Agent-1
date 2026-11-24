@@ -39,6 +39,10 @@ Tyhle připomínky přišly k dřívějším návrhům. Dodržuj je u obou typů
 - **Daně z dividend nerozebírej.** U CSG a dalších firem nic aktuálního, jen obecně.
 - **Interní podmínky návrhu do článku nepatří** (např. „musí se lišit od ETF o 30 %“), vypadají jako úprava, aby návrh něco splnil. Limity (strop na firmu, banky a pojišťovny) ano. U složení vezmi finální verzi, ne původní návrh.
 - **Závěr článku o novince:** tři krátké odstavce lidským jazykem (pro koho je co, rizika včetně malého koncentrovaného trhu a toho, že výnos se může měnit a novinku hlídáte a případně zasáhnete, doplněk k dobře diverzifikovanému portfoliu). Bez seznamu odrážek „Na co myslet“.
+- **Výběr firem a sestavení vah v jedné sekci hned po úvodu** (filtry, výjimky, váhy, limity, možné změny složení), ne ve dvou oddělených sekcích, které mluví o tomtéž.
+- **Fungování produktu ověř, nepředpokládej ho.** Např. výplata dividend na peněženku u tematických balíčků zatím nefunguje (plán 1Q 2027): dividendy se připisují do hotovostní složky a když hotovost přesáhne cílovou váhu o 2 procentní body, část se zainvestuje. O budoucí funkci piš jen jako o „brzy“.
+- **Když je dokument v revizi**, neupravuj ho napřímo, ale vkládej změny jako návrhy (`writeMode: SUGGEST`), aby je mohl nadřízený přijmout nebo odmítnout. Při přesunu textu nesmí vypadnout žádná informace.
+- **Číselné údaje o výnosu vždy s obdobím a datem cen** (např. dividendy vyplacené v roce 2026, ceny akcií k 10. 11. 2026), ne jen „letos“.
 - **Tabulka složení bez sloupce „Proč tam je“.** Důvod rozdílů vah proti srovnávací nabídce vysvětli pod tabulkou textem (podle čeho se dělí váhy, kam jde víc a méně peněz, přidaná hodnota). Ve srovnávací tabulce žádný řádek o nákladech, dokud nejsou známé, a žádný vysvětlující odstavec pod ní.
 - **Úpravy autora v Google Dokumentu zachovej.** Před každou změnou dokument přečti, porovnej ho se svou poslední verzí a měň jen to, co autor žádá, cílenými úpravami (ne přepsáním celého dokumentu).
 - **Tučně jen klíčové informace**, ne celé věty a ne každé číslo.

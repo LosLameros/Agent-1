@@ -312,6 +312,17 @@ Když zadavatel pošle screeny investic klienta u jiného poskytovatele (banka, 
 - **Závěr:** nenabízej provedení, nepiš „pokud budete souhlasit, projdu s Vámi prodej“. Požádej o názor a pozdrav jednou větou: „Budu rád za Váš pohled a přeji hezký víkend.“ Den v týdnu přizpůsob odeslání.
 - **Kontrola před odevzdáním:** pravopis (v odeslané verzi zadavatel opravoval překlepy typu „na na“, „můžete rozdělil“), shoda oslovení se jménem klienta a že věta „fond je v zisku“ říká, od kdy.
 
+**Poučení z odeslané verze e-mailu o fondech pro klientova známého (zadavatel, 24. 11. 2026):**
+- **Daně:** bez předvětí typu „Jedna věc je ale potřeba pohlídat“. Věcně: osvobození po třech letech platí pro každý podíl zvlášť (od nejstarších), do limitu 100 000 Kč se ale počítají i osvobozené prodeje, proto prodeje rozdělit do dvou let.
+- **Úvod k cizím fondům:** neutrálně a bez hodnocení („Nějaké fondy přednosti mají, u každého ale máme na Portu alternativu“). Dodej, že vstupní poplatky ubírají z investice hned a dlouhodobě dělají velký rozdíl, a že záleží, jak by poplatky nastavil poradce (vstupní poplatek se dá vyjednat). Pod seznam poplatků patří věta o horizontu a procentech, která mu byla doporučena.
+- **Poplatek Portu:** vždy uveď, že standardní 1 % ročně se u vyššího vkladu (nad 500 tisíc Kč) nebo při fixaci dá snížit podstatně níž (údaj zadavatele, jinde ho neuváděj jako fakt).
+- **Výkonnost bez vstupního poplatku:** výslovně napiš, že vstupní poplatek výsledek ještě sníží a že s tím je potřeba počítat.
+- **Vyšší náklady alternativy říkej otevřeně.** U WOOD realitního fondu zadavatel doplnil, že má nákladovost vyšší (1,9 % správcovský a 10 % výkonnostní poplatek), ale i po nich za 3 roky vydělal víc. Údaj o 3 letech piš „cca 7,5 %“. Argumenty o likviditě a kolísání nepoužívej, pokud nejsou ze stránky Portu.
+- **Mluv o známém ve 3. osobě** („si může koupit“, „kdyby vložil“), ne „můžete“, protože fondy nejsou klientovy.
+- **Alternativa k dividendovému fondu:** vedle Portfolia od Portu uveď dividendovou strategii v Brokerage a že záleží, zda chce klient dividendy vyplácet, nebo reinvestovat.
+- **Pozitivum a negativum:** u každého fondu jedna věta s tím, co mu jde (stabilita, výnos od založení, široké rozložení), a hned za ní negativa (poplatky, horší výkonnost). U Amundi bez výkonnosti a bez zmínky, že je levnější.
+- **Investika MONETIKA:** výnos je navázaný na 2T repo ČNB snížené o zhruba 0,7 p. b. (údaj Investiky), poplatek je 0,35 % za obhospodařování + 0,05 % za administraci = 0,40 % ročně (ne 0,45 % z agregátoru), vstupní poplatek max. 0,5 %, 12M výnos berej ze stránky Investiky s datem. Investiční rezerva Portu: úrok na webu Portu (aktuálně 3,70 % pro Opatrnou variantu, „kopíruje sazbu ČNB“), poplatek 0,25 % ročně navíc.
+
 Výstup: samostatný soubor `analyza-fondu.md` ve výstupní složce (zaměření, poplatky, výkonnost, tabulka alternativ, roční náklady, závěr, výhrady) a v e-mailu klientovi shrnutí s tabulkami. Pokud klient fondy po prodeji nahradí, připomeň v revizi limit 100 000 Kč za rok a rozložení prodejů do více let.
 
 # 7. VÝSTUP

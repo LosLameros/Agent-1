@@ -226,9 +226,20 @@ Na požádání ulož e-mail do `vystupy/navrhy-portfolia/<RRRR-MM-DD>-<prijmeni
 - **Závěr:** „Budu rád za Vaše připomínky a pohled na můj návrh.“ Bez věty „vše Vám nastavím“.
 - **Upozornění na historické výnosy** zadavatel vynechal, i když e-mail uvádí výnos fondu 7,5 % a cílový výnos 7–9 %. Agent ho dál dává (compliance, kap. 3b bod 11) a v poznámkách pro poradce napíše, že ho může smazat.
 
+**Úpravy zadavatele z 24.–25. 11. 2026** (návrh na 1,4 milionu Kč a shrnutí schůzky s DPS, spořicím účtem a fixací):
+
+- **Představení fondu patří přímo do části o fondu**, ne na konec e-mailu. Každý doporučený fond, který klient nemá, se představí stejně (kap. 3b, bod 7).
+- **Bez procent sektorů a podílu hotovosti** (mění se), jen výčet sektorů a zemí (Česko, Polsko, Slovensko). Nájemné se uvádí jako „dopředu nasmlouvané“.
+- **Žádné samozřejmosti.** Nepiš „realitní fond investuje do nemovitostí“. Rok vzniku a velikost fondu připoj k větě s výnosem (kap. 3c).
+- **Shrnutí schůzky po konzultaci** je samostatný typ e-mailu: co klient pošle (např. výpis DPS, informace od zaměstnavatele), co si má rozmyslet (přesun ze spořicího účtu, fixace portfolia) a co nabízím (vysvětlení, další materiály). Bez rozdělení peněz. Tón je volnější a přátelštější a netlačí: formulace jako „možná Vás napadne“, „až bude chvíle“, „vůbec nespěchejte“ místo „rozmyslete si prosím“ (zadavatel, listopad 2026). Fixaci portfolia navrhuj na 5–7 let. Když klient peníze vybere dřív, poplatek se dopočítá jen z vybraných peněz, ne z celého portfolia. Co klient fixací získá (např. nižší poplatek), nevím, nech `[doplnit: výhoda fixace]`, dokud to zadavatel neupřesní.
+- **Peníze na spořicím účtu: vždy napiš důvod, proč je jich tam hodně.** Když klient drží na spořicím účtu velkou částku (např. 1 milion Kč) a zadavatel to označí za moc, napiš v e-mailu proč: pokud klient nemá krátkodobý investiční cíl, na který by peníze ze spořicího účtu potřeboval, nedává ekonomicky moc smysl je tam držet (úrok je nižší než očekávaný výnos investic a peníze přicházejí o zhodnocení). Zmírni to pochopením (rozumím tomu, že v tom hraje roli i pocit jistoty), neříkej to jako výtku. Nabídni konzervativní variantu pro tyto peníze (realitní fond), nenuť klienta ji přijmout. V e-mailu shrnujícím schůzku z 25. 11. 2026 tento důvod ještě chyběl (zadavatel ho chtěl doplnit až příště, a to u dalších e-mailů, ne zpětně).
+- **„Do 3 pracovních dnů na účtu“** píše zadavatel o výběru z investic u Portu. Piš „obvykle“. U realitního fondu podle statutu výplata může trvat až 6 měsíců a odkupy lze pozastavit, proto to nepiš jako záruku.
+- **Daň při výběru z fondu do 3 let** zmiň jednou větou i v krátkém e-mailu, když klient může peníze potřebovat dřív.
+
 # 9. SEBEKONTROLA PŘED ODEVZDÁNÍM
 
 - [ ] Přečetl jsem všechny vzory a e-mail jim odpovídá hlasem, stavbou i délkou.
+- [ ] Když klient drží velkou částku na spořicím účtu a zadavatel ji označil za moc, e-mail říká proč (bez krátkodobého cíle nedává ekonomický smysl tam peníze držet).
 - [ ] Rozdělení odpovídá zadání. Kč i % sedí na celou částku, počet a výše týdenních vkladů jsou spočítané v Bash.
 - [ ] Je jasné, odkud peníze jdou (Investiční rezerva, případně její založení), a klientovi zůstává rezerva, pokud ji potřebuje.
 - [ ] Každá část má důvod navázaný na horizont a potřeby klienta, ne obecnou poučku.

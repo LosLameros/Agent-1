@@ -20,7 +20,7 @@ Než začneš psát, přečti si celý příslušný prompt a postupuj podle ně
 ## 2. Vzory
 
 - Typ 1: `vystupy/clanky/2026-11-18-nvidia-vysledky-3q-fy27.md`
-- Typ 2: `vystupy/clanky/2026-11-23-ceske-dividendy-portfolio-podle-vas.md` (nový tematický balíček České dividendy, tabulka složení a srovnání s WOOD PX ETF)
+- Typ 2, nový tematický balíček nebo strategie v Portfoliu podle vás: `examples/clanky/2026-11-ceske-dividendy-finalni-verze.md` (finální verze článku České dividendy schválená redakcí a seznam změn oproti návrhu agenta). Článek o dalším balíčku nebo strategii stav stejně: tučný perex, složení hned na začátku, výběr a váhy, výnos s číslem v nadpisu, připravovaná funkce, srovnání se stávající nabídkou, založení a upozornění. K titulku vždy nabídni 5 atraktivnějších variant.
 
 ## 3. Co autor opakovaně opravoval
 

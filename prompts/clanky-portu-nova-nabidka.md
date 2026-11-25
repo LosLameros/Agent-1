@@ -4,7 +4,7 @@ Druhý typ článku pro Portu Magazín. Použij ho, když článek oznamuje **no
 
 Pro běžné články o trzích, firmách a ekonomice (typ 1) platí `prompts/clanky-portu.md`. Z něj tento prompt přebírá **roli (ROLE A KONTEXT), rešerši (KROK 1), stylistická pravidla (KROK 3) a compliance (KROK 5)**. Liší se struktura, práce s produktem, povinné tabulky a výstup.
 
-Vzorový výstup: `vystupy/clanky/2026-11-23-ceske-dividendy-portfolio-podle-vas.md` (tematický balíček České dividendy, srovnání s WOOD PX ETF).
+**Vzor pro nový tematický balíček nebo investiční strategii v Portfoliu podle vás:** `examples/clanky/2026-11-ceske-dividendy-finalni-verze.md` – finální, redakcí schválená verze článku o balíčku České dividendy a seznam toho, co redakce změnila oproti návrhu agenta. Než začneš psát, přečti si ho celý. Článek o dalším balíčku nebo strategii má vypadat podobně (stavba níže v kapitole VZOR).
 
 ## VSTUPNÍ PROMĚNNÉ (vyplň před spuštěním)
 
@@ -47,12 +47,31 @@ Rozbor 12 článků: spuštění strategií (2019), Světová špička a Odpově
 - Modelová portfolia v Portfoliu podle vás se na webu i v aplikaci jmenují **tematické balíčky** („Nechte se inspirovat tematickým investováním … S tematickými balíčky nemusíte trávit hodiny analyzováním jednotlivých akcií“). V článku piš „tematický balíček“ nebo krátce „balíček“, **nikdy „strategie“**. „Strategie“ je starý název produktu (do roku 2025).
 - Produkty: Portfolio podle vás (dřív Strategie a Portu Crypto), Portfolio od Portu (dřív portfolia na míru).
 
+## VZOR: ČLÁNEK O NOVÉM TEMATICKÉM BALÍČKU NEBO STRATEGII
+
+Podle finální verze článku o balíčku České dividendy (listopad 2026). Platí pro každý nový tematický balíček nebo investiční strategii v Portfoliu podle vás.
+
+**Stavba (zhruba 800–1 000 slov včetně tabulek):**
+
+1. **Titulek:** „Název balíčku: nový tematický balíček + čím je zajímavý“ (vzor: „České dividendy: nový tematický balíček českých firem se spolehlivou dividendou“). Autorovi nabídni i 5 atraktivnějších variant (viz KROK 2).
+2. **Tučný perex, tři věty, bez samostatného úvodu:** co přibylo a kde („V Portfoliích podle vás přibyla novinka: …“), co v tom čtenář dostane (počet firem nebo instrumentů a 3–4 známá jména), pro koho to je.
+3. **Sekce 1 – složení** (nadpis typu „Devět známých firem v jedné investici“): věta „Portfolio tvoří X firem a Y % hotovosti:“, tabulka **Firma | Váha** včetně řádku Hotovost (součet 100 %, bez vah srovnávacího produktu). Pod ní krátce: jaké typy firem v balíčku jsou (např. vysoká dividenda dnes vs. dividenda, která roste), k čemu je hotovost (vklady, výběry, automatická rebalance, připisování dividend) a v jaké měně se nakupuje (např. vše v korunách na pražské burze, výjimka rakouských firem s podílem v % a vazbou na euro).
+4. **Sekce 2 – jak jsme vybírali a vážili** (nadpis popisuje princip vah, např. „Zastoupení společností odpovídající dividendovému potenciálu a spolehlivosti výplaty“): jedna věta, z čeho jsme vybírali; podmínky jako číslovaný seznam s tučnou oznamovací větou („Vyplácejí dividendu pravidelně, …“), ne otázky; výjimky dvěma větami (proč tam firma je a proč má menší váhu); jeden odstavec o vahách (podle čeho, strop na firmu, strop na sektor, příklad firmy, kterou strop drží); že složení pravidelně kontrolujeme a při velké změně upravíme, **a že taková změna se týká jen nově založených portfolií**.
+5. **Sekce 3 – co balíček přináší, s číslem v nadpisu** (např. „Více než 4 % na dividendách“): hlavní číslo tučně, příklad na 100 000 Kč tučně, z čeho a k jakému datu je číslo spočítané, jedna až dvě věty o riziku (dividendy se mohou snížit, cena akcií jde nahoru i dolů).
+6. **Sekce 4 – připravovaná funkce, pokud je** (např. „Brzy: dividendy rovnou na vaši peněženku“): kdy přijde, co umožní, praktický přehled (kalendář výplat po měsících v odrážkách s tučným měsícem), jak to funguje do té doby, že dáme vědět. Jen pokud termín potvrdil Portu.
+7. **Sekce 5 – srovnání se stávající nabídkou** (nadpis jako otázka, např. „Vyplácet, nebo reinvestovat? České dividendy vs. WOOD PX ETF“): jedna věta, co je srovnávací produkt, jeden odstavec o překryvu a hlavním rozdílu (kolik % portfolia je rozloženo jinak, kam jde víc a kam méně peněz), tabulka (viz KROK 3) včetně řádku **Míra kontroly** (balíček: váhy si můžete upravit a doplnit; fond: investuje podle své metodiky).
+8. **Sekce 6 – výzva a upozornění** (nadpis typu „Založte si České dividendy během chvilky“): postup v aplikaci krok za krokem (přihlášení, nabídka investic, výběr balíčku, úprava vah, první vklad nebo trvalý příkaz), pak odstavec o rizicích (malý a koncentrovaný trh, málo firem, převaha jednoho sektoru) a že balíček je spíš doplněk dobře diverzifikovaného portfolia.
+
+**Co ve finální verzi není a nepiš to:** detailní kritéria spolehlivosti (počet let, výplatní poměr), limity podle objemu obchodů, odhady dividend na další roky a pokrytí analytiky, historické epizody (rok 2020), konkrétní částky dividend na akcii, odstavec „Proč se váhy liší“, zvažované varianty, interní podmínky návrhu, poznámky pro autora v textu, standardní blok upozornění. Pokud je máš z podkladů, dej je do poznámek pro autora v odpovědi.
+
+**Mezititulky** jsou krátké a říkají čtenáři, co z toho má: počet a výhoda („Devět známých firem v jedné investici“), číslo („Více než 4 % na dividendách“), novinka („Brzy: …“), otázka ke srovnání („Vyplácet, nebo reinvestovat?“), výzva („Založte si … během chvilky“).
+
 ## PODKLAD A ČÍSLA
 
-- **Dohodnutý podklad je závazný.** Pokud autor dodá dokument odsouhlasený s nadřízeným, článek musí obsahovat všechny jeho podstatné informace a popsat je podrobně: postup výběru, podmínky, výsledné složení, zvažované varianty včetně důvodů, proč nebyly vybrány. Po napsání projdi podklad bod po bodu a v odpovědi napiš, jestli nějaká informace chybí. Obrázky v Google Dokumentu (tabulky složení) stáhni přes `export?format=zip` a přečti, text z `read_file_content` je neobsahuje.
+- **Dohodnutý podklad je závazný pro fakta.** Pokud autor dodá dokument odsouhlasený s nadřízeným, čísla, složení a postup výběru musí s ním sedět. Do článku z něj ale převezmi jen to, co klient potřebuje (stavba podle kapitoly VZOR); zvažované varianty a detailní metodiku dej do poznámek pro autora. Při přesunech a úpravách textu na žádost autora nevynechávej informace bez jeho souhlasu. Po napsání projdi podklad bod po bodu a v odpovědi napiš, jestli nějaká informace chybí. Obrázky v Google Dokumentu (tabulky složení) stáhni přes `export?format=zip` a přečti, text z `read_file_content` je neobsahuje.
 - **Podklad může mít víc verzí složení** (např. sloupce Původní návrh, Final). Do článku patří vždy to, co autor označí jako finální, včetně hotovosti. Když si nejsi jistý, které je finální, napiš to do odpovědi.
 - **Složení srovnávacího ETF bere agent z wood.cz** (`https://www.wood.cz/produkty/wood-px-etf/`), ne z vah indexu PX, a podle něj přepočítá text i tabulky (váhy ve fondu, podíl bank a pojišťoven, odlišnost od fondu, výnos). Čísla z podkladu, která vycházela z indexu PX, přepočítej a rozdíly napiš do poznámek pro autora.
-- **Odhady budoucích dividend a výnosů se v článku nepíšou jako čísla ani tabulky.** Pokud ale při sestavování novinky hrály roli, napiš to výslovně a obecně („Při sestavování hrály roli i odhady dividend na příští roky. Opírají se o výhled firem a odhady analytiků. Jsou to jen odhady.“).
+- **Odhady budoucích dividend a výnosů se v článku nepíšou jako čísla ani tabulky.** Váhy popiš přes spolehlivost a růst dividendy (vzor: „Váhy jsme nastavili tak, aby rozhodovala nejen výše dividendy, ale i to, jak spolehlivě ji firma vyplácí a jestli roste.“). Výslovnou zmínku o odhadech přidej, jen když o ni autor požádá.
 - **Výjimky z pravidel výběru popiš otevřeně.** Když firma v novince je, ačkoli nesplňuje jedno z pravidel (např. Erste: letos vyplatila zhruba 0,6 %, protože peníze použila na koupi polské banky), napiš proč, co se od ní čeká a proč má menší váhu.
 - **Neověřitelná tvrzení z podkladu do článku nepiš** (např. že je firma „nejvíc nadvážená“, když čísla říkají jinak). Důvod patří do poznámek pro autora.
 - **Datum spuštění „dnes“ piš jako „od dnešního dne“.** Termíny výplat dividend ověř (např. Erste platí v dubnu) a piš je tak, jak skutečně jsou.
@@ -61,7 +80,7 @@ Rozbor 12 článků: spuštění strategií (2019), Světová špička a Odpově
 
 ## KOMU NOVINKA SLOUŽÍ
 
-Hned v úvodu napiš, pro koho novinka je a proč vedle stávající nabídky dává smysl. Příklad z tematického balíčku České dividendy: je pro klienty, kteří hledají **pasivní příjem z dividend**. WOOD PX ETF je akumulační, takže dividendy nevyplácí, ale znovu investuje; balíček je vyplácí. Zároveň v něm nejsou jen firmy s nejvyšší dividendou, ale i firmy zaměřené na budoucí růst, a balíček obojí kombinuje.
+Pro koho novinka je, řekni už v perexu jednou větou (vzor: „Je určený všem, kdo chtějí investovat do českých firem a mít ze své investice příjem.“). Rozdíl proti stávající nabídce (např. WOOD PX ETF dividendy znovu investuje) patří až do srovnávací sekce ke konci. Funkce, které ještě neběží (např. výplata dividend na peněženku), popiš jen jako připravovanou novinku s termínem, nikdy jako hotovou věc.
 
 ## KROK 0 – MYŠLENKOVÁ PŘÍPRAVA
 
@@ -83,16 +102,16 @@ Platí KROK 1 z `prompts/clanky-portu.md`. Navíc:
 
 ## KROK 2 – STRUKTURA ČLÁNKU
 
-1. **Titulek** – 3 varianty. Alespoň jedna v rámci „Nově v/na …: …“ nebo „Rozšiřujeme nabídku …: …“. Žádné procento výnosu v titulku.
-2. **Perex (2–3 věty)** – co přibylo, kde to je a v čem je hlavní rozdíl proti stávající nabídce.
-3. **Úvod bez mezititulku** – novinka, datum, produkt, 2–3 nejdůležitější fakta (největší pozice, nákladovost, minimum). Druhý odstavec: proč novinka vznikla a jak navazuje na stávající nabídku.
+1. **Titulek** – hlavní varianta ve tvaru „Název: nový tematický balíček + čím je zajímavý“ a k tomu 5 atraktivnějších variant (konkrétní počet, známá jména, otázka, výhoda pro čtenáře). Bez klikbejtu a bez slibu výnosu; procento výnosu v titulku jen jako aktuální údaj a s upozorněním pro autora na compliance riziko.
+2. **Perex (3 věty, tučně)** – co přibylo a kde, co v tom čtenář dostane (počty, známá jména), pro koho to je.
+3. **Úvod bez mezititulku** – jen u jednoho instrumentu, sady instrumentů nebo funkce: novinka, datum, produkt, 2–3 nejdůležitější fakta. U tematického balíčku úvod nahrazuje perex a hned následuje sekce se složením.
 4. **Tělo (3–6 sekcí s mezititulky)**, podle druhu novinky:
-   - **Tematický balíček:** Pro koho je a čím se liší (hned v úvodu) → Dividendy i budoucí růst (z čeho se skládá váha, že hrály roli odhady) → Co je v balíčku (tabulka složení) → Jak jsme firmy vybírali (otázky, výjimky) → Jak jsme rozdělili peníze (jen limity; interní podmínky návrhu, třeba „musí se lišit od ETF alespoň o 30 %“, do článku nepatří, vypadají jako úprava, aby návrh něco splnil) → Co čtenář dostane (příklad na 100 000 Kč ze skutečných letošních čísel, kdy chodí peníze) → Srovnání se stávající nabídkou (srovnávací tabulka) → Jaké další možnosti jsme zvažovali (varianty z podkladu a důvody, proč nebyly vybrány) → Závěr s upozorněním (tři krátké odstavce lidským jazykem: pro koho je co, rizika včetně malého koncentrovaného trhu, jen pár firem, a toho, že se výnos může měnit a novinku hlídáme a případně zasáhneme, a že má novinka sloužit spíš jako doplněk k dobře diverzifikovanému portfoliu; bez odrážek) → Jak balíček najdete.
+   - **Tematický balíček nebo strategie:** přesně podle kapitoly VZOR (složení → výběr a váhy → co přináší s číslem → připravovaná funkce → srovnání se stávající nabídkou → založení a upozornění).
    - **Jeden instrument:** Co to je a co sleduje → Složení a parametry (tabulka) → Čím se liší od podobných instrumentů v nabídce → Rizika.
    - **Sada instrumentů:** krátký úvod, pak pro každý instrument mezititulek s tématem a 1–2 odstavci (co sleduje, proč může dávat smysl, hlavní riziko). Na konci přehledová tabulka.
    - **Nová funkce:** co se mění → jak to funguje (postup krok za krokem) → kolik to stojí → co když nechci nic měnit.
-5. **Jak novinku najdete** – produkt, postup v aplikaci, minimální investice, poplatek. Pokud čtenář už drží podobný instrument, napiš, jestli musí něco prodávat.
-6. **Standardní blok upozornění** – doslova:
+5. **Jak novinku najdete** – produkt, postup v aplikaci (krok za krokem), minimální investice a poplatek, pokud jsou známé. U balíčku je to závěrečná sekce s výzvou a upozorněním (VZOR, bod 8).
+6. **Standardní blok upozornění** – finální verze článku o balíčku ho v textu neměla. Přidej ho jen na žádost autora, doslova:
 
    > **Na co si dát po přečtení tohoto článku pozor?**
    > - Článek není investičním doporučením.
@@ -101,18 +120,18 @@ Platí KROK 1 z `prompts/clanky-portu.md`. Navíc:
    > - Portu negarantuje dosažení výnosů z investice na kapitálových trzích.
    > - Nejste si jistí, jaký rizikový profil je pro vás vhodný, nebo jestli je pro vás vhodné například tematické investování? Vyplňte si náš investiční dotazník a my vám poradíme.
 
-**Délka:** 900–1 300 slov bez tabulek (sada instrumentů může být delší).
+**Délka:** tematický balíček zhruba 800–1 000 slov včetně tabulek, ostatní 700–1 200 slov (sada instrumentů může být delší). Kratší a čtivější je lepší než úplný.
 
 ## KROK 3 – POVINNÉ TABULKY
 
 Tabulky jsou v tomto typu článku hlavní nosič informací. Pod každou tabulkou kurzívou zdroj a datum.
 
-1. **Složení** (u tematického balíčku povinně): Firma / instrument | Váha v balíčku | Váha ve srovnávací nabídce. **Bez sloupce „Proč tam je“.** Důvod rozdílů vah vysvětli pod tabulkou souvislým textem: podle čeho dělí váhy srovnávací nabídka (např. WOOD PX ETF podle velikosti firem) a podle čeho nový balíček, kam jde víc a kam méně peněz než ve srovnávací nabídce a v čem je přidaná hodnota (např. vyšší dividenda, menší závislost na bankách). Pod tabulkou jen krátká poznámka o zdroji a datu vah. Hotovost, pokud je v produktu, vysvětli v textu, ne v tabulce.
-2. **Srovnání se stávající nabídkou** (povinně, pokud existuje podobný produkt): řádky podle toho, co čtenáře zajímá – co se děje s výnosem (vyplácí / reinvestuje), pro koho to je, počet titulů, jak se určují váhy, největší sektor, měna a měnové riziko, výnos. Řádek o nákladech jen tehdy, když jsou známé (jinak řádek vynech, nepiš [DOPLNIT]). Pod tabulku nepiš vysvětlující odstavec o překryvu s fondem, tabulka mluví sama.
+1. **Složení** (u tematického balíčku povinně): **Firma | Váha**, poslední řádek Hotovost, součet 100 %. Bez sloupce se srovnávacím produktem a bez sloupce „Proč tam je“. Hned nad tabulkou věta „Portfolio tvoří X firem a Y % hotovosti:“.
+2. **Srovnání se stávající nabídkou** (povinně, pokud existuje podobný produkt), ve srovnávací sekci ke konci. Řádky podle vzoru: co se děje s dividendami (dnes, ne budoucí funkce), pro koho to je, počet firem, podle čeho se dělí peníze, podíl hlavního sektoru, letošní dividendy po zdanění (u fondu s dovětkem „zůstávají ve fondu“), **míra kontroly** (balíček: váhy můžete sami upravovat a doplnit o jiné instrumenty; fond: investuje podle své metodiky). Řádek o nákladech jen tehdy, když jsou známé. Nad tabulkou jeden odstavec o překryvu a hlavním rozdílu, pod ní nic.
 3. **Žádné tabulky odhadů a výhledů** (budoucí dividendy, výnosy na další roky). Článek stojí na skutečných číslech. Odhady z podkladů patří nanejvýš do poznámek pro autora.
 4. **Parametry instrumentu** (u ETF): název, co sleduje, nákladovost (TER), akumulační / distribuční, měna, počet titulů, největší pozice.
 
-Pod tabulkou vždy jeden až dva odstavce, které z ní vytáhnou to podstatné. Tabulka nesmí být jediné místo, kde je hlavní pointa.
+Tabulka nesmí být jediné místo, kde je hlavní pointa: u složení ji vytáhni v krátkých odstavcích pod tabulkou, u srovnání v odstavci nad ní.
 
 ## KROK 4 – STYL
 
@@ -143,8 +162,8 @@ Pravidlo „maximálně jedna zmínka produktu“ z typu 1 tady neplatí: produk
 1. Žádné upozornění na začátku textu článku (např. „návrh k internímu schválení“). Že je novinka zatím interní návrh nebo že chybí údaje ([DOPLNIT] / [OVĚŘIT]), napiš do poznámek pro autora a do odpovědi, ne do článku.
 2. 3 návrhy titulku.
 3. Perex.
-4. Hotový článek s mezititulky a tabulkami, včetně standardního bloku upozornění.
-5. Poznámky pro autora:
+4. Hotový článek s mezititulky a tabulkami (standardní blok upozornění jen na žádost autora).
+5. Poznámky pro autora (v odpovědi nebo pod čarou, nikdy uvnitř textu článku):
    - co doplnit před publikací (datum, poplatky, minimum, postup v aplikaci),
    - rozpory v podkladech, které jsi nepřevzal, a proč,
    - co jsi vědomě vynechal (interní informace),
@@ -156,7 +175,9 @@ Při ukládání do Google Docs dej mezi odstavce mezeru (zhruba 12 pt pod odsta
 
 ## SEBEKONTROLA PŘED ODEVZDÁNÍM
 
-- [ ] Je z perexu jasné, co přibylo, kde to je a čím se to liší od stávající nabídky?
+- [ ] Odpovídá stavba vzoru `examples/clanky/2026-11-ceske-dividendy-finalni-verze.md` (perex, složení hned na začátku, výběr a váhy, výnos s číslem, připravovaná funkce, srovnání, založení a upozornění)?
+- [ ] Je z perexu jasné, co přibylo, kde to je, co v tom čtenář dostane a pro koho to je?
+- [ ] Je funkce, která ještě neběží, popsaná jen jako připravovaná, s termínem?
 - [ ] Dávají váhy v tabulce dohromady 100 % a sedí každé číslo v textu s tabulkou?
 - [ ] Je ve srovnávací tabulce to, co čtenáře opravdu zajímá (výnos, zdanění, náklady, riziko)?
 - [ ] Je každý odhad označený jako odhad, s datem a zdrojem?

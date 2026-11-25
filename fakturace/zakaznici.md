@@ -16,7 +16,7 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **IČO:** 26825147 · **DIČ:** CZ26825147
 - **Režim:** CZ · **Splatnost:** 7 dní (26053 a 26056 na přání uživatele, dříve 10 dní) · **Doprava:** na faktuře 26049 nebyla
 - **Fakturované položky:** Hlava knyplíku V5 – 42,00 Kč · Díl hmatníku větší V2 – 15,00 Kč · Klíč V-2 – 32,00 Kč · Tlačítko univerzál – 10,00 Kč · Koncovka pitot – 47,00 Kč · Trubka pitot – 18,00 Kč (za ks bez DPH)
-- **Faktury:** 26049 (21. 09. 2026, 50 820,00 Kč s DPH) · 26053 (07. 10. 2026, 55 539,00 Kč s DPH, splatnost 7 dní na přání uživatele) · 26056 (16. 10. 2026, 41 987,00 Kč s DPH, splatnost 7 dní) · 26057 (19. 10. 2026, 16 516,50 Kč s DPH) · 26059 (27. 10. 2026, 11 495,00 Kč s DPH) · 26060 (05. 11. 2026, 32 670,00 Kč s DPH) · 26061 (16. 11. 2026, 34 182,50 Kč s DPH) · 26063 (19. 11. 2026, 42 156,40 Kč s DPH)
+- **Faktury:** 26049 (21. 09. 2026, 50 820,00 Kč s DPH) · 26053 (07. 10. 2026, 55 539,00 Kč s DPH, splatnost 7 dní na přání uživatele) · 26056 (16. 10. 2026, 41 987,00 Kč s DPH, splatnost 7 dní) · 26057 (19. 10. 2026, 16 516,50 Kč s DPH) · 26059 (27. 10. 2026, 11 495,00 Kč s DPH) · 26060 (05. 11. 2026, 32 670,00 Kč s DPH) · 26061 (16. 11. 2026, 34 182,50 Kč s DPH) · 26063 (19. 11. 2026, 42 156,40 Kč s DPH) · 26066 (26. 11. 2026, 19 965,00 Kč s DPH)
 - **Poznámky:** Na faktuře 26049 je DIČ vytištěné dvakrát („CZ26825147CZ26825147“). Jde o chybu v adresáři FakturaOnline a je potřeba ji tam opravit. Od faktury 26053 se píše „Hlava knyplíku“ s diakritikou, jak to zadal uživatel (na 26049 bylo „knypliku“).
 
 ## Tomáš Trnka
@@ -103,8 +103,8 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Adresa:** Tylova 1347/14, Předměstí, 412 01 Litoměřice, Česká republika
 - **IČO:** 07992424 · **DIČ:** CZ07992424
 - **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** Poštovné a balné 180,00 Kč bez DPH
-- **Fakturované položky:** Osa L45 – 74,00 Kč · Osa L40 – 80,00 Kč · Osa L75 – 73,00 Kč (vše za ks bez DPH)
-- **Faktury:** 26046 (02. 09. 2026, 13 597,98 Kč s DPH)
+- **Fakturované položky:** Osa L45 – 74,00 Kč · Osa L40 – 80,00 Kč · Osa L75 – 73,00 Kč · Pin mosaz – 38,00 Kč (vše za ks bez DPH)
+- **Faktury:** 26046 (02. 09. 2026, 13 597,98 Kč s DPH) · 26065 (26. 11. 2026, 4 598,00 Kč s DPH)
 - **Poznámky:** V tabulce zákazníků chybí. Kontakt doplnit.
 
 ## H.G. Hannant Ltd

@@ -1,0 +1,17 @@
+{
+  "cislo": "26066",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-11-26",
+  "duzp": "2026-11-26",
+  "splatnost_dni": 7,
+  "odberatel": {
+    "nazev": "JETI model s.r.o.",
+    "adresa": ["Lomená 1530", "74258 Příbor", "Česká republika"],
+    "ico": "26825147",
+    "dic": "CZ26825147"
+  },
+  "polozky": [
+    {"pocet": 1200, "jednotka": "ks", "popis": "Tlačítko univerzál", "cena": "10.00"},
+    {"pocet": 300, "jednotka": "ks", "popis": "Díl hmatníku větší V2", "cena": "15.00"}
+  ]
+}

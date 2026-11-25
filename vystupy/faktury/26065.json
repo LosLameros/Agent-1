@@ -1,0 +1,16 @@
+{
+  "cislo": "26065",
+  "rezim": "CZ",
+  "datum_vystaveni": "2026-11-26",
+  "duzp": "2026-11-26",
+  "splatnost_dni": 10,
+  "odberatel": {
+    "nazev": "STRANKA s.r.o.",
+    "adresa": ["Tylova 1347/14, Předměstí", "41201 Litoměřice", "Česká republika"],
+    "ico": "07992424",
+    "dic": "CZ07992424"
+  },
+  "polozky": [
+    {"pocet": 100, "jednotka": "ks", "popis": "Pin mosaz", "cena": "38.00"}
+  ]
+}

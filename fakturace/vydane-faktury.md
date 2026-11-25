@@ -32,3 +32,5 @@ Evidence zatím není úplná. Z roku 2025 jsou jen 25012 a 25043. V roce 2026 c
 | 26062 | 19. 11. 2026 | 19. 12. 2026 | VenPor s.r.o. | CZ | 14 883,00 Kč | vytvořeno (nastroje/faktura.py) |
 | 26063 | 19. 11. 2026 | 26. 11. 2026 | JETI model s.r.o. | CZ | 42 156,40 Kč | vytvořeno (nastroje/faktura.py) |
 | 26064 | 23. 11. 2026 | 03. 12. 2026 | MyJa Tech s.r.o. | CZ | 26 620,00 Kč | vytvořeno (nastroje/faktura.py) |
+| 26065 | 26. 11. 2026 | 06. 12. 2026 | STRANKA s.r.o. | CZ | 4 598,00 Kč | vytvořeno (nastroje/faktura.py) |
+| 26066 | 26. 11. 2026 | 03. 12. 2026 | JETI model s.r.o. | CZ | 19 965,00 Kč | vytvořeno (nastroje/faktura.py) |

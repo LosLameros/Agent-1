@@ -17,10 +17,10 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | FW 189 | 183,00 | HPH models, s.r.o. | 26009 |
 | Ta 154 | 306,00 | HPH models, s.r.o. | 26009 |
 | Hlava knyplíku V5 | 42,00 | JETI model s.r.o. | 26063 |
-| Tlačítko univerzál | 10,00 | JETI model s.r.o. | 26063 |
+| Tlačítko univerzál | 10,00 | JETI model s.r.o. | 26066 |
 | Koncovka pitot | 47,00 | JETI model s.r.o. | 26061 |
 | Trubka pitot | 18,00 | JETI model s.r.o. | 26061 |
-| Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26053 |
+| Díl hmatníku větší V2 | 15,00 | JETI model s.r.o. | 26066 |
 | Klíč V-2 | 32,00 | JETI model s.r.o. | 26063 |
 | Silové sloupky PBS08012024-P002 | 60,00 | VenPor s.r.o. | 26048 |
 | OSIČKA 4022 261 45581-A | 85,00 | VenPor s.r.o. | 26055 |
@@ -28,6 +28,7 @@ Ceny z vydaných faktur. Všechny ceny jsou **bez DPH**. Když uživatel zadá j
 | Osa L40 | 80,00 | STRANKA s.r.o. | 26046 |
 | Osa L45 | 74,00 | STRANKA s.r.o. | 26046 |
 | Osa L75 | 73,00 | STRANKA s.r.o. | 26046 |
+| Pin mosaz | 38,00 | STRANKA s.r.o. | 26065 |
 | Poštovné a balné | 180,00 | STRANKA s.r.o. | 26046 |
 
 ## Položky z roku 2025 (vystaveno jako neplátce DPH)

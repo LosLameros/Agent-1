@@ -131,14 +131,16 @@ Když uživatel napíše, že přišla platba za fakturu („zapiš do plateb p�
 
 ## E-mail s fakturou (koncept v Gmailu)
 
-**Ke každé faktuře pro zákazníka s e-mailem uvedeným níže vytvoř automaticky v Gmailu koncept** (nikdy ho neodesílej) přes `create_draft`, a to hned po vytvoření faktury, bez ptaní a bez připomínání. Kopie jde vždy na `p.poko@seznam.cz` (Petr Pokorný) a `fineko.hana@seznam.cz` (FINEKO). Předmět je vždy `Faktura`. `includeSignature` je false.
+**Ke každé faktuře pro zákazníka s e-mailem uvedeným níže (JETI, VenPor, STRANKA, MyJa Tech) vytvoř automaticky v Gmailu koncept** (nikdy ho neodesílej) přes `create_draft`, a to hned po vytvoření faktury, bez ptaní a bez připomínání. Kopie jde vždy na `p.poko@seznam.cz` (Petr Pokorný) a `fineko.hana@seznam.cz` (FINEKO). Předmět je vždy `Faktura`. `includeSignature` je false.
 
 | Zákazník | Komu | Oslovení | Závěr a podpis |
 |---|---|---|---|
 | JETI model | `zraska@jetimodel.cz` (Zdeněk Raška) | Dobrý den, pane Raško, | Děkuji a s pozdravem, / Marek Pokorný |
 | VenPor | `venpor@seznam.cz` (pan Vencbauer) | Dobrý den, pane Vencbauere, | Díky a s pozdravem, / Pokorný |
+| STRANKA | `info@spaudio.cz` | Dobrý den, | Díky a s pozdravem, / Pokorný |
+| MyJa Tech | `info@myjatech.cz` | Dobrý den, | Díky a s pozdravem, / Pokorný |
 
-Text je pro oba stejný, mění se jen oslovení a závěr s podpisem:
+Text je (kromě STRANKY) stejný, mění se jen oslovení a závěr s podpisem. U STRANKY zní druhý řádek „zasílám fakturu k dodanému zboží.“ (bez „v příloze“), jak psal uživatel u faktury 26046:
 
 ```
 <oslovení>
@@ -152,7 +154,7 @@ v příloze zasílám fakturu k dodanému zboží.
 `htmlBody` ve tvaru: `<div dir="ltr"><oslovení> <div><br></div><div>v příloze zasílám fakturu k dodanému zboží. </div><div><br></div><div><závěr></div><div><podpis></div></div>`.
 
 - **Ostatní zákazníci:** e-mail, oslovení a závěr zatím neznáme. Při první faktuře se zeptej, nebo najdi předchozí odeslané e-maily v Gmailu (`in:sent`, adresát zákazníka). Údaje pak přidej do tabulky výše.
-- **V pátek** (podle data, kdy koncept vytváříš) napiš u **JETI i VenPoru** místo závěru z tabulky (JETI „Děkuji a s pozdravem,“, VenPor „Díky a s pozdravem,“) závěr **„Děkuji a přeji hezký víkend,“**. Podpis zůstává podle zákazníka (JETI „Marek Pokorný“, VenPor „Pokorný“) a zbytek textu se nemění. Den v týdnu zjisti příkazem `date +%A`, nehádej ho.
+- **V pátek** (podle data, kdy koncept vytváříš) napiš u **všech zákazníků z tabulky** místo závěru z tabulky (JETI „Děkuji a s pozdravem,“, ostatní „Díky a s pozdravem,“) závěr **„Děkuji a přeji hezký víkend,“**. Podpis zůstává podle zákazníka (JETI „Marek Pokorný“, VenPor „Pokorný“) a zbytek textu se nemění. Den v týdnu zjisti příkazem `date +%A`, nehádej ho.
   - plain text: `Děkuji a přeji hezký víkend,` a pod ním podpis,
   - `htmlBody`: `<div>Děkuji a přeji hezký víkend,</div><div><podpis></div>` na místě stejného bloku se závěrem z tabulky.
 - **Příloha se vkládá přímo do konceptu.** V `attachments` dej `content` ve tvaru `sha256:<SHA-256 PDF>:<absolutní cesta k PDF>` (hash spočítej přes `sha256sum`, cesta je `/home/user/Agent-1/vystupy/faktury/Faktura_<číslo>.pdf`), `filename` `Faktura_<číslo>.pdf` a `mimeType` `application/pdf`. Soubor nikdy nepřepisuj do base64 ručně. **PDF nesmí být po výpočtu hashe přegenerované**, jinak hash nesedí. Ověř, že příloha v konceptu je: `list_drafts` s dotazem `in:draft to:<adresa> filename:Faktura_<číslo>.pdf`.

@@ -91,7 +91,7 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Poznámky:** Na faktuře je „158 00 Praha“, v tabulce „Praha 5“. Na fakturu patří verze z faktury. Popisy položek začínají pomlčkou, protože jsou tak i na faktuře 26007. Pokud to byl jen podseznam pod chybějícím nadpisem, je potřeba se zeptat uživatele.
 
 ## MyJa Tech s.r.o.
-- **Kontakt:** e-mail neúplný (začíná `info@m`)
+- **Kontakt:** e-mail `info@myjatech.cz` (faktury posílá uživatel na tuto adresu)
 - **Adresa:** Libomyšl 55, 267 23 Libomyšl, Česká republika (na faktuře 26010 je „55, Libomyšl / 26723 Libomyšl“)
 - **IČO:** 02566435 · **DIČ:** CZ02566435 (potvrzeno fakturou 26010)
 - **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** na faktuře 26010 nebyla
@@ -105,7 +105,8 @@ Legenda režimů (podrobně v `.claude/agents/fakturace.md`):
 - **Režim:** CZ · **Splatnost:** 10 dní · **Doprava:** Poštovné a balné 180,00 Kč bez DPH
 - **Fakturované položky:** Osa L45 – 74,00 Kč · Osa L40 – 80,00 Kč · Osa L75 – 73,00 Kč · Pin mosaz – 38,00 Kč (vše za ks bez DPH)
 - **Faktury:** 26046 (02. 09. 2026, 13 597,98 Kč s DPH) · 26065 (26. 11. 2026, 4 598,00 Kč s DPH)
-- **Poznámky:** V tabulce zákazníků chybí. Kontakt doplnit.
+- **Kontakt:** e-mail `info@spaudio.cz` (na něj uživatel poslal fakturu 26046)
+- **Poznámky:** V tabulce zákazníků chybí.
 
 ## H.G. Hannant Ltd
 - **Adresa:** Unit 35, Harbour Road, Oulton Road, Lowestoft, Suffolk, NR32 3LZ, United Kingdom

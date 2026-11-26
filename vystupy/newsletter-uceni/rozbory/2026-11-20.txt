@@ -1,0 +1,96 @@
+# Rozbor vydání 2026-11-20: 9 návrhů, 20 odstavců ve finále
+
+## [drobné úpravy, shoda 0.87] 2026-11-19T08:35 makro: Jestřábi v přesile. Zápis z říjnového zasedání Fedu ukázal, …
+   opener: „Jestřábi v přesile.“ → „Jestřábi zvyšují sazby.“
+   délka: 481 → 513 znaků
+   - „Pár“ → „Několik“
+   - „přidal“ → „přidalo“
+   - „víc“ → „více“
+   - „poprvé od září 2025“ → „až k 3 550 dolarům za unci, více než třetinu“
+   - „3 800 dolarů za unci.“ → „lednovým rekordem.“
+
+## [drobné úpravy, shoda 0.89] 2026-11-19T11:34 tip: Bitcoin za půlku. Nejznámější kryptoměna za poslední týden o…
+   délka: 475 → 471 znaků
+   - „přes“ → „zhruba“
+   - „64“ → „61“
+   - „skoro“ → „více než“
+   - „skoro“ → „přes“
+   - „∅“ → „s tím to“
+   - „zjistil, že nejistota je on sám.“ → „vypadá nejistě.“
+
+## [drobné úpravy, shoda 0.99] 2026-11-19T23:52 tip: AMD na tapetě. Akcie AMD ve čtvrtek odepsaly téměř 8 %. Inve…
+   délka: 501 → 494 znaků
+   - „přitom“ → „∅“
+
+## [přepsáno, shoda 0.60] 2026-11-20T08:38 tip: Největší IPO historie. Anthropic prodal akcie za 83 dolarů, …
+   délka: 463 → 479 znaků
+   - „prodal“ → „při svém vstupu na burzu stanovil cenu jedné“
+   - „za“ → „na“
+   - „∅“ → „což bylo“
+   - „plánovaným rozpětím“ → „očekávaným rozmezím“
+   - „dolarů, a získal“ → „dolarů. Získal tak“
+   - „dolarů. Překonal tak“ → „dolarů a překonal“
+   - „Nasdaqu“ → „burze Nasdaq“
+   - „Euforie ale“ → „Silná euforie“
+   - „Firma má hodnotu přes 1,5“ → „Při této ceně je hodnota firmy 1,3“
+   - „dolarů. Obchoduje“ → „dolarů a jedná“
+   - „pod zkratkou ANT. Zbytku trhu debut nepomohl, Nasdaq ve stejný den odepsal 2,2 %.“ → „o 12. nejhodnotnější společnost světa.“
+
+## [drobné úpravy, shoda 0.81] 2026-11-20T08:38 tip: Hit bez potlesku. Po 13 letech čekání vyšla hra GTA 6 a rece…
+   opener: „Hit bez potlesku.“ → „Hit bez zisků.“
+   délka: 454 → 398 znaků
+   - „víc“ → „více“
+   - „kterékoli“ → „kterékoliv“
+   - „Za první den“ → „Během prvního dne“
+   - „Analytici přitom“ → „Prostě akciová loupež“
+   - „laťku spokojenosti brali 1,9 miliardy. Klasika: kupuj fámy, prodávej zprávy.“ → „bílého dne.“
+
+## [beze změny, shoda 1.00] 2026-11-20T08:38 tip: Mír na papíře. Trump, Si Ťin-pching a Putin se v čínském Šen…
+   délka: 475 → 475 znaků
+
+## [drobné úpravy, shoda 0.94] 2026-11-20T08:38 tip: Mrak plný peněz. Cloudová divize Alibaby, která pronajímá vý…
+   opener: „Mrak plný peněz.“ → „Mraky peněz.“
+   délka: 497 → 500 znaků
+   - „z“ → „ze služeb pro“
+   - „produktů“ → „∅“
+   - „víc“ → „více“
+   - „řadě. Tržby“ → „řadě, tržby“
+   - „víc“ → „více“
+   - „výhled,“ → „výhled:“
+   - „víc,“ → „více,“
+   - „víc“ → „více“
+
+## [drobné úpravy, shoda 0.95] 2026-11-20T10:59 patecni-uprava: Výprodej čipů, který v pondělí začal v Asii, nezastavily ani…
+   opener: „“ → „Křemíková kocovina.“
+   délka: 484 → 512 znaků
+   - „nejvíc“ → „nejvíce“
+   - „a vidina“ → „mimo jiné i pod vidinou“
+   - „Fedu tomu nepomáhá.“ → „Fedu. Ajaj!“
+
+## [přepsáno, shoda 0.77] 2026-11-20T11:03 patecni-uprava: Akcie Deutsche Bank v úterý odepsaly zhruba 5 %. Novináři za…
+   opener: „Akcie Deutsche Bank v úterý odepsaly zhruba 5 %.“ → „Deutsche Leaks.“
+   délka: 478 → 515 znaků
+   - „∅“ → „Akcie Deutsche Bank v úterý odepsaly zhruba 5 %.“
+   - „∅“ → „totiž“
+   - „Němci navíc podezírali české banky, že nebojují proti špinavým penězům.“ → „∅“
+   - „∅“ → „Snad se to týká i německého podezření, že české banky nebojují proti špinavým penězům.“
+
+## Odstavce ve finále, které v návrzích nebyly (psali kolegové nebo jiný zdroj)
+  * Claude zazvonil na burze[a] // Jestřábi v přesile // Čtyři procenta padla // Rekord bez kožené bundy // Bring 
+  * Rekordní IPO, rekordní tržby i rekordní hodnocení hry, a přesto týden plný červených čísel. Anthropic vstoupil
+  * Připomínáme, že první dny po uvedení na burzu bývají u nových titulů značně rozkolísané. Dává smysl s nimi pra
+  * Čtyři procenta padla. Růst cen v Evropské unii pokračuje. V říjnu meziroční inflace vyšplhala na 4 % a je nejv
+  * Rekord i bez kožené bundy. Nvidia v prvních výsledcích bez Jensena Huanga poprvé utržila za čtvrtletí přes 100
+  * Bring back Jensen. Bývalý šéf Nvidie řešil návrat do čela firmy a jeho spojenci tlačili na představenstvo. Za 
+  * Posun akcií z indexu S&P 500 od 52týdenního maxima. Zdroj: finviz, k 20. 11. 2026.
+  * Čipy na licenci. I to je příčina poklesů výše. Spojené státy totiž znovu utahují šrouby. Kdo chce nově vyvézt 
+  * Italsko-německý párek bank. Evropská komise bez jakýchkoliv podmínek schválila převzetí německé Commerzbank it
+  * Na čtvrtek 26. listopadu pro vás připravujeme další velkou investiční debatu o vývoji akciových trhů a o všem,
+  * Už v pondělí 23. listopadu od 17.30 vám naši investiční konzultanti ukáží, jestli a jak v dnešní době investov
+
+## Souhrn
+  beze změny: 1
+  drobné úpravy: 6
+  přepsáno: 2
+  vyřazeno: 0
+  průměrná délka návrhu 478 znaků, finální 484 znaků

@@ -2,6 +2,14 @@
 
 Automatická úloha běží 4× denně (8:30, 11:30, 14:30 a 17:30 pražského času). Do Google dokumentu „Newsletter Portu v2“ připisuje tipy na zprávy, o kterých by se v pátečním newsletteru dalo psát.
 
+## Učení z minulých vydání (čti před psaním, archivuj po zápisu)
+
+Kolegové zatím odstavce z monitoringu hodně přepisují. Každé pondělí proto jiná úloha porovná moje návrhy s tím, co se nakonec odeslalo, a zapíše poučení do `prompts/uceni-z-newsletteru.md`.
+
+- **Před psaním odstavců** (ne před kontrolou Slacku) si přečti `prompts/uceni-z-newsletteru.md` a drž se pravidel i příkladů před/po. Doplňují pravidla níže a nepřebíjejí je.
+- **Po každém úspěšném zápisu do dokumentu archivuj text, který jsi zapsal**, aby se dal v pondělí porovnat s finále: `python3 -I nastroje/newsletter-uceni.py archiv <RRRR-MM-DD> <typ>` a texty odstavců na stdin, **jeden odstavec = jeden řádek, čistý text bez formátování**. `<RRRR-MM-DD>` je datum pátku z názvu aktuální karty („DD.MM.RRRR - číslo“, např. „27.11.2026 - 468“ → `2026-11-27`). `<typ>` je `tip` (běžný odstavec), `makro` (makroodstavec), `ranni-prehled` (ranní přehled trhů) nebo `patecni-uprava` (odstavec přepsaný nebo nově napsaný v pátečním běhu, archivuj jeho novou podobu).
+- Na konci běhu změny archivu odešli do repozitáře: `git add vystupy/newsletter-uceni && git commit -m "Archiv návrhů monitoringu <datum>" && git push -u origin claude/porto-newsletters-analysis-1qdu15` (jen pokud v běhu přibyl nějaký zápis). Selhání pushe neopakuj víc než dvakrát a nezdržuj kvůli němu odpověď.
+
 ## Nejdřív zkontroluj Slack: newsletter už není odeslaný na kontrolu?
 
 **Hned na začátku každého běhu**, před čímkoli jiným (před procházením zdrojů i před čtením dokumentu), zjisti, jestli už newsletter pro tuto kartu odešel redakci ke kontrole. Od té chvíle se text nesmí měnit, takže monitoring i přepisování trhu končí.

@@ -18,6 +18,11 @@ Než začneš, přečti si vzory v `examples/trzni-turbo/`. Každý má nahoře 
 
 Ber z nich stavbu, tón a hustotu čísel, **ne délku** posledních dvou.
 
+Přidej si i `2026-11-26-nalada-na-trzich-final.md`: text, který agent napsal a autor ručně upravil (seznam změn je pod ním). Z úprav plyne:
+- **Autor nepotřebuje věty, které jen opakují odpověď na háčkovou otázku nebo uzavírají pointou** („Šéfa má Nvidia zpátky. Teď trh čeká na Fed.“). Třetí odstavec končí podmínkou „pokud… / pokud ne…“, ne slogan.
+- **Chce konkrétnější a odbornější příklady**, kdo koho zasáhne (např. neocloudy místo obecných „drahých technologií“), i s krátkým vysvětlením. Raději jeden přesný příklad než obecné slovo.
+- Dokončená verze měla 155 slov: horní hranice platí i po autorových doplňkách, takže když přidáš příklad, jinde škrtni.
+
 ## 1. Vstup
 
 1. **Událost**, kterou autor vybral (nutné). Často jen jedna věta („výsledky Nvidie“, „ECB snížila sazby“).

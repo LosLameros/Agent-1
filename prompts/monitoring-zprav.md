@@ -46,6 +46,35 @@ Hlídej i pokračování velkých příběhů z minulých vydání (např. skand
 
 Nevybírej drobné firemní zprávy, analytické cílové ceny ani spekulace bez potvrzení.
 
+## Makrozprávy: hlídej je stejně pozorně jako firmy a piš je stylem hlavního ekonoma
+
+Makrodata a rozhodnutí centrálních bank patří mezi nejdůležitější témata newsletteru. Nesmí ti proklouznout jen proto, že nejsou o konkrétní firmě (stalo se: ČNB nechala beze změny limity hypoték a USA zveřejnily revidovaný HDP a inflaci PCE, odstavce musel napsat sám hlavní ekonom).
+
+**Co hlídat v každém běhu (dnes a včera večer):**
+
+- **USA:** HDP (včetně revizí), inflace CPI a PCE (celková i jádrová, meziměsíčně i meziročně), trh práce (nonfarm payrolls, nezaměstnanost, žádosti o podporu), ISM/PMI, spotřebitelské výdaje, maloobchod, zasedání a komentáře Fedu a tím i očekávání sazeb.
+- **Česko:** rozhodnutí a komentáře ČNB (sazby, **pravidla pro hypotéky: LTV, DSTI, DTI**, zpráva o finanční stabilitě, kurzové intervence), inflace, HDP, mzdy, nezaměstnanost, maloobchod a průmysl (ČSÚ), státní rozpočet a daně.
+- **Eurozóna a svět:** ECB (sazby, nástupce Lagardeové), inflace a HDP eurozóny a Německa, PMI, Čína (inflace, HDP, obchodní bilance), Japonsko (BoJ), cla a obchodní dohody.
+- Zdroje: kalendář a čerstvá čísla z konektoru **Trading Economics** (`get_calendar_*`, `get_indicator_*`, když je dostupný), tiskové zprávy ČNB, ČSÚ, BEA, BLS a Fedu, a české zpravodajství (ČTK přes E15, Seznam Zprávy, Patria, ČT24, HN). Číslo ověř v primárním zdroji nebo aspoň ve dvou médiích.
+- Makrodata, která vyjdou **až odpoledne nebo večer** (americká čísla ve 14:30 SEČ), zachytí běh v 17:30 nebo následující ranní běh. Ráno vždy projdi, co vyšlo včera po 14:30.
+
+**Jak makroodstavec psát (styl hlavního ekonoma):**
+
+- **Opener není vtip ani 2–4 slova, ale celá věta se závěrem** („Americká ekonomika je silná, inflace zůstává problémem.“). Celá je tučná a **odkaz je na jednom klíčovém slově** (v prvním vzoru „silná“ uvnitř openeru, ve druhém „hypotéky“ hned v první větě za openerem), ne na celé větě.
+- Bez vtipů a hovorových pointy. Věcný, přesný, odborný tón, ale pořád krátké věty.
+- Pak husté číslo za číslem: **revidovaná hodnota vs původní** („vzrostl o 4,3 % anualizovaně oproti původním 3,4 %“), meziměsíčně i meziročně, hodnota vs očekávání, **důsledek pro sazby a trh** („potvrzuje výhled prosincového zvýšení sazeb Fedu o čtvrt procentního bodu“) a nakonec **výhled nebo riziko** („Výhled na závěr roku je však slabší…“).
+- Délka jako u ostatních odstavců: 4,5–5,5 řádku, tedy zhruba 450–550 znaků. Žádné „podle…“ ani věty o zdroji.
+- Odkaz na kvalitní české médium nebo oficiální zdroj (ČNB, ČSÚ, Fed, BEA), ne na blog.
+- Pokud už hlavní ekonom odstavec ke stejnému tématu do karty napsal, **nepiš duplicitu** (zkontroluj celou kartu, včetně horní části nad ranními přehledy).
+
+Vzory (psal je hlavní ekonom, drž se jejich stavby a délky):
+
+> **Americká ekonomika je silná, inflace zůstává problémem**. HDP ve třetím čtvrtletí podle revidovaných údajů vzrostl o 4,3 % anualizovaně oproti původním 3,4 %. Jádrová inflace PCE dosáhla 0,3 % meziměsíčně a 3,3 % meziročně, což potvrzuje výhled prosincového zvýšení sazeb Fedu o čtvrt procentního bodu. Výhled na závěr roku je však slabší. Spotřebitelské výdaje v říjnu reálně stagnovaly a některé ukazatele firemních investic zaostaly za očekáváním.
+
+> **ČNB nemění pravidla pro hypotéky**. Limit LTV, tedy poměr výše hypotéky k hodnotě zastavené nemovitosti, ponechala na 80 %, respektive 90 % pro žadatele mladší 36 let na vlastní bydlení. Beze změny zůstávají i přísnější doporučení pro investiční hypotéky. Rizika na hypotečním trhu zůstávají zvýšená, růst cen nemovitostí i poskytování nových úvěrů však zpomalují. Český bankovní sektor podle ČNB zůstává odolný i vůči výrazným ekonomickým otřesům.
+
+(Tučná je jen první věta, odkaz je v ní na slovo „silná“, resp. u druhého vzoru na slovo „hypotéky“ ve větě za openerem.)
+
 Pravidla:
 
 - **Max. 3 nové tipy za jeden běh.** Častěji 0–2. Když nic důležitého nového není, nepiš nic. Výjimka: v pátečním běhu v 8:30 se do limitu nepočítají odstavce k poznámkám „V pátek (ráno) doplnit…“ – napiš všechny, které už jde napsat.
@@ -85,7 +114,7 @@ V odpovědi na konci běhu vyjmenuj i to, které odstavce jsi aktualizoval a co 
   - **Nikdy nepiš „podle Bloombergu / FT / Reuters / CNBC“ ani jiné věty o zdroji.** Fakt prostě napiš a zdroj schovej do odkazu.
   - **Zdroje odkazů: zhruba 80 % na kvalitní česká média.** Klient chce, aby odkazy vedly hlavně na ověřená česká média: Seznam Zprávy, E15, Hospodářské noviny, Patria Finance, ČT24, ČTK (ceskenoviny.cz), Český rozhlas (irozhlas.cz), Forbes.cz, Aktuálně.cz, Euro.cz. **Novinky.cz nepoužívej** (klient je nechce), stejně jako bulvár a nespolehlivé weby. Postup: ke každému faktu nejdřív hledej český zdroj přes WebSearch s `allowed_domains` těchto médií (domény, které hledání odmítne, vynech). Český odkaz použij jen tehdy, když **obsahuje právě ten fakt a čísla**, na které odkazuješ, a je **stejně aktuální** (ne starší, než je potřeba). Když takový český zdroj není (typicky čerstvé pohyby akcií, zahraniční firemní oznámení, nejnovější vývoj), nech zahraniční zdroj (CNBC, Yahoo Finance, Bloomberg, Reuters…). Nelinkuj český článek, který jen souvisí s tématem. V pátečním aktualizačním běhu vyměň zahraniční odkazy za české, pokud se mezitím objevil kvalitní a aktuální český zdroj.
   - **Odkaz dej přímo do textu na sloveso** (např. „slíbila“, „odepsal“, „řeší“), stejně jako to dělají kolegové. Žádné odkazy na celé věty.
-  - Tučný opener o 2–4 slovech, vtipný (hříčka, narážka).
+  - Tučný opener o 2–4 slovech, vtipný (hříčka, narážka). **Výjimka: makrozprávy** (viz sekce výše) mají opener v podobě věty se závěrem a věcný tón bez vtipu.
   - Obyčejná slovesa, krátké věty, žádné nabubřelé obraty („o poznání skromnější“, „klíčový milník“).
   - Lidský humor tam, kde to téma snese, zhruba v každém třetím až čtvrtém odstavci, ne všude. Typicky jako hovorová pointa nebo glosa: „Jensen Huang je ale pěkný proutník“, „Pro dlouhodobé investory je to jen malý předvánoční Black Friday“, „Kdyby Marvell počkal do čtvrtka, dočkal by se velké slevy“, „Kdo si myslel, že telenovela skončila rezignací, spletl se.“
   - **Délka: na počítači minimálně 4,5 a maximálně 5,5 řádku**, tedy zhruba 450–550 znaků včetně mezer. V tomto rozmezí délky střídej. Kratší odstavec rozšiř o další konkrétní fakt nebo souvislost, ne o vatu.

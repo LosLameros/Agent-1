@@ -68,6 +68,7 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 - **Hlavička s velkým číslem** (kurzy, ceny, indexy): pod nadpisem poslední hodnota velkým tučným písmem, vedle změna za období v zelené Portu (`▼ −3,56 % (−0,0414) za 1 rok`) a pod tím fialový popis („Referenční kurz ECB k 15. 10. 2026“) – `hlavicka=(hodnota, změna, popis)`. Vzor: `vystupy/grafy/2026-10-16-eurusd.png`.
 - **Podnadpis** šedě pod nadpisem: text, nebo `(tučný úvod, pokračování)` (v `spojnicovy` i `_platno`). Vzor: `vystupy/grafy/2026-11-13-take-two.png`.
 - **Výplň pod čarou** (`vypln`): u jedné řady automaticky, u více řad jen na výslovné přání (`vypln=True`).
+- **Řada o pár dnech** (první dny po IPO): `format_x='den'` – popisky jen u obchodních dnů („19. 11.“), základ (např. cena IPO) jako `hladina=(0, 'Cena IPO 83,00 $', 'vlevo-pod')`. Vzor: `vystupy/grafy/2026-11-26-ytd-anthropic.png`.
 - **Ostrý výstup** (`pg.uloz(fig, cesta, zvetseni=2)`): stejný graf ve dvojnásobném rozlišení (2740 px na šířku), když uživatel chce „ostrý“ graf, tisk nebo velkou obrazovku. U tabulek stačí uložit s `dpi=400`.
 - **Vodorovná hladina** (`hladina=(hodnota, popisek)`): přerušovaná šedá čára s popiskem vpravo nad ní, např. upisovací cena IPO. Vzor: `vystupy/grafy/2026-11-14-csg.png`.
 - **Vyznačené maximum** (`vrchol=True`) a poslední hodnota s datem (`popisky_konec=True`) – u jedné řady standard nového designu.

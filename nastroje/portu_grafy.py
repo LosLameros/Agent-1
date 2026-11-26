@@ -366,7 +366,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
     tloustka_cary – v px (výchozí 3,5); u hustých denních řad za více let 2,5, aby se čára neslévala
     hlavicka     – (velké číslo, změna, popis[, barva změny]) pod nadpisem, např. kurz a změna za rok
     vypln        – jemný přechod pod čarou první řady; None = u jediné řady ano, u více řad ne
-    hladina      – (hodnota, popisek): vodorovná přerušovaná čára s popiskem nad ní vpravo (např. upisovací cena IPO)
+    hladina      – (hodnota, popisek[, 'pod'|'vlevo'|'vlevo-pod']): vodorovná přerušovaná čára s popiskem nad ní vpravo (např. upisovací cena IPO)
     vrchol       – u jediné řady vyznačit maximum: bod, nad ním tučně hodnota a pod ní šedě datum
     interval_let – u format_x='%Y' popisek každý n-tý rok (u řad přes 10 let 2)
     anotace      – [(datum, hodnota, 'text', 'pod'|'nad'), …] – bod na čáře + svislá linka + popisek
@@ -392,8 +392,12 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
             konce.append([h for h in hodnoty if h is not None][-1])
     if hladina:
         ax.axhline(hladina[0], color=ANOTACE_CARA, linewidth=1.8 * 72 / DPI, linestyle=(0, (5, 4)), zorder=2)
-        ax.annotate(hladina[1], (rozsah_x[1] if rozsah_x else x[-1], hladina[0]), xytext=(0, 9 / PT),
-                    textcoords="offset points", ha="right", va="bottom", fontsize=PISMO_OSA, color=TEXT_SEDY)
+        poloha = hladina[2] if len(hladina) > 2 else ""
+        pod, vlevo = "pod" in poloha, "vlevo" in poloha
+        ax.annotate(hladina[1], ((rozsah_x[0] if rozsah_x else x[0]) if vlevo else (rozsah_x[1] if rozsah_x else x[-1]),
+                                 hladina[0]),
+                    xytext=(0, (-9 if pod else 9) / PT), textcoords="offset points", ha="left" if vlevo else "right",
+                    va="top" if pod else "bottom", fontsize=PISMO_OSA, color=TEXT_SEDY)
     popisky = []
     jedna = len(rady) == 1
     if jedna and (popisky_konec or vrchol):
@@ -451,7 +455,10 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         ax.set_xlim(*rozsah_x)
     else:
         ax.set_xlim(x[0], x[-1])
-    if format_x == "mesic":
+    if format_x == "den":  # řady o pár dnech (např. první týden po IPO): popisek každý obchodní den „19. 11.“
+        ax.xaxis.set_major_locator(matplotlib.ticker.FixedLocator(mdates.date2num(
+            sorted({d for xs_ in ([v[0] for v in rady.values() if isinstance(v, tuple)] or [x]) for d in xs_}))))
+    elif format_x == "mesic":
         ax.xaxis.set_major_locator(mdates.MonthLocator(interval=interval_mesicu, bymonthday=1))
     elif format_x == "%Y":
         ax.xaxis.set_major_locator(mdates.YearLocator(interval_let))
@@ -460,7 +467,10 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         prvni = prvni_mesic or (rozsah_x[0] if rozsah_x else x[0]).month
         mesice = sorted({(prvni - 1 + k * interval_mesicu) % 12 + 1 for k in range(max(1, 12 // interval_mesicu))})
         ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=mesice))
-    if format_x == "mesic":
+    if format_x == "den":
+        ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(
+            lambda v, _: f"{mdates.num2date(v).day}.\u00a0{mdates.num2date(v).month}."))
+    elif format_x == "mesic":
         ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(
             lambda v, _: f"{MESICE[jazyk][mdates.num2date(v).month - 1]} {mdates.num2date(v).year % 100:02d}"))
     else:

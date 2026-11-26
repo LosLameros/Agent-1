@@ -58,6 +58,14 @@ Makrodata a rozhodnutí centrálních bank patří mezi nejdůležitější tém
 - Zdroje: kalendář a čerstvá čísla z konektoru **Trading Economics** (`get_calendar_*`, `get_indicator_*`, když je dostupný), tiskové zprávy ČNB, ČSÚ, BEA, BLS a Fedu, a české zpravodajství (ČTK přes E15, Seznam Zprávy, Patria, ČT24, HN). Číslo ověř v primárním zdroji nebo aspoň ve dvou médiích.
 - Makrodata, která vyjdou **až odpoledne nebo večer** (americká čísla ve 14:30 SEČ), zachytí běh v 17:30 nebo následující ranní běh. Ráno vždy projdi, co vyšlo včera po 14:30.
 
+**Kam makroodstavec v kartě patří (platí vždy, na rozdíl od ostatních tipů se nepřipisuje na konec):**
+
+- Makro je v newsletteru na úvodu. Napiš ho **mezi prvních 5 odstavců** karty (počítáno od prvního odstavce pod poznámkami „doplnit…“, pod šedým řádkem a pod texty kolegů nad nimi, bez prázdných řádků a bez Ranních přehledů trhů).
+- **Výchozí místo je první místo.** Pokud ale existuje něco důležitějšího, dej makro až za to: **hlavní vysvětlení pohybu trhu** (proč trhy brutálně rostou nebo klesají, souhrn týdne či dne), nebo **zásadní příběh týdne** (např. návrat Huanga do Nvidie). Pak jde makro na 2.–5. místo, hned za tyto odstavce. Nemusí to tak být vždy: když nic takového není, je makro první.
+- Víc makroodstavců řaď podle důležitosti (americká data a Fed, pak ČNB a Česko, pak eurozóna a svět) a držte se pohromadě. Makro, které už v kartě je (od hlavního ekonoma nebo tvoje z dřívějška), nepřeskupuj, nový odstavec dej za něj nebo před něj podle důležitosti.
+- Technicky: najdi v kartě `startIndex` odstavce, před který makro patří, vlož text (`insertText` na tento index, odstavec končí `\n\n` kvůli prázdnému řádku mezi odstavci) a styl (reset, tučný opener, odkaz) nastav podle indexů posunutých o začátek vloženého textu. Ostatní odstavce nech na místě. `requiredRevisionId` a kontrolu Slacku před zápisem dodrž stejně jako jinde.
+- V pátečním aktualizačním běhu makroodstavce na stejném místě jen opravuj, nepřesouvej.
+
 **Jak makroodstavec psát (styl hlavního ekonoma):**
 
 - **Opener není vtip ani 2–4 slova, ale celá věta se závěrem** („Americká ekonomika je silná, inflace zůstává problémem.“). Celá je tučná a **odkaz je na jednom klíčovém slově** (v prvním vzoru „silná“ uvnitř openeru, ve druhém „hypotéky“ hned v první větě za openerem), ne na celé větě.
@@ -107,7 +115,7 @@ V odpovědi na konci běhu vyjmenuj i to, které odstavce jsi aktualizoval a co 
 ## Formát zápisu
 
 - Na začátku karty je tučný nadpis **„Tipy na témata (Claude)“** a pod ním šedý kurzívový řádek „Aktualizuje se automaticky 4× denně (8:30, 11:30, 14:30 a 17:30). Odstavce jsou rovnou připravené do newsletteru.“ Pokud chybí, doplň je.
-- Hotové odstavce připisuj na konec karty a odděluj je prázdným řádkem. Žádný řádek s datem nebo časem ani shrnutí nad odstavcem.
+- Hotové odstavce připisuj na konec karty a odděluj je prázdným řádkem. **Výjimka: makroodstavce** patří na úvod karty, mezi prvních 5 odstavců (viz sekce „Makrozprávy“). Žádný řádek s datem nebo časem ani shrnutí nad odstavcem.
 - U ranního souhrnu (z XTB) je formát `Ranní přehled trhů: <téma 1>; <téma 2>; …` – každé téma je krátká fráze s číslem a **každé má vlastní odkaz na svůj původní zdroj**. Souhrn může mít až cca 500 znaků. Slovo XTB ani odkaz na XTB se v dokumentu nikdy neobjeví.
 - **Kvalita odstavce je hlavní.** Musí být poutavý, stručný a výstižný, aby z něj bylo cítit, že ho psal člověk. Občas vtip, metafora nebo humor, ale ne moc.
 - **Odstavec piš jako člověk, ne jako AI.** Řiď se agentem `.claude/agents/portu-newsletter-writer.md` (i sekcí „Jak autor texty zkracuje a zlidšťuje“) a předtím si přečti pár odstavců z posledních karet, které psali lidé:

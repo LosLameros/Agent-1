@@ -51,19 +51,21 @@ DPI = 200
 SIRKA_PX, VYSKA_PX = 1370, 722
 PT = DPI / 72  # px na 1 bod písma
 
-PISMO_OSA = 22 / PT        # ≈ 7,9 pt – popisky os a kategorií
-PISMO_HODNOTA = 21.5 / PT  # ≈ 7,7 pt – hodnoty u sloupců
-PISMO_LEGENDA = 24.5 / PT  # ≈ 8,8 pt – legenda
-PISMO_ZDROJ = 21.5 / PT    # ≈ 7,7 pt – „Graf: Portu, zdroj: …“
-PISMO_NADPIS = 40 / PT     # ≈ 14,4 pt – jen u varianty s nadpisem v obrázku
-PISMO_PODNADPIS = 22 / PT  # ≈ 7,9 pt – šedý popis pod nadpisem (první věta tučně)
+# Od 27. 11. 2026 všechno písmo kromě nadpisu o 2 body větší (zpětná vazba čtenářů: na mobilu nečitelné).
+VETSI = 2                          # o kolik bodů je písmo větší než v původním vzhledu
+PISMO_OSA = 22 / PT + VETSI        # ≈ 9,9 pt – popisky os a kategorií
+PISMO_HODNOTA = 21.5 / PT + VETSI  # ≈ 9,7 pt – hodnoty u sloupců
+PISMO_LEGENDA = 24.5 / PT + VETSI  # ≈ 10,8 pt – legenda
+PISMO_ZDROJ = 21.5 / PT + VETSI    # ≈ 9,7 pt – „Graf: Portu, zdroj: …“
+PISMO_NADPIS = 40 / PT             # ≈ 14,4 pt – nadpis (beze změny)
+PISMO_PODNADPIS = 22 / PT + VETSI  # ≈ 9,9 pt – šedý popis pod nadpisem (první věta tučně)
 
 GRAF_LEVA, GRAF_PRAVA = 91, 1358   # okraje kreslicí plochy
 POPISKY_Y_PRAVA = 71               # popisky osy y zarovnané vpravo k tomuto x
 GRAF_HORNI = 37                    # horní mřížka
 GRAF_DOLNI_1RADEK = 598            # spodní hrana plochy, popisky osy x na 1 řádek
 GRAF_DOLNI_2RADKY = 556            # spodní hrana plochy, kategorie na 2 řádky
-LEGENDA_STRED_Y = 698              # svislý střed legendy a zdroje
+LEGENDA_STRED_Y = 694              # svislý střed legendy a zdroje
 CTVEREC = 20                       # značka v legendě (zaoblený čtverec)
 
 ZDROJ = "Graf: Portu, zdroj: Bloomberg"
@@ -112,7 +114,7 @@ def _fy(px_shora: float) -> float:
     return 1 - px_shora / VYSKA_PX
 
 
-PODNADPIS_RADEK_PX = 31  # výška jednoho řádku podnadpisu
+PODNADPIS_RADEK_PX = 38  # výška jednoho řádku podnadpisu
 
 
 def _sirka_textu(text: str, px: float, font) -> float:
@@ -165,7 +167,7 @@ def _platno(dolni_px: float, horni_px: float = GRAF_HORNI, nadpis: str | None = 
         for k, radek in enumerate(radky_pod):
             x = GRAF_LEVA - 80
             for w, f in radek:
-                fig.text(_fx(x), 1 - (78 + k * PODNADPIS_RADEK_PX) / vyska, w, fontsize=PISMO_PODNADPIS,
+                fig.text(_fx(x), 1 - (80 + k * PODNADPIS_RADEK_PX) / vyska, w, fontsize=PISMO_PODNADPIS,
                          color=TEXT_TMAVY if f is _TUCNE else TEXT_SEDY, fontproperties=f, va="center_baseline")
                 x += _sirka_textu(w, PISMO_PODNADPIS * PT, f) + mezera
         fig.text(_fx(GRAF_LEVA - 80), 1 - 32 / vyska, nadpis, fontsize=PISMO_NADPIS, color=TEXT_TMAVY,
@@ -250,8 +252,13 @@ def _legenda_a_zdroj(fig, polozky, zdroj):
         sirka = t.get_window_extent(renderer=fig.canvas.get_renderer()).width
         x += sirka_znacky + 13 + sirka + 37
     if zdroj:
-        fig.text(_fx(GRAF_PRAVA), fy(LEGENDA_STRED_Y), zdroj, fontsize=PISMO_ZDROJ, color=TEXT_SEDY,
-                 ha="right", va="center_baseline")
+        t = fig.text(_fx(GRAF_PRAVA), fy(LEGENDA_STRED_Y), zdroj, fontsize=PISMO_ZDROJ, color=TEXT_SEDY,
+                     ha="right", va="center_baseline")
+        sirka_zdroje = t.get_window_extent(renderer=fig.canvas.get_renderer()).width
+        if x - 37 + 24 > GRAF_PRAVA - sirka_zdroje:  # legenda by vjela do zdroje – zkrať názvy řad nebo zdroj
+            import sys
+            print(f"POZOR: legenda a zdroj se překrývají ({x - 37:.0f} px > {GRAF_PRAVA - sirka_zdroje:.0f} px)",
+                  file=sys.stderr)
 
 
 # --- Sloupcový graf (svislé sloupce, seskupené řady) --------------------------
@@ -433,7 +440,7 @@ def spojnicovy(x, rady: dict, osa_y, jednotka="", mista_osa=0, zdroj=ZDROJ, barv
         konce = []
     if konce:
         # popisky blízkých hodnot od sebe odsuň, aby se nepřekrývaly (min. 26 px)
-        mezera = 26 / (GRAF_DOLNI_1RADEK - GRAF_HORNI) * (osa_y[1] - osa_y[0])
+        mezera = 32 / (GRAF_DOLNI_1RADEK - GRAF_HORNI) * (osa_y[1] - osa_y[0])
         poradi = sorted(range(len(konce)), key=lambda k: konce[k])
         pozice = {k: konce[k] for k in poradi}
         for a, b in zip(poradi, poradi[1:]):

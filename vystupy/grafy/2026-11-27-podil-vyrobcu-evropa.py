@@ -23,9 +23,9 @@ p25 = [float(x["podil_2025_pct"]) for x in r]
 p26 = [float(x["podil_2026_pct"]) for x in r]
 
 OSA = (0, 16, 2)
-DOLNI = pg.GRAF_DOLNI_2RADKY - 36          # místo na poznámku pod legendou
-LEGENDA_Y = pg.LEGENDA_STRED_Y - 36
-POZNAMKA_Y = pg.LEGENDA_STRED_Y + 4
+DOLNI = pg.GRAF_DOLNI_2RADKY - 50          # místo na poznámku pod legendou
+LEGENDA_Y = pg.LEGENDA_STRED_Y - 48
+POZNAMKA_Y = pg.LEGENDA_STRED_Y - 4
 fig, ax = pg._platno(
     DOLNI, nadpis="Evropští výrobci ztrácejí podíl ve prospěch čínských",
     podnadpis=("Podíl na registracích nových osobních aut v západní Evropě za prvních devět měsíců roku, v %.",
@@ -34,7 +34,7 @@ fy = fig._portu["fy"]
 pg._osa_y(ax, OSA, "", 0)
 n = len(vyrobci)
 ax.set_xlim(-0.5, n - 0.5)
-SIRKA, MEZERA = 0.32, 0.04
+SIRKA, MEZERA = 0.31, 0.08
 odsazeni = 8 / (DOLNI - pg.GRAF_HORNI) * (OSA[1] - OSA[0])
 for posun, hodnoty, barva in ((-(SIRKA + MEZERA) / 2, p25, pg.FIALOVA), ((SIRKA + MEZERA) / 2, p26, pg.ZELENA)):
     xs = [i + posun for i in range(n)]
@@ -47,7 +47,7 @@ ax.set_xticks([])
 VYSKA = DOLNI - pg.GRAF_HORNI
 for i, nazev in enumerate(vyrobci):  # každý řádek popisku na stejné účaří (diakritika jinak posouvá popisky)
     for k, radek in enumerate(nazev.split("\n")):
-        ax.text(i, -(40 + k * 30) / VYSKA, radek, transform=ax.get_xaxis_transform(), ha="center", va="baseline",
+        ax.text(i, -(42 + k * 34) / VYSKA, radek, transform=ax.get_xaxis_transform(), ha="center", va="baseline",
                 fontsize=pg.PISMO_OSA, color=pg.TEXT_SEDY)
 
 renderer = fig.canvas.get_renderer()

@@ -26,7 +26,7 @@ i_max = max(range(len(inflace)), key=inflace.__getitem__)
 
 fig = pg.spojnicovy(
     mesice,
-    {"Inflace v eurozóně (HICP, meziročně)": inflace, "Depozitní sazba ECB": (dny, sazba)},
+    {"Inflace (HICP, meziročně)": inflace, "Depozitní sazba ECB": (dny, sazba)},
     osa_y=(-2, 12, 2), jednotka="%", format_x="%Y", rozsah_x=(dt.date(2016, 10, 1), mesice[-1]),
     schody=("Depozitní sazba ECB",), popisky_konec=True, mista_konec=1, tloustka_cary=3,
     anotace=[(mesice[i_max], inflace[i_max], f"{pg.cislo(inflace[i_max], 1, '%')} (říj 2022)", "nad"),

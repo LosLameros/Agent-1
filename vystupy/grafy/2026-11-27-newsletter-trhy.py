@@ -37,6 +37,7 @@ ZAPORNA = "#C8102E"
 W, H, DPI = 2000, 736, 200   # stejné rozlišení jako předloha
 PT = DPI / 72
 PISMO = 31.5 + 1 * PT        # stejná výška číslic jako v předloze (22 px) + 1 bod
+PISMO_HLAVICKA = PISMO + 1 * PT  # záhlaví sloupců ve fialové hlavičce ještě o 1 bod větší než řádky
 
 IKONY = {"S&P 500": "🇺🇸", "Nasdaq-100": "🇺🇸", "Euro Stoxx 50": "🇪🇺", "Nikkei 225": "🇯🇵", "CSI 300": "🇨🇳",
          "PX": "🇨🇿", "Zlato": "💰", "Bitcoin": "📊", "Portu Portfolio 10": "🌍", "EUR/CZK": "💶", "USD/CZK": "💵"}
@@ -60,8 +61,8 @@ ax.set_ylim(H, 0)
 ax.axis("off")
 
 
-def text(x, y, s, barva, font, **kw):
-    return ax.text(x, y, s, fontsize=PISMO / PT, color=barva, fontproperties=font, **kw)
+def text(x, y, s, barva, font, velikost=None, **kw):
+    return ax.text(x, y, s, fontsize=(velikost or PISMO) / PT, color=barva, fontproperties=font, **kw)
 
 
 SLOUPCE = [0, 388, 808, 1215, 1625, W]
@@ -70,9 +71,9 @@ STREDY = [(a + b) / 2 for a, b in zip(SLOUPCE[1:], SLOUPCE[2:])]
 ax.add_patch(Rectangle((0, 0), W, VYSKA_HL, facecolor=pg.FIALOVA, edgecolor="none"))
 for x in SLOUPCE[1:-1]:  # jemné dělení sloupců v hlavičce jako v předloze
     ax.plot([x, x], [0, VYSKA_HL], color="white", alpha=0.18, linewidth=1.5 / PT)
-text(20, VYSKA_HL / 2, "Index", "white", SEMIBOLD, va="center_baseline")
+text(20, VYSKA_HL / 2, "Index", "white", SEMIBOLD, PISMO_HLAVICKA, va="center_baseline")
 for x, nazev in zip(STREDY, ("Hodnota", "Měna", "Týdenní změna", "Výnos YTD")):
-    text(x, VYSKA_HL / 2, nazev, "white", SEMIBOLD, ha="center", va="center_baseline")
+    text(x, VYSKA_HL / 2, nazev, "white", SEMIBOLD, PISMO_HLAVICKA, ha="center", va="center_baseline")
 
 y = VYSKA_HL
 for i, r in enumerate(radky):

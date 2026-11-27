@@ -49,7 +49,9 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 
 **Písmo**
 - **Rethink Sans** (oficiální písmo Portu, soubor `nastroje/fonty/RethinkSans.ttf`, licence OFL), řez Regular. Tučně jen první věta podnadpisu a hodnoty vyznačených bodů (maximum, poslední hodnota).
-- Velikosti (v bodech při 200 dpi): popisky os a kategorií ≈ 7,9 pt, hodnoty u sloupců a na konci čar ≈ 7,7 pt, legenda ≈ 8,8 pt, zdroj ≈ 7,7 pt, nadpis ≈ 14,4 pt, podnadpis ≈ 7,9 pt.
+- **Od 27. 11. 2026 je všechno písmo kromě nadpisu o 2 body větší** (zpětná vazba čtenářů newsletteru: na mobilu se popisky nedaly přečíst). Platí pro grafy i tabulky. V modulu to dělá konstanta `VETSI = 2`.
+- Velikosti (v bodech při 200 dpi): popisky os a kategorií ≈ 9,9 pt, hodnoty u sloupců a na konci čar ≈ 9,7 pt, legenda ≈ 10,8 pt, zdroj a poznámky ≈ 9,7 pt, podnadpis ≈ 9,9 pt, nadpis ≈ 14,4 pt (beze změny).
+- Větší písmo potřebuje víc místa: kratší názvy řad v legendě (modul vypíše varování, když legenda vjede do zdroje), víc místa mezi sloupci a pod popisky kategorií.
 
 **Plátno a rozvržení**
 - PNG **1370 × 722 px** (200 dpi, 6,85 × 3,61 palce), bílé pozadí, bez rámečku.
@@ -84,7 +86,7 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 - **Výchozí podoba od 27. 11. 2026 (úpravy zadané uživatelem):**
   - **Bez nadpisu a podnadpisu v obrázku** – tabulka se vkládá pod vlastní nadpis v textu. Nadpis a podnadpis (1–2 řádky Regular) přidej jen na výslovné přání.
   - **Minimální okraje nahoře a dole:** fialová hlavička začíná těsně u horního okraje (≈ 12 px), dole jen řádek se zdrojem a malý okraj.
-  - **Záhlaví sloupců větším písmem než obsah:** záhlaví 28 px SemiBold bílě, názvy a hodnoty v řádcích 21 px (názvy Regular/Medium, hodnoty SemiBold).
+  - **Záhlaví sloupců větším písmem než obsah:** záhlaví ≈ 33,5 px SemiBold bílě, názvy a hodnoty v řádcích ≈ 26,5 px (názvy Regular/Medium, hodnoty SemiBold), poznámka a zdroj ≈ 22,5 px – tj. původních 28 / 21 / 17 px + 2 body (`VETSI = 2 * PT`). Nadpis tabulky 38 px beze změny, podnadpis jako u grafů (`pg.PISMO_PODNADPIS`). Vzor: `vystupy/grafy/2026-11-27-mzdove-naklady-auta.py`.
   - **Ostrý výstup vždy:** PNG ve trojnásobném rozlišení (`savefig(dpi=600)` při rozvržení 1200 px → 3600 px na šířku) **a** vektorové SVG s písmem převedeným na křivky (`plt.rcParams["svg.fonttype"] = "path"`). Obojí pošli uživateli.
 - Šířka rozvržení 1200 px.
 - Hlavička tabulky jako plný fialový pruh `#4840BB` se zaoblenými rohy a bílým textem.

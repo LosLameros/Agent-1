@@ -1,0 +1,12 @@
+nazev,skupina,hodnota,mista,mena,tydenni_zmena_pct,vynos_ytd_pct
+S&P 500,index,7261,0,USD,5.1,6.1
+Nasdaq-100,index,26437,0,USD,5.6,4.7
+Euro Stoxx 50,index,6074,0,EUR,2.2,3.8
+Nikkei 225,index,58711,0,JPY,4.0,13.3
+CSI 300,index,4063,0,CNY,2.7,-13.9
+PX,index,2584,0,CZK,0.6,-3.8
+Zlato,komodita,3641,0,USD,3.2,-15.6
+Bitcoin,komodita,61082,0,USD,3.9,-30.8
+Portu Portfolio 10,portu,,0,CZK,2.6,10.7
+EUR/CZK,mena,24.41,2,,-0.2,1.1
+USD/CZK,mena,22.30,2,,0.0,8.4

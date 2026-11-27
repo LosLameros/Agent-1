@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="247.68pt" viewBox="0 0 432 247.68" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-27T10:09:30.621903</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 247.68 
+L 432 247.68 
+L 432 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 13.32 4.32 
+L 418.68 4.32 
+Q 421.2 4.32 421.2 6.84 
+L 421.2 24.12 
+Q 421.2 26.64 418.68 26.64 
+L 13.32 26.64 
+Q 10.8 26.64 10.8 24.12 
+L 10.8 6.84 
+Q 10.8 4.32 13.32 4.32 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 10.8 48.24 
+L 421.2 48.24 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 10.8 68.4 
+L 421.2 68.4 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 10.8 88.56 
+L 421.2 88.56 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 10.8 108.72 
+L 421.2 108.72 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 10.8 128.88 
+L 421.2 128.88 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 10.8 149.04 
+L 421.2 149.04 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 10.8 169.2 
+L 421.2 169.2 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 10.8 189.36 
+L 421.2 189.36 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 10.8 209.52 
+L 421.2 209.52 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 10.8 229.68 
+L 421.2 229.68 
+" clip-path="url(#p4b3f698dcc)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 249.48 34.2 
+L 411.48 34.2 
+Q 412.56 34.2 412.56 35.28 
+L 412.56 41.04 
+Q 412.56 42.12 411.48 42.12 
+L 249.48 42.12 
+Q 248.4 42.12 248.4 41.04 
+L 248.4 35.28 
+Q 248.4 34.2 249.48 34.2 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 249.48 54.36 
+L 395.064 54.36 
+Q 396.144 54.36 396.144 55.44 
+L 396.144 61.2 
+Q 396.144 62.28 395.064 62.28 
+L 249.48 62.28 
+Q 248.4 62.28 248.4 61.2 
+L 248.4 55.44 
+Q 248.4 54.36 249.48 54.36 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 249.48 74.52 
+L 386.856 74.52 
+Q 387.936 74.52 387.936 75.6 
+L 387.936 81.36 
+Q 387.936 82.44 386.856 82.44 
+L 249.48 82.44 
+Q 248.4 82.44 248.4 81.36 
+L 248.4 75.6 
+Q 248.4 74.52 249.48 74.52 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 249.48 94.68 
+L 329.4 94.68 
+Q 330.48 94.68 330.48 95.76 
+L 330.48 101.52 
+Q 330.48 102.6 329.4 102.6 
+L 249.48 102.6 
+Q 248.4 102.6 248.4 101.52 
+L 248.4 95.76 
+Q 248.4 94.68 249.48 94.68 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 249.48 114.84 
+L 321.192 114.84 
+Q 322.272 114.84 322.272 115.92 
+L 322.272 121.68 
+Q 322.272 122.76 321.192 122.76 
+L 249.48 122.76 
+Q 248.4 122.76 248.4 121.68 
+L 248.4 115.92 
+Q 248.4 114.84 249.48 114.84 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 249.48 135 
+L 321.192 135 
+Q 322.272 135 322.272 136.08 
+L 322.272 141.84 
+Q 322.272 142.92 321.192 142.92 
+L 249.48 142.92 
+Q 248.4 142.92 248.4 141.84 
+L 248.4 136.08 
+Q 248.4 135 249.48 135 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 249.48 155.16 
+L 288.36 155.16 
+Q 289.44 155.16 289.44 156.24 
+L 289.44 162 
+Q 289.44 163.08 288.36 163.08 
+L 249.48 163.08 
+Q 248.4 163.08 248.4 162 
+L 248.4 156.24 
+Q 248.4 155.16 249.48 155.16 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 249.48 175.32 
+L 288.36 175.32 
+Q 289.44 175.32 289.44 176.4 
+L 289.44 182.16 
+Q 289.44 183.24 288.36 183.24 
+L 249.48 183.24 
+Q 248.4 183.24 248.4 182.16 
+L 248.4 176.4 
+Q 248.4 175.32 249.48 175.32 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 249.48 195.48 
+L 288.36 195.48 
+Q 289.44 195.48 289.44 196.56 
+L 289.44 202.32 
+Q 289.44 203.4 288.36 203.4 
+L 249.48 203.4 
+Q 248.4 203.4 248.4 202.32 
+L 248.4 196.56 
+Q 248.4 195.48 249.48 195.48 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 249.48 215.64 
+L 263.736 215.64 
+Q 264.816 215.64 264.816 216.72 
+L 264.816 222.48 
+Q 264.816 223.56 263.736 223.56 
+L 249.48 223.56 
+Q 248.4 223.56 248.4 222.48 
+L 248.4 216.72 
+Q 248.4 215.64 249.48 215.64 
+z
+" clip-path="url(#p4b3f698dcc)" style="fill: #d3cff2"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="20.88" y="20.47968" transform="rotate(-0 20.88 20.47968)">Firma</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: end; fill: #ffffff" x="223.2" y="20.47968" transform="rotate(-0 223.2 20.47968)">Váha</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="41.90976" transform="rotate(-0 20.88 41.90976)">Komerční banka</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="41.90976" transform="rotate(-0 223.2 41.90976)">20 %</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="62.06976" transform="rotate(-0 20.88 62.06976)">Moneta Money Bank</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="62.06976" transform="rotate(-0 223.2 62.06976)">18 %</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="82.22976" transform="rotate(-0 20.88 82.22976)">ČEZ</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="82.22976" transform="rotate(-0 223.2 82.22976)">17 %</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="102.38976" transform="rotate(-0 20.88 102.38976)">Philip Morris ČR</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="102.38976" transform="rotate(-0 223.2 102.38976)">10 %</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="122.54976" transform="rotate(-0 20.88 122.54976)">Vienna Insurance Group</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="122.54976" transform="rotate(-0 223.2 122.54976)">9 %</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="142.70976" transform="rotate(-0 20.88 142.70976)">Colt CZ Group</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="142.70976" transform="rotate(-0 223.2 142.70976)">9 %</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="162.86976" transform="rotate(-0 20.88 162.86976)">Kofola ČeskoSlovensko</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="162.86976" transform="rotate(-0 223.2 162.86976)">5 %</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="183.02976" transform="rotate(-0 20.88 183.02976)">Erste Group</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="183.02976" transform="rotate(-0 223.2 183.02976)">5 %</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="203.18976" transform="rotate(-0 20.88 203.18976)">Doosan Škoda Power</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="203.18976" transform="rotate(-0 223.2 203.18976)">5 %</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="223.34976" transform="rotate(-0 20.88 223.34976)">Hotovost</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="223.2" y="223.34976" transform="rotate(-0 223.2 223.34976)">2 %</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: end; fill: #606271" x="421.2" y="241.92" transform="rotate(-0 421.2 241.92)">Tabulka: Portu</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4b3f698dcc">
+   <rect x="0" y="0" width="432" height="247.68"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="264.6pt" viewBox="0 0 432 264.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-27T10:11:37.848396</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 264.6 
+L 432 264.6 
+L 432 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 13.32 4.32 
+L 418.68 4.32 
+Q 421.2 4.32 421.2 6.84 
+L 421.2 24.12 
+Q 421.2 26.64 418.68 26.64 
+L 13.32 26.64 
+Q 10.8 26.64 10.8 24.12 
+L 10.8 6.84 
+Q 10.8 4.32 13.32 4.32 
+z
+" clip-path="url(#p3583d56758)" style="fill: #4840bb"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 10.8 52.92 
+L 421.2 52.92 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 10.8 100.08 
+L 421.2 100.08 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 10.8 124.92 
+L 421.2 124.92 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 10.8 160.92 
+L 421.2 160.92 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 10.8 185.76 
+L 421.2 185.76 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 10.8 210.6 
+L 421.2 210.6 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 10.8 246.6 
+L 421.2 246.6 
+" clip-path="url(#p3583d56758)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="144" y="20.47968" transform="rotate(-0 144 20.47968)">České dividendy</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="284.4" y="20.47968" transform="rotate(-0 284.4 20.47968)">WOOD PX ETF</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="42.6168" transform="rotate(-0 20.88 42.6168)">Dividendy</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="42.6168" transform="rotate(-0 144 42.6168)">Připisují se do hotovosti v portfoliu</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="42.6168" transform="rotate(-0 284.4 42.6168)">Fond je znovu investuje</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="67.4568" transform="rotate(-0 20.88 67.4568)">Pro koho</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="67.4568" transform="rotate(-0 144 67.4568)">Pro ty, kdo chtějí z akcií příjem z</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="78.6168" transform="rotate(-0 144 78.6168)">dividend</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="67.4568" transform="rotate(-0 284.4 67.4568)">Pro ty, kdo chtějí dividendy znovu</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="78.6168" transform="rotate(-0 284.4 78.6168)">investovat a dlouhodobě zvyšovat</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="89.7768" transform="rotate(-0 284.4 89.7768)">hodnotu investice</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="114.6168" transform="rotate(-0 20.88 114.6168)">Počet firem</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="114.6168" transform="rotate(-0 144 114.6168)">9</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="114.6168" transform="rotate(-0 284.4 114.6168)">10</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="139.4568" transform="rotate(-0 20.88 139.4568)">Podle čeho se dělí peníze</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="139.4568" transform="rotate(-0 144 139.4568)">Výše a spolehlivost dividendy a</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="150.6168" transform="rotate(-0 144 150.6168)">budoucí růst firmy</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="139.4568" transform="rotate(-0 284.4 139.4568)">Velikost firmy</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="175.4568" transform="rotate(-0 20.88 175.4568)">Banky a pojišťovny</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="175.4568" transform="rotate(-0 144 175.4568)">52 %</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="175.4568" transform="rotate(-0 284.4 175.4568)">65 %</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="200.2968" transform="rotate(-0 20.88 200.2968)">Letošní dividendy po zdanění</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="200.2968" transform="rotate(-0 144 200.2968)">4,5 %</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="200.2968" transform="rotate(-0 284.4 200.2968)">3,4 % (zůstává ve fondu)</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="225.1368" transform="rotate(-0 20.88 225.1368)">Míra kontroly</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="225.1368" transform="rotate(-0 144 225.1368)">Plná: váhy můžete sami upravovat</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="144" y="236.2968" transform="rotate(-0 144 236.2968)">a doplnit o jiné instrumenty</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="225.1368" transform="rotate(-0 284.4 225.1368)">Omezená: fond investuje podle své</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="284.4" y="236.2968" transform="rotate(-0 284.4 236.2968)">metodiky do firem z indexu PX</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: end; fill: #606271" x="421.2" y="258.84" transform="rotate(-0 421.2 258.84)">Tabulka: Portu</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3583d56758">
+   <rect x="0" y="0" width="432" height="264.6"/>
+  </clipPath>
+ </defs>
+</svg>

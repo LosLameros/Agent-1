@@ -69,7 +69,7 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 - **Podnadpis** šedě pod nadpisem: text, nebo `(tučný úvod, pokračování)` (v `spojnicovy` i `_platno`). Vzor: `vystupy/grafy/2026-11-13-take-two.png`.
 - **Výplň pod čarou** (`vypln`): u jedné řady automaticky, u více řad jen na výslovné přání (`vypln=True`).
 - **Řada o pár dnech** (první dny po IPO): `format_x='den'` – popisky jen u obchodních dnů („19. 11.“), základ (např. cena IPO) jako `hladina=(0, 'Cena IPO 83,00 $', 'vlevo-pod')`. Vzor: `vystupy/grafy/2026-11-26-ytd-anthropic.png`.
-- **Ostrý výstup** (`pg.uloz(fig, cesta, zvetseni=2)`): stejný graf ve dvojnásobném rozlišení (2740 px na šířku), když uživatel chce „ostrý“ graf, tisk nebo velkou obrazovku. U tabulek stačí uložit s `dpi=400`.
+- **Ostrý výstup** (`pg.uloz(fig, cesta, zvetseni=2)`): stejný graf ve dvojnásobném rozlišení (2740 px na šířku), když uživatel chce „ostrý“ graf, tisk nebo velkou obrazovku. Tabulky se ukládají vždy ve 3× (viz kapitola Tabulky).
 - **Vodorovná hladina** (`hladina=(hodnota, popisek)`): přerušovaná šedá čára s popiskem vpravo nad ní, např. upisovací cena IPO. Vzor: `vystupy/grafy/2026-11-14-csg.png`.
 - **Vyznačené maximum** (`vrchol=True`) a poslední hodnota s datem (`popisky_konec=True`) – u jedné řady standard nového designu.
 - **Anotace událostí:** bod na čáře, krátká svislá šedá linka a popisek pod bodem nebo nad ním. Nejvýš 2–3 anotace. Popisek nesmí překrýt čáru.
@@ -80,9 +80,14 @@ Všechno níže je zabudované v modulu `nastroje/portu_grafy.py`. Graf vždy kr
 **Vodorovný sloupcový graf** (`pg.vodorovny`)
 - Pro žebříčky (sektory, akcie, země), seřazené od největší hodnoty shora. Hodnota na konci sloupce. Nech na ose rezervu, aby se popisek nejdelšího sloupce vešel.
 
-**Tabulky** (žebříčky, přehledy) – vzor `vystupy/grafy/2026-11-13-skandaly-ceo.py` a `2026-11-13-sp500-sektory-eps.py`
-- Šířka 1200 px, nadpis Regular (1–2 řádky), pod ním šedý podnadpis.
-- Hlavička tabulky jako plný fialový pruh `#4840BB` s bílým textem (Medium).
+**Tabulky** (žebříčky, přehledy, srovnání) – vzor `vystupy/grafy/2026-11-25-slozeni-portfolia.py` (s pruhy) a `2026-11-25-ceske-dividendy-vs-wood.py` (text v buňkách)
+- **Výchozí podoba od 27. 11. 2026 (úpravy zadané uživatelem):**
+  - **Bez nadpisu a podnadpisu v obrázku** – tabulka se vkládá pod vlastní nadpis v textu. Nadpis a podnadpis (1–2 řádky Regular) přidej jen na výslovné přání.
+  - **Minimální okraje nahoře a dole:** fialová hlavička začíná těsně u horního okraje (≈ 12 px), dole jen řádek se zdrojem a malý okraj.
+  - **Záhlaví sloupců větším písmem než obsah:** záhlaví 28 px SemiBold bílě, názvy a hodnoty v řádcích 21 px (názvy Regular/Medium, hodnoty SemiBold).
+  - **Ostrý výstup vždy:** PNG ve trojnásobném rozlišení (`savefig(dpi=600)` při rozvržení 1200 px → 3600 px na šířku) **a** vektorové SVG s písmem převedeným na křivky (`plt.rcParams["svg.fonttype"] = "path"`). Obojí pošli uživateli.
+- Šířka rozvržení 1200 px.
+- Hlavička tabulky jako plný fialový pruh `#4840BB` se zaoblenými rohy a bílým textem.
 - Řádky oddělené tenkou šedou čarou, zvýrazněný řádek (Portu, celkem, hlavní firma) světle fialovým podkladem `#ECEBF8` a tučně.
 - Volitelně sloupec s pruhy podle hodnoty: světle fialové `#D3CFF2`, zvýrazněný řádek plnou fialovou. Pruhy v měřítku.
 - Změny v % zeleně (`+`) a červeně (`−`), nula tmavě. Zdroj vpravo dole: `Tabulka: Portu, zdroj: …`.

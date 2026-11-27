@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="132.48pt" viewBox="0 0 432 132.48" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-27T13:19:51.094656</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 132.48 
+L 432 132.48 
+L 432 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 10.8 28.08 
+L 421.2 28.08 
+L 421.2 49.68 
+L 10.8 49.68 
+z
+" clip-path="url(#pe5a44ca15c)" style="fill: #ecebf8"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 13.32 4.32 
+L 418.68 4.32 
+Q 421.2 4.32 421.2 6.84 
+L 421.2 24.12 
+Q 421.2 26.64 418.68 26.64 
+L 13.32 26.64 
+Q 10.8 26.64 10.8 24.12 
+L 10.8 6.84 
+Q 10.8 4.32 13.32 4.32 
+z
+" clip-path="url(#pe5a44ca15c)" style="fill: #4840bb"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 10.8 49.68 
+L 421.2 49.68 
+" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 10.8 71.28 
+L 421.2 71.28 
+" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 10.8 92.88 
+L 421.2 92.88 
+" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 10.8 114.48 
+L 421.2 114.48 
+" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 253.08 34.92 
+L 373.32 34.92 
+Q 374.4 34.92 374.4 36 
+L 374.4 41.76 
+Q 374.4 42.84 373.32 42.84 
+L 253.08 42.84 
+Q 252 42.84 252 41.76 
+L 252 36 
+Q 252 34.92 253.08 34.92 
+z
+" clip-path="url(#pe5a44ca15c)" style="fill: #4840bb"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 253.08 56.52 
+L 330.48 56.52 
+Q 331.56 56.52 331.56 57.6 
+L 331.56 63.36 
+Q 331.56 64.44 330.48 64.44 
+L 253.08 64.44 
+Q 252 64.44 252 63.36 
+L 252 57.6 
+Q 252 56.52 253.08 56.52 
+z
+" clip-path="url(#pe5a44ca15c)" style="fill: #d3cff2"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 253.08 78.12 
+L 293.76 78.12 
+Q 294.84 78.12 294.84 79.2 
+L 294.84 84.96 
+Q 294.84 86.04 293.76 86.04 
+L 253.08 86.04 
+Q 252 86.04 252 84.96 
+L 252 79.2 
+Q 252 78.12 253.08 78.12 
+z
+" clip-path="url(#pe5a44ca15c)" style="fill: #d3cff2"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 253.08 99.72 
+L 288.864 99.72 
+Q 289.944 99.72 289.944 100.8 
+L 289.944 106.56 
+Q 289.944 107.64 288.864 107.64 
+L 253.08 107.64 
+Q 252 107.64 252 106.56 
+L 252 100.8 
+Q 252 99.72 253.08 99.72 
+z
+" clip-path="url(#pe5a44ca15c)" style="fill: #d3cff2"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="20.88" y="20.47968" transform="rotate(-0 20.88 20.47968)">Země</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: end; fill: #ffffff" x="230.4" y="20.47968" transform="rotate(-0 230.4 20.47968)">Hodinové náklady práce</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="252" y="20.47968" transform="rotate(-0 252 20.47968)">Poměr k Německu</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #4840bb" x="20.88" y="42.62976" transform="rotate(-0 20.88 42.62976)">Německo</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #4840bb" x="230.4" y="42.62976" transform="rotate(-0 230.4 42.62976)">~65 €</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #4840bb" x="411.84" y="42.62976" transform="rotate(-0 411.84 42.62976)">100 %</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="64.22976" transform="rotate(-0 20.88 64.22976)">USA</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="64.22976" transform="rotate(-0 230.4 64.22976)">~42 €</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="64.22976" transform="rotate(-0 411.84 64.22976)">~65 %</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="85.82976" transform="rotate(-0 20.88 85.82976)">Japonsko</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="85.82976" transform="rotate(-0 230.4 85.82976)">~23 €</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="85.82976" transform="rotate(-0 411.84 85.82976)">~35 %</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="107.42976" transform="rotate(-0 20.88 107.42976)">Polsko</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="107.42976" transform="rotate(-0 230.4 107.42976)">~20–21 €</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="107.42976" transform="rotate(-0 411.84 107.42976)">~31 %</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: start; fill: #606271" x="10.8" y="126.72" transform="rotate(-0 10.8 126.72)">Hodnoty jsou přibližné.</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: end; fill: #606271" x="421.2" y="126.72" transform="rotate(-0 421.2 126.72)">Tabulka: Portu, zdroj: Kielský institut pro světové hospodářství (IfW)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe5a44ca15c">
+   <rect x="0" y="0" width="432" height="132.48"/>
+  </clipPath>
+ </defs>
+</svg>

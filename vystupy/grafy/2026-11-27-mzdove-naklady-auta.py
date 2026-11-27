@@ -31,6 +31,8 @@ PRUH_SVETLY = "#D3CFF2"      # pruhy ostatních zemí
 W, DPI = 1200, 200
 VYSTUP_DPI = 600             # → 3600 px na šířku
 PT = DPI / 72
+VETSI = 2 * PT               # písmo kromě nadpisu o 2 body větší (čitelnost na mobilu)
+POD = pg.PISMO_PODNADPIS * PT  # velikost podnadpisu v px (z modulu, už zvětšená)
 
 radky = list(csv.DictReader(open(ZAKLAD + ".csv", encoding="utf-8")))
 
@@ -39,10 +41,10 @@ PODNADPIS = ("Průměrné hodinové náklady práce v eurech.",
              "Německo má nejvyšší náklady na světě. V USA jsou přibližně o třetinu nižší, v Polsku více než třikrát.")
 radky_pod, mezera_slov = pg._zalom_podnadpis(PODNADPIS, 1140)
 
-RADEK = 60
-Y_HL, VYSKA_HL = 92 + len(radky_pod) * 31 + 6, 62
+RADEK = 68
+Y_HL, VYSKA_HL = 92 + len(radky_pod) * 38 + 6, 70
 Y_PRVNI = Y_HL + VYSKA_HL + 4
-H = Y_PRVNI + len(radky) * RADEK + 50
+H = Y_PRVNI + len(radky) * RADEK + 58
 fig = plt.figure(figsize=(W / DPI, H / DPI), dpi=DPI, facecolor="white")
 ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, W)
@@ -62,15 +64,15 @@ text(L, 46, NADPIS, 38, pg.TEXT_TMAVY, REGULAR, va="baseline")
 for k, radek in enumerate(radky_pod):  # šedý podnadpis, první věta tučně (jako u grafů v novém designu)
     x = L
     for slovo, font in radek:
-        text(x, 92 + k * 31, slovo, 22, pg.TEXT_TMAVY if font is pg._TUCNE else pg.TEXT_SEDY, font, va="baseline")
-        x += pg._sirka_textu(slovo, 22, font) + mezera_slov
+        text(x, 94 + k * 38, slovo, POD, pg.TEXT_TMAVY if font is pg._TUCNE else pg.TEXT_SEDY, font, va="baseline")
+        x += pg._sirka_textu(slovo, POD, font) + mezera_slov
 
 ax.add_patch(FancyBboxPatch((L, Y_HL), P - L, VYSKA_HL, boxstyle="round,pad=0,rounding_size=7",
                             facecolor=pg.FIALOVA, edgecolor="none"))
 stred_hl = Y_HL + VYSKA_HL / 2
 for x, nazev, zarovnani in ((X_ZEME, "Země", "left"), (X_NAKLADY, "Hodinové náklady práce", "right"),
                             (X_PRUH, "Poměr k Německu", "left")):
-    text(x, stred_hl, nazev, 28, "white", SEMIBOLD, ha=zarovnani, va="center_baseline")
+    text(x, stred_hl, nazev, 28 + VETSI, "white", SEMIBOLD, ha=zarovnani, va="center_baseline")
 
 y = Y_PRVNI
 for r in radky:
@@ -80,16 +82,16 @@ for r in radky:
     ax.plot([L, P], [y + RADEK, y + RADEK], color=CARA, linewidth=1.5 / PT, zorder=1)
     stred = y + RADEK / 2
     barva = pg.FIALOVA if zvyraznit else TEXT
-    text(X_ZEME, stred, r["zeme"], 21, barva, SEMIBOLD if zvyraznit else REGULAR, va="center_baseline")
-    text(X_NAKLADY, stred, r["naklady_text"], 21, barva, SEMIBOLD, ha="right", va="center_baseline")
+    text(X_ZEME, stred, r["zeme"], 21 + VETSI, barva, SEMIBOLD if zvyraznit else REGULAR, va="center_baseline")
+    text(X_NAKLADY, stred, r["naklady_text"], 21 + VETSI, barva, SEMIBOLD, ha="right", va="center_baseline")
     delka = (KONEC_PRUHU - X_PRUH) * float(r["pomer_pct"]) / 100
     ax.add_patch(FancyBboxPatch((X_PRUH, stred - 11), delka, 22, boxstyle="round,pad=0,rounding_size=3",
                                 facecolor=pg.FIALOVA if zvyraznit else PRUH_SVETLY, edgecolor="none", zorder=2))
-    text(X_POMER, stred, r["pomer_text"], 21, barva, SEMIBOLD, ha="right", va="center_baseline")
+    text(X_POMER, stred, r["pomer_text"], 21 + VETSI, barva, SEMIBOLD, ha="right", va="center_baseline")
     y += RADEK
 
-text(L, y + 34, "Hodnoty jsou přibližné.", 17, pg.TEXT_SEDY, REGULAR, va="baseline")
-text(P, y + 34, "Tabulka: Portu, zdroj: Kielský institut pro světové hospodářství (IfW)", 17, pg.TEXT_SEDY, REGULAR,
+text(L, y + 40, "Hodnoty jsou přibližné.", 17 + VETSI, pg.TEXT_SEDY, REGULAR, va="baseline")
+text(P, y + 40, "Tabulka: Portu, zdroj: Kielský institut pro světové hospodářství (IfW)", 17 + VETSI, pg.TEXT_SEDY, REGULAR,
      ha="right", va="baseline")
 fig.savefig(ZAKLAD + ".png", dpi=VYSTUP_DPI, facecolor="white")
 fig.savefig(ZAKLAD + ".svg", facecolor="white")

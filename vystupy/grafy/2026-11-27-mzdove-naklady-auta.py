@@ -2,7 +2,7 @@
 
 Data: převzato 1:1 z předlohy (zdroj Kielský institut pro světové hospodářství, IfW), hodnoty přibližné.
 Kontrola poměrů: 42/65 = 65 %, 23/65 = 35 %, 20–21/65 = 31–32 %.
-Výchozí podoba tabulek: bez nadpisu, minimální okraje, větší záhlaví, PNG 3600 px + SVG s písmem v křivkách.
+S nadpisem a podnadpisem podle předlohy, minimální okraje, větší záhlaví, PNG 3600 px + SVG s písmem v křivkách.
 Spouštěj z kořene repozitáře: python3 vystupy/grafy/2026-11-27-mzdove-naklady-auta.py
 """
 import csv
@@ -34,8 +34,13 @@ PT = DPI / 72
 
 radky = list(csv.DictReader(open(ZAKLAD + ".csv", encoding="utf-8")))
 
+NADPIS = "Mzdové náklady v automobilovém sektoru"
+PODNADPIS = ("Průměrné hodinové náklady práce v eurech.",
+             "Německo má nejvyšší náklady na světě. V USA jsou přibližně o třetinu nižší, v Polsku více než třikrát.")
+radky_pod, mezera_slov = pg._zalom_podnadpis(PODNADPIS, 1140)
+
 RADEK = 60
-Y_HL, VYSKA_HL = 12, 62
+Y_HL, VYSKA_HL = 92 + len(radky_pod) * 31 + 6, 62
 Y_PRVNI = Y_HL + VYSKA_HL + 4
 H = Y_PRVNI + len(radky) * RADEK + 50
 fig = plt.figure(figsize=(W / DPI, H / DPI), dpi=DPI, facecolor="white")
@@ -52,6 +57,13 @@ def text(x, y, s, px, barva, font, **kw):
 L, P = 30, 1170
 X_ZEME, X_NAKLADY = L + 28, 640
 X_PRUH, KONEC_PRUHU, X_POMER = 700, 1040, P - 26
+
+text(L, 46, NADPIS, 38, pg.TEXT_TMAVY, REGULAR, va="baseline")
+for k, radek in enumerate(radky_pod):  # šedý podnadpis, první věta tučně (jako u grafů v novém designu)
+    x = L
+    for slovo, font in radek:
+        text(x, 92 + k * 31, slovo, 22, pg.TEXT_TMAVY if font is pg._TUCNE else pg.TEXT_SEDY, font, va="baseline")
+        x += pg._sirka_textu(slovo, 22, font) + mezera_slov
 
 ax.add_patch(FancyBboxPatch((L, Y_HL), P - L, VYSKA_HL, boxstyle="round,pad=0,rounding_size=7",
                             facecolor=pg.FIALOVA, edgecolor="none"))

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="132.48pt" viewBox="0 0 432 132.48" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="185.76pt" viewBox="0 0 432 185.76" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-27T13:19:51.094656</dc:date>
+    <dc:date>2026-11-27T13:30:47.753267</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,8 +21,8 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 132.48 
-L 432 132.48 
+   <path d="M 0 185.76 
+L 432 185.76 
 L 432 0 
 L 0 0 
 z
@@ -30,154 +30,229 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 10.8 28.08 
-L 421.2 28.08 
-L 421.2 49.68 
-L 10.8 49.68 
+    <path d="M 10.8 81.36 
+L 421.2 81.36 
+L 421.2 102.96 
+L 10.8 102.96 
 z
-" clip-path="url(#pe5a44ca15c)" style="fill: #ecebf8"/>
+" clip-path="url(#pbbd07fd3f8)" style="fill: #ecebf8"/>
    </g>
    <g id="patch_3">
-    <path d="M 13.32 4.32 
-L 418.68 4.32 
-Q 421.2 4.32 421.2 6.84 
-L 421.2 24.12 
-Q 421.2 26.64 418.68 26.64 
-L 13.32 26.64 
-Q 10.8 26.64 10.8 24.12 
-L 10.8 6.84 
-Q 10.8 4.32 13.32 4.32 
+    <path d="M 13.32 57.6 
+L 418.68 57.6 
+Q 421.2 57.6 421.2 60.12 
+L 421.2 77.4 
+Q 421.2 79.92 418.68 79.92 
+L 13.32 79.92 
+Q 10.8 79.92 10.8 77.4 
+L 10.8 60.12 
+Q 10.8 57.6 13.32 57.6 
 z
-" clip-path="url(#pe5a44ca15c)" style="fill: #4840bb"/>
+" clip-path="url(#pbbd07fd3f8)" style="fill: #4840bb"/>
    </g>
    <g id="line2d_1">
-    <path d="M 10.8 49.68 
-L 421.2 49.68 
-" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+    <path d="M 10.8 102.96 
+L 421.2 102.96 
+" clip-path="url(#pbbd07fd3f8)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 10.8 71.28 
-L 421.2 71.28 
-" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+    <path d="M 10.8 124.56 
+L 421.2 124.56 
+" clip-path="url(#pbbd07fd3f8)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
-    <path d="M 10.8 92.88 
-L 421.2 92.88 
-" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+    <path d="M 10.8 146.16 
+L 421.2 146.16 
+" clip-path="url(#pbbd07fd3f8)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
-    <path d="M 10.8 114.48 
-L 421.2 114.48 
-" clip-path="url(#pe5a44ca15c)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
+    <path d="M 10.8 167.76 
+L 421.2 167.76 
+" clip-path="url(#pbbd07fd3f8)" style="fill: none; stroke: #e7e7eb; stroke-width: 0.54; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 253.08 34.92 
-L 373.32 34.92 
-Q 374.4 34.92 374.4 36 
-L 374.4 41.76 
-Q 374.4 42.84 373.32 42.84 
-L 253.08 42.84 
-Q 252 42.84 252 41.76 
-L 252 36 
-Q 252 34.92 253.08 34.92 
+    <path d="M 253.08 88.2 
+L 373.32 88.2 
+Q 374.4 88.2 374.4 89.28 
+L 374.4 95.04 
+Q 374.4 96.12 373.32 96.12 
+L 253.08 96.12 
+Q 252 96.12 252 95.04 
+L 252 89.28 
+Q 252 88.2 253.08 88.2 
 z
-" clip-path="url(#pe5a44ca15c)" style="fill: #4840bb"/>
+" clip-path="url(#pbbd07fd3f8)" style="fill: #4840bb"/>
    </g>
    <g id="patch_5">
-    <path d="M 253.08 56.52 
-L 330.48 56.52 
-Q 331.56 56.52 331.56 57.6 
-L 331.56 63.36 
-Q 331.56 64.44 330.48 64.44 
-L 253.08 64.44 
-Q 252 64.44 252 63.36 
-L 252 57.6 
-Q 252 56.52 253.08 56.52 
+    <path d="M 253.08 109.8 
+L 330.48 109.8 
+Q 331.56 109.8 331.56 110.88 
+L 331.56 116.64 
+Q 331.56 117.72 330.48 117.72 
+L 253.08 117.72 
+Q 252 117.72 252 116.64 
+L 252 110.88 
+Q 252 109.8 253.08 109.8 
 z
-" clip-path="url(#pe5a44ca15c)" style="fill: #d3cff2"/>
+" clip-path="url(#pbbd07fd3f8)" style="fill: #d3cff2"/>
    </g>
    <g id="patch_6">
-    <path d="M 253.08 78.12 
-L 293.76 78.12 
-Q 294.84 78.12 294.84 79.2 
-L 294.84 84.96 
-Q 294.84 86.04 293.76 86.04 
-L 253.08 86.04 
-Q 252 86.04 252 84.96 
-L 252 79.2 
-Q 252 78.12 253.08 78.12 
+    <path d="M 253.08 131.4 
+L 293.76 131.4 
+Q 294.84 131.4 294.84 132.48 
+L 294.84 138.24 
+Q 294.84 139.32 293.76 139.32 
+L 253.08 139.32 
+Q 252 139.32 252 138.24 
+L 252 132.48 
+Q 252 131.4 253.08 131.4 
 z
-" clip-path="url(#pe5a44ca15c)" style="fill: #d3cff2"/>
+" clip-path="url(#pbbd07fd3f8)" style="fill: #d3cff2"/>
    </g>
    <g id="patch_7">
-    <path d="M 253.08 99.72 
-L 288.864 99.72 
-Q 289.944 99.72 289.944 100.8 
-L 289.944 106.56 
-Q 289.944 107.64 288.864 107.64 
-L 253.08 107.64 
-Q 252 107.64 252 106.56 
-L 252 100.8 
-Q 252 99.72 253.08 99.72 
+    <path d="M 253.08 153 
+L 288.864 153 
+Q 289.944 153 289.944 154.08 
+L 289.944 159.84 
+Q 289.944 160.92 288.864 160.92 
+L 253.08 160.92 
+Q 252 160.92 252 159.84 
+L 252 154.08 
+Q 252 153 253.08 153 
 z
-" clip-path="url(#pe5a44ca15c)" style="fill: #d3cff2"/>
+" clip-path="url(#pbbd07fd3f8)" style="fill: #d3cff2"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="20.88" y="20.47968" transform="rotate(-0 20.88 20.47968)">Země</text>
+    <text style="font-size: 13.68px; font-family: 'Rethink Sans'; text-anchor: start; fill: #2b2b2b" x="10.8" y="16.56" transform="rotate(-0 10.8 16.56)">Mzdové náklady v automobilovém sektoru</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: end; fill: #ffffff" x="230.4" y="20.47968" transform="rotate(-0 230.4 20.47968)">Hodinové náklady práce</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2b2b2b" x="10.8" y="33.12" transform="rotate(-0 10.8 33.12)">Průměrné</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="252" y="20.47968" transform="rotate(-0 252 20.47968)">Poměr k Německu</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2b2b2b" x="47.1924" y="33.12" transform="rotate(-0 47.1924 33.12)">hodinové</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #4840bb" x="20.88" y="42.62976" transform="rotate(-0 20.88 42.62976)">Německo</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2b2b2b" x="81.557775" y="33.12" transform="rotate(-0 81.557775 33.12)">náklady</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #4840bb" x="230.4" y="42.62976" transform="rotate(-0 230.4 42.62976)">~65 €</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2b2b2b" x="111.336975" y="33.12" transform="rotate(-0 111.336975 33.12)">práce</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #4840bb" x="411.84" y="42.62976" transform="rotate(-0 411.84 42.62976)">100 %</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2b2b2b" x="133.284038" y="33.12" transform="rotate(-0 133.284038 33.12)">v</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="64.22976" transform="rotate(-0 20.88 64.22976)">USA</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #2b2b2b" x="139.548262" y="33.12" transform="rotate(-0 139.548262 33.12)">eurech.</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="64.22976" transform="rotate(-0 230.4 64.22976)">~42 €</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="167.568975" y="33.12" transform="rotate(-0 167.568975 33.12)">Německo</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="64.22976" transform="rotate(-0 411.84 64.22976)">~65 %</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="203.2659" y="33.12" transform="rotate(-0 203.2659 33.12)">má</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="85.82976" transform="rotate(-0 20.88 85.82976)">Japonsko</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="216.1755" y="33.12" transform="rotate(-0 216.1755 33.12)">nejvyšší</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="85.82976" transform="rotate(-0 230.4 85.82976)">~23 €</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="246.618" y="33.12" transform="rotate(-0 246.618 33.12)">náklady</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="85.82976" transform="rotate(-0 411.84 85.82976)">~35 %</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="276.6249" y="33.12" transform="rotate(-0 276.6249 33.12)">na</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="107.42976" transform="rotate(-0 20.88 107.42976)">Polsko</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="286.984013" y="33.12" transform="rotate(-0 286.984013 33.12)">světě.</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="107.42976" transform="rotate(-0 230.4 107.42976)">~20–21 €</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="309.484238" y="33.12" transform="rotate(-0 309.484238 33.12)">V</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="107.42976" transform="rotate(-0 411.84 107.42976)">~31 %</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="316.524375" y="33.12" transform="rotate(-0 316.524375 33.12)">USA</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: start; fill: #606271" x="10.8" y="126.72" transform="rotate(-0 10.8 126.72)">Hodnoty jsou přibližné.</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="332.879175" y="33.12" transform="rotate(-0 332.879175 33.12)">jsou</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: end; fill: #606271" x="421.2" y="126.72" transform="rotate(-0 421.2 126.72)">Tabulka: Portu, zdroj: Kielský institut pro světové hospodářství (IfW)</text>
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="349.844063" y="33.12" transform="rotate(-0 349.844063 33.12)">přibližně</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="382.05495" y="33.12" transform="rotate(-0 382.05495 33.12)">o</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="388.176863" y="33.12" transform="rotate(-0 388.176863 33.12)">třetinu</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="10.8" y="44.28" transform="rotate(-0 10.8 44.28)">nižší,</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="29.246175" y="44.28" transform="rotate(-0 29.246175 44.28)">v</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="35.090888" y="44.28" transform="rotate(-0 35.090888 44.28)">Polsku</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="59.437463" y="44.28" transform="rotate(-0 59.437463 44.28)">více</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="75.918487" y="44.28" transform="rotate(-0 75.918487 44.28)">než</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7.92px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #606271" x="89.7624" y="44.28" transform="rotate(-0 89.7624 44.28)">třikrát.</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="20.88" y="73.75968" transform="rotate(-0 20.88 73.75968)">Země</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: end; fill: #ffffff" x="230.4" y="73.75968" transform="rotate(-0 230.4 73.75968)">Hodinové náklady práce</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10.08px; font-family: 'Rethink Sans'; text-anchor: start; fill: #ffffff" x="252" y="73.75968" transform="rotate(-0 252 73.75968)">Poměr k Německu</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #4840bb" x="20.88" y="95.90976" transform="rotate(-0 20.88 95.90976)">Německo</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #4840bb" x="230.4" y="95.90976" transform="rotate(-0 230.4 95.90976)">~65 €</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #4840bb" x="411.84" y="95.90976" transform="rotate(-0 411.84 95.90976)">100 %</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="117.50976" transform="rotate(-0 20.88 117.50976)">USA</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="117.50976" transform="rotate(-0 230.4 117.50976)">~42 €</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="117.50976" transform="rotate(-0 411.84 117.50976)">~65 %</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="139.10976" transform="rotate(-0 20.88 139.10976)">Japonsko</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="139.10976" transform="rotate(-0 230.4 139.10976)">~23 €</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="139.10976" transform="rotate(-0 411.84 139.10976)">~35 %</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: start; fill: #202020" x="20.88" y="160.70976" transform="rotate(-0 20.88 160.70976)">Polsko</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="230.4" y="160.70976" transform="rotate(-0 230.4 160.70976)">~20–21 €</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7.56px; font-family: 'Rethink Sans'; text-anchor: end; fill: #202020" x="411.84" y="160.70976" transform="rotate(-0 411.84 160.70976)">~31 %</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: start; fill: #606271" x="10.8" y="180" transform="rotate(-0 10.8 180)">Hodnoty jsou přibližné.</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 6.12px; font-family: 'Rethink Sans'; text-anchor: end; fill: #606271" x="421.2" y="180" transform="rotate(-0 421.2 180)">Tabulka: Portu, zdroj: Kielský institut pro světové hospodářství (IfW)</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pe5a44ca15c">
-   <rect x="0" y="0" width="432" height="132.48"/>
+  <clipPath id="pbbd07fd3f8">
+   <rect x="0" y="0" width="432" height="185.76"/>
   </clipPath>
  </defs>
 </svg>
